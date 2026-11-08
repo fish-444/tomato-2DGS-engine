@@ -7,15 +7,7 @@ authors:
   - family-names: "서"
     given-names: "현우"
     affiliation: "Kyung Hee University, Department of Smart Farm Science"
-  - family-names: "김"
-    given-names: "민웅"
-    affiliation: "Kyung Hee University, Department of Smart Farm Science"
-  - family-names: "이"
-    given-names: "주원"
-    affiliation: "Kyung Hee University, Department of Smart Farm Science"
-  - family-names: "최"
-    given-names: "재임"
-    affiliation: "Kyung Hee University, Department of Smart Farm Science"
+
 license: MIT
 keywords: [Micro-Tom, tomato, 3D reconstruction, functional-structural plant model, light interception]
 repository-code: "https://github.com/fish-444/tomato-2DGS-engine"
