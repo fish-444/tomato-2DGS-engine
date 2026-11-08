@@ -1,0 +1,9 @@
+{
+ "hand_reinterpreted_cells.csv": "c4ba0a036cbe65a36251987851e0a3e89e102c8bdd982ce97d11aa137b0879ee",
+ "hand_side_axes.csv": "17a6ba91a9e00a32ca89071a59ea963589cd9a213108de29409515a56910b455",
+ "hand_side_leaves.csv": "1db069f426097e61fc337083ab8c3c938cd5518acc2e7729f258e0c5f92fb3ce",
+ "hand_trusses.csv": "6bad1ceba28338f7afadfac10509202999d826bb87e0de645e5619ca27f231ba",
+ "hand_thickness.csv": "8a22966972e9eb6ff0e1cb3df3a1b3449a327b4783b65f4b7e0e5ac2d5acf850",
+ "MTG_TEMPLATE_v0c_hand_draft.csv": "9375e73d6939bf35281dc3da845264e9adfd5c06513dfa9d95763e7cbd0d50c3",
+ "MTG_TEMPLATE_v0c_side_organs.json": "b090afff54b3af0d38993cb8c0ac541a34cffbe2a176f220a1fda460072399ed"
+}

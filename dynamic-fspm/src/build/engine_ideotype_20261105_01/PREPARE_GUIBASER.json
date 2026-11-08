@@ -1,0 +1,25 @@
+{
+  "started": "2026-11-06 19:32:29",
+  "batch": "GUIBASER",
+  "cases": {
+    "BASE_s10h40_r1_v22R-5p0843": {
+      "spec": "BASE@s10h40@r1@v22R:5.0843",
+      "model_sha": "49a5a262d6b8413378a8819776e8c6c3ef6d11b88080bf0bb853e50f4fd2e04d"
+    }
+  },
+  "jobs": [
+    "BASE_s10h40_r1_v22R-5p0843"
+  ],
+  "dataset": {
+    "slug": "ideo-guibaser-20261105",
+    "runs.tar.gz": {
+      "sha256": "1a8f901726856e03b23bc0d893e68dc61c640a3786e0b68baccfd7969b422769",
+      "bytes": 1050420
+    },
+    "code.tar.gz": {
+      "sha256": "3dd09b3b0cd019f84da927620f1e6f52624542a4619f750826d78a389b6b7d3d",
+      "bytes": 10142
+    }
+  },
+  "finished": "2026-11-06 19:33:14"
+}

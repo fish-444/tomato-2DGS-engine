@@ -1,0 +1,551 @@
+{
+ "20261021_060538353_iOS.jpg": {
+  "base_px": 78958,
+  "m1_added_px": 0,
+  "m5_candidate_px": 4557,
+  "m5_added_px": 4487,
+  "final_px": 83437,
+  "change_share": 0.0567,
+  "band_share": 0.1581
+ },
+ "20261021_060540841_iOS.jpg": {
+  "base_px": 80396,
+  "m1_added_px": 5072,
+  "m5_candidate_px": 4426,
+  "m5_added_px": 4748,
+  "final_px": 89217,
+  "change_share": 0.1097,
+  "band_share": 0.16
+ },
+ "20261021_060542310_iOS.jpg": {
+  "base_px": 86739,
+  "m1_added_px": 4690,
+  "m5_candidate_px": 4885,
+  "m5_added_px": 4606,
+  "final_px": 94888,
+  "change_share": 0.0939,
+  "band_share": 0.1624
+ },
+ "20261021_060544649_iOS.jpg": {
+  "base_px": 81946,
+  "m1_added_px": 6480,
+  "m5_candidate_px": 4799,
+  "m5_added_px": 4833,
+  "final_px": 92011,
+  "change_share": 0.1228,
+  "band_share": 0.1887
+ },
+ "20261021_060545604_iOS.jpg": {
+  "base_px": 81663,
+  "m1_added_px": 4466,
+  "m5_candidate_px": 5140,
+  "m5_added_px": 4862,
+  "final_px": 89982,
+  "change_share": 0.1019,
+  "band_share": 0.1952
+ },
+ "20261021_060547546_iOS.jpg": {
+  "base_px": 79619,
+  "m1_added_px": 7094,
+  "m5_candidate_px": 4380,
+  "m5_added_px": 4436,
+  "final_px": 89281,
+  "change_share": 0.1214,
+  "band_share": 0.2128
+ },
+ "20261021_060549196_iOS.jpg": {
+  "base_px": 78930,
+  "m1_added_px": 6111,
+  "m5_candidate_px": 3956,
+  "m5_added_px": 3493,
+  "final_px": 87088,
+  "change_share": 0.1034,
+  "band_share": 0.2195
+ },
+ "20261021_060551789_iOS.jpg": {
+  "base_px": 77907,
+  "m1_added_px": 4283,
+  "m5_candidate_px": 5534,
+  "m5_added_px": 4933,
+  "final_px": 86482,
+  "change_share": 0.1101,
+  "band_share": 0.1998
+ },
+ "20261021_060554103_iOS.jpg": {
+  "base_px": 83073,
+  "m1_added_px": 4310,
+  "m5_candidate_px": 3435,
+  "m5_added_px": 3551,
+  "final_px": 90318,
+  "change_share": 0.0872,
+  "band_share": 0.2059
+ },
+ "20261021_060555768_iOS.jpg": {
+  "base_px": 76396,
+  "m1_added_px": 4498,
+  "m5_candidate_px": 3175,
+  "m5_added_px": 3426,
+  "final_px": 84000,
+  "change_share": 0.0995,
+  "band_share": 0.1532
+ },
+ "20261021_060557359_iOS.jpg": {
+  "base_px": 78555,
+  "m1_added_px": 3991,
+  "m5_candidate_px": 3305,
+  "m5_added_px": 3396,
+  "final_px": 85663,
+  "change_share": 0.0905,
+  "band_share": 0.1553
+ },
+ "20261021_060559521_iOS.jpg": {
+  "base_px": 85252,
+  "m1_added_px": 3160,
+  "m5_candidate_px": 2785,
+  "m5_added_px": 2423,
+  "final_px": 90415,
+  "change_share": 0.0606,
+  "band_share": 0.1519
+ },
+ "20261021_060600613_iOS.jpg": {
+  "base_px": 90264,
+  "m1_added_px": 3696,
+  "m5_candidate_px": 3699,
+  "m5_added_px": 3229,
+  "final_px": 96553,
+  "change_share": 0.0697,
+  "band_share": 0.179
+ },
+ "20261021_060524278_iOS.jpg": {
+  "base_px": 71681,
+  "m1_added_px": 8356,
+  "m5_candidate_px": 2587,
+  "m5_added_px": 2959,
+  "final_px": 81448,
+  "change_share": 0.1363,
+  "band_share": 0.2189
+ },
+ "20261021_060605333_iOS.jpg": {
+  "base_px": 83747,
+  "m1_added_px": 4911,
+  "m5_candidate_px": 2694,
+  "m5_added_px": 2443,
+  "final_px": 90290,
+  "change_share": 0.0781,
+  "band_share": 0.19
+ },
+ "20261021_060527538_iOS.jpg": {
+  "base_px": 65938,
+  "m1_added_px": 3658,
+  "m5_candidate_px": 2822,
+  "m5_added_px": 2927,
+  "final_px": 72223,
+  "change_share": 0.0953,
+  "band_share": 0.1745
+ },
+ "20261021_060531950_iOS.jpg": {
+  "base_px": 66098,
+  "m1_added_px": 3524,
+  "m5_candidate_px": 2097,
+  "m5_added_px": 2192,
+  "final_px": 71296,
+  "change_share": 0.0786,
+  "band_share": 0.2229
+ },
+ "20261021_060532792_iOS.jpg": {
+  "base_px": 66049,
+  "m1_added_px": 5488,
+  "m5_candidate_px": 2656,
+  "m5_added_px": 2327,
+  "final_px": 73380,
+  "change_share": 0.111,
+  "band_share": 0.2463
+ },
+ "20261021_060427460_iOS.jpg": {
+  "base_px": 92542,
+  "m1_added_px": 16828,
+  "m5_candidate_px": 5269,
+  "m5_added_px": 2402,
+  "final_px": 111075,
+  "change_share": 0.2003,
+  "band_share": 0.1888
+ },
+ "20261021_060428635_iOS.jpg": {
+  "base_px": 88749,
+  "m1_added_px": 22690,
+  "m5_candidate_px": 4602,
+  "m5_added_px": 3193,
+  "final_px": 113553,
+  "change_share": 0.2795,
+  "band_share": 0.1883
+ },
+ "20261021_060429762_iOS.jpg": {
+  "base_px": 98317,
+  "m1_added_px": 12499,
+  "m5_candidate_px": 3022,
+  "m5_added_px": 2976,
+  "final_px": 111609,
+  "change_share": 0.1352,
+  "band_share": 0.1899
+ },
+ "20261021_060437164_iOS.jpg": {
+  "base_px": 88481,
+  "m1_added_px": 4340,
+  "m5_candidate_px": 7706,
+  "m5_added_px": 7172,
+  "final_px": 99755,
+  "change_share": 0.1274,
+  "band_share": 0.1409
+ },
+ "20261021_060439622_iOS.jpg": {
+  "base_px": 103251,
+  "m1_added_px": 6605,
+  "m5_candidate_px": 7428,
+  "m5_added_px": 7889,
+  "final_px": 116706,
+  "change_share": 0.1303,
+  "band_share": 0.193
+ },
+ "20261021_060440865_iOS.jpg": {
+  "base_px": 98264,
+  "m1_added_px": 5851,
+  "m5_candidate_px": 7807,
+  "m5_added_px": 8638,
+  "final_px": 112400,
+  "change_share": 0.1439,
+  "band_share": 0.1241
+ },
+ "20261021_060442059_iOS.jpg": {
+  "base_px": 96771,
+  "m1_added_px": 16051,
+  "m5_candidate_px": 9039,
+  "m5_added_px": 9518,
+  "final_px": 119615,
+  "change_share": 0.2361,
+  "band_share": 0.1775
+ },
+ "20261021_060448335_iOS.jpg": {
+  "base_px": 103498,
+  "m1_added_px": 5976,
+  "m5_candidate_px": 6275,
+  "m5_added_px": 6020,
+  "final_px": 115319,
+  "change_share": 0.1142,
+  "band_share": 0.1631
+ },
+ "20261021_060449755_iOS.jpg": {
+  "base_px": 103793,
+  "m1_added_px": 9469,
+  "m5_candidate_px": 6182,
+  "m5_added_px": 5859,
+  "final_px": 118969,
+  "change_share": 0.1462,
+  "band_share": 0.1788
+ },
+ "20261021_060450923_iOS.jpg": {
+  "base_px": 100048,
+  "m1_added_px": 18137,
+  "m5_candidate_px": 5984,
+  "m5_added_px": 5055,
+  "final_px": 122588,
+  "change_share": 0.2253,
+  "band_share": 0.1615
+ },
+ "20261021_060454093_iOS.jpg": {
+  "base_px": 106257,
+  "m1_added_px": 6541,
+  "m5_candidate_px": 8858,
+  "m5_added_px": 12988,
+  "final_px": 125740,
+  "change_share": 0.1834,
+  "band_share": 0.1751
+ },
+ "20261021_060414567_iOS.jpg": {
+  "base_px": 125401,
+  "m1_added_px": 14497,
+  "m5_candidate_px": 7085,
+  "m5_added_px": 6655,
+  "final_px": 143649,
+  "change_share": 0.1455,
+  "band_share": 0.1681
+ },
+ "20261021_060416893_iOS.jpg": {
+  "base_px": 127005,
+  "m1_added_px": 10039,
+  "m5_candidate_px": 8337,
+  "m5_added_px": 7969,
+  "final_px": 143999,
+  "change_share": 0.1338,
+  "band_share": 0.1404
+ },
+ "20261021_060418991_iOS.jpg": {
+  "base_px": 125839,
+  "m1_added_px": 11573,
+  "m5_candidate_px": 8817,
+  "m5_added_px": 6788,
+  "final_px": 142675,
+  "change_share": 0.1338,
+  "band_share": 0.1473
+ },
+ "20261021_060420263_iOS.jpg": {
+  "base_px": 120970,
+  "m1_added_px": 7369,
+  "m5_candidate_px": 8193,
+  "m5_added_px": 7343,
+  "final_px": 135032,
+  "change_share": 0.1162,
+  "band_share": 0.1408
+ },
+ "20261021_060421660_iOS.jpg": {
+  "base_px": 115232,
+  "m1_added_px": 7000,
+  "m5_candidate_px": 6361,
+  "m5_added_px": 5292,
+  "final_px": 126834,
+  "change_share": 0.1007,
+  "band_share": 0.1358
+ },
+ "20261021_060422747_iOS.jpg": {
+  "base_px": 103156,
+  "m1_added_px": 4080,
+  "m5_candidate_px": 5971,
+  "m5_added_px": 4545,
+  "final_px": 111478,
+  "change_share": 0.0807,
+  "band_share": 0.1485
+ },
+ "20261021_060423912_iOS.jpg": {
+  "base_px": 97020,
+  "m1_added_px": 13871,
+  "m5_candidate_px": 4702,
+  "m5_added_px": 3053,
+  "final_px": 113173,
+  "change_share": 0.1665,
+  "band_share": 0.1602
+ },
+ "20261021_060248144_iOS.jpg": {
+  "base_px": 74273,
+  "m1_added_px": 26970,
+  "m5_candidate_px": 33924,
+  "m5_added_px": 62891,
+  "final_px": 164007,
+  "change_share": 1.2082,
+  "band_share": 0.156
+ },
+ "20261021_060235403_iOS.jpg": {
+  "base_px": 104766,
+  "m1_added_px": 33153,
+  "m5_candidate_px": 8933,
+  "m5_added_px": 13086,
+  "final_px": 149472,
+  "change_share": 0.4267,
+  "band_share": 0.2794
+ },
+ "20261021_060326166_iOS.jpg": {
+  "base_px": 95659,
+  "m1_added_px": 24483,
+  "m5_candidate_px": 4753,
+  "m5_added_px": 3953,
+  "final_px": 123784,
+  "change_share": 0.294,
+  "band_share": 0.1147
+ },
+ "20261021_060328024_iOS.jpg": {
+  "base_px": 94933,
+  "m1_added_px": 24801,
+  "m5_candidate_px": 4145,
+  "m5_added_px": 3118,
+  "final_px": 122503,
+  "change_share": 0.2904,
+  "band_share": 0.1187
+ },
+ "20261021_060329819_iOS.jpg": {
+  "base_px": 93697,
+  "m1_added_px": 25074,
+  "m5_candidate_px": 3938,
+  "m5_added_px": 3255,
+  "final_px": 121032,
+  "change_share": 0.2917,
+  "band_share": 0.1339
+ },
+ "20261021_060331680_iOS.jpg": {
+  "base_px": 91500,
+  "m1_added_px": 33129,
+  "m5_candidate_px": 3873,
+  "m5_added_px": 5032,
+  "final_px": 127078,
+  "change_share": 0.3888,
+  "band_share": 0.1428
+ },
+ "20261021_060332829_iOS.jpg": {
+  "base_px": 99142,
+  "m1_added_px": 21379,
+  "m5_candidate_px": 3560,
+  "m5_added_px": 4411,
+  "final_px": 124445,
+  "change_share": 0.2552,
+  "band_share": 0.1256
+ },
+ "20261021_060335139_iOS.jpg": {
+  "base_px": 94917,
+  "m1_added_px": 24496,
+  "m5_candidate_px": 4457,
+  "m5_added_px": 5714,
+  "final_px": 124626,
+  "change_share": 0.313,
+  "band_share": 0.1196
+ },
+ "20261021_060337367_iOS.jpg": {
+  "base_px": 96766,
+  "m1_added_px": 30014,
+  "m5_candidate_px": 4522,
+  "m5_added_px": 5290,
+  "final_px": 130391,
+  "change_share": 0.3475,
+  "band_share": 0.1626
+ },
+ "20261021_060338861_iOS.jpg": {
+  "base_px": 90476,
+  "m1_added_px": 30750,
+  "m5_candidate_px": 4686,
+  "m5_added_px": 4664,
+  "final_px": 124521,
+  "change_share": 0.3763,
+  "band_share": 0.1478
+ },
+ "20261021_060340484_iOS.jpg": {
+  "base_px": 98552,
+  "m1_added_px": 24432,
+  "m5_candidate_px": 5507,
+  "m5_added_px": 7453,
+  "final_px": 130253,
+  "change_share": 0.3217,
+  "band_share": 0.1471
+ },
+ "20261021_060341729_iOS.jpg": {
+  "base_px": 95014,
+  "m1_added_px": 34005,
+  "m5_candidate_px": 3716,
+  "m5_added_px": 3965,
+  "final_px": 131792,
+  "change_share": 0.3871,
+  "band_share": 0.1665
+ },
+ "20261021_060344652_iOS.jpg": {
+  "base_px": 92638,
+  "m1_added_px": 26637,
+  "m5_candidate_px": 5767,
+  "m5_added_px": 6528,
+  "final_px": 125316,
+  "change_share": 0.3527,
+  "band_share": 0.1571
+ },
+ "20261021_060346661_iOS.jpg": {
+  "base_px": 91803,
+  "m1_added_px": 29351,
+  "m5_candidate_px": 5975,
+  "m5_added_px": 6637,
+  "final_px": 127397,
+  "change_share": 0.3877,
+  "band_share": 0.155
+ },
+ "20261021_060348489_iOS.jpg": {
+  "base_px": 107999,
+  "m1_added_px": 26435,
+  "m5_candidate_px": 4461,
+  "m5_added_px": 5254,
+  "final_px": 135271,
+  "change_share": 0.2525,
+  "band_share": 0.2103
+ },
+ "20261021_060350518_iOS.jpg": {
+  "base_px": 111471,
+  "m1_added_px": 16656,
+  "m5_candidate_px": 4133,
+  "m5_added_px": 4422,
+  "final_px": 131621,
+  "change_share": 0.1808,
+  "band_share": 0.1611
+ },
+ "20261021_060352245_iOS.jpg": {
+  "base_px": 119153,
+  "m1_added_px": 16553,
+  "m5_candidate_px": 4756,
+  "m5_added_px": 4889,
+  "final_px": 137616,
+  "change_share": 0.155,
+  "band_share": 0.1854
+ },
+ "20261021_060354234_iOS.jpg": {
+  "base_px": 118469,
+  "m1_added_px": 10729,
+  "m5_candidate_px": 5776,
+  "m5_added_px": 5734,
+  "final_px": 131555,
+  "change_share": 0.1105,
+  "band_share": 0.2023
+ },
+ "20261021_060313903_iOS.jpg": {
+  "base_px": 155918,
+  "m1_added_px": 11357,
+  "m5_candidate_px": 6742,
+  "m5_added_px": 7633,
+  "final_px": 173259,
+  "change_share": 0.1112,
+  "band_share": 0.171
+ },
+ "20261021_060355657_iOS.jpg": {
+  "base_px": 110590,
+  "m1_added_px": 14467,
+  "m5_candidate_px": 5049,
+  "m5_added_px": 4983,
+  "final_px": 125411,
+  "change_share": 0.134,
+  "band_share": 0.1975
+ },
+ "20261021_060315956_iOS.jpg": {
+  "base_px": 145225,
+  "m1_added_px": 11436,
+  "m5_candidate_px": 4992,
+  "m5_added_px": 5074,
+  "final_px": 159897,
+  "change_share": 0.101,
+  "band_share": 0.159
+ },
+ "20261021_060317552_iOS.jpg": {
+  "base_px": 117434,
+  "m1_added_px": 30521,
+  "m5_candidate_px": 5711,
+  "m5_added_px": 6708,
+  "final_px": 153204,
+  "change_share": 0.3046,
+  "band_share": 0.1465
+ },
+ "20261021_060319179_iOS.jpg": {
+  "base_px": 124393,
+  "m1_added_px": 22872,
+  "m5_candidate_px": 5117,
+  "m5_added_px": 5094,
+  "final_px": 151034,
+  "change_share": 0.2142,
+  "band_share": 0.1456
+ },
+ "20261021_060321744_iOS.jpg": {
+  "base_px": 111642,
+  "m1_added_px": 30250,
+  "m5_candidate_px": 5847,
+  "m5_added_px": 5254,
+  "final_px": 145112,
+  "change_share": 0.2998,
+  "band_share": 0.1787
+ },
+ "20261021_060323966_iOS.jpg": {
+  "base_px": 95326,
+  "m1_added_px": 32949,
+  "m5_candidate_px": 4688,
+  "m5_added_px": 5901,
+  "final_px": 132998,
+  "change_share": 0.3952,
+  "band_share": 0.1463
+ }
+}

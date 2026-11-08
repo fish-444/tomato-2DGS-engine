@@ -1,0 +1,7 @@
+plant,main_rank,n_truss,flowers_each,excel_row,flags,labels
+dt01,3.0,1.0,3.0,11,single_number_in_truss_column=flowers|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt03,,2.0,4.0,36,position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt04,3.0,1.0,1.0,41,single_number_in_truss_column=flowers|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt05,7.0,2.0,4.0,55,position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt06,1.0,2.0,4.0,60,position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt06,2.0,1.0,4.0,61,truss_1_flowers_4|position_not_confirmed,hand_measured;user_confirmed_2026-11-01

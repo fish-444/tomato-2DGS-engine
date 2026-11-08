@@ -1,0 +1,233 @@
+{
+ "status": "R3-1b_unaccepted",
+ "scale": "conditional_on_unvalidated_scale",
+ "no_photo_data": true,
+ "params": {
+  "edge_mm": 3.0,
+  "edge_scale_mm": 2.0,
+  "nb3d_mm": 8.0,
+  "trace_cand_mm": 10.0,
+  "trace_seed_mm": 3.0,
+  "w_nb3d": 0.5,
+  "w_tr": 0.3,
+  "w_dir": 0.2,
+  "temp": 3.0,
+  "d_floor_mm": 0.5,
+  "gamma": 1.0,
+  "p1": 0.6,
+  "margin": 0.25,
+  "rounds": 5,
+  "neutral": 0.5
+ },
+ "targets": 10099,
+ "trace_seeded_targets": 2670,
+ "blade_nodes": 19911,
+ "targets_with_trace_within_3mm_per_leaf": {
+  "1": 114,
+  "2": 255,
+  "3": 312,
+  "4": 314,
+  "5": 566,
+  "6": 49,
+  "7": 1060
+ },
+ "self_test": {
+  "per_leaf": {
+   "1": {
+    "hidden": 114,
+    "accepted": 114,
+    "correct": 114,
+    "accuracy": 1.0,
+    "wrong_rate": 0.0,
+    "coverage": 1.0,
+    "wrong_to": {}
+   },
+   "2": {
+    "hidden": 255,
+    "accepted": 255,
+    "correct": 255,
+    "accuracy": 1.0,
+    "wrong_rate": 0.0,
+    "coverage": 1.0,
+    "wrong_to": {}
+   },
+   "3": {
+    "hidden": 312,
+    "accepted": 312,
+    "correct": 312,
+    "accuracy": 1.0,
+    "wrong_rate": 0.0,
+    "coverage": 1.0,
+    "wrong_to": {}
+   },
+   "4": {
+    "hidden": 314,
+    "accepted": 314,
+    "correct": 314,
+    "accuracy": 1.0,
+    "wrong_rate": 0.0,
+    "coverage": 1.0,
+    "wrong_to": {}
+   },
+   "5": {
+    "hidden": 566,
+    "accepted": 538,
+    "correct": 528,
+    "accuracy": 0.9814126394052045,
+    "wrong_rate": 0.01858736059479554,
+    "coverage": 0.950530035335689,
+    "wrong_to": {
+     "7": 10
+    }
+   },
+   "6": {
+    "hidden": 49,
+    "accepted": 48,
+    "correct": 48,
+    "accuracy": 1.0,
+    "wrong_rate": 0.0,
+    "coverage": 0.9795918367346939,
+    "wrong_to": {}
+   },
+   "7": {
+    "hidden": 1060,
+    "accepted": 1037,
+    "correct": 880,
+    "accuracy": 0.8486017357762777,
+    "wrong_rate": 0.15139826422372227,
+    "coverage": 0.9783018867924528,
+    "wrong_to": {
+     "6": 151,
+     "5": 6
+    }
+   }
+  },
+  "pooled": {
+   "hidden": 2670,
+   "accepted": 2618,
+   "correct": 2451,
+   "accuracy": 0.9362108479755539,
+   "wrong_rate": 0.06378915202444614,
+   "coverage": 0.9805243445692884
+  },
+  "gate_pass": false,
+  "note": "leave-one-trace-out; truth = the user's own traces, so only the non-trace evidence is tested"
+ },
+ "tag": "gate_failed_viewing_only",
+ "final": {
+  "rounds": [
+   6155,
+   302,
+   111,
+   54,
+   41
+  ],
+  "trace_seeded": 2670,
+  "absorbed_by_walker": 6663,
+  "absorbed_total": 9333,
+  "unpainted": 766,
+  "reasons": {
+   "unpainted_contested": 675,
+   "unpainted_not_connected": 14,
+   "unpainted_no_candidate": 77
+  }
+ },
+ "per_leaf": {
+  "1": {
+   "rachis_surfels": 1066,
+   "rachis_mm2": 876.2,
+   "from_trace_seed": 114,
+   "uncertain_unpainted": 37,
+   "uncertain_mm2": 126.4,
+   "blade_mm2_R8_pc": 1900.9
+  },
+  "2": {
+   "rachis_surfels": 881,
+   "rachis_mm2": 825.9,
+   "from_trace_seed": 255,
+   "uncertain_unpainted": 68,
+   "uncertain_mm2": 183.9,
+   "blade_mm2_R8_pc": 1080.2
+  },
+  "3": {
+   "rachis_surfels": 995,
+   "rachis_mm2": 339.1,
+   "from_trace_seed": 312,
+   "uncertain_unpainted": 6,
+   "uncertain_mm2": 14.9,
+   "blade_mm2_R8_pc": 1158.4
+  },
+  "4": {
+   "rachis_surfels": 1256,
+   "rachis_mm2": 782.2,
+   "from_trace_seed": 314,
+   "uncertain_unpainted": 104,
+   "uncertain_mm2": 146.6,
+   "blade_mm2_R8_pc": 817.2
+  },
+  "5": {
+   "rachis_surfels": 2055,
+   "rachis_mm2": 1315.3,
+   "from_trace_seed": 566,
+   "uncertain_unpainted": 192,
+   "uncertain_mm2": 394.8,
+   "blade_mm2_R8_pc": 2040.3
+  },
+  "6": {
+   "rachis_surfels": 623,
+   "rachis_mm2": 1055.6,
+   "from_trace_seed": 49,
+   "uncertain_unpainted": 86,
+   "uncertain_mm2": 280.2,
+   "blade_mm2_R8_pc": 1670.6
+  },
+  "7": {
+   "rachis_surfels": 2343,
+   "rachis_mm2": 1433.3,
+   "from_trace_seed": 1060,
+   "uncertain_unpainted": 88,
+   "uncertain_mm2": 279.0,
+   "blade_mm2_R8_pc": 1539.9
+  },
+  "8": {
+   "rachis_surfels": 114,
+   "rachis_mm2": 137.2,
+   "from_trace_seed": 0,
+   "uncertain_unpainted": 40,
+   "uncertain_mm2": 156.8,
+   "blade_mm2_R8_pc": 213.4
+  }
+ },
+ "table": {
+  "denominator": "all 46719 reconstructed surfels",
+  "R8_pc": {
+   "axis2_painted": {
+    "count": 623,
+    "mm2": 1165.2
+   },
+   "axis2_unpainted": {
+    "count": 10099,
+    "mm2": 6888.8
+   },
+   "axis1": {
+    "count": 2955,
+    "mm2": 2804.7
+   }
+  },
+  "R8_pc_rachis": {
+   "axis2_painted_as_blade": 623,
+   "axis2_absorbed_as_rachis": {
+    "count": 9333,
+    "mm2": 6216.6
+   },
+   "axis2_unpainted": {
+    "count": 766,
+    "mm2": 1432.2
+   },
+   "axis1": {
+    "count": 2955
+   }
+  }
+ },
+ "seconds": 25
+}

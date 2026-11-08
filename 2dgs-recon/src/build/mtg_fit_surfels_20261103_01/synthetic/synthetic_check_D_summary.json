@@ -1,0 +1,16 @@
+{
+ "plants": 13,
+ "main_leaves": 103,
+ "leaves_optimised": 103,
+ "gate1_pass": 38,
+ "median_err_azimuth": 7.023644827429791,
+ "start_median_err_azimuth": 21.73156898603449,
+ "median_stem_offset_mm": 1.9864196709917805,
+ "median_err_length_rel_kept_not_gated": 0.44313843130247355,
+ "median_err_theta0_kept_not_gated": 12.291625027287402,
+ "acceptable": {
+  "azimuth": true,
+  "stem": true
+ },
+ "all_acceptable": true
+}

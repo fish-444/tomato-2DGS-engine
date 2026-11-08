@@ -1,0 +1,1 @@
+﻿WITHHELD 2026-11-05: built under amendment 3 (end leaflet = surfels beyond the last click), but the data show the last click near the end-leaflet tip in most leaves (end leaflet < 10 % of leaf area in 97/144, a crosswise strip). Do not use. See build/mtg_build_v2_clicks_leaflets_20261105_01/CONTRACT.md and figures/click_end_check.png.

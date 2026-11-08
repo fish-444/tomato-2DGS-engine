@@ -1,0 +1,340 @@
+{
+ "labels": [
+  "route_tprox",
+  "tprox_unverified_until_heldout",
+  "conditional_on_unvalidated_scale",
+  "user_skeleton_seeds",
+  "frozen_code_reuse",
+  "legacy_split_20mm_unreviewed"
+ ],
+ "plant_id": "n_06",
+ "run": "build\\p1_tprox_others_20261101_01\\runs\\n_06\\20261101T175458",
+ "kernel": {
+  "in_kernel_choice": "A",
+  "in_kernel_gate": true,
+  "used_set": "A",
+  "seconds": 739
+ },
+ "lines_live": 12,
+ "leaves_tprox": 10,
+ "line_too_short": [
+  "n_06-L10",
+  "n_06-L12"
+ ],
+ "seeds": {
+  "rachis_seeds": 11434,
+  "blade_groups": 61,
+  "blade_seeds": 38324
+ },
+ "seed_surfels_per_leaf": {
+  "n_06-L01": 3859,
+  "n_06-L02": 4504,
+  "n_06-L03": 4569,
+  "n_06-L04": 7529,
+  "n_06-L05": 1189,
+  "n_06-L06": 3266,
+  "n_06-L07": 4634,
+  "n_06-L08": 6192,
+  "n_06-L09": 3072,
+  "n_06-L11": 573
+ },
+ "leaves_seed_below_min": [],
+ "seed_min": 50,
+ "assigned": 0.9652,
+ "contested_or_unlabelled": 0.0348,
+ "provenance": {
+  "none": 2497,
+  "seed": 39326,
+  "absorbed": 28558,
+  "rachis_step": 1294
+ },
+ "p1_quantiles_absorbed": {
+  "5": 0.6332,
+  "25": 0.7529,
+  "50": 0.8758,
+  "75": 0.9749,
+  "95": 1.0
+ },
+ "margin_quantiles_absorbed": {
+  "5": 0.3711,
+  "25": 0.5804,
+  "50": 0.7774,
+  "75": 0.9524,
+  "95": 1.0
+ },
+ "distance": {
+  "assigned": 0.8427
+ },
+ "both_assigned": 58662,
+ "changed_leaf_share_among_both": 0.0141,
+ "tprox_only": 10516,
+ "distance_only": 1741,
+ "agreement_matrix": {
+  "row": "tprox (0=none)",
+  "col": "distance (0=none)",
+  "leaf_uids": [
+   "n_06-L01",
+   "n_06-L02",
+   "n_06-L03",
+   "n_06-L04",
+   "n_06-L05",
+   "n_06-L06",
+   "n_06-L07",
+   "n_06-L08",
+   "n_06-L09",
+   "n_06-L10",
+   "n_06-L11",
+   "n_06-L12"
+  ],
+  "counts": [
+   [
+    756,
+    345,
+    56,
+    240,
+    68,
+    197,
+    104,
+    37,
+    33,
+    0,
+    0,
+    68,
+    593
+   ],
+   [
+    86,
+    8710,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2156,
+    0,
+    6862,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    65,
+    0
+   ],
+   [
+    1988,
+    0,
+    0,
+    6308,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    45,
+    0
+   ],
+   [
+    481,
+    0,
+    0,
+    27,
+    9784,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0
+   ],
+   [
+    44,
+    2,
+    0,
+    0,
+    0,
+    1459,
+    0,
+    0,
+    0,
+    0,
+    0,
+    43,
+    0
+   ],
+   [
+    1532,
+    0,
+    0,
+    78,
+    0,
+    0,
+    4122,
+    5,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    2818,
+    0,
+    1,
+    0,
+    0,
+    0,
+    300,
+    6858,
+    0,
+    0,
+    0,
+    10,
+    0
+   ],
+   [
+    421,
+    0,
+    0,
+    0,
+    72,
+    0,
+    0,
+    0,
+    9866,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    599,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    69,
+    3121,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    391,
+    0,
+    17,
+    8,
+    0,
+    0,
+    74,
+    0,
+    0,
+    0,
+    0,
+    743,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "axis": {
+  "labels": [
+   "user_skeleton_seeds",
+   "conditional_on_unvalidated_scale",
+   "after_checkpoint_v1",
+   "R3-1b-style_unaccepted",
+   "no_reference",
+   "frozen_code_reuse",
+   "main_route_r8pc"
+  ],
+  "plant_id": "n_06",
+  "axis_source": "S1 PCA proxy (3D-first contract) + frozen Q1 (forms ['h_rel', 'vert', 'thick_rel', 'dens'])",
+  "axis_share": 0.0338,
+  "axis_share_r31b": 0.293,
+  "axis_share_unusual": true,
+  "stem_like": 1003,
+  "rachis_like": 1419,
+  "q1": {
+   "forms": [
+    "h_rel",
+    "vert",
+    "thick_rel",
+    "dens"
+   ],
+   "coef": [
+    [
+     -0.9504,
+     -1.6238,
+     0.5904,
+     0.337
+    ]
+   ],
+   "intercept": [
+    0.1287
+   ]
+  },
+  "translation_m": [
+   0.23574,
+   0.13148,
+   0.0912
+  ],
+  "hashes": {
+   "pc_absorb": "372c06655d939376",
+   "pc_rachis": "b9e76f0b96a0a912",
+   "compound_cluster": "785eb9913ded51cf",
+   "this": "4bb2f7117792bb69",
+   "frozen_bundle": "ec7cfbce98c8c642",
+   "frozen_r8pc_labels": "e1ff792be1c4efdf"
+  }
+ },
+ "grade": "ungraded (no held-out picks)",
+ "light": "per_surfel_light present; per-leaf light not reported: ungraded",
+ "axis_share_unusual": true
+}

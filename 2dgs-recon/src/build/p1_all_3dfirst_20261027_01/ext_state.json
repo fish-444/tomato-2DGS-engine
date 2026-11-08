@@ -1,0 +1,1109 @@
+{
+ "jobs": {
+  "size_prior": {
+   "stage": "size_prior",
+   "iid": null,
+   "slug": "tomato-3dfirst-sizeprior",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 16:21:42",
+   "t0": 1793085702.048609,
+   "gpu": false,
+   "seconds": 16,
+   "finished": "2026-10-27 16:23:24",
+   "files_in": 1
+  },
+  "pre:n_04": {
+   "stage": "pre",
+   "iid": "n_04",
+   "slug": "tomato-3dfirst-pre-n04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 16:25:14",
+   "t0": 1793085914.767875,
+   "gpu": false,
+   "seconds": 290,
+   "finished": "2026-10-27 16:48:13",
+   "error": null,
+   "final": "COMPLETE",
+   "files_in": 34
+  },
+  "pre:t2_02": {
+   "stage": "pre",
+   "iid": "t2_02",
+   "slug": "tomato-3dfirst-pre-t202",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 16:26:43",
+   "t0": 1793086003.1847684,
+   "gpu": false,
+   "seconds": 259,
+   "finished": "2026-10-27 16:42:05",
+   "files_in": 37
+  },
+  "pre:n_01": {
+   "stage": "pre",
+   "iid": "n_01",
+   "slug": "tomato-3dfirst-pre-n01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 16:50:14",
+   "t0": 1793087414.6251404,
+   "gpu": false,
+   "seconds": 220,
+   "finished": "2026-10-27 18:52:52",
+   "files_in": 33
+  },
+  "pre:t2_05": {
+   "stage": "pre",
+   "iid": "t2_05",
+   "slug": "tomato-3dfirst-pre-t205",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 18:54:05",
+   "t0": 1793094845.1494207,
+   "gpu": false,
+   "seconds": 208,
+   "finished": "2026-10-27 19:02:46",
+   "files_in": 32
+  },
+  "cands:n_04": {
+   "stage": "cands",
+   "iid": "n_04",
+   "slug": "tomato-3dfirst-cands-n04",
+   "tries": 2,
+   "status": "done",
+   "version": 3,
+   "started": "2026-10-27 19:23:15",
+   "t0": 1793096595.0612204,
+   "gpu": true,
+   "views": 28,
+   "seconds": 728,
+   "finished": "2026-10-27 19:38:30",
+   "error": null,
+   "history": [
+    {
+     "version": 2,
+     "status": "failed_external",
+     "error": "ModuleNotFoundError: No module named 'sam2'",
+     "note": "v1 and v2 both ModuleNotFoundError sam2: runner bug (vendored sam2 not on sys.path); v2 was pushed 19:03:07, before the runner fix landed (driver race), so it re-ran the unfixed code. Reset to one remaining try with the fixed runner (Claude, 19:06)."
+    }
+   ],
+   "files_in": 29
+  },
+  "pre:n_05": {
+   "stage": "pre",
+   "iid": "n_05",
+   "slug": "tomato-3dfirst-pre-n05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 18:59:59",
+   "t0": 1793095199.5764682,
+   "gpu": false,
+   "seconds": 229,
+   "finished": "2026-10-27 19:06:55",
+   "files_in": 25
+  },
+  "pre:n_06": {
+   "stage": "pre",
+   "iid": "n_06",
+   "slug": "tomato-3dfirst-pre-n06",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:04:11",
+   "t0": 1793095451.6168566,
+   "gpu": false,
+   "seconds": 180,
+   "finished": "2026-10-27 19:12:35",
+   "files_in": 15
+  },
+  "cands:t2_02": {
+   "stage": "cands",
+   "iid": "t2_02",
+   "slug": "tomato-3dfirst-cands-t202",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:07:05",
+   "t0": 1793095625.766517,
+   "gpu": true,
+   "views": 31,
+   "seconds": 668,
+   "finished": "2026-10-27 19:20:50",
+   "files_in": 32
+  },
+  "pre:t2_04": {
+   "stage": "pre",
+   "iid": "t2_04",
+   "slug": "tomato-3dfirst-pre-t204",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:08:15",
+   "t0": 1793095695.9827158,
+   "gpu": false,
+   "seconds": 188,
+   "finished": "2026-10-27 19:13:45",
+   "files_in": 26
+  },
+  "pre:n_02": {
+   "stage": "pre",
+   "iid": "n_02",
+   "slug": "tomato-3dfirst-pre-n02",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:15:06",
+   "t0": 1793096106.867821,
+   "gpu": false,
+   "seconds": 219,
+   "finished": "2026-10-27 19:21:51",
+   "files_in": 23
+  },
+  "pre:n_03": {
+   "stage": "pre",
+   "iid": "n_03",
+   "slug": "tomato-3dfirst-pre-n03",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:16:29",
+   "t0": 1793096189.7246823,
+   "gpu": false,
+   "seconds": 220,
+   "finished": "2026-10-27 19:23:07",
+   "files_in": 29
+  },
+  "candsrf:n_04": {
+   "stage": "candsrf",
+   "iid": "n_04",
+   "slug": "tomato-3dfirst-candsrf-n04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:39:36",
+   "t0": 1793097576.6882215,
+   "gpu": true,
+   "views": 28,
+   "seconds": 817,
+   "finished": "2026-10-27 19:54:42",
+   "files_in": 29
+  },
+  "candsrf:t2_02": {
+   "stage": "candsrf",
+   "iid": "t2_02",
+   "slug": "tomato-3dfirst-candsrf-t202",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 19:55:52",
+   "t0": 1793098552.0070577,
+   "gpu": true,
+   "views": 31,
+   "seconds": 881,
+   "finished": "2026-10-27 20:13:53",
+   "files_in": 32
+  },
+  "cands:n_01": {
+   "stage": "cands",
+   "iid": "n_01",
+   "slug": "tomato-3dfirst-cands-n01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 20:13:59",
+   "t0": 1793099639.1289175,
+   "gpu": true,
+   "views": 27,
+   "seconds": 543,
+   "finished": "2026-10-27 21:13:15",
+   "files_in": 28
+  },
+  "candsrf:n_01": {
+   "stage": "candsrf",
+   "iid": "n_01",
+   "slug": "tomato-3dfirst-candsrf-n01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 21:14:14",
+   "t0": 1793103254.6741476,
+   "gpu": true,
+   "views": 27,
+   "seconds": 886,
+   "finished": "2026-10-27 21:30:43",
+   "files_in": 28
+  },
+  "cands:t2_05": {
+   "stage": "cands",
+   "iid": "t2_05",
+   "slug": "tomato-3dfirst-cands-t205",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 21:30:53",
+   "t0": 1793104253.6206648,
+   "gpu": true,
+   "views": 26,
+   "seconds": 700,
+   "finished": "2026-10-27 21:44:05",
+   "files_in": 27
+  },
+  "candsrf:t2_05": {
+   "stage": "candsrf",
+   "iid": "t2_05",
+   "slug": "tomato-3dfirst-candsrf-t205",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 21:45:06",
+   "t0": 1793105106.8571565,
+   "gpu": true,
+   "views": 26,
+   "seconds": 719,
+   "finished": "2026-10-27 21:58:24",
+   "files_in": 27
+  },
+  "cands:n_06": {
+   "stage": "cands",
+   "iid": "n_06",
+   "slug": "tomato-3dfirst-cands-n06",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 21:58:29",
+   "t0": 1793105909.1838164,
+   "gpu": true,
+   "views": 9,
+   "seconds": 291,
+   "finished": "2026-10-27 22:05:04",
+   "files_in": 10
+  },
+  "candsrf:n_06": {
+   "stage": "candsrf",
+   "iid": "n_06",
+   "slug": "tomato-3dfirst-candsrf-n06",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 22:06:06",
+   "t0": 1793106366.5927978,
+   "gpu": true,
+   "views": 9,
+   "seconds": 343,
+   "finished": "2026-10-27 22:37:45",
+   "files_in": 10
+  },
+  "cands:n_05": {
+   "stage": "cands",
+   "iid": "n_05",
+   "slug": "tomato-3dfirst-cands-n05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 22:37:49",
+   "t0": 1793108269.1393323,
+   "gpu": true,
+   "views": 19,
+   "seconds": 515,
+   "finished": "2026-10-27 22:47:46",
+   "files_in": 20
+  },
+  "cands:t2_04": {
+   "stage": "cands",
+   "iid": "t2_04",
+   "slug": "tomato-3dfirst-cands-t204",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 23:03:23",
+   "t0": 1793109803.6228974,
+   "gpu": true,
+   "views": 20,
+   "seconds": 568,
+   "finished": "2026-10-27 23:14:56",
+   "files_in": 21
+  },
+  "candsrf:n_05": {
+   "stage": "candsrf",
+   "iid": "n_05",
+   "slug": "tomato-3dfirst-candsrf-n05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 23:15:49",
+   "t0": 1793110549.8151572,
+   "gpu": true,
+   "views": 19,
+   "seconds": 640,
+   "finished": "2026-10-27 23:32:49",
+   "files_in": 20
+  },
+  "candsrf:t2_04": {
+   "stage": "candsrf",
+   "iid": "t2_04",
+   "slug": "tomato-3dfirst-candsrf-t204",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-27 23:34:02",
+   "t0": 1793111642.2437575,
+   "gpu": true,
+   "views": 20,
+   "seconds": 559,
+   "finished": "2026-10-28 00:24:58",
+   "files_in": 21
+  },
+  "cands:n_02": {
+   "stage": "cands",
+   "iid": "n_02",
+   "slug": "tomato-3dfirst-cands-n02",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:25:03",
+   "t0": 1793114703.1475291,
+   "gpu": true,
+   "views": 17,
+   "seconds": 474,
+   "finished": "2026-10-28 00:44:27",
+   "files_in": 18
+  },
+  "merge:n_04": {
+   "stage": "merge",
+   "iid": "n_04",
+   "slug": "tomato-3dfirst-merge-n04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:35:55",
+   "t0": 1793115355.4302967,
+   "gpu": false,
+   "seconds": 159,
+   "finished": "2026-10-28 00:39:15",
+   "files_in": 4
+  },
+  "merge:t2_02": {
+   "stage": "merge",
+   "iid": "t2_02",
+   "slug": "tomato-3dfirst-merge-t202",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:39:58",
+   "t0": 1793115598.677891,
+   "gpu": false,
+   "seconds": 48,
+   "finished": "2026-10-28 00:41:48",
+   "files_in": 4
+  },
+  "merge:n_01": {
+   "stage": "merge",
+   "iid": "n_01",
+   "slug": "tomato-3dfirst-merge-n01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:40:02",
+   "t0": 1793115602.4062858,
+   "gpu": false,
+   "seconds": 51,
+   "finished": "2026-10-28 00:42:04",
+   "files_in": 4
+  },
+  "merge:t2_05": {
+   "stage": "merge",
+   "iid": "t2_05",
+   "slug": "tomato-3dfirst-merge-t205",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:42:08",
+   "t0": 1793115728.0295098,
+   "gpu": false,
+   "seconds": 120,
+   "finished": "2026-10-28 00:44:40",
+   "files_in": 4
+  },
+  "merge:n_06": {
+   "stage": "merge",
+   "iid": "n_06",
+   "slug": "tomato-3dfirst-merge-n06",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:42:11",
+   "t0": 1793115731.5080047,
+   "gpu": false,
+   "seconds": 40,
+   "finished": "2026-10-28 01:22:57",
+   "files_in": 4
+  },
+  "merge:n_05": {
+   "stage": "merge",
+   "iid": "n_05",
+   "slug": "tomato-3dfirst-merge-n05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:44:47",
+   "t0": 1793115887.9540842,
+   "gpu": false,
+   "seconds": 88,
+   "finished": "2026-10-28 00:47:30",
+   "files_in": 4
+  },
+  "candsrf:n_02": {
+   "stage": "candsrf",
+   "iid": "n_02",
+   "slug": "tomato-3dfirst-candsrf-n02",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:45:44",
+   "t0": 1793115944.4559047,
+   "gpu": true,
+   "views": 17,
+   "seconds": 448,
+   "finished": "2026-10-28 00:54:54",
+   "files_in": 18
+  },
+  "merge:t2_04": {
+   "stage": "merge",
+   "iid": "t2_04",
+   "slug": "tomato-3dfirst-merge-t204",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:47:36",
+   "t0": 1793116056.9852989,
+   "gpu": false,
+   "seconds": 185,
+   "finished": "2026-10-28 00:52:44",
+   "files_in": 4
+  },
+  "merge:n_02": {
+   "stage": "merge",
+   "iid": "n_02",
+   "slug": "tomato-3dfirst-merge-n02",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:54:58",
+   "t0": 1793116498.3420415,
+   "gpu": false,
+   "seconds": 85,
+   "finished": "2026-10-28 00:58:29",
+   "files_in": 4
+  },
+  "cands:n_03": {
+   "stage": "cands",
+   "iid": "n_03",
+   "slug": "tomato-3dfirst-cands-n03",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 00:55:02",
+   "t0": 1793116502.0834153,
+   "gpu": true,
+   "views": 23,
+   "seconds": 533,
+   "finished": "2026-10-28 01:10:32",
+   "files_in": 24
+  },
+  "candsrf:n_03": {
+   "stage": "candsrf",
+   "iid": "n_03",
+   "slug": "tomato-3dfirst-candsrf-n03",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 01:11:34",
+   "t0": 1793117494.6776366,
+   "gpu": true,
+   "views": 23,
+   "seconds": 491,
+   "finished": "2026-10-28 02:00:16",
+   "files_in": 24
+  },
+  "merge:n_03": {
+   "stage": "merge",
+   "iid": "n_03",
+   "slug": "tomato-3dfirst-merge-n03",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-28 02:00:21",
+   "t0": 1793120421.1308248,
+   "gpu": false,
+   "seconds": 201,
+   "finished": "2026-10-28 02:05:11",
+   "files_in": 4
+  },
+  "pre:e_05": {
+   "stage": "pre",
+   "iid": "e_05",
+   "slug": "tomato-3dfirst-pre-e05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:17:20",
+   "t0": 1793452640.7785382,
+   "gpu": false,
+   "seconds": 141,
+   "finished": "2026-10-31 22:22:49",
+   "files_in": 30
+  },
+  "pre:e_01": {
+   "stage": "pre",
+   "iid": "e_01",
+   "slug": "tomato-3dfirst-pre-e01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:18:39",
+   "t0": 1793452719.4597137,
+   "gpu": false,
+   "seconds": 165,
+   "finished": "2026-10-31 22:23:37",
+   "files_in": 24
+  },
+  "cands:e_05": {
+   "stage": "cands",
+   "iid": "e_05",
+   "slug": "tomato-3dfirst-cands-e05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:23:42",
+   "t0": 1793453022.5303695,
+   "gpu": true,
+   "views": 24,
+   "seconds": 620,
+   "finished": "2026-10-31 22:37:03",
+   "files_in": 25
+  },
+  "pre:e_04": {
+   "stage": "pre",
+   "iid": "e_04",
+   "slug": "tomato-3dfirst-pre-e04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:24:56",
+   "t0": 1793453096.9848228,
+   "gpu": false,
+   "seconds": 112,
+   "finished": "2026-10-31 22:28:19",
+   "files_in": 21
+  },
+  "pre:e_07": {
+   "stage": "pre",
+   "iid": "e_07",
+   "slug": "tomato-3dfirst-pre-e07",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:26:06",
+   "t0": 1793453166.0980935,
+   "gpu": false,
+   "seconds": 303,
+   "finished": "2026-10-31 22:33:39",
+   "files_in": 23
+  },
+  "pre:e_06": {
+   "stage": "pre",
+   "iid": "e_06",
+   "slug": "tomato-3dfirst-pre-e06",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:29:41",
+   "t0": 1793453381.3421814,
+   "gpu": false,
+   "seconds": 358,
+   "finished": "2026-10-31 22:37:42",
+   "files_in": 19
+  },
+  "pre:e_03": {
+   "stage": "pre",
+   "iid": "e_03",
+   "slug": "tomato-3dfirst-pre-e03",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:34:54",
+   "t0": 1793453694.9761796,
+   "gpu": false,
+   "seconds": 300,
+   "finished": "2026-10-31 22:42:51",
+   "files_in": 24
+  },
+  "candsrf:e_05": {
+   "stage": "candsrf",
+   "iid": "e_05",
+   "slug": "tomato-3dfirst-candsrf-e05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:38:45",
+   "t0": 1793453925.8208728,
+   "gpu": true,
+   "views": 24,
+   "seconds": 886,
+   "finished": "2026-10-31 22:55:08",
+   "files_in": 25
+  },
+  "pre:e_02": {
+   "stage": "pre",
+   "iid": "e_02",
+   "slug": "tomato-3dfirst-pre-e02",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:47:39",
+   "t0": 1793454459.3709064,
+   "gpu": false,
+   "seconds": 270,
+   "finished": "2026-10-31 22:52:57",
+   "files_in": 13
+  },
+  "merge:e_05": {
+   "stage": "merge",
+   "iid": "e_05",
+   "slug": "tomato-3dfirst-merge-e05",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:55:14",
+   "t0": 1793454914.4180193,
+   "gpu": false,
+   "seconds": 40,
+   "finished": "2026-10-31 22:57:06",
+   "files_in": 4
+  },
+  "cands:e_01": {
+   "stage": "cands",
+   "iid": "e_01",
+   "slug": "tomato-3dfirst-cands-e01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 22:55:20",
+   "t0": 1793454920.137764,
+   "gpu": true,
+   "views": 18,
+   "seconds": 454,
+   "finished": "2026-10-31 23:05:26",
+   "files_in": 19
+  },
+  "candsrf:e_01": {
+   "stage": "candsrf",
+   "iid": "e_01",
+   "slug": "tomato-3dfirst-candsrf-e01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 23:06:31",
+   "t0": 1793455591.4613345,
+   "gpu": true,
+   "views": 18,
+   "seconds": 589,
+   "finished": "2026-10-31 23:33:21",
+   "files_in": 19
+  },
+  "merge:e_01": {
+   "stage": "merge",
+   "iid": "e_01",
+   "slug": "tomato-3dfirst-merge-e01",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 23:49:02",
+   "t0": 1793458142.0967934,
+   "gpu": false,
+   "seconds": 41,
+   "finished": "2026-10-31 23:52:30",
+   "files_in": 4
+  },
+  "cands:e_04": {
+   "stage": "cands",
+   "iid": "e_04",
+   "slug": "tomato-3dfirst-cands-e04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-10-31 23:49:06",
+   "t0": 1793458146.5546207,
+   "gpu": true,
+   "views": 15,
+   "seconds": 492,
+   "finished": "2026-10-31 23:59:08",
+   "files_in": 16
+  },
+  "candsrf:e_04": {
+   "stage": "candsrf",
+   "iid": "e_04",
+   "slug": "tomato-3dfirst-candsrf-e04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-11-01 00:00:08",
+   "t0": 1793458808.5123289,
+   "gpu": true,
+   "views": 15,
+   "seconds": 314,
+   "finished": "2026-11-01 00:06:41",
+   "files_in": 16
+  },
+  "merge:e_04": {
+   "stage": "merge",
+   "iid": "e_04",
+   "slug": "tomato-3dfirst-merge-e04",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-11-01 00:06:47",
+   "t0": 1793459207.7425785,
+   "gpu": false,
+   "seconds": 74,
+   "finished": "2026-11-01 00:08:40",
+   "files_in": 4
+  },
+  "cands:e_07": {
+   "stage": "cands",
+   "iid": "e_07",
+   "slug": "tomato-3dfirst-cands-e07",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-11-01 00:06:54",
+   "t0": 1793459214.2356732,
+   "gpu": true,
+   "views": 17,
+   "seconds": 526,
+   "finished": "2026-11-01 00:16:52",
+   "files_in": 18
+  },
+  "candsrf:e_07": {
+   "stage": "candsrf",
+   "iid": "e_07",
+   "slug": "tomato-3dfirst-candsrf-e07",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-11-01 00:17:50",
+   "t0": 1793459870.7211008,
+   "gpu": true,
+   "views": 17,
+   "seconds": 360,
+   "finished": "2026-11-01 00:47:41",
+   "files_in": 18
+  },
+  "merge:e_07": {
+   "stage": "merge",
+   "iid": "e_07",
+   "slug": "tomato-3dfirst-merge-e07",
+   "tries": 1,
+   "status": "done",
+   "version": 1,
+   "started": "2026-11-01 00:47:45",
+   "t0": 1793461665.705787,
+   "gpu": false,
+   "seconds": 37,
+   "finished": "2026-11-01 00:49:29",
+   "files_in": 4
+  },
+  "cands:e_06": {
+   "stage": "cands",
+   "iid": "e_06",
+   "slug": "tomato-3dfirst-cands-e06",
+   "tries": 1,
+   "status": "queued",
+   "version": 1,
+   "started": "2026-11-01 00:47:49",
+   "t0": 1793461669.340118,
+   "gpu": true,
+   "views": 13,
+   "seconds": null,
+   "finished": "2026-11-01 01:15:32",
+   "error": "kernel status CANCEL_ACKNOWLEDGED"
+  }
+ },
+ "datasets": {
+  "p1-all-code-33d9817cb0080d41": {
+   "hash": "707faff7cbc28e5b",
+   "ready": true,
+   "at": "2026-10-28 00:24:25"
+  },
+  "tomato-3dfirst-r31b": {
+   "hash": "256f163c0a490398",
+   "ready": true,
+   "at": "2026-10-27 16:21:35"
+  },
+  "tomato-3dfirst-in-n04": {
+   "hash": "a1134c752242bde6",
+   "ready": true,
+   "at": "2026-10-27 16:25:08"
+  },
+  "tomato-3dfirst-in-t202": {
+   "hash": "c13fcfe216ff143e",
+   "ready": true,
+   "at": "2026-10-27 16:26:35"
+  },
+  "tomato-3dfirst-in-n01": {
+   "hash": "163d64c0acc661fa",
+   "ready": true,
+   "at": "2026-10-27 16:50:07"
+  },
+  "tomato-3dfirst-in-t205": {
+   "hash": "c470970b5b623ff8",
+   "ready": true,
+   "at": "2026-10-27 18:53:57"
+  },
+  "tomato-3dfirst-in-n05": {
+   "hash": "7190d12a64819ba2",
+   "ready": true,
+   "at": "2026-10-27 18:59:51"
+  },
+  "tomato-3dfirst-in-n06": {
+   "hash": "6000d84c388bf870",
+   "ready": true,
+   "at": "2026-10-27 19:04:06"
+  },
+  "tomato-3dfirst-in-t204": {
+   "hash": "e5c933c3bc084d8d",
+   "ready": true,
+   "at": "2026-10-27 19:08:10"
+  },
+  "tomato-3dfirst-in-n02": {
+   "hash": "b2b049a13d23a460",
+   "ready": true,
+   "at": "2026-10-27 19:14:59"
+  },
+  "tomato-3dfirst-in-n03": {
+   "hash": "47dd20cb43bd054a",
+   "ready": true,
+   "at": "2026-10-27 19:16:23"
+  },
+  "tomato-3dfirst-rf-n04": {
+   "hash": "36ba348fac25a929",
+   "ready": true,
+   "at": "2026-10-27 19:39:31"
+  },
+  "tomato-3dfirst-rf-t202": {
+   "hash": "e1c37830148c1808",
+   "ready": true,
+   "at": "2026-10-27 19:55:46"
+  },
+  "tomato-3dfirst-rf-n01": {
+   "hash": "0ee053618f41ecd6",
+   "ready": true,
+   "at": "2026-10-27 21:14:10"
+  },
+  "tomato-3dfirst-rf-t205": {
+   "hash": "f400a1c9db8947c8",
+   "ready": true,
+   "at": "2026-10-27 21:45:02"
+  },
+  "tomato-3dfirst-rf-n06": {
+   "hash": "be4c5a6c757daa00",
+   "ready": true,
+   "at": "2026-10-27 22:06:00"
+  },
+  "tomato-3dfirst-rf-n05": {
+   "hash": "02a7a64b528a72d4",
+   "ready": true,
+   "at": "2026-10-27 23:15:44"
+  },
+  "tomato-3dfirst-rf-t204": {
+   "hash": "a7e36746245ed0bf",
+   "ready": true,
+   "at": "2026-10-27 23:33:55"
+  },
+  "p1-all-code-10420fbe1308dc3c": {
+   "hash": "1ba38960e05bfa47",
+   "ready": true,
+   "at": "2026-10-28 00:35:49"
+  },
+  "tomato-3dfirst-rf-n02": {
+   "hash": "3e56bb2c14ab5105",
+   "ready": true,
+   "at": "2026-10-28 00:45:40"
+  },
+  "tomato-3dfirst-rf-n03": {
+   "hash": "ca9c07043fc65171",
+   "ready": true,
+   "at": "2026-10-28 01:11:29"
+  },
+  "p1-all-code-7bba4d95fc32931d": {
+   "hash": "bf8d2bd3fe5650e9",
+   "ready": true,
+   "at": "2026-10-31 23:48:56"
+  },
+  "tomato-3dfirst-in-e05": {
+   "hash": "fb6a005f79e06c5a",
+   "ready": true,
+   "at": "2026-10-31 22:17:12"
+  },
+  "tomato-3dfirst-in-e01": {
+   "hash": "5736d09cdb9a2990",
+   "ready": true,
+   "at": "2026-10-31 22:18:34"
+  },
+  "tomato-3dfirst-in-e04": {
+   "hash": "083de1290f0a506a",
+   "ready": true,
+   "at": "2026-10-31 22:24:52"
+  },
+  "tomato-3dfirst-in-e07": {
+   "hash": "8dd7a793389eb30c",
+   "ready": true,
+   "at": "2026-10-31 22:26:01"
+  },
+  "tomato-3dfirst-in-e06": {
+   "hash": "dfdffe3b70285f6c",
+   "ready": true,
+   "at": "2026-10-31 22:29:35"
+  },
+  "tomato-3dfirst-in-e03": {
+   "hash": "8df989594936be56",
+   "ready": true,
+   "at": "2026-10-31 22:34:49"
+  },
+  "tomato-3dfirst-rf-e05": {
+   "hash": "c8e4442487569da3",
+   "ready": true,
+   "at": "2026-10-31 22:38:40"
+  },
+  "tomato-3dfirst-in-e02": {
+   "hash": "32f3b3e360188c3b",
+   "ready": true,
+   "at": "2026-10-31 22:47:35"
+  },
+  "tomato-3dfirst-rf-e01": {
+   "hash": "38b3935c7a5b3f28",
+   "ready": true,
+   "at": "2026-10-31 23:06:26"
+  },
+  "tomato-3dfirst-rf-e04": {
+   "hash": "d18a3dac5657a009",
+   "ready": true,
+   "at": "2026-11-01 00:00:04"
+  },
+  "tomato-3dfirst-rf-e07": {
+   "hash": "41d4e37df2f74acd",
+   "ready": true,
+   "at": "2026-11-01 00:17:46"
+  }
+ },
+ "blocked": {
+  "at": "2026-11-01 01:15:36",
+  "why": "kernel push refused (tomato-3dfirst-cands-e06): rning: Looks like you're using an outdated `kaggle` version (installed: 2.2.4), please consider upgrading to the latest version (2.2.5)\nKernel push error: Maximum batch GPU session count of 2 reached."
+ },
+ "rf": {
+  "t2_02": {
+   "status": "done",
+   "photos": 31,
+   "missing": [],
+   "at": "2026-10-27 16:42:39"
+  },
+  "n_04": {
+   "status": "done",
+   "photos": 28,
+   "missing": [],
+   "at": "2026-10-27 16:48:39"
+  },
+  "n_01": {
+   "status": "done",
+   "photos": 27,
+   "missing": [],
+   "at": "2026-10-27 18:53:43"
+  },
+  "t2_05": {
+   "status": "done",
+   "photos": 26,
+   "missing": [],
+   "at": "2026-10-27 19:03:35"
+  },
+  "n_05": {
+   "status": "done",
+   "photos": 19,
+   "missing": [],
+   "at": "2026-10-27 19:07:41"
+  },
+  "n_06": {
+   "status": "done",
+   "photos": 9,
+   "missing": [],
+   "at": "2026-10-27 19:14:03"
+  },
+  "t2_04": {
+   "status": "done",
+   "photos": 20,
+   "missing": [],
+   "at": "2026-10-27 19:14:15"
+  },
+  "n_02": {
+   "status": "done",
+   "photos": 17,
+   "missing": [],
+   "at": "2026-10-27 19:23:31"
+  },
+  "n_03": {
+   "status": "done",
+   "photos": 23,
+   "missing": [],
+   "at": "2026-10-27 19:23:36"
+  },
+  "e_01": {
+   "status": "done",
+   "photos": 18,
+   "missing": [],
+   "at": "2026-10-31 22:23:55"
+  },
+  "e_05": {
+   "status": "done",
+   "photos": 24,
+   "missing": [],
+   "at": "2026-10-31 22:24:02"
+  },
+  "e_04": {
+   "status": "done",
+   "photos": 15,
+   "missing": [],
+   "at": "2026-10-31 22:28:33"
+  },
+  "e_07": {
+   "status": "done",
+   "photos": 17,
+   "missing": [],
+   "at": "2026-10-31 22:33:53"
+  },
+  "e_06": {
+   "status": "done",
+   "photos": 13,
+   "missing": [],
+   "at": "2026-10-31 22:37:53"
+  },
+  "e_03": {
+   "status": "done",
+   "photos": 18,
+   "missing": [],
+   "at": "2026-10-31 22:43:34"
+  },
+  "e_02": {
+   "status": "done",
+   "photos": 7,
+   "missing": [],
+   "at": "2026-10-31 22:53:03"
+  }
+ }
+}

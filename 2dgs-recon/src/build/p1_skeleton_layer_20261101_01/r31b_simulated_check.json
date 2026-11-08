@@ -1,0 +1,45 @@
+{
+ "labels": [
+  "user_skeleton_seeds",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b-style_unaccepted",
+  "no_reference",
+  "simulated_from_human_traces"
+ ],
+ "skeleton_file": "data\\skeletons\\R3-1b\\2026-10-21\\skeleton_v1.json",
+ "leaves": 10,
+ "mapped_to_pipeline_leaf": 10,
+ "unmapped": [],
+ "validator_flags": [],
+ "bundle_arrays_identical": {
+  "trace_pts": true,
+  "trace_leaf": true,
+  "trace_id": true,
+  "max_dev_mm": 0.0,
+  "shapes": [
+   [
+    403,
+    3
+   ],
+   [
+    403,
+    3
+   ]
+  ]
+ },
+ "plumbing_pass": true,
+ "frozen_results_used": "the frozen R8_pc / R8_pc_rachis result files are the output of this route (same input arrays, same frozen code); no rerun (contract Amendment A1)",
+ "frozen_numbers": {
+  "R8_pc": {
+   "report_half_accuracy": 0.8326,
+   "coverage": 0.9012
+  },
+  "R8_pc_rachis": {
+   "pooled_accuracy": 0.9362,
+   "coverage": 0.9805,
+   "weakest": "leaf 7 -> leaf 6 (0.849)"
+  }
+ },
+ "human_leaves_used_for": "scoring only (frozen numbers)"
+}

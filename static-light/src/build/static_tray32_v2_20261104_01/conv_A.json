@@ -1,0 +1,26 @@
+{
+ "rows": [
+  {
+   "receivers_per_copy": 8000,
+   "ke": 32,
+   "efficiency_a085": 0.0600027793912201,
+   "rel_change_vs_previous": null,
+   "seconds": 54
+  },
+  {
+   "receivers_per_copy": 16000,
+   "ke": 64,
+   "efficiency_a085": 0.059860025681185786,
+   "rel_change_vs_previous": -0.0023791182922302534,
+   "seconds": 193
+  }
+ ],
+ "scene": {
+  "sid": "S13",
+  "p": 0.1,
+  "shape": "flat",
+  "pos": "trays",
+  "height": 0.4
+ },
+ "table": "A"
+}

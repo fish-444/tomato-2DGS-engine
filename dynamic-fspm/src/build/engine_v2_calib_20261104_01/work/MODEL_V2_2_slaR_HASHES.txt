@@ -1,0 +1,5 @@
+30e0df8c3544b08b599c4e5fa4252287b9eef4be9edc180344658640e0600be6 *Model_v2_2_slaR.rgg
+b4e5b879aec0f1570bddd80951b1180aa187e99be322ed1381cc1abd6b94c9a5 *parametersMicroTom_v2_2_slaR.rgg
+f69b1d3c53ae1beb39ee4d7091ad10fd9c08f2117b5947cfe3971e81bd75ca90 *v2_2_slaR_config.json
+44fd87380a0c33e8ed5a40f804e06146f44de24c3673ace94b199a5a6e204cb0 *v2_2_slaR_request_m00.json
+status: FROZEN 2026-11-06 (CONTRACT Amendment 19); m00 instance of arm V22R_s5.0843 (f_SLA 1.15, internodes x5.0843, rachis C4A_rachis_mult_R.json); base_leaf_area_below_target

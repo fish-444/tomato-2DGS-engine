@@ -1,0 +1,30 @@
+{
+ "CONTRACT.md": "ac729956283bcbe4c2e1eea4d6565351b3a65b99ddf4b5926c880c94577e6b4a",
+ "CONTRACT_HASHES.json": "a7be4f657409dd7429bc6ecde9e49da01fc8b54a77c26bc98b1e21ee2720b2d9",
+ "coplanar_sep_R3-1b.csv": "ac3932321778ba399d5a20c0c99ff719ffa2999c6861eb7db437e0d3465bc00d",
+ "DECOMPOSITION.json": "ac6e8e2aa7b3f40c35034ee49b6fb87f6fb497c27ad661d8653fddfdfc293ac8",
+ "GATES.json": "ecf466f7b1e9db154bd06f0ee9d8b0aaf60db217c38d40c5d5f3ead16edbf646",
+ "make_offsets.py": "a7edf6dd2f2527982f541f3f376e5a208b179daaeaa9e9b0b658dd99da9be96b",
+ "make_report_sep.py": "b0c7fb408723395d2393e7a8e9d4f8ee2239e2c97a22466ee8a9444c739f429e",
+ "OFFSET_META.json": "2c38bac16dd8e2cedca15332c97d81755c46815ef4bd74d2d1504f793729cf26",
+ "T_flat_offset_0.05_triangles.csv": "5e37900cb56b3ff513b15d91efbcb42df41ac07fd1f3eceaa727dd893502bc78",
+ "T_flat_offset_0.1_triangles.csv": "f3e80e952b3c73ca9ca21a2ba66fdddc313c7037c532002e92255adaf63bcd67",
+ "T_flat_offset_0.2_triangles.csv": "6a7725e29f38fa253fb109a3cd978c7a69f68234be7659c88fe432ca1ce87307",
+ "T_flat_triangles.csv": "7347257569e8975b0268cf1873ef3a3a48a4567b4a5ced5d5d3d5763c930279b",
+ "T_fold_triangles.csv": "a22f80379eebbd71606e9e34eb93c055aeaed6760198c90a0030d3707a51526f",
+ "T_foldcup_triangles.csv": "0c8f92d7fb08274eaec893404c2895db7c699da654738d0f3af8b1543763fbcf",
+ "out_k1/coplanar-sep-k1-20261101.log": "157f273692769114aa7cf39180f2142ff3b4b81e946a8230c74791a8cb6a3a13",
+ "out_k1/per_surfel_D.npz": "1d0aceaeeb62d1ee46fd475574eea0011856e54dca86dbbb97598e8c650cf0bd",
+ "out_k1/progress.log": "e3855d35178a03465818a2c754d2eb5acd2298b1412f6c6d6b313b02384b3631",
+ "out_k1/results.json": "9738b323d8e82640a7274668378a41c346ca9198dcfa696109b2fc55118e47fd",
+ "figures/decomposition_bars.png": "67d492676bf28f4a92db524143cff4827d996ec93a265a9c146370ca388652a5",
+ "engine_hash_static": {
+  "__init__.py": "d45be50c8ea66d483b6c307f8f5c2c462fb98734d01c91e8aa364ecd20db2f7e",
+  "geometry.py": "0685d79ab52d03bdaa35309c043c9ed33d4ac39bed3de142dc670a344a8ba54c",
+  "light.py": "4abf2db702763fe547815f03a5e954166357d5cc19bdc5f85fb8710aad351bb5",
+  "obs.py": "f5da2b61a51b2beaa7def8ab179d68ff310fff1a9ebd7027de09d0e664a60fec",
+  "tau_obs.py": "9f9ba0fdee90fec767057454deeb08934213cc9b5c0aab0ae1511c1075bb5c56",
+  "tau_runs.py": "4bf243579832c7b9e340130dab3d35b0c781d5b4a1c68b18073b632adc1cb5d9",
+  "tracer.py": "5844e991c51c638c5902c2632a134a5fb1780e99a0a2d2add2c8436713c6e4f3"
+ }
+}

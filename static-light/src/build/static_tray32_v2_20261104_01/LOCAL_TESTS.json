@@ -1,0 +1,79 @@
+{
+ "C2": {
+  "worst_rel_dev": 1.740545148010142e-07,
+  "passed": true,
+  "samples_per_scene": [
+   1536
+  ],
+  "up_fraction_by_scene": {
+   "S01": 0.0,
+   "S02": 0.0,
+   "S03": 0.0,
+   "S04": 0.0,
+   "S05": 0.26794,
+   "S06": 0.26794,
+   "S07": 0.26794,
+   "S08": 0.26794,
+   "S09": 0.58578,
+   "S10": 0.58578,
+   "S11": 0.58578,
+   "S12": 0.58578,
+   "S13": 0.0,
+   "S14": 0.0,
+   "S15": 0.0,
+   "S16": 0.0,
+   "S17": 0.26794,
+   "S18": 0.26794,
+   "S19": 0.26794,
+   "S20": 0.26794,
+   "S21": 0.58578,
+   "S22": 0.58578,
+   "S23": 0.58578,
+   "S24": 0.58578,
+   "S25": 0.0,
+   "S26": 0.0,
+   "S27": 0.0,
+   "S28": 0.0,
+   "S29": 0.26794,
+   "S30": 0.26794,
+   "S31": 0.26794,
+   "S32": 0.26794,
+   "S33": 0.58578,
+   "S34": 0.58578,
+   "S35": 0.58578,
+   "S36": 0.58578
+  }
+ },
+ "C1_tau0": {
+  "max_rel_shaded": 0.0,
+  "max_rel_unshaded": 0.0,
+  "passed": true,
+  "shaded_fraction": 0.6897887194549175,
+  "overflow": 0
+ },
+ "C1_tau0.07": {
+  "max_rel_shaded": 0.0,
+  "max_rel_unshaded": 0.0,
+  "passed": true,
+  "shaded_fraction": 0.7019509261794864,
+  "overflow": 0
+ },
+ "layout_p0.06": {
+  "tray_centre_spacing": 0.22000000000000003,
+  "expected": 0.22,
+  "gap_nearest_plants": 0.16000000000000003,
+  "expected_gap_plants": 0.16
+ },
+ "layout_p0.1": {
+  "tray_centre_spacing": 0.30000000000000004,
+  "expected": 0.30000000000000004,
+  "gap_nearest_plants": 0.20000000000000007,
+  "expected_gap_plants": 0.2
+ },
+ "layout_p0.14": {
+  "tray_centre_spacing": 0.38000000000000006,
+  "expected": 0.38,
+  "gap_nearest_plants": 0.24,
+  "expected_gap_plants": 0.24000000000000002
+ }
+}

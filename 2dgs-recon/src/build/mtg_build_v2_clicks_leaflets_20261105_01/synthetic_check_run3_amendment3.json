@@ -1,0 +1,31 @@
+{
+ "leaves": 21,
+ "count_exact_share": 0.7619047619047619,
+ "median_abs_area_err": 0.1385,
+ "passed": false,
+ "gate": "count exact >= 0.80 and median |area err| <= 0.15",
+ "amendment": 3,
+ "by_true_n": {
+  "5": {
+   "leaves": 2,
+   "count_ok": 0
+  },
+  "6": {
+   "leaves": 3,
+   "count_ok": 0
+  },
+  "7": {
+   "leaves": 16,
+   "count_ok": 16
+  }
+ },
+ "terminal_found_share": 1.0,
+ "terminal_area_err_median": 0.05659201720490057,
+ "terminal_abs_area_err_median": 0.05659201720490057,
+ "max_conservation_err": 5.684341886080802e-14,
+ "arms": [
+  "ev-bc5a-k1-20261104/out/C5f1.15_m00",
+  "ev-bc5a-k0-20261104/out/C5f0.85_m00",
+  "ev-bc4v-k0-20261104/out/C4V_m00"
+ ]
+}

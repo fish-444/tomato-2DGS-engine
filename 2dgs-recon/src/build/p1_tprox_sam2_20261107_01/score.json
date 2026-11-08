@@ -1,0 +1,166 @@
+{
+ "fairness": {
+  "T0": "frozen",
+  "A": "prompt_independent",
+  "B": "prompt_from_scoring_labels",
+  "AB": "prompt_from_scoring_labels"
+ },
+ "T0_match_frozen_r8pc": 1.0,
+ "arms": {
+  "T0": {
+   "tag": "T0",
+   "tuning": {
+    "n": 9518,
+    "correct": 7261,
+    "accuracy": 0.7629,
+    "wilson95": [
+     0.7542,
+     0.7713
+    ],
+    "contested_share": 0.0003
+   },
+   "report": {
+    "n": 6132,
+    "correct": 4601,
+    "accuracy": 0.7503,
+    "wilson95": [
+     0.7393,
+     0.761
+    ],
+    "contested_share": 0.0095
+   }
+  },
+  "A": {
+   "tag": "A_s40",
+   "tuning": {
+    "n": 9518,
+    "correct": 7300,
+    "accuracy": 0.767,
+    "wilson95": [
+     0.7584,
+     0.7754
+    ],
+    "contested_share": 0.0003
+   },
+   "report": {
+    "n": 6132,
+    "correct": 5174,
+    "accuracy": 0.8438,
+    "wilson95": [
+     0.8345,
+     0.8526
+    ],
+    "contested_share": 0.0098
+   },
+   "paired_diff_vs_T0": {
+    "diff": 0.0934,
+    "ci95": [
+     0.0839,
+     0.1027
+    ]
+   },
+   "improved": true,
+   "run": {
+    "rounds": [
+     14818,
+     714,
+     233,
+     198,
+     69
+    ],
+    "r8_labelled": 32826,
+    "final_labelled": 42480,
+    "grouped_nodes": 6738,
+    "groups": 200
+   }
+  },
+  "B": {
+   "tag": "B_n2_a70",
+   "tuning": {
+    "n": 9518,
+    "correct": 7261,
+    "accuracy": 0.7629,
+    "wilson95": [
+     0.7542,
+     0.7713
+    ],
+    "contested_share": 0.0005
+   },
+   "report": {
+    "n": 6132,
+    "correct": 4798,
+    "accuracy": 0.7825,
+    "wilson95": [
+     0.772,
+     0.7926
+    ],
+    "contested_share": 0.0148
+   },
+   "paired_diff_vs_T0": {
+    "diff": 0.0321,
+    "ci95": [
+     0.0269,
+     0.0374
+    ]
+   },
+   "improved": true,
+   "run": {
+    "rounds": [
+     12931,
+     525,
+     171,
+     323,
+     10
+    ],
+    "r8_labelled": 32733,
+    "final_labelled": 42371,
+    "added_seeds": 6597,
+    "dropped_in_mixed_groups": 0
+   }
+  },
+  "AB": {
+   "tag": "AB_s60_n2_a70",
+   "tuning": {
+    "n": 9518,
+    "correct": 7301,
+    "accuracy": 0.7671,
+    "wilson95": [
+     0.7585,
+     0.7755
+    ],
+    "contested_share": 0.0002
+   },
+   "report": {
+    "n": 6132,
+    "correct": 5404,
+    "accuracy": 0.8813,
+    "wilson95": [
+     0.8729,
+     0.8891
+    ],
+    "contested_share": 0.0095
+   },
+   "paired_diff_vs_T0": {
+    "diff": 0.131,
+    "ci95": [
+     0.1213,
+     0.1403
+    ]
+   },
+   "improved": true,
+   "run": {
+    "rounds": [
+     11218,
+     791,
+     143,
+     59,
+     30
+    ],
+    "r8_labelled": 32837,
+    "final_labelled": 42512,
+    "added_seeds": 7189,
+    "dropped_in_mixed_groups": 0
+   }
+  }
+ }
+}

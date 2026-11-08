@@ -1,0 +1,41 @@
+{
+ "leaf_area_median_by_f": {
+  "0.85": 6.052634823310738,
+  "1.0": 9.064014708815275,
+  "1.15": 13.032721649852528
+ },
+ "targets": {
+  "leaflet_only_lower": {
+   "target": 29.3,
+   "f_needed_extrapolated": 1.570737887003289,
+   "sla_needed": 0.03926844717508223,
+   "loglog_slope": 2.598354690243266,
+   "status": "outside_range_extrapolated",
+   "model_v2_uses_bound": 1.15
+  },
+  "leaflet_only_upper": {
+   "target": 43.6,
+   "f_needed_extrapolated": 1.8303647024476806,
+   "sla_needed": 0.04575911756119202,
+   "loglog_slope": 2.598354690243266,
+   "status": "outside_range_extrapolated",
+   "model_v2_uses_bound": 1.15
+  },
+  "leaflet_only_middle": {
+   "target": 36.45,
+   "f_needed_extrapolated": 1.7084404978277865,
+   "sla_needed": 0.04271101244569467,
+   "loglog_slope": 2.598354690243266,
+   "status": "outside_range_extrapolated",
+   "model_v2_uses_bound": 1.15
+  },
+  "b_upper_median11": {
+   "target": 79.8,
+   "f_needed_extrapolated": 2.3097735994916326,
+   "sla_needed": 0.05774433998729082,
+   "loglog_slope": 2.598354690243266,
+   "status": "outside_range_extrapolated",
+   "model_v2_uses_bound": 1.15
+  }
+ }
+}

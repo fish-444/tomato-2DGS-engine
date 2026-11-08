@@ -1,0 +1,12 @@
+{
+ "MAPPING_TABLE.csv": "1256bcc195682c6e5a4cd1a1598161c216fe3aab55e622b490bc71a31b06373c",
+ "MTG_TEMPLATE_v0_hand_draft.csv": "2602dce577762383977065152fa4d11f4e5b4d7843ce2387b2d916985900fe7d",
+ "traits_by_rank.csv": "5e430b2d2a87fb9228f6dd5af03130e7d0502f006a4adb03bd814a9c713a5589",
+ "traits_per_leaf.csv": "8e87ebb6750cb5e19480d42f6f0bdb70086342e52cd1e5a8ef32413091341ae2",
+ "traits_per_plant.csv": "c61df2a8d3e34c5d8618b0ca1a1b005610c2e2698d5d72e2d51963194f5286bc",
+ "kaggle_out/out/gate.json": "dbf434a45344c1e876ea41a3972d2fb86f1f9a7c2bbccd5587a87702ca79fae0",
+ "kaggle_out/out/real_A_traits.json": "86b8318646f7781e1300fb4e736a8091528f4de07d4ad7b3cf153275b6efed70",
+ "kaggle_out/out/run_log.txt": "324804c601cc9d30f5528571dbc7e6e1db512f3b7f57e4231ab12991477f5e53",
+ "kaggle_out/out/synthetic_recovery_leaf.csv": "16e602934a7eba667596b08f55e0bb03793617772abf692499e8616d8219da93",
+ "kaggle_out/out/synthetic_recovery_plant.csv": "bbb407cbbbe7650f1573d1da044f68b0c4c8b99fb9b08e77b3baedc3f5953bb0"
+}

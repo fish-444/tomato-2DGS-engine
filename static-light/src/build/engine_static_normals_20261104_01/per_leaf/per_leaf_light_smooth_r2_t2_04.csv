@@ -1,0 +1,10 @@
+# normal_smoothing_test; relative_light; conditional_on_unvalidated_scale; skeleton_labels_ungraded; after_checkpoint_v1; t2_04 smooth_r2; assigned surfels only (lower bound); build/p1_dz10_labels_20261101_01/labels_tprox_t2_04_6e2e267877ca.npz
+leaf,surfels,area_b_mm2,absorbed,light_per_area,self_shading,rank_by_absorbed
+t2_04-L01,7512,632.446,275.7752,0.436046,0.2882,6
+t2_04-L02,3301,417.861,171.4264,0.410248,0.37,8
+t2_04-L03,9362,959.445,324.8301,0.338561,0.3967,3
+t2_04-L04,6167,799.514,349.1585,0.436714,0.3519,2
+t2_04-L05,10612,1091.644,524.5102,0.480477,0.3421,1
+t2_04-L06,7725,911.047,320.2289,0.351496,0.4466,4
+t2_04-L07,3346,506.384,195.954,0.386968,0.4697,7
+t2_04-L08,5763,487.91,275.8941,0.565461,0.2525,5

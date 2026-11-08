@@ -1,0 +1,94 @@
+{
+ "reproduction_d5_cube_vpcleanup": {
+  "plant": {
+   "here": 0.002812861838090849,
+   "engine": 0.00281286183809085,
+   "rel_diff": -3.3306690738754696e-16
+  },
+  "leaf_1": {
+   "here": 0.0006130164760542044,
+   "engine": 0.0006130164760542044,
+   "rel_diff": 0.0
+  },
+  "leaf_7": {
+   "here": 0.00046458353292959246,
+   "engine": 0.00046458353292959257,
+   "rel_diff": -2.220446049250313e-16
+  }
+ },
+ "reproduction_pass": true,
+ "same_total": {
+  "d1.5_halfFalse": {
+   "R7": 1838.6087792391338,
+   "R8_pc": 1838.6087792391338,
+   "rel_diff": 0.0
+  },
+  "d1.5_halfTrue": {
+   "R7": 1828.9182460288284,
+   "R8_pc": 1828.9182460288284,
+   "rel_diff": 0.0
+  },
+  "d2_halfFalse": {
+   "R7": 2043.4332561549913,
+   "R8_pc": 2043.4332561549913,
+   "rel_diff": 0.0
+  },
+  "d2_halfTrue": {
+   "R7": 2033.3411448347756,
+   "R8_pc": 2033.3411448347756,
+   "rel_diff": 0.0
+  },
+  "d2.4_halfFalse": {
+   "R7": 2185.597733939885,
+   "R8_pc": 2185.597733939885,
+   "rel_diff": 0.0
+  },
+  "d2.4_halfTrue": {
+   "R7": 2175.2313833037056,
+   "R8_pc": 2175.2313833037056,
+   "rel_diff": 0.0
+  },
+  "d3_halfFalse": {
+   "R7": 2379.7084434741337,
+   "R8_pc": 2379.7084434741337,
+   "rel_diff": 0.0
+  },
+  "d3_halfTrue": {
+   "R7": 2369.034614137059,
+   "R8_pc": 2369.034614137059,
+   "rel_diff": 0.0
+  },
+  "d5_halfFalse": {
+   "R7": 2861.1052142184258,
+   "R8_pc": 2861.1052142184258,
+   "rel_diff": 0.0
+  },
+  "d5_halfTrue": {
+   "R7": 2849.7084817285004,
+   "R8_pc": 2849.7084817285004,
+   "rel_diff": 0.0
+  }
+ },
+ "same_total_pass": true,
+ "closure_max_abs": 4.547473508864641e-13,
+ "canopy_area_sil_mm2": {
+  "here": 6031.17312,
+  "p1_summary": 6031.0,
+  "canopy_surface_rows": 43764,
+  "blade_plus_axis2_rows": 43764,
+  "same_rows": true
+ },
+ "canopy_area_same_both_labels": true,
+ "unassigned_blade": {
+  "R7": 2803,
+  "R8_pc": 1270
+ },
+ "rachis_surfels": {
+  "R7": 0,
+  "R8_pc": 9956,
+  "R8_pc_unabsorbed_axis2": 766,
+  "stem": 2955
+ },
+ "coincident_1um_surfels": 453,
+ "pass": true
+}

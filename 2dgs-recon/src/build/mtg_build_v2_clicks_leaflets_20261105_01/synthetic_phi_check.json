@@ -1,0 +1,9 @@
+{
+ "leaflets": 140,
+ "phi_true_median": 24.31443209209019,
+ "phi_split_median": 14.075934235885356,
+ "diff_median": -7.75764718259073,
+ "abs_diff_median": 14.048170475354961,
+ "abs_diff_p90": 144.49375059160528,
+ "note": "report only (not a gate); engine leaflets; same phi code for truth and split"
+}

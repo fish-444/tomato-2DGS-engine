@@ -1,0 +1,47 @@
+{
+ "labels": [
+  "user_skeleton_seeds",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b-style_unaccepted",
+  "no_reference",
+  "frozen_code_reuse",
+  "main_route_r8pc",
+  "simulated_from_human_traces"
+ ],
+ "agreement_over_frozen_labelled": 0.7763,
+ "agreement_where_both_labelled": 0.7891,
+ "coverage_new": 0.701,
+ "coverage_frozen": 0.6934,
+ "gate": {
+  "agreement_min": 0.95
+ },
+ "passed": false,
+ "run": "build\\p1_skeleton_layer_20261101_01\\r8pc\\R3-1b\\20261101T130242",
+ "hashes": {
+  "pc_absorb": "372c06655d939376",
+  "pc_rachis": "b9e76f0b96a0a912",
+  "compound_cluster": "785eb9913ded51cf",
+  "this": "60461de457e24715",
+  "frozen_bundle": "ec7cfbce98c8c642",
+  "frozen_r8pc_labels": "e1ff792be1c4efdf"
+ },
+ "rachis_agreement_over_frozen_labelled": 0.7938,
+ "per_frozen_leaf_agreement": {
+  "1": 0.951,
+  "2": 0.958,
+  "3": 0.991,
+  "4": 0.878,
+  "5": 0.689,
+  "6": 0.042,
+  "7": 0.86,
+  "8": 0.0
+ },
+ "attempt1": {
+  "run": "r8pc/R3-1b/20261101T013915",
+  "agreement": 0.0895,
+  "majority_remap": 0.796,
+  "reason": "numbering_error (per-line labels vs frozen pipeline leaf numbers)"
+ },
+ "reading": "frozen stage1 = R7 diffusion of the V-P photo base (27,767 seeds); adapter stage1 = 13,156 geometric seeds; the known 6<->7 rachis adjacency and the 5/4 boundary are decided differently by R8_pc from the two seed sets; not tuned (3/8/13 mm unchanged)"
+}

@@ -1,0 +1,22 @@
+{
+ "format": "engine (plant_tree_v1 -> to_engine_structure initial_state.csv)",
+ "theta0_set": 30.0,
+ "compound_leaf_elevation_deg": 30.0,
+ "petiole_direction_elevation_deg": 30.000000000000004,
+ "length_set_mm": 40.0,
+ "petiole_plus_rachis_mm": 40.00000000000001,
+ "rachis_segments": 2,
+ "pass_angle": true,
+ "pass_length": true,
+ "convention": "elevation above horizontal = theta0; engine COMPOUND_INSERTION_DEG = 90 - theta0 = 60 (vtc_development_native.rgg:206)",
+ "bmodel_scenario": {
+  "file": "kaggle/import_ds/scn/one_row_test.csv",
+  "sha256": "ecaf9a4c59514d35f215b2786250ebe2609e951ed6ce7c9570c6427f6627ab22",
+  "expected": "exported straight leaf elevation 30 +- 2 deg (inclination column 60), |tip - base| 40 mm +- 1 %, orientation column 90 (az 0 + 90)",
+  "info": {
+   "status": "written",
+   "rows": 3,
+   "sha256": "ecaf9a4c59514d35f215b2786250ebe2609e951ed6ce7c9570c6427f6627ab22"
+  }
+ }
+}

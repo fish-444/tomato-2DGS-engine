@@ -1,0 +1,596 @@
+{
+ "candidate": "C4AC1.3271",
+ "b_arm": "C4AB1.3271",
+ "failed": [],
+ "verified": 16,
+ "length_classes": 12,
+ "length_pass_classes": 12,
+ "length_pass": true,
+ "leaf_area_median": 38.85215813689639,
+ "height_mean": 167.926586875,
+ "leaf_area_pass": true,
+ "length": [
+  {
+   "rank": 1,
+   "recon_n": 11,
+   "recon_median_mm": 44.914,
+   "engine_n": 16,
+   "engine_median_mm": 44.81726700371014,
+   "ratio": 0.997846261827273,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 2,
+   "recon_n": 9,
+   "recon_median_mm": 47.8718,
+   "engine_n": 16,
+   "engine_median_mm": 47.5786187011171,
+   "ratio": 0.9938756992867848,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 3,
+   "recon_n": 11,
+   "recon_median_mm": 41.0985,
+   "engine_n": 16,
+   "engine_median_mm": 40.8320104157076,
+   "ratio": 0.9935158318602284,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 4,
+   "recon_n": 11,
+   "recon_median_mm": 38.9413,
+   "engine_n": 16,
+   "engine_median_mm": 38.72214588754706,
+   "ratio": 0.9943721932125291,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 5,
+   "recon_n": 11,
+   "recon_median_mm": 40.2827,
+   "engine_n": 16,
+   "engine_median_mm": 39.4809812255281,
+   "ratio": 0.9800976902126247,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 6,
+   "recon_n": 11,
+   "recon_median_mm": 38.0413,
+   "engine_n": 16,
+   "engine_median_mm": 37.1891219867083,
+   "ratio": 0.9775986095824354,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 7,
+   "recon_n": 11,
+   "recon_median_mm": 32.5681,
+   "engine_n": 16,
+   "engine_median_mm": 31.9011731106889,
+   "ratio": 0.9795220817514347,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 8,
+   "recon_n": 11,
+   "recon_median_mm": 31.5322,
+   "engine_n": 16,
+   "engine_median_mm": 32.25728212465344,
+   "ratio": 1.0229949741741282,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 9,
+   "recon_n": 11,
+   "recon_median_mm": 35.6724,
+   "engine_n": 16,
+   "engine_median_mm": 36.841748064160655,
+   "ratio": 1.0327801904038039,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 10,
+   "recon_n": 11,
+   "recon_median_mm": 40.9789,
+   "engine_n": 16,
+   "engine_median_mm": 42.03024152398575,
+   "ratio": 1.0256556794834841,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 11,
+   "recon_n": 10,
+   "recon_median_mm": 31.3613,
+   "engine_n": 15,
+   "engine_median_mm": 32.4695696308279,
+   "ratio": 1.0353387656387936,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 12,
+   "recon_n": 8,
+   "recon_median_mm": 38.8632,
+   "engine_n": 10,
+   "engine_median_mm": 42.0133875825435,
+   "ratio": 1.081058368393326,
+   "eligible": true,
+   "within_20pct": true
+  },
+  {
+   "rank": 13,
+   "recon_n": 6,
+   "recon_median_mm": 24.0987,
+   "engine_n": 3,
+   "engine_median_mm": 24.6261817109343,
+   "ratio": 1.0218883886240462,
+   "eligible": false,
+   "within_20pct": false
+  },
+  {
+   "rank": 14,
+   "recon_n": 4,
+   "recon_median_mm": 37.7028,
+   "engine_n": 0,
+   "engine_median_mm": null,
+   "ratio": null,
+   "eligible": false,
+   "within_20pct": false
+  },
+  {
+   "rank": 15,
+   "recon_n": 4,
+   "recon_median_mm": 16.3356,
+   "engine_n": 0,
+   "engine_median_mm": null,
+   "ratio": null,
+   "eligible": false,
+   "within_20pct": false
+  },
+  {
+   "rank": 16,
+   "recon_n": 4,
+   "recon_median_mm": 29.1954,
+   "engine_n": 0,
+   "engine_median_mm": null,
+   "ratio": null,
+   "eligible": false,
+   "within_20pct": false
+  },
+  {
+   "rank": 17,
+   "recon_n": 2,
+   "recon_median_mm": 16.7215,
+   "engine_n": 0,
+   "engine_median_mm": null,
+   "ratio": null,
+   "eligible": false,
+   "within_20pct": false
+  },
+  {
+   "rank": "side",
+   "recon_n": 0,
+   "recon_median_mm": null,
+   "engine_n": 283,
+   "engine_median_mm": 9.9248301828588,
+   "ratio": null,
+   "eligible": false,
+   "within_20pct": null
+  }
+ ],
+ "paired": [
+  {
+   "ref": "V21Bs5.85",
+   "measure": "leaf_area_cm2",
+   "ref_median": 12.826646993021662,
+   "cand_median": 38.85215813689639,
+   "paired_pct_median": 232.3266079398316,
+   "p10": 139.70855594867592,
+   "p90": 392.5505009057771,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_g",
+   "ref_median": 0.3479442246305414,
+   "cand_median": 0.8319342783853227,
+   "paired_pct_median": 161.05920587630743,
+   "p10": 94.91281840533773,
+   "p90": 261.5949706550476,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "height_mm",
+   "ref_median": 128.26389999999998,
+   "cand_median": 162.96091,
+   "paired_pct_median": 26.90421735952396,
+   "p10": 14.390782537344094,
+   "p90": 49.58650198674302,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "absorbed_rel",
+   "ref_median": 0.00019833333333333335,
+   "cand_median": 0.0005650000000000001,
+   "paired_pct_median": 212.3707957342084,
+   "p10": 144.7835497835498,
+   "p90": 446.3571428571429,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "accepted_gross_last10",
+   "ref_median": 0.004379673402981875,
+   "cand_median": 0.013318228472380345,
+   "paired_pct_median": 261.4841695157353,
+   "p10": 156.8761724718499,
+   "p90": 515.8886094859911,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "max_leaflet_len_mm",
+   "ref_median": 15.246828926737201,
+   "cand_median": 21.75342906498225,
+   "paired_pct_median": 31.328208139573178,
+   "p10": 15.15246687653189,
+   "p90": 51.3473430317237,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "absorbed_per_leaf_area (self-shading proxy)",
+   "ref_median": "",
+   "cand_median": "",
+   "paired_pct_median": -1.796948257223228,
+   "p10": -14.476832194119275,
+   "p90": 20.904111417011748,
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Apex_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Attachment_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Axis_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_CompoundLeaf_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Fruit_g",
+   "ref_median": 0.17679155263320434,
+   "cand_median": 0.5593120067491286,
+   "paired_pct_median": 216.36806081428165,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Internode_g",
+   "ref_median": 0.054995919596291146,
+   "cand_median": 0.07305934906801961,
+   "paired_pct_median": 32.84503578506695,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Leaflet_g",
+   "ref_median": 0.04744063181317625,
+   "cand_median": 0.12109028096666577,
+   "paired_pct_median": 155.24592809709148,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Petiole_g",
+   "ref_median": 0.0052146900601254854,
+   "cand_median": 0.02123916185516452,
+   "paired_pct_median": 307.2948077503464,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Plant_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_RachisSegment_g",
+   "ref_median": 0.010951588334231682,
+   "cand_median": 0.029000552663436326,
+   "paired_pct_median": 164.80681868572887,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_Root_g",
+   "ref_median": 0.06247793135213825,
+   "cand_median": 0.0633177842235804,
+   "paired_pct_median": 1.3442392429873884,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "dm_TrussAxis_g",
+   "ref_median": 0.0010171078053413103,
+   "cand_median": 0.0029893248841384892,
+   "paired_pct_median": 193.904428659395,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "V21Bs5.85",
+   "measure": "span_over_L",
+   "ref_median": 0.5198726376725468,
+   "cand_median": 0.6319194420206471,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": ""
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "leaf_area_cm2",
+   "ref_median": 37.22486642496674,
+   "cand_median": 38.85215813689639,
+   "paired_pct_median": 12.86710117560138,
+   "p10": -8.069195914192907,
+   "p90": 40.36463365877058,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_g",
+   "ref_median": 0.7482039693490965,
+   "cand_median": 0.8319342783853227,
+   "paired_pct_median": 20.319919397216736,
+   "p10": -5.54294419574306,
+   "p90": 54.242274308225504,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "height_mm",
+   "ref_median": 150.606485,
+   "cand_median": 162.96091,
+   "paired_pct_median": 7.087308110553236,
+   "p10": -0.7780559871765569,
+   "p90": 15.142535802766567,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "absorbed_rel",
+   "ref_median": 0.00044333333333333334,
+   "cand_median": 0.0005650000000000001,
+   "paired_pct_median": 44.40426997245178,
+   "p10": 6.080189923503032,
+   "p90": 81.47585977460803,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "accepted_gross_last10",
+   "ref_median": 0.0112151696868241,
+   "cand_median": 0.013318228472380345,
+   "paired_pct_median": 35.199665989925144,
+   "p10": 1.8911406497757466,
+   "p90": 81.32975254591784,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "max_leaflet_len_mm",
+   "ref_median": 20.40444662360555,
+   "cand_median": 21.75342906498225,
+   "paired_pct_median": 2.420536240121507,
+   "p10": -3.3041547399522866,
+   "p90": 10.36040478093776,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "absorbed_per_leaf_area (self-shading proxy)",
+   "ref_median": "",
+   "cand_median": "",
+   "paired_pct_median": 28.5113738155991,
+   "p10": 10.370003658208816,
+   "p90": 38.105955116708145,
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Apex_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Attachment_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Axis_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_CompoundLeaf_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Fruit_g",
+   "ref_median": 0.45248268981180617,
+   "cand_median": 0.5593120067491286,
+   "paired_pct_median": 23.609592000470613,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Internode_g",
+   "ref_median": 0.07086367164085028,
+   "cand_median": 0.07305934906801961,
+   "paired_pct_median": 3.098452812743635,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Leaflet_g",
+   "ref_median": 0.1204761465365802,
+   "cand_median": 0.12109028096666577,
+   "paired_pct_median": 0.5097560369754062,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Petiole_g",
+   "ref_median": 0.01985252314585672,
+   "cand_median": 0.02123916185516452,
+   "paired_pct_median": 6.98469760805791,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Plant_g",
+   "ref_median": 0.0,
+   "cand_median": 0.0,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_RachisSegment_g",
+   "ref_median": 0.02807576716638996,
+   "cand_median": 0.029000552663436326,
+   "paired_pct_median": 3.2938921724406045,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_Root_g",
+   "ref_median": 0.0627123836899238,
+   "cand_median": 0.0633177842235804,
+   "paired_pct_median": 0.9653604249042269,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "dm_TrussAxis_g",
+   "ref_median": 0.0026761845870514256,
+   "cand_median": 0.0029893248841384892,
+   "paired_pct_median": 11.700997704051353,
+   "p10": "",
+   "p90": "",
+   "n": 16
+  },
+  {
+   "ref": "C4AB1.3271",
+   "measure": "span_over_L",
+   "ref_median": 0.7352984364699763,
+   "cand_median": 0.6319194420206471,
+   "paired_pct_median": "",
+   "p10": "",
+   "p90": "",
+   "n": ""
+  }
+ ]
+}

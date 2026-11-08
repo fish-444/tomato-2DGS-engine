@@ -1,0 +1,124 @@
+{
+ "c2_one_leaf": {
+  "test": "C2 one-leaf",
+  "compound": "p1/C0003",
+  "theta0_set": 30.0,
+  "compound_elevation": 30.0,
+  "petiole_states_elev": 30.000000000000068,
+  "petiole_mesh_pca_elev": 30.000019895175463,
+  "pass_": true
+ },
+ "c4_one_plant": {
+  "axes": {
+   "M": {
+    "leaf_birth_days": [
+     13,
+     15,
+     16,
+     18,
+     20,
+     21,
+     23,
+     25,
+     26,
+     30
+    ],
+    "truss_days": [
+     28,
+     31,
+     33
+    ],
+    "truss_nodes": [
+     9,
+     10,
+     10
+    ],
+    "expected_nodes": [
+     9,
+     10,
+     10
+    ],
+    "leaves": 10,
+    "expected_leaves": 10,
+    "stop_day": [
+     33
+    ],
+    "pass_": true
+   },
+   "S1": {
+    "leaf_birth_days": [
+     38,
+     40,
+     43,
+     45,
+     46,
+     48
+    ],
+    "truss_days": [
+     41,
+     50,
+     51
+    ],
+    "truss_nodes": [
+     2,
+     6,
+     6
+    ],
+    "expected_nodes": [
+     2,
+     6,
+     6
+    ],
+    "leaves": 6,
+    "expected_leaves": 6,
+    "stop_day": [
+     51
+    ],
+    "pass_": true
+   },
+   "S2": {
+    "leaf_birth_days": [
+     38,
+     40,
+     43,
+     45,
+     46
+    ],
+    "truss_days": [
+     41,
+     48,
+     50
+    ],
+    "truss_nodes": [
+     2,
+     5,
+     5
+    ],
+    "expected_nodes": [
+     2,
+     5,
+     5
+    ],
+    "leaves": 5,
+    "expected_leaves": 5,
+    "stop_day": [
+     50
+    ],
+    "pass_": true
+   }
+  },
+  "side_created": [
+   {
+    "day": 28,
+    "organ": "p1/S1/A0",
+    "parent": "p1/N7"
+   },
+   {
+    "day": 28,
+    "organ": "p1/S2/A0",
+    "parent": "p1/N5"
+   }
+  ],
+  "pass_": true
+ }
+}

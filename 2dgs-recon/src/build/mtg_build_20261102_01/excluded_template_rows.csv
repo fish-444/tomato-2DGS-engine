@@ -1,0 +1,15 @@
+row_id,value,label,why
+fruit|all|fruits_per_plant,3.5,hand_measured;user_confirmed_2026-11-01;mtg_building_not_validation,fruit row pending_user (main prompt §2)
+plant|all|recon_A2_height_p995_mm,86.18,recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated,"reconstruction size: check target only (not drawn, not written)"
+plant|all|recon_A2_width_x_mm,89.44,recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated,"reconstruction size: check target only (not drawn, not written)"
+plant|all|recon_A2_width_y_mm,77.9,recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated,"reconstruction size: check target only (not drawn, not written)"
+not_in_template|all|A1 LAD / A3 azimuth / C1 curl / C3 inclination by rank,,trait_unreliable,not_in_template (trait_unreliable)
+not_in_template|all|A2 projected canopy area,,trait_unreliable,not_in_template (trait_unreliable)
+"not_in_template|all|B1 divergence, B2 total bend dtheta / insertion from skeleton, B3 internode / leaf length",,resolved,not_in_template (resolved)
+not_in_template|all|hand vs recon theta0 pooling,,not_possible,not_in_template (not_possible)
+main_compound_leaf|all|skeleton_curvature,0.745,skeleton_labels_ungraded;ungraded_draft;recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated;skeleton_traits_ungraded,"derived shape rows: geometry follows dtheta and L (CONTRACT §3); reported, not an input"
+main_compound_leaf|all|skeleton_tip_drop,-17.25,skeleton_labels_ungraded;ungraded_draft;recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated;skeleton_traits_ungraded,"derived shape rows: geometry follows dtheta and L (CONTRACT §3); reported, not an input"
+main_compound_leaf|all|skeleton_s_apex_rel,0.17,skeleton_labels_ungraded;ungraded_draft;recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated;skeleton_traits_ungraded,"derived shape rows: geometry follows dtheta and L (CONTRACT §3); reported, not an input"
+main_compound_leaf|all|skeleton_arc_better_share,0.603,skeleton_labels_ungraded;ungraded_draft;recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated;skeleton_traits_ungraded,"derived shape rows: geometry follows dtheta and L (CONTRACT §3); reported, not an input"
+main_compound_leaf|all|skeleton_theta0,-13.083,skeleton_labels_ungraded;ungraded_draft;recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated,"draft label not_used (theta0 = hand only, user 16:13)"
+main_compound_leaf|all|skeleton_insertion_from_vertical,103.083,skeleton_labels_ungraded;ungraded_draft;recon_trait;conditional_on_unvalidated_scale;after_checkpoint_v1;age_dag=60;user_stated,"draft label not_used (theta0 = hand only, user 16:13)"

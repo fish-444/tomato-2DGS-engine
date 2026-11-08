@@ -1,0 +1,14 @@
+item,why
+"t2_02,t2_04,t2_05",tray membership unconfirmed (addendum §3)
+"t2_01,t2_03",excluded by the user (LOG:1417)
+"e_02,e_03,e_06",no 3D-first groups / skeleton
+"validation trays 1,2",not read
+fruits_per_plant,pending_user
+7 held hand-data cells,not in the template
+"skeleton_theta0, skeleton_insertion_from_vertical",not_used (theta0 = hand only)
+skeleton_divergence 112.7 / first-segment 91.9 / old 113 deg / folded 0-180 means,superseded_display_only / display_only
+skeleton_internode 3.748 single value; v6 7.6 +- 7.6,replaced by the user setting range 2.00-4.00 median 3.75; v6 display_only
+per-leaf skeleton traits (skeleton_traits_per_leaf_display_only.csv),display_only
+e_* B-model static MTG,blade area unavailable (no silhouette area for e_* surfels); engine format written with area unavailable
+skeleton lateral axes,no leaf assignment to laterals in skeleton_v1.1; listed in the spec notes
+trusses/flowers in static MTGs,node position not confirmed (pending_user); B-model static importer has no truss row

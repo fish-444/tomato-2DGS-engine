@@ -1,0 +1,126 @@
+{
+ "observed": {
+  "R3-1b": {
+   "spec_sha256": "46e99ab3a95e7c4ef591ef90c6419036e30c3d23e17c4a77aad74596388709fb",
+   "engine_tree_sha256": "e2c7204b4ed28ce820bb0cc0aa32093209e778af75d31c45a0b770daddd7408f",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "n_01": {
+   "spec_sha256": "1280a1819b1e16576b2e7f01d6790bd01ff1e48ec66e6e71eb110bce89d1fff3",
+   "engine_tree_sha256": "72b9f00ffb6848cdd75c17d075745697115c936f529b7ce025e29b24b069a1e7",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "n_02": {
+   "spec_sha256": "f50192db88d7016ab248ab94d730b4fcdffbf631107808e6a5fe53787f27c020",
+   "engine_tree_sha256": "0e131c153dd0c934c3d5e53f50c3b2f7f87e18dd733494a7d5e901bc8155be9a",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "n_03": {
+   "spec_sha256": "cd26d210d43305284076ce585e121785ce68a765d7144f629a58e4e4455ed76b",
+   "engine_tree_sha256": "23672f3f51d0f71b5ee8a3ebeaf4984b380de17c4f4a676d19649d8d1c343a3a",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "n_04": {
+   "spec_sha256": "981cf8719098628dff49f9fd845a615a9d49c8f0e1b81d9550eed55a5236bbf9",
+   "engine_tree_sha256": "9225daf1f11887a754a6fa9f4e1ee7c384b625b7694ee13b81efe3335b33c126",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "n_05": {
+   "spec_sha256": "b52a03225e3fe42387838549077d96800d9800a8a3b6da0dfb24189f4e9bbe82",
+   "engine_tree_sha256": "3537d20ca19fd37252e820223a9dad095cfb00a3eb33b6e285295fe61dffa43d",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "n_06": {
+   "spec_sha256": "eaf3545edf9f63ecf5215511a6a4410d263b2ab88a741ef43b43f05c620b7453",
+   "engine_tree_sha256": "05630935e1a2691cc215ea3c1f6c04ced084302b1eea7777d5e91bb02042d70c",
+   "bmodel": "written",
+   "bmodel_identical_to_kaggle_checked": true
+  },
+  "e_01": {
+   "spec_sha256": "2516ddd44b73e9b12e41eb566116dcce55a666aad0d7364ab6b4cb34ce37c5fd",
+   "engine_tree_sha256": "f630aec9caf54b0bc8ed6308de369ea735a68fac083d735da1e87fea223b1fbe",
+   "bmodel": "not_written",
+   "bmodel_identical_to_kaggle_checked": null
+  },
+  "e_04": {
+   "spec_sha256": "ad566485f7e78856c065af49fd972d4639c9654ce9c0a06558bda7d8782603c3",
+   "engine_tree_sha256": "f66c43ce0fe60c861156003cab0b1b967c88cde78465a439ee91427289942eab",
+   "bmodel": "not_written",
+   "bmodel_identical_to_kaggle_checked": null
+  },
+  "e_05": {
+   "spec_sha256": "8d9a283d270081e1b378c354402c3704d6b36774c1edf694751058ed7a59cdfe",
+   "engine_tree_sha256": "b6a0e9b87d469d95848746b4aa068c80bb7bac0090087cc512988457982b6ab9",
+   "bmodel": "not_written",
+   "bmodel_identical_to_kaggle_checked": null
+  },
+  "e_07": {
+   "spec_sha256": "1814a9ab4fad8a46f83458a4565df2ee9c3b612e657f809be9995ebe17a94049",
+   "engine_tree_sha256": "5aee65d2b13a6113a4b777e454ce249e5ef2635620dca51b884a46c1ef9840eb",
+   "bmodel": "not_written",
+   "bmodel_identical_to_kaggle_checked": null
+  }
+ },
+ "copied": {
+  "static/mtg_template_mean_v2draft_spec.json": {
+   "sha256": "4c7869659de39eb77109bdbc4ed86450c30a7d98cd7ab4a42354543093731e08",
+   "same_as_old": true
+  },
+  "static/mtg_template_mean_v2draft_engine.plant_tree_v1.json": {
+   "sha256": "8a9b6e9af0ff3a71835434318d10cd6e591d9b8ebef9d004f799e330f9801aeb",
+   "same_as_old": true
+  },
+  "static/mtg_template_mean_v2draft_engine.obj": {
+   "sha256": "679e6b15b2d5adb7db8430efc3fe16a57951f0b08d65ac914c3ceab2e1722454",
+   "same_as_old": true
+  },
+  "static/mtg_template_mean_v2draft_bmodel.csv": {
+   "sha256": "d23b33fe13be79af6ba80fe4c0087f341349c18f8437f5069e18fb3de576722f",
+   "same_as_old": true
+  },
+  "static/mtg_template_mean_v2draft_bmodel.rows.json": {
+   "sha256": "5255806d5bd1de175c24337be174ad3ebc57e68795adce5c9e7aaf3c65c0f1f2",
+   "same_as_old": true
+  },
+  "dynamic/check_plants_distribution_table.csv": {
+   "sha256": "99c946557520bbf01b15e10c23d07f4541e53122d82f714c06bff88990543520",
+   "same_as_old": true
+  },
+  "dynamic/internode_paired_height.csv": {
+   "sha256": "f9aabde230bcdc28a96a294392d9498db44cd860de71263190175ce8cc9193a2",
+   "same_as_old": true
+  },
+  "dynamic/internode_paired_light.csv": {
+   "sha256": "c0ddc48749959cfe3d91d13ee674c72e476efc5f401f9f852e2a5c9802fe72c6",
+   "same_as_old": true
+  },
+  "dynamic/internode_range_setting.csv": {
+   "sha256": "1be44a26b35edbc381432b0cc001d85ad66340b306f207e506a7fc6e10891a7c",
+   "same_as_old": true
+  },
+  "dynamic/mtg_dynamic_rules_v1.csv": {
+   "sha256": "5760dd14adc1f34508ed3a08f1844ea51c5802022e786596bb00b7052b8aa5df",
+   "same_as_old": true
+  },
+  "dynamic/random_draws.csv": {
+   "sha256": "3371ace82e8872488a2872162f24ee7dc3d32868a788bdc3849887fc78d103af",
+   "same_as_old": true
+  },
+  "dynamic/random_parameter_table_additions.csv": {
+   "sha256": "2269cd6731e6c5d2eb96571dc8ec29ae74b7e8084d68b7a62562fa2d497674cf",
+   "same_as_old": true
+  }
+ },
+ "checks": {
+  "engine_roundtrip_pass": 11,
+  "plants": 11,
+  "bmodel_identical": 7,
+  "copied_identical": true
+ }
+}

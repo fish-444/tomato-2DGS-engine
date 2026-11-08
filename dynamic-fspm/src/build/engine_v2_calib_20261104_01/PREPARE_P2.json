@@ -1,0 +1,57 @@
+{
+  "started": "2026-11-05 18:03:44",
+  "batch": "P2",
+  "arms": [
+    "C4Wm",
+    "C4L"
+  ],
+  "cases": {
+    "C4Wm_m00": {
+      "arm": "C4Wm",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C4U",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "6e9bad0277531310d31269fc42d30411689ccac191f50446c2c19112c6d3450f",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "6e9bad0277531310d31269fc42d30411689ccac191f50446c2c19112c6d3450f",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    },
+    "C4L_m00": {
+      "arm": "C4L",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C4U",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "9b35a99965c10bd4c56dceed3d8a69f6aec4c7fd0e07ce4aabbf397aff88fcb7",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "9b35a99965c10bd4c56dceed3d8a69f6aec4c7fd0e07ce4aabbf397aff88fcb7",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    }
+  },
+  "repro": {},
+  "dataset": {
+    "slug": "engv2-p2-20261104",
+    "runs.tar.gz": {
+      "sha256": "baf55b53d5cc63789287b86510afad46a51a8f00b55d8483920824a6db6cd9a1",
+      "bytes": 2092356
+    },
+    "code.tar.gz": {
+      "sha256": "e43247ec3f2f31abe6fd941ed8224255c05b4d6e452bcf138bf6ee8b264fa42c",
+      "bytes": 10289
+    }
+  },
+  "finished": "2026-11-05 18:03:49"
+}

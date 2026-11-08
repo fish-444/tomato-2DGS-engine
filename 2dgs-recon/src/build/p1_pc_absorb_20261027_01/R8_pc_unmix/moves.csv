@@ -1,0 +1,82 @@
+kind,unit,surfels,old,new,d_old,d_new
+rachis_piece,rachis:1:3796,4,1,2,23.2,4.1
+rachis_piece,rachis:2:3868,42,2,3,7.8,3.9
+rachis_piece,rachis:2:42970,1,2,5,3.3,1.8
+rachis_piece,rachis:5:165,79,5,4,6.3,3.9
+rachis_piece,rachis:5:967,26,5,6,25.6,6.8
+rachis_piece,rachis:5:1447,72,5,4,12.1,4.4
+rachis_piece,rachis:5:2022,33,5,4,13.4,3.2
+rachis_piece,rachis:5:2756,1,5,4,6.9,2.5
+rachis_piece,rachis:5:2881,2,5,7,14.0,3.0
+rachis_piece,rachis:5:11598,1,5,4,7.9,2.8
+rachis_piece,rachis:5:15961,1,5,6,16.8,2.7
+rachis_piece,rachis:5:17016,1,5,3,30.1,9.9
+rachis_piece,rachis:5:28865,1,5,3,30.9,2.2
+rachis_piece,rachis:5:38724,7,5,6,20.4,3.9
+rachis_piece,rachis:6:1396,52,6,7,22.6,13.7
+rachis_piece,rachis:6:1446,52,6,7,19.3,12.4
+rachis_piece,rachis:6:1511,2,6,5,4.1,1.9
+rachis_piece,rachis:6:1900,3,6,7,22.9,7.1
+rachis_piece,rachis:6:2644,47,6,7,32.6,4.5
+rachis_piece,rachis:6:2654,2,6,5,4.9,1.6
+rachis_piece,rachis:6:2997,8,6,7,26.0,3.3
+rachis_piece,rachis:6:3799,3,6,7,8.5,1.7
+rachis_piece,rachis:6:7339,6,6,1,inf,inf
+rachis_piece,rachis:6:7440,1,6,7,13.8,0.7
+rachis_piece,rachis:6:7660,4,6,2,28.2,15.5
+rachis_piece,rachis:6:7903,1,6,7,21.8,3.6
+rachis_piece,rachis:6:8253,3,6,7,23.9,7.0
+rachis_piece,rachis:6:9705,41,6,7,34.5,17.2
+rachis_piece,rachis:6:12973,10,6,5,9.0,2.9
+rachis_piece,rachis:6:14156,1,6,7,26.4,7.3
+rachis_piece,rachis:6:17157,1,6,1,inf,inf
+rachis_piece,rachis:6:30662,1,6,1,inf,inf
+rachis_piece,rachis:6:44267,1,6,7,27.6,5.1
+rachis_piece,rachis:7:1568,17,7,5,13.5,4.0
+rachis_piece,rachis:8:429,36,8,7,6.6,2.2
+mixed_leaflet,patch:10,19,{4: 19},5,2.6,2.6
+mixed_leaflet,patch:13,14,{7: 14},5,1.6,1.6
+mixed_leaflet,patch:18,44,{7: 44},5,1.8,1.8
+mixed_leaflet,patch:28,10,{7: 10},8,2.6,2.6
+mixed_leaflet,patch:36,15,{8: 15},7,6.3,6.3
+mixed_leaflet,patch:41,21,{7: 21},8,6.3,6.3
+foreign_leaflet,patch:76,117,1,2,14.1,6.9
+mixed_leaflet,patch:88,55,{6: 55},5,3.3,3.3
+mixed_leaflet,patch:91,61,"{6: 49, 7: 12}",5,2.8,2.8
+mixed_leaflet,patch:94,20,{6: 20},1,13.4,13.4
+mixed_leaflet,patch:100,28,{6: 28},1,8.6,8.6
+mixed_leaflet,patch:119,29,"{6: 3, 5: 26}",2,5.1,5.1
+mixed_leaflet,patch:120,11,"{5: 10, 3: 1}",2,4.2,4.2
+mixed_leaflet,patch:121,76,"{2: 72, 5: 4}",3,8.6,5.6
+mixed_leaflet,patch:139,11,{6: 11},1,1.8,1.8
+mixed_leaflet,patch:140,34,{6: 34},1,16.3,16.3
+mixed_leaflet,patch:142,25,"{5: 23, 8: 2}",1,14.1,14.1
+foreign_leaflet,patch:144,153,6,7,13.8,5.2
+foreign_leaflet,patch:145,216,6,7,19.0,6.8
+foreign_leaflet,patch:146,62,6,7,16.1,1.5
+mixed_leaflet,patch:147,188,"{6: 175, 5: 13}",7,12.5,2.5
+foreign_leaflet,patch:148,338,6,7,20.0,2.9
+mixed_leaflet,patch:149,262,{5: 262},4,8.4,3.9
+mixed_leaflet,patch:150,82,"{6: 19, 5: 48, 8: 15}",1,18.1,18.1
+mixed_leaflet,patch:151,161,{1: 161},2,19.2,3.5
+mixed_leaflet,patch:153,117,"{4: 116, 6: 1}",5,3.6,3.6
+mixed_leaflet,patch:157,99,{6: 99},7,1.4,1.4
+mixed_leaflet,patch:159,48,{5: 48},4,12.6,2.8
+foreign_leaflet,patch:161,1128,6,7,23.0,11.1
+mixed_leaflet,patch:177,9,"{5: 8, 6: 1}",4,1.0,1.0
+mixed_leaflet,patch:193,10,"{5: 8, 2: 2}",3,7.2,7.2
+mixed_leaflet,patch:199,29,"{5: 20, 2: 4, 6: 5}",3,33.3,9.7
+mixed_leaflet,patch:203,51,"{6: 43, 1: 8}",3,16.6,16.6
+mixed_leaflet,patch:204,36,"{6: 35, 5: 1}",3,17.6,17.6
+mixed_leaflet,patch:213,28,"{5: 2, 6: 26}",3,15.5,15.5
+mixed_leaflet,patch:214,18,"{6: 17, 5: 1}",3,12.4,12.4
+mixed_leaflet,patch:219,42,"{1: 36, 6: 6}",3,15.1,15.1
+mixed_leaflet,patch:221,19,"{1: 6, 6: 13}",3,10.4,10.4
+mixed_leaflet,patch:222,89,"{1: 21, 6: 63, 5: 5}",3,17.2,17.2
+mixed_leaflet,patch:225,56,"{6: 52, 1: 3, 5: 1}",3,8.4,8.4
+mixed_leaflet,patch:228,45,{6: 45},3,6.1,6.1
+foreign_leaflet,patch:229,38,5,6,24.1,7.7
+mixed_leaflet,patch:231,8,{6: 8},5,1.6,1.6
+foreign_leaflet,patch:239,471,6,7,30.5,7.7
+mixed_leaflet,patch:252,16,{5: 16},6,1.6,1.6
+mixed_leaflet,patch:258,5,{5: 5},6,4.7,4.7

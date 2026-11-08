@@ -1,0 +1,25 @@
+{
+  "started": "2026-11-06 19:29:58",
+  "batch": "GUIB32",
+  "cases": {
+    "BASE_T32s10h40_r1_v22A-4p6468": {
+      "spec": "BASE@T32s10h40@r1@v22A:4.6468",
+      "model_sha": "efdaf700f64da91581a1bd867d21226801a4348054aa315573afa2d76bce1da5"
+    }
+  },
+  "jobs": [
+    "BASE_T32s10h40_r1_v22A-4p6468"
+  ],
+  "dataset": {
+    "slug": "ideo-guib32-20261105",
+    "runs.tar.gz": {
+      "sha256": "dcaaf3b643cdbf0738d542b0ffcd57f280ea125216a6fc53f37017d6246fe8d6",
+      "bytes": 1051213
+    },
+    "code.tar.gz": {
+      "sha256": "599fa20b498b98222c2159b96f96337ddd9efed55398fbdcdf1a277f8abc1ff1",
+      "bytes": 10142
+    }
+  },
+  "finished": "2026-11-06 19:31:12"
+}

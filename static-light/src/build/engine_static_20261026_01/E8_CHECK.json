@@ -1,0 +1,29 @@
+{
+ "record": "build\\engine_dev_20261020\\HASHES_after_merge5_20261024.csv",
+ "header": [
+  "path",
+  "sha256_dev",
+  "sha256_repo",
+  "same"
+ ],
+ "files_compared": 569,
+ "code_changed_since_merge5": [],
+ "code_added_since_merge5": [
+  "tests/test_all_compound.py",
+  "tests/test_auto_proposers.py",
+  "tests/test_compound_cluster.py",
+  "tests/test_leaflet_colour.py",
+  "tests/test_organs_topology.py",
+  "tests/test_plant_model.py",
+  "tests/test_seed2d.py",
+  "tests/test_stacked_sheets.py",
+  "tests/test_trace_reconcile.py",
+  "tests/test_userlabel.py",
+  "tests/test_vote2d.py",
+  "tests/test_vp_recluster.py"
+ ],
+ "seed72_outputs_identical": true,
+ "seed72_files": 10,
+ "seed72_reference": "build\\engine_static_20261026_01\\E8_seed72_start.json",
+ "pass": true
+}

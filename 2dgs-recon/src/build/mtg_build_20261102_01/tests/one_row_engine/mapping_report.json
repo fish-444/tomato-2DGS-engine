@@ -1,0 +1,60 @@
+{
+ "plant_instance_id": "p1",
+ "organs": 15,
+ "stage2_vertices": 14,
+ "edges": 8,
+ "dropped": [],
+ "notes": [],
+ "engine_default_mismatches": [
+  {
+   "parameter": "FIRST_LEAVES",
+   "engine": 9,
+   "measured": "6-8 (n_truss {6:2, 7:1, 8:2})"
+  },
+  {
+   "parameter": "PAIRS",
+   "engine": [
+    1,
+    1,
+    2
+   ],
+   "measured": "dissected leaf: 3 pairs + up to 2 intercalary"
+  },
+  {
+   "parameter": "LEAF_LW",
+   "engine": 2.0,
+   "measured": "1.0-2.2, mean about 1.5"
+  },
+  {
+   "parameter": "leaflet shape",
+   "engine": "flat diamond (leaflet_outline hook off)",
+   "measured": "28 dissected outlines, handoff/leaflet_shape_20261014"
+  },
+  {
+   "parameter": "INTERNODE_CAP_M",
+   "engine": 0.012,
+   "measured": "about 6-9 mm"
+  },
+  {
+   "parameter": "architecture",
+   "engine": "sympodial A1-A3 + 4 trusses (CADENCE [2,1,0])",
+   "literature": "Vicente 2015: two successive trusses, then lateral shoots"
+  }
+ ],
+ "id_map": {
+  "p1/Plant": "p1/Plant",
+  "M": "p1/A0",
+  "N01": "p1/N1",
+  "L01": "p1/C0001",
+  "p1/C0001/P": "p1/C0001/P",
+  "p1/C0001/R1": "p1/C0001/R1",
+  "L01__P1L": "p1/C0001/P1L",
+  "L01__P1R": "p1/C0001/P1R",
+  "p1/C0001/R2": "p1/C0001/R2",
+  "L01__P2L": "p1/C0001/P2L",
+  "L01__P2R": "p1/C0001/P2R",
+  "L01__T": "p1/C0001/T",
+  "M/apex": "p1/A0/apex",
+  "p1/Root": "p1/Root"
+ }
+}

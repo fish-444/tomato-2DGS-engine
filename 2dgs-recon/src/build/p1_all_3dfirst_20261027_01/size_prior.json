@@ -1,0 +1,17 @@
+{
+ "source": "R3-1b user leaflet masks on the 4 training views (size range only, no labels)",
+ "n": 135,
+ "area_mm2": {
+  "p5": 20.099255496534678,
+  "p25": 34.15388659048173,
+  "median": 59.65099867143247,
+  "p75": 105.30850632158,
+  "p95": 182.14151259374538
+ },
+ "width_median_mm": 7.724052533958543,
+ "labels": {
+  "status": "R3-1b-style_unaccepted",
+  "gate": "gate_failed_viewing_only",
+  "scale": "conditional_on_unvalidated_scale"
+ }
+}

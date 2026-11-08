@@ -1,0 +1,1 @@
+light_model = v1_tau (tau 0.07, a 0.85, reflection dropped, stem/axis-like tau 0); assumed_leaf_optics; relative_light; conditional_on_unvalidated_scale; v1 = black leaves a 1; smooth = smooth_all_r2 (v1tau_smoothn_r2)

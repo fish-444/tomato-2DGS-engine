@@ -1,0 +1,2 @@
+{"id": "dolgfish/tomato-dwt03-2dgs-full", "title": "tomato dwt03 2dgs full", "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": true,
+ "enable_gpu": true, "machine_shape": "NvidiaTeslaT4", "enable_tpu": false, "enable_internet": true, "dataset_sources": ["dolgfish/tomato-dwt03-oss-input"], "kernel_sources": ["dolgfish/tomato-dwt03-dense-a"], "competition_sources": [], "model_sources": []}

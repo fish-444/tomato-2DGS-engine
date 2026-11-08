@@ -1,0 +1,7 @@
+plant,main_rank,n_fruit,excel_row,flags,labels
+dt02,1.0,3.0,19,fruit_count|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt02,8.0,3.0,26,fruit_count|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt04,3.0,4.0,41,fruit_count|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt04,6.0,4.0,44,fruit_count|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt04,7.0,4.0,45,fruit_count|position_not_confirmed,hand_measured;user_confirmed_2026-11-01
+dt05,9.0,3.0,57,fruit_count|position_not_confirmed,hand_measured;user_confirmed_2026-11-01

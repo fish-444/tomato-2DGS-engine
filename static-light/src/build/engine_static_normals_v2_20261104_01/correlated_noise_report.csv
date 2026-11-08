@@ -1,0 +1,13 @@
+# normal_smoothing_v2_occluders; relative_light; conditional_on_unvalidated_scale; skeleton_labels_ungraded; after_checkpoint_v1; report only; noise field smooth over 3.0 mm, tilt scale calibrated to the same Traits metric; does not change the decision
+variant,noise_target_deg,sigma_deg,noise_metric_deg,arm,n_plants,plant_bias_pct_mean,plant_bias_pct_min,plant_bias_pct_max,leaf_median_abs_err_pct,leaf_spearman_median,self_change_mean,coplanar_hits_total,coplanar_hits_share_mean,normal_err_median_deg,normal_err_p90_deg,kept_raw_share
+corr,44.0,37.5,45.58,raw,7,-21.673,-24.762,-19.852,23.333,0.9912,0.1045,7726,0.012638,41.91,75.48,1.0
+corr,44.0,37.5,45.58,rec_r2,7,-6.398,-7.763,-4.773,6.245,0.9975,0.0346,5929,0.009681,6.71,45.55,0.0
+corr,44.0,37.5,45.58,rec_r3,7,-5.824,-7.328,-4.038,5.429,0.9975,0.0319,5915,0.009668,4.7,48.9,0.0
+corr,44.0,37.5,45.58,rec_r5,7,-5.736,-7.268,-3.967,5.064,0.9975,0.0305,5915,0.009649,7.26,49.69,0.0
+corr,44.0,37.5,45.58,smooth_all_r2,7,0.524,0.229,1.054,0.439,1.0,-0.0028,10042,0.016395,6.71,45.55,0.0
+corr,44.0,37.5,45.58,smooth_all_r3,7,1.487,0.887,2.372,0.729,0.9975,-0.0075,10144,0.016604,4.7,48.9,0.0
+corr,44.0,37.5,45.58,smooth_all_r5,7,1.608,0.553,2.344,0.844,1.0,-0.0092,9933,0.016254,7.26,49.69,0.0
+corr,44.0,37.5,45.58,occ_only_r2,7,-13.814,-16.083,-13.118,15.637,0.9945,0.0608,6683,0.010925,6.71,45.55,0.0
+corr,44.0,37.5,45.58,occ_only_r3,7,-13.258,-15.547,-12.428,15.129,0.9909,0.0577,6710,0.010972,4.7,48.9,0.0
+corr,44.0,37.5,45.58,occ_only_r5,7,-13.213,-15.726,-12.469,15.051,0.9882,0.0574,6523,0.01067,7.26,49.69,0.0
+corr,44.0,37.5,45.58,recv_true,7,-6.563,-7.959,-5.182,5.662,1.0,0.0355,5929,0.009687,0.0,0.0,1.0

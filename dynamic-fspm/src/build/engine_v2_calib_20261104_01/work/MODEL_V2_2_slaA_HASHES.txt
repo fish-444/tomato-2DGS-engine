@@ -1,0 +1,5 @@
+8b04647ecc2271225b04f6ae2e8666fb0b9d8e621a692562f32f8cc82c9e09a6 *Model_v2_2_slaA.rgg
+004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43 *parametersMicroTom_v2_2_slaA.rgg
+8812cdb62b6dd21594e667b2e29e5b6cd8bccc81f1bfd9fef3f098ab77cb37e0 *v2_2_slaA_config.json
+44fd87380a0c33e8ed5a40f804e06146f44de24c3673ace94b199a5a6e204cb0 *v2_2_slaA_request_m00.json
+status: FROZEN 2026-11-06 (CONTRACT Amendment 19, CLI ANSWER 15:45); m00 instance of arm V22A_s4.6468 (f_SLA 1.3271, internodes x4.6468, rachis C4A_rachis_mult.json)

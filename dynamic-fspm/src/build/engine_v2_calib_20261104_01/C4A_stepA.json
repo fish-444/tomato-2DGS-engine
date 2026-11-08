@@ -1,0 +1,371 @@
+{
+ "determinism": {
+  "n": 32,
+  "identical": 32,
+  "differing": []
+ },
+ "V22b": {
+  "label": "V22b (base)",
+  "n": 16,
+  "diag_errors": [],
+  "days_after_20dag": 40,
+  "days_leaf_satisfaction_below_0_8": 40,
+  "cls": "source-limited",
+  "leaf_satisfaction_median_after20": 0.0008748168907345055,
+  "leaf_satisfaction_p10_p90": [
+   0.0002740729240431585,
+   0.004730311189601523
+  ],
+  "plant_satisfaction_median_after20": 0.0008748168907344994,
+  "downregulated_cum_median": 9.26254123312387e-05,
+  "reserve_end_median": 0.0,
+  "leaflet_mass_over_max_day71_median": 0.008402604070712508,
+  "share_leaflets_ge_0_95_max": 0.0,
+  "L_by_rank": [
+   {
+    "arm": "V22b",
+    "rank": 1,
+    "recon_n": 11,
+    "recon_median_mm": 44.914,
+    "engine_n": 16,
+    "engine_median_mm": 33.02598025018385,
+    "ratio": 0.7353159426945685
+   },
+   {
+    "arm": "V22b",
+    "rank": 2,
+    "recon_n": 9,
+    "recon_median_mm": 47.8718,
+    "engine_n": 16,
+    "engine_median_mm": 28.880105808967798,
+    "ratio": 0.6032801317052586
+   },
+   {
+    "arm": "V22b",
+    "rank": 3,
+    "recon_n": 11,
+    "recon_median_mm": 41.0985,
+    "engine_n": 16,
+    "engine_median_mm": 24.776936429695247,
+    "ratio": 0.6028671710572222
+   },
+   {
+    "arm": "V22b",
+    "rank": 4,
+    "recon_n": 11,
+    "recon_median_mm": 38.9413,
+    "engine_n": 16,
+    "engine_median_mm": 21.278796506787298,
+    "ratio": 0.5464326179862331
+   },
+   {
+    "arm": "V22b",
+    "rank": 5,
+    "recon_n": 11,
+    "recon_median_mm": 40.2827,
+    "engine_n": 16,
+    "engine_median_mm": 19.4638887832834,
+    "ratio": 0.48318232847558384
+   },
+   {
+    "arm": "V22b",
+    "rank": 6,
+    "recon_n": 11,
+    "recon_median_mm": 38.0413,
+    "engine_n": 16,
+    "engine_median_mm": 18.050735521368402,
+    "ratio": 0.474503645284688
+   },
+   {
+    "arm": "V22b",
+    "rank": 7,
+    "recon_n": 11,
+    "recon_median_mm": 32.5681,
+    "engine_n": 16,
+    "engine_median_mm": 16.96376415594065,
+    "ratio": 0.5208705498920921
+   },
+   {
+    "arm": "V22b",
+    "rank": 8,
+    "recon_n": 11,
+    "recon_median_mm": 31.5322,
+    "engine_n": 16,
+    "engine_median_mm": 14.76687425158765,
+    "ratio": 0.46831094092983205
+   },
+   {
+    "arm": "V22b",
+    "rank": 9,
+    "recon_n": 11,
+    "recon_median_mm": 35.6724,
+    "engine_n": 16,
+    "engine_median_mm": 13.7469812856373,
+    "ratio": 0.38536743492552505
+   },
+   {
+    "arm": "V22b",
+    "rank": 10,
+    "recon_n": 11,
+    "recon_median_mm": 40.9789,
+    "engine_n": 16,
+    "engine_median_mm": 12.822466597476602,
+    "ratio": 0.3129041188874421
+   },
+   {
+    "arm": "V22b",
+    "rank": 11,
+    "recon_n": 10,
+    "recon_median_mm": 31.3613,
+    "engine_n": 15,
+    "engine_median_mm": 12.269274269205901,
+    "ratio": 0.39122339536964035
+   },
+   {
+    "arm": "V22b",
+    "rank": 12,
+    "recon_n": 8,
+    "recon_median_mm": 38.8632,
+    "engine_n": 10,
+    "engine_median_mm": 11.55864681005935,
+    "ratio": 0.2974188129145143
+   },
+   {
+    "arm": "V22b",
+    "rank": 13,
+    "recon_n": 6,
+    "recon_median_mm": 24.0987,
+    "engine_n": 3,
+    "engine_median_mm": 10.673840927589099,
+    "ratio": 0.44292185585069316
+   },
+   {
+    "arm": "V22b",
+    "rank": 14,
+    "recon_n": 4,
+    "recon_median_mm": 37.7028,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V22b",
+    "rank": 15,
+    "recon_n": 4,
+    "recon_median_mm": 16.3356,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V22b",
+    "rank": 16,
+    "recon_n": 4,
+    "recon_median_mm": 29.1954,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V22b",
+    "rank": 17,
+    "recon_n": 2,
+    "recon_median_mm": 16.7215,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V22b",
+    "rank": "side",
+    "recon_n": 0,
+    "recon_median_mm": null,
+    "engine_n": 283,
+    "engine_median_mm": 7.7254526548919005,
+    "ratio": null
+   }
+  ]
+ },
+ "V21Bs5.85": {
+  "label": "v2.1",
+  "n": 16,
+  "diag_errors": [],
+  "days_after_20dag": 40,
+  "days_leaf_satisfaction_below_0_8": 40,
+  "cls": "source-limited",
+  "leaf_satisfaction_median_after20": 0.0005577881907535563,
+  "leaf_satisfaction_p10_p90": [
+   0.00018372470792493972,
+   0.0028213389861232907
+  ],
+  "plant_satisfaction_median_after20": 0.0005577881907535527,
+  "downregulated_cum_median": 5.0120832595331995e-05,
+  "reserve_end_median": 0.0,
+  "leaflet_mass_over_max_day71_median": 0.0036090661059842836,
+  "share_leaflets_ge_0_95_max": 0.0,
+  "L_by_rank": [
+   {
+    "arm": "V21Bs5.85",
+    "rank": 1,
+    "recon_n": 11,
+    "recon_median_mm": 44.914,
+    "engine_n": 16,
+    "engine_median_mm": 25.33496095373905,
+    "ratio": 0.5640771464073351
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 2,
+    "recon_n": 9,
+    "recon_median_mm": 47.8718,
+    "engine_n": 16,
+    "engine_median_mm": 21.3184299846244,
+    "ratio": 0.44532334244010885
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 3,
+    "recon_n": 11,
+    "recon_median_mm": 41.0985,
+    "engine_n": 16,
+    "engine_median_mm": 20.24630378916195,
+    "ratio": 0.4926287769422716
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 4,
+    "recon_n": 11,
+    "recon_median_mm": 38.9413,
+    "engine_n": 16,
+    "engine_median_mm": 17.14142885565345,
+    "ratio": 0.4401863537081056
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 5,
+    "recon_n": 11,
+    "recon_median_mm": 40.2827,
+    "engine_n": 16,
+    "engine_median_mm": 15.8243084153173,
+    "ratio": 0.3928313746426456
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 6,
+    "recon_n": 11,
+    "recon_median_mm": 38.0413,
+    "engine_n": 16,
+    "engine_median_mm": 14.68768168299775,
+    "ratio": 0.386098311124955
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 7,
+    "recon_n": 11,
+    "recon_median_mm": 32.5681,
+    "engine_n": 16,
+    "engine_median_mm": 13.268310849333801,
+    "ratio": 0.4074020544438822
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 8,
+    "recon_n": 11,
+    "recon_median_mm": 31.5322,
+    "engine_n": 16,
+    "engine_median_mm": 12.51552515366825,
+    "ratio": 0.3969125260422124
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 9,
+    "recon_n": 11,
+    "recon_median_mm": 35.6724,
+    "engine_n": 16,
+    "engine_median_mm": 11.730396159087949,
+    "ratio": 0.3288367521974397
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 10,
+    "recon_n": 11,
+    "recon_median_mm": 40.9789,
+    "engine_n": 16,
+    "engine_median_mm": 10.818775275889,
+    "ratio": 0.26400843546041985
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 11,
+    "recon_n": 10,
+    "recon_median_mm": 31.3613,
+    "engine_n": 15,
+    "engine_median_mm": 10.115465944509701,
+    "ratio": 0.322546129927959
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 12,
+    "recon_n": 8,
+    "recon_median_mm": 38.8632,
+    "engine_n": 10,
+    "engine_median_mm": 9.476269489758,
+    "ratio": 0.2438365726383314
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 13,
+    "recon_n": 6,
+    "recon_median_mm": 24.0987,
+    "engine_n": 3,
+    "engine_median_mm": 8.7862487442066,
+    "ratio": 0.36459430360171297
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 14,
+    "recon_n": 4,
+    "recon_median_mm": 37.7028,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 15,
+    "recon_n": 4,
+    "recon_median_mm": 16.3356,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 16,
+    "recon_n": 4,
+    "recon_median_mm": 29.1954,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": 17,
+    "recon_n": 2,
+    "recon_median_mm": 16.7215,
+    "engine_n": 0,
+    "engine_median_mm": null,
+    "ratio": null
+   },
+   {
+    "arm": "V21Bs5.85",
+    "rank": "side",
+    "recon_n": 0,
+    "recon_median_mm": null,
+    "engine_n": 283,
+    "engine_median_mm": 6.0935016695464,
+    "ratio": null
+   }
+  ]
+ }
+}

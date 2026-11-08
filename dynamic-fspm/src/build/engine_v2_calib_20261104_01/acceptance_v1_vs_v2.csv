@@ -1,0 +1,14 @@
+check,measure,target_source,v1_median_16seeds,v2_median_16seeds,rule,v1,v2,note
+1,"main-stem compound leaves (main controller, A0 + successors)",hand 7.33 +- 2.34 (3-9),12.0,11.5,"PASS if median in [3, 9]",FAIL,FAIL,"end rule 10-13 leaves makes v2 exceed the 60-DAG hand counts (addendum: report); A0 only: v1 9, v2 7"
+2,largest leaflet length (mm),no MTG-building measurement; v1 ref <= 22.5,31.78,13.428,report-only,-,-,
+3,leaflet L/W max,no MTG-building measurement; v1 ref 1.0-2.2,2.36,2.36,report-only,-,-,library outlines
+4,leaflets per main compound,hand mean 6.18,5.5,6.083,PASS if |diff| <= 0.5,FAIL,PASS,v2 draws from the hand shares (consistency check)
+5,"first flowering (Truss1 initiation, engine day)",no MTG-building date; literature 35-40 d after sowing,31.0,27.5,report-only,-,-,first truss node 9 -> 5-9: 19.9 -> 16.4 DAG
+6,"accepted gross photosynthesis (gC/d, last 10 d)",no MTG-building measurement; v1 ref 0.023-0.045,0.017,0.004,report-only,-,-,single plant at the lamp axis
+7,no organ above its max mass,guard,0.773,0.652,PASS if <= 1 in every verified run,PASS,PASS,max ratio over 16 seeds
+R1,fruits per plant at 59.9 DAG,hand 3.5,16.0,31.0,report-only,-,-,
+R2,side leaves per side axis at 59.9 DAG,hand 1.5,0.0,6.0,report-only,-,-,end counts 5-7 reached before 59.9 DAG
+R3,height (mm),reconstruction 86.2 +- 6.1,85.36,29.123,report-only,-,-,
+R4,trusses per plant,hand 1.5,4.0,9.0,report-only,-,-,v2: 3 per axis x 3 axes
+R5,main axis stop (DAG),end rule,30.93,27.43,report-only,-,-,side axes stop at median 41.9 DAG
+R6,leaf area (cm2) / dry mass (g),C5 target 29.3-43.6 cm2 leaflet-only,38.6 / 1.02,13.0 / 0.34,report-only,-,-,base_leaf_area_below_target

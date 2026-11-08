@@ -1,0 +1,42 @@
+scenario,kind,n_main_in,n_main_model,n_side_in,n_side_model,counts_order_pass,leaves_pass,leaves_total,max_d_orientation,max_d_inclination,max_d_area_rel,length_checked,length_pass,pass_all
+P01,check_plant,11,11,4,4,True,1,11,1.2007994541818334e-05,4.1061614268755875e-06,4.873958858730987e-08,11,1,False
+P01_fixed375,no spec or no model output
+P02,check_plant,9,9,4,4,True,2,9,1.5665547437038185e-05,1.9485591309376105e-06,4.873958858730987e-08,9,2,False
+P02_fixed375,no spec or no model output
+P03,check_plant,8,8,4,4,True,8,8,1.5019803413451882e-05,5.712052228545872e-06,4.873958858730987e-08,0,0,True
+P03_fixed375,no spec or no model output
+P04,check_plant,9,9,4,4,True,9,9,9.751149008252469e-06,4.35868416559515e-06,4.873958858730987e-08,0,0,True
+P04_fixed375,no spec or no model output
+P05,check_plant,9,9,4,4,True,9,9,1.663204886881431e-05,4.617977182874711e-06,4.873958858730987e-08,0,0,True
+P05_fixed375,no spec or no model output
+P06,check_plant,12,12,4,4,True,12,12,1.4191849970757175e-05,4.78383898894208e-06,4.873958858730987e-08,0,0,True
+P06_fixed375,no spec or no model output
+P07,check_plant,4,4,4,4,True,4,4,2.6980125085174222e-06,6.037346366838392e-06,3.3565278778624474e-08,0,0,True
+P07_fixed375,no spec or no model output
+P08,check_plant,11,11,4,4,True,11,11,2.1848741710073227e-05,6.330409476618115e-06,4.873958858730987e-08,0,0,True
+P08_fixed375,no spec or no model output
+P09,check_plant,8,8,4,4,True,8,8,1.3769513373063091e-05,4.658071830476729e-06,4.873958858730987e-08,0,0,True
+P09_fixed375,no spec or no model output
+P10,check_plant,5,5,4,4,True,5,5,1.0262315242925979e-05,3.667475269253373e-06,3.3565278778624474e-08,0,0,True
+P10_fixed375,no spec or no model output
+P11,check_plant,5,5,4,4,True,5,5,1.5507998341490747e-05,2.979147069481769e-06,3.3565278778624474e-08,0,0,True
+P11_fixed375,no spec or no model output
+P12,check_plant,7,7,4,4,True,7,7,8.789322748725681e-06,6.540310565128493e-06,3.3565278778624474e-08,0,0,True
+P12_fixed375,no spec or no model output
+P13,check_plant,8,8,4,4,True,8,8,1.3577842310041888e-05,6.425447992342015e-06,4.873958858730987e-08,0,0,True
+P13_fixed375,no spec or no model output
+P14,check_plant,6,6,4,4,True,6,6,1.4214744510354649e-05,3.131490245777968e-06,3.3565278778624474e-08,0,0,True
+P14_fixed375,no spec or no model output
+P15,check_plant,3,3,4,4,True,3,3,5.90665956679004e-06,7.270422273109034e-06,3.3565278778624474e-08,0,0,True
+P15_fixed375,no spec or no model output
+P16,check_plant,6,6,4,4,True,6,6,1.4147215722459805e-05,5.354274378532864e-06,3.3565278778624474e-08,0,0,True
+P16_fixed375,no spec or no model output
+mtg_R3-1b,observed,11,11,0,0,True,1,11,7.869635794577334e-06,0.0,4.8030649457686536e-08,11,1,False
+mtg_n_01,observed,17,16,0,0,False,13,16,137.2224615803559,0.0,0.6899558097672089,0,0,False
+mtg_n_02,observed,17,17,0,0,True,17,17,2.7452929202809173e-05,0.0,7.801922308203757e-08,0,0,True
+mtg_n_03,observed,11,11,0,0,True,11,11,1.050732788598907e-05,0.0,3.67164898484873e-08,0,0,True
+mtg_n_04,observed,16,16,0,0,True,1,16,1.8411706662391225e-05,0.0,5.2008439888062696e-08,16,1,False
+mtg_n_05,observed,13,13,0,0,True,13,13,2.220720745071958e-05,0.0,5.0534270989999186e-08,0,0,True
+mtg_n_06,observed,10,10,0,0,True,10,10,1.75689223738118e-05,0.0,5.7881084147837214e-08,0,0,True
+mtg_template_mean_v2draft,template_mean,7,7,4,4,True,0,7,0.0,12.177567000000003,3.3565278778624474e-08,7,1,False
+mtg_template_mean_v2draft_sd0,template_mean,7,7,4,4,True,7,7,0.0,0.0,3.3565278778624474e-08,0,0,True

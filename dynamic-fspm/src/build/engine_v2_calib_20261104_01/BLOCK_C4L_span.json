@@ -1,0 +1,9 @@
+{
+ "span_median": 0.4871542243748308,
+ "n": 471,
+ "ref": 0.85,
+ "lo": 0.7225,
+ "hi": 0.9775,
+ "pass_": false,
+ "identical_daily": 16
+}

@@ -1,0 +1,286 @@
+{
+ "labels": [
+  "disc_vs_triangle",
+  "relative_light",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b_unaccepted",
+  "engine_law_leaflets"
+ ],
+ "variants": {
+  "T": "main: reference engine run seed72 (leaflet_outline hook on, library_v2 outline per leaflet, outlineIndex = java.util.Random(seed 5000 + id.hashCode()))",
+  "T_diamond": "secondary: base engine tools/vtc_development_native.rgg full-outline diamond (len = sqrt(2 A LEAF_LW))"
+ },
+ "engine_params": {
+  "PETIOLE_M": 0.02,
+  "RACHIS_M": 0.035,
+  "RACHIS_WIDTH_M": 0.001,
+  "LEAF_LW": 2.0,
+  "BASAL_LEAFLET_ANGLE_DEG": 35.0,
+  "MIDDLE_RAMP": 0.35,
+  "PAIRS": [
+   1,
+   1,
+   2
+  ],
+  "ENGINE_SEED": 5000,
+  "OUTLINES": 194
+ },
+ "engine_model_rgg": "build\\engine_maxmass_fix_20261025_01\\runs\\seed72\\native\\working\\Model.rgg",
+ "engine_model_sha256": "3fe6dade1eaf4a2f7ab0962543b2eb27b1630005efc6b84a392c2e8918c399e0",
+ "outline_csv_sha256": "be98c746835738c7e9211fffe9a0f43f9861183d8d7437fd800ab908153da986",
+ "skeleton": "data\\skeletons\\R3-1b\\2026-10-21\\skeleton_v1.json",
+ "skeleton_sha256": "5bb725c085b4bcec7130f34392a858eea119bdd95940a414e1577a73d5daa5ed",
+ "crosswalk_round_trip": {
+  "validate_initial": true,
+  "organs": 48,
+  "back_leaves": 11,
+  "back_nodes": 11,
+  "max_base_diff_mm": 2.842170943040401e-14,
+  "round_trip_pass": true,
+  "dropped": []
+ },
+ "lines": [
+  {
+   "leaf_uid": "R3-1b-L01",
+   "leaf_R8pc": 3,
+   "engine_organ_id": "p1/C0001",
+   "rank": 1,
+   "pairs": 1,
+   "path_mm": 29.532374034805137,
+   "area_b_mm2": 496.37638999999996
+  },
+  {
+   "leaf_uid": "R3-1b-L02",
+   "leaf_R8pc": 1,
+   "engine_organ_id": "p1/C0002",
+   "rank": 2,
+   "pairs": 1,
+   "path_mm": 27.280090200411852,
+   "area_b_mm2": 747.3814600000001
+  },
+  {
+   "leaf_uid": "R3-1b-L07",
+   "leaf_R8pc": 6,
+   "engine_organ_id": "p1/C0003",
+   "rank": 3,
+   "pairs": 2,
+   "path_mm": 9.918996260677721,
+   "area_b_mm2": 448.03959000000003
+  },
+  {
+   "leaf_uid": "R3-1b-L06",
+   "leaf_R8pc": 2,
+   "engine_organ_id": "p1/C0004",
+   "rank": 4,
+   "pairs": 2,
+   "path_mm": 18.252368557771423,
+   "area_b_mm2": 276.21985
+  },
+  {
+   "leaf_uid": "R3-1b-L11",
+   "leaf_R8pc": 8,
+   "engine_organ_id": "p1/C0005",
+   "rank": 5,
+   "pairs": 2,
+   "path_mm": 30.13183611509102,
+   "area_b_mm2": 61.789959999999994
+  },
+  {
+   "leaf_uid": "R3-1b-L04",
+   "leaf_R8pc": 4,
+   "engine_organ_id": "p1/C0006",
+   "rank": 6,
+   "pairs": 2,
+   "path_mm": 27.31607295263686,
+   "area_b_mm2": 209.05393999999998
+  },
+  {
+   "leaf_uid": "R3-1b-L05",
+   "leaf_R8pc": 7,
+   "engine_organ_id": "p1/C0007",
+   "rank": 7,
+   "pairs": 2,
+   "path_mm": 28.231854233490097,
+   "area_b_mm2": 308.31682876931103
+  },
+  {
+   "leaf_uid": "R3-1b-L09",
+   "leaf_R8pc": 5,
+   "engine_organ_id": "p1/C0008",
+   "rank": 8,
+   "pairs": 2,
+   "path_mm": 7.4533817827882585,
+   "area_b_mm2": 198.325682442215
+  },
+  {
+   "leaf_uid": "R3-1b-L03",
+   "leaf_R8pc": 7,
+   "engine_organ_id": "p1/C0009",
+   "rank": 9,
+   "pairs": 2,
+   "path_mm": 23.402267772838744,
+   "area_b_mm2": 255.57347123068905
+  },
+  {
+   "leaf_uid": "R3-1b-L08",
+   "leaf_R8pc": 5,
+   "engine_organ_id": "p1/C0010",
+   "rank": 10,
+   "pairs": 2,
+   "path_mm": 5.5763159881771545,
+   "area_b_mm2": 148.37917955880545
+  },
+  {
+   "leaf_uid": "R3-1b-L10",
+   "leaf_R8pc": 5,
+   "engine_organ_id": "p1/C0011",
+   "rank": 11,
+   "pairs": 2,
+   "path_mm": 12.727426024947187,
+   "area_b_mm2": 338.66176799897966
+  }
+ ],
+ "counts": {
+  "T": {
+   "triangles": 5690,
+   "leaflet_triangles": 5628,
+   "leaflets": 51
+  },
+  "T_diamond": {
+   "triangles": 164,
+   "leaflet_triangles": 102,
+   "leaflets": 51
+  }
+ },
+ "D_blade_area_b_mm2": {
+  "1": 747.3814600000001,
+  "2": 276.21985,
+  "3": 496.37638999999996,
+  "4": 209.05393999999998,
+  "5": 685.36663,
+  "6": 448.03959,
+  "7": 563.8903,
+  "8": 61.789959999999994
+ },
+ "D_all_surfel_area_b_mm2": 8854.39126,
+ "T_flat_check": {
+  "T": [
+   {
+    "leaf": 1,
+    "D_area_b_mm2": 747.3814600000001,
+    "T_area_mm2": 747.3814600000003,
+    "rel_diff": 2.220446049250313e-16
+   },
+   {
+    "leaf": 2,
+    "D_area_b_mm2": 276.21985,
+    "T_area_mm2": 276.21985000000006,
+    "rel_diff": 2.220446049250313e-16
+   },
+   {
+    "leaf": 3,
+    "D_area_b_mm2": 496.37638999999996,
+    "T_area_mm2": 496.37638999999973,
+    "rel_diff": -4.440892098500626e-16
+   },
+   {
+    "leaf": 4,
+    "D_area_b_mm2": 209.05393999999998,
+    "T_area_mm2": 209.05394000000004,
+    "rel_diff": 2.220446049250313e-16
+   },
+   {
+    "leaf": 5,
+    "D_area_b_mm2": 685.36663,
+    "T_area_mm2": 685.36663,
+    "rel_diff": 0.0
+   },
+   {
+    "leaf": 6,
+    "D_area_b_mm2": 448.03959,
+    "T_area_mm2": 448.03959,
+    "rel_diff": 0.0
+   },
+   {
+    "leaf": 7,
+    "D_area_b_mm2": 563.8903,
+    "T_area_mm2": 563.8903000000004,
+    "rel_diff": 6.661338147750939e-16
+   },
+   {
+    "leaf": 8,
+    "D_area_b_mm2": 61.789959999999994,
+    "T_area_mm2": 61.78996000000005,
+    "rel_diff": 8.881784197001252e-16
+   }
+  ],
+  "T_diamond": [
+   {
+    "leaf": 1,
+    "D_area_b_mm2": 747.3814600000001,
+    "T_area_mm2": 747.3814599999998,
+    "rel_diff": -3.3306690738754696e-16
+   },
+   {
+    "leaf": 2,
+    "D_area_b_mm2": 276.21985,
+    "T_area_mm2": 276.21984999999984,
+    "rel_diff": -6.661338147750939e-16
+   },
+   {
+    "leaf": 3,
+    "D_area_b_mm2": 496.37638999999996,
+    "T_area_mm2": 496.3763900000001,
+    "rel_diff": 2.220446049250313e-16
+   },
+   {
+    "leaf": 4,
+    "D_area_b_mm2": 209.05393999999998,
+    "T_area_mm2": 209.0539400000001,
+    "rel_diff": 4.440892098500626e-16
+   },
+   {
+    "leaf": 5,
+    "D_area_b_mm2": 685.36663,
+    "T_area_mm2": 685.3666300000007,
+    "rel_diff": 8.881784197001252e-16
+   },
+   {
+    "leaf": 6,
+    "D_area_b_mm2": 448.03959,
+    "T_area_mm2": 448.0395900000001,
+    "rel_diff": 2.220446049250313e-16
+   },
+   {
+    "leaf": 7,
+    "D_area_b_mm2": 563.8903,
+    "T_area_mm2": 563.8903000000003,
+    "rel_diff": 4.440892098500626e-16
+   },
+   {
+    "leaf": 8,
+    "D_area_b_mm2": 61.789959999999994,
+    "T_area_mm2": 61.78996000000015,
+    "rel_diff": 2.4424906541753444e-15
+   }
+  ]
+ },
+ "max_abs_rel_area_diff": {
+  "T": 8.881784197001252e-16,
+  "T_diamond": 2.4424906541753444e-15
+ },
+ "not_in_T": [
+  "stem (crosswalk main axis = zero-length placeholder; display only)",
+  "trusses / flowers (none observed)",
+  "D surfels outside the blades (rachis, stem, unassigned) as receivers"
+ ],
+ "files": {
+  "T_triangles.csv": "4cb0f55e8148bf79ac0b06f69b356a364793d640c53545307bf01a5fe951b93a",
+  "T.obj": "02a6234ccce8399a5b68ffbd9d13d8444b970173709d165c3733abf72d95450f",
+  "T.ply": "3e4960f000b33b06bc4fb13c14e3cd17afbc767fc098df8acafa1ab8adaa1d66",
+  "T_diamond_triangles.csv": "18ce7edbc71a276bb3e765d2be815a0d2c6917ad31e7d1f5dfcc1ffe41c3b573",
+  "T_diamond.obj": "a81e7e25a39ae81213ca30748d588d036983602610c4ae50b4412b2b34417773",
+  "T_diamond.ply": "baa0350f2427f4f945fcc934d735add57fc71c07fbb2b45497c7b907971fcad4"
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "e_01": {
+  "file": "build/p1_all_3dfirst_20261027_01/e_01/skeleton/labels_skeleton_20261101T233304.npz",
+  "sha256": "c3576b65fb8fdf2f5ee6176aa1c4c133cd339ddbe23a7f9645315499bce9b439",
+  "latest_json_sha256": "9f3b7847225add0c4fda44590df55cbbf68332ab44e08d190d2f28785132a2f0",
+  "groups": "build/p1_all_3dfirst_20261027_01/e_01/merge/groups.npz",
+  "groups_sha256": "65a31bfffe7dfcdc6a0b1c6ea3b82c876db2f324e37288bf1ca518458de29834",
+  "branches": 12,
+  "at": "20261101T233304"
+ },
+ "e_04": {
+  "file": "build/p1_all_3dfirst_20261027_01/e_04/skeleton/labels_skeleton_20261101T233304.npz",
+  "sha256": "6f0ff9d310fdb10df99b2a71948479e790e056fea52ba56033ded95d34bc7b29",
+  "latest_json_sha256": "0bf4e32446d83f5dd522605bb5f3c8da88453f4d5688c2d62fecb1b1973c889a",
+  "groups": "build/p1_all_3dfirst_20261027_01/e_04/merge/groups.npz",
+  "groups_sha256": "f5802e009b08ce64b43646b0014f366ddef5b18ffac5cf53c69e0a94501d6f25",
+  "branches": 12,
+  "at": "20261101T233304"
+ },
+ "e_05": {
+  "file": "build/p1_all_3dfirst_20261027_01/e_05/skeleton/labels_skeleton_20261101T233305.npz",
+  "sha256": "c2114e3abe22613fe546703f7236dbca4d931c6a2b5b3caa17dec7f397f93a92",
+  "latest_json_sha256": "84ec348152991fc346227e3ef30f1f99c5beeffd7af036cdb81a574e7c0f17e3",
+  "groups": "build/p1_all_3dfirst_20261027_01/e_05/merge/groups.npz",
+  "groups_sha256": "924a57ede78eee395f6c4308e137f289bafc50e232996ddffc1ab88418add576",
+  "branches": 16,
+  "at": "20261101T233305"
+ },
+ "e_07": {
+  "file": "build/p1_all_3dfirst_20261027_01/e_07/skeleton/labels_skeleton_20261101T233306.npz",
+  "sha256": "d3d0ed6690d940c86d3e6a2e4493e639acd297b8a360998dd4416e0a02a6883d",
+  "latest_json_sha256": "1c45048a6be9214e5b71f2380fc1c542d648f09a2baa16f8b614ccaa8f59db83",
+  "groups": "build/p1_all_3dfirst_20261027_01/e_07/merge/groups.npz",
+  "groups_sha256": "5963662a6ea364ac872fac6fe95290c93db013f60f254faa5f2bd745322c6f41",
+  "branches": 14,
+  "at": "20261101T233306"
+ },
+ "n_01": {
+  "file": "build/p1_all_3dfirst_20261027_01/n_01/skeleton/labels_skeleton_20261101T233307.npz",
+  "sha256": "4d4c675650eb0205cdccb37cad512eb4588e0b161a34d0f935fde7b78e8bd78e",
+  "latest_json_sha256": "a32f8f0de2e346223b3a8a60d427d69f41f2ddbc84e94071cc47197d440d0698",
+  "groups": "build/p1_all_3dfirst_20261027_01/n_01/merge/groups.npz",
+  "groups_sha256": "97a01f3b8c06bf447791d92af9ba9c52339911268c68ae9e65a2a71ba3279aa9",
+  "branches": 17,
+  "at": "20261101T233307"
+ },
+ "n_02": {
+  "file": "build/p1_all_3dfirst_20261027_01/n_02/skeleton/labels_skeleton_20261101T233308.npz",
+  "sha256": "3b21072d09d5f35168de2493427cb405a38b211cc0aaa38d96510965613ad1fc",
+  "latest_json_sha256": "ed282ccbd4735746cf3b25af07d15f5af444d7581a4097fc9d41c6b3aaeb5cdc",
+  "groups": "build/p1_all_3dfirst_20261027_01/n_02/merge/groups.npz",
+  "groups_sha256": "73206af06a681c34aee2dd4b021abdcb2a174002cae5afbdd3803af9f5b28bf3",
+  "branches": 17,
+  "at": "20261101T233308"
+ },
+ "n_03": {
+  "file": "build/p1_all_3dfirst_20261027_01/n_03/skeleton/labels_skeleton_20261101T233308.npz",
+  "sha256": "fbf22c0474cffd737e2d5721ab93cb4d080cc7f807d1cb75a622cf419a9406cb",
+  "latest_json_sha256": "f03ff1f2603cf950ff0dd642f75c4c207098b5a774b5002a7ac2cb3944b082c1",
+  "groups": "build/p1_all_3dfirst_20261027_01/n_03/merge/groups.npz",
+  "groups_sha256": "eba44260207d762763028283bf3ec192f57fec35afee36b4e8b4a783b13ef5a7",
+  "branches": 11,
+  "at": "20261101T233308"
+ },
+ "n_05": {
+  "file": "build/p1_all_3dfirst_20261027_01/n_05/skeleton/labels_skeleton_20261101T233310.npz",
+  "sha256": "9eced9019488cd24982cf8f4c0d724dc8a68add6cc664a75787d86f003f376e8",
+  "latest_json_sha256": "0998d003094c559db6677de92b012c2239c689a8b0021f002063876b6f0f8c10",
+  "groups": "build/p1_all_3dfirst_20261027_01/n_05/merge/groups.npz",
+  "groups_sha256": "01aaec7779a690210648f3fafeaa82f23fbf2441a883fef41a60fc644927055c",
+  "branches": 13,
+  "at": "20261101T233310"
+ },
+ "n_06": {
+  "file": "build/p1_all_3dfirst_20261027_01/n_06/skeleton/labels_skeleton_20261101T233310.npz",
+  "sha256": "d36d173d94006be624388f0a4f9849eee105b3805794548806a26fe7672b447a",
+  "latest_json_sha256": "f9ff03d1dd0a4793a01957a6f23c48c8f1016c4a011096fac19971757bfdd478",
+  "groups": "build/p1_all_3dfirst_20261027_01/n_06/merge/groups.npz",
+  "groups_sha256": "98200cdf383e03ce1ff3f0c2c1cbacf41e8f40f88a3845b46d113d4cd7868fbe",
+  "branches": 10,
+  "at": "20261101T233310"
+ }
+}

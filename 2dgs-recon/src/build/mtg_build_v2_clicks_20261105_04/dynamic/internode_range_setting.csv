@@ -1,0 +1,2 @@
+a,b,concentration,lo_mm,hi_mm,median_mm,target_median_mm,mean_mm,sd_mm,p5_mm,p95_mm,draw_unit,label,method
+5.024584763293008,0.9754152367069917,6.0,2.0,4.0,3.75,3.75,3.674861587764336,0.2789167406132414,3.110846719414242,3.9813426670561327,"per internode (key RP_INTERNODE_MM, id P<n>/I<k>)",user_set_range_2.00_4.00_median_3.75,"scaled Beta on [2,4], a+b=6 fixed, a solved by brentq for median 0.875 of x=(L-2)/2"

@@ -1,0 +1,27 @@
+organ,rank_class,field,n,rule,generated,criterion,max_dev,passed
+main_compound_leaf,rank1,theta0_above_horizontal_deg,16,3.33 +- 6.06,4.370 +- 6.576,mean within 1 SD of the rule,1.0397887584476928,True
+main_compound_leaf,rank1,leaflets_per_leaf,16,"{""5"": 0.333, ""6"": 0.0, ""7"": 0.667}","{""5"": 0.188, ""6"": 0.0, ""7"": 0.812}",shares within 0.1,0.14550000000000002,False
+main_compound_leaf,rank2,theta0_above_horizontal_deg,16,26.67 +- 23.38,33.303 +- 16.491,mean within 1 SD of the rule,6.633147197379635,True
+main_compound_leaf,rank2,leaflets_per_leaf,16,"{""5"": 0.0, ""6"": 0.0, ""7"": 1.0}","{""5"": 0.0, ""6"": 0.0, ""7"": 1.0}",shares within 0.1,0.0,True
+main_compound_leaf,rank3,theta0_above_horizontal_deg,16,37.5 +- 28.24,36.922 +- 28.868,mean within 1 SD of the rule,0.5784125670679146,True
+main_compound_leaf,rank3,leaflets_per_leaf,16,"{""5"": 0.6663336663336663, ""6"": 0.16683316683316682, ""7"": 0.16683316683316682}","{""5"": 0.625, ""6"": 0.125, ""7"": 0.25}",shares within 0.1,0.08316683316683318,True
+main_compound_leaf,rank4,theta0_above_horizontal_deg,15,15.0 +- 10.0,13.059 +- 10.930,mean within 1 SD of the rule,1.941153769762808,True
+main_compound_leaf,rank4,leaflets_per_leaf,15,"{""5"": 0.4, ""6"": 0.0, ""7"": 0.6}","{""5"": 0.467, ""6"": 0.0, ""7"": 0.533}",shares within 0.1,0.06666666666666665,True
+main_compound_leaf,rank5,theta0_above_horizontal_deg,14,38.0 +- 14.83,45.581 +- 16.720,mean within 1 SD of the rule,7.5813050067406635,True
+main_compound_leaf,rank5,leaflets_per_leaf,14,"{""5"": 0.2, ""6"": 0.0, ""7"": 0.8}","{""5"": 0.071, ""6"": 0.0, ""7"": 0.929}",shares within 0.1,0.1285714285714286,False
+main_compound_leaf,rank6,theta0_above_horizontal_deg,12,28.0 +- 20.49,35.110 +- 21.493,mean within 1 SD of the rule,7.11005051045688,True
+main_compound_leaf,rank6,leaflets_per_leaf,12,"{""5"": 0.2, ""6"": 0.2, ""7"": 0.6}","{""5"": 0.333, ""6"": 0.167, ""7"": 0.5}",shares within 0.1,0.1333333333333333,False
+main_compound_leaf,rank7,theta0_above_horizontal_deg,10,36.0 +- 15.17,42.049 +- 12.716,mean within 1 SD of the rule,6.049260832053712,True
+main_compound_leaf,rank7,leaflets_per_leaf,10,"{""5"": 0.4, ""6"": 0.0, ""7"": 0.6}","{""5"": 0.2, ""6"": 0.0, ""7"": 0.8}",shares within 0.1,0.20000000000000007,False
+main_compound_leaf,rank8,theta0_above_horizontal_deg,9,26.67 +- 15.28,25.840 +- 15.140,mean within 1 SD of the rule,0.8299954860728889,True
+main_compound_leaf,rank8,leaflets_per_leaf,9,"{""5"": 0.667, ""6"": 0.0, ""7"": 0.333}","{""5"": 0.778, ""6"": 0.0, ""7"": 0.222}",shares within 0.1,0.11077777777777781,False
+main_compound_leaf,rank9,theta0_above_horizontal_deg,6,26.67 +- 15.28,23.847 +- 8.485,mean within 1 SD of the rule,2.823385367539064,True
+main_compound_leaf,rank9,leaflets_per_leaf,6,"{""5"": 1.0, ""6"": 0.0, ""7"": 0.0}","{""5"": 1.0, ""6"": 0.0, ""7"": 0.0}",shares within 0.1,0.0,True
+main_compound_leaf,all,dtheta_total_bend_deg,121,32.764 +- 10.602,34.037 +- 11.250,mean within 1 SD of the rule,1.2726426560701256,True
+main_compound_leaf,all,leaf_length_mm,121,43.745 +- 4.86,43.856 +- 5.172,mean within 1 SD of the rule,0.11122781334572807,True
+main_stem,internode,internode_length_mm,121,3.674861587764336 +- 0.2789167406132414,3.689 +- 0.303,mean within 1 SD of the rule,0.013920588413377732,True
+main_stem,plant,main_leaves_count,16,7.33 +- 2.34,7.562 +- 2.607,mean within 1 SD of the rule,0.23249999999999993,True
+main_compound_leaf,leaf,divergence_deg,105,137.0 +- 10.219099764656374,137.398 +- 10.100,mean within 1 SD of the rule,0.39814236066479225,True
+side_axis_compound_leaf,all,theta0_above_horizontal_deg,64,20.56 +- 17.98,19.345 +- 16.526,mean within 1 SD of the rule,1.215371302576461,True
+side_axis_compound_leaf,all,leaflets_per_leaf,64,"{""5"": 0.722, ""7"": 0.278}","{""5"": 0.672, ""7"": 0.328}",shares within 0.1,0.050124999999999975,True
+truss,plant,trusses_per_plant,16,"{""0"": 0.16666666666666666, ""1"": 0.3333333333333333, ""2"": 0.3333333333333333, ""3"": 0.16666666666666666}","{""0"": 0.312, ""1"": 0.188, ""2"": 0.25, ""3"": 0.25}",shares within 0.1,0.14583333333333334,False

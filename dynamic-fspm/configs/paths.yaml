@@ -1,0 +1,14 @@
+# Placeholders used in place of absolute personal paths in the copied files (see PATH_EDITS in the share build).
+# Edit the literal in the script, or replace the placeholder with your own path. Nothing reads this file automatically.
+PROJECT_ROOT: "<path to the original project root; in this repo it corresponds to src/>"
+SCRATCH_DIR: "<a local scratch folder outside any cloud-sync folder>"
+DOWNLOADS: "<folder holding the downloaded photo batches (not shared)>"
+PHOTO_ROOT: "<folder holding the original HEIC captures (not shared)>"
+ONEDRIVE_ROOT: "<cloud-sync root; not needed to run>"
+USER_HOME: "<user home>"
+SCRATCH_TAG: "<session scratch tag>"
+win_user: "<Windows user name>"
+# Machine paths kept as they were (not personal); change them to your install:
+FSP_BUILD_ROOT: "C:/fsp_build"            # large local run folder (dynamic + static GroIMP runs)
+GROIMP_HOME: "C:/Program Files/GroIMP 2.2.1"
+KAGGLE_INPUT: "/kaggle/input"              # kernels search their inputs here

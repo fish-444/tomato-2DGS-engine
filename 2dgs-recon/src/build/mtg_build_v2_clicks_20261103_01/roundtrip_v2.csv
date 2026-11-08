@@ -1,0 +1,12 @@
+plant,leaves,rachis_from_clicks,kept_surfel_fit,other,engine_roundtrip,bmodel,bmodel_roundtrip
+R3-1b,11,11,0,0,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+n_01,17,13,3,1,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+n_02,17,16,1,0,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+n_03,11,10,1,0,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+n_04,16,16,0,0,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+n_05,13,13,0,0,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+n_06,10,9,1,0,True,written,carried_over_identical_csv (mtgb-bm-clicks-20261103 7/7 exact)
+e_01,12,11,1,0,True,not_written,not_written_no_area
+e_04,12,12,0,0,True,not_written,not_written_no_area
+e_05,16,14,2,0,True,not_written,not_written_no_area
+e_07,14,13,0,1,True,not_written,not_written_no_area

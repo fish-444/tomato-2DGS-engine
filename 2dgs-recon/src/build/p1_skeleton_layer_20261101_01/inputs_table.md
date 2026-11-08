@@ -1,0 +1,13 @@
+| `tomato3d/organs/skeleton_assign.py` | 66295c577e2bc952 | 2026-11-01 00:45 |
+| `tomato3d/organs/all3d_page.py` | 8122946b8babcb3a | 2026-11-01 00:46 |
+| `tomato3d/organs/pc_absorb.py` | 372c06655d939376 | 2026-10-27 21:46 |
+| `tomato3d/organs/pc_rachis.py` | b9e76f0b96a0a912 | 2026-10-29 20:32 |
+| `tomato3d/organs/pc_absorb_prep.py` | dfec925e19dd08a8 | 2026-10-27 21:43 |
+| `tomato3d/organs/local_diffusion.py` | f9a435d1d504c3bc | 2026-10-27 13:55 |
+| `build/p1_pc_absorb_20261027_01/kaggle_data/r8pc_bundle.npz` | ec7cfbce98c8c642 | 2026-10-27 21:43 |
+| `build/p1_pc_absorb_20261027_01/R8_pc/labels.npz` | e1ff792be1c4efdf | 2026-10-27 21:54 |
+| `build/p1_pc_absorb_20261027_01/R8_pc_rachis/labels_rachis.npz` | ddcbac13dce1d34c | 2026-10-27 23:05 |
+| `build/p1_pc_absorb_20261027_01/LATEST_PIPELINE.json` | a2f00e3aa6c41526 | 2026-10-27 23:33 |
+| `build/p1_all_3dfirst_20261027_01/user_base_click.jsonl` | 7463d7e1bbeec6d8 | 2026-11-01 00:40 |
+| `build/p1_skeleton_assign_20261101_01/CONTRACT.md` | b0c624f741076e2d | 2026-11-01 00:45 |
+| `build/p1_compound_2dvote_20261025_01/traces_export/rachis_traces/leaf1_mvnnbr9l.json` | ea1b42b57a7090a7 | 2026-10-25 19:46 |

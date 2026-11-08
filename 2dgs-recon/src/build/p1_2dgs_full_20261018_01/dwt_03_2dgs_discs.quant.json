@@ -1,0 +1,10 @@
+{
+ "position_max_abs_rel_H": 9.0575717023393e-06,
+ "tu_max_deg": 0.050698400254214,
+ "tv_max_deg_before_gram_schmidt": 0.04645487864391459,
+ "scale_max_rel": 0.0016256186382039833,
+ "opacity_max_abs": 0.001960763510535757,
+ "html_bytes": 32151942,
+ "surfels": 233871,
+ "plant_surfels": 204567
+}

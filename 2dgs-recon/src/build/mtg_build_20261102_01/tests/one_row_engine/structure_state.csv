@@ -1,0 +1,15 @@
+plant_id,capture_id,vertex_id,part,upstream_track_state,link_status,time_since_lights_on_min,photoperiod_phase,frame,scale_status,evidence_ref
+mtg_one_row_test,mtg_build_one_row_test,p1/Plant,Plant,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:p1/Plant
+mtg_one_row_test,mtg_build_one_row_test,p1/A0,Axis,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:M
+mtg_one_row_test,mtg_build_one_row_test,p1/I1,Internode,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:N01
+mtg_one_row_test,mtg_build_one_row_test,p1/N1,Attachment,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:N01
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001,CompoundLeaf,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:L01
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/P,Petiole,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:p1/C0001/P
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/R1,RachisSegment,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:p1/C0001/R1
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/P1L,Leaflet,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:L01__P1L
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/P1R,Leaflet,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:L01__P1R
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/R2,RachisSegment,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:p1/C0001/R2
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/P2L,Leaflet,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:L01__P2L
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/P2R,Leaflet,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:L01__P2R
+mtg_one_row_test,mtg_build_one_row_test,p1/C0001/T,Leaflet,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:L01__T
+mtg_one_row_test,mtg_build_one_row_test,p1/A0/apex,Apex,active,confirmed,unavailable,unavailable,plant_local_mm,solved,plant_tree_v1:synthetic:M/apex

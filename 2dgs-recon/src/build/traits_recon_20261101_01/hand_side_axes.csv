@@ -1,0 +1,13 @@
+plant,main_rank,k,angle,excel_row,flags,labels
+dt01,2.0,1.0,,10,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt01,7.0,2.0,,15,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt01,9.0,3.0,,17,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt02,1.0,1.0,20.0,19,,hand_measured;user_confirmed_2026-11-01
+dt02,4.0,1.0,60.0,22,k_repeated_in_plant,hand_measured;user_confirmed_2026-11-01
+dt02,7.0,1.0,,25,angle_not_recorded|k_repeated_in_plant,hand_measured;user_confirmed_2026-11-01
+dt02,9.0,2.0,,27,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt03,5.0,1.0,,33,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt03,,2.0,,36,angle_not_recorded|attach_node_unknown,hand_measured;user_confirmed_2026-11-01
+dt04,2.0,1.0,,40,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt05,5.0,1.0,,53,angle_not_recorded,hand_measured;user_confirmed_2026-11-01
+dt06,,1.0,,59,angle_not_recorded|attach_node_unknown,hand_measured;user_confirmed_2026-11-01

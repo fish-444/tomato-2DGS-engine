@@ -1,0 +1,51 @@
+block,before_arm,after_arm,measure,before_median,after_median,paired_pct_median,n_seeds
+C4W,C5f1.15,C4W,leaf_area_cm2,13.033,8.614,-33.949,16
+C4W,C5f1.15,C4W,dm_g,0.344,0.276,-22.297,16
+C4W,C5f1.15,C4W,height_mm,29.123,26.3,-8.124,16
+C4W,C5f1.15,C4W,main_compounds,11.5,11.5,0.0,16
+C4W,C5f1.15,C4W,side_compounds,12.0,12.0,0.0,16
+C4W,C5f1.15,C4W,side_axes,2.0,2.0,0.0,16
+C4W,C5f1.15,C4W,trusses,9.0,9.0,0.0,16
+C4W,C5f1.15,C4W,fruits,31.0,36.0,16.129,16
+C4W,C5f1.15,C4W,max_leaflet_len_mm,13.428,11.679,-11.721,16
+C4W,C5f1.15,C4W,accepted_gross_last10,0.004,0.003,-33.599,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,leaf_area_cm2,8.614,8.762,-1.296,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,dm_g,0.276,0.271,-2.599,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,height_mm,26.3,27.142,0.078,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,main_compounds,11.5,12.0,0.0,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,side_compounds,12.0,17.5,52.273,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,side_axes,2.0,3.0,50.0,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,trusses,9.0,12.0,33.333,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,fruits,36.0,48.0,33.333,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,max_leaflet_len_mm,11.679,11.612,0.015,16
+"C4T (v2.4 counts, 2-4 side axes, divergence 90-100)",C4W,C4T2,accepted_gross_last10,0.003,0.003,-6.689,16
+C4L leaflet arrangement,C4T2,C4T2L,leaf_area_cm2,8.762,8.887,9.129,16
+C4L leaflet arrangement,C4T2,C4T2L,dm_g,0.271,0.266,4.342,16
+C4L leaflet arrangement,C4T2,C4T2L,height_mm,27.142,28.852,6.521,16
+C4L leaflet arrangement,C4T2,C4T2L,main_compounds,12.0,12.0,0.0,16
+C4L leaflet arrangement,C4T2,C4T2L,side_compounds,17.5,17.5,0.0,16
+C4L leaflet arrangement,C4T2,C4T2L,side_axes,3.0,3.0,0.0,16
+C4L leaflet arrangement,C4T2,C4T2L,trusses,12.0,12.0,0.0,16
+C4L leaflet arrangement,C4T2,C4T2L,fruits,48.0,48.0,0.0,16
+C4L leaflet arrangement,C4T2,C4T2L,max_leaflet_len_mm,11.612,13.429,20.102,16
+C4L leaflet arrangement,C4T2,C4T2L,accepted_gross_last10,0.003,0.002,6.34,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,leaf_area_cm2,8.887,8.278,-7.51,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,dm_g,0.266,0.255,-6.891,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,height_mm,28.852,27.66,-3.197,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,main_compounds,12.0,12.0,0.0,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,side_compounds,17.5,17.5,0.0,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,side_axes,3.0,3.0,0.0,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,trusses,12.0,12.0,0.0,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,fruits,48.0,48.0,0.0,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,max_leaflet_len_mm,13.429,13.354,-1.772,16
+C4B leaflet curvature (1 deg floor),C4T2L,C4T2LB1,accepted_gross_last10,0.002,0.002,-12.698,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,leaf_area_cm2,8.278,12.827,56.557,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,dm_g,0.255,0.348,37.427,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,height_mm,27.66,128.264,370.993,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,main_compounds,12.0,12.0,0.0,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,side_compounds,17.5,17.5,0.0,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,side_axes,3.0,3.0,0.0,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,trusses,12.0,12.0,0.0,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,fruits,48.0,48.0,0.0,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,max_leaflet_len_mm,13.354,15.247,14.177,16
+height scale x5.85 (v2.1),C4T2LB1,V21Bs5.85,accepted_gross_last10,0.002,0.004,67.665,16

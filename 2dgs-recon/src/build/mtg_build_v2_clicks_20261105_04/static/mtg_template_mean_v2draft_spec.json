@@ -1,0 +1,487 @@
+{
+ "plant_id": "template_mean_v2draft",
+ "kind": "template_mean",
+ "labels": [
+  "mtg_from_traits",
+  "conditional_on_unvalidated_scale",
+  "v2_ungraded_draft_not_frozen",
+  "after_checkpoint_v1",
+  "template_mean_plant",
+  "no_randomness"
+ ],
+ "axis": {
+  "source": "vertical, internode = median 3.75 mm (user_set_range)"
+ },
+ "age_dag": 60,
+ "age_source": "user_stated",
+ "flags": [],
+ "nodes": [
+  {
+   "k": 1,
+   "s_mm": 3.75,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    3.75
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 7.3,
+   "width_source": "hand_measured_by_rank"
+  },
+  {
+   "k": 2,
+   "s_mm": 7.5,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    7.5
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 7.1,
+   "width_source": "hand_measured_by_rank"
+  },
+  {
+   "k": 3,
+   "s_mm": 11.25,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    11.25
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 6.6,
+   "width_source": "hand_measured_by_rank"
+  },
+  {
+   "k": 4,
+   "s_mm": 15.0,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    15.0
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 7.2,
+   "width_source": "hand_measured_by_rank"
+  },
+  {
+   "k": 5,
+   "s_mm": 18.75,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    18.75
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 4.3,
+   "width_source": "hand_measured_by_rank"
+  },
+  {
+   "k": 6,
+   "s_mm": 22.5,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    22.5
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 4.3,
+   "width_source": "hand_measured_by_rank"
+  },
+  {
+   "k": 7,
+   "s_mm": 26.25,
+   "xyz_mm": [
+    0.0,
+    0.0,
+    26.25
+   ],
+   "internode_mm": 3.75,
+   "internode_source": "user_set_range_2.00_4.00_median_3.75",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_by_rank"
+  }
+ ],
+ "leaves": [
+  {
+   "k": 1,
+   "uid": "T-L01",
+   "node_k": 1,
+   "base_mm": [
+    0.0,
+    0.0,
+    3.75
+   ],
+   "azimuth_deg": 0.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 3.33,
+   "theta0_sd_deg": 6.06,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 447.4812675,
+   "area_source": "recon_pool_mean_area_by_rank(rank 1, n=4)",
+   "flags": [],
+   "geometry": "template"
+  },
+  {
+   "k": 2,
+   "uid": "T-L02",
+   "node_k": 2,
+   "base_mm": [
+    0.0,
+    0.0,
+    7.5
+   ],
+   "azimuth_deg": 137.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 26.67,
+   "theta0_sd_deg": 23.38,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 467.2016775,
+   "area_source": "recon_pool_mean_area_by_rank(rank 2, n=4)",
+   "flags": [],
+   "geometry": "template"
+  },
+  {
+   "k": 3,
+   "uid": "T-L03",
+   "node_k": 3,
+   "base_mm": [
+    0.0,
+    0.0,
+    11.25
+   ],
+   "azimuth_deg": 274.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 37.5,
+   "theta0_sd_deg": 28.24,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 5,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 446.890375,
+   "area_source": "recon_pool_mean_area_by_rank(rank 3, n=4)",
+   "flags": [],
+   "geometry": "template"
+  },
+  {
+   "k": 4,
+   "uid": "T-L04",
+   "node_k": 4,
+   "base_mm": [
+    0.0,
+    0.0,
+    15.0
+   ],
+   "azimuth_deg": 51.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 15.0,
+   "theta0_sd_deg": 10.0,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 499.567095,
+   "area_source": "recon_pool_mean_area_by_rank(rank 4, n=4)",
+   "flags": [],
+   "geometry": "template"
+  },
+  {
+   "k": 5,
+   "uid": "T-L05",
+   "node_k": 5,
+   "base_mm": [
+    0.0,
+    0.0,
+    18.75
+   ],
+   "azimuth_deg": 188.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 38.0,
+   "theta0_sd_deg": 14.83,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 526.41745,
+   "area_source": "recon_pool_mean_area_by_rank(rank 5, n=4)",
+   "flags": [],
+   "geometry": "template"
+  },
+  {
+   "k": 6,
+   "uid": "T-L06",
+   "node_k": 6,
+   "base_mm": [
+    0.0,
+    0.0,
+    22.5
+   ],
+   "azimuth_deg": 325.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 28.0,
+   "theta0_sd_deg": 20.49,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 668.0853199999999,
+   "area_source": "recon_pool_mean_area_by_rank(rank 6, n=4)",
+   "flags": [],
+   "geometry": "template"
+  },
+  {
+   "k": 7,
+   "uid": "T-L07",
+   "node_k": 7,
+   "base_mm": [
+    0.0,
+    0.0,
+    26.25
+   ],
+   "azimuth_deg": 102.0,
+   "azimuth_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+   "theta0_deg": 36.0,
+   "theta0_sd_deg": 15.17,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.745,
+   "length_source": "skeleton_traits_ungraded(plant-mean row; no per-rank value)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 309.81472,
+   "area_source": "recon_pool_mean_area_by_rank(rank 7, n=4)",
+   "flags": [],
+   "geometry": "template"
+  }
+ ],
+ "side_axes": [
+  {
+   "j": 1,
+   "attach_k": 2,
+   "attach_source": "hand_measured_most_frequent_attach_ranks",
+   "azimuth_deg": 137.0,
+   "azimuth_source": "attached_main_leaf_azimuth(B-model session rule)",
+   "angle_above_h_deg": 40.0,
+   "angle_source": "hand_measured_sparse(mean of 2 values 20,60)",
+   "internodes_mm": [
+    7.250672,
+    25.375572
+   ],
+   "internode_source": "model_published_1_50_branch_rows(kept; addendum \u00a71)",
+   "leaves": [
+    {
+     "i": 1,
+     "theta0_deg": 20.56,
+     "theta0_sd_deg": 17.98,
+     "theta0_source": "hand_measured_side",
+     "dtheta_deg": 32.764,
+     "dtheta_source": "skeleton_traits_ungraded",
+     "length_mm": 43.745,
+     "length_source": "skeleton_traits_ungraded(main-leaf row reused for side leaves; flagged)",
+     "leaflets": 5,
+     "leaflets_source": "hand_measured_side_mode",
+     "area_mm2": 478.44674387254906,
+     "area_source": "recon_pool_mean_area_all_ranks(side leaves have no area source; flagged)",
+     "flags": [
+      "side_leaf_size_reused"
+     ]
+    },
+    {
+     "i": 2,
+     "theta0_deg": 20.56,
+     "theta0_sd_deg": 17.98,
+     "theta0_source": "hand_measured_side",
+     "dtheta_deg": 32.764,
+     "dtheta_source": "skeleton_traits_ungraded",
+     "length_mm": 43.745,
+     "length_source": "skeleton_traits_ungraded(main-leaf row reused for side leaves; flagged)",
+     "leaflets": 5,
+     "leaflets_source": "hand_measured_side_mode",
+     "area_mm2": 478.44674387254906,
+     "area_source": "recon_pool_mean_area_all_ranks(side leaves have no area source; flagged)",
+     "flags": [
+      "side_leaf_size_reused"
+     ]
+    }
+   ]
+  },
+  {
+   "j": 2,
+   "attach_k": 5,
+   "attach_source": "hand_measured_most_frequent_attach_ranks",
+   "azimuth_deg": 188.0,
+   "azimuth_source": "attached_main_leaf_azimuth(B-model session rule)",
+   "angle_above_h_deg": 40.0,
+   "angle_source": "hand_measured_sparse(mean of 2 values 20,60)",
+   "internodes_mm": [
+    7.250672,
+    25.375572
+   ],
+   "internode_source": "model_published_1_50_branch_rows(kept; addendum \u00a71)",
+   "leaves": [
+    {
+     "i": 1,
+     "theta0_deg": 20.56,
+     "theta0_sd_deg": 17.98,
+     "theta0_source": "hand_measured_side",
+     "dtheta_deg": 32.764,
+     "dtheta_source": "skeleton_traits_ungraded",
+     "length_mm": 43.745,
+     "length_source": "skeleton_traits_ungraded(main-leaf row reused for side leaves; flagged)",
+     "leaflets": 5,
+     "leaflets_source": "hand_measured_side_mode",
+     "area_mm2": 478.44674387254906,
+     "area_source": "recon_pool_mean_area_all_ranks(side leaves have no area source; flagged)",
+     "flags": [
+      "side_leaf_size_reused"
+     ]
+    },
+    {
+     "i": 2,
+     "theta0_deg": 20.56,
+     "theta0_sd_deg": 17.98,
+     "theta0_source": "hand_measured_side",
+     "dtheta_deg": 32.764,
+     "dtheta_source": "skeleton_traits_ungraded",
+     "length_mm": 43.745,
+     "length_source": "skeleton_traits_ungraded(main-leaf row reused for side leaves; flagged)",
+     "leaflets": 5,
+     "leaflets_source": "hand_measured_side_mode",
+     "area_mm2": 478.44674387254906,
+     "area_source": "recon_pool_mean_area_all_ranks(side leaves have no area source; flagged)",
+     "flags": [
+      "side_leaf_size_reused"
+     ]
+    }
+   ]
+  }
+ ],
+ "trusses": [],
+ "notes": [
+  "trusses: 1.5/plant, 3.56 flowers/truss in the hand data, node position not confirmed -> not written (pending_user)",
+  "fruits not used (pending_user)",
+  "side axes: 2 at ranks [2, 5], 2 leaves each (18/12 rounded), leaves per axis distribution pending_traits"
+ ],
+ "pooled_areas": {
+  "1": {
+   "mean": 447.4812675,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "2": {
+   "mean": 467.2016775,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "3": {
+   "mean": 446.890375,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "4": {
+   "mean": 499.567095,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "5": {
+   "mean": 526.41745,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "6": {
+   "mean": 668.0853199999999,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "7": {
+   "mean": 309.81472,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "8": {
+   "mean": 307.758035,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "9": {
+   "mean": 743.5474750000001,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "10": {
+   "mean": 701.7685325,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "11": {
+   "mean": 475.43749,
+   "n": 4,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "12": {
+   "mean": 457.2246733333333,
+   "n": 3,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "13": {
+   "mean": 548.34313,
+   "n": 3,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "14": {
+   "mean": 318.758615,
+   "n": 2,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "15": {
+   "mean": 358.751565,
+   "n": 2,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "16": {
+   "mean": 505.872735,
+   "n": 2,
+   "plants": "n_01,n_03,n_04,n_05"
+  },
+  "17": {
+   "mean": 350.67449,
+   "n": 1,
+   "plants": "n_01,n_03,n_04,n_05"
+  }
+ },
+ "divergence_deg": 137.0,
+ "divergence_source": "literature_range_midpoint(119.3-154.7); not a measurement",
+ "internode_mm": 3.75,
+ "internode_source": "user_set_range_2.00_4.00_median_3.75(median)"
+}

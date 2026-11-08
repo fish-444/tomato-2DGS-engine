@@ -1,0 +1,26 @@
+{
+  "started": "2026-11-06 17:35:30",
+  "batch": "G0V22A",
+  "cases": {
+    "BASE_G0_r1_v22A-4p6468": {
+      "spec": "BASE@G0@r1@v22A:4.6468",
+      "model_sha": "93546da117110c86843ea0192601a8e617c45730d6f453bcac3ab578f2ffe277"
+    }
+  },
+  "jobs": [
+    "BASE_G0_r1_v22A-4p6468",
+    "V22A_s4.6468_m00"
+  ],
+  "dataset": {
+    "slug": "ideo-g0v22a-20261105",
+    "runs.tar.gz": {
+      "sha256": "235b52026fe4eeeac16194e7e19ca8bac8ed2a9d6bc1db107d9e2a1df48a4d0e",
+      "bytes": 2099435
+    },
+    "code.tar.gz": {
+      "sha256": "137425d8c090b289a481ebb4b979fe9d3a15fc9051c78dd3c092fb888623a419",
+      "bytes": 10142
+    }
+  },
+  "finished": "2026-11-06 17:36:36"
+}

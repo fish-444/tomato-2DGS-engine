@@ -1,0 +1,25 @@
+{
+  "started": "2026-11-06 19:04:39",
+  "batch": "GUIBASE",
+  "cases": {
+    "BASE_s10h40_r1_v22A-4p6468": {
+      "spec": "BASE@s10h40@r1@v22A:4.6468",
+      "model_sha": "f8b85dd42cbc58f6e8db2ad781036fc1ac6ef918ff23c3ef1f0ddcc432306e47"
+    }
+  },
+  "jobs": [
+    "BASE_s10h40_r1_v22A-4p6468"
+  ],
+  "dataset": {
+    "slug": "ideo-guibase-20261105",
+    "runs.tar.gz": {
+      "sha256": "262607b43afc6b646a99db0ac5321421f0318b8e37474a4e57555489cd6b0cd3",
+      "bytes": 1050449
+    },
+    "code.tar.gz": {
+      "sha256": "39298a8c400ba8f82d93fb970837d143f7a83bc3b159e4c30e54379ebcde73a4",
+      "bytes": 10142
+    }
+  },
+  "finished": "2026-11-06 19:05:22"
+}

@@ -1,0 +1,121 @@
+{
+  "started": "2026-11-04 17:07:12",
+  "batch": "P1",
+  "arms": [
+    "B0",
+    "C1",
+    "C2",
+    "C2T",
+    "C3",
+    "C4"
+  ],
+  "cases": {
+    "B0_m00": {
+      "arm": "B0",
+      "m": 0,
+      "seed": 20261020,
+      "model_sha": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+      "repro_divsens": true
+    },
+    "C1_m00": {
+      "arm": "C1",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C1",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "34598fb2266a3fcd94f40af310710e4236abbaadb0d0d9bd89349ffa0f304af3",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "34598fb2266a3fcd94f40af310710e4236abbaadb0d0d9bd89349ffa0f304af3",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    },
+    "C2_m00": {
+      "arm": "C2",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C2",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "2baf4f056b2c12504c3e10804d06a1aa60769534d971a004d1af67156e0ca187",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "2baf4f056b2c12504c3e10804d06a1aa60769534d971a004d1af67156e0ca187",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    },
+    "C2T_m00": {
+      "arm": "C2T",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C2",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "ea05645126c019d95eeac4f2f401b1a6e10d677d49f36bdef4f0522b00951ea1",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "ea05645126c019d95eeac4f2f401b1a6e10d677d49f36bdef4f0522b00951ea1",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    },
+    "C3_m00": {
+      "arm": "C3",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C3",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "ebc0dc3c8d074eb6c84fddbeff5e2b26950f954ad78498c7c381d27ea028d0d8",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "ebc0dc3c8d074eb6c84fddbeff5e2b26950f954ad78498c7c381d27ea028d0d8",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    },
+    "C4_m00": {
+      "arm": "C4",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C4",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "d052a2556a93ab72b025f74d04c889e7543d19e5ef4a56c5e002394481e0e9fb",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "d052a2556a93ab72b025f74d04c889e7543d19e5ef4a56c5e002394481e0e9fb",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    }
+  },
+  "repro": {
+    "B0_m00": true
+  },
+  "dataset": {
+    "slug": "engv2-p1-20261104",
+    "runs.tar.gz": {
+      "sha256": "33d8f89e7b0cb4f7aa0096795a097dc2d8025492160219a7fb3ad5f7f33e9073",
+      "bytes": 6261284
+    },
+    "code.tar.gz": {
+      "sha256": "fcddc5f289f8de47523c5096696bc7da30ba67085444da6afeb8df4937a04b53",
+      "bytes": 7531
+    }
+  },
+  "finished": "2026-11-04 17:07:42"
+}

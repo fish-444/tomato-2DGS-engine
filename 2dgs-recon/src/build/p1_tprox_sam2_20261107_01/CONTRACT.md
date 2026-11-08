@@ -1,0 +1,49 @@
+# CONTRACT — P1 labelling: T-prox + SAM 2 results — (A) leaflet masks as must-link groups, (B) multi-view agreement seeds
+
+Declared 2026-11-07 (~22:30 KST), before any arm number. Source: the pasted CLI prompt "P1 labelling: improve T-prox with SAM 2 results" (2026-11-07 21:30; user request 21:25: options A and B). Its sections 0–5 and "Do not" apply verbatim; this file records the facts and every declared value.
+Labels: `post_freeze`, `labelling_method_trial`, `not_adopted_until_user_decides` (+ the fairness label of each arm below). The frozen T-prox results (pilot 0.750, 11-plant tables in `build/p1_tprox_others_20261101_01/`) stay unchanged.
+
+## 1. Provenance and inputs (step 1 of the prompt)
+- Frozen T0 = R3-1b T-prox run `build/p1_skeleton_layer_20261101_01/r8pc/R3-1b/20261101T133038/` (bundle sha16 3ab384b446def4d1, R8_pc labels 9319c303e598a883, rachis labels b455a73a8b097b5b; frozen `pc_absorb.py` 372c06655d939376, `pc_rachis.py` b9e76f0b96a0a912). Re-scored from the stored file today: report half 0.7503 (4601 / 6132), contested 0.0095.
+- **Weight set (prompt vs frozen):** the prompt says geometry 0.7 / colour 0.3 (= set B). The frozen T0 that gave 0.750 used **set A (geometry 1.0 / colour 0.0)** (`R8_pc/labels.npz` set_name = A; in-kernel choice A). "Keep … unchanged" is followed: every arm uses set A. Stated, not tuned.
+- SAM 2 outputs used:
+  - **A — leaflet masks:** H2 proposals (M1 YOLO11s-seg finds + SAM 2.1 tiny v5 masks, automatic prompts from the finder boxes/points) `build/p1_recon_charuco_20261021_01/leaflets/proposals/*.json` (61 train photos, concatenated-hash b6b24f7a92237b55). M1 and SAM v5 were trained on other plants' material; no R3-1b label enters → **`prompt_independent`**.
+  - **B — compound-leaf labels:** SAM 2 V-P propagated maps `build/p1_compound_userlabel_20261025_01/map_v3_charuco/user_labelled_propagated/propagated_maps.npz` (54 photos, sha16 b88d21cf4e5dbc3b), propagated from the user's compound-leaf labels on the 4 photos 060313903 / 060544649 / 060450923 / 060427460 — exactly the photos whose human labels are the scoring truth. → **`prompt_from_scoring_labels`**: B and A+B are an upper reference (like photo-label seeds 0.942), not a fair accuracy. The 4 labelled photos' own maps are not used (they are human labels).
+- Mapping masks to surfels: the frozen R3-1b photo geometry — `sheet_retry.projections` (ChArUco poses of the 2DGS reconstruction, 1536 grid) and visibility = 2DGS contribution W ≥ 0.1 (`build/p1_stacked_sheets_20261026_01/contributions.npz`, sha16 f3289307d85a37fe), the rule the existing scoring code declares (instead of a 2 mm depth test). Blade surfels only (the set the scorer uses).
+- Other plants with SAM 2 masks (`build/p1_all_3dfirst_20261027_01/<pid>/cands`, SAM-auto + H2 per posed photo): e_01 19, e_04 16, e_05 25, n_01 28, n_02 18, n_03 24, n_04 29, n_05 20, n_06 10, t2_02 32, t2_05 27 photos. No V-P compound maps exist for them (B is R3-1b only).
+
+## 2. Arms (unchanged T-prox seeds, set-A walker, accept p1 ≥ 0.6 and p1 − p2 ≥ 0.25, ≤ 5 rounds, frozen rachis absorption after every arm)
+- **T0:** frozen bundle re-run in the new kernel; must match the stored labels / 0.7503 within 0.002 (else stop and report).
+- **A:** per photo, each H2 mask → group = visible blade surfels (walker nodes) projecting inside it (masks with < 5 such surfels dropped). Merge across photos with union–find when |a ∩ b| / min(|a|, |b|) ≥ share. A surfel left in two final groups → `group_conflict`, removed from both. Groups holding stage-1 seeds of > 1 leaf → `group_mixed_seeds`, dropped. In the walker each kept group is one node: W and Laplacian contracted (W_g = Sᵀ W S, self-loops removed), unary priors of its members summed then normalised, the group's label (seed or accepted) applies to every member. A group containing seeds of one leaf is a seed node of that leaf (labels only come from T-prox seeds). The walker code is a derived copy (`pc_absorb_grouped.py`); the frozen file is unchanged.
+- **B:** from the T0 run, per non-seed walker node: the V-P label in every one of the 54 photos where it is visible and labelled (> 0). Added as a seed iff photos ≥ n_min, agreement ≥ a_min, label == its T0 label, and T0 p1 ≥ 0.6. One walker re-run with the enlarged stage-1.
+- **A+B:** A's groups; B's selection on the A+B first pass (= the A run with the same share); then one grouped re-run.
+
+## 3. Tuning and scoring
+- Tuning half = leaves 1·3·6·8; report half = 2·4·5·7.
+- Grids: A share ∈ {0.40, 0.50, 0.60}; B n_min ∈ {2, 3, 4} × a_min ∈ {0.70, 0.80, 0.90}; A+B = the joint 3 × 9 grid. Best = highest tuning-half accuracy (ties within 0.002 → lower contested share). Report half scored once per arm, only for the chosen setting (enforced in `score.py`).
+- Metric = the frozen T-prox metric (`skeleton_r31b_eval.score`): per labelled front-visible human projection on the 4 labelled photos, contested/none counted wrong, Wilson 95 %. The prompt's "same bootstrap as the frozen table": the frozen table used Wilson, so Wilson is kept; the paired difference vs T0 uses a bootstrap over surfels (2,000 resamples, seed 0) of the per-projection correctness difference.
+- "Improved" iff report-half accuracy > T0 AND the paired-difference 95 % CI > 0.
+- Also: group coverage share, added seeds, `group_conflict`, `group_mixed_seeds`, contested share.
+
+## 4. Compute
+Walker runs on one Kaggle CPU kernel (bundle + groups + votes + frozen `pc_absorb.py` / `pc_rachis.py` + the derived grouped walker); local = mask→surfel projection, scoring, figures. The 11 other plants are not run before the user decides.
+
+## 5. Outputs
+`RESULT_P1_TPROX_SAM2.csv`, per-arm labels `.npz`, tuning grid table, figure (pilot plant T0 vs A vs A+B, changed surfels), report `handoff/P1_TPROX_SAM2_2026-11-07_KO.md` (first line = fairness labels), LOG line, hashes, lock.
+
+## Amendment A1 (2026-11-07, before any arm score; diagnostic = group counts only, `diag_groups.py`)
+With the declared merge test |a ∩ b| / **min**(|a|, |b|) ≥ share, union–find chains 1,181 / 1,162 / 1,104 of the 1,187 H2 masks (share 0.4 / 0.5 / 0.6) into one component; it holds seeds of several leaves and is dropped as `group_mixed_seeds`, leaving group coverage 0.2–0.75 % of the blade (A would equal T0 by construction). The prompt's wording "share ≥ 50 % of their surfels" is read as **each** group sharing ≥ share of its own surfels with the other: merge iff |a ∩ b| / **max**(|a|, |b|) ≥ share (components 471 / 757 / 994, largest 55 / 41 / 12 masks). The min-version statistics are kept in `prep_meta_min.json`. No accuracy of any arm has been computed.
+
+## Amendment A2 — the 11 other plants, arm A only (user decision 2026-11-07: "a" = option 1 of the report)
+- Arm A with the R3-1b chosen setting (share 0.40, max-rule of A1); B / A+B not applicable (no V-P maps). Labels: `ungraded`, `post_freeze`, `labelling_method_trial`, `not_adopted_until_user_decides`, `prompt_independent`.
+- T0 per plant = the frozen T-prox run of `build/p1_tprox_others_20261101_01/runs/<pid>/<stamp>/` (bundle, set A); re-run in the kernel and compared with its stored `R8_pc` and `R8_pc_rachis` labels (agreement reported; below 0.998 → that plant is flagged `t0_not_reproduced` and its A numbers are not reported as a difference).
+- Masks: the H2 layer only (`prop == "P-H2"`) of `build/p1_all_3dfirst_20261027_01/<pid>/cands/<stem>_cands.json` (same mask family as R3-1b arm A; SAM-auto layer not used), over the plant's vote views (`inputs.json` views minus `label_heldout_excluded_from_votes`). Held-out picks are never read.
+- Visibility = the 3D-first route's own rule (`all_compound.visibility` → `seed2d.votes_per_view`, splat z-buffer at 1512 px, tol 1.5 mm, radius 1.5 σ, ≤ 14 px) computed in the kernel (3D-first is a Kaggle-only lane); all opaque surfels occlude, groups use the bundle's axis-0 rows.
+- Per plant outputs: T0 vs A labels (`labels_T0_<pid>.npz`, `labels_A_<pid>.npz`, R8 numbering + leaf_map), assigned share (all / blade), changed-leaf share among surfels assigned by both, group coverage, conflicts, mixed groups. No accuracy.
+- Note (standing rule "no automatic seeds on other plants"): A adds no seed; a group that contains T-prox seeds of one leaf passes that label to its members inside the walker (must-link), which is the method the user chose; stated so in the report.
+
+## Amendment A3 — held-out pick comparison T0 vs A (user request 2026-11-08 "held-out pick으로 T0랑 A 비교해봐"; declared before any A number on these versions)
+- Plants = the 12 with a held-out grade in `build/p1_dz10_labels_20261101_01/grade_*.json` (e_01, e_04, e_05, e_07, n_01–n_05, t2_02, t2_04, t2_05; n_06 has no grade). The picks belong to the dz10 skeleton versions (user-confirmed, 11-01/02), so **T0 = the graded dz10 T-prox run of that version** (`<pid>_<skelver>/runs/<pid>/<stamp>/`, set A), not the older `p1_tprox_others` run used in A2. Each plant's live skeleton version equals the graded version (checked).
+- A = the same bundle + H2-mask groups (share 0.40, max-rule), visibility / masks / kernel exactly as A2. The picks never enter the kernel (they are read only by the local grader).
+- Grader = `skeleton_io.heldout_agreement` (contested / none = disagreement; '모름' excluded), labels → leaf_uid through each run's `bundle_meta.json` leaf_map. T0 regraded through the same path must reproduce the stored grade (agree / n) per plant, else that plant is flagged.
+- Reported: per plant T0 vs A agree / n and grade; pooled agree / n with Wilson 95 %; discordant picks (T0 right & A wrong, A right & T0 wrong) and an exact McNemar (binomial) p. With ~10 picks per plant, per-plant differences are not interpretable alone; only the pooled paired test is used, and A is "better on picks" iff A's pooled agreement > T0's and McNemar p < 0.05.

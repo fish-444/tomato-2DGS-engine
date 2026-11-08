@@ -1,0 +1,8679 @@
+{
+ "schema": "plant_tree_v1",
+ "source": "reconstruction",
+ "input_status": "mtg_from_traits:observed",
+ "units": "mm",
+ "frame": "board frame mm, z up",
+ "synthetic": false,
+ "provenance": {
+  "geometry": "reconstructed",
+  "theta0": "user_measured",
+  "dtheta": "reconstructed",
+  "leaflets": "user_measured",
+  "internodes": "reconstructed"
+ },
+ "plant": {
+  "id": "e_07",
+  "flags": [],
+  "attrs": {
+   "labels": [
+    "mtg_from_traits",
+    "conditional_on_unvalidated_scale",
+    "v2_ungraded_draft_not_frozen",
+    "after_checkpoint_v1",
+    "skeleton_labels_ungraded",
+    "grade_C",
+    "axis_user_skeleton_axis",
+    "fitted_to_surfels",
+    "user_accepted_despite_synthetic_fail"
+   ],
+   "age_dag": 60,
+   "age_source": "user_stated",
+   "kind": "observed",
+   "mtg_build": "build/mtg_build_20261102_01",
+   "shape_helpers": {
+    "PET_SHARE": 0.3,
+    "PAIR_ANGLE_DEG": 45.0,
+    "SHARES": {
+     "T": 1.5,
+     "P": 1.0,
+     "I": 0.5
+    },
+    "LW": 1.5,
+    "note": "user_assumed shape helpers for triangles only, not traits"
+   }
+  }
+ },
+ "axes": [
+  {
+   "id": "M",
+   "kind": "main",
+   "parent_axis": null,
+   "parent_node": null,
+   "tube": {
+    "kind": "tube",
+    "polyline": [
+     [
+      158.48,
+      125.6,
+      87.03
+     ],
+     [
+      158.97849419257395,
+      125.28216834863342,
+      87.92876411759711
+     ],
+     [
+      159.47163447420488,
+      124.9841804772105,
+      88.80852979488168
+     ],
+     [
+      159.94661469223652,
+      124.71083117574499,
+      89.68074515927762
+     ],
+     [
+      160.42354004777695,
+      124.46055403907702,
+      90.53706298752074
+     ],
+     [
+      160.88687570879495,
+      124.21618521400994,
+      91.3841355070841
+     ],
+     [
+      161.34341168423978,
+      123.99125468332552,
+      92.22519470505839
+     ],
+     [
+      161.80577777376965,
+      123.78355159601844,
+      93.05561076222645
+     ],
+     [
+      162.25893742439396,
+      123.57602719083148,
+      93.88216204262692
+     ],
+     [
+      162.71011969149805,
+      123.39035934067616,
+      94.70971473696589
+     ],
+     [
+      163.16183758802302,
+      123.19828615573897,
+      95.53242072879077
+     ],
+     [
+      163.61096779636833,
+      123.02528420243789,
+      96.36169146971228
+     ],
+     [
+      164.06630539917361,
+      122.84504736951881,
+      97.18892546178729
+     ],
+     [
+      164.52938001560287,
+      122.67639981421509,
+      98.02088274100676
+     ],
+     [
+      164.9923822785954,
+      122.5058352719883,
+      98.86175435797595
+     ],
+     [
+      165.46297770742865,
+      122.32679821685092,
+      99.7086217241053
+     ],
+     [
+      165.94436228101387,
+      122.15767051904105,
+      100.5667305659804
+     ],
+     [
+      166.432591137943,
+      121.97150336672321,
+      101.43544881979933
+     ],
+     [
+      166.93422493387968,
+      121.78633696074967,
+      102.31773707227957
+     ],
+     [
+      167.44345150770147,
+      121.598054532091,
+      103.2189642749183
+     ],
+     [
+      167.969615617674,
+      121.39487894401643,
+      104.1342929828454
+     ],
+     [
+      168.50970468192017,
+      121.19017438174747,
+      105.06879475591181
+     ],
+     [
+      169.0625517199025,
+      120.9732990944538,
+      106.01462936849883
+     ],
+     [
+      169.61912682041864,
+      120.76402326349823,
+      106.97163867618848
+     ],
+     [
+      170.1837717116638,
+      120.56220242822663,
+      107.92854975634769
+     ],
+     [
+      170.74884166088998,
+      120.37042951707228,
+      108.88171847969814
+     ],
+     [
+      171.3099026141785,
+      120.20138505287173,
+      109.82669453358383
+     ],
+     [
+      171.8631580298016,
+      120.05398765181978,
+      110.75720146122116
+     ],
+     [
+      172.40523796973093,
+      119.93897947693361,
+      111.66766834271348
+     ],
+     [
+      172.9326842008128,
+      119.87106761915506,
+      112.55237823161112
+     ],
+     [
+      173.44167653182592,
+      119.84182355399689,
+      113.40501555850639
+     ],
+     [
+      173.92991069630907,
+      119.86551320481348,
+      114.22163920475084
+     ],
+     [
+      174.3970227382042,
+      119.94306783150599,
+      115.00853906528579
+     ],
+     [
+      174.8525721346851,
+      120.07728471273678,
+      115.76807356739947
+     ],
+     [
+      175.2892311188617,
+      120.25184605536398,
+      116.51453149195066
+     ],
+     [
+      175.7161828479175,
+      120.478309791451,
+      117.2485529281857
+     ],
+     [
+      176.13503690008287,
+      120.75875110329572,
+      117.97550682495263
+     ],
+     [
+      176.53637468209774,
+      121.08911980651051,
+      118.70708390976624
+     ],
+     [
+      176.92767918833923,
+      121.4654916773294,
+      119.44522567786821
+     ],
+     [
+      177.30163498488633,
+      121.89717678225416,
+      120.19304577004296
+     ],
+     [
+      177.65632388739988,
+      122.37755140912594,
+      120.95577488923487
+     ],
+     [
+      177.9880241250072,
+      122.90696240054565,
+      121.73145476229158
+     ],
+     [
+      178.27651037554446,
+      123.48833708756686,
+      122.51238073287618
+     ],
+     [
+      178.51149371044616,
+      124.11047567567823,
+      123.29377771686013
+     ],
+     [
+      178.6955022801336,
+      124.76541097150242,
+      124.06666225112421
+     ],
+     [
+      178.80629148189888,
+      125.44465622135904,
+      124.8274443785766
+     ],
+     [
+      178.84897193480484,
+      126.14234650717715,
+      125.569024578379
+     ],
+     [
+      178.82872609129302,
+      126.84723555255566,
+      126.2919887684407
+     ],
+     [
+      178.7416672734118,
+      127.55060386902481,
+      126.99681853327358
+     ],
+     [
+      178.5946035908956,
+      128.25228253497895,
+      127.67861995636629
+     ],
+     [
+      178.38222565384817,
+      128.94369317647252,
+      128.33947659220414
+     ],
+     [
+      178.11241089451295,
+      129.62465200191406,
+      128.9795691043962
+     ],
+     [
+      177.7821751522405,
+      130.29200322197434,
+      129.6022547600481
+     ],
+     [
+      177.4006921649192,
+      130.94124864058375,
+      130.22023708907886
+     ],
+     [
+      176.9748362012415,
+      131.57344736964808,
+      130.83955662997343
+     ],
+     [
+      176.50276781058082,
+      132.18561686254122,
+      131.4664352255351
+     ],
+     [
+      175.9885517713705,
+      132.7720955417067,
+      132.11254500651273
+     ],
+     [
+      175.43199359359488,
+      133.335501653012,
+      132.77997883184938
+     ],
+     [
+      174.83966376398863,
+      133.87171808879245,
+      133.48029792963445
+     ],
+     [
+      174.2073519571759,
+      134.38350546707605,
+      134.21392928020524
+     ],
+     [
+      173.53506300827667,
+      134.8693729892494,
+      134.98676008065294
+     ],
+     [
+      172.8301946371821,
+      135.32684922384612,
+      135.80704819916278
+     ],
+     [
+      172.09929270445033,
+      135.7577531065739,
+      136.66726502039958
+     ],
+     [
+      171.3566542525577,
+      136.16460821740515,
+      137.56126078277615
+     ],
+     [
+      170.6125160673668,
+      136.55197407339077,
+      138.47933376892703
+     ],
+     [
+      169.8729581782153,
+      136.92005699243506,
+      139.41220372626313
+     ],
+     [
+      169.15088588111067,
+      137.2669313307287,
+      140.35547285486433
+     ],
+     [
+      168.45428426234096,
+      137.5952946823704,
+      141.2995724059713
+     ],
+     [
+      167.7907363956138,
+      137.91355807308915,
+      142.2319222774285
+     ],
+     [
+      167.1787312132413,
+      138.219033730938,
+      143.15146573170665
+     ],
+     [
+      166.62836763154405,
+      138.51255681098968,
+      144.05100945254046
+     ],
+     [
+      166.14116205435184,
+      138.79600473197868,
+      144.91986444631584
+     ],
+     [
+      165.71560140314975,
+      139.0677517683641,
+      145.75515774492817
+     ],
+     [
+      165.34833890800726,
+      139.3313034615968,
+      146.55275259625452
+     ],
+     [
+      165.04045353916567,
+      139.58052408978304,
+      147.31458491185174
+     ],
+     [
+      164.78409338876466,
+      139.81792851712282,
+      148.03489793669345
+     ],
+     [
+      164.5733900773477,
+      140.0443051751633,
+      148.70946886189117
+     ],
+     [
+      164.41309605634598,
+      140.25304175865128,
+      149.34211154829993
+     ],
+     [
+      164.29272893996378,
+      140.4473333017897,
+      149.9256246235106
+     ],
+     [
+      164.20622288205075,
+      140.6251733024478,
+      150.45682987819353
+     ],
+     [
+      164.15382829502445,
+      140.78731966810096,
+      150.9347917958856
+     ],
+     [
+      164.13182589367642,
+      140.93504721044954,
+      151.35654136797868
+     ],
+     [
+      164.135472979509,
+      141.06486671014838,
+      151.71993717610968
+     ],
+     [
+      164.15409625074787,
+      141.168402145838,
+      152.02134894929708
+     ],
+     [
+      164.19621510085233,
+      141.2539996785279,
+      152.26175058424553
+     ],
+     [
+      164.25289350191184,
+      141.32169647849827,
+      152.43621210729097
+     ],
+     [
+      164.31428896226606,
+      141.36436292477734,
+      152.54108817752632
+     ],
+     [
+      164.3606566959415,
+      141.37927279284676,
+      152.57316952883494
+     ]
+    ],
+    "radius": [
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65,
+     3.65
+    ],
+    "segs": 8
+   },
+   "flags": [],
+   "attrs": {
+    "source": "fitted_to_surfels_ungraded (start: user_skeleton_axis); flags ['stem_kept_clicked_band']"
+   }
+  }
+ ],
+ "nodes": [
+  {
+   "id": "N01",
+   "axis": "M",
+   "index": 1,
+   "rank": 1,
+   "s_mm": 29.623650477735218,
+   "position": [
+    172.78037648168336,
+    119.89067814919692,
+    112.29690546997463
+   ],
+   "leaves": [
+    "L01"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 29.623650477735218,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 7.3,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N02",
+   "axis": "M",
+   "index": 2,
+   "rank": 2,
+   "s_mm": 37.42772076382353,
+   "position": [
+    176.6232805020137,
+    121.17270919918319,
+    118.87101970541363
+   ],
+   "leaves": [
+    "L02"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 7.8040702860883115,
+    "internode_source": "skeleton_axis_observed",
+    "stem_width_mm": 7.1,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N03",
+   "axis": "M",
+   "index": 3,
+   "rank": 3,
+   "s_mm": 37.704090991971256,
+   "position": [
+    176.74130239592608,
+    121.28622724025064,
+    119.09365166609305
+   ],
+   "leaves": [
+    "L03"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 0.2763702281477265,
+    "internode_source": "skeleton_axis_observed",
+    "stem_width_mm": 6.6,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N04",
+   "axis": "M",
+   "index": 4,
+   "rank": 4,
+   "s_mm": 38.59590692600534,
+   "position": [
+    177.10865358257092,
+    121.67440393670327,
+    119.80713018483199
+   ],
+   "leaves": [
+    "L04"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 0.891815934034085,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 7.2,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N05",
+   "axis": "M",
+   "index": 5,
+   "rank": 5,
+   "s_mm": 44.19225231461639,
+   "position": [
+    178.70168201620126,
+    124.81575031917828,
+    124.12200946286957
+   ],
+   "leaves": [
+    "L05"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 5.596345388611049,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.3,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N06",
+   "axis": "M",
+   "index": 6,
+   "rank": 6,
+   "s_mm": 50.241574725463536,
+   "position": [
+    178.35399345421433,
+    129.01419278964653,
+    128.4056923254316
+   ],
+   "leaves": [
+    "L06"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 6.049322410847147,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.3,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N07",
+   "axis": "M",
+   "index": 7,
+   "rank": 7,
+   "s_mm": 57.31604064846482,
+   "position": [
+    175.30278998768262,
+    133.45246536746532,
+    132.93273789985582
+   ],
+   "leaves": [
+    "L07"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 7.074465923001284,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_by_rank"
+   }
+  },
+  {
+   "id": "N08",
+   "axis": "M",
+   "index": 8,
+   "rank": 8,
+   "s_mm": 60.03504530453172,
+   "position": [
+    173.7371841561306,
+    134.7232987432761,
+    134.75441140269365
+   ],
+   "leaves": [
+    "L08"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 2.7190046560669003,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  },
+  {
+   "id": "N09",
+   "axis": "M",
+   "index": 9,
+   "rank": 9,
+   "s_mm": 61.702379690964534,
+   "position": [
+    172.73809177231462,
+    135.38080720630535,
+    135.91552200967874
+   ],
+   "leaves": [
+    "L09"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 1.6673343864328132,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  },
+  {
+   "id": "N10",
+   "axis": "M",
+   "index": 10,
+   "rank": 10,
+   "s_mm": 63.75638980897365,
+   "position": [
+    171.49743648764652,
+    136.08747629969992,
+    137.3917903487303
+   ],
+   "leaves": [
+    "L10"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 2.054010118009117,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  },
+  {
+   "id": "N11",
+   "axis": "M",
+   "index": 11,
+   "rank": 11,
+   "s_mm": 64.70054359871648,
+   "position": [
+    170.93139020532593,
+    136.385982116708,
+    138.08592601500658
+   ],
+   "leaves": [
+    "L11"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 0.9441537897428276,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  },
+  {
+   "id": "N12",
+   "axis": "M",
+   "index": 12,
+   "rank": 12,
+   "s_mm": 68.88119680254181,
+   "position": [
+    168.48572683789155,
+    137.58062971478154,
+    141.25790153785044
+   ],
+   "leaves": [
+    "L12"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 4.1806532038253295,
+    "internode_source": "skeleton_axis_model_completed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  },
+  {
+   "id": "N13",
+   "axis": "M",
+   "index": 13,
+   "rank": 13,
+   "s_mm": 73.68385826202743,
+   "position": [
+    166.0172115104171,
+    138.87515489042843,
+    145.16315540476222
+   ],
+   "leaves": [
+    "L13"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 4.80266145948562,
+    "internode_source": "skeleton_axis_observed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  },
+  {
+   "id": "N14",
+   "axis": "M",
+   "index": 14,
+   "rank": 14,
+   "s_mm": 80.86532315469202,
+   "position": [
+    164.13697851355025,
+    141.04828343775833,
+    151.67497078190237
+   ],
+   "leaves": [
+    "L14"
+   ],
+   "trusses": [],
+   "flags": [],
+   "attrs": {
+    "internode_mm": 7.181464892664593,
+    "internode_source": "skeleton_axis_observed",
+    "stem_width_mm": 4.2,
+    "width_source": "hand_measured_rank7_reused(rank>7)"
+   }
+  }
+ ],
+ "leaves": [
+  {
+   "id": "L01",
+   "node": "N01",
+   "axis": "M",
+   "rank": 1,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      172.78037648168336,
+      119.89067814919692,
+      112.29690546997463
+     ],
+     [
+      166.19902797953975,
+      129.71270445212264,
+      116.66067068505876
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      172.78037648168336,
+      119.89067814919692,
+      112.29690546997463
+     ],
+     [
+      166.19902797953975,
+      129.71270445212264,
+      116.66067068505876
+     ],
+     [
+      163.4244174480805,
+      139.00301593878382,
+      115.22078666063189
+     ],
+     [
+      162.4598958471942,
+      148.12891960370368,
+      111.77561649004535
+     ],
+     [
+      162.42509946500647,
+      155.44300414229093,
+      105.24993080205374
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 12.602729690603178,
+     "leaflets": [
+      "L01__P1L",
+      "L01__P1R"
+     ]
+    },
+    {
+     "s_mm": 22.404852783294526,
+     "leaflets": [
+      "L01__P2L",
+      "L01__P2R"
+     ]
+    },
+    {
+     "s_mm": 32.20697587598589,
+     "leaflets": [
+      "L01__P3L",
+      "L01__P3R"
+     ]
+    },
+    {
+     "s_mm": 42.009098968677236,
+     "leaflets": [
+      "L01__T"
+     ]
+    }
+   ],
+   "length_mm": 42.009098968677236,
+   "azimuth_deg": 111.21952854971292,
+   "elevation_deg": 16.710818150294298,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L01",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -8.485928852585372,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 73.21828965540024,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L02",
+   "node": "N02",
+   "axis": "M",
+   "rank": 2,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      178.81034312008282,
+      113.03565678449905,
+      120.9637668806036
+     ],
+     [
+      180.84604104192582,
+      104.1687139023567,
+      125.53342761309096
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      178.81034312008282,
+      113.03565678449905,
+      120.9637668806036
+     ],
+     [
+      180.84604104192582,
+      104.1687139023567,
+      125.53342761309096
+     ],
+     [
+      182.50977538290132,
+      96.92194255470372,
+      128.256892779838
+     ],
+     [
+      184.2683566213594,
+      89.26204408563335,
+      129.22349347726504
+     ],
+     [
+      186.03017607545453,
+      81.5880408356985,
+      128.38287717469234
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 10.180792764525156,
+     "leaflets": [
+      "L02__P1L",
+      "L02__P1R"
+     ]
+    },
+    {
+     "s_mm": 18.099187136933615,
+     "leaflets": [
+      "L02__P2L",
+      "L02__P2R"
+     ]
+    },
+    {
+     "s_mm": 26.01758150934206,
+     "leaflets": [
+      "L02__P3L",
+      "L02__P3R"
+     ]
+    },
+    {
+     "s_mm": 33.93597588175051,
+     "leaflets": [
+      "L02__T"
+     ]
+    }
+   ],
+   "length_mm": 33.93597588175051,
+   "azimuth_deg": 282.93006175847154,
+   "elevation_deg": 26.67,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L05",
+    "azimuth_source": "skeleton_first10mm_model_completed",
+    "skeleton_elevation_deg": 0.0,
+    "theta0_source": "hand_measured_by_rank",
+    "dtheta_source": "skeleton_traits_ungraded",
+    "length_source": "skeleton_path_model_completed",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "model_completed",
+    "area_mm2_input": null,
+    "dtheta_deg": 32.764,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "one_click_no_direction",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L03",
+   "node": "N03",
+   "axis": "M",
+   "rank": 3,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      190.38742742298504,
+      118.16933045240677,
+      113.42576105174618
+     ],
+     [
+      197.17021377213797,
+      116.30180908544256,
+      118.82404829841691
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      190.38742742298504,
+      118.16933045240677,
+      113.42576105174618
+     ],
+     [
+      197.17021377213797,
+      116.30180908544256,
+      118.82404829841691
+     ],
+     [
+      206.09055872099685,
+      113.8457484143342,
+      123.45293973853384
+     ],
+     [
+      216.03093733978997,
+      111.10883934618573,
+      124.3071210184227
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 8.86765650619661,
+     "leaflets": [
+      "L03__P1L",
+      "L03__P1R"
+     ]
+    },
+    {
+     "s_mm": 19.213255763425998,
+     "leaflets": [
+      "L03__P2L",
+      "L03__P2R"
+     ]
+    },
+    {
+     "s_mm": 29.558855020655386,
+     "leaflets": [
+      "L03__T"
+     ]
+    }
+   ],
+   "length_mm": 29.558855020655386,
+   "azimuth_deg": 344.606040057817,
+   "elevation_deg": 37.5,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L03",
+    "azimuth_source": "skeleton_first10mm_observed",
+    "skeleton_elevation_deg": -57.6370441886701,
+    "theta0_source": "hand_measured_by_rank",
+    "dtheta_source": "skeleton_traits_ungraded",
+    "length_source": "skeleton_path_observed",
+    "leaflets": 5,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 32.764,
+    "pairs": 2,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation",
+     "fit_failed_kept_original"
+    ]
+   }
+  },
+  {
+   "id": "L04",
+   "node": "N04",
+   "axis": "M",
+   "rank": 4,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      177.10865358257092,
+      121.67440393670327,
+      119.80713018483199
+     ],
+     [
+      168.06743106385682,
+      119.71810117452395,
+      124.61050085590439
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      177.10865358257092,
+      121.67440393670327,
+      119.80713018483199
+     ],
+     [
+      168.06743106385682,
+      119.71810117452395,
+      124.61050085590439
+     ],
+     [
+      161.11554655554352,
+      116.90107375229903,
+      127.68590080558211
+     ],
+     [
+      154.01347131940466,
+      112.99409061841632,
+      127.82168260388596
+     ],
+     [
+      148.48343586336838,
+      109.91289752065613,
+      122.757358017698
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 10.4232046383985,
+     "leaflets": [
+      "L04__P1L",
+      "L04__P1R"
+     ]
+    },
+    {
+     "s_mm": 18.53014157937512,
+     "leaflets": [
+      "L04__P2L",
+      "L04__P2R"
+     ]
+    },
+    {
+     "s_mm": 26.63707852035174,
+     "leaflets": [
+      "L04__P3L",
+      "L04__P3R"
+     ]
+    },
+    {
+     "s_mm": 34.74401546132835,
+     "leaflets": [
+      "L04__T"
+     ]
+    }
+   ],
+   "length_mm": 34.74401546132835,
+   "azimuth_deg": 201.48152557067164,
+   "elevation_deg": 29.383667042296388,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L02",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -48.286344562020716,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 60.36101069950496,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L05",
+   "node": "N05",
+   "axis": "M",
+   "rank": 5,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      178.70168201620126,
+      124.81575031917828,
+      124.12200946286957
+     ],
+     [
+      184.14780541244585,
+      110.703508109248,
+      126.28561547311186
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      178.70168201620126,
+      124.81575031917828,
+      124.12200946286957
+     ],
+     [
+      184.14780541244585,
+      110.703508109248,
+      126.28561547311186
+     ],
+     [
+      188.36442633960493,
+      101.11026274739534,
+      120.67839504948161
+     ],
+     [
+      191.03225444855312,
+      92.04000464289028,
+      113.47670909451203
+     ],
+     [
+      196.09966906414144,
+      86.06270204429875,
+      104.54114351342919
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 15.28060310349094,
+     "leaflets": [
+      "L05__P1L",
+      "L05__P1R"
+     ]
+    },
+    {
+     "s_mm": 27.165516628428335,
+     "leaflets": [
+      "L05__P2L",
+      "L05__P2R"
+     ]
+    },
+    {
+     "s_mm": 39.05043015336573,
+     "leaflets": [
+      "L05__P3L",
+      "L05__P3R"
+     ]
+    },
+    {
+     "s_mm": 50.93534367830311,
+     "leaflets": [
+      "L05__T"
+     ]
+    }
+   ],
+   "length_mm": 50.93534367830311,
+   "azimuth_deg": 291.7587987265949,
+   "elevation_deg": -0.6553526537685516,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L06",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -33.423252595313095,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 63.73202271505943,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L06",
+   "node": "N06",
+   "axis": "M",
+   "rank": 6,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      178.35399345421433,
+      129.01419278964653,
+      128.4056923254316
+     ],
+     [
+      189.1319398892335,
+      135.6820488164594,
+      123.23856913575825
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      178.35399345421433,
+      129.01419278964653,
+      128.4056923254316
+     ],
+     [
+      189.1319398892335,
+      135.6820488164594,
+      123.23856913575825
+     ],
+     [
+      195.4448172520433,
+      141.09841948547708,
+      116.59554872221972
+     ],
+     [
+      201.03456929247778,
+      144.31638497726433,
+      108.12686628296825
+     ],
+     [
+      205.52603732665972,
+      146.9956411786199,
+      98.85499952690554
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 13.68662103689977,
+     "leaflets": [
+      "L06__P1L",
+      "L06__P1R"
+     ]
+    },
+    {
+     "s_mm": 24.331770732266246,
+     "leaflets": [
+      "L06__P2L",
+      "L06__P2R"
+     ]
+    },
+    {
+     "s_mm": 34.976920427632734,
+     "leaflets": [
+      "L06__P3L",
+      "L06__P3R"
+     ]
+    },
+    {
+     "s_mm": 45.62207012299922,
+     "leaflets": [
+      "L06__T"
+     ]
+    }
+   ],
+   "length_mm": 45.62207012299922,
+   "azimuth_deg": 34.04617405508416,
+   "elevation_deg": -27.401212289938577,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L04",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -56.98146740537786,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 36.84421522303513,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L07",
+   "node": "N07",
+   "axis": "M",
+   "rank": 7,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      175.30278998768262,
+      133.45246536746532,
+      132.93273789985582
+     ],
+     [
+      188.53983921293832,
+      128.71992087553986,
+      136.65738144225156
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      175.30278998768262,
+      133.45246536746532,
+      132.93273789985582
+     ],
+     [
+      188.53983921293832,
+      128.71992087553986,
+      136.65738144225156
+     ],
+     [
+      198.77617440230392,
+      125.92081192980768,
+      132.7432436520686
+     ],
+     [
+      207.33463186127977,
+      124.9025560354122,
+      125.41835426750512
+     ],
+     [
+      215.13357136539346,
+      119.61932180646055,
+      119.157202429954
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 14.542675788100585,
+     "leaflets": [
+      "L07__P1L",
+      "L07__P1R"
+     ]
+    },
+    {
+     "s_mm": 25.85364584551214,
+     "leaflets": [
+      "L07__P2L",
+      "L07__P2R"
+     ]
+    },
+    {
+     "s_mm": 37.164615902923714,
+     "leaflets": [
+      "L07__P3L",
+      "L07__P3R"
+     ]
+    },
+    {
+     "s_mm": 48.475585960335295,
+     "leaflets": [
+      "L07__T"
+     ]
+    }
+   ],
+   "length_mm": 48.475585960335295,
+   "azimuth_deg": 342.62407621582673,
+   "elevation_deg": 5.496785873003529,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L07",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -21.26582995045688,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 63.10035165195857,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L08",
+   "node": "N08",
+   "axis": "M",
+   "rank": 8,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      173.7371841561306,
+      134.7232987432761,
+      134.75441140269365
+     ],
+     [
+      180.2056454867153,
+      140.63941425638956,
+      132.50528767265823
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      173.7371841561306,
+      134.7232987432761,
+      134.75441140269365
+     ],
+     [
+      180.2056454867153,
+      140.63941425638956,
+      132.50528767265823
+     ],
+     [
+      190.20230836241353,
+      143.54601522639382,
+      130.74649136500562
+     ],
+     [
+      200.3624758116622,
+      144.53738022196018,
+      133.44151551142798
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 9.049860347142355,
+     "leaflets": [
+      "L08__P1L",
+      "L08__P1R"
+     ]
+    },
+    {
+     "s_mm": 19.608030752141765,
+     "leaflets": [
+      "L08__P2L",
+      "L08__P2R"
+     ]
+    },
+    {
+     "s_mm": 30.166201157141195,
+     "leaflets": [
+      "L08__T"
+     ]
+    }
+   ],
+   "length_mm": 30.166201157141195,
+   "azimuth_deg": 22.752540101130897,
+   "elevation_deg": -5.353905201198374,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L14",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -8.199191925864648,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 5,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 0.5207956422398478,
+    "pairs": 2,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L09",
+   "node": "N09",
+   "axis": "M",
+   "rank": 9,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      172.73809177231462,
+      135.38080720630535,
+      135.91552200967874
+     ],
+     [
+      178.76815478455165,
+      127.16085059319144,
+      143.13856052465812
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      172.73809177231462,
+      135.38080720630535,
+      135.91552200967874
+     ],
+     [
+      178.76815478455165,
+      127.16085059319144,
+      143.13856052465812
+     ],
+     [
+      189.91835757836742,
+      117.80558638073914,
+      143.92829149581257
+     ],
+     [
+      198.12062658458126,
+      109.62103038314882,
+      135.08479150390778
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 12.494063872171449,
+     "leaflets": [
+      "L09__P1L",
+      "L09__P1R"
+     ]
+    },
+    {
+     "s_mm": 27.07047172303814,
+     "leaflets": [
+      "L09__P2L",
+      "L09__P2R"
+     ]
+    },
+    {
+     "s_mm": 41.646879573904826,
+     "leaflets": [
+      "L09__T"
+     ]
+    }
+   ],
+   "length_mm": 41.646879573904826,
+   "azimuth_deg": 314.3924493267958,
+   "elevation_deg": 30.781495531369828,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L08",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": 7.324192515861574,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 5,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 71.07666520165252,
+    "pairs": 2,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L10",
+   "node": "N10",
+   "axis": "M",
+   "rank": 10,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      171.49743648764652,
+      136.08747629969992,
+      137.3917903487303
+     ],
+     [
+      168.64543017597157,
+      127.3992451728925,
+      143.82473835456602
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      171.49743648764652,
+      136.08747629969992,
+      137.3917903487303
+     ],
+     [
+      168.64543017597157,
+      127.3992451728925,
+      143.82473835456602
+     ],
+     [
+      164.29744646132832,
+      120.18733207103593,
+      145.99312797483233
+     ],
+     [
+      156.0611274662796,
+      117.48386826953076,
+      145.30545115934208
+     ],
+     [
+      149.15674743071605,
+      118.63602686130777,
+      140.14593243946928
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 11.180434703554454,
+     "leaflets": [
+      "L10__P1L",
+      "L10__P1R"
+     ]
+    },
+    {
+     "s_mm": 19.876328361874577,
+     "leaflets": [
+      "L10__P2L",
+      "L10__P2R"
+     ]
+    },
+    {
+     "s_mm": 28.572222020194687,
+     "leaflets": [
+      "L10__P3L",
+      "L10__P3R"
+     ]
+    },
+    {
+     "s_mm": 37.2681156785148,
+     "leaflets": [
+      "L10__T"
+     ]
+    }
+   ],
+   "length_mm": 37.2681156785148,
+   "azimuth_deg": 224.9537855351629,
+   "elevation_deg": 36.18251306459106,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L10",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": 2.407111345164235,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_all_ranks(rank>9))",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 85.50337831894413,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L11",
+   "node": "N11",
+   "axis": "M",
+   "rank": 11,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      170.93139020532593,
+      136.385982116708,
+      138.08592601500658
+     ],
+     [
+      175.28161560332282,
+      143.86578807343818,
+      135.26377498249767
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      170.93139020532593,
+      136.385982116708,
+      138.08592601500658
+     ],
+     [
+      175.28161560332282,
+      143.86578807343818,
+      135.26377498249767
+     ],
+     [
+      176.74493623791588,
+      149.68657042563416,
+      131.510356353255
+     ],
+     [
+      175.5025751520679,
+      154.83691893161557,
+      126.81552780719353
+     ],
+     [
+      172.6174439349761,
+      158.33337197236847,
+      121.37845139871995
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 9.101455631601176,
+     "leaflets": [
+      "L11__P1L",
+      "L11__P1R"
+     ]
+    },
+    {
+     "s_mm": 16.180365567290988,
+     "leaflets": [
+      "L11__P2L",
+      "L11__P2R"
+     ]
+    },
+    {
+     "s_mm": 23.2592755029808,
+     "leaflets": [
+      "L11__P3L",
+      "L11__P3R"
+     ]
+    },
+    {
+     "s_mm": 30.338185438670596,
+     "leaflets": [
+      "L11__T"
+     ]
+    }
+   ],
+   "length_mm": 30.338185438670596,
+   "azimuth_deg": 78.39351169656284,
+   "elevation_deg": -24.553094288916498,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L13",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -31.60377386402656,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_all_ranks(rank>9))",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 32.79411777058211,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L12",
+   "node": "N12",
+   "axis": "M",
+   "rank": 12,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      168.48572683789155,
+      137.58062971478154,
+      141.25790153785044
+     ],
+     [
+      168.59295154709352,
+      124.0012926928448,
+      144.34800522095875
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      168.48572683789155,
+      137.58062971478154,
+      141.25790153785044
+     ],
+     [
+      168.59295154709352,
+      124.0012926928448,
+      144.34800522095875
+     ],
+     [
+      167.71229039033827,
+      114.07052969584066,
+      140.11275059482693
+     ],
+     [
+      166.96877184753654,
+      103.96468874316349,
+      136.28493681414764
+     ],
+     [
+      167.51987808214008,
+      98.928540502816,
+      126.71067484033048
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 13.9269031685427,
+     "leaflets": [
+      "L12__P1L",
+      "L12__P1R"
+     ]
+    },
+    {
+     "s_mm": 24.75893896629813,
+     "leaflets": [
+      "L12__P2L",
+      "L12__P2R"
+     ]
+    },
+    {
+     "s_mm": 35.59097476405357,
+     "leaflets": [
+      "L12__P3L",
+      "L12__P3R"
+     ]
+    },
+    {
+     "s_mm": 46.42301056180901,
+     "leaflets": [
+      "L12__T"
+     ]
+    }
+   ],
+   "length_mm": 46.42301056180901,
+   "azimuth_deg": 267.97202649329245,
+   "elevation_deg": 6.4603174150286495,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L09",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": -20.067061290566414,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_all_ranks(rank>9))",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 66.82649687336779,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "base_off_axis",
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L13",
+   "node": "N13",
+   "axis": "M",
+   "rank": 13,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      166.0172115104171,
+      138.87515489042843,
+      145.16315540476222
+     ],
+     [
+      172.87381662365138,
+      138.60453520934198,
+      151.9369984271154
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      166.0172115104171,
+      138.87515489042843,
+      145.16315540476222
+     ],
+     [
+      172.87381662365138,
+      138.60453520934198,
+      151.9369984271154
+     ],
+     [
+      178.21222111352105,
+      136.64915107537718,
+      156.82778142232985
+     ],
+     [
+      185.56506356888954,
+      135.24525886521212,
+      156.37320205206655
+     ],
+     [
+      191.8601392465428,
+      132.70226418562663,
+      153.18775888237747
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 9.642158367404305,
+     "leaflets": [
+      "L13__P1L",
+      "L13__P1R"
+     ]
+    },
+    {
+     "s_mm": 17.141614875385443,
+     "leaflets": [
+      "L13__P2L",
+      "L13__P2R"
+     ]
+    },
+    {
+     "s_mm": 24.641071383366565,
+     "leaflets": [
+      "L13__P3L",
+      "L13__P3R"
+     ]
+    },
+    {
+     "s_mm": 32.14052789134769,
+     "leaflets": [
+      "L13__T"
+     ]
+    }
+   ],
+   "length_mm": 32.14052789134769,
+   "azimuth_deg": 348.7505492800223,
+   "elevation_deg": 48.72206785535401,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L11",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": 43.55066988692943,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_all_ranks(rank>9))",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 78.87668427523539,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  },
+  {
+   "id": "L14",
+   "node": "N14",
+   "axis": "M",
+   "rank": 14,
+   "petiole": {
+    "kind": "tube",
+    "polyline": [
+     [
+      164.13697851355025,
+      141.04828343775833,
+      151.67497078190237
+     ],
+     [
+      153.98066575584357,
+      143.56199442069675,
+      153.7147680123785
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      164.13697851355025,
+      141.04828343775833,
+      151.67497078190237
+     ],
+     [
+      153.98066575584357,
+      143.56199442069675,
+      153.7147680123785
+     ],
+     [
+      145.80002663408757,
+      144.46408301269994,
+      152.71344926604803
+     ],
+     [
+      139.44778701468317,
+      146.04996926421111,
+      147.62687123018574
+     ],
+     [
+      134.20676580029277,
+      148.28830226390875,
+      141.6051753301295
+     ]
+    ],
+    "radius": [
+     0.6,
+     0.6,
+     0.6,
+     0.6,
+     0.6
+    ],
+    "segs": 6
+   },
+   "attachments": [
+    {
+     "s_mm": 10.659746923804459,
+     "leaflets": [
+      "L14__P1L",
+      "L14__P1R"
+     ]
+    },
+    {
+     "s_mm": 18.950661197874595,
+     "leaflets": [
+      "L14__P2L",
+      "L14__P2R"
+     ]
+    },
+    {
+     "s_mm": 27.24157547194472,
+     "leaflets": [
+      "L14__P3L",
+      "L14__P3R"
+     ]
+    },
+    {
+     "s_mm": 35.532489746014846,
+     "leaflets": [
+      "L14__T"
+     ]
+    }
+   ],
+   "length_mm": 35.532489746014846,
+   "azimuth_deg": 167.83479746899778,
+   "elevation_deg": 7.071565228753488,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration",
+    "requires_declaration"
+   ],
+   "attrs": {
+    "uid": "e_07-L12",
+    "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+    "skeleton_elevation_deg": 18.45144237279807,
+    "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_all_ranks(rank>9))",
+    "dtheta_source": "fitted_to_surfels_ungraded (was: skeleton_traits_ungraded)",
+    "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+    "leaflets": 7,
+    "leaflets_source": "hand_measured_mode_by_rank",
+    "area_source": "unavailable",
+    "geometry": "observed",
+    "area_mm2_input": null,
+    "dtheta_deg": 63.06844239625285,
+    "pairs": 3,
+    "intercalary": 0,
+    "leaflets_geometry": "area unavailable: zero-area placeholder leaflets (structure only, requires_declaration); count from attrs.leaflets",
+    "spec_flags": [
+     "theta0_from_hand_template_not_skeleton_elevation"
+    ]
+   }
+  }
+ ],
+ "leaflets": [
+  {
+   "id": "L01__P1L",
+   "leaf": "L01",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 12.602729690603178,
+   "base": [
+    166.19902797953975,
+    129.71270445212264,
+    116.66067068505876
+   ],
+   "frame": {
+    "d": [
+     0.47738030555170524,
+     0.8725359339786856,
+     -0.10387053377788866
+    ],
+    "n": [
+     0.049855423788523305,
+     0.09112367697898419,
+     0.9945908265275205
+    ],
+    "b": [
+     -0.8772813007184339,
+     0.47997658214726757,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333597671e-07,
+   "normal": [
+    0.049855423788523305,
+    0.09112367697898419,
+    0.9945908265275205
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     166.19902797953975,
+     129.71270445212264,
+     116.66067068505876
+    ],
+    "d": [
+     0.47738030555170524,
+     0.8725359339786856,
+     -0.10387053377788866
+    ],
+    "n": [
+     0.049855423788523305,
+     0.09112367697898419,
+     0.9945908265275205
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L01__P1R",
+   "leaf": "L01",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 12.602729690603178,
+   "base": [
+    166.19902797953975,
+    129.71270445212264,
+    116.66067068505876
+   ],
+   "frame": {
+    "d": [
+     -0.87769070838868,
+     0.4678353691426864,
+     -0.10387053377788866
+    ],
+    "n": [
+     -0.09166201812912338,
+     0.04885859412426603,
+     0.9945908265275205
+    ],
+    "b": [
+     -0.4703797347257569,
+     -0.8824641098420527,
+     6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333506266e-07,
+   "normal": [
+    -0.09166201812912338,
+    0.04885859412426603,
+    0.9945908265275205
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     166.19902797953975,
+     129.71270445212264,
+     116.66067068505876
+    ],
+    "d": [
+     -0.87769070838868,
+     0.4678353691426864,
+     -0.10387053377788866
+    ],
+    "n": [
+     -0.09166201812912338,
+     0.04885859412426603,
+     0.9945908265275205
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L01__P2L",
+   "leaf": "L01",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 22.404852783294526,
+   "base": [
+    163.4244174480805,
+    139.00301593878382,
+    115.22078666063189
+   ],
+   "frame": {
+    "d": [
+     0.6336114195729523,
+     0.7326461248746933,
+     -0.2485281165036334
+    ],
+    "n": [
+     0.16257096847404506,
+     0.1879811291120857,
+     0.9686246823755611
+    ],
+    "b": [
+     -0.7563777159568884,
+     0.6541351166264053,
+     -1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333431574e-07,
+   "normal": [
+    0.16257096847404506,
+    0.1879811291120857,
+    0.9686246823755611
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     163.4244174480805,
+     139.00301593878382,
+     115.22078666063189
+    ],
+    "d": [
+     0.6336114195729523,
+     0.7326461248746933,
+     -0.2485281165036334
+    ],
+    "n": [
+     0.16257096847404506,
+     0.1879811291120857,
+     0.9686246823755611
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L01__P2R",
+   "leaf": "L01",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 22.404852783294526,
+   "base": [
+    163.4244174480805,
+    139.00301593878382,
+    115.22078666063189
+   ],
+   "frame": {
+    "d": [
+     -0.7727689792441104,
+     0.5840050342464286,
+     -0.2485281165036334
+    ],
+    "n": [
+     -0.1982757846237801,
+     0.14984304429858583,
+     0.9686246823755611
+    ],
+    "b": [
+     -0.6029219003733737,
+     -0.7978002143708411,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333324347e-07,
+   "normal": [
+    -0.1982757846237801,
+    0.14984304429858583,
+    0.9686246823755611
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     163.4244174480805,
+     139.00301593878382,
+     115.22078666063189
+    ],
+    "d": [
+     -0.7727689792441104,
+     0.5840050342464286,
+     -0.2485281165036334
+    ],
+    "n": [
+     -0.1982757846237801,
+     0.14984304429858583,
+     0.9686246823755611
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L01__P3L",
+   "leaf": "L01",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 32.20697587598589,
+   "base": [
+    162.4598958471942,
+    148.12891960370368,
+    111.77561649004535
+   ],
+   "frame": {
+    "d": [
+     0.7045886334671877,
+     0.530988331087771,
+     -0.47075073004453716
+    ],
+    "n": [
+     0.3759472954390896,
+     0.2833193973054062,
+     0.882266258089096
+    ],
+    "b": [
+     -0.60184590107508,
+     0.798612240927426,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333332832547e-07,
+   "normal": [
+    0.3759472954390896,
+    0.2833193973054062,
+    0.882266258089096
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     162.4598958471942,
+     148.12891960370368,
+     111.77561649004535
+    ],
+    "d": [
+     0.7045886334671877,
+     0.530988331087771,
+     -0.47075073004453716
+    ],
+    "n": [
+     0.3759472954390896,
+     0.2833193973054062,
+     0.882266258089096
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L01__P3R",
+   "leaf": "L01",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 32.20697587598589,
+   "base": [
+    162.4598958471942,
+    148.12891960370368,
+    111.77561649004535
+   ],
+   "frame": {
+    "d": [
+     -0.7096089250046491,
+     0.5242603587114724,
+     -0.47075073004453727
+    ],
+    "n": [
+     -0.37862597195496944,
+     0.27972955367393615,
+     0.8822662580890959
+    ],
+    "b": [
+     -0.5942201165518559,
+     -0.8043024636821019,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333513336e-07,
+   "normal": [
+    -0.37862597195496944,
+    0.27972955367393615,
+    0.8822662580890959
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     162.4598958471942,
+     148.12891960370368,
+     111.77561649004535
+    ],
+    "d": [
+     -0.7096089250046491,
+     0.5242603587114724,
+     -0.47075073004453727
+    ],
+    "n": [
+     -0.37862597195496944,
+     0.27972955367393615,
+     0.8822662580890959
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L01__T",
+   "leaf": "L01",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 42.009098968677236,
+   "base": [
+    162.42509946500647,
+    155.44300414229093,
+    105.24993080205374
+   ],
+   "frame": {
+    "d": [
+     -0.003549882189672396,
+     0.7461735043952646,
+     -0.6657420669260202
+    ],
+    "n": [
+     -0.0031671979078621076,
+     0.6657345330778194,
+     0.7461819485387396
+    ],
+    "b": [
+     -0.9999886835328948,
+     -0.0047573948909166025,
+     4.336808689942018e-19
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.0000000000092469e-07,
+   "normal": [
+    -0.0031671979078621076,
+    0.6657345330778194,
+    0.7461819485387396
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     162.42509946500647,
+     155.44300414229093,
+     105.24993080205374
+    ],
+    "d": [
+     -0.003549882189672396,
+     0.7461735043952646,
+     -0.6657420669260202
+    ],
+    "n": [
+     -0.0031671979078621076,
+     0.6657345330778194,
+     0.7461819485387396
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__P1L",
+   "leaf": "L02",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 10.180792764525156,
+   "base": [
+    180.84604104192582,
+    104.1687139023567,
+    125.53342761309096
+   ],
+   "frame": {
+    "d": [
+     -0.5406070788571262,
+     -0.8053546280530028,
+     0.24320343205467848
+    ],
+    "n": [
+     0.13554726229654224,
+     0.20192783128406794,
+     0.9699753041375978
+    ],
+    "b": [
+     0.8302836418799768,
+     -0.5573410751295141,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333332977543e-07,
+   "normal": [
+    0.13554726229654224,
+    0.20192783128406794,
+    0.9699753041375978
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     180.84604104192582,
+     104.1687139023567,
+     125.53342761309096
+    ],
+    "d": [
+     -0.5406070788571262,
+     -0.8053546280530028,
+     0.24320343205467848
+    ],
+    "n": [
+     0.13554726229654224,
+     0.20192783128406794,
+     0.9699753041375978
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__P1R",
+   "leaf": "L02",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 10.180792764525156,
+   "base": [
+    180.84604104192582,
+    104.1687139023567,
+    125.53342761309096
+   ],
+   "frame": {
+    "d": [
+     0.837747579637435,
+     -0.4889080521411412,
+     0.24320343205467843
+    ],
+    "n": [
+     -0.2100497669314082,
+     0.12258468409730339,
+     0.9699753041375978
+    ],
+    "b": [
+     0.5040417524607267,
+     0.8636792875693612,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333279515e-07,
+   "normal": [
+    -0.2100497669314082,
+    0.12258468409730339,
+    0.9699753041375978
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     180.84604104192582,
+     104.1687139023567,
+     125.53342761309096
+    ],
+    "d": [
+     0.837747579637435,
+     -0.4889080521411412,
+     0.24320343205467843
+    ],
+    "n": [
+     -0.2100497669314082,
+     0.12258468409730339,
+     0.9699753041375978
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__P2L",
+   "leaf": "L02",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 18.099187136933615,
+   "base": [
+    182.50977538290132,
+    96.92194255470372,
+    128.256892779838
+   ],
+   "frame": {
+    "d": [
+     -0.5321373208190414,
+     -0.8422465754993471,
+     0.08631672984511975
+    ],
+    "n": [
+     0.04610442678299688,
+     0.07297232134286719,
+     0.9962677462152655
+    ],
+    "b": [
+     0.8454018296777835,
+     -0.534130832640708,
+     -6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333320016e-07,
+   "normal": [
+    0.04610442678299688,
+    0.07297232134286719,
+    0.9962677462152655
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     182.50977538290132,
+     96.92194255470372,
+     128.256892779838
+    ],
+    "d": [
+     -0.5321373208190414,
+     -0.8422465754993471,
+     0.08631672984511975
+    ],
+    "n": [
+     0.04610442678299688,
+     0.07297232134286719,
+     0.9962677462152655
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__P2R",
+   "leaf": "L02",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 18.099187136933615,
+   "base": [
+    182.50977538290132,
+    96.92194255470372,
+    128.256892779838
+   ],
+   "frame": {
+    "d": [
+     0.8462173376755198,
+     -0.5257999995874858,
+     0.08631672984511975
+    ],
+    "n": [
+     -0.07331634854573706,
+     0.045555360684285964,
+     0.9962677462152655
+    ],
+    "b": [
+     0.5277697703101945,
+     0.8493874672649253,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333188745e-07,
+   "normal": [
+    -0.07331634854573706,
+    0.045555360684285964,
+    0.9962677462152655
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     182.50977538290132,
+     96.92194255470372,
+     128.256892779838
+    ],
+    "d": [
+     0.8462173376755198,
+     -0.5257999995874858,
+     0.08631672984511975
+    ],
+    "n": [
+     -0.07331634854573706,
+     0.045555360684285964,
+     0.9962677462152655
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__P3L",
+   "leaf": "L02",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 26.01758150934206,
+   "base": [
+    184.2683566213594,
+    89.26204408563335,
+    129.22349347726504
+   ],
+   "frame": {
+    "d": [
+     -0.5318481505493865,
+     -0.8435061220345859,
+     -0.07506641624169623
+    ],
+    "n": [
+     -0.04003689730101552,
+     -0.06349813935761844,
+     0.9971785362474607
+    ],
+    "b": [
+     0.8458927778458125,
+     -0.5333529866685804,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333049056e-07,
+   "normal": [
+    -0.04003689730101552,
+    -0.06349813935761844,
+    0.9971785362474607
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     184.2683566213594,
+     89.26204408563335,
+     129.22349347726504
+    ],
+    "d": [
+     -0.5318481505493865,
+     -0.8435061220345859,
+     -0.07506641624169623
+    ],
+    "n": [
+     -0.04003689730101552,
+     -0.06349813935761844,
+     0.9971785362474607
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__P3R",
+   "leaf": "L02",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 26.01758150934206,
+   "base": [
+    184.2683566213594,
+    89.26204408563335,
+    129.22349347726504
+   ],
+   "frame": {
+    "d": [
+     0.8465065079451751,
+     -0.5270595461227259,
+     -0.07506641624169623
+    ],
+    "n": [
+     0.06372400484655846,
+     -0.03967641684536787,
+     0.9971785362474607
+    ],
+    "b": [
+     0.5285508331398042,
+     0.8489016531891188,
+     -6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333332888157e-07,
+   "normal": [
+    0.06372400484655846,
+    -0.03967641684536787,
+    0.9971785362474607
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     184.2683566213594,
+     89.26204408563335,
+     129.22349347726504
+    ],
+    "d": [
+     0.8465065079451751,
+     -0.5270595461227259,
+     -0.07506641624169623
+    ],
+    "n": [
+     0.06372400484655846,
+     -0.03967641684536787,
+     0.9971785362474607
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L02__T",
+   "leaf": "L02",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 33.93597588175051,
+   "base": [
+    186.03017607545453,
+    81.5880408356985,
+    128.38287717469234
+   ],
+   "frame": {
+    "d": [
+     0.22249705827158234,
+     -0.9691362780155065,
+     -0.10615994392775079
+    ],
+    "n": [
+     0.02375451038565921,
+     -0.10346814452323383,
+     0.9943490666286448
+    ],
+    "b": [
+     0.9746439259015726,
+     0.22376151971053984,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 1.9999999999837853e-07,
+   "normal": [
+    0.02375451038565921,
+    -0.10346814452323383,
+    0.9943490666286448
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     186.03017607545453,
+     81.5880408356985,
+     128.38287717469234
+    ],
+    "d": [
+     0.22249705827158234,
+     -0.9691362780155065,
+     -0.10615994392775079
+    ],
+    "n": [
+     0.02375451038565921,
+     -0.10346814452323383,
+     0.9943490666286448
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L03__P1L",
+   "leaf": "L03",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 8.86765650619661,
+   "base": [
+    197.17021377213797,
+    116.30180908544256,
+    118.82404829841691
+   ],
+   "frame": {
+    "d": [
+     0.42198804134481865,
+     -0.8496063923814192,
+     0.3163780507345504
+    ],
+    "n": [
+     -0.1407369627933312,
+     0.2833516865845381,
+     0.948633189917687
+    ],
+    "b": [
+     0.8956110764532071,
+     0.4448379477229072,
+     -1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181384838e-07,
+   "normal": [
+    -0.1407369627933312,
+    0.2833516865845381,
+    0.948633189917687
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     197.17021377213797,
+     116.30180908544256,
+     118.82404829841691
+    ],
+    "d": [
+     0.42198804134481865,
+     -0.8496063923814192,
+     0.3163780507345504
+    ],
+    "n": [
+     -0.1407369627933312,
+     0.2833516865845381,
+     0.948633189917687
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L03__P1R",
+   "leaf": "L03",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 8.86765650619661,
+   "base": [
+    197.17021377213797,
+    116.30180908544256,
+    118.82404829841691
+   ],
+   "frame": {
+    "d": [
+     0.7973973701775885,
+     0.5138699865211747,
+     0.3163780507345504
+    ],
+    "n": [
+     -0.26593948885504676,
+     -0.17138045178523198,
+     0.948633189917687
+    ],
+    "b": [
+     -0.541695137786359,
+     0.8405750280008428,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818182118496e-07,
+   "normal": [
+    -0.26593948885504676,
+    -0.17138045178523198,
+    0.948633189917687
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     197.17021377213797,
+     116.30180908544256,
+     118.82404829841691
+    ],
+    "d": [
+     0.7973973701775885,
+     0.5138699865211747,
+     0.3163780507345504
+    ],
+    "n": [
+     -0.26593948885504676,
+     -0.17138045178523198,
+     0.948633189917687
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L03__P2L",
+   "leaf": "L03",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 19.213255763425998,
+   "base": [
+    206.09055872099685,
+    113.8457484143342,
+    123.45293973853384
+   ],
+   "frame": {
+    "d": [
+     0.49170587084078343,
+     -0.8688019750726448,
+     0.058382057950867636
+    ],
+    "n": [
+     -0.028755849125080786,
+     0.0508091116993208,
+     0.9982943129705896
+    ],
+    "b": [
+     0.870286411316299,
+     0.4925460001646523,
+     -3.469446951953614e-18
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181707383e-07,
+   "normal": [
+    -0.028755849125080786,
+    0.0508091116993208,
+    0.9982943129705896
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     206.09055872099685,
+     113.8457484143342,
+     123.45293973853384
+    ],
+    "d": [
+     0.49170587084078343,
+     -0.8688019750726448,
+     0.058382057950867636
+    ],
+    "n": [
+     -0.028755849125080786,
+     0.0508091116993208,
+     0.9982943129705896
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L03__P2R",
+   "leaf": "L03",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 19.213255763425998,
+   "base": [
+    206.09055872099685,
+    113.8457484143342,
+    123.45293973853384
+   ],
+   "frame": {
+    "d": [
+     0.8671151996735532,
+     0.4946744038299491,
+     0.058382057950867636
+    ],
+    "n": [
+     -0.05071046602156789,
+     -0.02892945430618897,
+     0.9982943129705896
+    ],
+    "b": [
+     -0.4955196051933459,
+     0.8685967538904521,
+     -3.469446951953614e-18
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818182081923e-07,
+   "normal": [
+    -0.05071046602156789,
+    -0.02892945430618897,
+    0.9982943129705896
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     206.09055872099685,
+     113.8457484143342,
+     123.45293973853384
+    ],
+    "d": [
+     0.8671151996735532,
+     0.4946744038299491,
+     0.058382057950867636
+    ],
+    "n": [
+     -0.05071046602156789,
+     -0.02892945430618897,
+     0.9982943129705896
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L03__T",
+   "leaf": "L03",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 29.558855020655386,
+   "base": [
+    216.03093733978997,
+    111.10883934618573,
+    124.3071210184227
+   ],
+   "frame": {
+    "d": [
+     0.9608315933798514,
+     -0.2645481426545633,
+     0.082564698153369
+    ],
+    "n": [
+     -0.0796025569677304,
+     0.021917169191211092,
+     0.9965857066097442
+    ],
+    "b": [
+     0.265454482138342,
+     0.9641233935097026,
+     0.0
+    ]
+   },
+   "length_mm": 0.0007844938377306031,
+   "width_mm": 0.0005229958918204021,
+   "area_mm2": 2.7272727273392185e-07,
+   "normal": [
+    -0.0796025569677304,
+    0.021917169191211092,
+    0.9965857066097442
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     216.03093733978997,
+     111.10883934618573,
+     124.3071210184227
+    ],
+    "d": [
+     0.9608315933798514,
+     -0.2645481426545633,
+     0.082564698153369
+    ],
+    "n": [
+     -0.0796025569677304,
+     0.021917169191211092,
+     0.9965857066097442
+    ],
+    "L": 0.0007844938377306031,
+    "W": 0.0005229958918204021,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__P1L",
+   "leaf": "L04",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 10.4232046383985,
+   "base": [
+    168.06743106385682,
+    119.71810117452395,
+    124.61050085590439
+   ],
+   "frame": {
+    "d": [
+     -0.8719183360606358,
+     0.40963842605365136,
+     0.26824387251443316
+    ],
+    "n": [
+     0.242784552512653,
+     -0.11406329910523513,
+     0.9633510392678573
+    ],
+    "b": [
+     -0.42522238452659467,
+     -0.9050889037533921,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333093642e-07,
+   "normal": [
+    0.242784552512653,
+    -0.11406329910523513,
+    0.9633510392678573
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     168.06743106385682,
+     119.71810117452395,
+     124.61050085590439
+    ],
+    "d": [
+     -0.8719183360606358,
+     0.40963842605365136,
+     0.26824387251443316
+    ],
+    "n": [
+     0.242784552512653,
+     -0.11406329910523513,
+     0.9633510392678573
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__P1R",
+   "leaf": "L04",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 10.4232046383985,
+   "base": [
+    168.06743106385682,
+    119.71810117452395,
+    124.61050085590439
+   ],
+   "frame": {
+    "d": [
+     -0.34080225462447167,
+     -0.9010544090682524,
+     0.26824387251443316
+    ],
+    "n": [
+     0.09489595465801912,
+     0.2508974550111712,
+     0.9633510392678573
+    ],
+    "b": [
+     0.9353334063489983,
+     -0.3537674645407348,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333303696e-07,
+   "normal": [
+    0.09489595465801912,
+    0.2508974550111712,
+    0.9633510392678573
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     168.06743106385682,
+     119.71810117452395,
+     124.61050085590439
+    ],
+    "d": [
+     -0.34080225462447167,
+     -0.9010544090682524,
+     0.26824387251443316
+    ],
+    "n": [
+     0.09489595465801912,
+     0.2508974550111712,
+     0.9633510392678573
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__P2L",
+   "leaf": "L04",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 18.53014157937512,
+   "base": [
+    161.11554655554352,
+    116.90107375229903,
+    127.68590080558211
+   ],
+   "frame": {
+    "d": [
+     -0.9602846871897178,
+     0.278770618449161,
+     0.011843219090192177
+    ],
+    "n": [
+     0.011373659612519644,
+     -0.0033017730747027323,
+     0.9999298666214455
+    ],
+    "b": [
+     -0.2787901709457572,
+     -0.9603520399228793,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333262686e-07,
+   "normal": [
+    0.011373659612519644,
+    -0.0033017730747027323,
+    0.9999298666214455
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     161.11554655554352,
+     116.90107375229903,
+     127.68590080558211
+    ],
+    "d": [
+     -0.9602846871897178,
+     0.278770618449161,
+     0.011843219090192177
+    ],
+    "n": [
+     0.011373659612519644,
+     -0.0033017730747027323,
+     0.9999298666214455
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__P2R",
+   "leaf": "L04",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 18.53014157937512,
+   "base": [
+    161.11554655554352,
+    116.90107375229903,
+    127.68590080558211
+   ],
+   "frame": {
+    "d": [
+     -0.2786359055158819,
+     -0.9603237841056143,
+     0.011843219090192177
+    ],
+    "n": [
+     0.003300177528018546,
+     0.011374122678336727,
+     0.9999298666214455
+    ],
+    "b": [
+     0.960391139580967,
+     -0.2786554485639423,
+     4.336808689942018e-19
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333347923e-07,
+   "normal": [
+    0.003300177528018546,
+    0.011374122678336727,
+    0.9999298666214455
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     161.11554655554352,
+     116.90107375229903,
+     127.68590080558211
+    ],
+    "d": [
+     -0.2786359055158819,
+     -0.9603237841056143,
+     0.011843219090192177
+    ],
+    "n": [
+     0.003300177528018546,
+     0.011374122678336727,
+     0.9999298666214455
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__P3L",
+   "leaf": "L04",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 26.63707852035174,
+   "base": [
+    154.01347131940466,
+    112.99409061841632,
+    127.82168260388596
+   ],
+   "frame": {
+    "d": [
+     -0.8265083307998824,
+     0.34894844248225243,
+     -0.4417227225393805
+    ],
+    "n": [
+     -0.40694070024279744,
+     0.17180870203078843,
+     0.8971516239702169
+    ],
+    "b": [
+     -0.3889514694718276,
+     -0.9212582452253582,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333361303e-07,
+   "normal": [
+    -0.40694070024279744,
+    0.17180870203078843,
+    0.8971516239702169
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     154.01347131940466,
+     112.99409061841632,
+     127.82168260388596
+    ],
+    "d": [
+     -0.8265083307998824,
+     0.34894844248225243,
+     -0.4417227225393805
+    ],
+    "n": [
+     -0.40694070024279744,
+     0.17180870203078843,
+     0.8971516239702169
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__P3R",
+   "leaf": "L04",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 26.63707852035174,
+   "base": [
+    154.01347131940466,
+    112.99409061841632,
+    127.82168260388596
+   ],
+   "frame": {
+    "d": [
+     -0.1381779865194252,
+     -0.8864467724764049,
+     -0.4417227225393805
+    ],
+    "n": [
+     -0.06803349040406637,
+     -0.4364520681484307,
+     0.8971516239702169
+    ],
+    "b": [
+     0.988067957290832,
+     -0.15401854360797806,
+     -1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333143672e-07,
+   "normal": [
+    -0.06803349040406637,
+    -0.4364520681484307,
+    0.8971516239702169
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     154.01347131940466,
+     112.99409061841632,
+     127.82168260388596
+    ],
+    "d": [
+     -0.1381779865194252,
+     -0.8864467724764049,
+     -0.4417227225393805
+    ],
+    "n": [
+     -0.06803349040406637,
+     -0.4364520681484307,
+     0.8971516239702169
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L04__T",
+   "leaf": "L04",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 34.74401546132835,
+   "base": [
+    148.48343586336838,
+    109.91289752065613,
+    122.757358017698
+   ],
+   "frame": {
+    "d": [
+     -0.6821362366943599,
+     -0.3800687140153098,
+     -0.6246902650235594
+    ],
+    "n": [
+     -0.5457021377636612,
+     -0.3040511536820325,
+     0.7808726354437034
+    ],
+    "b": [
+     0.4867230541371821,
+     -0.8735563339426791,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.000000000046501e-07,
+   "normal": [
+    -0.5457021377636612,
+    -0.3040511536820325,
+    0.7808726354437034
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     148.48343586336838,
+     109.91289752065613,
+     122.757358017698
+    ],
+    "d": [
+     -0.6821362366943599,
+     -0.3800687140153098,
+     -0.6246902650235594
+    ],
+    "n": [
+     -0.5457021377636612,
+     -0.3040511536820325,
+     0.7808726354437034
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__P1L",
+   "leaf": "L05",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 15.28060310349094,
+   "base": [
+    184.14780541244585,
+    110.703508109248,
+    126.28561547311186
+   ],
+   "frame": {
+    "d": [
+     -0.39646226565643455,
+     -0.8552913528367438,
+     -0.3336081139199995
+    ],
+    "n": [
+     -0.1403005903850302,
+     -0.3026716339713244,
+     0.9427118469218156
+    ],
+    "b": [
+     0.9072670038352431,
+     -0.42055509003199726,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333326406e-07,
+   "normal": [
+    -0.1403005903850302,
+    -0.3026716339713244,
+    0.9427118469218156
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     184.14780541244585,
+     110.703508109248,
+     126.28561547311186
+    ],
+    "d": [
+     -0.39646226565643455,
+     -0.8552913528367438,
+     -0.3336081139199995
+    ],
+    "n": [
+     -0.1403005903850302,
+     -0.3026716339713244,
+     0.9427118469218156
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__P1R",
+   "leaf": "L05",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 15.28060310349094,
+   "base": [
+    184.14780541244585,
+    110.703508109248,
+    126.28561547311186
+   ],
+   "frame": {
+    "d": [
+     0.8982078181219502,
+     -0.2862312732587872,
+     -0.3336081139199995
+    ],
+    "n": [
+     0.3178589694086165,
+     -0.10129190115577645,
+     0.9427118469218156
+    ],
+    "b": [
+     0.3036254123605238,
+     0.9527914824183212,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333349707e-07,
+   "normal": [
+    0.3178589694086165,
+    -0.10129190115577645,
+    0.9427118469218156
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     184.14780541244585,
+     110.703508109248,
+     126.28561547311186
+    ],
+    "d": [
+     0.8982078181219502,
+     -0.2862312732587872,
+     -0.3336081139199995
+    ],
+    "n": [
+     0.3178589694086165,
+     -0.10129190115577645,
+     0.9427118469218156
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__P2L",
+   "leaf": "L05",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 27.165516628428335,
+   "base": [
+    188.36442633960493,
+    101.11026274739534,
+    120.67839504948161
+   ],
+   "frame": {
+    "d": [
+     -0.5196461806580397,
+     -0.7391745349969481,
+     -0.4284726989430687
+    ],
+    "n": [
+     -0.24642027168216857,
+     -0.35052232945084094,
+     0.9035547278723312
+    ],
+    "b": [
+     0.8180738943589377,
+     -0.5751131222363143,
+     -5.551115123125783e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333144247e-07,
+   "normal": [
+    -0.24642027168216857,
+    -0.35052232945084094,
+    0.9035547278723312
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     188.36442633960493,
+     101.11026274739534,
+     120.67839504948161
+    ],
+    "d": [
+     -0.5196461806580397,
+     -0.7391745349969481,
+     -0.4284726989430687
+    ],
+    "n": [
+     -0.24642027168216857,
+     -0.35052232945084094,
+     0.9035547278723312
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__P2R",
+   "leaf": "L05",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 27.165516628428335,
+   "base": [
+    188.36442633960493,
+    101.11026274739534,
+    120.67839504948161
+   ],
+   "frame": {
+    "d": [
+     0.8370972656691582,
+     -0.34011661833797735,
+     -0.4284726989430687
+    ],
+    "n": [
+     0.3969580520526106,
+     -0.16128595304661386,
+     0.9035547278723312
+    ],
+    "b": [
+     0.3764206061307163,
+     0.926448880014534,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333388904e-07,
+   "normal": [
+    0.3969580520526106,
+    -0.16128595304661386,
+    0.9035547278723312
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     188.36442633960493,
+     101.11026274739534,
+     120.67839504948161
+    ],
+    "d": [
+     0.8370972656691582,
+     -0.34011661833797735,
+     -0.4284726989430687
+    ],
+    "n": [
+     0.3969580520526106,
+     -0.16128595304661386,
+     0.9035547278723312
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__P3L",
+   "leaf": "L05",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 39.05043015336573,
+   "base": [
+    191.03225444855312,
+    92.04000464289028,
+    113.47670909451203
+   ],
+   "frame": {
+    "d": [
+     -0.2378721670431801,
+     -0.812886442127724,
+     -0.5316318880119137
+    ],
+    "n": [
+     -0.14930824553598987,
+     -0.5102347618166334,
+     0.8469755224614747
+    ],
+    "b": [
+     0.9597519887768642,
+     -0.2808489274304853,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333645097e-07,
+   "normal": [
+    -0.14930824553598987,
+    -0.5102347618166334,
+    0.8469755224614747
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     191.03225444855312,
+     92.04000464289028,
+     113.47670909451203
+    ],
+    "d": [
+     -0.2378721670431801,
+     -0.812886442127724,
+     -0.5316318880119137
+    ],
+    "n": [
+     -0.14930824553598987,
+     -0.5102347618166334,
+     0.8469755224614747
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__P3R",
+   "leaf": "L05",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 39.05043015336573,
+   "base": [
+    191.03225444855312,
+    92.04000464289028,
+    113.47670909451203
+   ],
+   "frame": {
+    "d": [
+     0.8408556435738097,
+     0.10163327368023803,
+     -0.5316318880119136
+    ],
+    "n": [
+     0.5277905458701735,
+     0.06379344826215345,
+     0.8469755224614748
+    ],
+    "b": [
+     -0.11999552641718864,
+     0.9927744324064061,
+     -6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333515877e-07,
+   "normal": [
+    0.5277905458701735,
+    0.06379344826215345,
+    0.8469755224614748
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     191.03225444855312,
+     92.04000464289028,
+     113.47670909451203
+    ],
+    "d": [
+     0.8408556435738097,
+     0.10163327368023803,
+     -0.5316318880119136
+    ],
+    "n": [
+     0.5277905458701735,
+     0.06379344826215345,
+     0.8469755224614748
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L05__T",
+   "leaf": "L05",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 50.93534367830311,
+   "base": [
+    196.09966906414144,
+    86.06270204429875,
+    104.54114351342919
+   ],
+   "frame": {
+    "d": [
+     0.4263737051982477,
+     -0.502931938549635,
+     -0.7518410262164628
+    ],
+    "n": [
+     0.48618784313910557,
+     -0.5734861026092684,
+     0.6593444253937211
+    ],
+    "b": [
+     0.7627757499417913,
+     0.6466630925766041,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.0000000000121922e-07,
+   "normal": [
+    0.48618784313910557,
+    -0.5734861026092684,
+    0.6593444253937211
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     196.09966906414144,
+     86.06270204429875,
+     104.54114351342919
+    ],
+    "d": [
+     0.4263737051982477,
+     -0.502931938549635,
+     -0.7518410262164628
+    ],
+    "n": [
+     0.48618784313910557,
+     -0.5734861026092684,
+     0.6593444253937211
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__P1L",
+   "leaf": "L06",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 13.68662103689977,
+   "base": [
+    189.1319398892335,
+    135.6820488164594,
+    123.23856913575825
+   ],
+   "frame": {
+    "d": [
+     0.8797747675306062,
+     -0.17686761989195393,
+     -0.4412643237904274
+    ],
+    "n": [
+     0.43260874929042903,
+     -0.08697053229452999,
+     0.8973771763031289
+    ],
+    "b": [
+     0.19709395844073604,
+     0.9803846038908207,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333348087e-07,
+   "normal": [
+    0.43260874929042903,
+    -0.08697053229452999,
+    0.8973771763031289
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     189.1319398892335,
+     135.6820488164594,
+     123.23856913575825
+    ],
+    "d": [
+     0.8797747675306062,
+     -0.17686761989195393,
+     -0.4412643237904274
+    ],
+    "n": [
+     0.43260874929042903,
+     -0.08697053229452999,
+     0.8973771763031289
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__P1R",
+   "leaf": "L06",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 13.68662103689977,
+   "base": [
+    189.1319398892335,
+    135.6820488164594,
+    123.23856913575825
+   ],
+   "frame": {
+    "d": [
+     -0.04110579249780893,
+     0.8964352237462023,
+     -0.4412643237904273
+    ],
+    "n": [
+     -0.020212815981279414,
+     0.4408011405615121,
+     0.897377176303129
+    ],
+    "b": [
+     -0.9989503270399555,
+     -0.04580659457726573,
+     -3.469446951953614e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333189984e-07,
+   "normal": [
+    -0.020212815981279414,
+    0.4408011405615121,
+    0.897377176303129
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     189.1319398892335,
+     135.6820488164594,
+     123.23856913575825
+    ],
+    "d": [
+     -0.04110579249780893,
+     0.8964352237462023,
+     -0.4412643237904273
+    ],
+    "n": [
+     -0.020212815981279414,
+     0.4408011405615121,
+     0.897377176303129
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__P2L",
+   "leaf": "L06",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 24.331770732266246,
+   "base": [
+    195.4448172520433,
+    141.09841948547708,
+    116.59554872221972
+   ],
+   "frame": {
+    "d": [
+     0.7240908383347957,
+     -0.3990582901607476,
+     -0.5625343890764309
+    ],
+    "n": [
+     0.49266916084387563,
+     -0.27151802306105727,
+     0.8267738875329861
+    ],
+    "b": [
+     0.48266919913435985,
+     0.8758027427491855,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333078313e-07,
+   "normal": [
+    0.49266916084387563,
+    -0.27151802306105727,
+    0.8267738875329861
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     195.4448172520433,
+     141.09841948547708,
+     116.59554872221972
+    ],
+    "d": [
+     0.7240908383347957,
+     -0.3990582901607476,
+     -0.5625343890764309
+    ],
+    "n": [
+     0.49266916084387563,
+     -0.27151802306105727,
+     0.8267738875329861
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__P2R",
+   "leaf": "L06",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 24.331770732266246,
+   "base": [
+    195.4448172520433,
+    141.09841948547708,
+    116.59554872221972
+   ],
+   "frame": {
+    "d": [
+     0.01851056907669313,
+     0.8265666457938305,
+     -0.5625343890764309
+    ],
+    "n": [
+     0.01259453379458504,
+     0.5623933824398101,
+     0.826773887532986
+    ],
+    "b": [
+     -0.9997493368594721,
+     0.022388913529824812,
+     1.734723475976807e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333368485e-07,
+   "normal": [
+    0.01259453379458504,
+    0.5623933824398101,
+    0.826773887532986
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     195.4448172520433,
+     141.09841948547708,
+     116.59554872221972
+    ],
+    "d": [
+     0.01851056907669313,
+     0.8265666457938305,
+     -0.5625343890764309
+    ],
+    "n": [
+     0.01259453379458504,
+     0.5623933824398101,
+     0.826773887532986
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__P3L",
+   "leaf": "L06",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 34.976920427632734,
+   "base": [
+    201.03456929247778,
+    144.31638497726433,
+    108.12686628296825
+   ],
+   "frame": {
+    "d": [
+     0.6605958237173818,
+     -0.42929879424528133,
+     -0.6158861119936879
+    ],
+    "n": [
+     0.5164173867929407,
+     -0.3356021238977069,
+     0.7878351966327084
+    ],
+    "b": [
+     0.5449093872425985,
+     0.8384949371909742,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333231526e-07,
+   "normal": [
+    0.5164173867929407,
+    -0.3356021238977069,
+    0.7878351966327084
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     201.03456929247778,
+     144.31638497726433,
+     108.12686628296825
+    ],
+    "d": [
+     0.6605958237173818,
+     -0.42929879424528133,
+     -0.6158861119936879
+    ],
+    "n": [
+     0.5164173867929407,
+     -0.3356021238977069,
+     0.7878351966327084
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__P3R",
+   "leaf": "L06",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 34.976920427632734,
+   "base": [
+    201.03456929247778,
+    144.31638497726433,
+    108.12686628296825
+   ],
+   "frame": {
+    "d": [
+     -0.06390200628143677,
+     0.7852393460891436,
+     -0.615886111993688
+    ],
+    "n": [
+     -0.049955064670230004,
+     0.6138568191854635,
+     0.7878351966327084
+    ],
+    "b": [
+     -0.9967050843188273,
+     -0.08111088023810151,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333130244e-07,
+   "normal": [
+    -0.049955064670230004,
+    0.6138568191854635,
+    0.7878351966327084
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     201.03456929247778,
+     144.31638497726433,
+     108.12686628296825
+    ],
+    "d": [
+     -0.06390200628143677,
+     0.7852393460891436,
+     -0.615886111993688
+    ],
+    "n": [
+     -0.049955064670230004,
+     0.6138568191854635,
+     0.7878351966327084
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L06__T",
+   "leaf": "L06",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 45.62207012299922,
+   "base": [
+    205.52603732665972,
+    146.9956411786199,
+    98.85499952690554
+   ],
+   "frame": {
+    "d": [
+     0.42192624460104455,
+     0.25168797790807684,
+     -0.8709944924587084
+    ],
+    "n": [
+     0.7480171731186132,
+     0.4462081516658363,
+     0.49129277839858065
+    ],
+    "b": [
+     -0.5122973285471031,
+     0.8588081550401706,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.0000000000111627e-07,
+   "normal": [
+    0.7480171731186132,
+    0.4462081516658363,
+    0.49129277839858065
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     205.52603732665972,
+     146.9956411786199,
+     98.85499952690554
+    ],
+    "d": [
+     0.42192624460104455,
+     0.25168797790807684,
+     -0.8709944924587084
+    ],
+    "n": [
+     0.7480171731186132,
+     0.4462081516658363,
+     0.49129277839858065
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__P1L",
+   "leaf": "L07",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 14.542675788100585,
+   "base": [
+    188.53983921293832,
+    128.71992087553986,
+    136.65738144225156
+   ],
+   "frame": {
+    "d": [
+     0.45341600931085296,
+     -0.8570527038035909,
+     -0.24469283888903465
+    ],
+    "n": [
+     0.11442613086450143,
+     -0.21628972693809354,
+     0.9696006469657623
+    ],
+    "b": [
+     0.8839234033987338,
+     0.4676317107767602,
+     -1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333612127e-07,
+   "normal": [
+    0.11442613086450143,
+    -0.21628972693809354,
+    0.9696006469657623
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     188.53983921293832,
+     128.71992087553986,
+     136.65738144225156
+    ],
+    "d": [
+     0.45341600931085296,
+     -0.8570527038035909,
+     -0.24469283888903465
+    ],
+    "n": [
+     0.11442613086450143,
+     -0.21628972693809354,
+     0.9696006469657623
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__P1R",
+   "leaf": "L07",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 14.542675788100585,
+   "base": [
+    188.53983921293832,
+    128.71992087553986,
+    136.65738144225156
+   ],
+   "frame": {
+    "d": [
+     0.8264356727570443,
+     0.5070793758289096,
+     -0.24469283888903465
+    ],
+    "n": [
+     0.20856307342504393,
+     0.1279688626466407,
+     0.9696006469657623
+    ],
+    "b": [
+     -0.5229775551571132,
+     0.8523464535046114,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333361387e-07,
+   "normal": [
+    0.20856307342504393,
+    0.1279688626466407,
+    0.9696006469657623
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     188.53983921293832,
+     128.71992087553986,
+     136.65738144225156
+    ],
+    "d": [
+     0.8264356727570443,
+     0.5070793758289096,
+     -0.24469283888903465
+    ],
+    "n": [
+     0.20856307342504393,
+     0.1279688626466407,
+     0.9696006469657623
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__P2L",
+   "leaf": "L07",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 25.85364584551214,
+   "base": [
+    198.77617440230392,
+    125.92081192980768,
+    132.7432436520686
+   ],
+   "frame": {
+    "d": [
+     0.451493149971074,
+     -0.7658109979603702,
+     -0.45791642352304773
+    ],
+    "n": [
+     0.23256156789744994,
+     -0.39446491360984065,
+     0.8889952469320974
+    ],
+    "b": [
+     0.8614342996806416,
+     0.5078690257671982,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333424345e-07,
+   "normal": [
+    0.23256156789744994,
+    -0.39446491360984065,
+    0.8889952469320974
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     198.77617440230392,
+     125.92081192980768,
+     132.7432436520686
+    ],
+    "d": [
+     0.451493149971074,
+     -0.7658109979603702,
+     -0.45791642352304773
+    ],
+    "n": [
+     0.23256156789744994,
+     -0.39446491360984065,
+     0.8889952469320974
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__P2R",
+   "leaf": "L07",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 25.85364584551214,
+   "base": [
+    198.77617440230392,
+    125.92081192980768,
+    132.7432436520686
+   ],
+   "frame": {
+    "d": [
+     0.6185730379900505,
+     0.6384981955648901,
+     -0.45791642352304773
+    ],
+    "n": [
+     0.3186234732094418,
+     0.32888680917922414,
+     0.8889952469320973
+    ],
+    "b": [
+     -0.7182245324351655,
+     0.6958114119560618,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333856234e-07,
+   "normal": [
+    0.3186234732094418,
+    0.32888680917922414,
+    0.8889952469320973
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     198.77617440230392,
+     125.92081192980768,
+     132.7432436520686
+    ],
+    "d": [
+     0.6185730379900505,
+     0.6384981955648901,
+     -0.45791642352304773
+    ],
+    "n": [
+     0.3186234732094418,
+     0.32888680917922414,
+     0.8889952469320973
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__P3L",
+   "leaf": "L07",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 37.164615902923714,
+   "base": [
+    207.33463186127977,
+    124.9025560354122,
+    125.41835426750512
+   ],
+   "frame": {
+    "d": [
+     0.09096800072282002,
+     -0.9157061568385505,
+     -0.3914167308284931
+    ],
+    "n": [
+     0.03869362517436463,
+     -0.3894995000553028,
+     0.9202135311043491
+    ],
+    "b": [
+     0.9951018170093746,
+     0.09885531743230207,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333231796e-07,
+   "normal": [
+    0.03869362517436463,
+    -0.3894995000553028,
+    0.9202135311043491
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     207.33463186127977,
+     124.9025560354122,
+     125.41835426750512
+    ],
+    "d": [
+     0.09096800072282002,
+     -0.9157061568385505,
+     -0.3914167308284931
+    ],
+    "n": [
+     0.03869362517436463,
+     -0.3894995000553028,
+     0.9202135311043491
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__P3R",
+   "leaf": "L07",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 37.164615902923714,
+   "base": [
+    207.33463186127977,
+    124.9025560354122,
+    125.41835426750512
+   ],
+   "frame": {
+    "d": [
+     0.8841354575007143,
+     0.255141991090329,
+     -0.3914167308284931
+    ],
+    "n": [
+     0.37607076910635107,
+     0.10852572872928612,
+     0.9202135311043491
+    ],
+    "b": [
+     -0.27726389850422306,
+     0.9607938023250565,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333329756e-07,
+   "normal": [
+    0.37607076910635107,
+    0.10852572872928612,
+    0.9202135311043491
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     207.33463186127977,
+     124.9025560354122,
+     125.41835426750512
+    ],
+    "d": [
+     0.8841354575007143,
+     0.255141991090329,
+     -0.3914167308284931
+    ],
+    "n": [
+     0.37607076910635107,
+     0.10852572872928612,
+     0.9202135311043491
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L07__T",
+   "leaf": "L07",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 48.475585960335295,
+   "base": [
+    215.13357136539346,
+    119.61932180646055,
+    119.157202429954
+   ],
+   "frame": {
+    "d": [
+     0.6895022676683146,
+     -0.467089401009402,
+     -0.5535468492773942
+    ],
+    "n": [
+     0.458289554358918,
+     -0.31045901293155365,
+     0.8328180387425994
+    ],
+    "b": [
+     0.560854087304137,
+     0.8279146651402207,
+     5.551115123125783e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 1.9999999999794117e-07,
+   "normal": [
+    0.458289554358918,
+    -0.31045901293155365,
+    0.8328180387425994
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     215.13357136539346,
+     119.61932180646055,
+     119.157202429954
+    ],
+    "d": [
+     0.6895022676683146,
+     -0.467089401009402,
+     -0.5535468492773942
+    ],
+    "n": [
+     0.458289554358918,
+     -0.31045901293155365,
+     0.8328180387425994
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L08__P1L",
+   "leaf": "L08",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 9.049860347142355,
+   "base": [
+    180.2056454867153,
+    140.63941425638956,
+    132.50528767265823
+   ],
+   "frame": {
+    "d": [
+     0.8669219125540062,
+     -0.484326018764353,
+     -0.1177909380282526
+    ],
+    "n": [
+     0.10283141484725196,
+     -0.057449153188606834,
+     0.993038415630747
+    ],
+    "b": [
+     0.4877213319655153,
+     0.8729993713318375,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181944865e-07,
+   "normal": [
+    0.10283141484725196,
+    -0.057449153188606834,
+    0.993038415630747
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     180.2056454867153,
+     140.63941425638956,
+     132.50528767265823
+    ],
+    "d": [
+     0.8669219125540062,
+     -0.484326018764353,
+     -0.1177909380282526
+    ],
+    "n": [
+     0.10283141484725196,
+     -0.057449153188606834,
+     0.993038415630747
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L08__P1R",
+   "leaf": "L08",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 9.049860347142355,
+   "base": [
+    180.2056454867153,
+    140.63941425638956,
+    132.50528767265823
+   ],
+   "frame": {
+    "d": [
+     0.47208055425500106,
+     0.8736505280789999,
+     -0.1177909380282526
+    ],
+    "n": [
+     0.055996636620824235,
+     0.10362954100415098,
+     0.993038415630747
+    ],
+    "b": [
+     -0.8797751570608516,
+     0.47539002200146524,
+     6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181709043e-07,
+   "normal": [
+    0.055996636620824235,
+    0.10362954100415098,
+    0.993038415630747
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     180.2056454867153,
+     140.63941425638956,
+     132.50528767265823
+    ],
+    "d": [
+     0.47208055425500106,
+     0.8736505280789999,
+     -0.1177909380282526
+    ],
+    "n": [
+     0.055996636620824235,
+     0.10362954100415098,
+     0.993038415630747
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L08__P2L",
+   "leaf": "L08",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 19.608030752141765,
+   "base": [
+    190.20230836241353,
+    143.54601522639382,
+    130.74649136500562
+   ],
+   "frame": {
+    "d": [
+     0.7491204434931774,
+     -0.6373704129344333,
+     0.18049243157643816
+    ],
+    "n": [
+     -0.1374682984036983,
+     0.11696146711788018,
+     0.9835763733150694
+    ],
+    "b": [
+     0.6480131388132319,
+     0.7616291564307548,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818182413515e-07,
+   "normal": [
+    -0.1374682984036983,
+    0.11696146711788018,
+    0.9835763733150694
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     190.20230836241353,
+     143.54601522639382,
+     130.74649136500562
+    ],
+    "d": [
+     0.7491204434931774,
+     -0.6373704129344333,
+     0.18049243157643816
+    ],
+    "n": [
+     -0.1374682984036983,
+     0.11696146711788018,
+     0.9835763733150694
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L08__P2R",
+   "leaf": "L08",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 19.608030752141765,
+   "base": [
+    190.20230836241353,
+    143.54601522639382,
+    130.74649136500562
+   ],
+   "frame": {
+    "d": [
+     0.6117826345538836,
+     0.7701587435080732,
+     0.18049243157643816
+    ],
+    "n": [
+     -0.11226594934839731,
+     -0.1413289583676265,
+     0.9835763733150694
+    ],
+    "b": [
+     -0.7830187511644996,
+     0.6219980991327767,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.818181818210195e-07,
+   "normal": [
+    -0.11226594934839731,
+    -0.1413289583676265,
+    0.9835763733150694
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     190.20230836241353,
+     143.54601522639382,
+     130.74649136500562
+    ],
+    "d": [
+     0.6117826345538836,
+     0.7701587435080732,
+     0.18049243157643816
+    ],
+    "n": [
+     -0.11226594934839731,
+     -0.1413289583676265,
+     0.9835763733150694
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L08__T",
+   "leaf": "L08",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 30.166201157141195,
+   "base": [
+    200.3624758116622,
+    144.53738022196018,
+    133.44151551142798
+   ],
+   "frame": {
+    "d": [
+     0.9623037950247222,
+     0.0938955290110617,
+     0.2552548446410967
+    ],
+    "n": [
+     -0.25404835996104086,
+     -0.02478843508283341,
+     0.9668738099086404
+    ],
+    "b": [
+     -0.09711249601427706,
+     0.9952734112382773,
+     -3.469446951953614e-18
+    ]
+   },
+   "length_mm": 0.0007844938377306031,
+   "width_mm": 0.0005229958918204021,
+   "area_mm2": 2.727272727266254e-07,
+   "normal": [
+    -0.25404835996104086,
+    -0.02478843508283341,
+    0.9668738099086404
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     200.3624758116622,
+     144.53738022196018,
+     133.44151551142798
+    ],
+    "d": [
+     0.9623037950247222,
+     0.0938955290110617,
+     0.2552548446410967
+    ],
+    "n": [
+     -0.25404835996104086,
+     -0.02478843508283341,
+     0.9668738099086404
+    ],
+    "L": 0.0007844938377306031,
+    "W": 0.0005229958918204021,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L09__P1L",
+   "leaf": "L09",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 12.494063872171449,
+   "base": [
+    178.76815478455165,
+    127.16085059319144,
+    143.13856052465812
+   ],
+   "frame": {
+    "d": [
+     0.08640557851527125,
+     -0.9955231839101587,
+     0.038310133108902404
+    ],
+    "n": [
+     -0.003312641032675745,
+     0.03816664392123643,
+     0.9992658973972735
+    ],
+    "b": [
+     0.9962545369587182,
+     0.08646905567409692,
+     -8.673617379884035e-19
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181489256e-07,
+   "normal": [
+    -0.003312641032675745,
+    0.03816664392123643,
+    0.9992658973972735
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     178.76815478455165,
+     127.16085059319144,
+     143.13856052465812
+    ],
+    "d": [
+     0.08640557851527125,
+     -0.9955231839101587,
+     0.038310133108902404
+    ],
+    "n": [
+     -0.003312641032675745,
+     0.03816664392123643,
+     0.9992658973972735
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L09__P1R",
+   "leaf": "L09",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 12.494063872171449,
+   "base": [
+    178.76815478455165,
+    127.16085059319144,
+    143.13856052465812
+   ],
+   "frame": {
+    "d": [
+     0.995395107604186,
+     0.08786872856044547,
+     0.038310133108902404
+    ],
+    "n": [
+     -0.038161733696297606,
+     -0.0033687356848948594,
+     0.9992658973972735
+    ],
+    "b": [
+     -0.08793328061060801,
+     0.9961263665625242,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181853523e-07,
+   "normal": [
+    -0.038161733696297606,
+    -0.0033687356848948594,
+    0.9992658973972735
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     178.76815478455165,
+     127.16085059319144,
+     143.13856052465812
+    ],
+    "d": [
+     0.995395107604186,
+     0.08786872856044547,
+     0.038310133108902404
+    ],
+    "n": [
+     -0.038161733696297606,
+     -0.0033687356848948594,
+     0.9992658973972735
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L09__P2L",
+   "leaf": "L09",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 27.07047172303814,
+   "base": [
+    189.91835757836742,
+    117.80558638073914,
+    143.92829149581257
+   ],
+   "frame": {
+    "d": [
+     -0.10156422725340497,
+     -0.8975759241309736,
+     -0.4290013614929996
+    ],
+    "n": [
+     -0.04823536635372247,
+     -0.4262810312406236,
+     0.9033038424789039
+    ],
+    "b": [
+     0.9936589239649292,
+     -0.11243639457426188,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181751506e-07,
+   "normal": [
+    -0.04823536635372247,
+    -0.4262810312406236,
+    0.9033038424789039
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     189.91835757836742,
+     117.80558638073914,
+     143.92829149581257
+    ],
+    "d": [
+     -0.10156422725340497,
+     -0.8975759241309736,
+     -0.4290013614929996
+    ],
+    "n": [
+     -0.04823536635372247,
+     -0.4262810312406236,
+     0.9033038424789039
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L09__P2R",
+   "leaf": "L09",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 27.07047172303814,
+   "base": [
+    189.91835757836742,
+    117.80558638073914,
+    143.92829149581257
+   ],
+   "frame": {
+    "d": [
+     0.8973542593037499,
+     0.10350442090351153,
+     -0.4290013614929996
+    ],
+    "n": [
+     0.42617575712553385,
+     0.049156812359278705,
+     0.9033038424789039
+    ],
+    "b": [
+     -0.11458428054448222,
+     0.9934135305360519,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006405365362659078,
+   "width_mm": 0.0004270243575106052,
+   "area_mm2": 1.8181818181571977e-07,
+   "normal": [
+    0.42617575712553385,
+    0.049156812359278705,
+    0.9033038424789039
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     189.91835757836742,
+     117.80558638073914,
+     143.92829149581257
+    ],
+    "d": [
+     0.8973542593037499,
+     0.10350442090351153,
+     -0.4290013614929996
+    ],
+    "n": [
+     0.42617575712553385,
+     0.049156812359278705,
+     0.9033038424789039
+    ],
+    "L": 0.0006405365362659078,
+    "W": 0.0004270243575106052,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L09__T",
+   "leaf": "L09",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 41.646879573904826,
+   "base": [
+    198.12062658458126,
+    109.62103038314882,
+    135.08479150390778
+   ],
+   "frame": {
+    "d": [
+     0.562708528063459,
+     -0.561493344679134,
+     -0.606699543699923
+    ],
+    "n": [
+     0.42946483098367594,
+     -0.428537390753546,
+     0.7949312320410522
+    ],
+    "b": [
+     0.7063420356971672,
+     0.7078707004864531,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0007844938377306031,
+   "width_mm": 0.0005229958918204021,
+   "area_mm2": 2.727272727188272e-07,
+   "normal": [
+    0.42946483098367594,
+    -0.428537390753546,
+    0.7949312320410522
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     198.12062658458126,
+     109.62103038314882,
+     135.08479150390778
+    ],
+    "d": [
+     0.562708528063459,
+     -0.561493344679134,
+     -0.606699543699923
+    ],
+    "n": [
+     0.42946483098367594,
+     -0.428537390753546,
+     0.7949312320410522
+    ],
+    "L": 0.0007844938377306031,
+    "W": 0.0005229958918204021,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__P1L",
+   "leaf": "L10",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 11.180434703554454,
+   "base": [
+    168.64543017597157,
+    127.3992451728925,
+    143.82473835456602
+   ],
+   "frame": {
+    "d": [
+     -0.95912223500455,
+     -0.22134782987479668,
+     0.17632264894106706
+    ],
+    "n": [
+     0.1718067685162927,
+     0.03964985273092176,
+     0.9843324252865011
+    ],
+    "b": [
+     0.2248710132762018,
+     -0.9743885402590355,
+     6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333345998e-07,
+   "normal": [
+    0.1718067685162927,
+    0.03964985273092176,
+    0.9843324252865011
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     168.64543017597157,
+     127.3992451728925,
+     143.82473835456602
+    ],
+    "d": [
+     -0.95912223500455,
+     -0.22134782987479668,
+     0.17632264894106706
+    ],
+    "n": [
+     0.1718067685162927,
+     0.03964985273092176,
+     0.9843324252865011
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__P1R",
+   "leaf": "L10",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 11.180434703554454,
+   "base": [
+    168.64543017597157,
+    127.3992451728925,
+    143.82473835456602
+   ],
+   "frame": {
+    "d": [
+     0.2520094551302742,
+     -0.9515259103121406,
+     0.17632264894106708
+    ],
+    "n": [
+     -0.04514224417003395,
+     0.1704460451899305,
+     0.9843324252865011
+    ],
+    "b": [
+     0.9666713052099125,
+     0.25602067823471725,
+     6.938893903907228e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333588256e-07,
+   "normal": [
+    -0.04514224417003395,
+    0.1704460451899305,
+    0.9843324252865011
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     168.64543017597157,
+     127.3992451728925,
+     143.82473835456602
+    ],
+    "d": [
+     0.2520094551302742,
+     -0.9515259103121406,
+     0.17632264894106708
+    ],
+    "n": [
+     -0.04514224417003395,
+     0.1704460451899305,
+     0.9843324252865011
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__P2L",
+   "leaf": "L10",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 19.876328361874577,
+   "base": [
+    164.29744646132832,
+    120.18733207103593,
+    145.99312797483233
+   ],
+   "frame": {
+    "d": [
+     -0.890259303585403,
+     0.4520082950052795,
+     -0.055918455147238116
+    ],
+    "n": [
+     -0.04985993883346587,
+     0.02531521529785444,
+     0.9984353391051152
+    ],
+    "b": [
+     -0.4527166430330969,
+     -0.8916544404200787,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333394256e-07,
+   "normal": [
+    -0.04985993883346587,
+    0.02531521529785444,
+    0.9984353391051152
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     164.29744646132832,
+     120.18733207103593,
+     145.99312797483233
+    ],
+    "d": [
+     -0.890259303585403,
+     0.4520082950052795,
+     -0.055918455147238116
+    ],
+    "n": [
+     -0.04985993883346587,
+     0.02531521529785444,
+     0.9984353391051152
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__P2R",
+   "leaf": "L10",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 19.876328361874577,
+   "base": [
+    164.29744646132832,
+    120.18733207103593,
+    145.99312797483233
+   ],
+   "frame": {
+    "d": [
+     -0.4492136113903313,
+     -0.8916727301625877,
+     -0.055918455147238116
+    ],
+    "n": [
+     -0.0251586960078689,
+     -0.04993909932344919,
+     0.9984353391051152
+    ],
+    "b": [
+     0.8930700819962789,
+     -0.44991757983341785,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333539954e-07,
+   "normal": [
+    -0.0251586960078689,
+    -0.04993909932344919,
+    0.9984353391051152
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     164.29744646132832,
+     120.18733207103593,
+     145.99312797483233
+    ],
+    "d": [
+     -0.4492136113903313,
+     -0.8916727301625877,
+     -0.055918455147238116
+    ],
+    "n": [
+     -0.0251586960078689,
+     -0.04993909932344919,
+     0.9984353391051152
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__P3L",
+   "leaf": "L10",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 28.572222020194687,
+   "base": [
+    156.0611274662796,
+    117.48386826953076,
+    145.30545115934208
+   ],
+   "frame": {
+    "d": [
+     -0.445041764075837,
+     0.7911502172296998,
+     -0.4195463764658992
+    ],
+    "n": [
+     -0.20569426673593416,
+     0.3656624545091175,
+     0.9077339026357525
+    ],
+    "b": [
+     -0.8715662320559657,
+     -0.49027778160933067,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333195418e-07,
+   "normal": [
+    -0.20569426673593416,
+    0.3656624545091175,
+    0.9077339026357525
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     156.0611274662796,
+     117.48386826953076,
+     145.30545115934208
+    ],
+    "d": [
+     -0.445041764075837,
+     0.7911502172296998,
+     -0.4195463764658992
+    ],
+    "n": [
+     -0.20569426673593416,
+     0.3656624545091175,
+     0.9077339026357525
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__P3R",
+   "leaf": "L10",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 28.572222020194687,
+   "base": [
+    156.0611274662796,
+    117.48386826953076,
+    145.30545115934208
+   ],
+   "frame": {
+    "d": [
+     -0.6778178602170245,
+     -0.6037746155355891,
+     -0.41954637646589926
+    ],
+    "n": [
+     -0.31328126704554066,
+     -0.27905915094117,
+     0.9077339026357525
+    ],
+    "b": [
+     0.6651449436695397,
+     -0.7467142719346169,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333378062e-07,
+   "normal": [
+    -0.31328126704554066,
+    -0.27905915094117,
+    0.9077339026357525
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     156.0611274662796,
+     117.48386826953076,
+     145.30545115934208
+    ],
+    "d": [
+     -0.6778178602170245,
+     -0.6037746155355891,
+     -0.41954637646589926
+    ],
+    "n": [
+     -0.31328126704554066,
+     -0.27905915094117,
+     0.9077339026357525
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L10__T",
+   "leaf": "L10",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 37.2681156785148,
+   "base": [
+    149.15674743071605,
+    118.63602686130777,
+    140.14593243946928
+   ],
+   "frame": {
+    "d": [
+     -0.7939816546580614,
+     0.13249455858681522,
+     -0.5933281756425629
+    ],
+    "n": [
+     -0.5852356590289772,
+     0.09766036766391296,
+     0.8049606673550378
+    ],
+    "b": [
+     -0.16459755607956536,
+     -0.9863608084938463,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 1.9999999999529067e-07,
+   "normal": [
+    -0.5852356590289772,
+    0.09766036766391296,
+    0.8049606673550378
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     149.15674743071605,
+     118.63602686130777,
+     140.14593243946928
+    ],
+    "d": [
+     -0.7939816546580614,
+     0.13249455858681522,
+     -0.5933281756425629
+    ],
+    "n": [
+     -0.5852356590289772,
+     0.09766036766391296,
+     0.8049606673550378
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__P1L",
+   "leaf": "L11",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 9.101455631601176,
+   "base": [
+    175.28161560332282,
+    143.86578807343818,
+    135.26377498249767
+   ],
+   "frame": {
+    "d": [
+     0.8319384699749011,
+     0.40903402862380334,
+     -0.3749260535140263
+    ],
+    "n": [
+     0.3364584640909221,
+     0.16542444663706815,
+     0.927054720281601
+    ],
+    "b": [
+     -0.441218861923874,
+     0.8973995296870851,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333191726e-07,
+   "normal": [
+    0.3364584640909221,
+    0.16542444663706815,
+    0.927054720281601
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     175.28161560332282,
+     143.86578807343818,
+     135.26377498249767
+    ],
+    "d": [
+     0.8319384699749011,
+     0.40903402862380334,
+     -0.3749260535140263
+    ],
+    "n": [
+     0.3364584640909221,
+     0.16542444663706815,
+     0.927054720281601
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__P1R",
+   "leaf": "L11",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 9.101455631601176,
+   "base": [
+    175.28161560332282,
+    143.86578807343818,
+    135.26377498249767
+   ],
+   "frame": {
+    "d": [
+     -0.5395985608162388,
+     0.7538327716154568,
+     -0.3749260535140263
+    ],
+    "n": [
+     -0.2182282819586177,
+     0.30487040288783784,
+     0.927054720281601
+    ],
+    "b": [
+     -0.8131480862170395,
+     -0.5820568613817435,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333156973e-07,
+   "normal": [
+    -0.2182282819586177,
+    0.30487040288783784,
+    0.927054720281601
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     175.28161560332282,
+     143.86578807343818,
+     135.26377498249767
+    ],
+    "d": [
+     -0.5395985608162388,
+     0.7538327716154568,
+     -0.3749260535140263
+    ],
+    "n": [
+     -0.2182282819586177,
+     0.30487040288783784,
+     0.927054720281601
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__P2L",
+   "leaf": "L11",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 16.180365567290988,
+   "base": [
+    176.74493623791588,
+    149.68657042563416,
+    131.510356353255
+   ],
+   "frame": {
+    "d": [
+     0.5632925955609911,
+     0.6802759637038798,
+     -0.468962754377061
+    ],
+    "n": [
+     0.299091803104043,
+     0.3612065313762917,
+     0.8832179430961988
+    ],
+    "b": [
+     -0.7702243472535352,
+     0.6377730434079711,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333832506e-07,
+   "normal": [
+    0.299091803104043,
+    0.3612065313762917,
+    0.8832179430961988
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     176.74493623791588,
+     149.68657042563416,
+     131.510356353255
+    ],
+    "d": [
+     0.5632925955609911,
+     0.6802759637038798,
+     -0.468962754377061
+    ],
+    "n": [
+     0.299091803104043,
+     0.3612065313762917,
+     0.8832179430961988
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__P2R",
+   "leaf": "L11",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 16.180365567290988,
+   "base": [
+    176.74493623791588,
+    149.68657042563416,
+    131.510356353255
+   ],
+   "frame": {
+    "d": [
+     -0.8114895514387157,
+     0.3486526106497303,
+     -0.468962754377061
+    ],
+    "n": [
+     -0.43087708777385636,
+     0.18512428318413565,
+     0.8832179430961988
+    ],
+    "b": [
+     -0.394752635377286,
+     -0.9187874383461538,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333651267e-07,
+   "normal": [
+    -0.43087708777385636,
+    0.18512428318413565,
+    0.8832179430961988
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     176.74493623791588,
+     149.68657042563416,
+     131.510356353255
+    ],
+    "d": [
+     -0.8114895514387157,
+     0.3486526106497303,
+     -0.468962754377061
+    ],
+    "n": [
+     -0.43087708777385636,
+     0.18512428318413565,
+     0.8832179430961988
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__P3L",
+   "leaf": "L11",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 23.2592755029808,
+   "base": [
+    175.5025751520679,
+    154.83691893161557,
+    126.81552780719353
+   ],
+   "frame": {
+    "d": [
+     0.25720708531973197,
+     0.7993004028241848,
+     -0.5431053132739766
+    ],
+    "n": [
+     0.16636468514745106,
+     0.516997265797619,
+     0.8396645870188737
+    ],
+    "b": [
+     -0.9519282046441937,
+     0.30632122551805385,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333505999e-07,
+   "normal": [
+    0.16636468514745106,
+    0.516997265797619,
+    0.8396645870188737
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     175.5025751520679,
+     154.83691893161557,
+     126.81552780719353
+    ],
+    "d": [
+     0.25720708531973197,
+     0.7993004028241848,
+     -0.5431053132739766
+    ],
+    "n": [
+     0.16636468514745106,
+     0.516997265797619,
+     0.8396645870188737
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__P3R",
+   "leaf": "L11",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 23.2592755029808,
+   "base": [
+    175.5025751520679,
+    154.83691893161557,
+    126.81552780719353
+   ],
+   "frame": {
+    "d": [
+     -0.8335940903112855,
+     -0.10078447941859031,
+     -0.5431053132739766
+    ],
+    "n": [
+     -0.5391788418387472,
+     -0.06518863259688452,
+     0.8396645870188737
+    ],
+    "b": [
+     0.12002945101735593,
+     -0.9927703313901319,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333330751e-07,
+   "normal": [
+    -0.5391788418387472,
+    -0.06518863259688452,
+    0.8396645870188737
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     175.5025751520679,
+     154.83691893161557,
+     126.81552780719353
+    ],
+    "d": [
+     -0.8335940903112855,
+     -0.10078447941859031,
+     -0.5431053132739766
+    ],
+    "n": [
+     -0.5391788418387472,
+     -0.06518863259688452,
+     0.8396645870188737
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L11__T",
+   "leaf": "L11",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 30.338185438670596,
+   "base": [
+    172.6174439349761,
+    158.33337197236847,
+    121.37845139871995
+   ],
+   "frame": {
+    "d": [
+     -0.4075671598173319,
+     0.4939253462068788,
+     -0.7680668998289462
+    ],
+    "n": [
+     -0.48884088194363257,
+     0.5924199142107056,
+     0.640369609980948
+    ],
+    "b": [
+     -0.7713129082149506,
+     -0.6364561238773612,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 1.999999999990844e-07,
+   "normal": [
+    -0.48884088194363257,
+    0.5924199142107056,
+    0.640369609980948
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     172.6174439349761,
+     158.33337197236847,
+     121.37845139871995
+    ],
+    "d": [
+     -0.4075671598173319,
+     0.4939253462068788,
+     -0.7680668998289462
+    ],
+    "n": [
+     -0.48884088194363257,
+     0.5924199142107056,
+     0.640369609980948
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__P1L",
+   "leaf": "L12",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 13.9269031685427,
+   "base": [
+    168.59295154709352,
+    124.0012926928448,
+    144.34800522095875
+   ],
+   "frame": {
+    "d": [
+     -0.7618315404486633,
+     -0.58581121549609,
+     -0.2764740924148415
+    ],
+    "n": [
+     -0.21916961473918314,
+     -0.1685307204983363,
+     0.9610213713666256
+    ],
+    "b": [
+     0.6095714756717991,
+     -0.7927311120722493,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333434342e-07,
+   "normal": [
+    -0.21916961473918314,
+    -0.1685307204983363,
+    0.9610213713666256
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     168.59295154709352,
+     124.0012926928448,
+     144.34800522095875
+    ],
+    "d": [
+     -0.7618315404486633,
+     -0.58581121549609,
+     -0.2764740924148415
+    ],
+    "n": [
+     -0.21916961473918314,
+     -0.1685307204983363,
+     0.9610213713666256
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__P1R",
+   "leaf": "L12",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 13.9269031685427,
+   "base": [
+    168.59295154709352,
+    124.0012926928448,
+    144.34800522095875
+   ],
+   "frame": {
+    "d": [
+     0.6468538045002157,
+     -0.7107335870964496,
+     -0.2764740924148415
+    ],
+    "n": [
+     0.18609192662382362,
+     -0.20446935863851035,
+     0.9610213713666256
+    ],
+    "b": [
+     0.7395606469039779,
+     0.6730899267935673,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333588505e-07,
+   "normal": [
+    0.18609192662382362,
+    -0.20446935863851035,
+    0.9610213713666256
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     168.59295154709352,
+     124.0012926928448,
+     144.34800522095875
+    ],
+    "d": [
+     0.6468538045002157,
+     -0.7107335870964496,
+     -0.2764740924148415
+    ],
+    "n": [
+     0.18609192662382362,
+     -0.20446935863851035,
+     0.9610213713666256
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__P2L",
+   "leaf": "L12",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 24.75893896629813,
+   "base": [
+    167.71229039033827,
+    114.07052969584066,
+    140.11275059482693
+   ],
+   "frame": {
+    "d": [
+     -0.753737034341544,
+     -0.6078175142956291,
+     -0.24987667433655528
+    ],
+    "n": [
+     -0.19451166660153985,
+     -0.15685523240679072,
+     0.9682776707239009
+    ],
+    "b": [
+     0.6277305907934595,
+     -0.7784306683206248,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333097067e-07,
+   "normal": [
+    -0.19451166660153985,
+    -0.15685523240679072,
+    0.9682776707239009
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     167.71229039033827,
+     114.07052969584066,
+     140.11275059482693
+    ],
+    "d": [
+     -0.753737034341544,
+     -0.6078175142956291,
+     -0.24987667433655528
+    ],
+    "n": [
+     -0.19451166660153985,
+     -0.15685523240679072,
+     0.9682776707239009
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__P2R",
+   "leaf": "L12",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 24.75893896629813,
+   "base": [
+    167.71229039033827,
+    114.07052969584066,
+    140.11275059482693
+   ],
+   "frame": {
+    "d": [
+     0.65666442243936,
+     -0.7115851909117313,
+     -0.24987667433655528
+    ],
+    "n": [
+     0.16946081376802719,
+     -0.1836338339592542,
+     0.968277670723901
+    ],
+    "b": [
+     0.7348978629030433,
+     0.6781778019815602,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333303684e-07,
+   "normal": [
+    0.16946081376802719,
+    -0.1836338339592542,
+    0.968277670723901
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     167.71229039033827,
+     114.07052969584066,
+     140.11275059482693
+    ],
+    "d": [
+     0.65666442243936,
+     -0.7115851909117313,
+     -0.24987667433655528
+    ],
+    "n": [
+     0.16946081376802719,
+     -0.1836338339592542,
+     0.968277670723901
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__P3L",
+   "leaf": "L12",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 35.59097476405357,
+   "base": [
+    166.96877184753654,
+    103.96468874316349,
+    136.28493681414764
+   ],
+   "frame": {
+    "d": [
+     -0.6669348649487828,
+     -0.40567538433425543,
+     -0.6250002947687329
+    ],
+    "n": [
+     -0.5339756564364682,
+     -0.32480050306957026,
+     0.7806245137958434
+    ],
+    "b": [
+     0.5196805598143842,
+     -0.8543606473562603,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333561215e-07,
+   "normal": [
+    -0.5339756564364682,
+    -0.32480050306957026,
+    0.7806245137958434
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     166.96877184753654,
+     103.96468874316349,
+     136.28493681414764
+    ],
+    "d": [
+     -0.6669348649487828,
+     -0.40567538433425543,
+     -0.6250002947687329
+    ],
+    "n": [
+     -0.5339756564364682,
+     -0.32480050306957026,
+     0.7806245137958434
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__P3R",
+   "leaf": "L12",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 35.59097476405357,
+   "base": [
+    166.96877184753654,
+    103.96468874316349,
+    136.28493681414764
+   ],
+   "frame": {
+    "d": [
+     0.7388864284255386,
+     -0.25183621150968016,
+     -0.6250002947687329
+    ],
+    "n": [
+     0.5915830561367094,
+     -0.20163049410482034,
+     0.7806245137958434
+    ],
+    "b": [
+     0.3226086384158092,
+     0.9465324434056646,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333434207e-07,
+   "normal": [
+    0.5915830561367094,
+    -0.20163049410482034,
+    0.7806245137958434
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     166.96877184753654,
+     103.96468874316349,
+     136.28493681414764
+    ],
+    "d": [
+     0.7388864284255386,
+     -0.25183621150968016,
+     -0.6250002947687329
+    ],
+    "n": [
+     0.5915830561367094,
+     -0.20163049410482034,
+     0.7806245137958434
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L12__T",
+   "leaf": "L12",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 46.42301056180901,
+   "base": [
+    167.51987808214008,
+    98.928540502816,
+    126.71067484033048
+   ],
+   "frame": {
+    "d": [
+     0.05087743845138835,
+     -0.4649309081300354,
+     -0.8838838933491241
+    ],
+    "n": [
+     0.09614952836233752,
+     -0.8786387227511122,
+     0.4677063855433174
+    ],
+    "b": [
+     0.9940657696814257,
+     0.10878072231638636,
+     0.0
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.0000000000264684e-07,
+   "normal": [
+    0.09614952836233752,
+    -0.8786387227511122,
+    0.4677063855433174
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     167.51987808214008,
+     98.928540502816,
+     126.71067484033048
+    ],
+    "d": [
+     0.05087743845138835,
+     -0.4649309081300354,
+     -0.8838838933491241
+    ],
+    "n": [
+     0.09614952836233752,
+     -0.8786387227511122,
+     0.4677063855433174
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__P1L",
+   "leaf": "L13",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 9.642158367404305,
+   "base": [
+    172.87381662365138,
+    138.60453520934198,
+    151.9369984271154
+   ],
+   "frame": {
+    "d": [
+     0.2601439473750793,
+     -0.848336156353785,
+     0.46114085968063856
+    ],
+    "n": [
+     -0.1351959434943826,
+     0.44087747655064224,
+     0.8873269451183152
+    ],
+    "b": [
+     0.9560581486012112,
+     0.2931771077236835,
+     1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333518844e-07,
+   "normal": [
+    -0.1351959434943826,
+    0.44087747655064224,
+    0.8873269451183152
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     172.87381662365138,
+     138.60453520934198,
+     151.9369984271154
+    ],
+    "d": [
+     0.2601439473750793,
+     -0.848336156353785,
+     0.46114085968063856
+    ],
+    "n": [
+     -0.1351959434943826,
+     0.44087747655064224,
+     0.8873269451183152
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__P1R",
+   "leaf": "L13",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 9.642158367404305,
+   "base": [
+    172.87381662365138,
+    138.60453520934198,
+    151.9369984271154
+   ],
+   "frame": {
+    "d": [
+     0.7465482073127394,
+     0.47959866731584716,
+     0.46114085968063856
+    ],
+    "n": [
+     -0.3879786182615388,
+     -0.24924583093577615,
+     0.8873269451183152
+    ],
+    "b": [
+     -0.5404982571017247,
+     0.8413451337412,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333390625e-07,
+   "normal": [
+    -0.3879786182615388,
+    -0.24924583093577615,
+    0.8873269451183152
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     172.87381662365138,
+     138.60453520934198,
+     151.9369984271154
+    ],
+    "d": [
+     0.7465482073127394,
+     0.47959866731584716,
+     0.46114085968063856
+    ],
+    "n": [
+     -0.3879786182615388,
+     -0.24924583093577615,
+     0.8873269451183152
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__P2L",
+   "leaf": "L13",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 17.141614875385443,
+   "base": [
+    178.21222111352105,
+    136.64915107537718,
+    156.82778142232985
+   ],
+   "frame": {
+    "d": [
+     0.5606692076988928,
+     -0.8269298349490708,
+     -0.042861260007123356
+    ],
+    "n": [
+     0.02405309266482286,
+     -0.035475855770589614,
+     0.9990810339459967
+    ],
+    "b": [
+     0.8276904543798685,
+     0.561184917588175,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333686554e-07,
+   "normal": [
+    0.02405309266482286,
+    -0.035475855770589614,
+    0.9990810339459967
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     178.21222111352105,
+     136.64915107537718,
+     156.82778142232985
+    ],
+    "d": [
+     0.5606692076988928,
+     -0.8269298349490708,
+     -0.042861260007123356
+    ],
+    "n": [
+     0.02405309266482286,
+     -0.035475855770589614,
+     0.9990810339459967
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__P2R",
+   "leaf": "L13",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 17.141614875385443,
+   "base": [
+    178.21222111352105,
+    136.64915107537718,
+    156.82778142232985
+   ],
+   "frame": {
+    "d": [
+     0.8258965402734375,
+     0.5621901966016201,
+     -0.042861260007123356
+    ],
+    "n": [
+     0.035431526721942413,
+     0.024118344129531646,
+     0.9990810339459967
+    ],
+    "b": [
+     -0.5627073055137269,
+     0.8266562092680859,
+     3.469446951953614e-18
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333342266e-07,
+   "normal": [
+    0.035431526721942413,
+    0.024118344129531646,
+    0.9990810339459967
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     178.21222111352105,
+     136.64915107537718,
+     156.82778142232985
+    ],
+    "d": [
+     0.8258965402734375,
+     0.5621901966016201,
+     -0.042861260007123356
+    ],
+    "n": [
+     0.035431526721942413,
+     0.024118344129531646,
+     0.9990810339459967
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__P3L",
+   "leaf": "L13",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 24.641071383366565,
+   "base": [
+    185.56506356888954,
+    135.24525886521212,
+    156.37320205206655
+   ],
+   "frame": {
+    "d": [
+     0.3286956879351778,
+     -0.8954049850273573,
+     -0.3003482270981108
+    ],
+    "n": [
+     0.10350188874200464,
+     -0.2819510889282325,
+     0.9538296192082848
+    ],
+    "b": [
+     0.9387473055938206,
+     0.3446062916435828,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333106948e-07,
+   "normal": [
+    0.10350188874200464,
+    -0.2819510889282325,
+    0.9538296192082848
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     185.56506356888954,
+     135.24525886521212,
+     156.37320205206655
+    ],
+    "d": [
+     0.3286956879351778,
+     -0.8954049850273573,
+     -0.3003482270981108
+    ],
+    "n": [
+     0.10350188874200464,
+     -0.2819510889282325,
+     0.9538296192082848
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__P3R",
+   "leaf": "L13",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 24.641071383366565,
+   "base": [
+    185.56506356888954,
+    135.24525886521212,
+    156.37320205206655
+   ],
+   "frame": {
+    "d": [
+     0.85840118902222,
+     0.4158585590850099,
+     -0.3003482270981108
+    ],
+    "n": [
+     0.2702990870379282,
+     0.13094831448873592,
+     0.9538296192082848
+    ],
+    "b": [
+     -0.4359883051547387,
+     0.8999523308310827,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333167217e-07,
+   "normal": [
+    0.2702990870379282,
+    0.13094831448873592,
+    0.9538296192082848
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     185.56506356888954,
+     135.24525886521212,
+     156.37320205206655
+    ],
+    "d": [
+     0.85840118902222,
+     0.4158585590850099,
+     -0.3003482270981108
+    ],
+    "n": [
+     0.2702990870379282,
+     0.13094831448873592,
+     0.9538296192082848
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L13__T",
+   "leaf": "L13",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 32.14052789134769,
+   "base": [
+    191.8601392465428,
+    132.70226418562663,
+    153.18775888237747
+   ],
+   "frame": {
+    "d": [
+     0.8394042516219486,
+     -0.3390905296776064,
+     -0.4247565361968627
+    ],
+    "n": [
+     0.393835680732535,
+     -0.15909610813560957,
+     0.9053076189660857
+    ],
+    "b": [
+     0.3745583518504657,
+     0.9272033439645605,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.0000000000034487e-07,
+   "normal": [
+    0.393835680732535,
+    -0.15909610813560957,
+    0.9053076189660857
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     191.8601392465428,
+     132.70226418562663,
+     153.18775888237747
+    ],
+    "d": [
+     0.8394042516219486,
+     -0.3390905296776064,
+     -0.4247565361968627
+    ],
+    "n": [
+     0.393835680732535,
+     -0.15909610813560957,
+     0.9053076189660857
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__P1L",
+   "leaf": "L14",
+   "type": "P",
+   "side": "L",
+   "pair": 1,
+   "attachment_s_mm": 10.659746923804459,
+   "base": [
+    153.98066575584357,
+    143.56199442069675,
+    153.7147680123785
+   ],
+   "frame": {
+    "d": [
+     -0.6201980508177707,
+     0.7797828651070653,
+     -0.08539942064940681
+    ],
+    "n": [
+     -0.053158753972277345,
+     0.0668371747111532,
+     0.996346796528571
+    ],
+    "b": [
+     -0.7826420156354711,
+     -0.6224720679372265,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333497285e-07,
+   "normal": [
+    -0.053158753972277345,
+    0.0668371747111532,
+    0.996346796528571
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     153.98066575584357,
+     143.56199442069675,
+     153.7147680123785
+    ],
+    "d": [
+     -0.6201980508177707,
+     0.7797828651070653,
+     -0.08539942064940681
+    ],
+    "n": [
+     -0.053158753972277345,
+     0.0668371747111532,
+     0.996346796528571
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__P1R",
+   "leaf": "L14",
+   "type": "P",
+   "side": "R",
+   "pair": 1,
+   "attachment_s_mm": 10.659746923804459,
+   "base": [
+    153.98066575584357,
+    143.56199442069675,
+    153.7147680123785
+   ],
+   "frame": {
+    "d": [
+     -0.7752054490169682,
+     -0.6259100979910346,
+     -0.08539942064940681
+    ],
+    "n": [
+     -0.06644483272387774,
+     -0.05364834807848455,
+     0.996346796528571
+    ],
+    "b": [
+     0.6282050588929516,
+     -0.7780478159993147,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333333267588e-07,
+   "normal": [
+    -0.06644483272387774,
+    -0.05364834807848455,
+    0.996346796528571
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     153.98066575584357,
+     143.56199442069675,
+     153.7147680123785
+    ],
+    "d": [
+     -0.7752054490169682,
+     -0.6259100979910346,
+     -0.08539942064940681
+    ],
+    "n": [
+     -0.06644483272387774,
+     -0.05364834807848455,
+     0.996346796528571
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__P2L",
+   "leaf": "L14",
+   "type": "P",
+   "side": "L",
+   "pair": 2,
+   "attachment_s_mm": 18.950661197874595,
+   "base": [
+    145.80002663408757,
+    144.46408301269994,
+    152.71344926604803
+   ],
+   "frame": {
+    "d": [
+     -0.37048550686668175,
+     0.8213049415054339,
+     -0.4338187205048831
+    ],
+    "n": [
+     -0.17838348179895547,
+     0.3954466028198696,
+     0.9010001763260128
+    ],
+    "b": [
+     -0.91154803637714,
+     -0.41119360084634143,
+     0.0
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333329583e-07,
+   "normal": [
+    -0.17838348179895547,
+    0.3954466028198696,
+    0.9010001763260128
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     145.80002663408757,
+     144.46408301269994,
+     152.71344926604803
+    ],
+    "d": [
+     -0.37048550686668175,
+     0.8213049415054339,
+     -0.4338187205048831
+    ],
+    "n": [
+     -0.17838348179895547,
+     0.3954466028198696,
+     0.9010001763260128
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__P2R",
+   "leaf": "L14",
+   "type": "P",
+   "side": "R",
+   "pair": 2,
+   "attachment_s_mm": 18.950661197874595,
+   "base": [
+    145.80002663408757,
+    144.46408301269994,
+    152.71344926604803
+   ],
+   "frame": {
+    "d": [
+     -0.7130407634870128,
+     -0.5507941424392275,
+     -0.4338187205048831
+    ],
+    "n": [
+     -0.34331894688978903,
+     -0.2651995153973329,
+     0.9010001763260128
+    ],
+    "b": [
+     0.611314133905265,
+     -0.7913880398942457,
+     -2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333296577e-07,
+   "normal": [
+    -0.34331894688978903,
+    -0.2651995153973329,
+    0.9010001763260128
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     145.80002663408757,
+     144.46408301269994,
+     152.71344926604803
+    ],
+    "d": [
+     -0.7130407634870128,
+     -0.5507941424392275,
+     -0.4338187205048831
+    ],
+    "n": [
+     -0.34331894688978903,
+     -0.2651995153973329,
+     0.9010001763260128
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__P3L",
+   "leaf": "L14",
+   "type": "P",
+   "side": "L",
+   "pair": 3,
+   "attachment_s_mm": 27.24157547194472,
+   "base": [
+    139.44778701468317,
+    146.04996926421111,
+    147.62687123018574
+   ],
+   "frame": {
+    "d": [
+     -0.16926752589603145,
+     0.8411850175118023,
+     -0.5135720699090881
+    ],
+    "n": [
+     -0.10131278154192844,
+     0.5034798817102256,
+     0.858046460868696
+    ],
+    "b": [
+     -0.9803490322192774,
+     -0.19727081645982558,
+     -1.3877787807814457e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.333333333355819e-07,
+   "normal": [
+    -0.10131278154192844,
+    0.5034798817102256,
+    0.858046460868696
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     139.44778701468317,
+     146.04996926421111,
+     147.62687123018574
+    ],
+    "d": [
+     -0.16926752589603145,
+     0.8411850175118023,
+     -0.5135720699090881
+    ],
+    "n": [
+     -0.10131278154192844,
+     0.5034798817102256,
+     0.858046460868696
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__P3R",
+   "leaf": "L14",
+   "type": "P",
+   "side": "R",
+   "pair": 3,
+   "attachment_s_mm": 27.24157547194472,
+   "base": [
+    139.44778701468317,
+    146.04996926421111,
+    147.62687123018574
+   ],
+   "frame": {
+    "d": [
+     -0.7247138900325878,
+     -0.4593838336327576,
+     -0.5135720699090881
+    ],
+    "n": [
+     -0.4337676682671601,
+     -0.27495796216290264,
+     0.858046460868696
+    ],
+    "b": [
+     0.535383402394868,
+     -0.8446091477364513,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0005485227188978771,
+   "width_mm": 0.0003656818125985847,
+   "area_mm2": 1.3333333332762711e-07,
+   "normal": [
+    -0.4337676682671601,
+    -0.27495796216290264,
+    0.858046460868696
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     139.44778701468317,
+     146.04996926421111,
+     147.62687123018574
+    ],
+    "d": [
+     -0.7247138900325878,
+     -0.4593838336327576,
+     -0.5135720699090881
+    ],
+    "n": [
+     -0.4337676682671601,
+     -0.27495796216290264,
+     0.858046460868696
+    ],
+    "L": 0.0005485227188978771,
+    "W": 0.0003656818125985847,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  },
+  {
+   "id": "L14__T",
+   "leaf": "L14",
+   "type": "T",
+   "side": "C",
+   "pair": 0,
+   "attachment_s_mm": 35.532489746014846,
+   "base": [
+    134.20676580029277,
+    148.28830226390875,
+    141.6051753301295
+   ],
+   "frame": {
+    "d": [
+     -0.632140321457878,
+     0.26997420618592444,
+     -0.7263005865214557
+    ],
+    "n": [
+     -0.6679358369415963,
+     0.2852617389530883,
+     0.6873772312337597
+    ],
+    "b": [
+     -0.3927598906663713,
+     -0.9196410540443158,
+     2.7755575615628914e-17
+    ]
+   },
+   "length_mm": 0.0006718003868119453,
+   "width_mm": 0.00044786692454129687,
+   "area_mm2": 2.000000000026261e-07,
+   "normal": [
+    -0.6679358369415963,
+    0.2852617389530883,
+    0.6873772312337597
+   ],
+   "surface": {
+    "kind": "param_blade",
+    "base": [
+     134.20676580029277,
+     148.28830226390875,
+     141.6051753301295
+    ],
+    "d": [
+     -0.632140321457878,
+     0.26997420618592444,
+     -0.7263005865214557
+    ],
+    "n": [
+     -0.6679358369415963,
+     0.2852617389530883,
+     0.6873772312337597
+    ],
+    "L": 0.0006718003868119453,
+    "W": 0.00044786692454129687,
+    "cup": 0.0,
+    "bend": 0.0,
+    "nu": 12,
+    "nv": 7
+   },
+   "petiolule": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": []
+  }
+ ],
+ "trusses": [],
+ "cotyledons": [],
+ "params": {},
+ "notes": [
+  "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+ ]
+}

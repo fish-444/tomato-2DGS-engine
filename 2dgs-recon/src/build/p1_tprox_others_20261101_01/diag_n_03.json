@@ -1,0 +1,236 @@
+{
+ "labels": [
+  "route_tprox",
+  "tprox_unverified_until_heldout",
+  "conditional_on_unvalidated_scale",
+  "user_skeleton_seeds",
+  "frozen_code_reuse",
+  "legacy_split_20mm_unreviewed"
+ ],
+ "plant_id": "n_03",
+ "run": "build\\p1_tprox_others_20261101_01\\runs\\n_03\\20261101T174536",
+ "kernel": {
+  "in_kernel_choice": "A",
+  "in_kernel_gate": true,
+  "used_set": "A",
+  "seconds": 251
+ },
+ "lines_live": 8,
+ "leaves_tprox": 7,
+ "line_too_short": [
+  "n_03-L07"
+ ],
+ "seeds": {
+  "rachis_seeds": 10728,
+  "blade_groups": 33,
+  "blade_seeds": 17216
+ },
+ "seed_surfels_per_leaf": {
+  "n_03-L01": 4513,
+  "n_03-L02": 6260,
+  "n_03-L03": 1855,
+  "n_03-L04": 613,
+  "n_03-L05": 4426,
+  "n_03-L06": 986,
+  "n_03-L08": 4084
+ },
+ "leaves_seed_below_min": [],
+ "seed_min": 50,
+ "assigned": 0.9357,
+ "contested_or_unlabelled": 0.0643,
+ "provenance": {
+  "none": 2518,
+  "seed": 22411,
+  "absorbed": 13492,
+  "rachis_step": 736
+ },
+ "p1_quantiles_absorbed": {
+  "5": 0.6342,
+  "25": 0.727,
+  "50": 0.8407,
+  "75": 0.9698,
+  "95": 1.0
+ },
+ "margin_quantiles_absorbed": {
+  "5": 0.3586,
+  "25": 0.5207,
+  "50": 0.7247,
+  "75": 0.9485,
+  "95": 0.9999
+ },
+ "distance": {
+  "assigned": 0.8414
+ },
+ "both_assigned": 31260,
+ "changed_leaf_share_among_both": 0.0326,
+ "tprox_only": 5379,
+ "distance_only": 1686,
+ "agreement_matrix": {
+  "row": "tprox (0=none)",
+  "col": "distance (0=none)",
+  "leaf_uids": [
+   "n_03-L01",
+   "n_03-L02",
+   "n_03-L03",
+   "n_03-L04",
+   "n_03-L05",
+   "n_03-L06",
+   "n_03-L07",
+   "n_03-L08"
+  ],
+  "counts": [
+   [
+    832,
+    38,
+    178,
+    109,
+    45,
+    325,
+    483,
+    283,
+    225
+   ],
+   [
+    1149,
+    4850,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   [
+    1581,
+    2,
+    9024,
+    0,
+    0,
+    1,
+    8,
+    5,
+    2
+   ],
+   [
+    622,
+    0,
+    0,
+    2495,
+    152,
+    0,
+    0,
+    1,
+    235
+   ],
+   [
+    40,
+    0,
+    0,
+    9,
+    2348,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    451,
+    0,
+    0,
+    0,
+    1,
+    4716,
+    0,
+    5,
+    0
+   ],
+   [
+    253,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1202,
+    309,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1283,
+    8,
+    0,
+    13,
+    0,
+    0,
+    0,
+    263,
+    5607
+   ]
+  ]
+ },
+ "axis": {
+  "labels": [
+   "user_skeleton_seeds",
+   "conditional_on_unvalidated_scale",
+   "after_checkpoint_v1",
+   "R3-1b-style_unaccepted",
+   "no_reference",
+   "frozen_code_reuse",
+   "main_route_r8pc"
+  ],
+  "plant_id": "n_03",
+  "axis_source": "S1 PCA proxy (3D-first contract) + frozen Q1 (forms ['h_rel', 'vert', 'thick_rel', 'dens'])",
+  "axis_share": 0.0413,
+  "axis_share_r31b": 0.293,
+  "axis_share_unusual": true,
+  "stem_like": 773,
+  "rachis_like": 846,
+  "q1": {
+   "forms": [
+    "h_rel",
+    "vert",
+    "thick_rel",
+    "dens"
+   ],
+   "coef": [
+    [
+     -0.9504,
+     -1.6238,
+     0.5904,
+     0.337
+    ]
+   ],
+   "intercept": [
+    0.1287
+   ]
+  },
+  "translation_m": [
+   0.24173,
+   0.08724,
+   0.10491
+  ],
+  "hashes": {
+   "pc_absorb": "372c06655d939376",
+   "pc_rachis": "b9e76f0b96a0a912",
+   "compound_cluster": "785eb9913ded51cf",
+   "this": "4bb2f7117792bb69",
+   "frozen_bundle": "ec7cfbce98c8c642",
+   "frozen_r8pc_labels": "e1ff792be1c4efdf"
+  }
+ },
+ "grade": "ungraded (no held-out picks)",
+ "light": "per_surfel_light present; per-leaf light not reported: ungraded",
+ "axis_share_unusual": true
+}

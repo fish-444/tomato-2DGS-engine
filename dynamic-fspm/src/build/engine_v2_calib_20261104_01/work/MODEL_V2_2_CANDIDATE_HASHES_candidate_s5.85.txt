@@ -1,0 +1,5 @@
+8f33ac2b062a7c4e0e6be11901921fa5ea3a17f8c3958d175c99832a126df203 *Model_v2_2.rgg
+004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43 *parametersMicroTom_v2_2.rgg
+bc65303787534368440ee6659871ead1a79ba05f25edec3c9ac7144bdba1413a *v2_2_config.json
+44fd87380a0c33e8ed5a40f804e06146f44de24c3673ace94b199a5a6e204cb0 *v2_2_request_m00.json
+status: CANDIDATE, not frozen (user approval required; CONTRACT Amendment 17); m00 instance of arm C4AC1.3271

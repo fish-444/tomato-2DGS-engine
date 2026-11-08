@@ -1,0 +1,6 @@
+# Store every file byte-for-byte (no line-ending conversion): the frozen *.rgg hashes are over CRLF bytes,
+# and copies must stay identical to their sources (COPIED.csv).
+* -text
+*.png binary
+*.gsz binary
+*.pdf binary

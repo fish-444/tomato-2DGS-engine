@@ -1,0 +1,38 @@
+{
+ "B1": {
+  "plants": 13,
+  "main_leaves": 103,
+  "leaves_optimised": 103,
+  "gate1_pass": 47,
+  "median_err_azimuth": 6.919937238124902,
+  "median_err_length_rel": 0.3659600430691422,
+  "median_stem_offset_mm": 1.9864196709917805,
+  "median_err_theta0_template_not_gated": 12.291625027287402,
+  "median_err_dtheta_template_not_gated": 8.531408410256706,
+  "share_truth_inside_L_bound": 0.21359223300970873,
+  "acceptable": {
+   "azimuth": true,
+   "length": false,
+   "stem": true
+  },
+  "all_acceptable": false
+ },
+ "B2": {
+  "plants": 13,
+  "main_leaves": 103,
+  "leaves_optimised": 103,
+  "gate1_pass": 47,
+  "median_err_azimuth": 6.691049254638585,
+  "median_err_length_rel": 0.2466946502770363,
+  "median_stem_offset_mm": 1.9864196709917805,
+  "median_err_theta0_template_not_gated": 12.291625027287402,
+  "median_err_dtheta_template_not_gated": 8.531408410256706,
+  "share_truth_inside_L_bound": 0.8640776699029126,
+  "acceptable": {
+   "azimuth": true,
+   "length": false,
+   "stem": true
+  },
+  "all_acceptable": false
+ }
+}

@@ -1,0 +1,102 @@
+<title>Fresh View Mask Correction</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* layout: toolbar row, large canvas, status; one view at a time */
+:root{--bg:#f3f5f1;--panel:#fff;--ink:#1d2620;--muted:#5d6a61;--line:#d6ddd5;--accent:#2f6b4f;--accent-ink:#fff;--warn:#a86a12;--chip:#e7ece5;
+  --f-body:"IBM Plex Sans",system-ui,sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141917;--panel:#1c2320;--ink:#e3e9e4;--muted:#9aa89f;--line:#2e3833;--accent:#6fbf93;--accent-ink:#0f1512;--warn:#e0a24a;--chip:#25302b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141917;--panel:#1c2320;--ink:#e3e9e4;--muted:#9aa89f;--line:#2e3833;--accent:#6fbf93;--accent-ink:#0f1512;--warn:#e0a24a;--chip:#25302b;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.45;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 28px}
+h1{font-size:1.2rem;margin:0 0 2px;font-weight:600}.sub{color:var(--muted);margin:0 0 10px;max-width:80ch}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+button,select{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:5px;padding:5px 10px}
+button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+label{font-size:12px;color:var(--muted)}
+.wrap{position:relative;border:1px solid var(--line);border-radius:6px;background:#111;max-width:100%;overflow:hidden;touch-action:none;aspect-ratio:1/1}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.status{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-top:8px;min-height:1.2em}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:6px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-2px;margin-right:4px}
+.note{font-size:12px;color:var(--muted);max-width:90ch;margin-top:12px}
+.chip{font-size:11px;background:var(--chip);border-radius:999px;padding:2px 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<h1>Potted plant · mask correction for the 4 fresh held-out views</h1>
+<p class="sub">Each view shows the automatic whole-plant mask (pink) over the photo. Fix it so that it covers the whole plant — leaves, stem, petioles, trusses — and nothing else (no soil, pot, board). Where hairs make the edge ambiguous, paint a <b>band</b> instead of deciding. Your saved masks are the reference; the proposal is not.</p>
+<div class="bar">
+  <label for="view">View</label><select id="view"></select>
+  <span class="chip" id="ring"></span>
+  <button id="t-add" class="on">Add brush</button><button id="t-erase">Erase brush</button><button id="t-band">Band brush</button><button id="t-region">Click-add region</button>
+  <label for="size">Brush</label><input type="range" id="size" min="3" max="60" value="14" style="width:110px">
+  <button id="undo">Undo</button><button id="reset">Reset to proposal</button>
+  <button id="toggle">Hide mask</button>
+  <button id="save">Save this view</button>
+</div>
+<div class="wrap" id="wrap"><canvas id="photo"></canvas><canvas id="mask"></canvas><canvas id="cursor"></canvas></div>
+<div class="legend"><span><span class="sw" style="background:#ff3cc8"></span>plant mask</span><span><span class="sw" style="background:#ffd23c"></span>uncertainty band (2 px, hairs)</span><span><span class="sw" style="background:#4fd9ff"></span>region candidate under the pointer (click-add)</span><span>wheel = zoom · right-drag or space-drag = pan</span></div>
+<div class="status" id="status">Loading…</div>
+<p class="note" id="note">Proposals are model output (A2 colour mask inside a multi-view hull). Only the masks you save here are used as the reference for scoring R3-1. Nothing is sent until you press Save; tell Claude "done" in the chat when all four are saved.</p>
+<script id="D" type="application/json">/*__DATA__*/</script>
+<script>
+const M=JSON.parse(document.getElementById('D').textContent); const R=M.res; const $=id=>document.getElementById(id);
+const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+function rleDecode(rle,n){const a=new Uint8Array(n);let p=0,v=0;for(const run of rle){if(v)a.fill(1,p,p+run);p+=run;v^=1;}return a;}
+function rleEncode(a){const out=[];let v=0,run=0;for(let i=0;i<a.length;i++){const b=a[i]?1:0;if(b===v)run++;else{out.push(run);run=1;v=b;}}out.push(run);return out;}
+const photo=$('photo'),maskC=$('mask'),cur=$('cursor');[photo,maskC,cur].forEach(c=>{c.width=R;c.height=R;});
+const pctx=photo.getContext('2d'),mctx=maskC.getContext('2d'),cctx=cur.getContext('2d');
+let view=null,mask=null,band=null,hist=[],tool='add',showMask=true,db=null,canWrite=true,saved={};
+let zoom=1,panX=0,panY=0;
+const img=new Image();
+function setView(v){view=v;const d=M.views[v];img.onload=()=>{draw();};img.src='data:image/jpeg;base64,'+d.jpg;
+  mask=rleDecode(d.proposal,R*R);band=new Uint8Array(R*R);hist=[];$('ring').textContent=d.ring+' · az '+d.az+'° · el '+d.el+'°';
+  if(saved[v]){mask=rleDecode(saved[v].mask,R*R);if(saved[v].band)band=rleDecode(saved[v].band,R*R);}
+  status(saved[v]?'Loaded your saved mask for '+v+'.':'Proposal loaded for '+v+'. Not saved yet.');draw();}
+function tf(){return `translate(${panX}px,${panY}px) scale(${zoom})`;}
+function draw(){pctx.setTransform(1,0,0,1,0,0);pctx.clearRect(0,0,R,R);pctx.drawImage(img,0,0,R,R);
+  mctx.clearRect(0,0,R,R);if(showMask){const id=mctx.createImageData(R,R),px=id.data;
+  for(let i=0;i<R*R;i++){if(band[i]){px[i*4]=255;px[i*4+1]=210;px[i*4+2]=60;px[i*4+3]=170;}else if(mask[i]){px[i*4]=255;px[i*4+1]=60;px[i*4+2]=200;px[i*4+3]=120;}}
+  mctx.putImageData(id,0,0);}
+  [photo,maskC,cur].forEach(c=>c.style.transform=tf());}
+function status(t){$('status').textContent=t;}
+function push(){hist.push([mask.slice(),band.slice()]);if(hist.length>30)hist.shift();}
+// ---- pointer handling in canvas coordinates
+const wrap=$('wrap');function toCanvas(e){const r=wrap.getBoundingClientRect();const sx=(e.clientX-r.left)/r.width*R,sy=(e.clientY-r.top)/r.height*R;return [(sx-panX*R/r.width)/zoom,(sy-panY*R/r.height)/zoom];}
+let drawing=false,panning=false,last=null,space=false;
+document.addEventListener('keydown',e=>{if(e.code==='Space')space=true;});document.addEventListener('keyup',e=>{if(e.code==='Space')space=false;});
+function stamp(x,y){const s=+$('size').value,r2=s*s;const x0=Math.max(0,Math.floor(x-s)),x1=Math.min(R-1,Math.ceil(x+s)),y0=Math.max(0,Math.floor(y-s)),y1=Math.min(R-1,Math.ceil(y+s));
+  for(let j=y0;j<=y1;j++)for(let i=x0;i<=x1;i++){const dx=i-x,dy=j-y;if(dx*dx+dy*dy<=r2){const k=j*R+i;if(tool==='add'){mask[k]=1;band[k]=0;}else if(tool==='erase'){mask[k]=0;band[k]=0;}else if(tool==='band'){band[k]=1;}}}}
+wrap.addEventListener('pointerdown',e=>{if(e.button===2||space){panning=true;last=[e.clientX,e.clientY];return;}
+  if(tool==='region'){const [x,y]=toCanvas(e);regionAdd(x,y);return;}
+  push();drawing=true;const [x,y]=toCanvas(e);stamp(x,y);draw();});
+wrap.addEventListener('pointermove',e=>{if(panning){panX+=e.clientX-last[0];panY+=e.clientY-last[1];last=[e.clientX,e.clientY];draw();return;}
+  const [x,y]=toCanvas(e);cctx.clearRect(0,0,R,R);
+  if(tool==='region'){const c=candidateAt(x,y);if(c){cctx.fillStyle='rgba(79,217,255,0.45)';const m=rleDecode(c.rle,M.cand_res*M.cand_res);const s=R/M.cand_res;for(let j=0;j<M.cand_res;j++)for(let i=0;i<M.cand_res;i++)if(m[j*M.cand_res+i])cctx.fillRect(i*s,j*s,s,s);}}
+  else{cctx.strokeStyle='#fff';cctx.lineWidth=2/zoom;cctx.beginPath();cctx.arc(x,y,+$('size').value,0,Math.PI*2);cctx.stroke();}
+  if(drawing){stamp(x,y);draw();}});
+['pointerup','pointerleave'].forEach(ev=>wrap.addEventListener(ev,()=>{drawing=false;panning=false;}));
+wrap.addEventListener('contextmenu',e=>e.preventDefault());
+wrap.addEventListener('wheel',e=>{e.preventDefault();const f=e.deltaY<0?1.15:1/1.15;const r=wrap.getBoundingClientRect();const mx=e.clientX-r.left,my=e.clientY-r.top;panX=mx-(mx-panX)*f;panY=my-(my-panY)*f;zoom=Math.min(8,Math.max(1,zoom*f));if(zoom===1){panX=0;panY=0;}draw();},{passive:false});
+// ---- click-add regions: the smallest precomputed SAM candidate containing the click
+function candidateAt(x,y){const d=M.views[view];const s=M.cand_res/R;const i=Math.floor(x*s),j=Math.floor(y*s);let best=null;
+  for(const c of d.candidates){if(!c._m)c._m=rleDecode(c.rle,M.cand_res*M.cand_res);if(c._m[j*M.cand_res+i]&&(!best||c.area<best.area))best=c;}return best;}
+function regionAdd(x,y){const c=candidateAt(x,y);if(!c){status('No candidate region under the pointer; use the Add brush.');return;}push();
+  const m=rleDecode(c.rle,M.cand_res*M.cand_res);const s=R/M.cand_res;for(let j=0;j<R;j++)for(let i=0;i<R;i++){if(m[Math.floor(j/s)*M.cand_res+Math.floor(i/s)]){mask[j*R+i]=1;band[j*R+i]=0;}}draw();status('Region added ('+c.area+' px at '+M.cand_res+').');}
+// ---- tools
+for(const t of ['add','erase','band','region']){$('t-'+t).onclick=()=>{tool=t;for(const u of ['add','erase','band','region'])$('t-'+u).classList.toggle('on',u===t);};}
+$('undo').onclick=()=>{const h=hist.pop();if(h){[mask,band]=h;draw();}};
+$('reset').onclick=()=>{push();mask=rleDecode(M.views[view].proposal,R*R);band=new Uint8Array(R*R);draw();status('Reset to the proposal (not saved).');};
+$('toggle').onclick=()=>{showMask=!showMask;$('toggle').textContent=showMask?'Hide mask':'Show mask';draw();};
+const sel=$('view');for(const v of Object.keys(M.views)){const o=document.createElement('option');o.value=v;o.textContent=v.slice(9,18)+' · '+M.views[v].ring;sel.append(o);}
+sel.onchange=()=>setView(sel.value);
+async function save(){if(!db){status('Cannot save in this view: open the page on claude.ai while signed in.');return;}
+  const doc={view,mask:rleEncode(mask),band:rleEncode(band),mask_px:mask.reduce((a,b)=>a+b,0),band_px:band.reduce((a,b)=>a+b,0),res:R,at:new Date().toISOString()};
+  status('Saving…');try{await db.collection('masks').doc(view).set(doc);saved[view]=doc;status('Saved '+view+' ('+doc.mask_px.toLocaleString()+' plant px, '+doc.band_px.toLocaleString()+' band px). '+Object.keys(saved).length+' of '+Object.keys(M.views).length+' views saved.');}
+  catch(e){if(e&&e.code==='invalid_argument'){canWrite=false;status('You can view but not save on this page.');}else status('Not saved ('+(e&&e.code||'error')+'). Try again.');}}
+$('save').onclick=save;
+setView(Object.keys(M.views)[0]);
+(async()=>{const c=window.claude;if(!c||!c.use)return;db=await c.use('db');if(!db)return;
+  try{const qs=await db.collection('masks').get();qs.docs.forEach(d=>{saved[d.id]=d.data();});if(saved[view])setView(view);status((Object.keys(saved).length?Object.keys(saved).length+' view(s) already saved. ':'')+'Ready.');}catch(e){status('Store not readable ('+(e&&e.code||'error')+').');}})();
+</script>

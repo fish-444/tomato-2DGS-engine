@@ -1,0 +1,83 @@
+{
+ "labels": [
+  "hand_measured;user_confirmed_2026-11-01",
+  "draft_not_frozen",
+  "excludes t2_02/t2_04/t2_05 until validation membership is answered (not used: hand only)"
+ ],
+ "side_axis": {
+  "n": 12,
+  "n_with_angle": 2,
+  "angles_deg": [
+   20.0,
+   60.0
+  ],
+  "attach_main_rank_counts": {
+   "1": 1,
+   "2": 2,
+   "4": 1,
+   "5": 2,
+   "7": 2,
+   "9": 2
+  },
+  "attach_node_unknown": 2,
+  "per_plant": {
+   "dt01": 3,
+   "dt02": 4,
+   "dt03": 2,
+   "dt04": 1,
+   "dt05": 1,
+   "dt06": 1
+  }
+ },
+ "side_axis_leaf": {
+  "n": 18,
+  "leaflets": {
+   "5": 13,
+   "7": 5
+  },
+  "theta0_mean_deg": 20.56,
+  "theta0_sd_deg": 17.98,
+  "theta0_median_deg": 15.0,
+  "theta0_min": -5.0,
+  "theta0_max": 60.0,
+  "per_side_axis_max": 4
+ },
+ "truss": {
+  "cells": 5,
+  "n_truss": 8,
+  "flowers_per_truss": [
+   3,
+   4,
+   4,
+   1,
+   4,
+   4,
+   4,
+   4
+  ],
+  "n_flowers": 28,
+  "position": "not_confirmed"
+ },
+ "fruit": {
+  "cells": 6,
+  "n_fruit": 21,
+  "per_plant": {
+   "dt02": 6,
+   "dt04": 12,
+   "dt05": 3
+  },
+  "position": "not_confirmed"
+ },
+ "thickness": {
+  "placed": 21,
+  "header_aligned": 10,
+  "realigned": 11,
+  "rank_unknown": 1
+ },
+ "pending_user": 1,
+ "omitted": 1,
+ "age": {
+  "age_dag": 60,
+  "label": "user_stated"
+ }
+}

@@ -1,0 +1,294 @@
+{
+  "started": "2026-11-06 15:51:18",
+  "batch": "HA3",
+  "arms": [
+    "V22A_s4.975"
+  ],
+  "cases": {
+    "V22A_s4.975_m00": {
+      "arm": "V22A_s4.975",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "97df0d2483462acd7d3b8782f20f04013e96a025c278e9c312b9f0e55a85aa91",
+      "rebind": {
+        "model_old": "26dfa211199c048c6ba71c8103d9be985e850e8e262a42a6a88d86687cfa2fa8",
+        "model_new": "97df0d2483462acd7d3b8782f20f04013e96a025c278e9c312b9f0e55a85aa91",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m01": {
+      "arm": "V22A_s4.975",
+      "m": 1,
+      "seed": 20261021,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "c58f6ec951120e0229304ee4fad6583eddff0cf6c70b690f85305ca8abddd41a",
+      "rebind": {
+        "model_old": "29fd65662b63a28cca65ad21dc658a697e0149638d29b627c9d92f90fe62fb68",
+        "model_new": "c58f6ec951120e0229304ee4fad6583eddff0cf6c70b690f85305ca8abddd41a",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m02": {
+      "arm": "V22A_s4.975",
+      "m": 2,
+      "seed": 20261022,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "850dbfe47149c947799f431379d3abea9b021e5d56eb9ff879e13bda480a4c81",
+      "rebind": {
+        "model_old": "23cc56067b07af603887fa29ed506eccff9ef0808a7e015d73a7e88d59091c5a",
+        "model_new": "850dbfe47149c947799f431379d3abea9b021e5d56eb9ff879e13bda480a4c81",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m03": {
+      "arm": "V22A_s4.975",
+      "m": 3,
+      "seed": 20261023,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "4d12d62082562f52ec090370b25aa15de7ff37561ad9cb44251c4a544eee942a",
+      "rebind": {
+        "model_old": "f3dac25e2506ddb3c3a43eb8ba0811ca44bae910c471358de9edef6490a38f05",
+        "model_new": "4d12d62082562f52ec090370b25aa15de7ff37561ad9cb44251c4a544eee942a",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m04": {
+      "arm": "V22A_s4.975",
+      "m": 4,
+      "seed": 20261024,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "7740123185b6bd1238a4e25dff92d8d94acb557f6c1c0d6751d5409393ee4914",
+      "rebind": {
+        "model_old": "d78e19927715e4a70ca06ac377f2132fe4c6bac5faf95b4a38e646bf6a71566c",
+        "model_new": "7740123185b6bd1238a4e25dff92d8d94acb557f6c1c0d6751d5409393ee4914",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m05": {
+      "arm": "V22A_s4.975",
+      "m": 5,
+      "seed": 20261025,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "62902a732fad79787ef8088a07b7f1d999f52d0fdf92bcdf374d5aa7da41a8eb",
+      "rebind": {
+        "model_old": "52c6a7428595dbc41f61dc2fc6654d8b09a0a9629293114740673c831e723cc2",
+        "model_new": "62902a732fad79787ef8088a07b7f1d999f52d0fdf92bcdf374d5aa7da41a8eb",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m06": {
+      "arm": "V22A_s4.975",
+      "m": 6,
+      "seed": 20261026,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "d3dd71e7aa521b26f39a6b60c3b2aa7b8d906a2e8eb83d56b0bd2b2c175bbd04",
+      "rebind": {
+        "model_old": "a312954e735bc3ea616109e7e13781834865901bf65d9f7d71340507000eb62f",
+        "model_new": "d3dd71e7aa521b26f39a6b60c3b2aa7b8d906a2e8eb83d56b0bd2b2c175bbd04",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m07": {
+      "arm": "V22A_s4.975",
+      "m": 7,
+      "seed": 20261027,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "477bf662a1c7b1ee762a5fd175f3b55042d0b5a594403e148bb99bac6ebe236f",
+      "rebind": {
+        "model_old": "b204989ff1fee3d05fdc028344c2a4331327e7192aad519474434384b9dee559",
+        "model_new": "477bf662a1c7b1ee762a5fd175f3b55042d0b5a594403e148bb99bac6ebe236f",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m08": {
+      "arm": "V22A_s4.975",
+      "m": 8,
+      "seed": 20261028,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "370e3da7698035a37ef8c2c6250d8c8c92b65c4652f00aae12b8afa54893b399",
+      "rebind": {
+        "model_old": "93ecd987b4ce7af33d5916ca480595ac7ea49ff02d4ff5635a1f8e733ef5b1a4",
+        "model_new": "370e3da7698035a37ef8c2c6250d8c8c92b65c4652f00aae12b8afa54893b399",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m09": {
+      "arm": "V22A_s4.975",
+      "m": 9,
+      "seed": 20261029,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "d8039dd3d01c615af9b5b1b87a5e42e40c79930b264039ddcf49cffea63d41e9",
+      "rebind": {
+        "model_old": "c3809233e04e6bc79c35b7b4dcdcdf7b01118822f0cc83d903d05bb70f9bc72a",
+        "model_new": "d8039dd3d01c615af9b5b1b87a5e42e40c79930b264039ddcf49cffea63d41e9",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m10": {
+      "arm": "V22A_s4.975",
+      "m": 10,
+      "seed": 20261030,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "edf6b6cbd821344725552c72a770f983d43e4d87e41ba04645a88f60d0a02b75",
+      "rebind": {
+        "model_old": "696553ba7d04889bb94e73e783c6685d3aaf35deb8764b62243e8b3706eb3800",
+        "model_new": "edf6b6cbd821344725552c72a770f983d43e4d87e41ba04645a88f60d0a02b75",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m11": {
+      "arm": "V22A_s4.975",
+      "m": 11,
+      "seed": 20261031,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "50c23ae58090f9667754b8cfb114c9a4cb0d0ebb759de86a2eadadb297f8e9e0",
+      "rebind": {
+        "model_old": "561d1d79e6c81f020b61103ab843b625794155650ba584408542a7012389d6bb",
+        "model_new": "50c23ae58090f9667754b8cfb114c9a4cb0d0ebb759de86a2eadadb297f8e9e0",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m12": {
+      "arm": "V22A_s4.975",
+      "m": 12,
+      "seed": 20261032,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "4ea94a09e5ad18c6663b778684b89d2612cb7ca906df21cd9b515a859619423d",
+      "rebind": {
+        "model_old": "471e47b3500955a9007dc71e4aec17e9625da854e9bdd1cef098af90ac6dc378",
+        "model_new": "4ea94a09e5ad18c6663b778684b89d2612cb7ca906df21cd9b515a859619423d",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m13": {
+      "arm": "V22A_s4.975",
+      "m": 13,
+      "seed": 20261033,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "91489a19d54d1fcbfd4dbd4d8cf2f5b00daaa5cf283e9de2d341cbca316e950f",
+      "rebind": {
+        "model_old": "d7afac94a932c2b2639cee22af61a22465494ca4a35de69ab4fcb6b2b242502a",
+        "model_new": "91489a19d54d1fcbfd4dbd4d8cf2f5b00daaa5cf283e9de2d341cbca316e950f",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m14": {
+      "arm": "V22A_s4.975",
+      "m": 14,
+      "seed": 20261034,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "9f28ffeef66a6f99e7c9cfed8466136973c60da78d5b74def7f736da34b528d8",
+      "rebind": {
+        "model_old": "cbacbd291b6b88bc020a6d1b31b4c5ac78044227eca79edab6aa32b11940d459",
+        "model_new": "9f28ffeef66a6f99e7c9cfed8466136973c60da78d5b74def7f736da34b528d8",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    },
+    "V22A_s4.975_m15": {
+      "arm": "V22A_s4.975",
+      "m": 15,
+      "seed": 20261035,
+      "level": "C5",
+      "f": 1.3271,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "58050eb06defd92b2125de8b040e798655d08df717fbe721fd29aed2048a3550",
+      "rebind": {
+        "model_old": "6501d7305bba3663f947170f0503ee48b4078393630b33915b1a16bf6fc28f90",
+        "model_new": "58050eb06defd92b2125de8b040e798655d08df717fbe721fd29aed2048a3550",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43"
+      }
+    }
+  },
+  "repro": {},
+  "dataset": {
+    "slug": "engv2-ha3-20261104",
+    "runs.tar.gz": {
+      "sha256": "f4b9e657874dc864734871ba61414ba4a9762b2eafbceadf61b8fe4798a71daf",
+      "bytes": 16796335
+    },
+    "code.tar.gz": {
+      "sha256": "689bfc21a71413fb8b4d626b3b1a5581ef02d338450ebba2b32cc0561a6351de",
+      "bytes": 13820
+    }
+  },
+  "finished": "2026-11-06 15:52:54"
+}

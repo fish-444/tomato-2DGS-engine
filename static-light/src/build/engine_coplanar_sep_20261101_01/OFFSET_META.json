@@ -1,0 +1,44 @@
+{
+ "labels": [
+  "coplanar_separation",
+  "representation_comparison_not_validation",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b_unaccepted",
+  "engine_law_leaflets"
+ ],
+ "deltas_mm": [
+  0.05,
+  0.1,
+  0.2
+ ],
+ "primary_mm": 0.1,
+ "leaflets": 51,
+ "sign_rule": "+delta for even, -delta for odd leaflet index within each skeleton line (file order P1L,P1R,...,T)",
+ "variants": {
+  "T_flat_offset_0.05": {
+   "max_abs_rel_leaflet_area_diff": 8.881784197001252e-16,
+   "G2_pass": true,
+   "note": "offset coordinates written at full float precision"
+  },
+  "T_flat_offset_0.1": {
+   "max_abs_rel_leaflet_area_diff": 1.9984014443252818e-15,
+   "G2_pass": true,
+   "note": "offset coordinates written at full float precision"
+  },
+  "T_flat_offset_0.2": {
+   "max_abs_rel_leaflet_area_diff": 8.881784197001252e-16,
+   "G2_pass": true,
+   "note": "offset coordinates written at full float precision"
+  }
+ },
+ "files": {
+  "T_flat_offset_0.05_triangles.csv": "5e37900cb56b3ff513b15d91efbcb42df41ac07fd1f3eceaa727dd893502bc78",
+  "T_flat_offset_0.1_triangles.csv": "f3e80e952b3c73ca9ca21a2ba66fdddc313c7037c532002e92255adaf63bcd67",
+  "T_flat_offset_0.2_triangles.csv": "6a7725e29f38fa253fb109a3cd978c7a69f68234be7659c88fe432ca1ce87307",
+  "T_flat_triangles.csv": "7347257569e8975b0268cf1873ef3a3a48a4567b4a5ced5d5d3d5763c930279b",
+  "T_fold_triangles.csv": "a22f80379eebbd71606e9e34eb93c055aeaed6760198c90a0030d3707a51526f",
+  "T_foldcup_triangles.csv": "0c8f92d7fb08274eaec893404c2895db7c699da654738d0f3af8b1543763fbcf"
+ },
+ "flat_leaflet_planarity_max_1_minus_cos": 2.24487561872877e-09
+}

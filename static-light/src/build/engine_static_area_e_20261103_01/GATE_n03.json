@@ -1,0 +1,9 @@
+{
+ "r": 0.08986588281392595,
+ "r_old": 0.0899,
+ "area_b": 4065.1865427274583,
+ "area_b_old": 4065.0,
+ "rows_equal": true,
+ "max_abs_surfel_diff": 4.999968874749849e-06,
+ "pass": true
+}

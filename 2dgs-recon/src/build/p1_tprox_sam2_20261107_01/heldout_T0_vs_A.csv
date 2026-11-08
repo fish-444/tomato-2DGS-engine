@@ -1,0 +1,13 @@
+plant,T0_agree,T0_n,T0_grade,A_agree,A_n,A_grade,T0_reproduces_stored
+e_01,7,10,B,8,10,A,True
+e_04,8,10,A,6,10,B,True
+e_05,9,10,A,7,10,B,True
+e_07,3,9,C,3,9,C,True
+n_01,6,10,B,6,10,B,True
+n_02,5,10,C,5,10,C,True
+n_03,6,10,B,5,10,C,True
+n_04,7,10,B,7,10,B,True
+n_05,8,10,A,9,10,A,True
+t2_02,0,11,C,0,11,C,True
+t2_04,9,10,A,9,10,A,True
+t2_05,8,10,A,7,10,B,True

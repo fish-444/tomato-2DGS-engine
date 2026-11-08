@@ -1,0 +1,1 @@
+{"id": "dolgfish/static-tau-k1b-20261031", "title": "static-tau-k1b-20261031", "code_file": "k1b_r31b.py", "language": "python", "kernel_type": "script", "is_private": true, "enable_gpu": false, "enable_internet": false, "dataset_sources": ["dolgfish/static-tau-bundle-20261031", "dolgfish/static-nine-bundle-20261028"], "competition_sources": [], "kernel_sources": []}

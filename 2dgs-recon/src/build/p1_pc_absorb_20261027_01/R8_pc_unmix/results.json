@@ -1,0 +1,121 @@
+{
+ "labels": [
+  "designated_not_adopted",
+  "conditional_on_unvalidated_scale"
+ ],
+ "params": {
+  "edge_mm": 3.0,
+  "angle_deg": 30.0,
+  "ratio": 1.5,
+  "leaflet_min": 30,
+  "pure": 0.9,
+  "majority": 0.6,
+  "leftover_mm": 15.0,
+  "accept_purity": 0.6,
+  "min_proj": 100
+ },
+ "spines": {
+  "1": 235,
+  "2": 736,
+  "3": 850,
+  "4": 1253,
+  "5": 1698,
+  "6": 302,
+  "7": 2241,
+  "8": 52
+ },
+ "rachis_pieces": {
+  "1": 27,
+  "2": 12,
+  "3": 7,
+  "4": 2,
+  "5": 18,
+  "6": 30,
+  "7": 6,
+  "8": 3
+ },
+ "moved_surfels": 4966,
+ "moved_blade": 4403,
+ "moved_rachis": 563,
+ "units": {
+  "rachis_piece": {
+   "units": 35,
+   "surfels": 563
+  },
+  "mixed_leaflet": {
+   "units": 38,
+   "surfels": 1891
+  },
+  "foreign_leaflet": {
+   "units": 8,
+   "surfels": 2523
+  },
+  "leftover_blade": {
+   "units": 0,
+   "surfels": 0
+  }
+ },
+ "mixed_unresolved": 0,
+ "per_leaf": {
+  "1": {
+   "before": 8588,
+   "after": 8440,
+   "moved_in": 208,
+   "moved_out": 356
+  },
+  "2": {
+   "before": 3233,
+   "after": 3438,
+   "moved_in": 326,
+   "moved_out": 121
+  },
+  "3": {
+   "before": 6845,
+   "after": 7387,
+   "moved_in": 543,
+   "moved_out": 1
+  },
+  "4": {
+   "before": 2988,
+   "after": 3358,
+   "moved_in": 505,
+   "moved_out": 135
+  },
+  "5": {
+   "before": 8874,
+   "after": 8453,
+   "moved_in": 350,
+   "moved_out": 771
+  },
+  "6": {
+   "before": 4129,
+   "after": 826,
+   "moved_in": 93,
+   "moved_out": 3396
+  },
+  "7": {
+   "before": 6506,
+   "after": 9298,
+   "moved_in": 2910,
+   "moved_out": 118
+  },
+  "8": {
+   "before": 565,
+   "after": 528,
+   "moved_in": 31,
+   "moved_out": 68
+  }
+ },
+ "purity_moved": {
+  "new_label": 0.0687,
+  "old_label": 0.9054,
+  "projections": 1586
+ },
+ "purity_all_blade": {
+  "before": 0.8819,
+  "after": 0.7966
+ },
+ "accept": false,
+ "tag": "viewing_only",
+ "seconds": 7
+}

@@ -1,0 +1,60 @@
+{
+  "started": "2026-10-26T10:59:55Z",
+  "seeds": {
+    "12": {
+      "status": "verified",
+      "elapsed_s": 54
+    },
+    "13": {
+      "status": "verified",
+      "elapsed_s": 108
+    }
+  },
+  "packet_umol_s": 0.004,
+  "organs": 82,
+  "variance_ratio_observed_over_binomial": 0.8955801104972375,
+  "median_sd_ratio": 0.7071067811865476,
+  "plants": {
+    "fx_om0": {
+      "values": [
+        0.42000000000000004,
+        0.528,
+        0.46
+      ],
+      "mean": 0.4693333333333334,
+      "rel_sd": 0.11633860925820037,
+      "model_rel_sd": 0.09231861823449955
+    },
+    "fx_om0#2": {
+      "values": [
+        0.6000000000000001,
+        0.6120000000000001,
+        0.64
+      ],
+      "mean": 0.6173333333333334,
+      "rel_sd": 0.03325011731823028,
+      "model_rel_sd": 0.08049522744528821
+    },
+    "fx_om1": {
+      "values": [
+        0.936,
+        0.888,
+        1.016
+      ],
+      "mean": 0.9466666666666667,
+      "rel_sd": 0.0683062290308853,
+      "model_rel_sd": 0.06500270850261593
+    },
+    "fx_sp0": {
+      "values": [
+        0.39200000000000007,
+        0.35600000000000004,
+        0.392
+      ],
+      "mean": 0.38000000000000006,
+      "rel_sd": 0.054696341291648756,
+      "model_rel_sd": 0.1025978352085154
+    }
+  },
+  "reading": "variance ratio near 1 => GroIMP MC noise per organ = sqrt(absorbed x P/N); used for the snapshot gate tolerances"
+}

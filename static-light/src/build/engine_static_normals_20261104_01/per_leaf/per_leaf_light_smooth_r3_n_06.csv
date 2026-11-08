@@ -1,0 +1,12 @@
+# normal_smoothing_test; relative_light; conditional_on_unvalidated_scale; skeleton_labels_ungraded; after_checkpoint_v1; n_06 smooth_r3; assigned surfels only (lower bound); build/p1_dz10_labels_20261101_01/labels_distance_n_06_64b0f9b553e9.npz
+leaf,surfels,area_b_mm2,absorbed,light_per_area,self_shading,rank_by_absorbed
+n_06-L01,9168,791.482,253.6662,0.320495,0.4608,5
+n_06-L02,8695,935.997,359.6097,0.3842,0.5002,2
+n_06-L03,1979,202.311,48.9904,0.242154,0.6648,10
+n_06-L04,5549,691.072,233.7433,0.338233,0.4555,6
+n_06-L05,8078,934.907,257.3134,0.275229,0.6041,4
+n_06-L06,8123,647.915,360.9352,0.557071,0.2706,1
+n_06-L07,7417,633.375,279.2648,0.440916,0.4252,3
+n_06-L08,3656,199.219,142.0377,0.712973,0.1666,8
+n_06-L09,1485,103.062,70.0875,0.68005,0.2318,9
+n_06-L10,4731,341.803,218.2801,0.638613,0.2563,7

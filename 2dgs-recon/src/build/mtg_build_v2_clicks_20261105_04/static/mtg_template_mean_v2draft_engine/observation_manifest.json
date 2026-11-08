@@ -1,0 +1,22 @@
+{
+ "fixture": true,
+ "producer": "plant_tree_v1.engine.to_engine_structure",
+ "source_manifest_sha256": "n/a",
+ "rotation_status": "solved",
+ "transform_source": "plant_tree_v1 plant_local_mm, z up -> plant_local: translation by the main-axis base [0.0, 0.0, 0.0] (mm)",
+ "scale_source": "plant_tree_v1 units mm",
+ "biology_status": "not_established",
+ "supplement_status": "placeholders: thermal_age_dd, mass_gDM, max_mass_gDM, birth_day, reserve_gC are 0.0 placeholders (requires_declaration); see initial_state_template.csv",
+ "schema_revision": 9,
+ "rank_convention": "U5_A7: rank = u5_rank_of_node(node_index_from_base); main stem shared first rank, side axes one rank per node",
+ "organ_split": "n/a",
+ "synthetic": true,
+ "input_status": "mtg_from_traits:template_mean",
+ "files": {
+  "initial_state.csv": "d76f5c6d7d0557bdc830602c693cbeabd400054e8e3f2aa2352e6988dd5e0028",
+  "initial_controls.json": "261b69c40705160ddcce93346ded0d2b676e53ef97f9890274f2b5ba76bee12f",
+  "mtg_vertices.csv": "39fb7e7a71b1796d60e7163e8649e2c3e61a6f52327f5472dcdebed5351aff9a",
+  "mtg_edges.csv": "688ade03216333c3b164b2d3e1a4a6ad52f8b22e23261703ce8f61401b2695e2",
+  "structure_state.csv": "320d1e88cc9cd2019b711618b71ac05cb103c9da509ea3b43fb48abe66aeb933"
+ }
+}

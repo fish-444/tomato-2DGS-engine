@@ -1,0 +1,1 @@
+"""Plant silhouette extraction."""

@@ -1,0 +1,68 @@
+{
+ "per_perturbation": {
+  "exp0.7": {
+   "L_resid_z": 0.9997,
+   "a_z": 0.9761,
+   "chroma_z": 0.9915
+  },
+  "exp1.3": {
+   "L_resid_z": 0.9997,
+   "a_z": 0.9869,
+   "chroma_z": 0.996
+  },
+  "gam0.8": {
+   "L_resid_z": 0.9996,
+   "a_z": 0.9706,
+   "chroma_z": 0.9792
+  },
+  "gam1.25": {
+   "L_resid_z": 0.9996,
+   "a_z": 0.9664,
+   "chroma_z": 0.9701
+  },
+  "wbA": {
+   "L_resid_z": 0.9997,
+   "a_z": 0.9493,
+   "chroma_z": 0.9607
+  },
+  "wbB": {
+   "L_resid_z": 0.9997,
+   "a_z": 0.9659,
+   "chroma_z": 0.9758
+  }
+ },
+ "invariance_min": {
+  "L_resid_z": 0.9996,
+  "a_z": 0.9493,
+  "chroma_z": 0.9607
+ },
+ "rule": "Spearman >= 0.9",
+ "perturbations": {
+  "exp0.7": {
+   "gain": 0.7
+  },
+  "exp1.3": {
+   "gain": 1.3
+  },
+  "gam0.8": {
+   "gamma": 0.8
+  },
+  "gam1.25": {
+   "gamma": 1.25
+  },
+  "wbA": {
+   "wb": [
+    1.1,
+    1.0,
+    0.9
+   ]
+  },
+  "wbB": {
+   "wb": [
+    0.9,
+    1.0,
+    1.1
+   ]
+  }
+ }
+}

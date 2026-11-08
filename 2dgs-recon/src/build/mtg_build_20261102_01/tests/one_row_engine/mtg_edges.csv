@@ -1,0 +1,9 @@
+snapshot_capture_id,parent_id,child_id,edge_type
+mtg_build_one_row_test,p1/N1,p1/C0001,+
+mtg_build_one_row_test,p1/C0001/P,p1/C0001/R1,<
+mtg_build_one_row_test,p1/C0001/P,p1/C0001/P1L,+
+mtg_build_one_row_test,p1/C0001/P,p1/C0001/P1R,+
+mtg_build_one_row_test,p1/C0001/R1,p1/C0001/R2,<
+mtg_build_one_row_test,p1/C0001/R1,p1/C0001/P2L,+
+mtg_build_one_row_test,p1/C0001/R1,p1/C0001/P2R,+
+mtg_build_one_row_test,p1/C0001/R2,p1/C0001/T,<

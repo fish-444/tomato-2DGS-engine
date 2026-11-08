@@ -1,0 +1,10 @@
+# normal_smoothing_test; relative_light; conditional_on_unvalidated_scale; skeleton_labels_ungraded; after_checkpoint_v1; R3-1b smooth_r5; assigned surfels only (lower bound); labels_rachis.npz (axis_kind, R8_pc label)
+leaf,surfels,area_b_mm2,absorbed,light_per_area,self_shading,rank_by_absorbed
+R8pc_1,7466,747.381,287.9857,0.385326,0.3631,2
+R8pc_2,2180,276.22,126.487,0.457922,0.3316,5
+R8pc_3,5811,496.376,241.1227,0.485766,0.211,3
+R8pc_4,1637,209.054,90.0921,0.430951,0.3738,7
+R8pc_5,6686,685.367,296.5803,0.432732,0.3507,1
+R8pc_6,3477,448.04,106.5014,0.237705,0.5676,6
+R8pc_7,4082,563.89,239.1653,0.424134,0.3662,4
+R8pc_8,433,61.79,29.072,0.470497,0.3532,8

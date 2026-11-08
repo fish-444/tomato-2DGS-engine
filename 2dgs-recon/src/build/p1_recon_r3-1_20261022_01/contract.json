@@ -1,0 +1,285 @@
+{
+ "date": "2026-10-22",
+ "seed": 20261023,
+ "pool": [
+  "20261021_060235403_iOS.jpg",
+  "20261021_060248144_iOS.jpg",
+  "20261021_060313903_iOS.jpg",
+  "20261021_060315956_iOS.jpg",
+  "20261021_060319179_iOS.jpg",
+  "20261021_060321744_iOS.jpg",
+  "20261021_060323966_iOS.jpg",
+  "20261021_060328024_iOS.jpg",
+  "20261021_060329819_iOS.jpg",
+  "20261021_060331680_iOS.jpg",
+  "20261021_060332829_iOS.jpg",
+  "20261021_060335139_iOS.jpg",
+  "20261021_060337367_iOS.jpg",
+  "20261021_060338861_iOS.jpg",
+  "20261021_060340484_iOS.jpg",
+  "20261021_060341729_iOS.jpg",
+  "20261021_060343438_iOS.jpg",
+  "20261021_060344652_iOS.jpg",
+  "20261021_060346661_iOS.jpg",
+  "20261021_060348489_iOS.jpg",
+  "20261021_060350518_iOS.jpg",
+  "20261021_060352245_iOS.jpg",
+  "20261021_060354234_iOS.jpg",
+  "20261021_060355657_iOS.jpg",
+  "20261021_060414567_iOS.jpg",
+  "20261021_060416893_iOS.jpg",
+  "20261021_060418991_iOS.jpg",
+  "20261021_060420263_iOS.jpg",
+  "20261021_060421660_iOS.jpg",
+  "20261021_060422747_iOS.jpg",
+  "20261021_060423912_iOS.jpg",
+  "20261021_060427460_iOS.jpg",
+  "20261021_060428635_iOS.jpg",
+  "20261021_060430586_iOS.jpg",
+  "20261021_060437164_iOS.jpg",
+  "20261021_060439622_iOS.jpg",
+  "20261021_060440865_iOS.jpg",
+  "20261021_060442059_iOS.jpg",
+  "20261021_060449755_iOS.jpg",
+  "20261021_060450923_iOS.jpg",
+  "20261021_060454093_iOS.jpg",
+  "20261021_060524278_iOS.jpg",
+  "20261021_060527538_iOS.jpg",
+  "20261021_060528683_iOS.jpg",
+  "20261021_060531950_iOS.jpg",
+  "20261021_060532792_iOS.jpg",
+  "20261021_060538353_iOS.jpg",
+  "20261021_060540841_iOS.jpg",
+  "20261021_060542310_iOS.jpg",
+  "20261021_060545604_iOS.jpg",
+  "20261021_060547546_iOS.jpg",
+  "20261021_060549196_iOS.jpg",
+  "20261021_060551789_iOS.jpg",
+  "20261021_060554103_iOS.jpg",
+  "20261021_060555768_iOS.jpg",
+  "20261021_060557359_iOS.jpg",
+  "20261021_060559521_iOS.jpg",
+  "20261021_060603671_iOS.jpg"
+ ],
+ "heldout_fresh": [
+  "20261021_060430586_iOS.jpg",
+  "20261021_060343438_iOS.jpg",
+  "20261021_060603671_iOS.jpg",
+  "20261021_060528683_iOS.jpg"
+ ],
+ "heldout_v2": [
+  "20261021_060429762_iOS.jpg",
+  "20261021_060544649_iOS.jpg",
+  "20261021_060600613_iOS.jpg",
+  "20261021_060317552_iOS.jpg"
+ ],
+ "heldout_run01": [
+  "20261021_060326166_iOS.jpg",
+  "20261021_060448335_iOS.jpg",
+  "20261021_060605333_iOS.jpg"
+ ],
+ "train": [
+  "20261021_060235403_iOS.jpg",
+  "20261021_060248144_iOS.jpg",
+  "20261021_060313903_iOS.jpg",
+  "20261021_060315956_iOS.jpg",
+  "20261021_060317552_iOS.jpg",
+  "20261021_060319179_iOS.jpg",
+  "20261021_060321744_iOS.jpg",
+  "20261021_060323966_iOS.jpg",
+  "20261021_060326166_iOS.jpg",
+  "20261021_060328024_iOS.jpg",
+  "20261021_060329819_iOS.jpg",
+  "20261021_060331680_iOS.jpg",
+  "20261021_060332829_iOS.jpg",
+  "20261021_060335139_iOS.jpg",
+  "20261021_060337367_iOS.jpg",
+  "20261021_060338861_iOS.jpg",
+  "20261021_060340484_iOS.jpg",
+  "20261021_060341729_iOS.jpg",
+  "20261021_060344652_iOS.jpg",
+  "20261021_060346661_iOS.jpg",
+  "20261021_060348489_iOS.jpg",
+  "20261021_060350518_iOS.jpg",
+  "20261021_060352245_iOS.jpg",
+  "20261021_060354234_iOS.jpg",
+  "20261021_060355657_iOS.jpg",
+  "20261021_060414567_iOS.jpg",
+  "20261021_060416893_iOS.jpg",
+  "20261021_060418991_iOS.jpg",
+  "20261021_060420263_iOS.jpg",
+  "20261021_060421660_iOS.jpg",
+  "20261021_060422747_iOS.jpg",
+  "20261021_060423912_iOS.jpg",
+  "20261021_060427460_iOS.jpg",
+  "20261021_060428635_iOS.jpg",
+  "20261021_060429762_iOS.jpg",
+  "20261021_060437164_iOS.jpg",
+  "20261021_060439622_iOS.jpg",
+  "20261021_060440865_iOS.jpg",
+  "20261021_060442059_iOS.jpg",
+  "20261021_060448335_iOS.jpg",
+  "20261021_060449755_iOS.jpg",
+  "20261021_060450923_iOS.jpg",
+  "20261021_060454093_iOS.jpg",
+  "20261021_060524278_iOS.jpg",
+  "20261021_060527538_iOS.jpg",
+  "20261021_060531950_iOS.jpg",
+  "20261021_060532792_iOS.jpg",
+  "20261021_060538353_iOS.jpg",
+  "20261021_060540841_iOS.jpg",
+  "20261021_060542310_iOS.jpg",
+  "20261021_060544649_iOS.jpg",
+  "20261021_060545604_iOS.jpg",
+  "20261021_060547546_iOS.jpg",
+  "20261021_060549196_iOS.jpg",
+  "20261021_060551789_iOS.jpg",
+  "20261021_060554103_iOS.jpg",
+  "20261021_060555768_iOS.jpg",
+  "20261021_060557359_iOS.jpg",
+  "20261021_060559521_iOS.jpg",
+  "20261021_060600613_iOS.jpg",
+  "20261021_060605333_iOS.jpg"
+ ],
+ "heldout_detail": [
+  {
+   "file": "20261021_060430586_iOS.jpg",
+   "azimuth_deg": "61.7",
+   "elevation_deg": "54.8",
+   "ring": "middle",
+   "quadrant": "0-90",
+   "wanted_ring": "middle",
+   "corners": "17",
+   "rms_px": "5.921"
+  },
+  {
+   "file": "20261021_060343438_iOS.jpg",
+   "azimuth_deg": "176.9",
+   "elevation_deg": "61.5",
+   "ring": "upper",
+   "quadrant": "90-180",
+   "wanted_ring": "upper",
+   "corners": "13",
+   "rms_px": "4.539"
+  },
+  {
+   "file": "20261021_060603671_iOS.jpg",
+   "azimuth_deg": "254.2",
+   "elevation_deg": "31.8",
+   "ring": "low",
+   "quadrant": "180-270",
+   "wanted_ring": "low",
+   "corners": "26",
+   "rms_px": "7.574"
+  },
+  {
+   "file": "20261021_060528683_iOS.jpg",
+   "azimuth_deg": "298.2",
+   "elevation_deg": "31.0",
+   "ring": "low",
+   "quadrant": "270-360",
+   "wanted_ring": "low",
+   "corners": "14",
+   "rms_px": "7.688"
+  }
+ ],
+ "runs": [
+  {
+   "id": "R3-base",
+   "change": "R3 unchanged on the new split (baseline)"
+  },
+  {
+   "id": "R3-base-render",
+   "change": "render-only: R3-base surfels -> alpha/depth of every view"
+  },
+  {
+   "id": "R3-1a",
+   "change": "R3-base + M2 + M3 + M4"
+  },
+  {
+   "id": "R3-1b",
+   "change": "R3-1a + M1 + M5 + I1/I2"
+  },
+  {
+   "id": "R3-1c",
+   "change": "R3-1b + training settings (Step 4)"
+  },
+  {
+   "id": "R3-1d",
+   "change": "R3-1c at 3024 px, only if >= 0.6 h of budget remains"
+  }
+ ],
+ "gpu_budget_h_t4": 2.3,
+ "train_settings": {
+  "res": 1512,
+  "iters": 7000,
+  "n_init": 150000,
+  "seed": 0
+ },
+ "methods": {
+  "M1": {
+   "method": "SAM 2.1 (the leaflet-tuned v5 checkpoint, image predictor) propagated view-to-view along each ring ordered by azimuth: the previous view's whole-plant mask is lifted through the R3-base model's rendered depth into the next view and used as a box + positive-point prompt; union with A2 inside the projected 3D bounding box of the plant hull dilated by 1 cm",
+   "seeds_per_ring": 3,
+   "prompt_points": 6
+  },
+  "M2": {
+   "method": "ridge candidates (sato, sigmas 3/6/10 px at 3024) inside the plant region dilated 90 px -> SAM point prompts for stems, petioles, petiolules; added region gated a* <= 2, L >= 15 and thin (26 px opening), touching the plant",
+   "sigmas": [
+    3,
+    6,
+    10
+   ],
+   "n_seed": 24,
+   "thin_px": 26,
+   "a_max": 2.0,
+   "l_min": 15.0
+  },
+  "M3": {
+   "method": "soil as its own class: the pot-top polygon (soil plane at the fitted rim height, side 62 mm around the plant centre) is projected per view; a per-capture soil colour model (Gaussian in Lab on pixels inside the polygon and outside every current plant mask) and a plant model (Gaussian on plant pixels) classify the pixels inside the polygon by likelihood ratio; plant wins when log-ratio >= 0",
+   "rim_z_m": 0.066,
+   "rim_side_m": 0.062,
+   "min_soil_px": 2000
+  },
+  "M4": {
+   "method": "alpha matte from a trimap: inside (mask eroded 2 px) = 1, outside (mask dilated 2 px) = 0, band = guided filter of the hard mask with the photo as guide (radius 4 px, eps 1e-3 at 1512), clipped to [0, 1]; the soft mask replaces the band exclusion in the alpha loss",
+   "band_px": 2,
+   "radius_px": 4,
+   "eps": 0.001
+  },
+  "M5": {
+   "method": "R3-base rendered into the TRAINING views only: pixels with rendered alpha >= 0.8 that the mask misses and that pass M3's plant test become SAM positive prompts (one round; never on held-out views)",
+   "alpha_min": 0.8
+  },
+  "I1": {
+   "method": "pycolmap SIFT 3024 px, 32,768 features, fixed board poses, foreground = Step 2 masks (as A3 of v2)"
+  },
+  "I2": {
+   "method": "Depth Anything V2 Small (HF depth-anything/Depth-Anything-V2-Small-hf) per training view; per-view affine (scale, shift) fit of 1/depth to the I1 points visible in that view by RANSAC-trimmed least squares; back-projected points added only where I1 has < N points, inside the Step 2 mask, tagged mono_prior",
+   "n_min": 300,
+   "rel_residual_max": 0.08
+  },
+  "T": {
+   "method": "per-image affine colour compensation (3x3 + offset, learnt), soft-mask alpha loss (M4), depth-normal consistency 0.05, depth loss (L1 on rendered median depth vs I1 points 0.05, vs I2 points 0.01), densification: R3 values and one declared alternative (grow_grad2d 1.5e-4, refine until 6000); iterations 7000; resolution 1512; 3024 only as R3-1d"
+  }
+ },
+ "band_px": 2,
+ "acceptance": {
+  "band_excluded_iou_min": 0.85,
+  "raw_iou_min": 0.75,
+  "edge_f2_min": 0.9,
+  "gap_min": -0.03,
+  "stem_coverage_min": 0.6,
+  "guard": 0.05,
+  "reference": "human-corrected masks of the fresh views (primary); auto masks secondary"
+ },
+ "scale_check": {
+  "pot_rim_mm": 59.0,
+  "tolerance": 0.03
+ },
+ "organ_split": "none",
+ "amendment_1": "2026-10-22 19:40",
+ "scoring": {
+  "human": "raw IoU with the user band removed; band-excluded IoU also removes the 2 px band; edge F@2px; stem coverage on A2 stem pixels inside the human mask",
+  "auto": "same on the auto mask of the run's stage"
+ }
+}

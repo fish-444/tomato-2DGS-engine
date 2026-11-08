@@ -1,0 +1,22 @@
+// GroIMP mesh probe (engine_static_20261026_01). Generated.
+import java.io.*;
+import de.grogra.xl.util.FloatList;
+module Surf(int sid) extends MeshNode;
+module Lamp extends LightNode;
+module World extends Node;
+LightModel lm = new LightModel(30000000, 1);
+protected void init() [ Axiom ==> World [ Translate(0, 0, 0.6f) Lamp().(setLight(new PointLight().(setPower(1200f)))) ]; ]
+public void measure() throws Exception {
+    println("PROBE_START");
+    try {
+    BufferedReader r = new BufferedReader(new FileReader("<PROJECT_ROOT>/build/EN3029~1/GROIMP~1/probe_mesh.csv")); String line;
+    while ((line = r.readLine()) != null) { String[] v = line.split(","); FloatList f = new FloatList();
+        for (int k = 1; k < v.length; k++) f.add(Float.parseFloat(v[k]));
+        final int id = Integer.parseInt(v[0]); final FloatList ff = f;
+        [ w:World ==> w [Surf(id).(setPolygons(getMesh(ff).getPolygons()),setShader(BLACK))]; ] derive(); }
+    r.close();
+    lm.compute();
+    for (Surf s : (* Surf *)) println("RESULT	" + s.sid + "	" + lm.getAbsorbedPower(s).integrate() + "	" + lm.getHitCount(s));
+    } catch (Throwable e) { println("PROBE_ERROR " + e); StringWriter sw = new StringWriter(); e.printStackTrace(new PrintWriter(sw)); println(sw.toString()); }
+    println("PROBE_DONE");
+}

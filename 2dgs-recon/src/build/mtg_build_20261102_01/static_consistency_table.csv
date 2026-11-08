@@ -1,0 +1,45 @@
+plant,grade,disc_absorbed,disc_self_shading,disc_mean_light,disc_source,per_leaf_note,representation_note,mtg_absorbed,mtg_self_shading,mtg_mean_light,mtg_area,ratio_absorbed_mtg_over_disc,ratio_mean_light,d_self_shading,per_leaf_n,spearman_rho_absorbed,per_leaf_status,spearman_rho_light_per_area,status
+R3-1b,n/a,2185.5977339398846,0.61872822096938,0.2468377181177201,"engine_static_tau_20261031_01/out_k1b plant_tau.json v1 (tau 0, byte-identical to frozen)",per R8_pc leaf (designated_not_adopted; display_only),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",2575.5282286355377,0.3639299782152925,0.48814691047521563,5276.133420834799,1.1784090862835688,1.9776025892542568,-0.25479824275408747,8,0.9285714285714287,"display_only (R3-1b per R8_pc leaf, not graded)",,
+n_01,B,2291.361592846226,0.6071635093971,0.2631789178844738,engine_static_nine_20261028_01 plant_light.json d_ex 2.4 (frozen v1),per skeleton leaf via tprox labels (assigned surfels),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",4301.8115657910985,0.2614767141552466,0.6163077536700354,6979.973138702782,1.877404063689303,2.3417823837263922,-0.34568679524185336,16,0.7000000000000001,per_leaf,0.2588235294117647,
+n_02,C,1830.34548547037,0.541293609618589,0.3105618065264027,engine_static_nine_20261028_01 plant_light.json d_ex 2.4 (frozen v1),per skeleton leaf via tprox labels (assigned surfels),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",3324.9067817916966,0.1994638291578863,0.6574049572209348,5057.623532148527,1.8165460063061525,2.1168248748097263,-0.34182978046070267,17,0.9044117647058825,display_only (grade C / ungraded),0.7941176470588236,
+n_03,B,1625.5272621463716,0.45719798923362087,0.3998653862768722,engine_static_nine_20261028_01 plant_light.json d_ex 2.4 (frozen v1),per skeleton leaf via tprox labels (assigned surfels),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",2531.561409641834,0.20650607734533566,0.6819666328820342,3712.1484946313217,1.5573786232899722,1.7054905382828793,-0.2506919118882852,11,0.8454545454545455,per_leaf,0.6818181818181819,
+n_04,B,3110.201630598882,0.5928690853505669,0.30835651595363844,engine_static_nine_20261028_01 plant_light.json d_ex 2.4 (frozen v1),per skeleton leaf via tprox labels (assigned surfels),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",5864.481902241554,0.24316002337340842,0.6348793751427075,9237.159264975873,1.8855632524095631,2.0589134404351683,-0.3497090619771585,16,0.9411764705882352,per_leaf,0.7735294117647058,
+n_05,A,3044.785715939137,0.5413571635249804,0.3347985072991235,engine_static_nine_20261028_01 plant_light.json d_ex 2.4 (frozen v1),per skeleton leaf via tprox labels (assigned surfels),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",5548.049586776462,0.19091331347231755,0.6781842724646749,8180.740562758254,1.8221477977031353,2.0256490327143415,-0.3504438500526629,13,0.9505494505494506,per_leaf,0.7362637362637362,
+n_06,ungraded,2482.67014073854,0.5037865481574766,0.37235331620529566,engine_static_nine_20261028_01 plant_light.json d_ex 2.4 (frozen v1),per skeleton leaf via distance labels (assigned surfels),"disc (frozen v1 surfels) vs triangle representation differs by 1.24-1.38x in absorbed light on R3-1b (LOG:1652/1657); consistency check, not validation",3875.9529736380623,0.1766089412054247,0.7071431302020121,5481.14350277405,1.5612033632808953,1.8991186580761679,-0.3271776069520519,10,0.8545454545454544,display_only (grade C / ungraded),0.7454545454545454,
+e_01,B,,,,,,,,,,,,,,,,,,not_traced: no area (e_*)
+e_04,A,,,,,,,,,,,,,,,,,,not_traced: no area (e_*)
+e_05,A,,,,,,,,,,,,,,,,,,not_traced: no area (e_*)
+e_07,C,,,,,,,,,,,,,,,,,,not_traced: no area (e_*)
+P01_fixed375,n/a,,,,,,,2875.9929493121344,0.3582150859807099,0.38306956137787385,7507.756395385197,,,,,,,,no disc reference (generated plant)
+P01,n/a,,,,,,,2859.3390125287706,0.3597122998553926,0.38085133078176947,7507.756390556484,,,,,,,,no disc reference (generated plant)
+P02_fixed375,n/a,,,,,,,2364.523491179717,0.36619528832431314,0.37350993900201823,6330.550393109996,,,,,,,,no disc reference (generated plant)
+P02,n/a,,,,,,,2356.6047740447166,0.3655321231607263,0.37225906542695997,6330.550395977127,,,,,,,,no disc reference (generated plant)
+P03_fixed375,n/a,,,,,,,2173.398615322629,0.29639351599581193,0.3890097536898758,5587.00288285135,,,,,,,,no disc reference (generated plant)
+P03,n/a,,,,,,,2149.801968989224,0.2973188344927729,0.38478626399772464,5587.002890004245,,,,,,,,no disc reference (generated plant)
+P04_fixed375,n/a,,,,,,,2382.866638164644,0.3419485991042398,0.3764075017723428,6330.550339578087,,,,,,,,no disc reference (generated plant)
+P04,n/a,,,,,,,2383.2413826132306,0.3425875089564297,0.3764666973808826,6330.550349323553,,,,,,,,no disc reference (generated plant)
+P05_fixed375,n/a,,,,,,,2437.017799141112,0.30061617363807475,0.3849614386886551,6330.550424589659,,,,,,,,no disc reference (generated plant)
+P05,n/a,,,,,,,2416.5228162968024,0.30191127400202944,0.3817239665855626,6330.550418178012,,,,,,,,no disc reference (generated plant)
+P06_fixed375,n/a,,,,,,,3016.04687217139,0.3562109490329857,0.3786634063467814,7964.981093021919,,,,,,,,no disc reference (generated plant)
+P06,n/a,,,,,,,2999.282544638592,0.3569738411167822,0.37655865257476073,7964.981083639085,,,,,,,,no disc reference (generated plant)
+P07_fixed375,n/a,,,,,,,1461.9709277339866,0.2847126650719043,0.38728451579831524,3774.927393418775,,,,,,,,no disc reference (generated plant)
+P07,n/a,,,,,,,1460.7193760356101,0.28535728617973505,0.38695297200616235,3774.9273987029815,,,,,,,,no disc reference (generated plant)
+P08_fixed375,n/a,,,,,,,2983.3074261106535,0.32895619354635336,0.39736337275881295,7507.756453238651,,,,,,,,no disc reference (generated plant)
+P08,n/a,,,,,,,2983.3181139816825,0.32928379373104233,0.39736479702786265,7507.756440167235,,,,,,,,no disc reference (generated plant)
+P09_fixed375,n/a,,,,,,,2334.586937905048,0.26010824064731525,0.4178603404059624,5587.002910199459,,,,,,,,no disc reference (generated plant)
+P09,n/a,,,,,,,2337.0206300733726,0.2598758815667295,0.4182959394589133,5587.002907789221,,,,,,,,no disc reference (generated plant)
+P10_fixed375,n/a,,,,,,,1748.0110600994708,0.261262962104069,0.4063870998681715,4301.344852399377,,,,,,,,no disc reference (generated plant)
+P10,n/a,,,,,,,1737.4296965077988,0.26157864019776605,0.40392708635298036,4301.344859526228,,,,,,,,no disc reference (generated plant)
+P11_fixed375,n/a,,,,,,,1699.0368916985663,0.27693420210312636,0.39500132080171524,4301.344836645388,,,,,,,,no disc reference (generated plant)
+P11,n/a,,,,,,,1705.8240440626232,0.27630524206516777,0.39657923469988543,4301.344838071311,,,,,,,,no disc reference (generated plant)
+P12_fixed375,n/a,,,,,,,2066.7381865556285,0.324765864670245,0.39148367468448986,5279.2448835095975,,,,,,,,no disc reference (generated plant)
+P12,n/a,,,,,,,2062.278393662074,0.32503546576112624,0.3906388962806926,5279.244881390995,,,,,,,,no disc reference (generated plant)
+P13_fixed375,n/a,,,,,,,2194.196859794487,0.29280895076714475,0.3927323634326051,5587.002916226492,,,,,,,,no disc reference (generated plant)
+P13,n/a,,,,,,,2198.5754374909884,0.2927986446382949,0.3935160720717414,5587.002904141025,,,,,,,,no disc reference (generated plant)
+P14_fixed375,n/a,,,,,,,1846.2026467579262,0.3346884468390863,0.3715119427647384,4969.430142726373,,,,,,,,no disc reference (generated plant)
+P14,n/a,,,,,,,1843.7576571809159,0.33474170942413445,0.3710199363962199,4969.430147311353,,,,,,,,no disc reference (generated plant)
+P15_fixed375,n/a,,,,,,,1250.9272305833779,0.2720298747193656,0.38192049358695346,3275.3603212930857,,,,,,,,no disc reference (generated plant)
+P15,n/a,,,,,,,1248.120054420208,0.27140779561676726,0.3810634355316775,3275.360315478111,,,,,,,,no disc reference (generated plant)
+P16_fixed375,n/a,,,,,,,1904.9360102225987,0.2990221976839005,0.3833308750652811,4969.430155862579,,,,,,,,no disc reference (generated plant)
+P16,n/a,,,,,,,1903.0284041613543,0.29919994374552433,0.38294700811174,4969.430140073246,,,,,,,,no disc reference (generated plant)
+mtg_template_mean_v2draft,n/a,,,,,,,2062.768120888765,0.3088969804024657,0.3907316613886452,5279.244875006462,,,,,,,,no disc reference (generated plant)

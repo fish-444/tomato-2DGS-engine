@@ -1,0 +1,39 @@
+{
+  "started": "2026-11-05 18:22:05",
+  "batch": "P4",
+  "arms": [
+    "C4T2LB"
+  ],
+  "cases": {
+    "C4T2LB_m00": {
+      "arm": "C4T2LB",
+      "m": 0,
+      "seed": 20261020,
+      "level": "C4U",
+      "f": 1.0,
+      "lamp_z": 0.6,
+      "change": null,
+      "note": {},
+      "model_sha": "c78c6eee358183a801e873f3ef5cf57e077d97de20ca5ca08b3d959abceb25b3",
+      "rebind": {
+        "model_old": "c448d602af11be1325cf83169ef90b832516a4c39f455250c06a5f4e0b5ba33c",
+        "model_new": "c78c6eee358183a801e873f3ef5cf57e077d97de20ca5ca08b3d959abceb25b3",
+        "parameter_old": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a",
+        "parameter_new": "17e824f628f3a1d7180a86d387e6c6e8358e411a81f7ad5b9a7db9fb0f4f084a"
+      }
+    }
+  },
+  "repro": {},
+  "dataset": {
+    "slug": "engv2-p4-20261104",
+    "runs.tar.gz": {
+      "sha256": "1fab027b20d765f4ba426d65a7b3523ac90db56acaf277c8736078e3b45d7515",
+      "bytes": 1049016
+    },
+    "code.tar.gz": {
+      "sha256": "a4172682404a1126b750f240185351992ca08c34ec1c464adff7b18fe9e86e44",
+      "bytes": 12165
+    }
+  },
+  "finished": "2026-11-05 18:22:05"
+}

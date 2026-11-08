@@ -1,0 +1,134 @@
+{
+  "started": "2026-11-05 18:08:05",
+  "batch": "BC4T",
+  "arms": [
+    "C4T"
+  ],
+  "cases": {
+    "C4T_m00": {
+      "arm": "C4T",
+      "m": 0,
+      "seed": 20261020,
+      "model_sha": "28bf52ed34b5b95f01163d99c5260f06a8366e52d8dada3b09fd2478992322a0",
+      "reused": true
+    },
+    "C4T_m01": {
+      "arm": "C4T",
+      "m": 1,
+      "seed": 20261021,
+      "model_sha": "64ab629570ec78151aca6afb64c86478bac19173bc21cdc20988072596bf0d1b",
+      "reused": true
+    },
+    "C4T_m02": {
+      "arm": "C4T",
+      "m": 2,
+      "seed": 20261022,
+      "model_sha": "fc55dbf7e500df8efc51dcb4a91fec52baa51bbc13a16188722e0223510cddd6",
+      "reused": true
+    },
+    "C4T_m03": {
+      "arm": "C4T",
+      "m": 3,
+      "seed": 20261023,
+      "model_sha": "d2d6a5ca13d6acb7971f6647a7a5c2951bc152e76b4b9424bdcb37b913a72ffe",
+      "reused": true
+    },
+    "C4T_m04": {
+      "arm": "C4T",
+      "m": 4,
+      "seed": 20261024,
+      "model_sha": "e47c62677c3aded526e3bc1c1fb3f7cbea62cbc59ee7f3fe3cfcc2f0a621ccb1",
+      "reused": true
+    },
+    "C4T_m05": {
+      "arm": "C4T",
+      "m": 5,
+      "seed": 20261025,
+      "model_sha": "c2f4833bb517ebf719c9be7c4b5b6732b71578bb8649aef606d48c7adf5acf98",
+      "reused": true
+    },
+    "C4T_m06": {
+      "arm": "C4T",
+      "m": 6,
+      "seed": 20261026,
+      "model_sha": "824f678c547de0828c72a4cd77c8cbe770a861a598f17a217db5221491c8648e",
+      "reused": true
+    },
+    "C4T_m07": {
+      "arm": "C4T",
+      "m": 7,
+      "seed": 20261027,
+      "model_sha": "314905be90a96874bf857e5dfc078a07a7de876d7fd2652fd3ae797335c9d791",
+      "reused": true
+    },
+    "C4T_m08": {
+      "arm": "C4T",
+      "m": 8,
+      "seed": 20261028,
+      "model_sha": "11e140c71f9bf858ee072cb5a810b3291d84510f980aaae8c2cf4940e9bf79f2",
+      "reused": true
+    },
+    "C4T_m09": {
+      "arm": "C4T",
+      "m": 9,
+      "seed": 20261029,
+      "model_sha": "13719abb5775a1b40a1f58912795a935fc33c209375bb60cfa8987b87eb5d94f",
+      "reused": true
+    },
+    "C4T_m10": {
+      "arm": "C4T",
+      "m": 10,
+      "seed": 20261030,
+      "model_sha": "22ddd65abcd510c4f091971bcc6b4b3ae0410265156603d504420d8f6b2a3600",
+      "reused": true
+    },
+    "C4T_m11": {
+      "arm": "C4T",
+      "m": 11,
+      "seed": 20261031,
+      "model_sha": "286f170de6bb80f8113c399e93408d26051e48c4780e6db0145bbb4fd61ac039",
+      "reused": true
+    },
+    "C4T_m12": {
+      "arm": "C4T",
+      "m": 12,
+      "seed": 20261032,
+      "model_sha": "165190ee5b471ec78ee16c265c91c915936ad18097ea7a2475b5f2e7b98d6600",
+      "reused": true
+    },
+    "C4T_m13": {
+      "arm": "C4T",
+      "m": 13,
+      "seed": 20261033,
+      "model_sha": "788aa88deeb747e31faaef20d37d96421e8da938bcdb5c0fd48bc1dd99d0a57c",
+      "reused": true
+    },
+    "C4T_m14": {
+      "arm": "C4T",
+      "m": 14,
+      "seed": 20261034,
+      "model_sha": "ae856e09681ec2bcd411658dcb4accbc787d2680e0f8ff7854637410828b13f8",
+      "reused": true
+    },
+    "C4T_m15": {
+      "arm": "C4T",
+      "m": 15,
+      "seed": 20261035,
+      "model_sha": "658fd2f46b893a1db295985880846c8e6a348d5ab74bd1d401a7653c7f46bdbd",
+      "reused": true
+    }
+  },
+  "repro": {},
+  "dataset": {
+    "slug": "engv2-bc4t-20261104",
+    "runs.tar.gz": {
+      "sha256": "f7076a0c6054f66a1dc08d9f33c7b7dbc87d9365405f55a8bc40c9dbca8e98b0",
+      "bytes": 16727767
+    },
+    "code.tar.gz": {
+      "sha256": "78c90ffa327c2a31c0d06a8ad9fb70a1349752bc28c6c6096925bf171fdc9b7d",
+      "bytes": 10397
+    }
+  },
+  "finished": "2026-11-05 18:08:19"
+}

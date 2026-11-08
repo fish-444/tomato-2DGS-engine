@@ -1,0 +1,311 @@
+{
+ "labels": [
+  "route_tprox",
+  "tprox_unverified_until_heldout",
+  "conditional_on_unvalidated_scale",
+  "user_skeleton_seeds",
+  "frozen_code_reuse",
+  "legacy_split_20mm_unreviewed"
+ ],
+ "plant_id": "e_04",
+ "run": "build\\p1_tprox_others_20261101_01\\runs\\e_04\\20261101T143549",
+ "kernel": {
+  "in_kernel_choice": "A",
+  "in_kernel_gate": false,
+  "used_set": "A",
+  "seconds": 354
+ },
+ "lines_live": 11,
+ "leaves_tprox": 9,
+ "line_too_short": [
+  "e_04-L10",
+  "e_04-L11"
+ ],
+ "seeds": {
+  "rachis_seeds": 8521,
+  "blade_groups": 52,
+  "blade_seeds": 24905
+ },
+ "seed_surfels_per_leaf": {
+  "e_04-L01": 4186,
+  "e_04-L02": 3899,
+  "e_04-L03": 6277,
+  "e_04-L04": 3378,
+  "e_04-L05": 4549,
+  "e_04-L06": 1820,
+  "e_04-L07": 1374,
+  "e_04-L08": 573,
+  "e_04-L09": 545
+ },
+ "leaves_seed_below_min": [],
+ "seed_min": 50,
+ "assigned": 0.9388,
+ "contested_or_unlabelled": 0.0612,
+ "provenance": {
+  "none": 3024,
+  "seed": 26589,
+  "absorbed": 19356,
+  "rachis_step": 418
+ },
+ "p1_quantiles_absorbed": {
+  "5": 0.6392,
+  "25": 0.7677,
+  "50": 0.8841,
+  "75": 0.9886,
+  "95": 1.0
+ },
+ "margin_quantiles_absorbed": {
+  "5": 0.3312,
+  "25": 0.5924,
+  "50": 0.7958,
+  "75": 0.9774,
+  "95": 1.0
+ },
+ "distance": {
+  "assigned": 0.8798
+ },
+ "both_assigned": 41959,
+ "changed_leaf_share_among_both": 0.0509,
+ "tprox_only": 4404,
+ "distance_only": 1491,
+ "agreement_matrix": {
+  "row": "tprox (0=none)",
+  "col": "distance (0=none)",
+  "leaf_uids": [
+   "e_04-L01",
+   "e_04-L02",
+   "e_04-L03",
+   "e_04-L04",
+   "e_04-L05",
+   "e_04-L06",
+   "e_04-L07",
+   "e_04-L08",
+   "e_04-L09",
+   "e_04-L10",
+   "e_04-L11"
+  ],
+  "counts": [
+   [
+    1533,
+    64,
+    6,
+    128,
+    145,
+    193,
+    178,
+    148,
+    158,
+    250,
+    201,
+    20
+   ],
+   [
+    1331,
+    5128,
+    0,
+    10,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    857,
+    75,
+    4851,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    9440,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1223,
+    1,
+    0,
+    0,
+    5888,
+    52,
+    34,
+    382,
+    0,
+    0,
+    4,
+    85
+   ],
+   [
+    806,
+    0,
+    0,
+    0,
+    22,
+    6336,
+    195,
+    0,
+    0,
+    0,
+    2,
+    805
+   ],
+   [
+    13,
+    0,
+    0,
+    0,
+    2,
+    2,
+    3777,
+    191,
+    19,
+    0,
+    0,
+    0
+   ],
+   [
+    160,
+    0,
+    0,
+    0,
+    157,
+    2,
+    9,
+    3230,
+    1,
+    0,
+    8,
+    0
+   ],
+   [
+    14,
+    0,
+    0,
+    0,
+    0,
+    0,
+    72,
+    0,
+    612,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    562,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "axis": {
+  "labels": [
+   "user_skeleton_seeds",
+   "conditional_on_unvalidated_scale",
+   "after_checkpoint_v1",
+   "R3-1b-style_unaccepted",
+   "no_reference",
+   "frozen_code_reuse",
+   "main_route_r8pc"
+  ],
+  "plant_id": "e_04",
+  "axis_source": "S1 PCA proxy (3D-first contract) + frozen Q1 (forms ['h_rel', 'vert', 'thick_rel', 'dens'])",
+  "axis_share": 0.0186,
+  "axis_share_r31b": 0.293,
+  "axis_share_unusual": true,
+  "stem_like": 465,
+  "rachis_like": 452,
+  "q1": {
+   "forms": [
+    "h_rel",
+    "vert",
+    "thick_rel",
+    "dens"
+   ],
+   "coef": [
+    [
+     -0.9504,
+     -1.6238,
+     0.5904,
+     0.337
+    ]
+   ],
+   "intercept": [
+    0.1287
+   ]
+  },
+  "translation_m": [
+   0.18625,
+   0.1436,
+   0.0732
+  ],
+  "hashes": {
+   "pc_absorb": "372c06655d939376",
+   "pc_rachis": "b9e76f0b96a0a912",
+   "compound_cluster": "785eb9913ded51cf",
+   "this": "4bb2f7117792bb69",
+   "frozen_bundle": "ec7cfbce98c8c642",
+   "frozen_r8pc_labels": "e1ff792be1c4efdf"
+  }
+ },
+ "grade": "ungraded (no held-out picks)",
+ "light": "light_not_available",
+ "axis_share_unusual": true
+}

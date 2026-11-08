@@ -1,0 +1,74 @@
+{
+ "cabinet_T_over_D_v1": {
+  "flat": 1.3803845344399064,
+  "offset": 1.3703582370708067,
+  "fold": 1.310370633373039,
+  "foldcup": 1.2365408681782368,
+  "total": -0.14384366626166956,
+  "rule": -0.010026297369099657,
+  "fold_effect": -0.05998760369776779,
+  "cup_effect": -0.07382976519480211,
+  "rule_pct": 6.970273790755981,
+  "fold_pct": 41.70333338740328,
+  "cup_pct": 51.32639282184074
+ },
+ "cabinet_T_over_D_tau": {
+  "flat": 1.362181474790214,
+  "offset": 1.3617230389710893,
+  "fold": 1.3063545092090652,
+  "foldcup": 1.2359326739011045,
+  "total": -0.1262488008891094,
+  "rule": -0.00045843581912463627,
+  "fold_effect": -0.05536852976202411,
+  "cup_effect": -0.07042183530796065,
+  "rule_pct": 0.3631209293839577,
+  "fold_pct": 43.85667774433521,
+  "cup_pct": 55.78020132628083
+ },
+ "self_shading_v1": {
+  "flat": 0.14494300553141282,
+  "offset": 0.22990846594702907,
+  "fold": 0.2646785768830126,
+  "foldcup": 0.2911035952642771,
+  "total": 0.14616058973286428,
+  "rule": 0.08496546041561626,
+  "fold_effect": 0.034770110935983534,
+  "cup_effect": 0.026425018381264487,
+  "rule_pct": 58.13158018239149,
+  "fold_pct": 23.788978273508878,
+  "cup_pct": 18.07944154409963
+ },
+ "lower_third_T_over_D_v1": {
+  "flat": 2.453134389040541,
+  "offset": 2.4549633618926494,
+  "fold": 2.3169675907472977,
+  "foldcup": 2.109938646026327,
+  "total": -0.34319574301421385,
+  "rule": 0.0018289728521083681,
+  "fold_effect": -0.13799577114535166,
+  "cup_effect": -0.20702894472097055,
+  "rule_pct": -0.5329241079871492,
+  "fold_pct": 40.209056771323766,
+  "cup_pct": 60.32386733666339
+ },
+ "engine_lamp_T_over_D": {
+  "flat": 1.2856349386800476,
+  "offset": 1.2760310181399048,
+  "fold": 1.1820423795288555,
+  "foldcup": 1.0214715777905385,
+  "total": -0.2641633608895091,
+  "rule": -0.009603920540142807,
+  "fold_effect": -0.09398863861104934,
+  "cup_effect": -0.16057080173831695,
+  "rule_pct": 3.6355990125972895,
+  "fold_pct": 35.57974061753466,
+  "cup_pct": 60.78466036986804
+ },
+ "sentence": "Of the drop from x1.38 (flat) to x1.24 (fold+cup), 0.010 (7 %) came from the coplanar half-credit rule and 0.134 (93 %) from bending; fold+cup x1.24 is unaffected (coplanar share 0.2 %). G3 failed: the offset left 9.8 % of receivers coplanar (flat 32 %), so the rule share is a lower bound; linear extrapolation to zero coplanar share gives about 10 % (extrapolated, not measured).",
+ "G3_pass": false,
+ "rule_linear_extrapolation_to_zero_share": {
+  "rule": -0.01444629963179895,
+  "rule_pct": 10.043055775232625,
+  "label": "extrapolated_not_measured"
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "labels": [
+  "route_tprox",
+  "reference_only_scoring",
+  "sim_skeleton_completed"
+ ],
+ "run": "20261101T133038",
+ "q75_margin": 0.0,
+ "report_half": {
+  "assigned": 6074,
+  "wrong": 1473,
+  "wrong_share_with_top_quartile_margin": 1.0,
+  "wrong_rate_in_top_quartile": 0.2425,
+  "wrong_rate_below_q75": 0.0
+ },
+ "per_leaf": {
+  "1": {
+   "scored": 2517,
+   "assigned": 2517,
+   "accuracy": 0.9722,
+   "wrong": 70,
+   "wrong_top_quartile": 70,
+   "report_half": false
+  },
+  "2": {
+   "scored": 777,
+   "assigned": 777,
+   "accuracy": 0.9653,
+   "wrong": 27,
+   "wrong_top_quartile": 27,
+   "report_half": true
+  },
+  "3": {
+   "scored": 4745,
+   "assigned": 4745,
+   "accuracy": 0.8569,
+   "wrong": 679,
+   "wrong_top_quartile": 679,
+   "report_half": false
+  },
+  "4": {
+   "scored": 735,
+   "assigned": 731,
+   "accuracy": 0.736,
+   "wrong": 193,
+   "wrong_top_quartile": 193,
+   "report_half": true
+  },
+  "5": {
+   "scored": 3311,
+   "assigned": 3274,
+   "accuracy": 0.7807,
+   "wrong": 718,
+   "wrong_top_quartile": 718,
+   "report_half": true
+  },
+  "6": {
+   "scored": 1532,
+   "assigned": 1531,
+   "accuracy": 0.017,
+   "wrong": 1505,
+   "wrong_top_quartile": 1505,
+   "report_half": false
+  },
+  "7": {
+   "scored": 1309,
+   "assigned": 1292,
+   "accuracy": 0.5859,
+   "wrong": 535,
+   "wrong_top_quartile": 535,
+   "report_half": true
+  },
+  "8": {
+   "scored": 724,
+   "assigned": 722,
+   "accuracy": 1.0,
+   "wrong": 0,
+   "wrong_top_quartile": 0,
+   "report_half": false
+  }
+ },
+ "note": "leaf 6 ~0.02 in every skeleton route: known failure, not a route property"
+}

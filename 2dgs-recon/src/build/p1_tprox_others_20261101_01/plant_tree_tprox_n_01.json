@@ -1,0 +1,1635 @@
+{
+ "schema": "plant_tree_v1",
+ "source": "reconstruction",
+ "input_status": "R3-1b-style_unaccepted",
+ "units": "mm",
+ "frame": "board frame, metres converted to mm, z up",
+ "synthetic": false,
+ "provenance": {
+  "geometry": "reconstructed",
+  "node_position": "user_measured",
+  "internodes": "unavailable",
+  "masses": "unavailable",
+  "leaflets": "unavailable"
+ },
+ "plant": {
+  "id": "n_01",
+  "flags": [],
+  "attrs": {
+   "scale": "conditional_on_unvalidated_scale",
+   "skeleton_schema": "skeleton_v1",
+   "capture_date": "2026-10-24",
+   "reconstruction_id": "build/p1_recon_all_20261025_01/outputs/n_01#fead708f084d6915",
+   "labels": [
+    "user_skeleton_seeds",
+    "conditional_on_unvalidated_scale",
+    "after_checkpoint_v1"
+   ],
+   "stem": "display_only (no stem is observed; the main axis is a zero-length placeholder at the frame origin)",
+   "area_source": "build\\engine_static_nine_20261028_01\\kaggle_out\\n_01\\per_surfel_light.npz (area_b_silhouette_mm2 of surfels assigned by route_tprox; tprox_unverified_until_heldout)"
+  }
+ },
+ "axes": [
+  {
+   "id": "M",
+   "kind": "main",
+   "parent_axis": null,
+   "parent_node": null,
+   "tube": {
+    "kind": "tube",
+    "polyline": [
+     [
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "geometry_status": "unavailable"
+   }
+  }
+ ],
+ "nodes": [
+  {
+   "id": "N_n_01-L03",
+   "axis": "M",
+   "index": 1,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    165.11426721461828,
+    142.3168926950239,
+    102.24887643661938
+   ],
+   "leaves": [
+    "L_n_01-L03"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L01",
+   "axis": "M",
+   "index": 2,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    162.37838540919836,
+    137.79465849359264,
+    102.57935510483227
+   ],
+   "leaves": [
+    "L_n_01-L01"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L12",
+   "axis": "M",
+   "index": 3,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    167.08505044826086,
+    140.0122046585821,
+    103.8820150932356
+   ],
+   "leaves": [
+    "L_n_01-L12"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L02",
+   "axis": "M",
+   "index": 4,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    222.7641352260929,
+    128.8051160093092,
+    126.18559585419139
+   ],
+   "leaves": [
+    "L_n_01-L02"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L04",
+   "axis": "M",
+   "index": 5,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    183.0486067379337,
+    157.98384029824962,
+    129.32470451202832
+   ],
+   "leaves": [
+    "L_n_01-L04"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L11",
+   "axis": "M",
+   "index": 6,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    206.49100838550146,
+    151.18904430825938,
+    130.53464887943707
+   ],
+   "leaves": [
+    "L_n_01-L11"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L07",
+   "axis": "M",
+   "index": 7,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    195.4833563412052,
+    118.73309261758556,
+    133.15580783691846
+   ],
+   "leaves": [
+    "L_n_01-L07"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L05",
+   "axis": "M",
+   "index": 8,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    183.55393396266516,
+    135.3831439729475,
+    134.05385611858807
+   ],
+   "leaves": [
+    "L_n_01-L05"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L06",
+   "axis": "M",
+   "index": 9,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    206.86744151958044,
+    126.38384087045421,
+    134.3563049873396
+   ],
+   "leaves": [
+    "L_n_01-L06"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L15",
+   "axis": "M",
+   "index": 10,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    174.44740281947668,
+    151.7335026975416,
+    138.09070001450024
+   ],
+   "leaves": [
+    "L_n_01-L15"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L09",
+   "axis": "M",
+   "index": 11,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    218.43229280360754,
+    143.44032127816905,
+    141.4600466331526
+   ],
+   "leaves": [
+    "L_n_01-L09"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L08",
+   "axis": "M",
+   "index": 12,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    218.94052587398107,
+    135.9317153211378,
+    143.77903924789868
+   ],
+   "leaves": [
+    "L_n_01-L08"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L17",
+   "axis": "M",
+   "index": 13,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    196.1625965679508,
+    137.49437029321422,
+    146.65286241379223
+   ],
+   "leaves": [
+    "L_n_01-L17"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L18",
+   "axis": "M",
+   "index": 14,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    213.52150998958166,
+    149.40121777017345,
+    149.02556024399243
+   ],
+   "leaves": [
+    "L_n_01-L18"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L13",
+   "axis": "M",
+   "index": 15,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    198.47205291637,
+    106.52094204385509,
+    150.2560671409651
+   ],
+   "leaves": [
+    "L_n_01-L13"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L10",
+   "axis": "M",
+   "index": 16,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    209.96364961513098,
+    160.92847378213634,
+    151.30254541244946
+   ],
+   "leaves": [
+    "L_n_01-L10"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L14",
+   "axis": "M",
+   "index": 17,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    187.09306512721594,
+    121.48944218118419,
+    153.3236197074934
+   ],
+   "leaves": [
+    "L_n_01-L14"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  },
+  {
+   "id": "N_n_01-L16",
+   "axis": "M",
+   "index": 18,
+   "rank": null,
+   "s_mm": 0.0,
+   "position": [
+    208.17334948428686,
+    140.07726312835445,
+    163.6831167778059
+   ],
+   "leaves": [
+    "L_n_01-L16"
+   ],
+   "trusses": [],
+   "flags": [
+    "requires_declaration"
+   ],
+   "attrs": {
+    "index_meaning": "rank by base height of the skeleton (an ordering, not a node count)",
+    "position_status": "user_measured (skeleton base)",
+    "s_mm_status": "unavailable"
+   }
+  }
+ ],
+ "leaves": [
+  {
+   "id": "L_n_01-L03",
+   "node": "N_n_01-L03",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      165.11426721461828,
+      142.3168926950239,
+      102.24887643661938
+     ],
+     [
+      165.11426721461828,
+      142.3168926950239,
+      102.24887643661938
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": null,
+   "azimuth_deg": null,
+   "elevation_deg": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "unavailable",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L03",
+    "rank_hint": 1,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 1,
+    "rachis_path_mm": null,
+    "rachis_straight_mm": null,
+    "direction_source": "unavailable",
+    "area_b_mm2": 0.0,
+    "area_n_surfels": 0,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L01",
+   "node": "N_n_01-L01",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      162.37838540919836,
+      137.79465849359264,
+      102.57935510483227
+     ],
+     [
+      152.16222558864172,
+      139.78271187503566,
+      95.60075555649243
+     ],
+     [
+      138.09074197658117,
+      143.18181593377818,
+      86.82163034286938
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 29.461143922771438,
+   "azimuth_deg": 168.98793258963497,
+   "elevation_deg": -33.84249991290259,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L01",
+    "rank_hint": 2,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 29.461143922771438,
+    "rachis_straight_mm": 29.448547985750974,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 615.7423899999999,
+    "area_n_surfels": 5650,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L12",
+   "node": "N_n_01-L12",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      167.08505044826086,
+      140.0122046585821,
+      103.8820150932356
+     ],
+     [
+      167.08505044826086,
+      140.0122046585821,
+      103.8820150932356
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": null,
+   "azimuth_deg": null,
+   "elevation_deg": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "unavailable",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L12",
+    "rank_hint": 3,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 1,
+    "rachis_path_mm": null,
+    "rachis_straight_mm": null,
+    "direction_source": "unavailable",
+    "area_b_mm2": 0.0,
+    "area_n_surfels": 0,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L02",
+   "node": "N_n_01-L02",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      222.7641352260929,
+      128.8051160093092,
+      126.18559585419139
+     ],
+     [
+      227.31307206996496,
+      128.1047757383131,
+      120.5872152885481
+     ],
+     [
+      242.50608621486242,
+      131.94686157663097,
+      109.8390005668684
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 26.250409470190284,
+   "azimuth_deg": 9.042258566858482,
+   "elevation_deg": -39.273662863872225,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L02",
+    "rank_hint": 4,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 26.250409470190284,
+    "rachis_straight_mm": 25.822981461099612,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 493.77368999999993,
+    "area_n_surfels": 3185,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L04",
+   "node": "N_n_01-L04",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      183.0486067379337,
+      157.98384029824962,
+      129.32470451202832
+     ],
+     [
+      178.9612330044132,
+      170.32103283365,
+      127.59476886597118
+     ],
+     [
+      172.41436181911047,
+      176.2155755277418,
+      123.18891988602124
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 22.961083521721267,
+   "azimuth_deg": 108.33029248194985,
+   "elevation_deg": -7.581859924719334,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L04",
+    "rank_hint": 5,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 22.961083521721267,
+    "rachis_straight_mm": 21.98024539099983,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 540.59101,
+    "area_n_surfels": 3952,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L11",
+   "node": "N_n_01-L11",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      206.49100838550146,
+      151.18904430825938,
+      130.53464887943707
+     ],
+     [
+      211.3731654728275,
+      154.08214886148204,
+      124.1044100364729
+     ],
+     [
+      215.499236925922,
+      157.79955608804454,
+      117.08138166275464
+     ],
+     [
+      217.2169235790592,
+      158.40032703836192,
+      111.39736352768384
+     ],
+     [
+      205.5065631712299,
+      164.63084537942638,
+      102.60678087082348
+     ],
+     [
+      205.1895260656696,
+      176.95462734658946,
+      97.51208291855298
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 52.75031175822351,
+   "azimuth_deg": 36.2723527468357,
+   "elevation_deg": -50.28895935058388,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L11",
+    "rank_hint": 6,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 6,
+    "rachis_path_mm": 52.75031175822351,
+    "rachis_straight_mm": 41.905238194942385,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 805.9836100000001,
+    "area_n_surfels": 4565,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L07",
+   "node": "N_n_01-L07",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      195.4833563412052,
+      118.73309261758556,
+      133.15580783691846
+     ],
+     [
+      193.02307115443762,
+      116.18960697610606,
+      125.61133514252148
+     ],
+     [
+      198.0879305446964,
+      118.94150860269298,
+      117.04749570694409
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 18.65618788706839,
+   "azimuth_deg": 4.5750152377263635,
+   "elevation_deg": -80.78640598050575,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L07",
+    "rank_hint": 7,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm",
+     "base_tip_order"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 18.65618788706839,
+    "rachis_straight_mm": 16.31885301364711,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 147.05811999999997,
+    "area_n_surfels": 722,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L05",
+   "node": "N_n_01-L05",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      183.55393396266516,
+      135.3831439729475,
+      134.05385611858807
+     ],
+     [
+      174.02005182155187,
+      127.50530273874034,
+      129.84777985420666
+     ],
+     [
+      175.5303591335636,
+      120.38166744668712,
+      124.30360875931225
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 22.21549275730684,
+   "azimuth_deg": 219.56690260524505,
+   "elevation_deg": -18.782696734701922,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L05",
+    "rank_hint": 8,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 22.21549275730684,
+    "rachis_straight_mm": 19.60840061231916,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 530.8849700000001,
+    "area_n_surfels": 3031,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L06",
+   "node": "N_n_01-L06",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      206.86744151958044,
+      126.38384087045421,
+      134.3563049873396
+     ],
+     [
+      210.4181946361881,
+      121.33030636270274,
+      130.62815366592847
+     ],
+     [
+      219.4882629955631,
+      113.71920330484141,
+      124.68465410080395
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 20.462638230320753,
+   "azimuth_deg": 314.900714695603,
+   "elevation_deg": -28.4104535598261,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L06",
+    "rank_hint": 9,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 20.462638230320753,
+    "rachis_straight_mm": 20.327789114116214,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 506.30263,
+    "area_n_surfels": 3395,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L15",
+   "node": "N_n_01-L15",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      174.44740281947668,
+      151.7335026975416,
+      138.09070001450024
+     ],
+     [
+      179.59515748866613,
+      147.47138340432872,
+      146.29593454208813
+     ],
+     [
+      192.26442323573644,
+      148.81448490579356,
+      148.2871321281477
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 23.477500638519125,
+   "azimuth_deg": 320.37670651150324,
+   "elevation_deg": 50.83706965747166,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L15",
+    "rank_hint": 10,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm",
+     "base_tip_order"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 23.477500638519125,
+    "rachis_straight_mm": 20.734852524919972,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 466.89378,
+    "area_n_surfels": 3242,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L09",
+   "node": "N_n_01-L09",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      218.43229280360754,
+      143.44032127816905,
+      141.4600466331526
+     ],
+     [
+      225.25450502284582,
+      148.701310467317,
+      137.1668280204817
+     ],
+     [
+      229.07431398280676,
+      150.5494263883375,
+      134.70512638893567
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 14.531363748213174,
+   "azimuth_deg": 33.74379809187664,
+   "elevation_deg": -27.825337824832747,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L09",
+    "rank_hint": 11,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 14.531363748213174,
+    "rachis_straight_mm": 14.47138340835732,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 233.53748000000002,
+    "area_n_surfels": 2020,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L08",
+   "node": "N_n_01-L08",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      218.94052587398107,
+      135.9317153211378,
+      143.77903924789868
+     ],
+     [
+      232.1236437404972,
+      130.47611744363536,
+      143.31534467544995
+     ],
+     [
+      238.4579485500675,
+      128.27818138559093,
+      140.99900422897778
+     ],
+     [
+      243.79429040797766,
+      124.09590942819347,
+      137.98397765961133
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 28.788686684694927,
+   "azimuth_deg": 337.51865598290635,
+   "elevation_deg": -1.8614765165702065,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L08",
+    "rank_hint": 12,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 4,
+    "rachis_path_mm": 28.788686684694927,
+    "rachis_straight_mm": 28.131453063410106,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 903.8741500000001,
+    "area_n_surfels": 10319,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L17",
+   "node": "N_n_01-L17",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      196.1625965679508,
+      137.49437029321422,
+      146.65286241379223
+     ],
+     [
+      196.1625965679508,
+      137.49437029321422,
+      146.65286241379223
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": null,
+   "azimuth_deg": null,
+   "elevation_deg": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "unavailable",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L17",
+    "rank_hint": 13,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 1,
+    "rachis_path_mm": null,
+    "rachis_straight_mm": null,
+    "direction_source": "unavailable",
+    "area_b_mm2": 0.0,
+    "area_n_surfels": 0,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L18",
+   "node": "N_n_01-L18",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      213.52150998958166,
+      149.40121777017345,
+      149.02556024399243
+     ],
+     [
+      213.52150998958166,
+      149.40121777017345,
+      149.02556024399243
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": null,
+   "azimuth_deg": null,
+   "elevation_deg": null,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "unavailable",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L18",
+    "rank_hint": 14,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 1,
+    "rachis_path_mm": null,
+    "rachis_straight_mm": null,
+    "direction_source": "unavailable",
+    "area_b_mm2": 0.0,
+    "area_n_surfels": 0,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L13",
+   "node": "N_n_01-L13",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      198.47205291637,
+      106.52094204385509,
+      150.2560671409651
+     ],
+     [
+      202.8730958546024,
+      101.3584206815504,
+      144.1492737373396
+     ],
+     [
+      204.57969607361372,
+      101.21686871011485,
+      142.17892251816235
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 11.738153773581173,
+   "azimuth_deg": 319.0279030399224,
+   "elevation_deg": -44.9569802563892,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L13",
+    "rank_hint": 15,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 11.738153773581173,
+    "rachis_straight_mm": 11.431393796190887,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 371.75577999999996,
+    "area_n_surfels": 5218,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L10",
+   "node": "N_n_01-L10",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      209.96364961513098,
+      160.92847378213634,
+      151.30254541244946
+     ],
+     [
+      209.913477286182,
+      166.4740441556715,
+      144.9311522087141
+     ],
+     [
+      206.89679680713232,
+      174.63874752481212,
+      141.23943410721265
+     ],
+     [
+      210.29005943187292,
+      167.60918552835216,
+      144.56367479172192
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 26.385709011049705,
+   "azimuth_deg": 102.60892936347283,
+   "elevation_deg": -35.61332830641903,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L10",
+    "rank_hint": 16,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 4,
+    "rachis_path_mm": 26.385709011049705,
+    "rachis_straight_mm": 9.494779094186253,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 347.91967,
+    "area_n_surfels": 3929,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L14",
+   "node": "N_n_01-L14",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      187.09306512721594,
+      121.48944218118419,
+      153.3236197074934
+     ],
+     [
+      188.0361136043888,
+      130.80893452127208,
+      153.96468339767895
+     ],
+     [
+      185.3725756252628,
+      139.751836669042,
+      155.37154756393872
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 18.82558409211554,
+   "azimuth_deg": 95.38191713512215,
+   "elevation_deg": 6.37039030788371,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L14",
+    "rank_hint": 17,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm",
+     "base_tip_order"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 18.82558409211554,
+    "rachis_straight_mm": 18.4572247388841,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 554.2724900000001,
+    "area_n_surfels": 6160,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  },
+  {
+   "id": "L_n_01-L16",
+   "node": "N_n_01-L16",
+   "axis": "M",
+   "rank": null,
+   "petiole": null,
+   "rachis": {
+    "kind": "tube",
+    "polyline": [
+     [
+      208.17334948428686,
+      140.07726312835445,
+      163.6831167778059
+     ],
+     [
+      211.81948505290563,
+      147.46178657968272,
+      161.28793321457348
+     ],
+     [
+      213.9618548000675,
+      151.53218777139415,
+      160.14258561935864
+     ]
+    ],
+    "radius": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "segs": 6
+   },
+   "attachments": [],
+   "length_mm": 13.317077523726054,
+   "azimuth_deg": 63.1912076823531,
+   "elevation_deg": -15.422178450038313,
+   "age_d": null,
+   "expansion": null,
+   "flags": [
+    "requires_declaration"
+   ],
+   "provenance": {
+    "rachis": "user_measured",
+    "blade": "reconstructed"
+   },
+   "attrs": {
+    "leaf_uid": "n_01-L16",
+    "rank_hint": 18,
+    "skeleton_source": "user_click",
+    "skeleton_status": "active",
+    "skeleton_flags": [
+     "legacy_split_20mm"
+    ],
+    "n_clicks": 3,
+    "rachis_path_mm": 13.317077523726054,
+    "rachis_straight_mm": 13.313806865524034,
+    "direction_source": "first 10 mm of the polyline",
+    "area_b_mm2": 456.44241999999997,
+    "area_n_surfels": 8601,
+    "area_label": "lower bound: assigned surfels of the distance_baseline route only; conditional_on_unvalidated_scale"
+   }
+  }
+ ],
+ "leaflets": [],
+ "trusses": [],
+ "cotyledons": [],
+ "params": {},
+ "notes": [
+  "skeleton_v1 -> plant_tree_v1; R3-1b-style_unaccepted; conditional_on_unvalidated_scale",
+  "hidden structure (internodes, main-stem node heights, masses) is not observed: placeholders flagged requires_declaration; the engine fills them (conditional_hidden_state)"
+ ]
+}

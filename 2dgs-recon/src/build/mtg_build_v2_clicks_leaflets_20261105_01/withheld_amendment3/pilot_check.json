@@ -1,0 +1,8 @@
+{
+ "leaflets": 51,
+ "iou_median": 0.24242424242424243,
+ "iou_ge_0_5": 0.13725490196078433,
+ "leaves": 8,
+ "count_agree": 0,
+ "note": "report only; check set leaflet_C_r8pc (38 seeds + R8_pc, ungraded); count = labels with >= 30 surfels in the compound leaf"
+}

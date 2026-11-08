@@ -1,0 +1,14 @@
+{
+ "R3-1b": {
+  "reconstructed_surfels_of_filled_leaves": 1.364,
+  "fill_run1_median_disc": 0.195,
+  "fill_option_b_declared": 3.371,
+  "fill_cell_sized_disc": 0.898
+ },
+ "n_03": {
+  "reconstructed_surfels_of_filled_leaves": 0.678,
+  "fill_run1_median_disc": 0.133,
+  "fill_option_b_declared": 1.548,
+  "fill_cell_sized_disc": 0.704
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "per_plant": {
+  "n_01": {
+   "assigned_density_per_mm2": 9.077112280868873,
+   "plane_residual_median_mm": 0.13403763966601023,
+   "assigned_share": 0.9217183840323543
+  },
+  "n_02": {
+   "assigned_density_per_mm2": 9.674108760076313,
+   "plane_residual_median_mm": 0.12243339858330676,
+   "assigned_share": 0.925895087427144
+  },
+  "n_03": {
+   "assigned_density_per_mm2": 9.78382195647615,
+   "plane_residual_median_mm": 0.10328734473634651,
+   "assigned_share": 0.9275225374773348
+  },
+  "n_04": {
+   "assigned_density_per_mm2": 8.44567011563502,
+   "plane_residual_median_mm": 0.13359583010490977,
+   "assigned_share": 0.9568630336927059
+  },
+  "n_05": {
+   "assigned_density_per_mm2": 9.78627783301809,
+   "plane_residual_median_mm": 0.1249806610207366,
+   "assigned_share": 0.9430466228473154
+  },
+  "n_06": {
+   "assigned_density_per_mm2": 10.742466499864245,
+   "plane_residual_median_mm": 0.11809831387702324,
+   "assigned_share": 0.8214998256016742
+  }
+ },
+ "density_per_mm2": 9.72896535827623,
+ "sigma_mm": 0.12370702980202168,
+ "assigned_share": 0.9267088124522393,
+ "rule": "CONTRACT \u00a74: medians over n_01-n_06; residual = distance to the plane of the 12 nearest assigned neighbours (20,000 random assigned surfels per plant, rng 20261103)"
+}

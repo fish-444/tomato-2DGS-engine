@@ -1,0 +1,14 @@
+# lai_range; not_validation; removal = seen in >= 2 of 8 views (elev 45 deg), |n.d| >= 0.17, black discs, own excluded; generator of the normals tests (seed 20261105); arm R = real 14-plant p90 table, arm B f = pilot median; cap 2x
+case,surfels,seen_share_leaf_area,LAI_true,LAI_low,LAI_up_R,LAI_up_B,hit_R,hit_B,up_R_over_true,up_B_over_true
+MTG R3-1b,60450,0.9389,1.5157,1.4231,2.2203,1.4231,True,False,1.4648,0.9389
+MTG n_01,110502,0.9129,2.0052,1.8304,2.9125,1.8304,True,False,1.4525,0.9129
+MTG n_02,71587,0.9202,1.4529,1.3369,2.2621,1.3394,True,False,1.5569,0.9219
+MTG n_03,58113,0.9641,1.0664,1.0281,1.7623,1.0281,True,False,1.6526,0.9641
+MTG n_04,126911,0.9001,2.6536,2.3884,3.2408,2.3884,True,False,1.2213,0.9001
+MTG n_05,105595,0.9472,2.3501,2.2261,2.7185,2.2353,True,False,1.1567,0.9511
+MTG n_06,73695,0.973,1.5746,1.532,1.9664,1.532,True,False,1.2488,0.973
+MTG e_01,99366,0.9274,2.1986,2.0389,2.5699,2.0522,True,False,1.1689,0.9334
+MTG e_04,76554,0.9536,1.6086,1.5339,2.3009,1.5339,True,False,1.4304,0.9536
+MTG e_05,127513,0.9395,2.9153,2.7388,3.4406,2.7435,True,False,1.1802,0.9411
+MTG e_07,89203,0.9244,1.8443,1.705,2.4783,1.7067,True,False,1.3438,0.9254
+engine-law T (R3-1b),30609,0.9504,1.002,0.9524,1.3141,0.9524,True,False,1.3115,0.9504

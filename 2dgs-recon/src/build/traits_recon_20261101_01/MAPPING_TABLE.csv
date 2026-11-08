@@ -1,0 +1,15 @@
+trait,bmodel_mtg,engine,provenance
+A1 LAD mean/SD/chi,leaf inclination distribution (validation of output),-,trait_unreliable
+A2 height,plant height check,-,recon_measured;h_from_z_min
+A2 projected area,canopy cover check,-,trait_unreliable
+A2 widths,canopy width check,-,recon_measured
+A2 area (b),total leaf area check,-,not_tested_s3
+A3 azimuth R,random-azimuth assumption,-,trait_unreliable
+B1 divergence,PHYLLOTAXIS / divergence,DIVERGENCE_DEG,extractor_passed_s3;real_not_run
+B2 theta0 by rank,LEAF_ANGLE_D (convention per B-model ADAPTERS),90 - COMPOUND_INSERTION_DEG,"hand_measured (6 plants, 44 leaves); recon extractor_passed_s3;real_not_run"
+B2 total bend dtheta,Curvature_LEAF (unit per B-model),TOTAL_BEND_DEG,extractor_passed_s3;real_not_run
+B2 arc vs quad,-,-,extractor_cannot_discriminate (agree 0.62)
+"B3 leaf length, internode",leaf/internode length,"RACHIS_M+PETIOLE_M, INTERNODE_CAP_M",extractor_passed_s3;real_not_run
+C1 curl phi/psi,CURVATURE_LEAFLET,-,trait_unreliable
+C2 leaflets per compound leaf,PROPORTION_LEAFLETS_*,PAIRS,"hand_measured (5:39 %, 6:5 %, 7:57 %)"
+C3 inclination vs rank,-,-,trait_unreliable

@@ -1,0 +1,44 @@
+{
+ "id-m1s1-k0-20261105": [
+  "IN150_s6h40_r1_mixed",
+  "LS150_s10h40_r2_mixed",
+  "IN150_s10h40_r1_b1",
+  "BASE_s10h40_r2_fm0p8"
+ ],
+ "id-m1s1-k1-20261105": [
+  "IN150_s6h40_r2_mixed",
+  "IN150_s14h40_r1_mixed",
+  "IN150_s10h40_r2_b1",
+  "BASE_s10h40_r1_fm1p2"
+ ],
+ "id-m1s1-k2-20261105": [
+  "LS150_s6h40_r1_mixed",
+  "IN150_s14h40_r2_mixed",
+  "LS150_s10h40_r1_b0",
+  "BASE_s10h40_r2_fm1p2"
+ ],
+ "id-m1s1-k3-20261105": [
+  "LS150_s6h40_r2_mixed",
+  "LS150_s14h40_r1_mixed",
+  "LS150_s10h40_r2_b0",
+  "IN150_s10h40_r1_fm0p8"
+ ],
+ "id-m1s1-k4-20261105": [
+  "IN150_s10h40_r1_mixed",
+  "LS150_s14h40_r2_mixed",
+  "LS150_s10h40_r1_b1",
+  "IN150_s10h40_r2_fm0p8"
+ ],
+ "id-m1s1-k5-20261105": [
+  "IN150_s10h40_r2_mixed",
+  "IN150_s10h40_r1_b0",
+  "LS150_s10h40_r2_b1",
+  "IN150_s10h40_r1_fm1p2"
+ ],
+ "id-m1s1-k6-20261105": [
+  "LS150_s10h40_r1_mixed",
+  "IN150_s10h40_r2_b0",
+  "BASE_s10h40_r1_fm0p8",
+  "IN150_s10h40_r2_fm1p2"
+ ]
+}

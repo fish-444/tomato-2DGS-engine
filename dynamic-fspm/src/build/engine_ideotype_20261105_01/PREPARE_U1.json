@@ -1,0 +1,55 @@
+{
+  "started": "2026-11-05 23:58:49",
+  "batch": "U1",
+  "cases": {
+    "BASE_s10h40_r2": {
+      "spec": "BASE@s10h40@r2",
+      "model_sha": "1da5bc1cd39f37482a3b25f30827bc04cc5e2a9b9dbac7b801da8465cb9e76f6"
+    },
+    "IN125_s10h40_r1": {
+      "spec": "IN125@s10h40@r1",
+      "model_sha": "2a793ce8b86849181d043da8498b0ee38c19f9d7b76b96831d08e00b8fef65fa"
+    },
+    "IN125_s10h40_r2": {
+      "spec": "IN125@s10h40@r2",
+      "model_sha": "2d6999407c530980ef300a180967e987b5c4ff23581960b63b002abf5e32b1a6"
+    },
+    "IN150_s10h40_r2": {
+      "spec": "IN150@s10h40@r2",
+      "model_sha": "8c7d63c27d0959f45c284ea293d1babcbbe6fc7728a5030fe614b2fbd4bf32b2"
+    },
+    "LS125_s10h40_r1": {
+      "spec": "LS125@s10h40@r1",
+      "model_sha": "4bca903d426c6bbbd2dbc059213f2759f6273dfcdac9b46131729eb00149888e"
+    },
+    "LS125_s10h40_r2": {
+      "spec": "LS125@s10h40@r2",
+      "model_sha": "2ec6cbf5b88a9b87bb13a1ab967380f4b9ce8f6afe52997f1d27675b2a0d94db"
+    },
+    "LS150_s10h40_r2": {
+      "spec": "LS150@s10h40@r2",
+      "model_sha": "b1d1a5f914571ee12bfb0eff16455bee9b821610b5345fdf5b55b47f261ccaa1"
+    }
+  },
+  "jobs": [
+    "BASE_s10h40_r2",
+    "IN125_s10h40_r1",
+    "IN125_s10h40_r2",
+    "IN150_s10h40_r2",
+    "LS125_s10h40_r1",
+    "LS125_s10h40_r2",
+    "LS150_s10h40_r2"
+  ],
+  "dataset": {
+    "slug": "ideo-u1-20261105",
+    "runs.tar.gz": {
+      "sha256": "c8ae9652eec39fa73f483e5aafa44dd9f619dd05a2c57ab3ba4ba8ca8506c093",
+      "bytes": 7351467
+    },
+    "code.tar.gz": {
+      "sha256": "92c294ca1a47ea939eb1b28d87a0246fdbe8d32b17f937f5031809bbb2a98c33",
+      "bytes": 9836
+    }
+  },
+  "finished": "2026-11-06 00:00:44"
+}

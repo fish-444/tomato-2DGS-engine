@@ -1,0 +1,28 @@
+{
+ "leaflets": 140,
+ "note": "engine flat leaflets (true membership), position noise 0.124 mm, triangle normals; truth: kappa = 0, normal deviation = 0",
+ "median": {
+  "kappa_l": -5.742689726663606e-05,
+  "kappa_w": 0.00012566810375646577,
+  "twist_c": -1.8158805360087834e-05,
+  "dalpha_l_deg": -0.021577119087727352,
+  "dalpha_w_deg": 0.02810276275148179,
+  "r2": 0.007963652223929973,
+  "ndev_median_deg": 1.7564606823266173e-05,
+  "ndev_p90_deg": 3.2252324192806954e-05,
+  "proj_ratio": 0.9650164441765168,
+  "rms_residual_mm": 0.12350999555762326
+ },
+ "p90_abs": {
+  "kappa_l": 0.003372653684000446,
+  "kappa_w": 0.010197562146978909,
+  "twist_c": 0.0031518805782742216,
+  "dalpha_l_deg": 0.9292667909047965,
+  "dalpha_w_deg": 1.4597078818441973,
+  "r2": 0.02123913332899207,
+  "ndev_median_deg": 3.427432874955204e-05,
+  "ndev_p90_deg": 6.372993573681843e-05,
+  "proj_ratio": 1.037099042554968,
+  "rms_residual_mm": 0.12832442762805096
+ }
+}

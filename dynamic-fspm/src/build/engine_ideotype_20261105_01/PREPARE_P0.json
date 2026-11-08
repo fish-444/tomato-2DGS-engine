@@ -1,0 +1,46 @@
+{
+  "started": "2026-11-05 21:09:40",
+  "batch": "P0",
+  "cases": {
+    "BASE_G0_r1": {
+      "spec": "BASE@G0@r1",
+      "model_sha": "3679aaba68af572ff5590073a611187d5920e2bb0a75a69fddd6cd5926bdc73d"
+    },
+    "BASE_s10h40_r1": {
+      "spec": "BASE@s10h40@r1",
+      "model_sha": "0a8277980df145bc7cf968cc1bc1eb70450c1711e0ebc4e6ed99e70178cc86e0"
+    },
+    "IN150x1_s10h40_r1": {
+      "spec": "IN150x1@s10h40@r1",
+      "model_sha": "0a8277980df145bc7cf968cc1bc1eb70450c1711e0ebc4e6ed99e70178cc86e0"
+    },
+    "IN150_s10h40_r1": {
+      "spec": "IN150@s10h40@r1",
+      "model_sha": "3604590a15826ed76a3a63f3005434dae8024fdbc8947e8a07023f7f8b89fa95"
+    },
+    "LS150_s10h40_r1": {
+      "spec": "LS150@s10h40@r1",
+      "model_sha": "3c74deaed9ab81dabe7081060f38ea11154ba7d6a6d2c1014f15d6b32bc44789"
+    }
+  },
+  "jobs": [
+    "BASE_G0_r1",
+    "BASE_s10h40_r1",
+    "IN150x1_s10h40_r1",
+    "IN150_s10h40_r1",
+    "LS150_s10h40_r1",
+    "V21Bs5.85_m00"
+  ],
+  "dataset": {
+    "slug": "ideo-p0-20261105",
+    "runs.tar.gz": {
+      "sha256": "c2f70ce0ab57bd780beb63d9e76f6665b9666e1d0d2d8023b371cf279b22f4ae",
+      "bytes": 6299937
+    },
+    "code.tar.gz": {
+      "sha256": "f87a78314a4cd8d3b42aeff56c5b773ab339d739648c612715f268868650a18d",
+      "bytes": 9836
+    }
+  },
+  "finished": "2026-11-05 21:11:08"
+}

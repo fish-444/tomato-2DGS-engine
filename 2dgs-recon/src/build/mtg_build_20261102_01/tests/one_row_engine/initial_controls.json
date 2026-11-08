@@ -1,0 +1,15 @@
+{
+ "p1": {
+  "active_apex": "p1/A0/apex",
+  "active_axis": "p1/A0",
+  "last_stem": "p1/I1",
+  "plant_root": "p1/Plant",
+  "thermal_dd": 0.0,
+  "produced": 1,
+  "leaf_order": 1,
+  "truss_count": 0,
+  "axis_leaf_count": 1,
+  "stopped_apices": [],
+  "provenance": "requires_declaration: hidden developmental state is not observable; placeholders only"
+ }
+}

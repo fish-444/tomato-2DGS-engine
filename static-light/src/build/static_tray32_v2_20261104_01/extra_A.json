@@ -1,0 +1,21 @@
+{
+ "scene": {
+  "sid": "S13",
+  "p": 0.1,
+  "shape": "flat",
+  "pos": "trays",
+  "height": 0.4
+ },
+ "table": "A",
+ "direct_absorbed_a1": 0.2819040358937968,
+ "diffuse_absorbed_a1": 0.4174256197879984,
+ "ratio_with_over_direct_only": 2.4807365863511697,
+ "direct_interception": 0.2602601001410023,
+ "diffuse_interception": 0.25691776816413436,
+ "dome_directions": 72,
+ "diffuse_horizontal_irradiance": 4.315726430620056,
+ "outline_area_m2": 0.32000000000000006,
+ "bracket_efficiency_a085": 0.059850757883444655,
+ "main_efficiency_a085": 0.05990460762743182,
+ "bracket_change_pct": -0.0898924909450649
+}

@@ -1,0 +1,83 @@
+{
+ "plant_instance_id": "p1",
+ "organs": 48,
+ "stage2_vertices": 47,
+ "edges": 21,
+ "dropped": [],
+ "notes": [],
+ "engine_default_mismatches": [
+  {
+   "parameter": "FIRST_LEAVES",
+   "engine": 9,
+   "measured": "6-8 (n_truss {6:2, 7:1, 8:2})"
+  },
+  {
+   "parameter": "PAIRS",
+   "engine": [
+    1,
+    1,
+    2
+   ],
+   "measured": "dissected leaf: 3 pairs + up to 2 intercalary"
+  },
+  {
+   "parameter": "LEAF_LW",
+   "engine": 2.0,
+   "measured": "1.0-2.2, mean about 1.5"
+  },
+  {
+   "parameter": "leaflet shape",
+   "engine": "flat diamond (leaflet_outline hook off)",
+   "measured": "28 dissected outlines, handoff/leaflet_shape_20261014"
+  },
+  {
+   "parameter": "INTERNODE_CAP_M",
+   "engine": 0.012,
+   "measured": "about 6-9 mm"
+  },
+  {
+   "parameter": "architecture",
+   "engine": "sympodial A1-A3 + 4 trusses (CADENCE [2,1,0])",
+   "literature": "Vicente 2015: two successive trusses, then lateral shoots"
+  }
+ ],
+ "id_map": {
+  "p1/Plant": "p1/Plant",
+  "M": "p1/A0",
+  "N_R3-1b-L01": "p1/N1",
+  "L_R3-1b-L01": "p1/C0001",
+  "p1/C0001/P": "p1/C0001/P",
+  "N_R3-1b-L02": "p1/N2",
+  "L_R3-1b-L02": "p1/C0002",
+  "p1/C0002/P": "p1/C0002/P",
+  "N_R3-1b-L07": "p1/N3",
+  "L_R3-1b-L07": "p1/C0003",
+  "p1/C0003/P": "p1/C0003/P",
+  "N_R3-1b-L06": "p1/N4",
+  "L_R3-1b-L06": "p1/C0004",
+  "p1/C0004/P": "p1/C0004/P",
+  "N_R3-1b-L11": "p1/N5",
+  "L_R3-1b-L11": "p1/C0005",
+  "p1/C0005/P": "p1/C0005/P",
+  "N_R3-1b-L04": "p1/N6",
+  "L_R3-1b-L04": "p1/C0006",
+  "p1/C0006/P": "p1/C0006/P",
+  "N_R3-1b-L05": "p1/N7",
+  "L_R3-1b-L05": "p1/C0007",
+  "p1/C0007/P": "p1/C0007/P",
+  "N_R3-1b-L09": "p1/N8",
+  "L_R3-1b-L09": "p1/C0008",
+  "p1/C0008/P": "p1/C0008/P",
+  "N_R3-1b-L03": "p1/N9",
+  "L_R3-1b-L03": "p1/C0009",
+  "p1/C0009/P": "p1/C0009/P",
+  "N_R3-1b-L08": "p1/N10",
+  "L_R3-1b-L08": "p1/C0010",
+  "p1/C0010/P": "p1/C0010/P",
+  "N_R3-1b-L10": "p1/N11",
+  "L_R3-1b-L10": "p1/C0011",
+  "p1/C0011/P": "p1/C0011/P",
+  "M/apex": "p1/A0/apex",
+  "p1/Root": "p1/Root"
+ }
+}

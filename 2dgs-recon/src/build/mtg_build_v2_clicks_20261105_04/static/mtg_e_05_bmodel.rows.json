@@ -1,0 +1,503 @@
+{
+ "plant": "e_05",
+ "kind": "observed",
+ "labels": [
+  "bmodel_micbut_2d727a3",
+  "observed_plant_input",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1"
+ ],
+ "conventions": "A4: ori = az + 90, inc = 90 - theta0; A1 area priority; no dtheta",
+ "csv": "mtg_e_05_bmodel.csv",
+ "csv_sha256": "4f76343be59fc71f0cac0d71eaa436c6ee91107b034c8bfa9c8f517ed6850146",
+ "rows": [
+  {
+   "kind": "plant",
+   "plant_id": "e_05"
+  },
+  {
+   "kind": "internode",
+   "rank": 0,
+   "length": "skeleton_axis_model_completed",
+   "width": "model_derived",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L01",
+   "rank": 1,
+   "cls": "first",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.03612820471337185,
+   "rachis_m": 0.0,
+   "terminal_extent_m": 0.019879725687153738,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.015869,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 2,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_by_rank",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L08",
+   "rank": 2,
+   "cls": "mid",
+   "area": "observed_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.015714093047864332,
+   "rachis_m": 0.01555784044991541,
+   "terminal_extent_m": 0.006218847419128403,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.0038537537420672706,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 3,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_by_rank",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L06",
+   "rank": 3,
+   "cls": "mid",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.011540749177503135,
+   "rachis_m": 0.014483573790191216,
+   "terminal_extent_m": 0.016581366236664577,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.003333452839836299,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 4,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_by_rank",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L07",
+   "rank": 4,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.006123900406991519,
+   "rachis_m": 0.012729795017513632,
+   "terminal_extent_m": 0.015017428978007721,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.0025933936187887536,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 5,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_by_rank",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L09",
+   "rank": 5,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.010381564188412755,
+   "rachis_m": 0.02197283997924313,
+   "terminal_extent_m": 0.016180026764778036,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.008210647775379188,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 6,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_by_rank",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L02",
+   "rank": 6,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.0112642677263803,
+   "rachis_m": 0.023434879120571992,
+   "terminal_extent_m": 0.015069928655127759,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.009549158418329897,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 7,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_by_rank",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L10",
+   "rank": 7,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.0013442698076553663,
+   "rachis_m": 0.0026726223561394495,
+   "terminal_extent_m": 0.012491098862497408,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.0003604777376608418,
+   "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_by_rank)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)"
+  },
+  {
+   "kind": "internode",
+   "rank": 8,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L03",
+   "rank": 8,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.009201302634479278,
+   "rachis_m": 0.017844062712916546,
+   "terminal_extent_m": 0.01126954392236504,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.005147050832639222,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 9,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L11",
+   "rank": 9,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.0018113540837486656,
+   "rachis_m": 0.0034995067858458926,
+   "terminal_extent_m": 0.01109480727556415,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.00044627007577456243,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 10,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L05",
+   "rank": 10,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.012723345422721844,
+   "rachis_m": 0.024797550362700444,
+   "terminal_extent_m": 0.011504088100935684,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.010928547367145205,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 11,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L04",
+   "rank": 11,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.010224367237679655,
+   "rachis_m": 0.02261629359165528,
+   "terminal_extent_m": 0.019419027700437283,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.008782232855427778,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 12,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L12",
+   "rank": 12,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.011015179336021048,
+   "rachis_m": 0.02464546000310039,
+   "terminal_extent_m": 0.020358345483615904,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.010768051748499057,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 13,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L15",
+   "rank": 13,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.0037394572826122473,
+   "rachis_m": 0.0075597929356604225,
+   "terminal_extent_m": 0.013383996074085795,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.0010847318416544786,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L14",
+   "rank": 14,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click",
+    "shared_node"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.013102997380893634,
+   "rachis_m": 0.02846953109061473,
+   "terminal_extent_m": 0.01803309908476049,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.015336193279279224,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  },
+  {
+   "kind": "internode",
+   "rank": 15,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L13",
+   "rank": 15,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "length_short"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.0006826559937127653,
+   "rachis_m": 0.0013173440062872346,
+   "terminal_extent_m": 0.011041453699445414,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.00024601696887179643,
+   "theta0_source": "fitted_to_surfels_ungraded (was: hand_measured_all_ranks(rank>9))",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)"
+  },
+  {
+   "kind": "internode",
+   "rank": 16,
+   "length": "skeleton_axis_model_completed",
+   "width": "hand_measured_rank7_reused(rank>7)",
+   "direction": "skeleton_axis_model_completed"
+  },
+  {
+   "kind": "leaf",
+   "leaf_uid": "e_05-L16",
+   "rank": 16,
+   "cls": "last",
+   "area": "observed_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation",
+    "L_to_last_click"
+   ],
+   "orientation": "observed",
+   "inclination": "observed",
+   "length": "observed (split petiole:rachis by model allometry)",
+   "petiole_m": 0.005657285692838736,
+   "rachis_m": 0.011615340189193205,
+   "terminal_extent_m": 0.014268838271985046,
+   "diameter": "model_derived",
+   "rachis_dw_g": 0.002188387581672182,
+   "theta0_source": "rachis_from_clicks_user_measured_ungraded (petiole piece, node -> 0.30 L)",
+   "dtheta": "not_representable (importer has no per-leaf curvature column; published Curvature_LEAF=90 -> straight)",
+   "area_source": "unavailable",
+   "length_source": "rachis_from_clicks_user_measured_ungraded (node -> last click, no extension)"
+  }
+ ]
+}

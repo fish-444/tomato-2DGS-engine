@@ -1,0 +1,8 @@
+{
+ "eps": 0.001529,
+ "eps_source": "build/p1_thin_shell_20261026_01/metrics/R3-1b.json thickness.median_T_mm = 1.529 (second_layer_test.json has no thickness field)",
+ "tau_leaf": 0.07,
+ "a_main": 0.85,
+ "dex": 0.0024,
+ "labels_rachis_source": "build/p1_pc_absorb_20261027_01/R8_pc_rachis/labels_rachis.npz (axis_kind, label)"
+}

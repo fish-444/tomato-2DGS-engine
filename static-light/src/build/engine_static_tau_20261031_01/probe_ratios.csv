@@ -1,0 +1,3 @@
+# no measured shading-pair or sensor positions are recorded yet (MEASURE_SHADING CSV empty, VSENSOR CSV without positions, 10-15 records without xyz)
+# tool: static/tau_obs.py probe_ratios(); test passed (single sheet, near-vertical beam: below/above = 0.070 for v1_tau, 0 for v1)
+individual,probe_id,x_mm,y_mm,z_above_mm,z_below_mm,ratio_v1,ratio_tau

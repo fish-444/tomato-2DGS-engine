@@ -1,0 +1,247 @@
+{
+ "ref": 282.0,
+ "low_signal_threshold": 10.0,
+ "rows": [
+  {
+   "individual": "e_01",
+   "face_color": "yellow",
+   "ppfd_measured": 7.187,
+   "r_meas": 0.02548581560283688,
+   "low_signal": true,
+   "above_ref": false
+  },
+  {
+   "individual": "e_01",
+   "face_color": "green",
+   "ppfd_measured": 15.945,
+   "r_meas": 0.05654255319148936,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_01",
+   "face_color": "red",
+   "ppfd_measured": 2.731,
+   "r_meas": 0.009684397163120567,
+   "low_signal": true,
+   "above_ref": false
+  },
+  {
+   "individual": "e_01",
+   "face_color": "blue",
+   "ppfd_measured": 2.515,
+   "r_meas": 0.008918439716312057,
+   "low_signal": true,
+   "above_ref": false
+  },
+  {
+   "individual": "e_02",
+   "face_color": "yellow",
+   "ppfd_measured": 25.427,
+   "r_meas": 0.09016666666666666,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_02",
+   "face_color": "green",
+   "ppfd_measured": 61.302,
+   "r_meas": 0.21738297872340426,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_02",
+   "face_color": "red",
+   "ppfd_measured": 6.471,
+   "r_meas": 0.022946808510638298,
+   "low_signal": true,
+   "above_ref": false
+  },
+  {
+   "individual": "e_02",
+   "face_color": "blue",
+   "ppfd_measured": 23.41,
+   "r_meas": 0.08301418439716313,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_03",
+   "face_color": "yellow",
+   "ppfd_measured": 33.403,
+   "r_meas": 0.11845035460992907,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_03",
+   "face_color": "green",
+   "ppfd_measured": 186.247,
+   "r_meas": 0.6604503546099292,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_03",
+   "face_color": "red",
+   "ppfd_measured": 191.388,
+   "r_meas": 0.6786808510638298,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_03",
+   "face_color": "blue",
+   "ppfd_measured": 303.573,
+   "r_meas": 1.0765,
+   "low_signal": false,
+   "above_ref": true
+  },
+  {
+   "individual": "e_04",
+   "face_color": "yellow",
+   "ppfd_measured": 296.529,
+   "r_meas": 1.0515212765957447,
+   "low_signal": false,
+   "above_ref": true
+  },
+  {
+   "individual": "e_04",
+   "face_color": "green",
+   "ppfd_measured": 85.522,
+   "r_meas": 0.30326950354609933,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_04",
+   "face_color": "red",
+   "ppfd_measured": 316.66,
+   "r_meas": 1.1229078014184397,
+   "low_signal": false,
+   "above_ref": true
+  },
+  {
+   "individual": "e_04",
+   "face_color": "blue",
+   "ppfd_measured": 3.372,
+   "r_meas": 0.011957446808510639,
+   "low_signal": true,
+   "above_ref": false
+  },
+  {
+   "individual": "e_05",
+   "face_color": "yellow",
+   "ppfd_measured": 112.344,
+   "r_meas": 0.3983829787234042,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_05",
+   "face_color": "green",
+   "ppfd_measured": 83.383,
+   "r_meas": 0.29568439716312056,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_05",
+   "face_color": "red",
+   "ppfd_measured": 110.214,
+   "r_meas": 0.39082978723404255,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_05",
+   "face_color": "blue",
+   "ppfd_measured": 5.764,
+   "r_meas": 0.020439716312056738,
+   "low_signal": true,
+   "above_ref": false
+  },
+  {
+   "individual": "e_06",
+   "face_color": "yellow",
+   "ppfd_measured": 264.837,
+   "r_meas": 0.9391382978723404,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_06",
+   "face_color": "green",
+   "ppfd_measured": 109.847,
+   "r_meas": 0.38952836879432623,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_06",
+   "face_color": "red",
+   "ppfd_measured": 74.716,
+   "r_meas": 0.26495035460992905,
+   "low_signal": false,
+   "above_ref": false
+  },
+  {
+   "individual": "e_06",
+   "face_color": "blue",
+   "ppfd_measured": 134.269,
+   "r_meas": 0.4761312056737589,
+   "low_signal": false,
+   "above_ref": false
+  }
+ ],
+ "above_ref": [
+  [
+   "e_03",
+   "blue",
+   1.077
+  ],
+  [
+   "e_04",
+   "yellow",
+   1.052
+  ],
+  [
+   "e_04",
+   "red",
+   1.123
+  ]
+ ],
+ "low_signal": [
+  [
+   "e_01",
+   "yellow",
+   7.187
+  ],
+  [
+   "e_01",
+   "red",
+   2.731
+  ],
+  [
+   "e_01",
+   "blue",
+   2.515
+  ],
+  [
+   "e_02",
+   "red",
+   6.471
+  ],
+  [
+   "e_04",
+   "blue",
+   3.372
+  ],
+  [
+   "e_05",
+   "blue",
+   5.764
+  ]
+ ]
+}

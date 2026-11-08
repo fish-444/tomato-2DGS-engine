@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this folder of tomato-2DGS-engine, please cite it as below."
+title: "Micro-Tom static light model on reconstructed plants"
+version: "0.1.0"
+date-released: "2026-11-08"
+authors:
+  - family-names: "서"
+    given-names: "현우"
+    affiliation: "Kyung Hee University, Department of Smart Farm Science"
+  - family-names: "김"
+    given-names: "민웅"
+    affiliation: "Kyung Hee University, Department of Smart Farm Science"
+  - family-names: "이"
+    given-names: "주원"
+    affiliation: "Kyung Hee University, Department of Smart Farm Science"
+  - family-names: "최"
+    given-names: "재임"
+    affiliation: "Kyung Hee University, Department of Smart Farm Science"
+license: MIT
+keywords: [Micro-Tom, tomato, 3D reconstruction, functional-structural plant model, light interception]

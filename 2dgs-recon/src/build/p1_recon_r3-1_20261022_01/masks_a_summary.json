@@ -1,0 +1,612 @@
+{
+ "20261021_060538353_iOS.jpg": {
+  "base_px": 79952,
+  "m2_added_px": 709,
+  "m3_removed_px": 944,
+  "m3_added_px": 911,
+  "m3_soil_px": 31936,
+  "final_px": 78958,
+  "change_share": 0.0437,
+  "band_share": 0.2782
+ },
+ "20261021_060540841_iOS.jpg": {
+  "base_px": 81814,
+  "m2_added_px": 824,
+  "m3_removed_px": 1155,
+  "m3_added_px": 494,
+  "m3_soil_px": 37407,
+  "final_px": 80396,
+  "change_share": 0.0457,
+  "band_share": 0.3102
+ },
+ "20261021_060542310_iOS.jpg": {
+  "base_px": 88002,
+  "m2_added_px": 559,
+  "m3_removed_px": 1163,
+  "m3_added_px": 733,
+  "m3_soil_px": 39761,
+  "final_px": 86739,
+  "change_share": 0.0397,
+  "band_share": 0.2988
+ },
+ "20261021_060544649_iOS.jpg": {
+  "base_px": 82514,
+  "m2_added_px": 1604,
+  "m3_removed_px": 1352,
+  "m3_added_px": 630,
+  "m3_soil_px": 39411,
+  "final_px": 81946,
+  "change_share": 0.0463,
+  "band_share": 0.3169
+ },
+ "20261021_060545604_iOS.jpg": {
+  "base_px": 82329,
+  "m2_added_px": 1857,
+  "m3_removed_px": 1694,
+  "m3_added_px": 650,
+  "m3_soil_px": 38808,
+  "final_px": 81663,
+  "change_share": 0.0441,
+  "band_share": 0.3306
+ },
+ "20261021_060547546_iOS.jpg": {
+  "base_px": 80714,
+  "m2_added_px": 1218,
+  "m3_removed_px": 1207,
+  "m3_added_px": 654,
+  "m3_soil_px": 40547,
+  "final_px": 79619,
+  "change_share": 0.0444,
+  "band_share": 0.3455
+ },
+ "20261021_060549196_iOS.jpg": {
+  "base_px": 79811,
+  "m2_added_px": 1750,
+  "m3_removed_px": 1461,
+  "m3_added_px": 500,
+  "m3_soil_px": 41078,
+  "final_px": 78930,
+  "change_share": 0.0461,
+  "band_share": 0.336
+ },
+ "20261021_060551789_iOS.jpg": {
+  "base_px": 77105,
+  "m2_added_px": 2460,
+  "m3_removed_px": 622,
+  "m3_added_px": 369,
+  "m3_soil_px": 42920,
+  "final_px": 77907,
+  "change_share": 0.0494,
+  "band_share": 0.3588
+ },
+ "20261021_060554103_iOS.jpg": {
+  "base_px": 80935,
+  "m2_added_px": 3230,
+  "m3_removed_px": 898,
+  "m3_added_px": 834,
+  "m3_soil_px": 37912,
+  "final_px": 83073,
+  "change_share": 0.0596,
+  "band_share": 0.3197
+ },
+ "20261021_060555768_iOS.jpg": {
+  "base_px": 77316,
+  "m2_added_px": 221,
+  "m3_removed_px": 389,
+  "m3_added_px": 324,
+  "m3_soil_px": 37192,
+  "final_px": 76396,
+  "change_share": 0.0239,
+  "band_share": 0.2923
+ },
+ "20261021_060557359_iOS.jpg": {
+  "base_px": 78348,
+  "m2_added_px": 1016,
+  "m3_removed_px": 358,
+  "m3_added_px": 494,
+  "m3_soil_px": 33430,
+  "final_px": 78555,
+  "change_share": 0.0282,
+  "band_share": 0.2905
+ },
+ "20261021_060559521_iOS.jpg": {
+  "base_px": 85541,
+  "m2_added_px": 1225,
+  "m3_removed_px": 548,
+  "m3_added_px": 62,
+  "m3_soil_px": 32822,
+  "final_px": 85252,
+  "change_share": 0.0265,
+  "band_share": 0.2642
+ },
+ "20261021_060600613_iOS.jpg": {
+  "base_px": 88284,
+  "m2_added_px": 3693,
+  "m3_removed_px": 790,
+  "m3_added_px": 208,
+  "m3_soil_px": 31763,
+  "final_px": 90264,
+  "change_share": 0.054,
+  "band_share": 0.2755
+ },
+ "20261021_060524278_iOS.jpg": {
+  "base_px": 70368,
+  "m2_added_px": 2285,
+  "m3_removed_px": 100,
+  "m3_added_px": 489,
+  "m3_soil_px": 27537,
+  "final_px": 71681,
+  "change_share": 0.051,
+  "band_share": 0.3419
+ },
+ "20261021_060605333_iOS.jpg": {
+  "base_px": 82599,
+  "m2_added_px": 2344,
+  "m3_removed_px": 146,
+  "m3_added_px": 142,
+  "m3_soil_px": 28710,
+  "final_px": 83747,
+  "change_share": 0.0431,
+  "band_share": 0.3006
+ },
+ "20261021_060527538_iOS.jpg": {
+  "base_px": 64934,
+  "m2_added_px": 2053,
+  "m3_removed_px": 163,
+  "m3_added_px": 238,
+  "m3_soil_px": 23116,
+  "final_px": 65938,
+  "change_share": 0.0469,
+  "band_share": 0.3213
+ },
+ "20261021_060531950_iOS.jpg": {
+  "base_px": 61937,
+  "m2_added_px": 6322,
+  "m3_removed_px": 1086,
+  "m3_added_px": 325,
+  "m3_soil_px": 22983,
+  "final_px": 66098,
+  "change_share": 0.1319,
+  "band_share": 0.342
+ },
+ "20261021_060532792_iOS.jpg": {
+  "base_px": 61736,
+  "m2_added_px": 5996,
+  "m3_removed_px": 829,
+  "m3_added_px": 496,
+  "m3_soil_px": 24820,
+  "final_px": 66049,
+  "change_share": 0.126,
+  "band_share": 0.3615
+ },
+ "20261021_060427460_iOS.jpg": {
+  "base_px": 78035,
+  "m2_added_px": 7461,
+  "m3_removed_px": 66,
+  "m3_added_px": 7547,
+  "m3_soil_px": 51202,
+  "final_px": 92542,
+  "change_share": 0.1965,
+  "band_share": 0.4226
+ },
+ "20261021_060428635_iOS.jpg": {
+  "base_px": 75532,
+  "m2_added_px": 10622,
+  "m3_removed_px": 7,
+  "m3_added_px": 3059,
+  "m3_soil_px": 55550,
+  "final_px": 88749,
+  "change_share": 0.1835,
+  "band_share": 0.4352
+ },
+ "20261021_060429762_iOS.jpg": {
+  "base_px": 94298,
+  "m2_added_px": 5548,
+  "m3_removed_px": 2750,
+  "m3_added_px": 2451,
+  "m3_soil_px": 46809,
+  "final_px": 98317,
+  "change_share": 0.1209,
+  "band_share": 0.3351
+ },
+ "20261021_060437164_iOS.jpg": {
+  "base_px": 86323,
+  "m2_added_px": 3244,
+  "m3_removed_px": 1052,
+  "m3_added_px": 1577,
+  "m3_soil_px": 52469,
+  "final_px": 88481,
+  "change_share": 0.0822,
+  "band_share": 0.3286
+ },
+ "20261021_060439622_iOS.jpg": {
+  "base_px": 88141,
+  "m2_added_px": 12846,
+  "m3_removed_px": 752,
+  "m3_added_px": 4566,
+  "m3_soil_px": 55529,
+  "final_px": 103251,
+  "change_share": 0.22,
+  "band_share": 0.3649
+ },
+ "20261021_060440865_iOS.jpg": {
+  "base_px": 94188,
+  "m2_added_px": 5483,
+  "m3_removed_px": 1465,
+  "m3_added_px": 1670,
+  "m3_soil_px": 60226,
+  "final_px": 98264,
+  "change_share": 0.1055,
+  "band_share": 0.3113
+ },
+ "20261021_060442059_iOS.jpg": {
+  "base_px": 92447,
+  "m2_added_px": 4277,
+  "m3_removed_px": 202,
+  "m3_added_px": 1886,
+  "m3_soil_px": 66287,
+  "final_px": 96771,
+  "change_share": 0.085,
+  "band_share": 0.3818
+ },
+ "20261021_060448335_iOS.jpg": {
+  "base_px": 99554,
+  "m2_added_px": 4267,
+  "m3_removed_px": 699,
+  "m3_added_px": 1865,
+  "m3_soil_px": 57552,
+  "final_px": 103498,
+  "change_share": 0.0823,
+  "band_share": 0.3593
+ },
+ "20261021_060449755_iOS.jpg": {
+  "base_px": 98645,
+  "m2_added_px": 4343,
+  "m3_removed_px": 352,
+  "m3_added_px": 2608,
+  "m3_soil_px": 55532,
+  "final_px": 103793,
+  "change_share": 0.0875,
+  "band_share": 0.4074
+ },
+ "20261021_060450923_iOS.jpg": {
+  "base_px": 96676,
+  "m2_added_px": 2944,
+  "m3_removed_px": 83,
+  "m3_added_px": 1480,
+  "m3_soil_px": 51417,
+  "final_px": 100048,
+  "change_share": 0.0552,
+  "band_share": 0.4222
+ },
+ "20261021_060454093_iOS.jpg": {
+  "base_px": 99645,
+  "m2_added_px": 5690,
+  "m3_removed_px": 404,
+  "m3_added_px": 1907,
+  "m3_soil_px": 50024,
+  "final_px": 106257,
+  "change_share": 0.0832,
+  "band_share": 0.3812
+ },
+ "20261021_060414567_iOS.jpg": {
+  "base_px": 127858,
+  "m2_added_px": 520,
+  "m3_removed_px": 2309,
+  "m3_added_px": 1149,
+  "m3_soil_px": 46365,
+  "final_px": 125401,
+  "change_share": 0.0422,
+  "band_share": 0.3043
+ },
+ "20261021_060416893_iOS.jpg": {
+  "base_px": 129262,
+  "m2_added_px": 1006,
+  "m3_removed_px": 2397,
+  "m3_added_px": 545,
+  "m3_soil_px": 43972,
+  "final_px": 127005,
+  "change_share": 0.0411,
+  "band_share": 0.2859
+ },
+ "20261021_060418991_iOS.jpg": {
+  "base_px": 125503,
+  "m2_added_px": 1255,
+  "m3_removed_px": 2160,
+  "m3_added_px": 2736,
+  "m3_soil_px": 40672,
+  "final_px": 125839,
+  "change_share": 0.0592,
+  "band_share": 0.2948
+ },
+ "20261021_060420263_iOS.jpg": {
+  "base_px": 122689,
+  "m2_added_px": 78,
+  "m3_removed_px": 2658,
+  "m3_added_px": 2382,
+  "m3_soil_px": 35345,
+  "final_px": 120970,
+  "change_share": 0.0534,
+  "band_share": 0.2889
+ },
+ "20261021_060421660_iOS.jpg": {
+  "base_px": 117457,
+  "m2_added_px": 406,
+  "m3_removed_px": 2785,
+  "m3_added_px": 1571,
+  "m3_soil_px": 33232,
+  "final_px": 115232,
+  "change_share": 0.0506,
+  "band_share": 0.2827
+ },
+ "20261021_060422747_iOS.jpg": {
+  "base_px": 104362,
+  "m2_added_px": 1726,
+  "m3_removed_px": 3361,
+  "m3_added_px": 1574,
+  "m3_soil_px": 30705,
+  "final_px": 103156,
+  "change_share": 0.0644,
+  "band_share": 0.2851
+ },
+ "20261021_060423912_iOS.jpg": {
+  "base_px": 94196,
+  "m2_added_px": 1509,
+  "m3_removed_px": 1114,
+  "m3_added_px": 3247,
+  "m3_soil_px": 41140,
+  "final_px": 97020,
+  "change_share": 0.0653,
+  "band_share": 0.3382
+ },
+ "20261021_060248144_iOS.jpg": {
+  "base_px": 66676,
+  "m2_added_px": 1309,
+  "m3_removed_px": 170,
+  "m3_added_px": 7054,
+  "m3_soil_px": 47078,
+  "final_px": 74273,
+  "change_share": 0.1364,
+  "band_share": 0.6392
+ },
+ "20261021_060235403_iOS.jpg": {
+  "base_px": 56016,
+  "m2_added_px": 32484,
+  "m3_removed_px": 519,
+  "m3_added_px": 19261,
+  "m3_soil_px": 36704,
+  "final_px": 104766,
+  "change_share": 0.9398,
+  "band_share": 0.6914
+ },
+ "20261021_060326166_iOS.jpg": {
+  "base_px": 89282,
+  "m2_added_px": 1520,
+  "m3_removed_px": 78,
+  "m3_added_px": 5298,
+  "m3_soil_px": 41875,
+  "final_px": 95659,
+  "change_share": 0.0798,
+  "band_share": 0.3923
+ },
+ "20261021_060328024_iOS.jpg": {
+  "base_px": 87845,
+  "m2_added_px": 2297,
+  "m3_removed_px": 28,
+  "m3_added_px": 5164,
+  "m3_soil_px": 40026,
+  "final_px": 94933,
+  "change_share": 0.0886,
+  "band_share": 0.3911
+ },
+ "20261021_060329819_iOS.jpg": {
+  "base_px": 91497,
+  "m2_added_px": 657,
+  "m3_removed_px": 397,
+  "m3_added_px": 2424,
+  "m3_soil_px": 37110,
+  "final_px": 93697,
+  "change_share": 0.041,
+  "band_share": 0.3728
+ },
+ "20261021_060331680_iOS.jpg": {
+  "base_px": 89109,
+  "m2_added_px": 1153,
+  "m3_removed_px": 167,
+  "m3_added_px": 1780,
+  "m3_soil_px": 42415,
+  "final_px": 91500,
+  "change_share": 0.0375,
+  "band_share": 0.3709
+ },
+ "20261021_060332829_iOS.jpg": {
+  "base_px": 92061,
+  "m2_added_px": 2868,
+  "m3_removed_px": 60,
+  "m3_added_px": 4641,
+  "m3_soil_px": 44697,
+  "final_px": 99142,
+  "change_share": 0.0848,
+  "band_share": 0.3608
+ },
+ "20261021_060335139_iOS.jpg": {
+  "base_px": 89999,
+  "m2_added_px": 2088,
+  "m3_removed_px": 11,
+  "m3_added_px": 3208,
+  "m3_soil_px": 46017,
+  "final_px": 94917,
+  "change_share": 0.062,
+  "band_share": 0.3505
+ },
+ "20261021_060337367_iOS.jpg": {
+  "base_px": 87595,
+  "m2_added_px": 5971,
+  "m3_removed_px": 13,
+  "m3_added_px": 3539,
+  "m3_soil_px": 48041,
+  "final_px": 96766,
+  "change_share": 0.1116,
+  "band_share": 0.3601
+ },
+ "20261021_060338861_iOS.jpg": {
+  "base_px": 88063,
+  "m2_added_px": 591,
+  "m3_removed_px": 10,
+  "m3_added_px": 2142,
+  "m3_soil_px": 49003,
+  "final_px": 90476,
+  "change_share": 0.0345,
+  "band_share": 0.3705
+ },
+ "20261021_060340484_iOS.jpg": {
+  "base_px": 92203,
+  "m2_added_px": 4908,
+  "m3_removed_px": 159,
+  "m3_added_px": 2207,
+  "m3_soil_px": 51873,
+  "final_px": 98552,
+  "change_share": 0.0825,
+  "band_share": 0.4206
+ },
+ "20261021_060341729_iOS.jpg": {
+  "base_px": 90234,
+  "m2_added_px": 3824,
+  "m3_removed_px": 141,
+  "m3_added_px": 1753,
+  "m3_soil_px": 52595,
+  "final_px": 95014,
+  "change_share": 0.0695,
+  "band_share": 0.4417
+ },
+ "20261021_060344652_iOS.jpg": {
+  "base_px": 91694,
+  "m2_added_px": 476,
+  "m3_removed_px": 646,
+  "m3_added_px": 1894,
+  "m3_soil_px": 50776,
+  "final_px": 92638,
+  "change_share": 0.0385,
+  "band_share": 0.4534
+ },
+ "20261021_060346661_iOS.jpg": {
+  "base_px": 90106,
+  "m2_added_px": 1439,
+  "m3_removed_px": 148,
+  "m3_added_px": 1308,
+  "m3_soil_px": 51154,
+  "final_px": 91803,
+  "change_share": 0.0401,
+  "band_share": 0.4751
+ },
+ "20261021_060348489_iOS.jpg": {
+  "base_px": 105524,
+  "m2_added_px": 3390,
+  "m3_removed_px": 1152,
+  "m3_added_px": 1585,
+  "m3_soil_px": 47628,
+  "final_px": 107999,
+  "change_share": 0.0688,
+  "band_share": 0.416
+ },
+ "20261021_060350518_iOS.jpg": {
+  "base_px": 111020,
+  "m2_added_px": 1783,
+  "m3_removed_px": 2162,
+  "m3_added_px": 2431,
+  "m3_soil_px": 44953,
+  "final_px": 111471,
+  "change_share": 0.0675,
+  "band_share": 0.3816
+ },
+ "20261021_060352245_iOS.jpg": {
+  "base_px": 113416,
+  "m2_added_px": 6205,
+  "m3_removed_px": 1559,
+  "m3_added_px": 2219,
+  "m3_soil_px": 43054,
+  "final_px": 119153,
+  "change_share": 0.0973,
+  "band_share": 0.3369
+ },
+ "20261021_060354234_iOS.jpg": {
+  "base_px": 117162,
+  "m2_added_px": 4215,
+  "m3_removed_px": 3404,
+  "m3_added_px": 1945,
+  "m3_soil_px": 34037,
+  "final_px": 118469,
+  "change_share": 0.0884,
+  "band_share": 0.3097
+ },
+ "20261021_060313903_iOS.jpg": {
+  "base_px": 144196,
+  "m2_added_px": 12355,
+  "m3_removed_px": 2396,
+  "m3_added_px": 2709,
+  "m3_soil_px": 40146,
+  "final_px": 155918,
+  "change_share": 0.1258,
+  "band_share": 0.2908
+ },
+ "20261021_060355657_iOS.jpg": {
+  "base_px": 112478,
+  "m2_added_px": 567,
+  "m3_removed_px": 2970,
+  "m3_added_px": 1886,
+  "m3_soil_px": 31434,
+  "final_px": 110590,
+  "change_share": 0.0551,
+  "band_share": 0.3065
+ },
+ "20261021_060315956_iOS.jpg": {
+  "base_px": 138789,
+  "m2_added_px": 6937,
+  "m3_removed_px": 2200,
+  "m3_added_px": 2687,
+  "m3_soil_px": 35284,
+  "final_px": 145225,
+  "change_share": 0.0892,
+  "band_share": 0.2903
+ },
+ "20261021_060317552_iOS.jpg": {
+  "base_px": 112567,
+  "m2_added_px": 2543,
+  "m3_removed_px": 1116,
+  "m3_added_px": 4232,
+  "m3_soil_px": 37290,
+  "final_px": 117434,
+  "change_share": 0.0735,
+  "band_share": 0.4055
+ },
+ "20261021_060319179_iOS.jpg": {
+  "base_px": 119979,
+  "m2_added_px": 3121,
+  "m3_removed_px": 2109,
+  "m3_added_px": 4427,
+  "m3_soil_px": 29588,
+  "final_px": 124393,
+  "change_share": 0.088,
+  "band_share": 0.3833
+ },
+ "20261021_060321744_iOS.jpg": {
+  "base_px": 101679,
+  "m2_added_px": 5563,
+  "m3_removed_px": 541,
+  "m3_added_px": 5611,
+  "m3_soil_px": 33920,
+  "final_px": 111642,
+  "change_share": 0.1209,
+  "band_share": 0.4564
+ },
+ "20261021_060323966_iOS.jpg": {
+  "base_px": 91856,
+  "m2_added_px": 385,
+  "m3_removed_px": 226,
+  "m3_added_px": 3832,
+  "m3_soil_px": 35432,
+  "final_px": 95326,
+  "change_share": 0.0537,
+  "band_share": 0.4235
+ }
+}

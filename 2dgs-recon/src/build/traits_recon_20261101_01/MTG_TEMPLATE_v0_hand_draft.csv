@@ -1,0 +1,10 @@
+rank,n_plants,n_leaves,theta0_mean_deg,theta0_sd_deg,insertion_from_vertical_mean_deg,p_leaflets_5,p_leaflets_6,p_leaflets_7,dtheta_deg,provenance,status
+1,6,6,3.33,6.06,86.67,0.333,0.0,0.667,missing_recon_B_not_run,hand_measured,draft_not_frozen
+2,6,6,26.67,23.38,63.33,0.0,0.0,1.0,missing_recon_B_not_run,hand_measured,draft_not_frozen
+3,6,6,37.5,28.24,52.5,0.667,0.167,0.167,missing_recon_B_not_run,hand_measured,draft_not_frozen
+4,5,5,15.0,10.0,75.0,0.4,0.0,0.6,missing_recon_B_not_run,hand_measured,draft_not_frozen
+5,5,5,38.0,14.83,52.0,0.2,0.0,0.8,missing_recon_B_not_run,hand_measured,draft_not_frozen
+6,5,5,28.0,20.49,62.0,0.2,0.2,0.6,missing_recon_B_not_run,hand_measured,draft_not_frozen
+7,5,5,36.0,15.17,54.0,0.4,0.0,0.6,missing_recon_B_not_run,hand_measured,draft_not_frozen
+8,3,3,26.67,15.28,63.33,0.667,0.0,0.333,missing_recon_B_not_run,hand_measured,draft_not_frozen
+9,3,3,26.67,15.28,63.33,1.0,0.0,0.0,missing_recon_B_not_run,hand_measured,draft_not_frozen

@@ -1,0 +1,40 @@
+2a3,4
+> # 2026-10-18 re-run (contract build/p1_2dgs_full_20261018_01/CONTRACT.md): EXPORT-ONLY changes after the training loop --
+> # full surfels with rotation, raw params, cameras, per-view render L1/SSIM. Training code below is unchanged.
+83a86,105
+> def write_ply_surfels_full(path, means, quats, Rm, scales, opac, cols, fdc):
+>     n = len(means)
+>     keys = ("x", "y", "z", "qw", "qx", "qy", "qz", "tux", "tuy", "tuz", "tvx", "tvy", "tvz", "nx", "ny", "nz", "s0", "s1", "opacity")
+>     hdr = ("ply\nformat binary_little_endian 1.0\ncomment 2DGS surfels (gsplat 1.5.3 rasterization_2dgs); R = quat(qw,qx,qy,qz); tu,tv,n = columns 0,1,2 of R\n"
+>            "comment s0,s1 = exp(scales[:2]) = std of the 2D Gaussian along tu,tv; opacity = sigmoid; f_dc = trained colour logits, rgb = sigmoid(f_dc), NOT SH\n"
+>            "comment relative R1 VGGT frame units (no metric scale)\n"
+>            f"element vertex {n}\n" + "".join(f"property float {k}\n" for k in keys) +
+>            "property uchar red\nproperty uchar green\nproperty uchar blue\n" + "".join(f"property float f_dc_{j}\n" for j in range(3)) + "end_header\n").encode()
+>     rec = np.zeros(n, dtype=[(k, "<f4") for k in keys] + [("r", "u1"), ("g", "u1"), ("b", "u1")] + [(f"f_dc_{j}", "<f4") for j in range(3)])
+>     for k, a in zip(("x", "y", "z"), means.T): rec[k] = a
+>     for k, a in zip(("qw", "qx", "qy", "qz"), quats.T): rec[k] = a
+>     for j, ax in enumerate(("tu", "tv", "n")):
+>         for c, comp in enumerate("xyz"):
+>             rec[ax + comp] = Rm[:, c, j]
+>     rec["s0"], rec["s1"], rec["opacity"] = scales[:, 0], scales[:, 1], opac
+>     for k, a in zip(("r", "g", "b"), (np.clip(cols, 0, 1) * 255).astype(np.uint8).T): rec[k] = a
+>     for j in range(3): rec[f"f_dc_{j}"] = fdc[:, j]
+>     open(path, "wb").write(hdr + rec.tobytes())
+> 
+> 
+144a167,175
+>         # ---- 2026-10-18 export additions (no effect on training)
+>         qn = F.normalize(params["quats"], dim=-1).cpu().numpy(); Rn = Rm.cpu().numpy()
+>         write_ply_surfels_full(f"{OUT}/{name}_surfels_full.ply", means, qn, Rn, scales, opac, cols, params["colors"].cpu().numpy())
+>         torch.save({k: v.detach().cpu() for k, v in params.items()}, f"{OUT}/{name}_params.pt")
+>         json.dump(dict(frame="R1 VGGT frame (relative units)", res=RES, convention="x_cam = viewmat[:3,:3] @ x_world + viewmat[:3,3]; pixel = K @ x_cam / z",
+>                        views={v: dict(K_1512=Ks[i].cpu().numpy().tolist(), viewmat=Vs[i].cpu().numpy().tolist(), K_3024=cam["cams"][v]["K"],
+>                                       R_cw=cam["cams"][v]["R_cw"], t_cw=cam["cams"][v]["t_cw"]) for i, v in enumerate(views)}),
+>                   open(f"{OUT}/{name}_cameras.json", "w"), indent=1)
+>         view_metrics = {}
+154a186
+>             _r = rc[0, ..., :3].clamp(0, 1); view_metrics[v] = dict(l1=float((_r - imgs[i]).abs().mean()), ssim=float(ssim(_r.permute(2, 0, 1)[None], imgs[i].permute(2, 0, 1)[None])))
+186c218
+<                    fused_points=int(keep.sum()), fused_candidates=int(len(Pall))), open(f"{OUT}/{name}_done.json", "w"), indent=1)
+---
+>                    fused_points=int(keep.sum()), fused_candidates=int(len(Pall)), render_metrics_1512=view_metrics), open(f"{OUT}/{name}_done.json", "w"), indent=1)

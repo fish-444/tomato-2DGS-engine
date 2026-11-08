@@ -1,0 +1,13 @@
+# leaflet_arrangement_from_reconstruction; relative_light; a = 1; tau 0.07 leaflets; MTG _04 (K20) vs _02 (K10) vs reconstructed surfels v1tau_smoothn_r2 (K8); report only, not_validation
+plant,leaves_matched,total_mtg04,total_mtg02,surfel_leaf_sum,ratio04_sum,ratio02_sum,r_leaf04,r_leaf02,median_abs_log_ratio04,median_abs_log_ratio02,flag
+R3-1b,8,2813.0,2502.5,1367.5,2.057,1.83,0.578,0.693,0.578,0.622,user_accepted_despite_reconstruction_check_fail;distance_p50_2.65pctH;normals_minus6.2deg;pilot_mtg_leaves_summed_per_R8pc (L05/L08/L09 duplicate L03/L10 per MTG build note)
+n_01,15,3216.3,3521.6,2391.9,1.3233,1.4324,0.409,0.397,0.441,0.636,
+n_02,17,2274.9,2562.7,1948.5,1.1675,1.3152,0.672,0.719,0.302,0.376,
+n_03,11,1876.9,2180.6,1779.3,1.0549,1.2255,0.866,0.889,0.161,0.242,user_accepted_despite_reconstruction_check_fail;normals_minus7.0deg
+n_04,16,4419.5,5144.7,3335.3,1.3251,1.5425,0.002,-0.042,0.569,0.502,
+n_05,13,4043.6,4601.1,3234.6,1.2501,1.4225,0.202,0.191,0.227,0.446,
+n_06,10,2774.3,3244.8,2253.4,1.2311,1.4399,0.419,0.345,0.237,0.625,
+e_01,12,3397.3,3894.9,2631.6,1.2909,1.48,-0.178,-0.164,0.757,0.569,user_accepted_despite_reconstruction_check_fail;distance_p50_1.53pctH;normals_minus5.8deg
+e_04,12,2833.6,3356.3,2314.9,1.224,1.4498,0.064,-0.016,0.821,0.93,
+e_05,16,5141.8,5822.4,3821.0,1.3457,1.5238,0.56,0.538,0.667,0.642,
+e_07,12,3205.9,3604.2,2485.7,1.1797,1.3098,0.483,0.506,0.533,0.399,

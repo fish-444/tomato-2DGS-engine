@@ -1,0 +1,5 @@
+arm,setting,fairness,half,accuracy,ci95,contested_share,tuning_accuracy,coverage_grouped_nodes,added_seeds,paired_diff,improved
+T0,T0,frozen,report,0.7503,"[0.7393, 0.761]",0.0095,0.7629,,,,
+A,A_s40,prompt_independent,report,0.8438,"[0.8345, 0.8526]",0.0098,0.767,6738,,"{'diff': 0.0934, 'ci95': [0.0839, 0.1027]}",True
+B,B_n2_a70,prompt_from_scoring_labels,report,0.7825,"[0.772, 0.7926]",0.0148,0.7629,,6597,"{'diff': 0.0321, 'ci95': [0.0269, 0.0374]}",True
+AB,AB_s60_n2_a70,prompt_from_scoring_labels,report,0.8813,"[0.8729, 0.8891]",0.0095,0.7671,,7189,"{'diff': 0.131, 'ci95': [0.1213, 0.1403]}",True

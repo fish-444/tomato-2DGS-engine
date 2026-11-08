@@ -1,0 +1,46 @@
+{
+ "load_s": 7.7,
+ "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+ "orbit": {
+  "draw_s": 0.02,
+  "nonbg_frac": 0.12487052434142382,
+  "drawn": 233871
+ },
+ "orbit_rot90": {
+  "draw_s": 0.02,
+  "nonbg_frac": 0.1533814142941127,
+  "drawn": 233871
+ },
+ "top": {
+  "draw_s": 0.02,
+  "nonbg_frac": 0.12934793258867333,
+  "drawn": 233871
+ },
+ "normals": {
+  "draw_s": 0.03,
+  "nonbg_frac": 0.1345951961031326,
+  "drawn": 233871
+ },
+ "points": {
+  "draw_s": 0.02,
+  "nonbg_frac": 0.10557690154251001,
+  "drawn": 233871
+ },
+ "overlay_v2": {
+  "draw_s": 0.03,
+  "nonbg_frac": 0.1324413510260071,
+  "drawn": 233871
+ },
+ "cam03": {
+  "draw_s": 0.02,
+  "nonbg_frac": 0.04979563841997704,
+  "drawn": 233871
+ },
+ "rotate_changes_pixels": 0.2031053162005543,
+ "cam03_vs_sheet": {
+  "iou": 0.9589059372915277,
+  "sheet_frac": 0.05186724895719605,
+  "viewer_frac": 0.050887433162565436
+ },
+ "console_errors": []
+}

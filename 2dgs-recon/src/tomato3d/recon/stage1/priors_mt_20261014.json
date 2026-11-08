@@ -1,0 +1,185 @@
+{
+  "schema": "recon-stage1-priors-1",
+  "note": "Micro-Tom priors for session E (stage-1 reconstruction). Every value names its source; replace by destructive-session measurements when they exist. Not used as FSP calibration targets (E7).",
+  "ratios": {
+    "middle_pair_rel": {
+      "range": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "user_stated",
+      "source_ref": "session E prompt E4 (dissected compound 2026-10-10 + photo scale, +-2 mm): middle pair largest = 1.0"
+    },
+    "basal_pair_rel": {
+      "range": [
+        0.7,
+        0.77
+      ],
+      "source_kind": "user_stated",
+      "source_ref": "session E prompt E4: basal pair 0.70-0.77 of the middle pair"
+    },
+    "distal_pair_rel": {
+      "range": [
+        0.7,
+        1.0
+      ],
+      "source_kind": "bound_only",
+      "source_ref": "NOT GIVEN; bounded by the basal value and the middle-pair maximum; kept as bound_only, no evidence (E2 prompt item 2)"
+    },
+    "terminal_rel": {
+      "range": [
+        0.85,
+        0.95
+      ],
+      "source_kind": "user_assumed",
+      "source_ref": "session E prompt E4: terminal ~0.9 (range +-0.05 chosen by Claude Code to express the ~) - the +-0.05 width is user_assumed, provisional (E2 prompt item 2, 2026-10-14)"
+    },
+    "intercalary_rel": {
+      "range": [
+        0.35,
+        0.45
+      ],
+      "source_kind": "user_assumed",
+      "source_ref": "session E prompt E4: intercalary ~0.4 (+-0.05 by Claude Code); unseen intercalaries are NOT reconstructed (no count prior) - the +-0.05 width is user_assumed, provisional (E2 prompt item 2, 2026-10-14)"
+    },
+    "largest_leaflet_over_compound_length": {
+      "range": [
+        0.45,
+        0.55
+      ],
+      "source_kind": "user_assumed",
+      "source_ref": "session E prompt E4: largest leaflet ~ compound length x 0.5 (+-0.05 by Claude Code) - the +-0.05 width is user_assumed, provisional (E2 prompt item 2, 2026-10-14)"
+    },
+    "length_over_width": {
+      "range": [
+        1.4,
+        1.7
+      ],
+      "source_kind": "user_stated",
+      "source_ref": "session E prompt E4: aspect 1.4-1.7"
+    },
+    "primary_pairs": {
+      "value": 3,
+      "source_kind": "user_stated",
+      "source_ref": "session E prompt E4: 3 primary pairs (before per-rank measurement)"
+    },
+    "pairs_symmetric": {
+      "value": true,
+      "source_kind": "user_stated",
+      "source_ref": "session E prompt E4"
+    }
+  },
+  "shape_pool": {
+    "path": "handoff/leaflet_shape_20261014/microtom_leaflet_contours_20261014.json",
+    "source_kind": "user_measured_photo",
+    "source_ref": "user 2026-10-14 'shape: use this as the reference'; 28 dissected Micro-Tom leaflets, contours in mm; ONE position-free set (rows / columns carry no meaning, user-confirmed; E2 prompt item 2) - drawn uniformly, no size class",
+    "limits": "not pressed flat: curled leaflets project smaller; shadow / brown margins partly in or out; length = min-area rectangle incl. petiolule",
+    "path_note": "2026-10-15: references/references_20261014/ disappeared from disk (logged by another session); same v2 pool (28 valid contours, meta version 2) read from the copy named in the session E prompt"
+  },
+  "phyllotaxis": {
+    "divergence_deg": {
+      "value": 137.5,
+      "source_kind": "literature_generic",
+      "source_ref": "golden-angle spiral, generic for spiral phyllotaxis; NOT a Micro-Tom measurement - used only to flag azimuth-order inconsistencies, never to place a leaf"
+    },
+    "tolerance_deg": {
+      "value": 45.0,
+      "source_kind": "proposal",
+      "source_ref": "Claude Code 2026-10-14, flagging tolerance only"
+    }
+  },
+  "geometry": {
+    "single_angle_max_bend_deg": {
+      "value": 25.0,
+      "source_kind": "proposal",
+      "source_ref": "Claude Code 2026-10-14: above this base-half vs tip-half elevation difference the compound is corrected per segment (alpha definition), not with one angle"
+    },
+    "min_side_dx_fraction": {
+      "value": 0.35,
+      "source_kind": "proposal",
+      "source_ref": "Claude Code 2026-10-14: a side view resolves a compound's elevation only if its horizontal extent across the view is at least this fraction of its top-view length"
+    },
+    "blade_curvature": {
+      "value": "flat",
+      "source_kind": "assumption",
+      "source_ref": "leaflet blade curvature deferred (O7); every output says so"
+    }
+  },
+  "evaluation": {
+    "node_tolerance_mm": {
+      "value": 3.0,
+      "source_kind": "proposal",
+      "source_ref": "Claude Code 2026-10-14"
+    },
+    "overlap_success_rel_error": {
+      "value": 0.1,
+      "source_kind": "candidate",
+      "source_ref": "Itakura & Hosoi 2018 success criterion (area error < 10 %), a candidate per the prompt"
+    }
+  },
+  "gates": {
+    "slot_max_background_frac": {
+      "value": 0.1,
+      "source_kind": "candidate",
+      "source_ref": "E2 gate (Claude Code 2026-10-14): a hidden slot is created only if at most this share of its expected footprint (mirrored partner mask, or the tip disk) shows observed BACKGROUND; more -> the leaflet would be visible there, so it is absent / not created"
+    },
+    "slot_min_covered_frac": {
+      "value": 0.8,
+      "source_kind": "candidate",
+      "source_ref": "E2 gate: and at least this share of the footprint is covered by another observed leaf (positive evidence of an occluder); weaker evidence -> not created"
+    },
+    "cut_evidence_frac": {
+      "value": 0.1,
+      "source_kind": "candidate",
+      "source_ref": "E2 gate: a visible leaflet counts as cut when the occluder pixels inside its convex hull reach this share of its visible area; the per-sample cut probability is evidence / (2 x this), clipped to [0, 1]"
+    },
+    "terminal_probe_radius_rel": {
+      "value": 0.25,
+      "source_kind": "candidate",
+      "source_ref": "E2: expected terminal footprint = disk of this x compound top length at the axis tip"
+    }
+  },
+  "uncertainty": {
+    "blade_curvature_max_deg": {
+      "value": 60.0,
+      "source_kind": "user_assumed",
+      "source_ref": "Claude Code proposal 2026-10-14 (provisional): per sample, roll and bend arcs of a leaflet blade drawn uniformly in [0, max]; area factor = g(roll) x g(bend), g(phi) = (phi/2) / sin(phi/2) - expresses the flat-blade assumption (O7) as an uncertainty, not a correction of the point estimate"
+    },
+    "elevation_sd_source": {
+      "value": "measurement",
+      "source_kind": "derived",
+      "source_ref": "per half: robust sd of the side-view pixel heights the elevation was read from (E3), propagated; not calibrated on the test truth"
+    }
+  },
+  "leaf_age": {
+    "LEAFLET_GROWTH_ORDER": {
+      "value": "basipetal",
+      "source_kind": "literature_generic",
+      "source_ref": "Session G G1/G3 (user rule 2026-10-14 19:55: terminal first -> pair nearest the main stem last); pending_registry in tools/microtom_parameters.csv"
+    },
+    "LEAFLET_STAGGER_DD": {
+      "scenarios": {
+        "low": 19.0,
+        "base": 38.0,
+        "high": 76.0
+      },
+      "source_kind": "user_assumed",
+      "source_ref": "pending_registry: Session G G3 declared scenarios (0.5 / 1 / 2 x PHYLLOCHRON 37.9); no Micro-Tom data; never pooled, never chosen after results"
+    },
+    "PHYLLOCHRON_DD": {
+      "value": 37.9,
+      "source_kind": "literature_other_cultivar",
+      "source_ref": "fallback copy of tools/microtom_parameters.csv PHYLLOCHRON (Merlice, unavailable for Micro-Tom); the registry value is read when present"
+    },
+    "LEAFLET_MID_DD": {
+      "value": 150.0,
+      "source_kind": "user_assumed",
+      "source_ref": "engine parameter table tools/vtc_development.py MID_DD[Leaflet] (V3 explicit conditional hypothesis)"
+    },
+    "LEAFLET_K": {
+      "value": 0.025,
+      "source_kind": "user_assumed",
+      "source_ref": "engine parameter table tools/vtc_development.py K[Leaflet] (V3 explicit conditional hypothesis)"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+ "started": "2026-10-26T12:04:51Z",
+ "groimp_noise": {
+  "packet_umol_s": 0.004,
+  "variance_ratio": 0.8955801104972375,
+  "ratio_se": 0.11043152607484655,
+  "sigma_scale": 1.0
+ },
+ "S0": {
+  "intercepted_triangles": 0.4509086635374585,
+  "intercepted_discs": 0.451713890324529,
+  "rel_diff": 0.00178578690583003,
+  "area_b_mm2": 404.00000000000193,
+  "area_true_mm2": 400.0,
+  "area_rel_diff": 0.010000000000004715,
+  "discs": 2500,
+  "area_a_mm2": 628.3185307179587,
+  "version": "v2",
+  "pass": true
+ },
+ "S1": {
+  "state": 71,
+  "dag": 59.9,
+  "static_rule": "v2 coincident receivers credited 1/2 (GATES_DIAGNOSIS.md)",
+  "static_raw_v1_per_plant": {
+   "p1": 0.7815097219682462,
+   "p2": 1.0492622106417817
+  },
+  "coincident_light_share": 0.22345286656193095,
+  "per_plant": {
+   "p1": {
+    "static": 0.7014034349234682,
+    "static_seeds": [
+     0.7003702364923344,
+     0.7024366333546019
+    ],
+    "dynamic": 0.648,
+    "diff": -0.05340343492346822,
+    "rel_diff": -0.07613797176413199,
+    "sigma_groimp": 0.05296804451453606,
+    "sigma_static": 0.0010331984311337528,
+    "tolerance_2sigma": 0.1059562407542278,
+    "passed": true
+   },
+   "p2": {
+    "static": 0.9240745077237414,
+    "static_seeds": [
+     0.9248124795262479,
+     0.9233365359212341
+    ],
+    "dynamic": 0.932,
+    "diff": 0.007925492276258606,
+    "rel_diff": 0.00857668100354954,
+    "sigma_groimp": 0.06079718768902856,
+    "sigma_static": 0.0007379718025068982,
+    "tolerance_2sigma": 0.1216033327384782,
+    "passed": true
+   }
+  },
+  "leaflets": 112,
+  "z_mean": -0.036095058693023443,
+  "z_sd": 0.8837776221855721,
+  "share_within_2": 0.9732142857142857,
+  "receivers_per_triangle": 16,
+  "seeds": [
+   101,
+   202
+  ],
+  "pass": true
+ },
+ "S2": {
+  "per_plant": {
+   "p1": {
+    "triangle_area_m2": 0.0032975905763013777,
+    "state_area_m2": 0.003297590573572682,
+    "rel_diff": 8.27481665993036e-10,
+    "lai_pot_top": 0.9473112830512432,
+    "lai_tray_cell": 0.9159973823059383
+   },
+   "p2": {
+    "triangle_area_m2": 0.004285134715179767,
+    "state_area_m2": 0.004285134776437968,
+    "rel_diff": 1.429551320199806e-08,
+    "lai_pot_top": 1.2310068127491431,
+    "lai_tray_cell": 1.1903151986610465
+   }
+  },
+  "tolerance": 0.0001,
+  "pass": true
+ },
+ "S3": {
+  "per_plant": {
+   "p1": {
+    "lue_static_gC_mol": 0.4815194171888309,
+    "band_2sigma": [
+     0.40482867425810276,
+     0.45938638692828426
+    ],
+    "lue_dynamic_gC_mol": 0.45859140675146476,
+    "passed": true,
+    "dynamic_gross_gC": 0.014977228471377441,
+    "dynamic_absorbed_umol_s": 0.648
+   },
+   "p2": {
+    "lue_static_gC_mol": 0.47882876700554156,
+    "band_2sigma": [
+     0.4137184405454716,
+     0.4646315744345961
+    ],
+    "lue_dynamic_gC_mol": 0.4463647983298489,
+    "passed": true,
+    "dynamic_gross_gC": 0.020967004398988326,
+    "dynamic_absorbed_umol_s": 0.932
+   }
+  },
+  "hours": 14.0,
+  "pass": true
+ },
+ "S1b": {
+  "intervals": 57,
+  "sum_static_raw_v1": 56.779698012159166,
+  "sum_static": 51.1776231668058,
+  "sum_dynamic": 51.604000000000006,
+  "ratio": 1.0083313137033445,
+  "sigma_pooled_rel": 0.008840766893600506,
+  "pass": true
+ },
+ "all_pass": true,
+ "finished": "2026-10-26T12:05:59Z"
+}

@@ -1,0 +1,369 @@
+{
+ "status": "waiting_user_confirmation",
+ "note": "listed, not interpreted",
+ "rows": [
+  {
+   "excel_row": 9,
+   "plant": "dt01",
+   "rank": 1,
+   "cells": {
+    "I": 9.7
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 10,
+   "plant": "dt01",
+   "rank": 2,
+   "cells": {
+    "E": 1,
+    "I": 9.1
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 11,
+   "plant": "dt01",
+   "rank": 3,
+   "cells": {
+    "G": 3,
+    "I": 9
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 12,
+   "plant": "dt01",
+   "rank": 4,
+   "cells": {
+    "I": 8.8
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 15,
+   "plant": "dt01",
+   "rank": 7,
+   "cells": {
+    "E": 2
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 17,
+   "plant": "dt01",
+   "rank": 9,
+   "cells": {
+    "E": 3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 19,
+   "plant": "dt02",
+   "rank": 1,
+   "cells": {
+    "E": "1,20",
+    "F": "1,5,20",
+    "G": "2,5,20",
+    "H": 3,
+    "I": 9
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 20,
+   "plant": "dt02",
+   "rank": 2,
+   "cells": {
+    "I": 6.8
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 21,
+   "plant": "dt02",
+   "rank": 3,
+   "cells": {
+    "I": 4.5
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 22,
+   "plant": "dt02",
+   "rank": 4,
+   "cells": {
+    "E": "1,60",
+    "I": 4.5
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 23,
+   "plant": "dt02",
+   "rank": 5,
+   "cells": {
+    "I": 4.3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 24,
+   "plant": "dt02",
+   "rank": 6,
+   "cells": {
+    "I": 3.3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 25,
+   "plant": "dt02",
+   "rank": 7,
+   "cells": {
+    "E": 1
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 26,
+   "plant": "dt02",
+   "rank": 8,
+   "cells": {
+    "H": 3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 27,
+   "plant": "dt02",
+   "rank": 9,
+   "cells": {
+    "E": 2
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 29,
+   "plant": "dt03",
+   "rank": 1,
+   "cells": {
+    "H": 8.1
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 30,
+   "plant": "dt03",
+   "rank": 2,
+   "cells": {
+    "H": 5.4
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 33,
+   "plant": "dt03",
+   "rank": 5,
+   "cells": {
+    "E": 1,
+    "F": "7,5",
+    "H": 4.3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 34,
+   "plant": "dt03",
+   "rank": 6,
+   "cells": {
+    "F": "7,5"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 35,
+   "plant": "dt03",
+   "rank": 7,
+   "cells": {
+    "F": "5,-5"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 36,
+   "plant": "dt03",
+   "cells": {
+    "E": 2,
+    "F": "5,10",
+    "H": "4,4"
+   },
+   "reason": "no main-stem rank or empty n,theta"
+  },
+  {
+   "excel_row": 37,
+   "plant": "dt03",
+   "cells": {
+    "F": "5,10"
+   },
+   "reason": "no main-stem rank or empty n,theta"
+  },
+  {
+   "excel_row": 40,
+   "plant": "dt04",
+   "rank": 2,
+   "cells": {
+    "E": 1,
+    "F": "5,10"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 41,
+   "plant": "dt04",
+   "rank": 3,
+   "cells": {
+    "E": 4.2,
+    "F": "5,10",
+    "G": 1,
+    "H": 4,
+    "J": 8.7
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 42,
+   "plant": "dt04",
+   "rank": 4,
+   "cells": {
+    "F": "5,30",
+    "J": 8.3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 43,
+   "plant": "dt04",
+   "rank": 5,
+   "cells": {
+    "F": "5,30"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 44,
+   "plant": "dt04",
+   "rank": 6,
+   "cells": {
+    "H": 4,
+    "J": 5.3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 45,
+   "plant": "dt04",
+   "rank": 7,
+   "cells": {
+    "H": 4,
+    "J": 4.2
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 46,
+   "plant": "dt04",
+   "cells": {
+    "C": 8
+   },
+   "reason": "no main-stem rank or empty n,theta"
+  },
+  {
+   "excel_row": 53,
+   "plant": "dt05",
+   "rank": 5,
+   "cells": {
+    "E": 1,
+    "F": 1,
+    "G": "5,30"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 54,
+   "plant": "dt05",
+   "rank": 6,
+   "cells": {
+    "F": 2,
+    "G": "5,50"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 55,
+   "plant": "dt05",
+   "rank": 7,
+   "cells": {
+    "F": 3,
+    "G": "7,60",
+    "I": "4,4"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 57,
+   "plant": "dt05",
+   "rank": 9,
+   "cells": {
+    "H": 3
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 59,
+   "plant": "dt06",
+   "cells": {
+    "E": 1,
+    "F": 1,
+    "G": "5,10",
+    "J": 8.1
+   },
+   "reason": "no main-stem rank or empty n,theta"
+  },
+  {
+   "excel_row": 60,
+   "plant": "dt06",
+   "rank": 1,
+   "cells": {
+    "F": 2,
+    "G": "7,0",
+    "I": "4,4",
+    "J": 6,
+    "K": 3.7
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 61,
+   "plant": "dt06",
+   "rank": 2,
+   "cells": {
+    "F": 3,
+    "G": "7,30",
+    "I": 4
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  },
+  {
+   "excel_row": 62,
+   "plant": "dt06",
+   "rank": 3,
+   "cells": {
+    "F": 4,
+    "G": "5,45"
+   },
+   "reason": "side-axis/truss/fruit/thickness cells"
+  }
+ ]
+}

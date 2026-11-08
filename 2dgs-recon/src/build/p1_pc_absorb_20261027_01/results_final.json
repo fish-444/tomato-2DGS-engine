@@ -1,0 +1,1548 @@
+{
+ "status": "R3-1b_unaccepted",
+ "scale": "conditional_on_unvalidated_scale",
+ "no_photo_data": true,
+ "params": {
+  "edge_mm": 3.0,
+  "angle_deg": 30.0,
+  "blade_like_normal_deg": 20.0,
+  "trace_mm": 3.0,
+  "k_local_normal": 8,
+  "curv_k": 16,
+  "curv_mm": 5.0,
+  "lres_k": 64,
+  "lres_mm": 10.0,
+  "model_k": 24,
+  "model_mm": 10.0,
+  "quad_min": 10,
+  "plane_min": 3,
+  "side_mm": 15.0,
+  "side_min": 20,
+  "missing": 3.0,
+  "ab_reg": 2.0,
+  "gamma": 1.0,
+  "p1": 0.6,
+  "margin": 0.25,
+  "rounds": 5,
+  "band_mm": 5.0,
+  "hide": 0.2,
+  "repeats": 5,
+  "norm_sample": 2000,
+  "auc_min": 0.6,
+  "cal": [
+   1,
+   3,
+   6,
+   8
+  ],
+  "rep": [
+   2,
+   4,
+   5,
+   7
+  ],
+  "cover_min": 0.5,
+  "raster_mm": 0.25,
+  "ellipse_k": 1.5,
+  "cell_mm": 10.0
+ },
+ "weights": {
+  "sets": {
+   "A": [
+    1.0,
+    0.0
+   ],
+   "B": [
+    0.7,
+    0.3
+   ],
+   "C": [
+    0.5,
+    0.5
+   ]
+  },
+  "geometry": {
+   "G1": 0.3,
+   "G2": 0.2,
+   "G3": 0.2,
+   "G4": 0.15,
+   "G5": 0.05,
+   "G6": 0.1
+  },
+  "colour": {
+   "C1": 0.35,
+   "C2": 0.35,
+   "C3": 0.2,
+   "C4": 0.1
+  }
+ },
+ "smoke": false,
+ "nodes": {
+  "nodes": 33746,
+  "blade": 33042,
+  "blade_like_axis2": 704,
+  "blade_like_axis2_in_nodes": 704,
+  "edges": 1994376,
+  "reference": {
+   "radius_p25_mm": 0.3158803814107721,
+   "elong_p75": 2.911890095470058
+  },
+  "stage1_unassigned_blade": 5275
+ },
+ "colour_noise": {
+  "local_rgb_rms_diff_0_255": 47.93,
+  "p90": 90.21,
+  "L_std": 11.23,
+  "surfels": 27550
+ },
+ "edge_norm": {
+  "G2": 0.2944713156691483,
+  "G4": 0.24884911944033233,
+  "G5": 0.047127003363593684,
+  "C3": 15.12709149350681
+ },
+ "unary_norm": {
+  "G3": 0.13421386243845046,
+  "C1": 0.6675281281455084,
+  "C2": 10.242560779116001,
+  "C4": 0.023634470129558587
+ },
+ "band": {
+  "n": 3922,
+  "per_leaf": {
+   "1": 734,
+   "2": 205,
+   "3": 699,
+   "4": 352,
+   "5": 643,
+   "6": 687,
+   "7": 474,
+   "8": 128
+  }
+ },
+ "colour_auc": {
+  "C1": {
+   "auc": 0.614,
+   "n": 2197
+  },
+  "C2": {
+   "auc": 0.628,
+   "n": 2197
+  },
+  "C4": {
+   "auc": 0.709,
+   "n": 2197
+  },
+  "C3": {
+   "auc": 0.529,
+   "n": 26514,
+   "note": "edge feature: P(|dL-res| cross-leaf edge > same-leaf edge)"
+  }
+ },
+ "colour_weights_used_in_B_C": {
+  "C1": 0.35,
+  "C2": 0.35,
+  "C3": 0.0,
+  "C4": 0.1
+ },
+ "self_test": {
+  "A": {
+   "pooled": {
+    "calibration": {
+     "accuracy": 0.8151102768653214,
+     "wrong_rate": 0.18488972313467855,
+     "coverage": 0.9471111111111111,
+     "accepted": 2131,
+     "hidden": 2250,
+     "accuracy_per_repeat": [
+      0.8254716981132075,
+      0.8379629629629629,
+      0.8130841121495327,
+      0.8013698630136986,
+      0.7970660146699267
+     ]
+    },
+    "report": {
+     "accuracy": 0.8330019880715706,
+     "wrong_rate": 0.16699801192842942,
+     "coverage": 0.9035928143712575,
+     "accepted": 1509,
+     "hidden": 1670,
+     "accuracy_per_repeat": [
+      0.8443708609271523,
+      0.8581081081081081,
+      0.8377483443708609,
+      0.8122866894197952,
+      0.8132911392405063
+     ]
+    },
+    "all": {
+     "accuracy": 0.8225274725274725,
+     "wrong_rate": 0.17747252747252748,
+     "coverage": 0.9285714285714286,
+     "accepted": 3640,
+     "hidden": 3920,
+     "accuracy_per_repeat": [
+      0.8333333333333334,
+      0.8461538461538461,
+      0.8232876712328767,
+      0.8057455540355677,
+      0.8041379310344827
+     ]
+    }
+   },
+   "repeats": [
+    {
+     "calibration": {
+      "hidden": 450,
+      "accepted": 424,
+      "correct": 350,
+      "accuracy": 0.8254716981132075,
+      "wrong_rate": 0.17452830188679244,
+      "coverage": 0.9422222222222222
+     },
+     "report": {
+      "hidden": 334,
+      "accepted": 302,
+      "correct": 255,
+      "accuracy": 0.8443708609271523,
+      "wrong_rate": 0.15562913907284767,
+      "coverage": 0.9041916167664671
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 726,
+      "correct": 605,
+      "accuracy": 0.8333333333333334,
+      "wrong_rate": 0.16666666666666666,
+      "coverage": 0.9260204081632653
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 138,
+       "accepted": 131,
+       "correct": 124
+      },
+      "2": {
+       "hidden": 40,
+       "accepted": 36,
+       "correct": 30
+      },
+      "3": {
+       "hidden": 150,
+       "accepted": 143,
+       "correct": 140
+      },
+      "4": {
+       "hidden": 63,
+       "accepted": 61,
+       "correct": 60
+      },
+      "5": {
+       "hidden": 141,
+       "accepted": 128,
+       "correct": 93
+      },
+      "6": {
+       "hidden": 143,
+       "accepted": 132,
+       "correct": 70
+      },
+      "7": {
+       "hidden": 90,
+       "accepted": 77,
+       "correct": 72
+      },
+      "8": {
+       "hidden": 19,
+       "accepted": 18,
+       "correct": 16
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 456,
+      "accepted": 432,
+      "correct": 362,
+      "accuracy": 0.8379629629629629,
+      "wrong_rate": 0.16203703703703703,
+      "coverage": 0.9473684210526315
+     },
+     "report": {
+      "hidden": 328,
+      "accepted": 296,
+      "correct": 254,
+      "accuracy": 0.8581081081081081,
+      "wrong_rate": 0.14189189189189189,
+      "coverage": 0.9024390243902439
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 728,
+      "correct": 616,
+      "accuracy": 0.8461538461538461,
+      "wrong_rate": 0.15384615384615385,
+      "coverage": 0.9285714285714286
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 145,
+       "accepted": 140,
+       "correct": 130
+      },
+      "2": {
+       "hidden": 40,
+       "accepted": 37,
+       "correct": 32
+      },
+      "3": {
+       "hidden": 162,
+       "accepted": 159,
+       "correct": 158
+      },
+      "4": {
+       "hidden": 67,
+       "accepted": 65,
+       "correct": 64
+      },
+      "5": {
+       "hidden": 128,
+       "accepted": 118,
+       "correct": 92
+      },
+      "6": {
+       "hidden": 133,
+       "accepted": 117,
+       "correct": 65
+      },
+      "7": {
+       "hidden": 93,
+       "accepted": 76,
+       "correct": 66
+      },
+      "8": {
+       "hidden": 16,
+       "accepted": 16,
+       "correct": 9
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 457,
+      "accepted": 428,
+      "correct": 348,
+      "accuracy": 0.8130841121495327,
+      "wrong_rate": 0.18691588785046728,
+      "coverage": 0.936542669584245
+     },
+     "report": {
+      "hidden": 327,
+      "accepted": 302,
+      "correct": 253,
+      "accuracy": 0.8377483443708609,
+      "wrong_rate": 0.16225165562913907,
+      "coverage": 0.9235474006116208
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 730,
+      "correct": 601,
+      "accuracy": 0.8232876712328767,
+      "wrong_rate": 0.17671232876712328,
+      "coverage": 0.9311224489795918
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 142,
+       "accepted": 140,
+       "correct": 134
+      },
+      "2": {
+       "hidden": 37,
+       "accepted": 36,
+       "correct": 29
+      },
+      "3": {
+       "hidden": 148,
+       "accepted": 143,
+       "correct": 138
+      },
+      "4": {
+       "hidden": 61,
+       "accepted": 58,
+       "correct": 58
+      },
+      "5": {
+       "hidden": 127,
+       "accepted": 114,
+       "correct": 83
+      },
+      "6": {
+       "hidden": 144,
+       "accepted": 124,
+       "correct": 63
+      },
+      "7": {
+       "hidden": 102,
+       "accepted": 94,
+       "correct": 83
+      },
+      "8": {
+       "hidden": 23,
+       "accepted": 21,
+       "correct": 13
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 455,
+      "accepted": 438,
+      "correct": 351,
+      "accuracy": 0.8013698630136986,
+      "wrong_rate": 0.19863013698630136,
+      "coverage": 0.9626373626373627
+     },
+     "report": {
+      "hidden": 329,
+      "accepted": 293,
+      "correct": 238,
+      "accuracy": 0.8122866894197952,
+      "wrong_rate": 0.18771331058020477,
+      "coverage": 0.8905775075987842
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 731,
+      "correct": 589,
+      "accuracy": 0.8057455540355677,
+      "wrong_rate": 0.19425444596443228,
+      "coverage": 0.9323979591836735
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 139,
+       "accepted": 134,
+       "correct": 130
+      },
+      "2": {
+       "hidden": 46,
+       "accepted": 41,
+       "correct": 34
+      },
+      "3": {
+       "hidden": 154,
+       "accepted": 152,
+       "correct": 149
+      },
+      "4": {
+       "hidden": 66,
+       "accepted": 61,
+       "correct": 58
+      },
+      "5": {
+       "hidden": 121,
+       "accepted": 112,
+       "correct": 77
+      },
+      "6": {
+       "hidden": 137,
+       "accepted": 130,
+       "correct": 58
+      },
+      "7": {
+       "hidden": 96,
+       "accepted": 79,
+       "correct": 69
+      },
+      "8": {
+       "hidden": 25,
+       "accepted": 22,
+       "correct": 14
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 432,
+      "accepted": 409,
+      "correct": 326,
+      "accuracy": 0.7970660146699267,
+      "wrong_rate": 0.20293398533007334,
+      "coverage": 0.9467592592592593
+     },
+     "report": {
+      "hidden": 352,
+      "accepted": 316,
+      "correct": 257,
+      "accuracy": 0.8132911392405063,
+      "wrong_rate": 0.18670886075949367,
+      "coverage": 0.8977272727272727
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 725,
+      "correct": 583,
+      "accuracy": 0.8041379310344827,
+      "wrong_rate": 0.19586206896551725,
+      "coverage": 0.9247448979591837
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 148,
+       "accepted": 145,
+       "correct": 141
+      },
+      "2": {
+       "hidden": 44,
+       "accepted": 40,
+       "correct": 35
+      },
+      "3": {
+       "hidden": 117,
+       "accepted": 116,
+       "correct": 111
+      },
+      "4": {
+       "hidden": 83,
+       "accepted": 76,
+       "correct": 74
+      },
+      "5": {
+       "hidden": 137,
+       "accepted": 125,
+       "correct": 86
+      },
+      "6": {
+       "hidden": 137,
+       "accepted": 121,
+       "correct": 55
+      },
+      "7": {
+       "hidden": 88,
+       "accepted": 75,
+       "correct": 62
+      },
+      "8": {
+       "hidden": 30,
+       "accepted": 27,
+       "correct": 19
+      }
+     }
+    }
+   ]
+  },
+  "B": {
+   "pooled": {
+    "calibration": {
+     "accuracy": 0.8134957825679475,
+     "wrong_rate": 0.18650421743205248,
+     "coverage": 0.9484444444444444,
+     "accepted": 2134,
+     "hidden": 2250,
+     "accuracy_per_repeat": [
+      0.8231132075471698,
+      0.8352402745995423,
+      0.8107476635514018,
+      0.8013698630136986,
+      0.7960687960687961
+     ]
+    },
+    "report": {
+     "accuracy": 0.8325581395348837,
+     "wrong_rate": 0.16744186046511628,
+     "coverage": 0.9011976047904192,
+     "accepted": 1505,
+     "hidden": 1670,
+     "accuracy_per_repeat": [
+      0.8415841584158416,
+      0.8484848484848485,
+      0.8389261744966443,
+      0.8095238095238095,
+      0.8242811501597445
+     ]
+    },
+    "all": {
+     "accuracy": 0.8213794998625996,
+     "wrong_rate": 0.17862050013740038,
+     "coverage": 0.9283163265306122,
+     "accepted": 3639,
+     "hidden": 3920,
+     "accuracy_per_repeat": [
+      0.8308115543328748,
+      0.840599455040872,
+      0.8223140495867769,
+      0.8046448087431693,
+      0.8083333333333333
+     ]
+    }
+   },
+   "repeats": [
+    {
+     "calibration": {
+      "hidden": 450,
+      "accepted": 424,
+      "correct": 349,
+      "accuracy": 0.8231132075471698,
+      "wrong_rate": 0.17688679245283018,
+      "coverage": 0.9422222222222222
+     },
+     "report": {
+      "hidden": 334,
+      "accepted": 303,
+      "correct": 255,
+      "accuracy": 0.8415841584158416,
+      "wrong_rate": 0.15841584158415842,
+      "coverage": 0.907185628742515
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 727,
+      "correct": 604,
+      "accuracy": 0.8308115543328748,
+      "wrong_rate": 0.16918844566712518,
+      "coverage": 0.9272959183673469
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 138,
+       "accepted": 132,
+       "correct": 125
+      },
+      "2": {
+       "hidden": 40,
+       "accepted": 36,
+       "correct": 30
+      },
+      "3": {
+       "hidden": 150,
+       "accepted": 143,
+       "correct": 140
+      },
+      "4": {
+       "hidden": 63,
+       "accepted": 61,
+       "correct": 61
+      },
+      "5": {
+       "hidden": 141,
+       "accepted": 129,
+       "correct": 93
+      },
+      "6": {
+       "hidden": 143,
+       "accepted": 131,
+       "correct": 68
+      },
+      "7": {
+       "hidden": 90,
+       "accepted": 77,
+       "correct": 71
+      },
+      "8": {
+       "hidden": 19,
+       "accepted": 18,
+       "correct": 16
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 456,
+      "accepted": 437,
+      "correct": 365,
+      "accuracy": 0.8352402745995423,
+      "wrong_rate": 0.16475972540045766,
+      "coverage": 0.9583333333333334
+     },
+     "report": {
+      "hidden": 328,
+      "accepted": 297,
+      "correct": 252,
+      "accuracy": 0.8484848484848485,
+      "wrong_rate": 0.15151515151515152,
+      "coverage": 0.9054878048780488
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 734,
+      "correct": 617,
+      "accuracy": 0.840599455040872,
+      "wrong_rate": 0.15940054495912806,
+      "coverage": 0.9362244897959183
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 145,
+       "accepted": 142,
+       "correct": 133
+      },
+      "2": {
+       "hidden": 40,
+       "accepted": 37,
+       "correct": 32
+      },
+      "3": {
+       "hidden": 162,
+       "accepted": 158,
+       "correct": 157
+      },
+      "4": {
+       "hidden": 67,
+       "accepted": 65,
+       "correct": 64
+      },
+      "5": {
+       "hidden": 128,
+       "accepted": 117,
+       "correct": 90
+      },
+      "6": {
+       "hidden": 133,
+       "accepted": 121,
+       "correct": 66
+      },
+      "7": {
+       "hidden": 93,
+       "accepted": 78,
+       "correct": 66
+      },
+      "8": {
+       "hidden": 16,
+       "accepted": 16,
+       "correct": 9
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 457,
+      "accepted": 428,
+      "correct": 347,
+      "accuracy": 0.8107476635514018,
+      "wrong_rate": 0.18925233644859812,
+      "coverage": 0.936542669584245
+     },
+     "report": {
+      "hidden": 327,
+      "accepted": 298,
+      "correct": 250,
+      "accuracy": 0.8389261744966443,
+      "wrong_rate": 0.1610738255033557,
+      "coverage": 0.9113149847094801
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 726,
+      "correct": 597,
+      "accuracy": 0.8223140495867769,
+      "wrong_rate": 0.17768595041322313,
+      "coverage": 0.9260204081632653
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 142,
+       "accepted": 140,
+       "correct": 134
+      },
+      "2": {
+       "hidden": 37,
+       "accepted": 35,
+       "correct": 29
+      },
+      "3": {
+       "hidden": 148,
+       "accepted": 143,
+       "correct": 138
+      },
+      "4": {
+       "hidden": 61,
+       "accepted": 58,
+       "correct": 58
+      },
+      "5": {
+       "hidden": 127,
+       "accepted": 113,
+       "correct": 82
+      },
+      "6": {
+       "hidden": 144,
+       "accepted": 124,
+       "correct": 62
+      },
+      "7": {
+       "hidden": 102,
+       "accepted": 92,
+       "correct": 81
+      },
+      "8": {
+       "hidden": 23,
+       "accepted": 21,
+       "correct": 13
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 455,
+      "accepted": 438,
+      "correct": 351,
+      "accuracy": 0.8013698630136986,
+      "wrong_rate": 0.19863013698630136,
+      "coverage": 0.9626373626373627
+     },
+     "report": {
+      "hidden": 329,
+      "accepted": 294,
+      "correct": 238,
+      "accuracy": 0.8095238095238095,
+      "wrong_rate": 0.19047619047619047,
+      "coverage": 0.8936170212765957
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 732,
+      "correct": 589,
+      "accuracy": 0.8046448087431693,
+      "wrong_rate": 0.1953551912568306,
+      "coverage": 0.9336734693877551
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 139,
+       "accepted": 134,
+       "correct": 130
+      },
+      "2": {
+       "hidden": 46,
+       "accepted": 42,
+       "correct": 34
+      },
+      "3": {
+       "hidden": 154,
+       "accepted": 152,
+       "correct": 149
+      },
+      "4": {
+       "hidden": 66,
+       "accepted": 61,
+       "correct": 58
+      },
+      "5": {
+       "hidden": 121,
+       "accepted": 112,
+       "correct": 77
+      },
+      "6": {
+       "hidden": 137,
+       "accepted": 130,
+       "correct": 58
+      },
+      "7": {
+       "hidden": 96,
+       "accepted": 79,
+       "correct": 69
+      },
+      "8": {
+       "hidden": 25,
+       "accepted": 22,
+       "correct": 14
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 432,
+      "accepted": 407,
+      "correct": 324,
+      "accuracy": 0.7960687960687961,
+      "wrong_rate": 0.20393120393120392,
+      "coverage": 0.9421296296296297
+     },
+     "report": {
+      "hidden": 352,
+      "accepted": 313,
+      "correct": 258,
+      "accuracy": 0.8242811501597445,
+      "wrong_rate": 0.1757188498402556,
+      "coverage": 0.8892045454545454
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 720,
+      "correct": 582,
+      "accuracy": 0.8083333333333333,
+      "wrong_rate": 0.19166666666666668,
+      "coverage": 0.9183673469387755
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 148,
+       "accepted": 144,
+       "correct": 141
+      },
+      "2": {
+       "hidden": 44,
+       "accepted": 39,
+       "correct": 35
+      },
+      "3": {
+       "hidden": 117,
+       "accepted": 116,
+       "correct": 111
+      },
+      "4": {
+       "hidden": 83,
+       "accepted": 76,
+       "correct": 75
+      },
+      "5": {
+       "hidden": 137,
+       "accepted": 123,
+       "correct": 86
+      },
+      "6": {
+       "hidden": 137,
+       "accepted": 120,
+       "correct": 53
+      },
+      "7": {
+       "hidden": 88,
+       "accepted": 75,
+       "correct": 62
+      },
+      "8": {
+       "hidden": 30,
+       "accepted": 27,
+       "correct": 19
+      }
+     }
+    }
+   ]
+  },
+  "C": {
+   "pooled": {
+    "calibration": {
+     "accuracy": 0.8134957825679475,
+     "wrong_rate": 0.18650421743205248,
+     "coverage": 0.9484444444444444,
+     "accepted": 2134,
+     "hidden": 2250,
+     "accuracy_per_repeat": [
+      0.8211764705882353,
+      0.8356164383561644,
+      0.810304449648712,
+      0.8032036613272311,
+      0.7960687960687961
+     ]
+    },
+    "report": {
+     "accuracy": 0.8312292358803987,
+     "wrong_rate": 0.16877076411960132,
+     "coverage": 0.9011976047904192,
+     "accepted": 1505,
+     "hidden": 1670,
+     "accuracy_per_repeat": [
+      0.8388157894736842,
+      0.847457627118644,
+      0.8366666666666667,
+      0.8075601374570447,
+      0.8253968253968254
+     ]
+    },
+    "all": {
+     "accuracy": 0.8208298983237153,
+     "wrong_rate": 0.1791701016762847,
+     "coverage": 0.9283163265306122,
+     "accepted": 3639,
+     "hidden": 3920,
+     "accuracy_per_repeat": [
+      0.8285322359396433,
+      0.8403819918144612,
+      0.8211829436038515,
+      0.804945054945055,
+      0.8088642659279779
+     ]
+    }
+   },
+   "repeats": [
+    {
+     "calibration": {
+      "hidden": 450,
+      "accepted": 425,
+      "correct": 349,
+      "accuracy": 0.8211764705882353,
+      "wrong_rate": 0.17882352941176471,
+      "coverage": 0.9444444444444444
+     },
+     "report": {
+      "hidden": 334,
+      "accepted": 304,
+      "correct": 255,
+      "accuracy": 0.8388157894736842,
+      "wrong_rate": 0.1611842105263158,
+      "coverage": 0.9101796407185628
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 729,
+      "correct": 604,
+      "accuracy": 0.8285322359396433,
+      "wrong_rate": 0.17146776406035666,
+      "coverage": 0.9298469387755102
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 138,
+       "accepted": 133,
+       "correct": 125
+      },
+      "2": {
+       "hidden": 40,
+       "accepted": 37,
+       "correct": 30
+      },
+      "3": {
+       "hidden": 150,
+       "accepted": 143,
+       "correct": 140
+      },
+      "4": {
+       "hidden": 63,
+       "accepted": 61,
+       "correct": 61
+      },
+      "5": {
+       "hidden": 141,
+       "accepted": 129,
+       "correct": 93
+      },
+      "6": {
+       "hidden": 143,
+       "accepted": 131,
+       "correct": 68
+      },
+      "7": {
+       "hidden": 90,
+       "accepted": 77,
+       "correct": 71
+      },
+      "8": {
+       "hidden": 19,
+       "accepted": 18,
+       "correct": 16
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 456,
+      "accepted": 438,
+      "correct": 366,
+      "accuracy": 0.8356164383561644,
+      "wrong_rate": 0.1643835616438356,
+      "coverage": 0.9605263157894737
+     },
+     "report": {
+      "hidden": 328,
+      "accepted": 295,
+      "correct": 250,
+      "accuracy": 0.847457627118644,
+      "wrong_rate": 0.15254237288135594,
+      "coverage": 0.899390243902439
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 733,
+      "correct": 616,
+      "accuracy": 0.8403819918144612,
+      "wrong_rate": 0.15961800818553887,
+      "coverage": 0.9349489795918368
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 145,
+       "accepted": 142,
+       "correct": 133
+      },
+      "2": {
+       "hidden": 40,
+       "accepted": 37,
+       "correct": 32
+      },
+      "3": {
+       "hidden": 162,
+       "accepted": 158,
+       "correct": 157
+      },
+      "4": {
+       "hidden": 67,
+       "accepted": 65,
+       "correct": 64
+      },
+      "5": {
+       "hidden": 128,
+       "accepted": 115,
+       "correct": 88
+      },
+      "6": {
+       "hidden": 133,
+       "accepted": 122,
+       "correct": 67
+      },
+      "7": {
+       "hidden": 93,
+       "accepted": 78,
+       "correct": 66
+      },
+      "8": {
+       "hidden": 16,
+       "accepted": 16,
+       "correct": 9
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 457,
+      "accepted": 427,
+      "correct": 346,
+      "accuracy": 0.810304449648712,
+      "wrong_rate": 0.18969555035128804,
+      "coverage": 0.9343544857768052
+     },
+     "report": {
+      "hidden": 327,
+      "accepted": 300,
+      "correct": 251,
+      "accuracy": 0.8366666666666667,
+      "wrong_rate": 0.16333333333333333,
+      "coverage": 0.9174311926605505
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 727,
+      "correct": 597,
+      "accuracy": 0.8211829436038515,
+      "wrong_rate": 0.17881705639614856,
+      "coverage": 0.9272959183673469
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 142,
+       "accepted": 140,
+       "correct": 134
+      },
+      "2": {
+       "hidden": 37,
+       "accepted": 36,
+       "correct": 30
+      },
+      "3": {
+       "hidden": 148,
+       "accepted": 143,
+       "correct": 138
+      },
+      "4": {
+       "hidden": 61,
+       "accepted": 58,
+       "correct": 58
+      },
+      "5": {
+       "hidden": 127,
+       "accepted": 114,
+       "correct": 82
+      },
+      "6": {
+       "hidden": 144,
+       "accepted": 123,
+       "correct": 61
+      },
+      "7": {
+       "hidden": 102,
+       "accepted": 92,
+       "correct": 81
+      },
+      "8": {
+       "hidden": 23,
+       "accepted": 21,
+       "correct": 13
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 455,
+      "accepted": 437,
+      "correct": 351,
+      "accuracy": 0.8032036613272311,
+      "wrong_rate": 0.19679633867276888,
+      "coverage": 0.9604395604395605
+     },
+     "report": {
+      "hidden": 329,
+      "accepted": 291,
+      "correct": 235,
+      "accuracy": 0.8075601374570447,
+      "wrong_rate": 0.19243986254295534,
+      "coverage": 0.8844984802431611
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 728,
+      "correct": 586,
+      "accuracy": 0.804945054945055,
+      "wrong_rate": 0.19505494505494506,
+      "coverage": 0.9285714285714286
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 139,
+       "accepted": 134,
+       "correct": 130
+      },
+      "2": {
+       "hidden": 46,
+       "accepted": 41,
+       "correct": 33
+      },
+      "3": {
+       "hidden": 154,
+       "accepted": 151,
+       "correct": 148
+      },
+      "4": {
+       "hidden": 66,
+       "accepted": 61,
+       "correct": 58
+      },
+      "5": {
+       "hidden": 121,
+       "accepted": 111,
+       "correct": 76
+      },
+      "6": {
+       "hidden": 137,
+       "accepted": 130,
+       "correct": 59
+      },
+      "7": {
+       "hidden": 96,
+       "accepted": 78,
+       "correct": 68
+      },
+      "8": {
+       "hidden": 25,
+       "accepted": 22,
+       "correct": 14
+      }
+     }
+    },
+    {
+     "calibration": {
+      "hidden": 432,
+      "accepted": 407,
+      "correct": 324,
+      "accuracy": 0.7960687960687961,
+      "wrong_rate": 0.20393120393120392,
+      "coverage": 0.9421296296296297
+     },
+     "report": {
+      "hidden": 352,
+      "accepted": 315,
+      "correct": 260,
+      "accuracy": 0.8253968253968254,
+      "wrong_rate": 0.1746031746031746,
+      "coverage": 0.8948863636363636
+     },
+     "all": {
+      "hidden": 784,
+      "accepted": 722,
+      "correct": 584,
+      "accuracy": 0.8088642659279779,
+      "wrong_rate": 0.19113573407202217,
+      "coverage": 0.9209183673469388
+     },
+     "per_leaf": {
+      "1": {
+       "hidden": 148,
+       "accepted": 144,
+       "correct": 141
+      },
+      "2": {
+       "hidden": 44,
+       "accepted": 40,
+       "correct": 36
+      },
+      "3": {
+       "hidden": 117,
+       "accepted": 116,
+       "correct": 111
+      },
+      "4": {
+       "hidden": 83,
+       "accepted": 79,
+       "correct": 78
+      },
+      "5": {
+       "hidden": 137,
+       "accepted": 121,
+       "correct": 84
+      },
+      "6": {
+       "hidden": 137,
+       "accepted": 120,
+       "correct": 53
+      },
+      "7": {
+       "hidden": 88,
+       "accepted": 75,
+       "correct": 62
+      },
+      "8": {
+       "hidden": 30,
+       "accepted": 27,
+       "correct": 19
+      }
+     }
+    }
+   ]
+  }
+ },
+ "choice": {
+  "chosen": "B",
+  "rule": "calibration half: highest accuracy with coverage >= 0.5 (ties within 0.005 -> higher coverage)",
+  "reached_cover_min": true,
+  "report_half": {
+   "accuracy": 0.8325581395348837,
+   "wrong_rate": 0.16744186046511628,
+   "coverage": 0.9011976047904192,
+   "accepted": 1505,
+   "hidden": 1670,
+   "accuracy_per_repeat": [
+    0.8415841584158416,
+    0.8484848484848485,
+    0.8389261744966443,
+    0.8095238095238095,
+    0.8242811501597445
+   ]
+  },
+  "gate_pass": false
+ },
+ "tag": "gate_failed_viewing_only",
+ "final": {
+  "A": {
+   "rounds": [
+    3900,
+    441,
+    115,
+    57,
+    151
+   ],
+   "absorbed": 4664,
+   "unpainted_nodes": 1315,
+   "reasons": {
+    "unpainted_contested": 457,
+    "unpainted_not_connected": 267,
+    "unpainted_other_layer": 591,
+    "unpainted_low_colour_confidence": 0
+   }
+  },
+  "B": {
+   "rounds": [
+    3950,
+    379,
+    126,
+    73,
+    100
+   ],
+   "absorbed": 4628,
+   "unpainted_nodes": 1351,
+   "reasons": {
+    "unpainted_contested": 493,
+    "unpainted_not_connected": 267,
+    "unpainted_other_layer": 591,
+    "unpainted_low_colour_confidence": 0
+   }
+  },
+  "C": {
+   "rounds": [
+    3992,
+    359,
+    138,
+    69,
+    84
+   ],
+   "absorbed": 4642,
+   "unpainted_nodes": 1337,
+   "reasons": {
+    "unpainted_contested": 479,
+    "unpainted_not_connected": 267,
+    "unpainted_other_layer": 591,
+    "unpainted_low_colour_confidence": 0
+   }
+  }
+ },
+ "table": {
+  "denominator": "all 46719 reconstructed surfels",
+  "stage1": {
+   "blade_painted": {
+    "count": 27767,
+    "mm2": 7623.6
+   },
+   "blade_unpainted": {
+    "count": 5275,
+    "mm2": 5384.1
+   },
+   "axis1": {
+    "count": 2955,
+    "mm2": 2804.7
+   },
+   "axis2_all": {
+    "count": 10722,
+    "mm2": 7143.1
+   },
+   "axis2_blade_like_retested": {
+    "count": 704,
+    "mm2": 1443.4
+   },
+   "axis2_blade_like_painted": {
+    "count": 0,
+    "mm2": 0.0
+   }
+  },
+  "R7": {
+   "blade_painted": {
+    "count": 30239,
+    "mm2": 8155.9
+   },
+   "blade_unpainted": {
+    "count": 2803,
+    "mm2": 3952.7
+   },
+   "axis1": {
+    "count": 2955,
+    "mm2": 2804.7
+   },
+   "axis2_all": {
+    "count": 10722,
+    "mm2": 7143.1
+   },
+   "axis2_blade_like_retested": {
+    "count": 704,
+    "mm2": 1443.4
+   },
+   "axis2_blade_like_painted": {
+    "count": 0,
+    "mm2": 0.0
+   }
+  },
+  "R8_pc": {
+   "blade_painted": {
+    "count": 31772,
+    "mm2": 8531.6
+   },
+   "blade_unpainted": {
+    "count": 1270,
+    "mm2": 2619.4
+   },
+   "axis1": {
+    "count": 2955,
+    "mm2": 2804.7
+   },
+   "axis2_all": {
+    "count": 10722,
+    "mm2": 7143.1
+   },
+   "axis2_blade_like_retested": {
+    "count": 704,
+    "mm2": 1443.4
+   },
+   "axis2_blade_like_painted": {
+    "count": 623,
+    "mm2": 1165.2
+   }
+  },
+  "total_blade_mm2": 9732.0
+ },
+ "per_leaf_mm2": {
+  "1": {
+   "stage1": 1656.7,
+   "R7": 1807.2,
+   "R8_pc": 1900.9,
+   "uncertain_near": 2433.1
+  },
+  "2": {
+   "stage1": 756.8,
+   "R7": 835.3,
+   "R8_pc": 1080.2,
+   "uncertain_near": 65.6
+  },
+  "3": {
+   "stage1": 986.8,
+   "R7": 1294.6,
+   "R8_pc": 1158.4,
+   "uncertain_near": 69.7
+  },
+  "4": {
+   "stage1": 677.9,
+   "R7": 714.8,
+   "R8_pc": 817.2,
+   "uncertain_near": 34.2
+  },
+  "5": {
+   "stage1": 1547.8,
+   "R7": 1472.8,
+   "R8_pc": 2040.3,
+   "uncertain_near": 153.4
+  },
+  "6": {
+   "stage1": 1264.6,
+   "R7": 1039.6,
+   "R8_pc": 1670.6,
+   "uncertain_near": 56.1
+  },
+  "7": {
+   "stage1": 1310.1,
+   "R7": 1456.2,
+   "R8_pc": 1539.9,
+   "uncertain_near": 70.4
+  },
+  "8": {
+   "stage1": 167.3,
+   "R7": 184.1,
+   "R8_pc": 213.4,
+   "uncertain_near": 25.9
+  }
+ },
+ "leaf4_5_boundary": {
+  "nodes_with_top2_4_and_5": 413,
+  "to_4": 239,
+  "to_5": 125,
+  "unpainted": 49
+ },
+ "agreement_with_R7_informational": {
+  "labelled_in_both": 29907,
+  "equal": 0.963,
+  "absorbed_and_R7_labelled": 2142,
+  "absorbed_equal": 0.8651
+ },
+ "seconds": 171,
+ "uncertain_near_corrected": {
+  "note": "kernel's uncertain_near counted zero-probability (unconnected) nodes under leaf 1 (argmax of zeros); corrected locally: p1 > 0 required. Method unchanged.",
+  "mm2": {
+   "1": 52.6,
+   "2": 65.6,
+   "3": 69.7,
+   "4": 34.2,
+   "5": 153.4,
+   "6": 56.1,
+   "7": 70.4,
+   "8": 25.9
+  },
+  "zero_probability_unpainted": 858,
+  "zero_probability_mm2": 2364.8
+ }
+}

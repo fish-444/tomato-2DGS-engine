@@ -1,0 +1,29 @@
+{
+ "labels": [
+  "user_skeleton_seeds",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b-style_unaccepted",
+  "no_reference"
+ ],
+ "plant_id": "n_04",
+ "leaves": 17,
+ "tree_file": "data\\skeletons\\n_04\\2026-10-24\\plant_tree_v1.json",
+ "areas": "from distance_baseline labels (lower bound)",
+ "engine_round_trip": {
+  "validate_initial": true,
+  "organs": 72,
+  "back_leaves": 17,
+  "back_nodes": 17,
+  "max_base_diff_mm": 2.842170943040401e-14,
+  "round_trip_pass": true,
+  "dropped": []
+ },
+ "one_click_leaves": [
+  "n_04-L01",
+  "n_04-L10",
+  "n_04-L12",
+  "n_04-L15",
+  "n_04-L16"
+ ]
+}

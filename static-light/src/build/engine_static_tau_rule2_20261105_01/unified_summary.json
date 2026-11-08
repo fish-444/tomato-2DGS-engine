@@ -1,0 +1,9 @@
+{
+ "scenario_signs": {
+  "n": 80,
+  "flips_vs_rule1": 0,
+  "flips_vs_classifier": 0,
+  "cls_changed_vs_rule1": 0,
+  "max_abs_pp_vs_classifier": 0.01944131734157306
+ }
+}

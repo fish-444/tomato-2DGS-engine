@@ -1,0 +1,15 @@
+check,measure,target_source,v1_median,v2_median,v2_1_median,rule,v1,v2,v2_1,note
+1,main-stem compound leaves,hand 7.33 +- 2.34 (3-9),12.0,11.5,12.0,"PASS if median in [3, 9]",FAIL,FAIL,FAIL,template v2.4 end rule 10-13 leaves (addendum: report)
+2,largest leaflet length (mm),v1 ref <= 22.5,31.78,13.428,15.247,report-only,-,-,-,
+3,leaflet L/W max,v1 ref 1.0-2.2,2.36,2.36,3.101,report-only,-,-,-,library outlines
+4,leaflets per main compound,hand mean 6.18,5.5,6.083,6.087,PASS if |diff| <= 0.5,FAIL,PASS,PASS,
+5,first truss initiation (DAG),literature 35-40 d after sowing,19.93,16.43,16.43,report-only,-,-,-,
+6,"accepted gross (gC/d, last 10 d)",v1 ref 0.023-0.045,0.017,0.004,0.004,report-only,-,-,-,"single plant, point lamp 0.60 m"
+7,no organ above its max mass (max ratio),guard,0.773,0.652,0.651,PASS if <= 1,PASS,PASS,PASS,max over seeds
+R1,fruits per plant,hand 3.5,16.0,31.0,48.0,report-only,-,-,-,v2.1: 4 flowers per truss (C4W)
+R2,side leaves per side axis,hand 1.5,0.0,6.0,6.0,report-only,-,-,-,
+R3,"height (mm), median",reconstruction 86.2 +- 6.1; user target v2.1 mean 130,85.36,29.123,128.264,report-only,-,-,-,v2.1 seed mean 129.9 mm
+R4,trusses per plant,hand 1.5,4.0,9.0,12.0,report-only,-,-,-,
+R5,main axis stop (DAG),end rule,30.93,27.43,27.93,report-only,-,-,-,side stop median v1 - / v2 41.9 / v2.1 43.9
+R6,leaf area (cm2),C5 target 29.3-43.6 leaflet-only,38.6,13.033,12.827,report-only,-,-,-,base_leaf_area_below_target
+R7,dry mass (g),-,1.016,0.344,0.348,report-only,-,-,-,

@@ -1,0 +1,16 @@
+# conditional_on_unvalidated_scale; skeleton_labels_ungraded; R3-1b-style_unaccepted; per-plant canopy silhouette ratio r and area (b); R3-1b pilot leaves r 0.0572 (canopy); n_*/t2_*/R3-1b rows copied, not recomputed
+id,set,n_surfels,n_accepted_views,n_views_silhouette,canopy_area_a_mm2,silhouette_ratio,ratio_min,ratio_max,canopy_area_b_mm2,assigned_area_b_mm2,unassigned_area_b_mm2,n_leaves,n_leaves_empty,source
+e_01,e_new,60522,42,8,140692.9,0.062968,0.055299,0.071032,8859.2,7653.2,1206.0,12,0,this_run
+e_04,e_new,49387,42,8,105252.3,0.060958,0.051047,0.072476,6416.0,5599.4,816.6,12,0,this_run
+e_05,e_new,81571,52,8,213529.0,0.056927,0.050085,0.061771,12155.7,10148.1,2007.6,16,0,this_run
+e_07,e_new,57144,41,8,129152.4,0.061757,0.048818,0.06986,7976.1,6420.0,1556.0,14,1,this_run
+R3-1b,pilot,46719,,8,105501.0,0.0572,,,6031.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+n_01,nine_10-26,68739,,8,163100.0,0.0534,,,8706.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+n_02,nine_10-26,52844,,8,89375.0,0.0659,,,5894.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+n_03,nine_10-26,39157,,8,45236.0,0.0899,,,4065.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+n_04,nine_10-26,81531,,8,179811.0,0.0561,,,10086.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+n_05,nine_10-26,84894,,8,151209.0,0.0601,,,9094.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+n_06,nine_10-26,71675,,8,104042.0,0.0641,,,6668.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+t2_02,nine_10-26,77301,,8,172600.0,0.0376,,,6492.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+t2_04,nine_10-26,57049,,8,68816.0,0.09,,,6194.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)
+t2_05,nine_10-26,61443,,8,74932.0,0.0745,,,5585.0,,,,,copied build/p1_plant_model_20261026_01/summary.csv (unchanged)

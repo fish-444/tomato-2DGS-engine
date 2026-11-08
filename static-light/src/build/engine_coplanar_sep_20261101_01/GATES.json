@@ -1,0 +1,101 @@
+{
+ "G1_D": {
+  "max_abs_diff_vs_local_v1": 0.0,
+  "passed": true
+ },
+ "G1_T": {
+  "T": {
+   "total_rel_diff": 0.0,
+   "self_rel_diff": 0.0,
+   "passed": true
+  },
+  "T_fold": {
+   "total_rel_diff": 0.0,
+   "self_rel_diff": 0.0,
+   "passed": true
+  },
+  "T_foldcup": {
+   "total_rel_diff": 0.0,
+   "self_rel_diff": 0.0,
+   "passed": true
+  }
+ },
+ "G1_pass": true,
+ "G2": {
+  "T_flat_offset_0.05": {
+   "max_abs_rel_leaflet_area_diff": 8.881784197001252e-16,
+   "G2_pass": true,
+   "note": "offset coordinates written at full float precision"
+  },
+  "T_flat_offset_0.1": {
+   "max_abs_rel_leaflet_area_diff": 1.9984014443252818e-15,
+   "G2_pass": true,
+   "note": "offset coordinates written at full float precision"
+  },
+  "T_flat_offset_0.2": {
+   "max_abs_rel_leaflet_area_diff": 8.881784197001252e-16,
+   "G2_pass": true,
+   "note": "offset coordinates written at full float precision"
+  }
+ },
+ "G2_pass": true,
+ "G3": {
+  "coincident_share_off01_seed101": 0.09826981165600569,
+  "passed": false
+ },
+ "G4": {
+  "T_off0.05": -0.0005696001811865692,
+  "T_off0.2": 0.0010951831312786542
+ },
+ "G4_pass": true,
+ "coincident_share": {
+  "T|v1": {
+   "101": 0.32118425728500355,
+   "202": 0.3210287846481876
+  },
+  "T|tau0.07": {
+   "101": 0.32118425728500355,
+   "202": 0.3210287846481876
+  },
+  "T_off0.05|v1": {
+   "101": 0.09825870646766169,
+   "202": 0.09841417910447761
+  },
+  "T_off0.05|tau0.07": {
+   "101": 0.09825870646766169,
+   "202": 0.09841417910447761
+  },
+  "T_off0.1|v1": {
+   "101": 0.09826981165600569,
+   "202": 0.0984252842928216
+  },
+  "T_off0.1|tau0.07": {
+   "101": 0.09826981165600569,
+   "202": 0.0984252842928216
+  },
+  "T_off0.2|v1": {
+   "101": 0.09828091684434968,
+   "202": 0.09840307391613362
+  },
+  "T_off0.2|tau0.07": {
+   "101": 0.09828091684434968,
+   "202": 0.09840307391613362
+  },
+  "T_fold|v1": {
+   "101": 0.0009928260312580066,
+   "202": 0.0007526261849859083
+  },
+  "T_fold|tau0.07": {
+   "101": 0.0009928260312580066,
+   "202": 0.0007526261849859083
+  },
+  "T_foldcup|v1": {
+   "101": 0.00229933110367893,
+   "202": 0.0025501672240802677
+  },
+  "T_foldcup|tau0.07": {
+   "101": 0.00229933110367893,
+   "202": 0.0025501672240802677
+  }
+ }
+}

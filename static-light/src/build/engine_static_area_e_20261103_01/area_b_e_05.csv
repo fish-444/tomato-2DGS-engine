@@ -1,0 +1,18 @@
+# e_05; conditional_on_unvalidated_scale; skeleton_labels_ungraded; R3-1b-style_unaccepted; area_b = area_a x canopy silhouette ratio r=0.056927 (8 views); per leaf = sum over status-1 surfels (lower bound); labels build/p1_dz10_labels_20261101_01/labels_tprox_e_05_524f23114149.npz
+leaf_uid,area_b_mm2,n_surfels,source
+e_05-L01,981.938,5335,recon_area_b_ungraded_labels
+e_05-L02,671.858,3090,recon_area_b_ungraded_labels
+e_05-L03,375.723,1713,recon_area_b_ungraded_labels
+e_05-L04,1115.604,4613,recon_area_b_ungraded_labels
+e_05-L05,391.525,1231,recon_area_b_ungraded_labels
+e_05-L06,581.163,3490,recon_area_b_ungraded_labels
+e_05-L07,667.185,3672,recon_area_b_ungraded_labels
+e_05-L08,81.748,264,recon_area_b_ungraded_labels
+e_05-L09,774.486,5646,recon_area_b_ungraded_labels
+e_05-L10,461.590,3951,recon_area_b_ungraded_labels
+e_05-L11,364.162,3474,recon_area_b_ungraded_labels
+e_05-L12,1226.140,11571,recon_area_b_ungraded_labels
+e_05-L13,360.668,4457,recon_area_b_ungraded_labels
+e_05-L14,962.046,10060,recon_area_b_ungraded_labels
+e_05-L15,529.940,6291,recon_area_b_ungraded_labels
+e_05-L16,602.327,7461,recon_area_b_ungraded_labels

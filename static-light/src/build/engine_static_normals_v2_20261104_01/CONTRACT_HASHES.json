@@ -1,0 +1,12 @@
+{
+ "build/engine_static_normals_20261104_01/out_k1/real/pooled.npz": "7cf6fd163bffcf547016e809be5e4592450c8e821918155cd8536c30fe8f4a59",
+ "build/engine_static_normals_20261104_01/out_k1/synthetic/calibration.json": "a56dd103d503edbf4b3d8bb1f76c6527a15358b3e1529e1601ef78232a1ea38e",
+ "build/engine_static_normals_20261104_01/kaggle_data/normals_config.json": "36a00cb8f8dcd75a09b48dd2560affa1f4a5731037979d5a7bd459db60318300",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_R3-1b_engine.obj": "6f26b6552a4d290145f56b30c56040b39d5a8c256a223b34e1b8173af3f483b6",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_n_01_engine.obj": "8327d506e7f59219b5b919dc694a60db72b0d17f0330b5d14b54360a97520e23",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_n_02_engine.obj": "86cefa2257232f1e9a7e472830f418db276dae8ae1b0bab2ced2a99eb9ba99ef",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_n_03_engine.obj": "24a21f76ba9af447c1eea8d14cc0032ac1cd9042149f372e158954f2b5ce1e38",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_n_04_engine.obj": "d99a5837ef4bd58284dab92a9603fc048b545bca4a4b7734ee62a54cbc06dd6c",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_n_05_engine.obj": "682eac4878d83ec28d5b4a7122eaf3feb18d4bbb6d698742a6a13827381c4875",
+ "build/mtg_build_v2_clicks_20261103_02/static/mtg_n_06_engine.obj": "8ddc2865230f2b692773f15a9591c1bfceb7cdac206afe0690c828c760e55b2f"
+}

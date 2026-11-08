@@ -1,0 +1,23 @@
+{
+ "plants": 1,
+ "main_leaves": 7,
+ "leaves_optimised": 7,
+ "gate1_pass": 7,
+ "not_fitted": 0,
+ "median_err_azimuth": 3.2061061126236723,
+ "median_err_theta0": 17.996548088002882,
+ "median_err_dtheta": 14.344929461405073,
+ "median_err_length_rel": 0.23926278195412487,
+ "median_stem_offset_mm": 1.9699225763824941,
+ "start_median_err_azimuth": 11.797787170848068,
+ "start_median_err_theta0": 8.369414696488327,
+ "start_median_stem_offset_mm": 1.2384573024940857,
+ "acceptable": {
+  "theta0": false,
+  "dtheta": false,
+  "azimuth": true,
+  "length": false,
+  "stem": true
+ },
+ "all_acceptable": false
+}

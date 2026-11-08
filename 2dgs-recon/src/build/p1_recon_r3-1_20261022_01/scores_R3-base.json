@@ -1,0 +1,271 @@
+{
+ "run": "R3-base",
+ "reference_human": true,
+ "per_view_auto": {
+  "20261021_060430586_iOS.jpg": {
+   "iou": 0.7225638502849178,
+   "iou_no_band": 0.8122517546232365,
+   "edge_f2": 0.910091335519963,
+   "stem_coverage": 0.46038212981174487,
+   "ref_px": 77527,
+   "render_px": 90547,
+   "excluded_px": 0
+  },
+  "20261021_060343438_iOS.jpg": {
+   "iou": 0.6654949016042087,
+   "iou_no_band": 0.7405000625931785,
+   "edge_f2": 0.8800448141153636,
+   "stem_coverage": 0.32642378559463986,
+   "ref_px": 91194,
+   "render_px": 113955,
+   "excluded_px": 0
+  },
+  "20261021_060603671_iOS.jpg": {
+   "iou": 0.8363640335069843,
+   "iou_no_band": 0.9167897053843549,
+   "edge_f2": 0.9564279184621014,
+   "stem_coverage": 0.6878005509127411,
+   "ref_px": 86467,
+   "render_px": 81676,
+   "excluded_px": 0
+  },
+  "20261021_060528683_iOS.jpg": {
+   "iou": 0.8100213693003635,
+   "iou_no_band": 0.9047215256102622,
+   "edge_f2": 0.9519339453040869,
+   "stem_coverage": 0.7037170696499458,
+   "ref_px": 66265,
+   "render_px": 64176,
+   "excluded_px": 0
+  }
+ },
+ "per_view_human": {
+  "20261021_060430586_iOS.jpg": {
+   "iou": 0.8065613898922356,
+   "iou_no_band": 0.8700942106804647,
+   "edge_f2": 0.9375528323632919,
+   "stem_coverage": 0.7455762792922047,
+   "ref_px": 91321,
+   "render_px": 90547,
+   "excluded_px": 507
+  },
+  "20261021_060343438_iOS.jpg": {
+   "iou": 0.7913042772106772,
+   "iou_no_band": 0.8775918515823936,
+   "edge_f2": 0.9435799465502379,
+   "stem_coverage": 0.42433234421364985,
+   "ref_px": 106628,
+   "render_px": 113955,
+   "excluded_px": 0
+  },
+  "20261021_060603671_iOS.jpg": {
+   "iou": 0.8350064958072517,
+   "iou_no_band": 0.8960190593298494,
+   "edge_f2": 0.9502096368361479,
+   "stem_coverage": 0.707935735150925,
+   "ref_px": 89231,
+   "render_px": 81676,
+   "excluded_px": 0
+  },
+  "20261021_060528683_iOS.jpg": {
+   "iou": 0.8117014028892009,
+   "iou_no_band": 0.8986203189392582,
+   "edge_f2": 0.9527666584234633,
+   "stem_coverage": 0.7350833521912952,
+   "ref_px": 66127,
+   "render_px": 64176,
+   "excluded_px": 1
+  }
+ },
+ "auto": {
+  "judge": {
+   "clauses": {
+    "iou_no_band": {
+     "name": "band-excluded IoU",
+     "threshold": 0.85,
+     "median": 0.8584866401167494,
+     "views_below_floor": {
+      "060343438": 0.7405
+     },
+     "passes": false
+    },
+    "iou": {
+     "name": "raw IoU",
+     "threshold": 0.75,
+     "median": 0.7662926097926406,
+     "views_below_floor": {
+      "060343438": 0.6655
+     },
+     "passes": false
+    },
+    "edge_f2": {
+     "name": "edge F at 2 px",
+     "threshold": 0.9,
+     "median": 0.9310126404120249,
+     "views_below_floor": {},
+     "passes": true
+    },
+    "stem_coverage": {
+     "name": "stem coverage",
+     "threshold": 0.6,
+     "median": 0.574091340362243,
+     "views_below_floor": {
+      "060430586": 0.4604,
+      "060343438": 0.3264
+     },
+     "passes": false
+    },
+    "gap_iou": {
+     "name": "held-out minus training IoU",
+     "threshold": -0.03,
+     "median": -0.040182343825170164,
+     "passes": false
+    }
+   },
+   "accepted": false
+  },
+  "gap_iou": -0.040182343825170164,
+  "train_medians": {
+   "iou": 0.8064749536178107,
+   "iou_no_band": 0.8977404583962371,
+   "edge_f2": 0.9460194865504246,
+   "stem_coverage": 0.7043805934997645,
+   "psnr_plant": 15.627672876944782,
+   "depth_mad_m": 0.0036429762840270996,
+   "per_view": {}
+  }
+ },
+ "human": {
+  "judge": {
+   "clauses": {
+    "iou_no_band": {
+     "name": "band-excluded IoU",
+     "threshold": 0.85,
+     "median": 0.8868054554561215,
+     "views_below_floor": {},
+     "passes": true
+    },
+    "iou": {
+     "name": "raw IoU",
+     "threshold": 0.75,
+     "median": 0.8091313963907183,
+     "views_below_floor": {},
+     "passes": true
+    },
+    "edge_f2": {
+     "name": "edge F at 2 px",
+     "threshold": 0.9,
+     "median": 0.9468947916931929,
+     "views_below_floor": {},
+     "passes": true
+    },
+    "stem_coverage": {
+     "name": "stem coverage",
+     "threshold": 0.6,
+     "median": 0.7215095436711101,
+     "views_below_floor": {
+      "060343438": 0.4243
+     },
+     "passes": false
+    },
+    "gap_iou": {
+     "name": "held-out minus training IoU",
+     "threshold": -0.03,
+     "median": 0.0026564427729075524,
+     "passes": true
+    }
+   },
+   "accepted": false
+  },
+  "gap_iou": 0.0026564427729075524
+ },
+ "secondary_sets": {
+  "v2_heldout": {
+   "note": "training views in this split; vs auto masks",
+   "n": 4,
+   "medians": {
+    "iou": 0.8063750506970828,
+    "iou_no_band": 0.9003971058562142,
+    "edge_f2": 0.9421334484219794,
+    "stem_coverage": 0.6659585275678911
+   },
+   "per_view": {
+    "20261021_060429762_iOS.jpg": {
+     "iou": 0.7799376188958738,
+     "iou_no_band": 0.8801271417174262,
+     "edge_f2": 0.9266445924721597,
+     "stem_coverage": 0.5798443545932785,
+     "ref_px": 94298,
+     "render_px": 90027,
+     "excluded_px": 0
+    },
+    "20261021_060544649_iOS.jpg": {
+     "iou": 0.8328124824982919,
+     "iou_no_band": 0.9313394319845746,
+     "edge_f2": 0.9576223043717992,
+     "stem_coverage": 0.6275364616360177,
+     "ref_px": 82514,
+     "render_px": 81114,
+     "excluded_px": 0
+    },
+    "20261021_060600613_iOS.jpg": {
+     "iou": 0.8408782810114962,
+     "iou_no_band": 0.9206670699950023,
+     "edge_f2": 0.958120154044947,
+     "stem_coverage": 0.7043805934997645,
+     "ref_px": 88284,
+     "render_px": 84175,
+     "excluded_px": 0
+    },
+    "20261021_060317552_iOS.jpg": {
+     "iou": 0.7234227156276687,
+     "iou_no_band": 0.8003732722300244,
+     "edge_f2": 0.9136742038706713,
+     "stem_coverage": 0.782487504805844,
+     "ref_px": 112567,
+     "render_px": 139699,
+     "excluded_px": 0
+    }
+   }
+  },
+  "run01_heldout": {
+   "note": "training views in this split; vs auto masks",
+   "n": 3,
+   "medians": {
+    "iou": 0.8277552339569793,
+    "iou_no_band": 0.9173700685740734,
+    "edge_f2": 0.9621917673082325,
+    "stem_coverage": 0.7354432406468485
+   },
+   "per_view": {
+    "20261021_060326166_iOS.jpg": {
+     "iou": 0.7149536298407119,
+     "iou_no_band": 0.7847629195524773,
+     "edge_f2": 0.9051775022617291,
+     "stem_coverage": 0.11984126984126985,
+     "ref_px": 89282,
+     "render_px": 111726,
+     "excluded_px": 0
+    },
+    "20261021_060448335_iOS.jpg": {
+     "iou": 0.8277552339569793,
+     "iou_no_band": 0.9173700685740734,
+     "edge_f2": 0.9621917673082325,
+     "stem_coverage": 0.8105710024094542,
+     "ref_px": 99554,
+     "render_px": 104036,
+     "excluded_px": 0
+    },
+    "20261021_060605333_iOS.jpg": {
+     "iou": 0.8525666647633187,
+     "iou_no_band": 0.9375,
+     "edge_f2": 0.9677443935456427,
+     "stem_coverage": 0.7354432406468485,
+     "ref_px": 82599,
+     "render_px": 79621,
+     "excluded_px": 0
+    }
+   }
+  }
+ }
+}

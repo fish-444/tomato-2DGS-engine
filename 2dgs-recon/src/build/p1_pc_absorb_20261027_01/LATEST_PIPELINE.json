@@ -1,0 +1,78 @@
+{
+ "designated": "2026-10-27, by the user ('r8, 엽축흡수를 최신 파이프라인으로')",
+ "status": "R3-1b_unaccepted; conditional_on_unvalidated_scale; gate_failed_viewing_only; NOT adopted ('채택' not given)",
+ "stages": [
+  "0 inputs (pc_absorb_prep)",
+  "1 stage-1 separation = R7 step_1_diffusion (V-P base + uniform-reach diffusion; inherits the SAM-propagated base)",
+  "2 R8_pc: point-cloud-only absorption, geometry + colour, random walker (pc_absorb.py, Kaggle CPU), set B",
+  "3 R8_pc_rachis: rachis-like (axis_kind 2) absorption (pc_rachis.py, local)"
+ ],
+ "gates": {
+  "R8_pc": {
+   "report_half_accuracy": 0.8326,
+   "wrong_rate": 0.1674,
+   "coverage": 0.9012,
+   "gate": "accuracy >= 0.90 and wrong <= 0.05",
+   "pass_": false
+  },
+  "R8_pc_rachis": {
+   "pooled_accuracy": 0.9362,
+   "wrong_rate": 0.0638,
+   "coverage": 0.9805,
+   "gate": "accuracy >= 0.90 and wrong <= 0.05",
+   "pass_": false,
+   "weakest": "leaf 7 -> leaf 6 (0.849)"
+  }
+ },
+ "files": {
+  "stage1_source_R7_labels (step_1_diffusion)": {
+   "path": "build\\p1_local_diffusion_20261027_01\\vp_leaf4\\labels.npz",
+   "sha256": "1c7df8d72fd47bcccc0724acedd80474b4831a2ab0bcea1824737e7433e24b4b"
+  },
+  "bundle": {
+   "path": "build\\p1_pc_absorb_20261027_01\\kaggle_data\\r8pc_bundle.npz",
+   "sha256": "ec7cfbce98c8c642bd0b371585a9933b30d7e1529f08775a65ac44fa2016ed61"
+  },
+  "R8_pc labels": {
+   "path": "build\\p1_pc_absorb_20261027_01\\R8_pc\\labels.npz",
+   "sha256": "e1ff792be1c4efdff7e0a6238b95a2d532ca4eb0d92a5f66676dc9bdc554267b"
+  },
+  "R8_pc results (kernel)": {
+   "path": "build\\p1_pc_absorb_20261027_01\\kaggle_out\\results.json",
+   "sha256": "6d6b0e69a55573134379716ada835f26bf09803df57c5269a6249205fc816857"
+  },
+  "R8_pc results (final, uncertain-area corrected)": {
+   "path": "build\\p1_pc_absorb_20261027_01\\results_final.json",
+   "sha256": "1e5131b7e496cd6e3463eb2a73bf7cbd172d41502a7b110ad8b678279cef9b51"
+  },
+  "R8_pc_rachis labels": {
+   "path": "build\\p1_pc_absorb_20261027_01\\R8_pc_rachis\\labels_rachis.npz",
+   "sha256": "ddcbac13dce1d34c6d25102e1b417a24592cc592ce5177f3fa05beb4ca8cfe5d"
+  },
+  "R8_pc_rachis results": {
+   "path": "build\\p1_pc_absorb_20261027_01\\R8_pc_rachis\\results.json",
+   "sha256": "95c68577a07706956f6b8ddde4f93aa64badb1568934643a9304bd5ddb922f8f"
+  },
+  "R8_pc contract": {
+   "path": "build\\p1_pc_absorb_20261027_01\\CONTRACT.md",
+   "sha256": "86895f34a76aca647344a203f7a240d92ce6aa4013cd54e394ba1f8f50b73868"
+  },
+  "R8_pc_rachis contract": {
+   "path": "build\\p1_pc_absorb_20261027_01\\rachis\\CONTRACT.md",
+   "sha256": "7685caa6f55b6420c7dfacfcd2d3396da607238c4d1fc2c99b837cf27e9f62cf"
+  },
+  "R7 labels_tags_fixed": {
+   "path": "build\\p1_local_diffusion_20261027_01\\vp_leaf4\\labels_tags_fixed.npz",
+   "sha256": "4332b01a2c898ee78116c05a7ce3dab789c01bc454dfbac59c4e04d9eba14b99"
+  }
+ },
+ "commands": [
+  "python -X utf8 -m tomato3d.organs.pc_absorb_prep",
+  "kaggle datasets create -p build/p1_pc_absorb_20261027_01/kaggle_data -q ; kaggle kernels push -p build/p1_pc_absorb_20261027_01/kaggle_kernel (pc_absorb.py)",
+  "kaggle kernels output dolgfish/r8pc-absorb-r31b-20261027 -p build/p1_pc_absorb_20261027_01/kaggle_out ; copy kaggle_out/R8_pc",
+  "python -X utf8 -m tomato3d.organs.pc_rachis",
+  "build_viewer_r2 (tomato3d.organs.compound_cluster) -> artifact"
+ ],
+ "viewer": "https://claude.ai/artifact/L6eeTBPpemMYiUZfc8z7qD (v29)",
+ "port_8833": "closed 2026-10-27 at the user's request"
+}

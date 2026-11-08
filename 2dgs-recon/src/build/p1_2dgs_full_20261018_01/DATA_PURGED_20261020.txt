@@ -1,0 +1,3 @@
+Images / arrays / 3D files / archives in this folder were sent to the Recycle Bin on 2026-10-20 on the user's instruction (handoff/CLI_PROMPT_MAINT_P1_DATA_PURGE_2026-10-20.md). Records, code and weights were kept, so HTML review pages may show broken images.
+Deleted file types and counts: .jpg 2, .npz 4, .ply 12, .png 10, .splat 2
+Full list: build/maint_p1_purge_20261020_01/DELETED.csv

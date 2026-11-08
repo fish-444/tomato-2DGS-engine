@@ -1,0 +1,5 @@
+168226c92e9f1ca90d98aff1010c0cd3606b2b95049b46d6efd049b2f81fabe6 *Model_v2_2.rgg
+004927904f093f5374cf4f629047d1cb068b2fe1094a7666051ad27c8fa15d43 *parametersMicroTom_v2_2.rgg
+8dfb2afde500505e19aa54b8ff42a0209b0db4b8a96f6d6228c269aeb15d1012 *v2_2_config.json
+44fd87380a0c33e8ed5a40f804e06146f44de24c3673ace94b199a5a6e204cb0 *v2_2_request_m00.json
+status: FROZEN 2026-11-06 (user 'Fit height, then freeze'; CONTRACT Amendment 18); m00 instance of arm C4ACs4.10; SLA factor and leaflet growth order live in the request

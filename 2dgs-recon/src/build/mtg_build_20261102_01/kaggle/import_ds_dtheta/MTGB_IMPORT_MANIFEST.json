@@ -1,0 +1,584 @@
+{
+ "inputs": {
+  "work_model.tar.bin": "1350a971ab8234b99abdfd9680ba18cf3a40ce299a611e93c0fc56f842a67bb4",
+  "scenarios.tar.bin": "d19ca018b8df3badcf0ccc534ad859818735b32ad5f4dcc9965d8734a12121ef"
+ },
+ "core_sha256": "35c605d65d9b54fe64cdf93bf28ae44ae7a1b6ded03b461dedcb0156a5c22147",
+ "adapter": "A-dtheta (CONTRACT A1): work_dtheta/model = geo7 work_model + organs.rgg patch (A_dtheta_organs.rgg.diff)",
+ "organs_rgg_sha256": "0cf54d539f1506620b3a0ca7ff09c1828cf336732e78bfa9142dab00542573da",
+ "unpatched_work_model_sha256": "bafdd87f728ae79b29979246e1317864833b672c9e8e6edaf7959958978c072e",
+ "n_scenarios": 179,
+ "fill_report": {
+  "mtg_n_01": [
+   16,
+   16,
+   17
+  ],
+  "mtg_n_02": [
+   17,
+   17,
+   17
+  ],
+  "mtg_n_03": [
+   11,
+   11,
+   11
+  ],
+  "mtg_n_04": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf01": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf02": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf03": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf04": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf05": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf06": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf07": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf08": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf09": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf10": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf11": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf12": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf13": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf14": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf15": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_leaf16": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_04_stem": [
+   16,
+   16,
+   16
+  ],
+  "mtg_n_05": [
+   13,
+   13,
+   13
+  ],
+  "mtg_n_06": [
+   10,
+   10,
+   10
+  ],
+  "mtg_R3-1b": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf01": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf02": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf03": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf04": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf05": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf06": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf07": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf08": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf09": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf10": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_leaf11": [
+   11,
+   11,
+   11
+  ],
+  "mtg_R3-1b_stem": [
+   11,
+   11,
+   11
+  ],
+  "mtg_template_mean_v2draft": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf01": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf02": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf03": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf04": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf05": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf06": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf07": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf08": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf09": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf10": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_leaf11": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_sd0": [
+   11,
+   7,
+   7
+  ],
+  "mtg_template_mean_v2draft_stem": [
+   11,
+   7,
+   7
+  ],
+  "one_row_test": [
+   0,
+   1,
+   0
+  ],
+  "P01": [
+   15,
+   11,
+   11
+  ],
+  "P01_fixed375": [
+   0,
+   11,
+   0
+  ],
+  "P01_leaf01": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf02": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf03": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf04": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf05": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf06": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf07": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf08": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf09": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf10": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf11": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf12": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf13": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf14": [
+   15,
+   11,
+   11
+  ],
+  "P01_leaf15": [
+   15,
+   11,
+   11
+  ],
+  "P01_stem": [
+   15,
+   11,
+   11
+  ],
+  "P02": [
+   13,
+   9,
+   9
+  ],
+  "P02_fixed375": [
+   0,
+   9,
+   0
+  ],
+  "P02_leaf01": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf02": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf03": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf04": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf05": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf06": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf07": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf08": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf09": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf10": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf11": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf12": [
+   13,
+   9,
+   9
+  ],
+  "P02_leaf13": [
+   13,
+   9,
+   9
+  ],
+  "P02_stem": [
+   13,
+   9,
+   9
+  ],
+  "P03": [
+   12,
+   8,
+   8
+  ],
+  "P03_fixed375": [
+   0,
+   8,
+   0
+  ],
+  "P04": [
+   13,
+   9,
+   9
+  ],
+  "P04_fixed375": [
+   0,
+   9,
+   0
+  ],
+  "P05": [
+   13,
+   9,
+   9
+  ],
+  "P05_fixed375": [
+   0,
+   9,
+   0
+  ],
+  "P06": [
+   16,
+   12,
+   12
+  ],
+  "P06_fixed375": [
+   0,
+   12,
+   0
+  ],
+  "P07": [
+   8,
+   4,
+   4
+  ],
+  "P07_fixed375": [
+   0,
+   4,
+   0
+  ],
+  "P08": [
+   15,
+   11,
+   11
+  ],
+  "P08_fixed375": [
+   0,
+   11,
+   0
+  ],
+  "P09": [
+   12,
+   8,
+   8
+  ],
+  "P09_fixed375": [
+   0,
+   8,
+   0
+  ],
+  "P10": [
+   9,
+   5,
+   5
+  ],
+  "P10_fixed375": [
+   0,
+   5,
+   0
+  ],
+  "P11": [
+   9,
+   5,
+   5
+  ],
+  "P11_fixed375": [
+   0,
+   5,
+   0
+  ],
+  "P12": [
+   11,
+   7,
+   7
+  ],
+  "P12_fixed375": [
+   0,
+   7,
+   0
+  ],
+  "P13": [
+   12,
+   8,
+   8
+  ],
+  "P13_fixed375": [
+   0,
+   8,
+   0
+  ],
+  "P14": [
+   10,
+   6,
+   6
+  ],
+  "P14_fixed375": [
+   0,
+   6,
+   0
+  ],
+  "P15": [
+   7,
+   3,
+   3
+  ],
+  "P15_fixed375": [
+   0,
+   3,
+   0
+  ],
+  "P16": [
+   10,
+   6,
+   6
+  ],
+  "P16_fixed375": [
+   0,
+   6,
+   0
+  ],
+  "mtg_template_mean_v2draft_sd0_nb_masks": 0,
+  "mtg_R3-1b_nb_masks": 11,
+  "mtg_n_04_nb_masks": 16,
+  "P01_nb_masks": 15,
+  "P02_nb_masks": 13,
+  "mtg_template_mean_v2draft_nb_masks": 11
+ }
+}

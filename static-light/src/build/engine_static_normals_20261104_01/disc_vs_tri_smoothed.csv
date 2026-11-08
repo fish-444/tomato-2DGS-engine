@@ -1,0 +1,6 @@
+# normal_smoothing_test; relative_light; conditional_on_unvalidated_scale; skeleton_labels_ungraded; after_checkpoint_v1; G0b {'D_max_abs_diff_vs_r31b_ref': 0.0, 'T_over_D_blades_stored': 1.3803845344399064, 'T_over_D_blades_now': 1.3803845344399064, 'rel': 0.0, 'passed': True}; T unchanged (engine-law leaflets, 16 receivers per triangle)
+mode,kept_raw_share,D_blades_total,D_all_total,T_total,T_over_D_blades,T_over_D_all,stored_T_over_D_blades,chosen
+raw,1.0,1257.932,2185.598,1736.43,1.3804,0.7945,1.3804,False
+smooth_r2,0.07,1335.943,2266.572,1736.43,1.2998,0.7661,1.3804,False
+smooth_r3,0.0305,1385.769,2330.512,1736.43,1.253,0.7451,1.3804,False
+smooth_r5,0.0064,1417.007,2366.744,1736.43,1.2254,0.7337,1.3804,True

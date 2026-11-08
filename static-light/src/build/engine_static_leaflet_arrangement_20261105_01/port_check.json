@@ -1,0 +1,10 @@
+{
+ "i_area_max_rel": 3.197442310920451e-14,
+ "i_pass": true,
+ "ii_compounds": 12,
+ "ii_leaflet_count_match": 12,
+ "ii_leaflets": 75,
+ "ii_outline_triangle_count_match": 74,
+ "ii_mismatch": [],
+ "ii_pass": false
+}

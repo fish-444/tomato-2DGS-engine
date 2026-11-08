@@ -1,0 +1,241 @@
+{
+ "labels": [
+  "route_tprox",
+  "reference_only_scoring",
+  "sim_skeleton_completed",
+  "amendment_A1"
+ ],
+ "run": "20261101T133038",
+ "report_half": {
+  "assigned": 6074,
+  "wrong": 1473,
+  "accuracy": 0.7575,
+  "seed": {
+   "n": 2052,
+   "wrong": 253,
+   "wrong_rate": 0.1233,
+   "share_of_wrong": 0.1718
+  },
+  "absorbed": {
+   "n": 4022,
+   "wrong": 1220,
+   "wrong_rate": 0.3033,
+   "share_of_wrong": 0.8282
+  },
+  "rachis_step": {
+   "n": 0,
+   "wrong": 0,
+   "wrong_rate": 0.0,
+   "share_of_wrong": 0.0
+  },
+  "absorbed_margin": {
+   "q75": 0.9466,
+   "wrong_share_with_margin_ge_q75": 0.2533,
+   "wrong_rate_top_quartile": 0.3072,
+   "wrong_rate_below_q75": 0.3021
+  }
+ },
+ "per_leaf": {
+  "1": {
+   "report_half": false,
+   "scored": 2517,
+   "assigned": 2517,
+   "wrong": 70,
+   "accuracy": 0.9722,
+   "seed": {
+    "n": 924,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   },
+   "absorbed": {
+    "n": 1593,
+    "wrong": 70,
+    "wrong_rate": 0.0439,
+    "share_of_wrong": 1.0
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "2": {
+   "report_half": true,
+   "scored": 777,
+   "assigned": 777,
+   "wrong": 27,
+   "accuracy": 0.9653,
+   "seed": {
+    "n": 365,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   },
+   "absorbed": {
+    "n": 412,
+    "wrong": 27,
+    "wrong_rate": 0.0655,
+    "share_of_wrong": 1.0
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "3": {
+   "report_half": false,
+   "scored": 4745,
+   "assigned": 4745,
+   "wrong": 679,
+   "accuracy": 0.8569,
+   "seed": {
+    "n": 1586,
+    "wrong": 330,
+    "wrong_rate": 0.2081,
+    "share_of_wrong": 0.486
+   },
+   "absorbed": {
+    "n": 3159,
+    "wrong": 349,
+    "wrong_rate": 0.1105,
+    "share_of_wrong": 0.514
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "4": {
+   "report_half": true,
+   "scored": 735,
+   "assigned": 731,
+   "wrong": 193,
+   "accuracy": 0.736,
+   "seed": {
+    "n": 307,
+    "wrong": 10,
+    "wrong_rate": 0.0326,
+    "share_of_wrong": 0.0518
+   },
+   "absorbed": {
+    "n": 424,
+    "wrong": 183,
+    "wrong_rate": 0.4316,
+    "share_of_wrong": 0.9482
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "5": {
+   "report_half": true,
+   "scored": 3311,
+   "assigned": 3274,
+   "wrong": 718,
+   "accuracy": 0.7807,
+   "seed": {
+    "n": 576,
+    "wrong": 99,
+    "wrong_rate": 0.1719,
+    "share_of_wrong": 0.1379
+   },
+   "absorbed": {
+    "n": 2698,
+    "wrong": 619,
+    "wrong_rate": 0.2294,
+    "share_of_wrong": 0.8621
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "6": {
+   "report_half": false,
+   "scored": 1532,
+   "assigned": 1531,
+   "wrong": 1505,
+   "accuracy": 0.017,
+   "seed": {
+    "n": 370,
+    "wrong": 346,
+    "wrong_rate": 0.9351,
+    "share_of_wrong": 0.2299
+   },
+   "absorbed": {
+    "n": 1161,
+    "wrong": 1159,
+    "wrong_rate": 0.9983,
+    "share_of_wrong": 0.7701
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "7": {
+   "report_half": true,
+   "scored": 1309,
+   "assigned": 1292,
+   "wrong": 535,
+   "accuracy": 0.5859,
+   "seed": {
+    "n": 804,
+    "wrong": 144,
+    "wrong_rate": 0.1791,
+    "share_of_wrong": 0.2692
+   },
+   "absorbed": {
+    "n": 488,
+    "wrong": 391,
+    "wrong_rate": 0.8012,
+    "share_of_wrong": 0.7308
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  },
+  "8": {
+   "report_half": false,
+   "scored": 724,
+   "assigned": 722,
+   "wrong": 0,
+   "accuracy": 1.0,
+   "seed": {
+    "n": 556,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   },
+   "absorbed": {
+    "n": 166,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   },
+   "rachis_step": {
+    "n": 0,
+    "wrong": 0,
+    "wrong_rate": 0.0,
+    "share_of_wrong": 0.0
+   }
+  }
+ },
+ "note": "leaf 6 ~0.02 in every skeleton route: known failure, not a route property; seed = forced (stage1, never weighed against other leaves)"
+}

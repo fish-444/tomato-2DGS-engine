@@ -1,0 +1,648 @@
+{
+ "plants": {
+  "template_mean_v2draft": {
+   "status": {
+    "engine": "written (147 organs, 146 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 7,
+   "side_axes": 2
+  },
+  "R3-1b": {
+   "status": {
+    "engine": "written (149 organs, 148 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 11,
+   "grade": "n/a",
+   "axis": "vertical_proxy_through_median_leaf_base (no user axis)",
+   "areas": 11,
+   "notes": [
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "no_user_axis"
+   ]
+  },
+  "n_01": {
+   "status": {
+    "engine": "written (233 organs, 232 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 17,
+   "grade": "B",
+   "axis": "user_skeleton_axis",
+   "areas": 17,
+   "notes": [
+    "1 lateral axis/axes in the skeleton not converted (no leaf assignment to laterals in skeleton_v1.1; listed, CONTRACT \u00a73)",
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "n_02": {
+   "status": {
+    "engine": "written (233 organs, 232 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 17,
+   "grade": "C",
+   "axis": "vertical_proxy_through_median_leaf_base (no user axis)",
+   "areas": 17,
+   "notes": [
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "no_user_axis"
+   ]
+  },
+  "n_03": {
+   "status": {
+    "engine": "written (149 organs, 148 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 11,
+   "grade": "B",
+   "axis": "user_skeleton_axis",
+   "areas": 11,
+   "notes": [
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "n_04": {
+   "status": {
+    "engine": "written (219 organs, 218 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 16,
+   "grade": "B",
+   "axis": "user_skeleton_axis",
+   "areas": 16,
+   "notes": [
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_reversed_to_bottom_up",
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable",
+    "axis_self_crossing",
+    "axis_axis_not_bottom_to_top"
+   ]
+  },
+  "n_05": {
+   "status": {
+    "engine": "written (177 organs, 176 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 13,
+   "grade": "A",
+   "axis": "user_skeleton_axis",
+   "areas": 13,
+   "notes": [
+    "1 lateral axis/axes in the skeleton not converted (no leaf assignment to laterals in skeleton_v1.1; listed, CONTRACT \u00a73)",
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "n_06": {
+   "status": {
+    "engine": "written (135 organs, 134 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 10,
+   "grade": "ungraded",
+   "axis": "user_skeleton_axis",
+   "areas": 10,
+   "notes": [
+    "1 lateral axis/axes in the skeleton not converted (no leaf assignment to laterals in skeleton_v1.1; listed, CONTRACT \u00a73)",
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "e_01": {
+   "status": {
+    "engine": "written (163 organs, 162 stage-2 vertices)",
+    "bmodel": "not_written: blade area unavailable for leaves e_01-L01,e_01-L02,e_01-L06,e_01-L05,e_01-L07,e_01-L09,e_01-L10,e_01-L08,e_01-L11,e_01-L12,e_01-L04,e_01-L03"
+   },
+   "roundtrip_engine": true,
+   "leaves": 12,
+   "grade": "B",
+   "axis": "user_skeleton_axis",
+   "areas": 0,
+   "notes": [
+    "1 lateral axis/axes in the skeleton not converted (no leaf assignment to laterals in skeleton_v1.1; listed, CONTRACT \u00a73)",
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "e_04": {
+   "status": {
+    "engine": "written (163 organs, 162 stage-2 vertices)",
+    "bmodel": "not_written: blade area unavailable for leaves e_04-L06,e_04-L01,e_04-L11,e_04-L02,e_04-L04,e_04-L03,e_04-L05,e_04-L12,e_04-L07,e_04-L08,e_04-L09,e_04-L10"
+   },
+   "roundtrip_engine": true,
+   "leaves": 12,
+   "grade": "A",
+   "axis": "user_skeleton_axis",
+   "areas": 0,
+   "notes": [
+    "1 lateral axis/axes in the skeleton not converted (no leaf assignment to laterals in skeleton_v1.1; listed, CONTRACT \u00a73)",
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "e_05": {
+   "status": {
+    "engine": "written (219 organs, 218 stage-2 vertices)",
+    "bmodel": "not_written: blade area unavailable for leaves e_05-L01,e_05-L08,e_05-L06,e_05-L07,e_05-L09,e_05-L02,e_05-L10,e_05-L03,e_05-L11,e_05-L05,e_05-L04,e_05-L12,e_05-L15,e_05-L14,e_05-L13,e_05-L16"
+   },
+   "roundtrip_engine": true,
+   "leaves": 16,
+   "grade": "A",
+   "axis": "user_skeleton_axis",
+   "areas": 0,
+   "notes": [
+    "1 lateral axis/axes in the skeleton not converted (no leaf assignment to laterals in skeleton_v1.1; listed, CONTRACT \u00a73)",
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  },
+  "e_07": {
+   "status": {
+    "engine": "written (191 organs, 190 stage-2 vertices)",
+    "bmodel": "not_written: blade area unavailable for leaves e_07-L01,e_07-L05,e_07-L03,e_07-L02,e_07-L06,e_07-L04,e_07-L07,e_07-L14,e_07-L08,e_07-L10,e_07-L13,e_07-L09,e_07-L11,e_07-L12"
+   },
+   "roundtrip_engine": true,
+   "leaves": 14,
+   "grade": "C",
+   "axis": "user_skeleton_axis",
+   "areas": 0,
+   "notes": [
+    "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+   ],
+   "flags": [
+    "axis_lean_limit_exceeded",
+    "axis_rim_fit_unavailable"
+   ]
+  }
+ },
+ "check_plants": {
+  "P01": {
+   "status": {
+    "engine": "written (197 organs, 196 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 11,
+   "side_axes": 2,
+   "trusses": 2,
+   "seed": 20261102
+  },
+  "P02": {
+   "status": {
+    "engine": "written (169 organs, 168 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 9,
+   "side_axes": 2,
+   "trusses": 0,
+   "seed": 20261103
+  },
+  "P03": {
+   "status": {
+    "engine": "written (156 organs, 155 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 8,
+   "side_axes": 2,
+   "trusses": 1,
+   "seed": 20261104
+  },
+  "P04": {
+   "status": {
+    "engine": "written (172 organs, 171 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 9,
+   "side_axes": 2,
+   "trusses": 1,
+   "seed": 20261105
+  },
+  "P05": {
+   "status": {
+    "engine": "written (169 organs, 168 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 9,
+   "side_axes": 2,
+   "trusses": 3,
+   "seed": 20261106
+  },
+  "P06": {
+   "status": {
+    "engine": "written (208 organs, 207 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 12,
+   "side_axes": 2,
+   "trusses": 0,
+   "seed": 20261107
+  },
+  "P07": {
+   "status": {
+    "engine": "written (109 organs, 108 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 4,
+   "side_axes": 2,
+   "trusses": 0,
+   "seed": 20261108
+  },
+  "P08": {
+   "status": {
+    "engine": "written (197 organs, 196 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 11,
+   "side_axes": 2,
+   "trusses": 2,
+   "seed": 20261109
+  },
+  "P09": {
+   "status": {
+    "engine": "written (161 organs, 160 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 8,
+   "side_axes": 2,
+   "trusses": 3,
+   "seed": 20261110
+  },
+  "P10": {
+   "status": {
+    "engine": "written (125 organs, 124 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 5,
+   "side_axes": 2,
+   "trusses": 2,
+   "seed": 20261111
+  },
+  "P11": {
+   "status": {
+    "engine": "written (122 organs, 121 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 5,
+   "side_axes": 2,
+   "trusses": 1,
+   "seed": 20261112
+  },
+  "P12": {
+   "status": {
+    "engine": "written (152 organs, 151 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 7,
+   "side_axes": 2,
+   "trusses": 3,
+   "seed": 20261113
+  },
+  "P13": {
+   "status": {
+    "engine": "written (155 organs, 154 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 8,
+   "side_axes": 2,
+   "trusses": 3,
+   "seed": 20261114
+  },
+  "P14": {
+   "status": {
+    "engine": "written (136 organs, 135 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 6,
+   "side_axes": 2,
+   "trusses": 0,
+   "seed": 20261115
+  },
+  "P15": {
+   "status": {
+    "engine": "written (100 organs, 99 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 3,
+   "side_axes": 2,
+   "trusses": 2,
+   "seed": 20261116
+  },
+  "P16": {
+   "status": {
+    "engine": "written (130 organs, 129 stage-2 vertices)",
+    "bmodel": "written"
+   },
+   "roundtrip_engine": true,
+   "leaves": 6,
+   "side_axes": 2,
+   "trusses": 0,
+   "seed": 20261117
+  }
+ },
+ "notes": [],
+ "internode_beta": {
+  "a": 5.024584763293008,
+  "b": 0.9754152367069917,
+  "concentration": 6.0,
+  "lo_mm": 2.0,
+  "hi_mm": 4.0,
+  "median_mm": 3.75,
+  "target_median_mm": 3.75,
+  "mean_mm": 3.674861587764336,
+  "sd_mm": 0.2789167406132414,
+  "p5_mm": 3.110846719414242,
+  "p95_mm": 3.9813426670561327,
+  "draw_unit": "per internode (key RP_INTERNODE_MM, id P<n>/I<k>)",
+  "label": "user_set_range_2.00_4.00_median_3.75",
+  "method": "scaled Beta on [2,4], a+b=6 fixed, a solved by brentq for median 0.875 of x=(L-2)/2"
+ },
+ "distribution_check": {
+  "rows": 26,
+  "passed": 20
+ },
+ "one_row_engine": {
+  "format": "engine (plant_tree_v1 -> to_engine_structure initial_state.csv)",
+  "theta0_set": 30.0,
+  "compound_leaf_elevation_deg": 30.0,
+  "petiole_direction_elevation_deg": 30.000000000000004,
+  "length_set_mm": 40.0,
+  "petiole_plus_rachis_mm": 40.00000000000001,
+  "rachis_segments": 2,
+  "pass_angle": true,
+  "pass_length": true,
+  "convention": "elevation above horizontal = theta0; engine COMPOUND_INSERTION_DEG = 90 - theta0 = 60 (vtc_development_native.rgg:206)",
+  "bmodel_scenario": {
+   "file": "kaggle/import_ds/scn/one_row_test.csv",
+   "sha256": "ecaf9a4c59514d35f215b2786250ebe2609e951ed6ce7c9570c6427f6627ab22",
+   "expected": "exported straight leaf elevation 30 +- 2 deg (inclination column 60), |tip - base| 40 mm +- 1 %, orientation column 90 (az 0 + 90)",
+   "info": {
+    "status": "written",
+    "rows": 3,
+    "sha256": "ecaf9a4c59514d35f215b2786250ebe2609e951ed6ce7c9570c6427f6627ab22"
+   }
+  }
+ },
+ "triangles": {
+  "mtg_template_mean_v2draft": 11884,
+  "mtg_R3-1b": 12436,
+  "mtg_n_01": 21956,
+  "mtg_n_02": 19780,
+  "mtg_n_03": 13684,
+  "mtg_n_04": 20348,
+  "mtg_n_05": 16228,
+  "mtg_n_06": 12348,
+  "mtg_e_01": 14988,
+  "mtg_e_04": 14940,
+  "mtg_e_05": 20188,
+  "mtg_e_07": 17468,
+  "P01": 16148,
+  "P02": 13668,
+  "P03": 12596,
+  "P04": 14016,
+  "P05": 13668,
+  "P06": 17040,
+  "P07": 8680,
+  "P08": 16148,
+  "P09": 13124,
+  "P10": 10100,
+  "P11": 9752,
+  "P12": 12568,
+  "P13": 12428,
+  "P14": 10992,
+  "P15": 7968,
+  "P16": 10296,
+  "P01_fixed375": 16148,
+  "P02_fixed375": 13668,
+  "P03_fixed375": 12596,
+  "P04_fixed375": 14016,
+  "P05_fixed375": 13668,
+  "P06_fixed375": 17040,
+  "P07_fixed375": 8680,
+  "P08_fixed375": 16148,
+  "P09_fixed375": 13124,
+  "P10_fixed375": 10100,
+  "P11_fixed375": 9752,
+  "P12_fixed375": 12568,
+  "P13_fixed375": 12428,
+  "P14_fixed375": 10992,
+  "P15_fixed375": 7968,
+  "P16_fixed375": 10296
+ },
+ "bmodel_scenarios": {
+  "mtg_template_mean_v2draft": {
+   "sha256": "d23b33fe13be79af6ba80fe4c0087f341349c18f8437f5069e18fb3de576722f",
+   "masks": 11
+  },
+  "mtg_R3-1b": {
+   "sha256": "a244c3af89b260b198c55331a7a57fd368b38baf1d4bee90580897e3ca0a18a5",
+   "masks": 11
+  },
+  "mtg_n_01": {
+   "sha256": "eb6c79e91ee64ab79aa5a165e4d8cba3734dddabf85fc8b73aa0f752055b2d8b",
+   "masks": 0
+  },
+  "mtg_n_02": {
+   "sha256": "f050b775d1b10903f841d14f485f1cd291f48b6a2a0025220c7331d57bbd3326",
+   "masks": 0
+  },
+  "mtg_n_03": {
+   "sha256": "b9b774de6b617ce99c8d58ed63ed31229876e3f761d851245fdedc548b43fb0d",
+   "masks": 0
+  },
+  "mtg_n_04": {
+   "sha256": "595cb76fb2dba78254b31deb5556a079f1ac77f2a4a57825f40dd5b4244dab43",
+   "masks": 16
+  },
+  "mtg_n_05": {
+   "sha256": "905794b19a550d39876a8e39d145f872c710c21b5fff3e98dd813ed58608bd47",
+   "masks": 0
+  },
+  "mtg_n_06": {
+   "sha256": "7abd9026643a44236b0728ef3c4ae8dd268b95b0726cd96f9e1134ac98877580",
+   "masks": 0
+  },
+  "P01": {
+   "sha256": "c20774a378f6dac371347f9e713e5709e3b86a14a593d47a36cc8ca50ff4aec2",
+   "masks": 15
+  },
+  "P02": {
+   "sha256": "08a851096bc69737363605aefc0a1fbdde6f9f3c0988415597bfb48bed6baee7",
+   "masks": 13
+  },
+  "P03": {
+   "sha256": "662d5b6b8d3f6e9d7e9d2fc26f5c05b680b02b3d354bfb45c31d36b95e78e5f5",
+   "masks": 0
+  },
+  "P04": {
+   "sha256": "27c7f712c69f8ca3318f46752dcecfe6b557854058b8085ca26a23e9368262b4",
+   "masks": 0
+  },
+  "P05": {
+   "sha256": "2df43ac02943f62ca4e5e4cd99bbef936aa0c8f8011635a3f54e1be290915641",
+   "masks": 0
+  },
+  "P06": {
+   "sha256": "58a6d43a800367cc171e9c0889e16071085dd15f22e977c64865cb72491881b4",
+   "masks": 0
+  },
+  "P07": {
+   "sha256": "2acb0389fc92b66765d0383ec64231b279eab4907800ef20b31fd216a6e90549",
+   "masks": 0
+  },
+  "P08": {
+   "sha256": "9a71245b38372e983381abbbce40925ceeb54705d264cd73320520d6d50b2cb3",
+   "masks": 0
+  },
+  "P09": {
+   "sha256": "d5c5054b73101db4b75d0567aafa758f8ea430862fd59f5bcb7b6e3e0437c817",
+   "masks": 0
+  },
+  "P10": {
+   "sha256": "8f91c775f6fc6670e1f2f8a51bef1e478e2a58d980c9c202d2c37bc1c922ed9f",
+   "masks": 0
+  },
+  "P11": {
+   "sha256": "ea1a1f76241851f16dacd96e3a0c9f19cf149a1a0df1b347ccaadd5bc03391de",
+   "masks": 0
+  },
+  "P12": {
+   "sha256": "bd33093cf258c7a7a5b7fb7e35a8f9b6c1a87c93ce63032f0919d95a9ce8065c",
+   "masks": 0
+  },
+  "P13": {
+   "sha256": "3264705bed507ace597cb1ed860675b9fcd2008ecc228a0cdd7633edcb62291f",
+   "masks": 0
+  },
+  "P14": {
+   "sha256": "354d23d44ecc995060ce328c94724a627cdeac3b71f0daaf66d29d2d12688fa7",
+   "masks": 0
+  },
+  "P15": {
+   "sha256": "fe5f6e8993850ba1529909377f2954415e6d0e796f981a6ac3302b3b94aa662a",
+   "masks": 0
+  },
+  "P16": {
+   "sha256": "86a87b1a08aedf730548e94c9d91c056bce45cc683ecf2eba60ca9fe0d95007d",
+   "masks": 0
+  },
+  "P01_fixed375": {
+   "sha256": "70a589e37090c2b9678b91316ea237552fdb47d48f7656830dcb51cf3cd8b49d",
+   "masks": 0
+  },
+  "P02_fixed375": {
+   "sha256": "abbad03103666dc923fc1152fa33cc49445caaa71d8d3c981bfd0d19426c4993",
+   "masks": 0
+  },
+  "P03_fixed375": {
+   "sha256": "2faf020fb8222519f6abbbf4ebaf810add421508f922330d7e82c875dc4dc20a",
+   "masks": 0
+  },
+  "P04_fixed375": {
+   "sha256": "325afadc147c5a1ad3d821a5c53f349784b061b4ac3e778ac070aec2dcd37871",
+   "masks": 0
+  },
+  "P05_fixed375": {
+   "sha256": "4e7cc8395eddbfc1a2ccc0ade1f1d570372f259de5345eb1f31b623710c46700",
+   "masks": 0
+  },
+  "P06_fixed375": {
+   "sha256": "9fbe3cdcb50b089893290a547d8fa6f83eb400880a17a066f6d8ed181f64cd09",
+   "masks": 0
+  },
+  "P07_fixed375": {
+   "sha256": "09301390301f1961e6c5b07d370ee34082ea2bdb2de297a10ea6a574c06b1b83",
+   "masks": 0
+  },
+  "P08_fixed375": {
+   "sha256": "c6f3e6b6b823791873e55597af0d646f555ce3ca22979ee050cab706db463ae4",
+   "masks": 0
+  },
+  "P09_fixed375": {
+   "sha256": "ae313b5816ef21462f26a6546eda5d2800a706d83b0f3eac0021f33793338597",
+   "masks": 0
+  },
+  "P10_fixed375": {
+   "sha256": "3f664cb527e14d80d3d39a0ff49c0c1d6abdb47206f25e85e9a77a2d5c0e8004",
+   "masks": 0
+  },
+  "P11_fixed375": {
+   "sha256": "6b2b3d2f8105a34bca156ed401cab5a82de9b9a42ad8a030303db915c3862905",
+   "masks": 0
+  },
+  "P12_fixed375": {
+   "sha256": "552b253490a010ebef97d3c6bc7104ab55f3305fac3a073c70294c514469a83d",
+   "masks": 0
+  },
+  "P13_fixed375": {
+   "sha256": "0ce8fd430aec5074401122498bad20350959ed6a11e7330677580e206240f951",
+   "masks": 0
+  },
+  "P14_fixed375": {
+   "sha256": "74af76ea691c7f4f39910db6c6a437f6f9dced1e2789f57a57ab1a96724b4de2",
+   "masks": 0
+  },
+  "P15_fixed375": {
+   "sha256": "2c0e5ebcff039600eb04fdf5228fd3d1b3e90b34adbb6a6b0f897191ce8b6f4c",
+   "masks": 0
+  },
+  "P16_fixed375": {
+   "sha256": "97a6df6521224ac82cc4b95a5a685929d12ceb2a6ffdb377cf4003e06a46feb8",
+   "masks": 0
+  }
+ },
+ "draws": 1144
+}

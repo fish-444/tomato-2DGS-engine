@@ -1,0 +1,79 @@
+{
+ "declared": {
+  "plant_bias_pct": 3.0,
+  "leaf_median_abs_err_pct": 5.0,
+  "noise_deg": 44.0
+ },
+ "per_arm": {
+  "rec_r2": {
+   "mean_plant_bias_pct": -7.83,
+   "pooled_leaf_median_abs_err_pct": 7.374,
+   "recovers": false,
+   "eligible": false
+  },
+  "rec_r3": {
+   "mean_plant_bias_pct": -7.262,
+   "pooled_leaf_median_abs_err_pct": 6.605,
+   "recovers": false,
+   "eligible": false
+  },
+  "rec_r5": {
+   "mean_plant_bias_pct": -7.186,
+   "pooled_leaf_median_abs_err_pct": 6.354,
+   "recovers": false,
+   "eligible": false
+  },
+  "smooth_all_r2": {
+   "mean_plant_bias_pct": 0.497,
+   "pooled_leaf_median_abs_err_pct": 0.45,
+   "recovers": true,
+   "eligible": true
+  },
+  "smooth_all_r3": {
+   "mean_plant_bias_pct": 1.465,
+   "pooled_leaf_median_abs_err_pct": 0.749,
+   "recovers": true,
+   "eligible": true
+  },
+  "smooth_all_r5": {
+   "mean_plant_bias_pct": 1.597,
+   "pooled_leaf_median_abs_err_pct": 0.968,
+   "recovers": true,
+   "eligible": true
+  },
+  "occ_only_r2": {
+   "mean_plant_bias_pct": -12.979,
+   "pooled_leaf_median_abs_err_pct": 14.542,
+   "recovers": false,
+   "eligible": false
+  },
+  "occ_only_r3": {
+   "mean_plant_bias_pct": -12.411,
+   "pooled_leaf_median_abs_err_pct": 14.072,
+   "recovers": false,
+   "eligible": false
+  },
+  "occ_only_r5": {
+   "mean_plant_bias_pct": -12.351,
+   "pooled_leaf_median_abs_err_pct": 13.957,
+   "recovers": false,
+   "eligible": false
+  }
+ },
+ "generator": {
+  "calibration": {
+   "44.0": 62.5,
+   "30.0": 37.5
+  },
+  "corr": {
+   "44.0": 37.5,
+   "30.0": 22.5
+  },
+  "density": 8.524760561779386,
+  "sigma_off": 0.39382939567031056,
+  "note": "metric saturates for targets above ~48 deg (test 1: 55 deg target reached 48.6 deg at sigma 90); 55 deg not repeated"
+ },
+ "chosen_radius_mm": 2,
+ "status": "recovered",
+ "light_model": "v1_smoothn_r2"
+}

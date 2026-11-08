@@ -1,0 +1,627 @@
+{
+  "schema_version": "vtc-development-3",
+  "mode": "vtc_development_v3",
+  "run_id": "inputs",
+  "scenario_id": "sufficient",
+  "initialization_route": "seed",
+  "fixture": true,
+  "frame": "plant_local_mm",
+  "start_time": "2026-10-11T06:00:00+09:00",
+  "dt_s": 86400,
+  "intervals": 72,
+  "parameters": {
+    "GERMINATION_DD": {
+      "value": 206.3,
+      "unit": "degree_day",
+      "source_kind": "literature_other_cultivar",
+      "source_ref": "VTC parametersMerlice.rgg",
+      "cultivar": "Merlice",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "PHYLLOCHRON_DD": {
+      "value": 37.9,
+      "unit": "degree_day",
+      "source_kind": "literature_other_cultivar",
+      "source_ref": "VTC parametersMerlice.rgg",
+      "cultivar": "Merlice",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "BASE_C": {
+      "value": 5.7,
+      "unit": "degC",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "FIRST_LEAVES": {
+      "value": 9,
+      "unit": "count",
+      "source_kind": "user_assumed",
+      "source_ref": "Carvalho 2011 Fig. 4C: leaf 9 = most frequent HOST leaf of the first inflorescence (mode, not mean; not a below-truss leaf count). Other MT controls report 4.9-7.5 leaves below the first inflorescence (Silva 2018, Rajendran 2021/2022). Mapping to engine rank (U5: true_leaves = ranks + 1) unverified",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "CADENCE": {
+      "value": [
+        2,
+        1,
+        0
+      ],
+      "unit": "leaves_between_trusses",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "SP_STOP_RULE": {
+      "value": "two_successive_trusses",
+      "unit": "rule",
+      "source_kind": "literature_microtom",
+      "source_ref": "Carvalho et al. 2011 Plant Methods 7:18, Fig. 4 caption: 'MT has determinate growth (formation of two consecutive inflorescences)' (sp); qualitative; number of sympodial units and axillary take-over not quantified",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "rule-level support only"
+    },
+    "FLOWERS": {
+      "value": 4,
+      "unit": "count",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "PAIRS": {
+      "value": [
+        1,
+        1,
+        2
+      ],
+      "unit": "pairs_by_true_leaf_order_last_repeated",
+      "source_kind": "user_assumed",
+      "source_ref": "Earlier fork Carvalho2011 candidate; repeated final entry; not fitted",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "EMERGENCE_DAYS": {
+      "value": 1,
+      "unit": "day",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "CARBON_FRACTION": {
+      "value": 0.45,
+      "unit": "gC/gDM",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "EFFICIENCY": {
+      "value": 0.75,
+      "unit": "gC/gC",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "AMAX": {
+      "value": 13.57,
+      "unit": "umol_CO2/m2/s",
+      "source_kind": "literature_other_cultivar",
+      "source_ref": "VTC parametersMerlice.rgg",
+      "cultivar": "Merlice",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "ALPHA": {
+      "value": 0.048,
+      "unit": "mol_CO2/mol_photon",
+      "source_kind": "literature_other_cultivar",
+      "source_ref": "VTC parametersMerlice.rgg",
+      "cultivar": "Merlice",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "THETA": {
+      "value": 0.92,
+      "unit": "dimensionless",
+      "source_kind": "literature_other_cultivar",
+      "source_ref": "VTC parametersMerlice.rgg",
+      "cultivar": "Merlice",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "INTERNODE_CAP_M": {
+      "value": 0.012,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "STEM_WIDTH_M": {
+      "value": 0.003,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "SLA_M2_G": {
+      "value": 0.025,
+      "unit": "m2/gDM",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "LEAF_LW": {
+      "value": 2.0,
+      "unit": "length/width",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "PETIOLE_M": {
+      "value": 0.02,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "RACHIS_M": {
+      "value": 0.035,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "RACHIS_WIDTH_M": {
+      "value": 0.001,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "TRUSS_M": {
+      "value": 0.025,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "FLOWER_M": {
+      "value": 0.008,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "DIVERGENCE_DEG": {
+      "value": 137.5,
+      "unit": "deg",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "COMPOUND_INSERTION_DEG": {
+      "value": 80.0,
+      "unit": "deg",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "TOTAL_BEND_DEG": {
+      "value": 20.0,
+      "unit": "deg",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "BASAL_LEAFLET_ANGLE_DEG": {
+      "value": 35.0,
+      "unit": "deg",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "MIDDLE_RAMP": {
+      "value": 0.35,
+      "unit": "dimensionless",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "GRID_X": {
+      "value": -0.15,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "GRID_Y": {
+      "value": -0.15,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "GRID_Z": {
+      "value": 0.0,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "GRID_SPACING": {
+      "value": 0.1,
+      "unit": "m",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "MAX_MASS": {
+      "value": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.12,
+        0.03,
+        0.008,
+        0.012,
+        0.1,
+        0.012,
+        0.004
+      ],
+      "unit": "gDM",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "MID_DD": {
+      "value": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        400,
+        130,
+        120,
+        130,
+        150,
+        140,
+        120
+      ],
+      "unit": "degree_day",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "K": {
+      "value": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.012,
+        0.025,
+        0.025,
+        0.025,
+        0.025,
+        0.025,
+        0.025
+      ],
+      "unit": "1/degree_day",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    },
+    "MAINT": {
+      "value": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.0005,
+        0.0005,
+        0.0005,
+        0.0005,
+        0.0005,
+        0.0005,
+        0.0005
+      ],
+      "unit": "gC/gDM/day",
+      "source_kind": "user_assumed",
+      "source_ref": "V3 explicit conditional hypothesis under user exception",
+      "cultivar": "Micro-Tom_unfitted_hypothesis",
+      "uncertainty": "unvalidated; requires measurement or review"
+    }
+  },
+  "freeze_at": -1,
+  "receiver_index": -1,
+  "receiver_day": -1,
+  "runtime": {
+    "rays": 300000,
+    "seed": 5000,
+    "balance_tolerance_gC": 1e-09
+  },
+  "run_status": "assumption_conditioned",
+  "biological_validation": "not_established",
+  "nutrient_feedback_enabled": false,
+  "optical_assumption": "black_full_outline_diamond; hypothetical",
+  "physiology_temperature_response": false,
+  "physiology_co2_response": false,
+  "source_plant_scope": "main_and_declared_sympodial_axes",
+  "light_ratio_role": "comparison_only",
+  "seed_assumption": "Explicit initial reserve; root compartment from day 0, no cotyledon or hypocotyl morphology; first true leaves funded after germination",
+  "engine_hooks": {
+    "schema": "fsp-engine-hooks-1",
+    "planned_axes": false,
+    "per_axis_development": false,
+    "leaf_development": true,
+    "projected_shading": false,
+    "leaflet_outline": true,
+    "reserve_cap": true,
+    "reserve_cap_floor": true,
+    "fruit_sink": true,
+    "random_parameters": true,
+    "parameters": {
+      "LEAFLET_GROWTH_ORDER": {
+        "value": "simultaneous",
+        "unit": "categorical",
+        "source_kind": "user_assumed",
+        "source_ref": "LEAFLET_GROWTH_ORDER: G1 user 2026-10-14: terminal then distal-to-basal pairs; general tomato developmental illustration, citation pending | preferred G scenario, user decision 2026-10-15 15:10 (stagger 38 basipetal; a 0) | user decision 2026-11-06 (Engine v2 C4C, CONTRACT Amendment 15): simultaneous",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "Declared scenarios, not fitted or measured; citation and repeated developmental captures unavailable"
+      },
+      "LEAFLET_STAGGER_DD": {
+        "value": 38,
+        "unit": "degree_day",
+        "source_kind": "user_assumed",
+        "source_ref": "LEAFLET_STAGGER_DD: G3 declared scenarios; zero regression; no Micro-Tom measurement | preferred G scenario, user decision 2026-10-15 15:10 (stagger 38 basipetal; a 0)",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "Declared scenarios, not fitted or measured; citation and repeated developmental captures unavailable"
+      },
+      "LEAF_AGEING_DECAY_A": {
+        "value": 0.0,
+        "unit": "1/degree_day",
+        "source_kind": "user_assumed",
+        "source_ref": "LEAF_AGEING_DECAY_A: G7 user equation 2026-10-14: tau=-expm1(-a*T)/a; a=0 gives T | preferred G scenario, user decision 2026-10-15 15:10 (stagger 38 basipetal; a 0)",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "Declared scenarios, not fitted or measured; citation and repeated developmental captures unavailable"
+      },
+      "LEAFLET_MID_DD": {
+        "value": 250,
+        "unit": "degree_day",
+        "source_kind": "derived_low_confidence",
+        "source_ref": "handoff/F3_LITERATURE_COMPARISON_2026-10-15.md proposal 3 (Twiggy Red beta tm 271 / te 464 degC d, Butturini 2026, T3; Tbase 5.7 identical) - F4 Stage 3 declared expansion scenario",
+        "cultivar": "Twiggy Red (other cultivar), converted to a logistic midpoint",
+        "uncertainty": "derived low confidence; not fitted to Micro-Tom; scenario only"
+      },
+      "LEAFLET_K": {
+        "value": 0.014,
+        "unit": "1/degree_day",
+        "source_kind": "derived_low_confidence",
+        "source_ref": "handoff/F3_LITERATURE_COMPARISON_2026-10-15.md proposal 3 (95 % at about 460 degC d, Twiggy Red, Butturini 2026, T3) - F4 Stage 3 declared expansion scenario",
+        "cultivar": "Twiggy Red (other cultivar), converted to a logistic rate",
+        "uncertainty": "derived low confidence; not fitted to Micro-Tom; scenario only"
+      },
+      "CAP_FLOOR_GC": {
+        "value": 0.06,
+        "unit": "gC",
+        "source_kind": "user_assumed",
+        "source_ref": "= declared seed reserve (seed_assumption), user decision 2026-10-18 A"
+      },
+      "FRUIT_FORM": {
+        "value": "gompertz",
+        "unit": "categorical",
+        "source_kind": "user_assumed",
+        "source_ref": "Declared S1 contract / user clarification 2026-10-17; CH2O=12/30 distinct from CF",
+        "uncertainty": "scenario, not fitted or biologically validated",
+        "cultivar": "Micro-Tom or transferred literature as noted"
+      },
+      "FRUIT_MAX_DM": {
+        "value": 1.16,
+        "unit": "gDM",
+        "source_kind": "literature_T1",
+        "source_ref": "Ke 2023; k .21/day and xm13DAA converted using 18.6333333333333 Cd/day; condition_mismatch CO2 1000/16h vs400/14h",
+        "uncertainty": "scenario, not fitted or biologically validated",
+        "cultivar": "Micro-Tom or transferred literature as noted"
+      },
+      "ANTHESIS_DELAY_DD": {
+        "value": 0.0,
+        "unit": "degree_day",
+        "source_kind": "user_assumed",
+        "source_ref": "Declared S1 contract / user clarification 2026-10-17; CH2O=12/30 distinct from CF",
+        "uncertainty": "scenario, not fitted or biologically validated",
+        "cultivar": "Micro-Tom or transferred literature as noted"
+      },
+      "FRUIT_GOMPERTZ_K": {
+        "value": 0.011270125223613595,
+        "unit": "1/degree_day",
+        "source_kind": "derived_low_confidence",
+        "source_ref": "Ke 2023; k .21/day and xm13DAA converted using 18.6333333333333 Cd/day; condition_mismatch CO2 1000/16h vs400/14h",
+        "uncertainty": "scenario, not fitted or biologically validated",
+        "cultivar": "Micro-Tom or transferred literature as noted"
+      },
+      "FRUIT_GOMPERTZ_XM_DD": {
+        "value": 242.23333333333332,
+        "unit": "degree_day",
+        "source_kind": "derived_low_confidence",
+        "source_ref": "Ke 2023; k .21/day and xm13DAA converted using 18.6333333333333 Cd/day; condition_mismatch CO2 1000/16h vs400/14h",
+        "uncertainty": "scenario, not fitted or biologically validated",
+        "cultivar": "Micro-Tom or transferred literature as noted"
+      },
+      "RP_PHYLLOCHRON_FACTOR": {
+        "value": [
+          0.8,
+          1.2
+        ],
+        "unit": "factor",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_PHYLLOCHRON_FACTOR: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: between-plant variation around the declared scenario mean PHYLLOCHRON_DD (37.9; 77/135 are separate scenarios) [draw unit: plant; uniform factor on PHYLLOCHRON_DD; H2 group 1; drawn once per run by the random_parameters hook]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists (repeated captures -> phyllochron per plant)"
+      },
+      "RP_AMAX_FACTOR": {
+        "value": [
+          0.9,
+          1.1
+        ],
+        "unit": "factor",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_AMAX_FACTOR: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: AMAX base x U(0.9, 1.1), independent of ALPHA; base = registry/engine value, Butturini 2026 difference reported not adopted [draw unit: plant; uniform factor on AMAX; H2 group 3; acts through the reserve cap (REVISION 2 item 1)]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists"
+      },
+      "RP_ALPHA_FACTOR": {
+        "value": [
+          0.9,
+          1.1
+        ],
+        "unit": "factor",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_ALPHA_FACTOR: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: ALPHA base x U(0.9, 1.1), independent of AMAX [draw unit: plant; uniform factor on ALPHA; H2 group 3]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists"
+      },
+      "RP_SLA_FACTOR": {
+        "value": [
+          0.85,
+          1.15
+        ],
+        "unit": "factor",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_SLA_FACTOR: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: SLA base x U(0.85, 1.15) [draw unit: plant; uniform factor on SLA_M2_G for leaves born in the run; H2 group 3]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists (destructive session -> SLA)"
+      },
+      "RP_INTERNODE_CAP_M": {
+        "value": [
+          0.008,
+          0.016
+        ],
+        "unit": "m",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_INTERNODE_CAP_M: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: INTERNODE_CAP 8-16 mm per plant [draw unit: plant; uniform value replacing INTERNODE_CAP_M for internodes born in the run; H2 group 4]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists"
+      },
+      "RP_MIDDLE_RAMP": {
+        "value": [
+          0.0,
+          0.35
+        ],
+        "unit": "dimensionless",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_MIDDLE_RAMP: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: MIDDLE_RAMP 0-0.35 per compound [draw unit: compound; uniform; H2 group 2]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists"
+      },
+      "RP_MAX_MASS_FACTOR": {
+        "value": [
+          0.8,
+          1.2
+        ],
+        "unit": "factor",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_MAX_MASS_FACTOR: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: organ MAX_MASS base x U(0.8, 1.2); S1 fruit/truss sink parameters are declared scenarios and not drawn [draw unit: organ; uniform factor on MAX_MASS[kind] at birth for organs born in the run; H2 group 3]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists (destructive session -> MAX_MASS)"
+      },
+      "RP_DIVERGENCE_DEG": {
+        "value": [
+          119.3,
+          154.7
+        ],
+        "unit": "deg",
+        "source_kind": "literature_wild_species",
+        "source_ref": "RP_DIVERGENCE_DEG: Kanahama 1993 (width of the phyllotactic divergence range only, wild species; not a Micro-Tom value); handedness fixed per plant; H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md [draw unit: leaf; uniform per compound, accumulated into the azimuth with the plant handedness; H2 group 4]",
+        "cultivar": "wild_species_width_only",
+        "uncertainty": "width from a wild species; centre 137 deg; not MT-measured"
+      },
+      "RP_COMPOUND_INSERTION_DEG": {
+        "value": [
+          60.0,
+          90.0
+        ],
+        "unit": "deg",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_COMPOUND_INSERTION_DEG: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: COMPOUND_INSERTION 60-90 deg per compound [draw unit: compound; uniform; H2 group 4]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists (side captures -> insertion angles)"
+      },
+      "RP_TOTAL_BEND_DEG": {
+        "value": [
+          0.0,
+          40.0
+        ],
+        "unit": "deg",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_TOTAL_BEND_DEG: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: TOTAL_BEND 0-40 deg per compound [draw unit: compound; uniform; replaces the compound bend amplitude; H2 group 4]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists (side captures -> bend angles)"
+      },
+      "RP_BASAL_LEAFLET_ANGLE_DEG": {
+        "value": [
+          20.0,
+          50.0
+        ],
+        "unit": "deg",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_BASAL_LEAFLET_ANGLE_DEG: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: BASAL_LEAFLET_ANGLE 20-50 deg per compound [draw unit: compound; uniform; leaflets born in the run; H2 group 4]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "bounds assumed (user), not measured; H5: replaced by a measured distribution when it exists"
+      },
+      "RP_PAIRS": {
+        "value": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "unit": "choice",
+        "source_kind": "user_assumed",
+        "source_ref": "RP_PAIRS: H prompt REVISION 2 (2026-10-15 21:55) / REVISION 3 (2026-10-19 19:20), handoff/CLI_PROMPT_H_BOUNDED_RANDOM_PARAMETERS_2026-10-14.md: PAIRS choice {[1,1,2] Carvalho 2011 fork prompt, [1,1,3] dissection 2026-10-10} (see NR_LEAFLET_PAIRS_BY_RANK candidate_set) [draw unit: plant; uniform choice for compounds born in the run; imported compounds keep PAIRS; H2 group 2]",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "two candidates, equal weight; not fitted"
+      },
+      "RANDOM_PARAMETERS_SEED": {
+        "value": 20261020,
+        "unit": "seed",
+        "source_kind": "user_assumed",
+        "source_ref": "RANDOM_PARAMETERS_SEED: divergence sensitivity seed m 0 (H convention 20261020 + m), build/engine_divergence_sens_20261102_01",
+        "cultivar": "Micro-Tom_unfitted_hypothesis",
+        "uncertainty": "seed of a declared random-parameter member; not a plant value"
+      }
+    }
+  }
+}

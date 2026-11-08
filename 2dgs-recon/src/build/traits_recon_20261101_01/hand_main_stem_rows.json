@@ -1,0 +1,405 @@
+{
+ "labels": [
+  "hand_measured",
+  "user_role_mtg_building_not_validation"
+ ],
+ "parse_rule": "CONTRACT_AMENDMENT_1.md",
+ "rows": [
+  {
+   "plant": "dt01",
+   "rank": 1,
+   "n_leaflets": 7,
+   "theta0_deg": 5.0,
+   "raw": "7,5",
+   "note": "",
+   "excel_row": 9
+  },
+  {
+   "plant": "dt01",
+   "rank": 2,
+   "n_leaflets": 7,
+   "theta0_deg": 40.0,
+   "raw": " 7,40",
+   "note": "",
+   "excel_row": 10
+  },
+  {
+   "plant": "dt01",
+   "rank": 3,
+   "n_leaflets": 5,
+   "theta0_deg": 30.0,
+   "raw": "5,30",
+   "note": "",
+   "excel_row": 11
+  },
+  {
+   "plant": "dt01",
+   "rank": 4,
+   "n_leaflets": 7,
+   "theta0_deg": 20.0,
+   "raw": "7,20",
+   "note": "",
+   "excel_row": 12
+  },
+  {
+   "plant": "dt01",
+   "rank": 5,
+   "n_leaflets": 7,
+   "theta0_deg": 40.0,
+   "raw": "7,40",
+   "note": "",
+   "excel_row": 13
+  },
+  {
+   "plant": "dt01",
+   "rank": 6,
+   "n_leaflets": 7,
+   "theta0_deg": 30.0,
+   "raw": "7,30",
+   "note": "",
+   "excel_row": 14
+  },
+  {
+   "plant": "dt01",
+   "rank": 7,
+   "n_leaflets": 7,
+   "theta0_deg": 30.0,
+   "raw": "7,30",
+   "note": "",
+   "excel_row": 15
+  },
+  {
+   "plant": "dt01",
+   "rank": 8,
+   "n_leaflets": 7,
+   "theta0_deg": 40.0,
+   "raw": "7,40",
+   "note": "",
+   "excel_row": 16
+  },
+  {
+   "plant": "dt01",
+   "rank": 9,
+   "n_leaflets": 5,
+   "theta0_deg": 40.0,
+   "raw": "5,40",
+   "note": "",
+   "excel_row": 17
+  },
+  {
+   "plant": "dt02",
+   "rank": 1,
+   "n_leaflets": 7,
+   "theta0_deg": 0.0,
+   "raw": "7,0",
+   "note": "",
+   "excel_row": 19
+  },
+  {
+   "plant": "dt02",
+   "rank": 2,
+   "n_leaflets": 7,
+   "theta0_deg": 0.0,
+   "raw": "7,0",
+   "note": "",
+   "excel_row": 20
+  },
+  {
+   "plant": "dt02",
+   "rank": 3,
+   "n_leaflets": 6,
+   "theta0_deg": 50.0,
+   "raw": "6,50",
+   "note": "",
+   "excel_row": 21
+  },
+  {
+   "plant": "dt02",
+   "rank": 4,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 22
+  },
+  {
+   "plant": "dt02",
+   "rank": 5,
+   "n_leaflets": 7,
+   "theta0_deg": 20.0,
+   "raw": "7,20",
+   "note": "",
+   "excel_row": 23
+  },
+  {
+   "plant": "dt02",
+   "rank": 6,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 24
+  },
+  {
+   "plant": "dt02",
+   "rank": 7,
+   "n_leaflets": 5,
+   "theta0_deg": 40.0,
+   "raw": "5,40",
+   "note": "",
+   "excel_row": 25
+  },
+  {
+   "plant": "dt02",
+   "rank": 8,
+   "n_leaflets": 5,
+   "theta0_deg": 10.0,
+   "raw": "5,10",
+   "note": "",
+   "excel_row": 26
+  },
+  {
+   "plant": "dt02",
+   "rank": 9,
+   "n_leaflets": 5,
+   "theta0_deg": 10.0,
+   "raw": "5,10",
+   "note": "",
+   "excel_row": 27
+  },
+  {
+   "plant": "dt03",
+   "rank": 1,
+   "n_leaflets": 5,
+   "theta0_deg": -5.0,
+   "raw": "5,-5",
+   "note": "",
+   "excel_row": 29
+  },
+  {
+   "plant": "dt03",
+   "rank": 2,
+   "n_leaflets": 7,
+   "theta0_deg": 40.0,
+   "raw": "7,40",
+   "note": "",
+   "excel_row": 30
+  },
+  {
+   "plant": "dt03",
+   "rank": 3,
+   "n_leaflets": 7,
+   "theta0_deg": 5.0,
+   "raw": "7,5",
+   "note": "",
+   "excel_row": 31
+  },
+  {
+   "plant": "dt03",
+   "rank": 4,
+   "n_leaflets": 5,
+   "theta0_deg": 5.0,
+   "raw": "5,5",
+   "note": "",
+   "excel_row": 32
+  },
+  {
+   "plant": "dt03",
+   "rank": 5,
+   "n_leaflets": 7,
+   "theta0_deg": 30.0,
+   "raw": "7,30",
+   "note": "",
+   "excel_row": 33
+  },
+  {
+   "plant": "dt03",
+   "rank": 6,
+   "n_leaflets": 6,
+   "theta0_deg": 30.0,
+   "raw": "6,30",
+   "note": "",
+   "excel_row": 34
+  },
+  {
+   "plant": "dt03",
+   "rank": 7,
+   "n_leaflets": 7,
+   "theta0_deg": 30.0,
+   "raw": "7,30",
+   "note": "",
+   "excel_row": 35
+  },
+  {
+   "plant": "dt04",
+   "rank": 1,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 39
+  },
+  {
+   "plant": "dt04",
+   "rank": 2,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 40
+  },
+  {
+   "plant": "dt04",
+   "rank": 3,
+   "n_leaflets": 5,
+   "theta0_deg": 80.0,
+   "raw": "5,80",
+   "note": "",
+   "excel_row": 41
+  },
+  {
+   "plant": "dt04",
+   "rank": 4,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 42
+  },
+  {
+   "plant": "dt04",
+   "rank": 5,
+   "n_leaflets": 7,
+   "theta0_deg": 60.0,
+   "raw": "7,6o",
+   "note": "read_as_7,60 (prompt)",
+   "excel_row": 43
+  },
+  {
+   "plant": "dt04",
+   "rank": 6,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 44
+  },
+  {
+   "plant": "dt04",
+   "rank": 7,
+   "n_leaflets": 7,
+   "theta0_deg": 20.0,
+   "raw": "7,20",
+   "note": "",
+   "excel_row": 45
+  },
+  {
+   "plant": "dt05",
+   "rank": 1,
+   "n_leaflets": 5,
+   "theta0_deg": 10.0,
+   "raw": "5,10",
+   "note": "",
+   "excel_row": 49
+  },
+  {
+   "plant": "dt05",
+   "rank": 2,
+   "n_leaflets": 7,
+   "theta0_deg": 10.0,
+   "raw": "7,10",
+   "note": "",
+   "excel_row": 50
+  },
+  {
+   "plant": "dt05",
+   "rank": 3,
+   "n_leaflets": 5,
+   "theta0_deg": 10.0,
+   "raw": "5,10",
+   "note": "",
+   "excel_row": 51
+  },
+  {
+   "plant": "dt05",
+   "rank": 4,
+   "n_leaflets": 5,
+   "theta0_deg": 30.0,
+   "raw": "5,30",
+   "note": "",
+   "excel_row": 52
+  },
+  {
+   "plant": "dt05",
+   "rank": 5,
+   "n_leaflets": 5,
+   "theta0_deg": 40.0,
+   "raw": "5,40",
+   "note": "",
+   "excel_row": 53
+  },
+  {
+   "plant": "dt05",
+   "rank": 6,
+   "n_leaflets": 5,
+   "theta0_deg": 60.0,
+   "raw": "5,60",
+   "note": "",
+   "excel_row": 54
+  },
+  {
+   "plant": "dt05",
+   "rank": 7,
+   "n_leaflets": 5,
+   "theta0_deg": 60.0,
+   "raw": "5,60",
+   "note": "",
+   "excel_row": 55
+  },
+  {
+   "plant": "dt05",
+   "rank": 8,
+   "n_leaflets": 5,
+   "theta0_deg": 30.0,
+   "raw": "5,30",
+   "note": "",
+   "excel_row": 56
+  },
+  {
+   "plant": "dt05",
+   "rank": 9,
+   "n_leaflets": 5,
+   "theta0_deg": 30.0,
+   "raw": "5,30",
+   "note": "",
+   "excel_row": 57
+  },
+  {
+   "plant": "dt06",
+   "rank": 1,
+   "n_leaflets": 7,
+   "theta0_deg": 0.0,
+   "raw": "7,0",
+   "note": "",
+   "excel_row": 60
+  },
+  {
+   "plant": "dt06",
+   "rank": 2,
+   "n_leaflets": 7,
+   "theta0_deg": 60.0,
+   "raw": "7,60",
+   "note": "",
+   "excel_row": 61
+  },
+  {
+   "plant": "dt06",
+   "rank": 3,
+   "n_leaflets": 5,
+   "theta0_deg": 50.0,
+   "raw": "5,50",
+   "note": "",
+   "excel_row": 62
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+{"id": "dolgfish/r8pc-absorb-r31b-20261027", "title": "r8pc-absorb-r31b-20261027", "code_file": "pc_absorb.py", "language": "python", "kernel_type": "script",
+ "is_private": true, "enable_gpu": false, "enable_internet": false, "dataset_sources": ["dolgfish/r8pc-bundle-r31b-20261027"], "competition_sources": [], "kernel_sources": []}

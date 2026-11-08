@@ -1,0 +1,10 @@
+rank,n_leaves,n_plants,theta0_mean_deg,theta0_sd_deg,theta0_median_deg,insertion_from_vertical_mean_deg,p_leaflets_5,p_leaflets_6,p_leaflets_7,provenance,note
+1,6,6,3.33,6.06,2.5,86.67,0.333,0.0,0.667,hand_measured,rank 1 kept separate
+2,6,6,26.67,23.38,25.0,63.33,0.0,0.0,1.0,hand_measured,
+3,6,6,37.5,28.24,40.0,52.5,0.667,0.167,0.167,hand_measured,
+4,5,5,15.0,10.0,10.0,75.0,0.4,0.0,0.6,hand_measured,
+5,5,5,38.0,14.83,40.0,52.0,0.2,0.0,0.8,hand_measured,
+6,5,5,28.0,20.49,30.0,62.0,0.2,0.2,0.6,hand_measured,
+7,5,5,36.0,15.17,30.0,54.0,0.4,0.0,0.6,hand_measured,
+8,3,3,26.67,15.28,30.0,63.33,0.667,0.0,0.333,hand_measured,n_plants<4
+9,3,3,26.67,15.28,30.0,63.33,1.0,0.0,0.0,hand_measured,n_plants<4

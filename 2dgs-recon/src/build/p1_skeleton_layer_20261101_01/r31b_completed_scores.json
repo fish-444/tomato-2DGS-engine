@@ -1,0 +1,409 @@
+{
+ "labels": [
+  "user_skeleton_seeds",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b_unaccepted",
+  "metric_declared_after_adapter_gate",
+  "scoring_only",
+  "sim_skeleton_completed",
+  "reference_only_scoring"
+ ],
+ "routes": {
+  "a_distance_completed": {
+   "shares": {
+    "assigned": 0.859,
+    "contested": 0.1369,
+    "none": 0.0041
+   },
+   "report_half": {
+    "n": 6132,
+    "correct": 3719,
+    "accuracy": 0.6065,
+    "wilson95": [
+     0.5941998200370642,
+     0.6186479171013912
+    ],
+    "contested_or_none_share": 0.2524
+   },
+   "all_leaves": {
+    "n": 15650,
+    "correct": 10892,
+    "accuracy": 0.696,
+    "wilson95": [
+     0.6887201360011593,
+     0.7031325578449316
+    ],
+    "contested_or_none_share": 0.1218
+   },
+   "per_leaf": {
+    "1": {
+     "n": 2517,
+     "correct": 2413,
+     "accuracy": 0.9587,
+     "wilson95": [
+      0.9501810473811835,
+      0.9657828910114549
+     ],
+     "contested_or_none_share": 0.0401
+    },
+    "2": {
+     "n": 777,
+     "correct": 604,
+     "accuracy": 0.7773,
+     "wilson95": [
+      0.7467717267291538,
+      0.8051968159304586
+     ],
+     "contested_or_none_share": 0.1673
+    },
+    "3": {
+     "n": 4745,
+     "correct": 4043,
+     "accuracy": 0.8521,
+     "wilson95": [
+      0.8416677253066626,
+      0.8618722706367693
+     ],
+     "contested_or_none_share": 0.0356
+    },
+    "4": {
+     "n": 735,
+     "correct": 576,
+     "accuracy": 0.7837,
+     "wilson95": [
+      0.7524723980864565,
+      0.8119246255786972
+     ],
+     "contested_or_none_share": 0.117
+    },
+    "5": {
+     "n": 3311,
+     "correct": 1801,
+     "accuracy": 0.5439,
+     "wilson95": [
+      0.5269379146363613,
+      0.5608490855026498
+     ],
+     "contested_or_none_share": 0.3123
+    },
+    "6": {
+     "n": 1532,
+     "correct": 26,
+     "accuracy": 0.017,
+     "wilson95": [
+      0.01160760205802034,
+      0.024751355792841365
+     ],
+     "contested_or_none_share": 0.0359
+    },
+    "7": {
+     "n": 1309,
+     "correct": 738,
+     "accuracy": 0.5638,
+     "wilson95": [
+      0.5367758091263761,
+      0.5904291788935039
+     ],
+     "contested_or_none_share": 0.2277
+    },
+    "8": {
+     "n": 724,
+     "correct": 691,
+     "accuracy": 0.9544,
+     "wilson95": [
+      0.9366799081645494,
+      0.967362949512176
+     ],
+     "contested_or_none_share": 0.0456
+    }
+   },
+   "confusion": {
+    "4/5": {
+     "human 4 -> route 0": 86,
+     "human 4 -> route 2": 33,
+     "human 4 -> route 3": 40,
+     "human 4 -> route 4": 576,
+     "human 5 -> route 0": 1034,
+     "human 5 -> route 4": 434,
+     "human 5 -> route 5": 1801,
+     "human 5 -> route 7": 42
+    },
+    "6/7/8": {
+     "human 6 -> route 0": 55,
+     "human 6 -> route 5": 226,
+     "human 6 -> route 6": 26,
+     "human 6 -> route 7": 1218,
+     "human 7 -> route 0": 298,
+     "human 7 -> route 5": 56,
+     "human 7 -> route 7": 738,
+     "human 7 -> route 8": 217,
+     "human 8 -> route 0": 33,
+     "human 8 -> route 8": 691
+    }
+   }
+  },
+  "b_adapter_r8pc_completed": {
+   "run": "20261101T132954",
+   "file": "labels_rachis.npz",
+   "coverage": 0.9021,
+   "report_half": {
+    "n": 6132,
+    "correct": 4418,
+    "accuracy": 0.7205,
+    "wilson95": [
+     0.7091149768819766,
+     0.7315743655547643
+    ],
+    "contested_or_none_share": 0.0114
+   },
+   "all_leaves": {
+    "n": 15650,
+    "correct": 11593,
+    "accuracy": 0.7408,
+    "wilson95": [
+     0.7338425724709703,
+     0.7475728009923717
+    ],
+    "contested_or_none_share": 0.0105
+   },
+   "per_leaf": {
+    "1": {
+     "n": 2517,
+     "correct": 2447,
+     "accuracy": 0.9722,
+     "wilson95": [
+      0.9650103395328428,
+      0.9779287170108132
+     ],
+     "contested_or_none_share": 0.0004
+    },
+    "2": {
+     "n": 777,
+     "correct": 777,
+     "accuracy": 1.0,
+     "wilson95": [
+      0.995080180154336,
+      0.9999999999999999
+     ],
+     "contested_or_none_share": 0.0
+    },
+    "3": {
+     "n": 4745,
+     "correct": 4066,
+     "accuracy": 0.8569,
+     "wilson95": [
+      0.8466494387859655,
+      0.8665771299839846
+     ],
+     "contested_or_none_share": 0.0
+    },
+    "4": {
+     "n": 735,
+     "correct": 565,
+     "accuracy": 0.7687,
+     "wilson95": [
+      0.7368734858481663,
+      0.7977471960408882
+     ],
+     "contested_or_none_share": 0.0054
+    },
+    "5": {
+     "n": 3311,
+     "correct": 2430,
+     "accuracy": 0.7339,
+     "wilson95": [
+      0.7185999476564539,
+      0.7486923657982826
+     ],
+     "contested_or_none_share": 0.0196
+    },
+    "6": {
+     "n": 1532,
+     "correct": 26,
+     "accuracy": 0.017,
+     "wilson95": [
+      0.01160760205802034,
+      0.024751355792841365
+     ],
+     "contested_or_none_share": 0.0039
+    },
+    "7": {
+     "n": 1309,
+     "correct": 646,
+     "accuracy": 0.4935,
+     "wilson95": [
+      0.46648071852230527,
+      0.52057027072118
+     ],
+     "contested_or_none_share": 0.0008
+    },
+    "8": {
+     "n": 724,
+     "correct": 636,
+     "accuracy": 0.8785,
+     "wilson95": [
+      0.8526322891606761,
+      0.9002787837980555
+     ],
+     "contested_or_none_share": 0.1215
+    }
+   },
+   "confusion": {
+    "4/5": {
+     "human 4 -> route 2": 109,
+     "human 4 -> route 4": 565,
+     "human 4 -> route 5": 57,
+     "human 5 -> route 0": 65,
+     "human 5 -> route 4": 780,
+     "human 5 -> route 5": 2430,
+     "human 5 -> route 7": 36
+    },
+    "6/7/8": {
+     "human 6 -> route 5": 246,
+     "human 6 -> route 6": 26,
+     "human 6 -> route 7": 1247,
+     "human 7 -> route 5": 177,
+     "human 7 -> route 7": 646,
+     "human 7 -> route 8": 485,
+     "human 8 -> route 0": 88,
+     "human 8 -> route 8": 636
+    }
+   }
+  },
+  "t_prox_completed": {
+   "run": "20261101T133038",
+   "file": "labels_rachis.npz",
+   "coverage": 0.9062,
+   "report_half": {
+    "n": 6132,
+    "correct": 4601,
+    "accuracy": 0.7503,
+    "wilson95": [
+     0.7393382440946759,
+     0.7610006173257364
+    ],
+    "contested_or_none_share": 0.0095
+   },
+   "all_leaves": {
+    "n": 15650,
+    "correct": 11862,
+    "accuracy": 0.758,
+    "wilson95": [
+     0.7511817812863049,
+     0.7646021525437143
+    ],
+    "contested_or_none_share": 0.0039
+   },
+   "per_leaf": {
+    "1": {
+     "n": 2517,
+     "correct": 2447,
+     "accuracy": 0.9722,
+     "wilson95": [
+      0.9650103395328428,
+      0.9779287170108132
+     ],
+     "contested_or_none_share": 0.0
+    },
+    "2": {
+     "n": 777,
+     "correct": 750,
+     "accuracy": 0.9653,
+     "wilson95": [
+      0.9499137336952334,
+      0.976010294942585
+     ],
+     "contested_or_none_share": 0.0
+    },
+    "3": {
+     "n": 4745,
+     "correct": 4066,
+     "accuracy": 0.8569,
+     "wilson95": [
+      0.8466494387859655,
+      0.8665771299839846
+     ],
+     "contested_or_none_share": 0.0
+    },
+    "4": {
+     "n": 735,
+     "correct": 538,
+     "accuracy": 0.732,
+     "wilson95": [
+      0.6988051766643962,
+      0.7627281208651419
+     ],
+     "contested_or_none_share": 0.0054
+    },
+    "5": {
+     "n": 3311,
+     "correct": 2556,
+     "accuracy": 0.772,
+     "wilson95": [
+      0.7573705465992013,
+      0.785943498934679
+     ],
+     "contested_or_none_share": 0.0112
+    },
+    "6": {
+     "n": 1532,
+     "correct": 26,
+     "accuracy": 0.017,
+     "wilson95": [
+      0.01160760205802034,
+      0.024751355792841365
+     ],
+     "contested_or_none_share": 0.0007
+    },
+    "7": {
+     "n": 1309,
+     "correct": 757,
+     "accuracy": 0.5783,
+     "wilson95": [
+      0.5513606230158615,
+      0.6047892125774043
+     ],
+     "contested_or_none_share": 0.013
+    },
+    "8": {
+     "n": 724,
+     "correct": 722,
+     "accuracy": 0.9972,
+     "wilson95": [
+      0.989984096745937,
+      0.9992421304991119
+     ],
+     "contested_or_none_share": 0.0028
+    }
+   },
+   "confusion": {
+    "4/5": {
+     "human 4 -> route 2": 109,
+     "human 4 -> route 4": 538,
+     "human 4 -> route 5": 84,
+     "human 5 -> route 0": 37,
+     "human 5 -> route 4": 708,
+     "human 5 -> route 5": 2556
+    },
+    "6/7/8": {
+     "human 6 -> route 5": 277,
+     "human 6 -> route 6": 26,
+     "human 6 -> route 7": 1221,
+     "human 7 -> route 5": 79,
+     "human 7 -> route 7": 757,
+     "human 7 -> route 8": 456,
+     "human 8 -> route 8": 722
+    }
+   }
+  }
+ },
+ "t_prox_gate": {
+  "baseline_B": 0.6065,
+  "need": 0.6565,
+  "accuracy": 0.7503,
+  "contested": 0.0095,
+  "contested_max": 0.2524,
+  "passed": true
+ }
+}

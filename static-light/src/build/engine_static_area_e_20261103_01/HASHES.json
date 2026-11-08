@@ -1,0 +1,13 @@
+{
+ "area_b_e_01.csv": "d01e73fd9ff1bf6d48119ecfc5d9723ae6ae3f44d28d98d6cfce0c622b6592d0",
+ "area_b_e_04.csv": "52d464d7bc0df3e4e1eb6ddb67196183687739b5c5eebb85b1fe528fd289525a",
+ "area_b_e_05.csv": "b7e4a4dc42ccb9f8e50da793144678f49f75fd9270c06e9a287c9847d92ec559",
+ "area_b_e_07.csv": "7e0d85059fcb32e035ece73bd87f0700a660adae76ba55a0ad4dc0ee0ac9da8a",
+ "area_summary.csv": "221974ea623e24cb1c7ac9c9732b7c8fa037eec2472045f09b61a06b1dc52bd5",
+ "CONTRACT.md": "ccd86a0a5b82140c282ce7eb75d5ae9d1b8fbea7fe5c00c1ff5d30521bcfd8a8",
+ "CONTRACT_HASHES.json": "47781f97722c38dee091a4bc314d675f47378cd8b2df15fa25edf48957985562",
+ "GATE_n03.json": "6760e0834bfbac9d895dfb8e34151c0a8c89d4fbccd799ace42f691c84f0e3b3",
+ "per_view_ratios.json": "0b8ac0ad046907347b9d1a37c492b65bd9b0aabff2050370c7b998e46dd961d3",
+ "run.log": "859fd17cb22db4591f0f9dc838197bddebd088f7a8cb506b84c221ee53db8e14",
+ "run_area_e.py": "67ad15f791a2446ef766d3e8ee99a469030ee7c42602b56258e7503fbb55dcab"
+}

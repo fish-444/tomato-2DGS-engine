@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2026 서현우, 김민웅, 이주원, 최재임 (Kyung Hee University, Department of Smart Farm Science)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+Scope: the MIT licence covers source code (*.py, *.js, *.html, *.sh, *.ps1, *.bat
+and our own *.rgg/*.gsz not listed below). Figures (*.png, *.svg, *.pdf) and
+tables (*.csv, *.json result files) are licensed CC BY 4.0, see LICENSE-CC-BY-4.0.md.
+
+NOT INCLUDED in this public repository (withheld, see ../VTC_WITHHELD.md): every VTC-derived model file listed in THIRD_PARTY.md
+(Model_*.rgg, Model_gui_canopy_*.rgg, parametersMicroTom_*.rgg, TomatoCanopyGUI_*.gsz). Their redistribution terms would be those of the VTC
+authors (no licence file found); withheld until they agree.
+
+NOT INCLUDED in this public repository (withheld, see ../VTC_WITHHELD.md): src/tools/vtc_growth_fork.py (embeds the original VTC NRH
+function byte-for-byte) and src/tools/vtc_development.py (drives that fork); see THIRD_PARTY.md.

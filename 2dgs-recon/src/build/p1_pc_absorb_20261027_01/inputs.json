@@ -1,0 +1,28 @@
+{
+ "bundle": "build\\p1_pc_absorb_20261027_01\\kaggle_data\\r8pc_bundle.npz",
+ "bundle_sha256": "ec7cfbce98c8c642bd0b371585a9933b30d7e1529f08775a65ac44fa2016ed61",
+ "sources": {
+  "R7 labels (stage 1 = step_1_diffusion)": {
+   "path": "build\\p1_local_diffusion_20261027_01\\vp_leaf4\\labels.npz",
+   "sha256": "1c7df8d72fd47bcccc0724acedd80474b4831a2ab0bcea1824737e7433e24b4b"
+  },
+  "surfels PLY": {
+   "path": "build\\p1_recon_r3-1_contam_20261022_01\\outputs\\R3-1b_surfels_full.ply",
+   "sha256": "7131b69ade89131b5475853160b8444df44a84d8b3fe0871308acd7080f7714f"
+  },
+  "sheets": {
+   "path": "build\\p1_stacked_sheets_retry_20261026_01\\sheets\\sheets.npz",
+   "sha256": "ef27b4e4022841408c5342415e2792ee32ff40faff87d758a759df8b68edbee3"
+  }
+ },
+ "n": 46719,
+ "blade": 33042,
+ "axis1": 2955,
+ "axis2": 10722,
+ "stage1_unassigned_blade": 5275,
+ "stage1_labelled": 27767,
+ "traces": 10,
+ "t_sheet_mm": 1.529,
+ "offset_mm": 1.529,
+ "reach_mm": 22.72
+}

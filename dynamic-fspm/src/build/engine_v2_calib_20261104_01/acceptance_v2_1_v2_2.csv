@@ -1,0 +1,16 @@
+measure,reference,v1,v2.1,v2.2 A (SLA 수용),v2.2 R (SLA 비수용)
+main-stem compound leaves,hand 7.33 (3-9),12.0,12.0,12.0,12.0
+leaflets per main compound,hand 6.18,5.5,6.087,6.087,6.087
+largest leaflet (mm),-,31.78,15.247,21.38,17.824
+first truss (DAG),lit. 35-40 d after sowing,19.93,16.43,16.43,16.43
+height median (mm),user 130,85.36,128.264,129.718,130.456
+height mean (mm),-,93.068,129.888,134.608,133.039
+leaf area (cm2),C5 29.3-43.6,38.6,12.827,36.295,24.269
+dry mass (g),-,1.016,0.348,0.782,0.562
+trusses,hand 1.5,4.0,12.0,12.0,12.0
+fruits,hand 3.5,16.0,48.0,48.0,48.0
+accepted gross last 10 d (gC/d),-,0.017,0.004,0.012,0.008
+max organ mass ratio (guard <= 1),<= 1,0.773,0.651,0.702,0.649
+span / rachis L (median),recon 0.85,nan,0.52,0.627,0.543
+SLA mean (m2/g),Fan 2013 0.0044-0.0115; Ke 2023 Micro-Tom 0.0313 (36 DAS),0.025,0.02875,0.03318,0.02875
+n seeds,-,16,16,16,16

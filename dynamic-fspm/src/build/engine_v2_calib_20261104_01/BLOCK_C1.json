@@ -1,0 +1,346 @@
+{
+ "block": "C1",
+ "rows": [
+  {
+   "measure": "leaf_area_cm2",
+   "before_median": 38.59959558962787,
+   "before_p05": 18.79214781097486,
+   "before_p95": 58.65340013524488,
+   "after_median": 18.780357902577258,
+   "after_p05": 7.924198007479747,
+   "after_p95": 32.09210945193173,
+   "paired_pct_median": -53.82360207468893,
+   "n_seeds": 16
+  },
+  {
+   "measure": "dm_g",
+   "before_median": 1.0161613641809635,
+   "before_p05": 0.5895841730782361,
+   "before_p95": 1.3897182834059085,
+   "after_median": 0.5074122910726998,
+   "after_p05": 0.2805062313473553,
+   "after_p95": 0.7914009637974007,
+   "paired_pct_median": -51.870955538924655,
+   "n_seeds": 16
+  },
+  {
+   "measure": "height_mm",
+   "before_median": 85.35976,
+   "before_p05": 71.32412500000001,
+   "before_p95": 124.37122625,
+   "after_median": 71.74588,
+   "after_p05": 56.27028125,
+   "after_p95": 108.106395,
+   "paired_pct_median": -17.767562626493934,
+   "n_seeds": 16
+  },
+  {
+   "measure": "absorbed_rel",
+   "before_median": 0.0006966666666666666,
+   "before_p05": 0.00036833333333333336,
+   "before_p95": 0.0010275,
+   "after_median": 0.0003616666666666667,
+   "after_p05": 0.00015000000000000001,
+   "after_p95": 0.0005441666666666665,
+   "paired_pct_median": -53.15286212688978,
+   "n_seeds": 16
+  },
+  {
+   "measure": "main_compounds",
+   "before_median": 12.0,
+   "before_p05": 12.0,
+   "before_p95": 12.0,
+   "after_median": 12.0,
+   "after_p05": 12.0,
+   "after_p95": 12.0,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "main_A0",
+   "before_median": 9.0,
+   "before_p05": 9.0,
+   "before_p95": 9.0,
+   "after_median": 9.0,
+   "after_p05": 9.0,
+   "after_p95": 9.0,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "side_compounds",
+   "before_median": 0.0,
+   "before_p05": 0.0,
+   "before_p95": 0.0,
+   "after_median": 0.0,
+   "after_p05": 0.0,
+   "after_p95": 0.0,
+   "paired_pct_median": NaN,
+   "n_seeds": 16
+  },
+  {
+   "measure": "side_leaves_per_axis",
+   "before_median": 0.0,
+   "before_p05": 0.0,
+   "before_p95": 0.0,
+   "after_median": 0.0,
+   "after_p05": 0.0,
+   "after_p95": 0.0,
+   "paired_pct_median": NaN,
+   "n_seeds": 16
+  },
+  {
+   "measure": "trusses",
+   "before_median": 4.0,
+   "before_p05": 4.0,
+   "before_p95": 4.0,
+   "after_median": 4.0,
+   "after_p05": 4.0,
+   "after_p95": 4.0,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "flowers_and_fruits",
+   "before_median": 16.0,
+   "before_p05": 16.0,
+   "before_p95": 16.0,
+   "after_median": 16.0,
+   "after_p05": 16.0,
+   "after_p95": 16.0,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "fruits",
+   "before_median": 16.0,
+   "before_p05": 16.0,
+   "before_p95": 16.0,
+   "after_median": 16.0,
+   "after_p05": 16.0,
+   "after_p95": 16.0,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "leaflets_per_main",
+   "before_median": 5.5,
+   "before_p05": 4.666666666666667,
+   "before_p95": 6.333333333333333,
+   "after_median": 6.125,
+   "after_p05": 5.625,
+   "after_p95": 6.4375,
+   "paired_pct_median": 10.244360902255647,
+   "n_seeds": 16
+  },
+  {
+   "measure": "leaflets_per_side",
+   "before_median": NaN,
+   "before_p05": NaN,
+   "before_p95": NaN,
+   "after_median": NaN,
+   "after_p05": NaN,
+   "after_p95": NaN,
+   "paired_pct_median": NaN,
+   "n_seeds": 16
+  },
+  {
+   "measure": "theta0_main_mean",
+   "before_median": 16.101078869956012,
+   "before_p05": 9.628356788406945,
+   "before_p95": 19.246755673099894,
+   "after_median": 16.101078869956012,
+   "after_p05": 9.628356788406945,
+   "after_p95": 19.246755673099894,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "bend_mean",
+   "before_median": 20.103282047751435,
+   "before_p05": 15.577741504791563,
+   "before_p95": 24.435839392724915,
+   "after_median": 20.103282047751435,
+   "after_p05": 15.577741504791563,
+   "after_p95": 24.435839392724915,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "internode_draw_mean_mm",
+   "before_median": NaN,
+   "before_p05": NaN,
+   "before_p95": NaN,
+   "after_median": NaN,
+   "after_p05": NaN,
+   "after_p95": NaN,
+   "paired_pct_median": NaN,
+   "n_seeds": 16
+  },
+  {
+   "measure": "internode_len_mean_mm",
+   "before_median": 6.7219440334884535,
+   "before_p05": 5.527161714002804,
+   "before_p95": 9.777843359522054,
+   "after_median": 5.661890257699525,
+   "after_p05": 4.4691436574145085,
+   "after_p95": 8.537088010531534,
+   "paired_pct_median": -17.09104034964168,
+   "n_seeds": 16
+  },
+  {
+   "measure": "max_leaflet_len_mm",
+   "before_median": 31.7803208888351,
+   "before_p05": 24.646263138436275,
+   "before_p95": 38.05651483750783,
+   "after_median": 14.92919370003635,
+   "after_p05": 10.676190503748451,
+   "after_p95": 21.529230409538226,
+   "paired_pct_median": -52.81510493040933,
+   "n_seeds": 16
+  },
+  {
+   "measure": "lw_max",
+   "before_median": 2.3603601463391497,
+   "before_p05": 2.3603601463391413,
+   "before_p95": 2.360360146339156,
+   "after_median": 2.3603601463391533,
+   "after_p05": 2.360360146339137,
+   "after_p95": 2.360360146339184,
+   "paired_pct_median": 4.551914400963142e-13,
+   "n_seeds": 16
+  },
+  {
+   "measure": "first_truss_dag",
+   "before_median": 19.93,
+   "before_p05": 16.93,
+   "before_p95": 22.43,
+   "after_median": 19.93,
+   "after_p05": 16.93,
+   "after_p95": 22.43,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "main_stop_dag",
+   "before_median": 30.93,
+   "before_p05": 26.93,
+   "before_p95": 36.43,
+   "after_median": 30.93,
+   "after_p05": 26.93,
+   "after_p95": 36.43,
+   "paired_pct_median": 0.0,
+   "n_seeds": 16
+  },
+  {
+   "measure": "accepted_gross_last10",
+   "before_median": 0.017027955815476545,
+   "before_p05": 0.00832485844983541,
+   "before_p95": 0.025927574214365808,
+   "after_median": 0.007775651697325505,
+   "after_p05": 0.0030322039107500975,
+   "after_p95": 0.013360005239971532,
+   "paired_pct_median": -56.93728363056441,
+   "n_seeds": 16
+  },
+  {
+   "measure": "potential_gross_cum",
+   "before_median": 0.5607824714907443,
+   "before_p05": 0.3014896728823985,
+   "before_p95": 0.7878503883925235,
+   "after_median": 0.25082143607186597,
+   "after_p05": 0.11289046809659427,
+   "after_p95": 0.42377854187461916,
+   "paired_pct_median": -56.83087305149641,
+   "n_seeds": 16
+  },
+  {
+   "measure": "downregulated_cum",
+   "before_median": 0.00016480831706584183,
+   "before_p05": 0.00010064336836677226,
+   "before_p95": 0.00025092010099811305,
+   "after_median": 5.139386806852442e-05,
+   "after_p05": 3.2308662983667995e-05,
+   "after_p95": 8.883410839288097e-05,
+   "paired_pct_median": -68.1933593107301,
+   "n_seeds": 16
+  },
+  {
+   "measure": "reserve_end",
+   "before_median": 0.0,
+   "before_p05": 0.0,
+   "before_p95": 0.0,
+   "after_median": 0.0,
+   "after_p05": 0.0,
+   "after_p95": 0.0,
+   "paired_pct_median": NaN,
+   "n_seeds": 16
+  },
+  {
+   "measure": "cap_first_dag",
+   "before_median": 4.93,
+   "before_p05": 3.9299999999999997,
+   "before_p95": 5.93,
+   "after_median": 5.93,
+   "after_p05": 4.93,
+   "after_p95": 6.93,
+   "paired_pct_median": 20.283975659229213,
+   "n_seeds": 16
+  },
+  {
+   "measure": "max_mass_ratio",
+   "before_median": 0.6990150640226827,
+   "before_p05": 0.6191704866220121,
+   "before_p95": 0.7619409961087336,
+   "after_median": 0.6437274169037019,
+   "after_p05": 0.586869457535748,
+   "after_p95": 0.675665538349307,
+   "paired_pct_median": -7.7855627909309115,
+   "n_seeds": 16
+  }
+ ],
+ "leaflet_count_mismatch": 0,
+ "pooled_shares": {
+  "rank>9": {
+   "5": 17,
+   "7": 28,
+   "6": 3
+  },
+  "rank9": {
+   "5": 16
+  },
+  "rank8": {
+   "5": 12,
+   "7": 4
+  },
+  "rank7": {
+   "7": 9,
+   "5": 7
+  },
+  "rank6": {
+   "7": 10,
+   "6": 2,
+   "5": 4
+  },
+  "rank5": {
+   "7": 12,
+   "5": 4
+  },
+  "rank4": {
+   "7": 8,
+   "5": 8
+  },
+  "rank3": {
+   "6": 3,
+   "5": 11,
+   "7": 2
+  },
+  "rank2": {
+   "7": 16
+  },
+  "rank1": {
+   "7": 10,
+   "5": 6
+  }
+ }
+}

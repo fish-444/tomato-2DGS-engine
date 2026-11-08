@@ -1,0 +1,1555 @@
+{
+ "plant_id": "n_02",
+ "kind": "observed",
+ "labels": [
+  "mtg_from_traits",
+  "conditional_on_unvalidated_scale",
+  "v2_ungraded_draft_not_frozen",
+  "after_checkpoint_v1",
+  "skeleton_labels_ungraded",
+  "grade_C",
+  "axis_vertical_proxy_through_median_leaf_base",
+  "fitted_to_surfels",
+  "fit_mode_B_B2",
+  "display_only_synthetic_check_not_met"
+ ],
+ "skeleton_file": "build/p1_dz10_labels_20261101_01/n_02_6e44394dd4d8/skeleton_v1.json",
+ "skeleton_sha256": "9e1166a279567ed451a464e3e414b32fa8e618c873b7ea4448d65d3a3f73f9a3",
+ "axis": {
+  "curve_mm": [
+   [
+    204.38306030339157,
+    126.54130160610949,
+    103.84708719680994
+   ],
+   [
+    204.400607602032,
+    126.54714364064486,
+    104.9486729944576
+   ],
+   [
+    204.41094681398846,
+    126.55069139736348,
+    106.0110981211197
+   ],
+   [
+    204.415097710495,
+    126.55229956377686,
+    107.03950971194651
+   ],
+   [
+    204.41408006278553,
+    126.55232282739648,
+    108.03905490208821
+   ],
+   [
+    204.40891364209412,
+    126.55111587573387,
+    109.01488082669505
+   ],
+   [
+    204.40061821965472,
+    126.54903339630056,
+    109.97213462091725
+   ],
+   [
+    204.39021356670136,
+    126.54643007660802,
+    110.91596341990503
+   ],
+   [
+    204.37871945446804,
+    126.54366060416778,
+    111.85151435880861
+   ],
+   [
+    204.3671556541887,
+    126.54107966649137,
+    112.78393457277825
+   ],
+   [
+    204.3565419370974,
+    126.53904195109027,
+    113.71837119696413
+   ],
+   [
+    204.34789807442812,
+    126.537902145476,
+    114.6599713665165
+   ],
+   [
+    204.3422438374148,
+    126.53801493716006,
+    115.6138822165856
+   ],
+   [
+    204.34059899729152,
+    126.53973501365398,
+    116.5852508823216
+   ],
+   [
+    204.3439833252922,
+    126.54341706246926,
+    117.5792244988748
+   ],
+   [
+    204.35341659265092,
+    126.54941577111741,
+    118.60095020139536
+   ],
+   [
+    204.3699185706016,
+    126.55808582710995,
+    119.65557512503354
+   ],
+   [
+    204.3945090303783,
+    126.56978191795837,
+    120.74824640493955
+   ],
+   [
+    204.42820774321493,
+    126.5848587311742,
+    121.88411117626363
+   ],
+   [
+    204.47203448034557,
+    126.60367095426894,
+    123.068316574156
+   ],
+   [
+    204.52700901300415,
+    126.6265732747541,
+    124.30600973376687
+   ],
+   [
+    204.593522323914,
+    126.65340308835874,
+    125.599410502
+   ],
+   [
+    204.66945024175533,
+    126.68192862368224,
+    126.93902957277311
+   ],
+   [
+    204.75203980669772,
+    126.70940081754145,
+    128.31245035175746
+   ],
+   [
+    204.83853805891073,
+    126.73307060675332,
+    129.70725624462432
+   ],
+   [
+    204.92619203856387,
+    126.7501889281347,
+    131.11103065704495
+   ],
+   [
+    205.0122487858267,
+    126.75800671850254,
+    132.51135699469057
+   ],
+   [
+    205.09395534086877,
+    126.75377491467373,
+    133.8958186632325
+   ],
+   [
+    205.16855874385962,
+    126.73474445346514,
+    135.25199906834192
+   ],
+   [
+    205.2333060349688,
+    126.69816627169371,
+    136.5674816156901
+   ],
+   [
+    205.2854442543658,
+    126.64129130617631,
+    137.82984971094834
+   ],
+   [
+    205.32290940447973,
+    126.56230381282053,
+    139.0287058220136
+   ],
+   [
+    205.3463933367773,
+    126.4631213238966,
+    140.1617286656858
+   ],
+   [
+    205.3572768649849,
+    126.34659469076541,
+    141.22861602099061
+   ],
+   [
+    205.3569408028287,
+    126.21557476478789,
+    142.22906566695372
+   ],
+   [
+    205.34676596403503,
+    126.0729123973249,
+    143.16277538260073
+   ],
+   [
+    205.32813316233018,
+    125.92145843973735,
+    144.02944294695732
+   ],
+   [
+    205.30242321144038,
+    125.76406374338616,
+    144.82876613904918
+   ],
+   [
+    205.27101692509197,
+    125.60357915963222,
+    145.56044273790195
+   ],
+   [
+    205.2352951170112,
+    125.44285553983643,
+    146.2241705225413
+   ],
+   [
+    205.19663860092433,
+    125.28474373535968,
+    146.81964727199286
+   ],
+   [
+    205.15642819055765,
+    125.13209459756288,
+    147.34657076528234
+   ],
+   [
+    205.11604469963746,
+    124.98775897780693,
+    147.80463878143536
+   ],
+   [
+    205.07686894188998,
+    124.85458772745274,
+    148.1935490994776
+   ],
+   [
+    205.04028173104157,
+    124.7354316978612,
+    148.5129994984347
+   ],
+   [
+    205.00766388081846,
+    124.6331417403932,
+    148.76268775733237
+   ],
+   [
+    204.9803962049469,
+    124.55056870640966,
+    148.94231165519622
+   ],
+   [
+    204.95985951715323,
+    124.49056344727147,
+    149.05156897105192
+   ],
+   [
+    204.95167166629673,
+    124.46748753103776,
+    149.08230942888179
+   ]
+  ],
+  "base_mm": [
+   204.38306030339157,
+   126.54130160610949,
+   103.84708719680994
+  ],
+  "source": "fitted_to_surfels_ungraded (start: vertical_proxy_through_median_leaf_base (no user axis)); flags ['stem_kept_clicked_band', 'axis_is_vertical_proxy']",
+  "curve_prev_mm": [
+   [
+    204.38306030339157,
+    126.54130160610949,
+    103.84708719680994
+   ],
+   [
+    204.38306030339157,
+    126.54130160610949,
+    151.41902799789636
+   ]
+  ]
+ },
+ "height_mm": 58.08223666900635,
+ "age_dag": 60,
+ "age_source": "user_stated",
+ "area_source": "tprox route labels skelver 6e44394dd4d8 (assigned surfels only, lower bound) x area_b_silhouette_mm2 (static nine)",
+ "flags": [
+  "no_user_axis"
+ ],
+ "nodes": [
+  {
+   "k": 1,
+   "s_mm": 8.865065000000001,
+   "xyz_mm": [
+    204.3680819293263,
+    126.54129662451855,
+    112.71167326096091
+   ],
+   "internode_mm": 8.865065000000001,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 7.3,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    112.71215219680994
+   ]
+  },
+  {
+   "k": 2,
+   "s_mm": 11.096774480285644,
+   "xyz_mm": [
+    204.34621885032928,
+    126.53793564292465,
+    114.94326866795944
+   ],
+   "internode_mm": 2.2317094802856428,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 7.1,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    114.94386167709558
+   ]
+  },
+  {
+   "k": 3,
+   "s_mm": 15.071733853759767,
+   "xyz_mm": [
+    204.3583789588531,
+    126.55202297329384,
+    118.91809006745801
+   ],
+   "internode_mm": 3.974959373474123,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 6.6,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    118.9188210505697
+   ]
+  },
+  {
+   "k": 4,
+   "s_mm": 27.183710715713502,
+   "xyz_mm": [
+    204.92012726460914,
+    126.74900451243478,
+    131.01390358388227
+   ],
+   "internode_mm": 12.111976861953735,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 7.2,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    131.03079791252344
+   ]
+  },
+  {
+   "k": 5,
+   "s_mm": 28.456359288635255,
+   "xyz_mm": [
+    204.99828425797946,
+    126.75673811662334,
+    132.28412442131017
+   ],
+   "internode_mm": 1.272648572921753,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.3,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    132.3034464854452
+   ]
+  },
+  {
+   "k": 6,
+   "s_mm": 32.499819180908204,
+   "xyz_mm": [
+    205.2211667952748,
+    126.7050241851058,
+    136.32084646413438
+   ],
+   "internode_mm": 4.043459892272949,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.3,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    136.34690637771814
+   ]
+  },
+  {
+   "k": 7,
+   "s_mm": 34.01558055633545,
+   "xyz_mm": [
+    205.2854600691167,
+    126.64080283971039,
+    137.83383919213597
+   ],
+   "internode_mm": 1.515761375427246,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_by_rank",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    137.8626677531454
+   ]
+  },
+  {
+   "k": 8,
+   "s_mm": 34.30499019378662,
+   "xyz_mm": [
+    205.2945895115068,
+    126.62201042953589,
+    138.12249093559072
+   ],
+   "internode_mm": 0.2894096374511719,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    138.15207739059656
+   ]
+  },
+  {
+   "k": 9,
+   "s_mm": 34.514053723754884,
+   "xyz_mm": [
+    205.30110560137652,
+    126.60827260641966,
+    138.3310008210917
+   ],
+   "internode_mm": 0.20906352996826172,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    138.36114092056482
+   ]
+  },
+  {
+   "k": 10,
+   "s_mm": 35.8998025869751,
+   "xyz_mm": [
+    205.33707474966752,
+    126.50247762296489,
+    139.71213734799903
+   ],
+   "internode_mm": 1.3857488632202148,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    139.74688978378504
+   ]
+  },
+  {
+   "k": 11,
+   "s_mm": 37.852689168396,
+   "xyz_mm": [
+    205.3571342481641,
+    126.29099293687064,
+    141.65318315903414
+   ],
+   "internode_mm": 1.9528865814208984,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    141.69977636520593
+   ]
+  },
+  {
+   "k": 12,
+   "s_mm": 38.154005429687494,
+   "xyz_mm": [
+    205.3570338896438,
+    126.25186634775548,
+    141.9519482662188
+   ],
+   "internode_mm": 0.3013162612914968,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    142.00109262649744
+   ]
+  },
+  {
+   "k": 13,
+   "s_mm": 38.72577800506592,
+   "xyz_mm": [
+    205.35379238986744,
+    126.1714305718513,
+    142.51798461991427
+   ],
+   "internode_mm": 0.5717725753784251,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    142.57286520187586
+   ]
+  },
+  {
+   "k": 14,
+   "s_mm": 41.26700725311279,
+   "xyz_mm": [
+    205.2943031639491,
+    125.72257069873761,
+    145.01794000905184
+   ],
+   "internode_mm": 2.541229248046868,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    145.11409444992273
+   ]
+  },
+  {
+   "k": 15,
+   "s_mm": 44.57914676422119,
+   "xyz_mm": [
+    205.07523127161446,
+    124.84989223304072,
+    148.20249483048224
+   ],
+   "internode_mm": 3.3121395111084055,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    148.42623396103113
+   ]
+  },
+  {
+   "k": 16,
+   "s_mm": 45.816703221740724,
+   "xyz_mm": [
+    204.95167166629673,
+    124.46748753103776,
+    149.08230942888179
+   ],
+   "internode_mm": 1.2375564575195312,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    149.66379041855066
+   ]
+  },
+  {
+   "k": 17,
+   "s_mm": 47.57194080108643,
+   "xyz_mm": [
+    204.95167166629673,
+    124.46748753103776,
+    149.08230942888179
+   ],
+   "internode_mm": 1.7552375793457031,
+   "internode_source": "skeleton_axis_model_completed",
+   "stem_width_mm": 4.2,
+   "width_source": "hand_measured_rank7_reused(rank>7)",
+   "xyz_prev_mm": [
+    204.38306030339157,
+    126.54130160610949,
+    151.41902799789636
+   ]
+  }
+ ],
+ "leaves": [
+  {
+   "k": 1,
+   "uid": "n_02-L01",
+   "node_k": 1,
+   "base_mm": [
+    196.96994122570908,
+    146.62212073605335,
+    112.71215219680994
+   ],
+   "azimuth_deg": 91.48039734903335,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": 45.02412509675268,
+   "theta0_deg": 3.33,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 58.18426103622129,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 335.52905,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 106.12087984063058,
+    "length_mm": 55.70917876323894,
+    "cost": 8.80370376632287,
+    "gate": {
+     "median_dist_mm": 2.4180844022564414,
+     "share_within_5mm": 0.8055555555555556,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 2,
+   "uid": "n_02-L03",
+   "node_k": 2,
+   "base_mm": [
+    204.34621885032928,
+    126.53793564292465,
+    114.94326866795944
+   ],
+   "azimuth_deg": 153.6060639551101,
+   "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+   "skeleton_elevation_deg": -50.78448705482868,
+   "theta0_deg": 26.67,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 23.566694338008197,
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 50.83232,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 153.6060639551101,
+    "length_mm": 23.566694338008197,
+    "cost": 11.232474440004975,
+    "gate": {
+     "median_dist_mm": 1.2406274982453687,
+     "share_within_5mm": 0.95,
+     "passed": true
+    },
+    "arm": "B2"
+   },
+   "azimuth_prev_deg": 213.60504217453268,
+   "length_prev_mm": 26.11833544481334,
+   "base_prev_mm": [
+    198.21353253430283,
+    130.92312216561115,
+    114.94386167709558
+   ],
+   "theta0_hand_deg": 26.67,
+   "fit_status": "fitted",
+   "fit_mode": "B (B2): theta0/dtheta fixed at the spec values",
+   "rachis_polyline_level2_mm": [
+    [
+     204.34621885032928,
+     126.53793564292465,
+     114.94326866795944
+    ],
+    [
+     198.6868134611596,
+     129.3461019380999,
+     118.11665015803885
+    ],
+    [
+     193.77805523827848,
+     127.74456158404395,
+     120.00794897757436
+    ],
+    [
+     188.5518546196088,
+     126.17163494770725,
+     120.67920072712015
+    ],
+    [
+     185.80938011030898,
+     121.44131730275147,
+     120.09543830557357
+    ]
+   ],
+   "level2_gate": {
+    "median_dist_mm": 1.2726712903319184,
+    "share_within_5mm": 0.95,
+    "passed": true
+   }
+  },
+  {
+   "k": 3,
+   "uid": "n_02-L02",
+   "node_k": 3,
+   "base_mm": [
+    188.81829103535568,
+    144.6830776910094,
+    118.9188210505697
+   ],
+   "azimuth_deg": 176.57179712284193,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -21.100352626810476,
+   "theta0_deg": 37.5,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 46.15759567449861,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 5,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 145.68549000000002,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 151.0458635813792,
+    "length_mm": 49.030769610715744,
+    "cost": 25.013447138794184,
+    "gate": {
+     "median_dist_mm": 1.9554624306551431,
+     "share_within_5mm": 0.7741935483870968,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 4,
+   "uid": "n_02-L04",
+   "node_k": 4,
+   "base_mm": [
+    193.18002447194016,
+    118.13373076718128,
+    131.03079791252344
+   ],
+   "azimuth_deg": 183.16343744449142,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -39.000959967260165,
+   "theta0_deg": 15.0,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 41.270855944327494,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 576.1223,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 197.22351532372096,
+    "length_mm": 39.08442731319458,
+    "cost": 15.059139982902197,
+    "gate": {
+     "median_dist_mm": 3.7395188946661957,
+     "share_within_5mm": 0.5714285714285714,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 5,
+   "uid": "n_02-L05",
+   "node_k": 5,
+   "base_mm": [
+    206.25312646931565,
+    116.03705584805286,
+    132.3034464854452
+   ],
+   "azimuth_deg": 265.34562476112535,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -40.72458750721044,
+   "theta0_deg": 38.0,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 29.289593385768782,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 390.56671,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 262.8813389733063,
+    "length_mm": 28.05774265751269,
+    "cost": 18.44458479824884,
+    "gate": {
+     "median_dist_mm": 3.5141715390525348,
+     "share_within_5mm": 0.6086956521739131,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 6,
+   "uid": "n_02-L06",
+   "node_k": 6,
+   "base_mm": [
+    212.8998931319133,
+    116.75196158688343,
+    136.34690637771814
+   ],
+   "azimuth_deg": 337.9745778813765,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -50.14171086242381,
+   "theta0_deg": 28.0,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 29.865952593647215,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 837.1323000000001,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 23.418111526126495,
+    "length_mm": 29.712524812335552,
+    "cost": 17.08690492069227,
+    "gate": {
+     "median_dist_mm": 1.5652668062969433,
+     "share_within_5mm": 0.8260869565217391,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 7,
+   "uid": "n_02-L07",
+   "node_k": 7,
+   "base_mm": [
+    216.84336694783127,
+    142.48758590023792,
+    137.8626677531454
+   ],
+   "azimuth_deg": 38.05417617180094,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -53.94930362405061,
+   "theta0_deg": 36.0,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 40.14355988235831,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 432.69732999999997,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 44.34569238793467,
+    "length_mm": 41.836335638302735,
+    "cost": 27.75311119916622,
+    "gate": {
+     "median_dist_mm": 4.0405090715436005,
+     "share_within_5mm": 0.5172413793103449,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 8,
+   "uid": "n_02-L09",
+   "node_k": 8,
+   "base_mm": [
+    198.29872247284806,
+    138.21487128536975,
+    138.15207739059656
+   ],
+   "azimuth_deg": 144.3060452507256,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -22.006997070091987,
+   "theta0_deg": 26.67,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 35.908157946404174,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 5,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 285.75089,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 132.7565359239313,
+    "length_mm": 34.61386619054755,
+    "cost": 16.07612322811302,
+    "gate": {
+     "median_dist_mm": 1.5374416522079613,
+     "share_within_5mm": 0.875,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 9,
+   "uid": "n_02-L10",
+   "node_k": 9,
+   "base_mm": [
+    190.0499757201091,
+    135.9287651757506,
+    138.36114092056482
+   ],
+   "azimuth_deg": 186.05687254707078,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -15.573034802977183,
+   "theta0_deg": 26.67,
+   "theta0_source": "hand_measured_by_rank",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 43.12335142446667,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 5,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 558.05658,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 163.75874153214735,
+    "length_mm": 42.70448303486413,
+    "cost": 17.312665180535962,
+    "gate": {
+     "median_dist_mm": 2.6016255472055367,
+     "share_within_5mm": 0.6071428571428571,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 10,
+   "uid": "n_02-L08",
+   "node_k": 10,
+   "base_mm": [
+    204.38306030339157,
+    140.99682891171253,
+    139.74688978378504
+   ],
+   "azimuth_deg": 64.4249978356537,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -40.32444653702067,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 39.42550411037287,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 330.61285,
+   "area_source": "recon_area_b",
+   "flags": [
+    "base_off_axis",
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 76.26642327673201,
+    "length_mm": 37.76588184252503,
+    "cost": 19.385925730820453,
+    "gate": {
+     "median_dist_mm": 3.701930508738043,
+     "share_within_5mm": 0.5555555555555556,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 11,
+   "uid": "n_02-L15",
+   "node_k": 11,
+   "base_mm": [
+    205.3571342481641,
+    126.29099293687064,
+    141.65318315903414
+   ],
+   "azimuth_deg": 147.44191142795574,
+   "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+   "skeleton_elevation_deg": 10.377358683250664,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 22.17746793399732,
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 179.94114,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 147.44191142795574,
+    "length_mm": 22.17746793399732,
+    "cost": 2.808959475938545,
+    "gate": {
+     "median_dist_mm": 1.8701932088040847,
+     "share_within_5mm": 1.0,
+     "passed": true
+    },
+    "arm": "B2"
+   },
+   "azimuth_prev_deg": 146.08369530321576,
+   "length_prev_mm": 28.027537879404527,
+   "base_prev_mm": [
+    202.31066640919602,
+    126.54130160610949,
+    141.69977636520593
+   ],
+   "theta0_hand_deg": 26.14,
+   "fit_status": "fitted",
+   "fit_mode": "B (B2): theta0/dtheta fixed at the spec values",
+   "rachis_polyline_level2_mm": [
+    [
+     205.3571342481641,
+     126.29099293687064,
+     141.65318315903414
+    ],
+    [
+     200.17363639676321,
+     129.25832739784,
+     144.58437468774383
+    ],
+    [
+     196.0714968084435,
+     131.89289132660957,
+     146.31916108095396
+    ],
+    [
+     192.00634066886207,
+     135.04110332223274,
+     146.9033073968186
+    ],
+    [
+     187.54171900768176,
+     137.58841486259175,
+     146.30638406357218
+    ]
+   ],
+   "level2_gate": {
+    "median_dist_mm": 1.8317609504109296,
+    "share_within_5mm": 1.0,
+    "passed": true
+   }
+  },
+  {
+   "k": 12,
+   "uid": "n_02-L11",
+   "node_k": 12,
+   "base_mm": [
+    205.3570338896438,
+    126.25186634775548,
+    141.9519482662188
+   ],
+   "azimuth_deg": 179.5103921117143,
+   "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+   "skeleton_elevation_deg": -15.441954221357102,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 18.000002716931558,
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 147.09432999999999,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 179.5103921117143,
+    "length_mm": 18.000002716931558,
+    "cost": 6.086373829757417,
+    "gate": {
+     "median_dist_mm": 2.830413474354226,
+     "share_within_5mm": 1.0,
+     "passed": true
+    },
+    "arm": "B2"
+   },
+   "azimuth_prev_deg": 179.6988563717062,
+   "length_prev_mm": 20.054210608901776,
+   "base_prev_mm": [
+    201.5601545245067,
+    124.31193911831653,
+    142.00109262649744
+   ],
+   "theta0_hand_deg": 26.14,
+   "fit_status": "fitted",
+   "fit_mode": "B (B2): theta0/dtheta fixed at the spec values",
+   "rachis_polyline_level2_mm": [
+    [
+     205.3570338896438,
+     126.25186634775548,
+     141.9519482662188
+    ],
+    [
+     200.63356206635075,
+     125.16149413207539,
+     144.33100504752701
+    ],
+    [
+     196.67675298203443,
+     125.12733253331952,
+     145.73901789570294
+    ],
+    [
+     192.55928778305523,
+     125.80681919318201,
+     146.2131313203708
+    ],
+    [
+     188.60235974433363,
+     127.12893922192929,
+     145.72864762492762
+    ]
+   ],
+   "level2_gate": {
+    "median_dist_mm": 2.690909214010808,
+    "share_within_5mm": 0.9444444444444444,
+    "passed": true
+   }
+  },
+  {
+   "k": 13,
+   "uid": "n_02-L12",
+   "node_k": 13,
+   "base_mm": [
+    205.06344732350266,
+    121.05373275082385,
+    142.57286520187586
+   ],
+   "azimuth_deg": 225.39807544049052,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": -21.51385253780637,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 24.03189248350507,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 177.6325,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 240.03520334849225,
+    "length_mm": 20.41067988457573,
+    "cost": 8.50809690448605,
+    "gate": {
+     "median_dist_mm": 5.19126086343231,
+     "share_within_5mm": 0.47368421052631576,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 14,
+   "uid": "n_02-L13",
+   "node_k": 14,
+   "base_mm": [
+    205.2943031639491,
+    125.72257069873761,
+    145.01794000905184
+   ],
+   "azimuth_deg": 38.39707590233211,
+   "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+   "skeleton_elevation_deg": 3.777468535136442,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 21.577795263389966,
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 256.34708,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 38.39707590233211,
+    "length_mm": 21.577795263389966,
+    "cost": 5.000552951584276,
+    "gate": {
+     "median_dist_mm": 2.5004215945109225,
+     "share_within_5mm": 0.9473684210526315,
+     "passed": true
+    },
+    "arm": "B2"
+   },
+   "azimuth_prev_deg": 53.917848730533585,
+   "length_prev_mm": 25.140503629305066,
+   "base_prev_mm": [
+    210.95965799397385,
+    125.26221596997058,
+    145.11409444992273
+   ],
+   "theta0_hand_deg": 26.14,
+   "fit_status": "fitted",
+   "fit_mode": "B (B2): theta0/dtheta fixed at the spec values",
+   "rachis_polyline_level2_mm": [
+    [
+     205.2943031639491,
+     125.72257069873761,
+     145.01794000905184
+    ],
+    [
+     210.5124032190905,
+     128.2803085359889,
+     147.86987292008192
+    ],
+    [
+     211.76485260091252,
+     132.85544119908636,
+     149.55775116343264
+    ],
+    [
+     215.4127793779962,
+     136.27874493849632,
+     150.12610232259578
+    ],
+    [
+     220.41398734116768,
+     136.28216254673666,
+     149.54531963310822
+    ]
+   ],
+   "level2_gate": {
+    "median_dist_mm": 2.3676369355163147,
+    "share_within_5mm": 0.9473684210526315,
+    "passed": true
+   }
+  },
+  {
+   "k": 15,
+   "uid": "n_02-L17",
+   "node_k": 15,
+   "base_mm": [
+    207.70919355458176,
+    119.00156771939075,
+    148.42623396103113
+   ],
+   "azimuth_deg": 1.6922356210208742,
+   "azimuth_source": "skeleton_first10mm_observed",
+   "skeleton_elevation_deg": 70.0382357804235,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 16.368335919832532,
+   "length_source": "skeleton_path_observed",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 90.66077,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 312.6049716476989,
+    "length_mm": 15.950455035737416,
+    "cost": 4.939604680904905,
+    "gate": {
+     "median_dist_mm": 1.4564255609597856,
+     "share_within_5mm": 0.75,
+     "passed": false
+    },
+    "arm": "B2"
+   },
+   "fit_status": "fit_failed_kept_original"
+  },
+  {
+   "k": 16,
+   "uid": "n_02-L14",
+   "node_k": 16,
+   "base_mm": [
+    204.95167166629673,
+    124.46748753103776,
+    149.08230942888179
+   ],
+   "azimuth_deg": 94.49841591620647,
+   "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+   "skeleton_elevation_deg": 11.96930824713358,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 16.087946224455823,
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 162.20366,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 94.49841591620647,
+    "length_mm": 16.087946224455823,
+    "cost": 2.4302772492137223,
+    "gate": {
+     "median_dist_mm": 1.0208370084892149,
+     "share_within_5mm": 1.0,
+     "passed": true
+    },
+    "arm": "B2"
+   },
+   "azimuth_prev_deg": 100.48185309321076,
+   "length_prev_mm": 17.725900076253108,
+   "base_prev_mm": [
+    205.25935300892746,
+    129.68215346138751,
+    149.66379041855066
+   ],
+   "theta0_hand_deg": 26.14,
+   "fit_status": "fitted",
+   "fit_mode": "B (B2): theta0/dtheta fixed at the spec values",
+   "rachis_polyline_level2_mm": [
+    [
+     204.95167166629673,
+     124.46748753103776,
+     149.08230942888179
+    ],
+    [
+     205.62348628220346,
+     128.74782884648235,
+     151.20865008363128
+    ],
+    [
+     205.11206757133525,
+     132.2472837777122,
+     152.4670962817249
+    ],
+    [
+     205.21568319767562,
+     135.97570435613406,
+     152.89084684444978
+    ],
+    [
+     202.89033321686978,
+     138.8906078785057,
+     152.45782759653693
+    ]
+   ],
+   "level2_gate": {
+    "median_dist_mm": 1.0083839223219675,
+    "share_within_5mm": 1.0,
+    "passed": true
+   }
+  },
+  {
+   "k": 17,
+   "uid": "n_02-L16",
+   "node_k": 17,
+   "base_mm": [
+    204.95167166629673,
+    124.46748753103776,
+    149.08230942888179
+   ],
+   "azimuth_deg": 194.65285353184166,
+   "azimuth_source": "fitted_to_surfels_ungraded (was: skeleton_first10mm_observed)",
+   "skeleton_elevation_deg": 40.244246171502695,
+   "theta0_deg": 26.14,
+   "theta0_source": "hand_measured_all_ranks(rank>9)",
+   "dtheta_deg": 32.764,
+   "dtheta_source": "skeleton_traits_ungraded",
+   "length_mm": 16.24371101813005,
+   "length_source": "fitted_to_surfels_ungraded (was: skeleton_path_observed)",
+   "leaflets": 7,
+   "leaflets_source": "hand_measured_mode_by_rank",
+   "area_mm2": 100.75822,
+   "area_source": "recon_area_b",
+   "flags": [
+    "theta0_from_hand_template_not_skeleton_elevation"
+   ],
+   "geometry": "observed",
+   "fit_level1": {
+    "azimuth_deg": 194.65285353184166,
+    "length_mm": 16.24371101813005,
+    "cost": 5.335113578054244,
+    "gate": {
+     "median_dist_mm": 2.699735611107062,
+     "share_within_5mm": 0.9411764705882353,
+     "passed": true
+    },
+    "arm": "B2"
+   },
+   "azimuth_prev_deg": 181.5314147179812,
+   "length_prev_mm": 17.711038756357816,
+   "base_prev_mm": [
+    208.83709177082932,
+    122.5956605653075,
+    151.41902799789636
+   ],
+   "theta0_hand_deg": 26.14,
+   "fit_status": "fitted",
+   "fit_mode": "B (B2): theta0/dtheta fixed at the spec values",
+   "rachis_polyline_level2_mm": [
+    [
+     204.95167166629673,
+     124.46748753103776,
+     149.08230942888179
+    ],
+    [
+     202.8659914281229,
+     120.62198741380254,
+     151.22923748545048
+    ],
+    [
+     199.43225348750585,
+     119.64190988851018,
+     152.49986806119313
+    ],
+    [
+     196.11379146886514,
+     121.4224608151258,
+     152.92772141106383
+    ],
+    [
+     192.59761828148564,
+     122.76818821708866,
+     152.49050963584716
+    ]
+   ],
+   "level2_gate": {
+    "median_dist_mm": 1.8492200821101752,
+    "share_within_5mm": 0.9411764705882353,
+    "passed": true
+   }
+  }
+ ],
+ "side_axes": [],
+ "trusses": [],
+ "notes": [
+  "dtheta note from the draft: plant means of per-leaf \u0394\u03b8; extractor passed \u00a73; base chord may follow click direction (see \u03b80 row); first click lies on the leaflets (95 % of real clicks on a wide surface, v4) -> dtheta may be underestimated"
+ ],
+ "fit": {
+  "contract": "build/mtg_fit_surfels_20261103_01/CONTRACT.md (amendment B)",
+  "arm": "B2",
+  "label_source": "tprox labels skelver 6e44394dd4d8 (assigned only); surfels = ply rows of the labels",
+  "stem": {
+   "start_length_mm": 47.57194080108643,
+   "candidates": 785,
+   "band_counts": [
+    11,
+    44,
+    206,
+    194,
+    330
+   ],
+   "flags": [
+    "stem_kept_clicked_band",
+    "axis_is_vertical_proxy"
+   ],
+   "kept_bands": 1,
+   "shift_max": 4.500697336540745,
+   "shift_median": 1.924698475561136,
+   "cost": 5.754486694740352,
+   "iters": 45,
+   "top_dist_to_surfel_median": 0.3251734221741393,
+   "top_angle_deg": 16.251647124576653,
+   "top_curls": false
+  },
+  "note": "fitted geometry of this plant (phi, L, stem); theta0 / dtheta = hand template / draft row, unchanged"
+ },
+ "edited_from": "mtg_n_02_spec.json"
+}

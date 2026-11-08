@@ -1,0 +1,120 @@
+{
+ "main_truss_node": {
+  "lo": 5,
+  "hi": 9,
+  "mu": 7.0,
+  "sigma": 1.3333333333333333,
+  "pmf": {
+   "5": 0.10277116095065152,
+   "6": 0.23895010827781665,
+   "7": 0.31655746154306363,
+   "8": 0.23895010827781665,
+   "9": 0.10277116095065152
+  },
+  "sensitivity_sigma": 1.0,
+  "sensitivity_pmf": {
+   "5": 0.054488684549642945,
+   "6": 0.24420134200323335,
+   "7": 0.40261994689424746,
+   "8": 0.24420134200323335,
+   "9": 0.054488684549642945
+  },
+  "draw_key": "RP_MAIN_TRUSS_NODE",
+  "draw_unit": "plant",
+  "source": "user_stated_2026-11-05"
+ },
+ "main_total_leaves": {
+  "lo": 10,
+  "hi": 13,
+  "mu": 11.5,
+  "sigma": 1.0,
+  "pmf": {
+   "10": 0.13447071068499755,
+   "11": 0.36552928931500245,
+   "12": 0.36552928931500245,
+   "13": 0.13447071068499755
+  },
+  "sensitivity_sigma": 0.75,
+  "sensitivity_pmf": {
+   "10": 0.07228887523293863,
+   "11": 0.42771112476706136,
+   "12": 0.42771112476706136,
+   "13": 0.07228887523293863
+  },
+  "draw_key": "RP_MAIN_TOTAL_LEAVES",
+  "draw_unit": "plant",
+  "source": "user_stated_2026-11-05"
+ },
+ "side_axes_per_plant": {
+  "lo": 2,
+  "hi": 4,
+  "mu": 3.0,
+  "sigma": 0.6666666666666666,
+  "pmf": {
+   "2": 0.19684199114708595,
+   "3": 0.6063160177058281,
+   "4": 0.19684199114708595
+  },
+  "sensitivity_sigma": 0.5,
+  "sensitivity_pmf": {
+   "2": 0.10650697891920076,
+   "3": 0.7869860421615985,
+   "4": 0.10650697891920076
+  },
+  "draw_key": "RP_SIDE_AXES_PER_PLANT",
+  "draw_unit": "plant",
+  "source": "user_stated_2026-11-05"
+ },
+ "side_total_leaves": {
+  "lo": 5,
+  "hi": 7,
+  "mu": 6.0,
+  "sigma": 0.6666666666666666,
+  "pmf": {
+   "5": 0.19684199114708595,
+   "6": 0.6063160177058281,
+   "7": 0.19684199114708595
+  },
+  "sensitivity_sigma": 0.5,
+  "sensitivity_pmf": {
+   "5": 0.10650697891920076,
+   "6": 0.7869860421615985,
+   "7": 0.10650697891920076
+  },
+  "draw_key": "RP_SIDE_TOTAL_LEAVES",
+  "draw_unit": "axis",
+  "source": "user_stated_2026-11-05"
+ },
+ "divergence_deg": {
+  "distribution": "uniform",
+  "lo": 90.0,
+  "hi": 100.0,
+  "draw_key": "RP_DIVERGENCE_V24_DEG",
+  "draw_unit": "plant",
+  "applies_to": "main and side axes",
+  "source": "user_stated_2026-11-05 18:06",
+  "note": "user form: one angle per plant; Engine v2 keeps its existing per-compound-leaf divergence form (reported to the user by Engine v2); outside the earlier tested 119.3/137.5/154.7 set"
+ },
+ "side_axis_rules": {
+  "attach_rank_shares": {
+   "1": 0.1,
+   "2": 0.2,
+   "4": 0.1,
+   "5": 0.2,
+   "7": 0.2,
+   "9": 0.2
+  },
+  "attach_draw": "without replacement, renormalised after each draw, restricted to ranks existing on the main axis; fewer eligible than n_s -> use available, report",
+  "emergence": "first side axis = main first truss + 150 degCd + 1 phyllochron; each further axis +1 phyllochron",
+  "first_truss_node": 2,
+  "stem_angle_deg": 40,
+  "terminal_trusses": 2,
+  "flowers_per_truss": 4
+ },
+ "coupling": "main total leaves >= main first-truss node + 2; else redraw from the same keyed stream (next u), rate reported",
+ "static_mtg": "not affected (axes from the reconstruction / _04); template drives the dynamic engine and ideotype draws only",
+ "template_csv": {
+  "file": "build/traits_recon_20261101_01/MTG_TEMPLATE_v2_4.csv",
+  "sha256": "6901657ea95d7e32acce44cbf2eddaf7149d099f816b7624f27ac5f458ca7f72"
+ }
+}

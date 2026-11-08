@@ -1,0 +1,13 @@
+{
+ "set": "static_v2_click_skeleton_20261105_04",
+ "decision": "user 2026-11-05: 'Accept, flag 3' - _04 adopted for all 11 plants; 3 plants carry a flag",
+ "check": "build/mtg_build_v2_clicks_curv_20261105_01/mtg_geometry_check.csv (run 3, amendment 2): area within 5 %, p50 surfel->MTG <= 1.5 % H_surfel, normal-deviation median difference within 5 deg",
+ "flags": {
+  "R3-1b": ["user_accepted_despite_reconstruction_check_fail", "distance_p50_2.65pctH", "normals_minus6.2deg"],
+  "n_03": ["user_accepted_despite_reconstruction_check_fail", "normals_minus7.0deg"],
+  "e_01": ["user_accepted_despite_reconstruction_check_fail", "distance_p50_1.53pctH", "normals_minus5.8deg"]
+ },
+ "passed": ["n_01", "n_02", "n_04", "n_05", "n_06", "e_04", "e_05", "e_07"],
+ "cause": "one quadric surface per leaflet is smoother than the surfels (same form as the curvature traits / Engine C4B)",
+ "labels": ["leaf_curvature_from_reconstruction", "mtg_follows_reconstruction", "skeleton_labels_ungraded", "conditional_on_unvalidated_scale", "not_validation"]
+}
