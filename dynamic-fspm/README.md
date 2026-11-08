@@ -1,6 +1,6 @@
 # microtom-dynamic-fspm — Micro-Tom 동적 FSPM (GroIMP, VTC 파생)
 
-**저자:** 서현우, 김민웅, 이주원, 최재임 (경희대학교 스마트팜과학과) · 버전 0.1.0 (2026-11-08) · 공개 저장소 `tomato-2DGS-engine` 의 하위 폴더
+
 
 > **공개판 안내 (tomato-2DGS-engine):** VTC 파생 파일(모델 `.rgg`·`.gsz`, `src/tools/vtc_growth_fork.py`, `src/tools/vtc_development.py`, 모델 비교 `.diff`)은 원저자 허락 전이라 이 저장소에 넣지 않았습니다. 목록·sha256·그 때문에 돌지 않는 스크립트는 상위 [`VTC_WITHHELD.md`](../VTC_WITHHELD.md).
 > *Public edition: VTC-derived files are withheld; see [`../VTC_WITHHELD.md`](../VTC_WITHHELD.md) for the list, hashes and the scripts that need them.*
