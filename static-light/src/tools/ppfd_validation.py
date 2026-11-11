@@ -890,7 +890,7 @@ def absolute_blockers(scene, case: dict, rig: list[dict], sensors: dict, points:
             out.append(f'{fx.fixture_id}: full-output state not confirmed in lamp_conditions.csv')
     for r in rig:
         if r['role'] not in SURFACE_ROLES:
-            issues.append(f'rig surface {r["surface_id"]}: role must be one of {SURFACE_ROLES}')
+            out.append(f'rig surface {r["surface_id"]}: role must be one of {SURFACE_ROLES}')
         if r['role'] == 'display_only':
             continue
         for k in ('geometry_status', 'optics_status'):
