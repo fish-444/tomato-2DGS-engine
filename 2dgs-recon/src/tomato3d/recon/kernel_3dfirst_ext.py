@@ -5,7 +5,7 @@ import glob, json, os, shutil, subprocess, sys, time
 from pathlib import Path
 
 STAGE = "pre"
-IID = "n_04"
+IID = ""
 LAYERS = "h2,sa"
 T0 = time.time(); W = Path("/kaggle/working"); ROOT = Path("/tmp/root"); MIR = W / "mirror"
 
@@ -43,7 +43,7 @@ for mf in glob.glob("/kaggle/input/**/MIRROR.json", recursive=True):
             os.symlink(src, dst)
 if missing:
     fail(f"{len(missing)} mirrored files missing, first {missing[:5]}")
-os.chdir(ROOT); sys.path.insert(0, str(ROOT))
+os.chdir(ROOT); sys.path.insert(0, str(ROOT)); os.environ["MICROTOM_ROOT"] = str(ROOT)
 r = subprocess.run([sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", "--noconftest", "tests/test_all3d_first.py", "tests/test_all3d_merge.py"], cwd=str(ROOT))
 if r.returncode:
     fail("unit tests failed (tests/test_all3d_first.py, tests/test_all3d_merge.py)")
@@ -68,11 +68,8 @@ try:
     elif STAGE == "pre":
         for s in ("inputs", "prep", "geometry"):
             A.main(["--id", IID, "--step", s])
-        n_rf = A.write_rf_inputs(IID); c = A.cell(IID)
-        for f in (c / "rf_inputs").glob("*.jpg"):                                      # distinct suffix so the local download can pick them by name
-            if not f.name.endswith(".rfin.jpg"):
-                f.rename(f.with_name(f.stem + ".rfin.jpg"))
-        n = export([c]); print("rf inputs", n_rf, flush=True)
+        c = A.cell(IID)
+        n = export([c])
     elif STAGE == "merge":
         from tomato3d.organs import all3d_merge as MG
         summ = MG.run(IID); print(json.dumps({k: summ[k] for k in ("voting_views", "layers_used", "merges", "groups", "unassigned_share", "estimated_user_minutes")}), flush=True)

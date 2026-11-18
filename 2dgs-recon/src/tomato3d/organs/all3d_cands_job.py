@@ -3,7 +3,6 @@
 Per photo: optional crop + upsample (plant < 10 % of the frame, from `detect_input.json`), then
   P-H2  M1 + SAM v5 (charuco_leaflets.run_view unchanged) on the crop,
   P-SA  SAM 2.1 automatic masks, grid 32 x 32, pred_iou 0.7, stability 0.9, default box NMS (nested whole / part / sub-part kept; only IoU >= 0.9 duplicates dropped),
-  P-RF  drawn from cached Roboflow boxes when `rf_detections/<stem>.json` exists (the key is never present here).
 Masks are mapped back to the 1536 grid of the full frame and kept if >= 70 % inside the plant mask (dilated 3 px) and inside the size range (px^2 from mm^2 through the photo's px/mm).
 
 usage: python -m tomato3d.organs.all3d_cands_job --job JOB/<id> --out OUT/<id> --sam-config sam.json --t1 parameters.json --m1 M1.pt --size-prior size_prior.json
@@ -27,7 +26,7 @@ FILT = dict(inside_plant=0.70, plant_dilate=3, size_tol=(0.5, 1.5))
 
 
 def rle(m):
-    from tomato3d.organs import seed2d as S2
+    from tomato3d.organs import seed2d as S2  # not shipped: run-time dependency, see report
     return dict(size=[H2, H2], counts=S2.rle_encode(m))
 
 
@@ -44,12 +43,12 @@ def iou(a, b):
 def run(job: Path, out: Path, sam_config: Path, t1: Path, m1: Path, size_prior: dict, views=None, layers="h2,sa"):
     from sam2.automatic_mask_generator import SAM2AutomaticMaskGenerator
     from ultralytics import YOLO
-    from tomato3d.leafseg import hybrid as hy
+    from tomato3d.leafseg import hybrid as hy  # not shipped: run-time dependency, see report
     from tomato3d.leafseg import pixels as px
-    from tomato3d.leafseg import run as r2
-    from tomato3d.organs import all_detect_job as DJ
-    from tomato3d.recon import charuco_leaflets as CL
-    from tomato3d.topview.measure2d import load_sam
+    from tomato3d.leafseg import run as r2  # not shipped: run-time dependency, see report
+    from tomato3d.organs import all_detect_job as DJ  # not shipped: run-time dependency, see report
+    from tomato3d.recon import charuco_leaflets as CL  # not shipped: run-time dependency, see report
+    from tomato3d.topview.measure2d import load_sam  # not shipped: run-time dependency, see report
     r2.SAMCFG = Path(sam_config); r2.T1CFG = Path(t1); hy.M1_WEIGHTS = Path(m1)
     model = YOLO(str(m1)); sam = load_sam(Path(sam_config)); cfg = json.load(open(t1, encoding="utf-8"))
     gen = SAM2AutomaticMaskGenerator(sam.predictor.model, points_per_side=SA["points_per_side"], points_per_batch=64, pred_iou_thresh=SA["pred_iou"], stability_score_thresh=SA["stability"], min_mask_region_area=50)
@@ -88,32 +87,10 @@ def run(job: Path, out: Path, sam_config: Path, t1: Path, m1: Path, size_prior: 
             for i, r in enumerate(recs):
                 native = cv2.resize(np.asarray(r["segmentation"], np.uint8), (cw, ch), interpolation=cv2.INTER_NEAREST); before = len(cands); add(f"SA:{i}", "P-SA", to_grid(native, c, full), r.get("stability_score", 0.0)); n_sa += len(cands) - before
             log["SA"] = dict(generated=len(recs), kept=n_sa)
-        # P-RF from cached boxes (no key here)
-        rf = job / "rf_detections" / f"{stem}.json"
-        if "rf" in L and rf.exists():
-            try:
-                log["RF"] = rf_draw(job, stem, det_img, plant_det, sam, cfg, c, full, add, cw, ch)
-            except (Exception, SystemExit) as e:
-                log["RF"] = dict(error=f"{type(e).__name__}: {e}")
         json.dump(dict(view=v, labels=dict(status="R3-1b-style_unaccepted", gate="gate_failed_viewing_only"), size_range_px=[round(lo), round(hi)], candidates=cands, log=log, counts=dict(Counter(x["prop"] for x in cands)), seconds=round(time.time() - t0, 1)),
                   open(res_f, "w", encoding="utf-8"), default=float)
         summ[v] = dict(counts=dict(Counter(x["prop"] for x in cands)), seconds=round(time.time() - t0, 1)); print(stem, summ[v], flush=True)
     json.dump(summ, open(out / "summary.json", "w", encoding="utf-8"), indent=1)
-
-
-def rf_draw(job, stem, det_img, plant_det, sam, cfg, c, full, add, cw, ch):
-    from tomato3d.leafseg import engine as eng
-    from tomato3d.leafseg import pixels as px
-    from tomato3d.leafseg import rfdet
-    from tomato3d.organs import auto_proposers as AP
-    pred = rfdet.fetch(job / "photos" / f"{stem}.jpg", det_img, job / "rf_detections" / f"{stem}.json", None); n = len(pred.get("predictions", []))
-    dets = rfdet.tiled_dets(job / "photos" / f"{stem}.jpg", det_img, job / "rf_detections_tiled", stem, None)[0] if n >= AP.RF_CAP else rfdet.to_dets(pred, det_img.shape[:2])
-    with AP.fixed_foreground(cv2.resize(plant_det.astype(np.uint8), (H2, H2), interpolation=cv2.INTER_NEAREST) > 0):
-        res = eng.run_image(det_img, None, sam, None, cfg, dets=dets)
-    k = 0
-    for x in res["instances"]:
-        g = px.rle_decode(x["visible_segmentation"]).astype(np.uint8); native = cv2.resize(g, (cw, ch), interpolation=cv2.INTER_NEAREST); b = k; add(f"RF:{x['id']}", "P-RF", to_grid(native, c, full), x.get("score") or 0.0); k += 1
-    return dict(predictions=n, boxes=len(dets), instances=len(res["instances"]))
 
 
 def main(argv=None):

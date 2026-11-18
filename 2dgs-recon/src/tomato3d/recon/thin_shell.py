@@ -112,7 +112,7 @@ def measure(ply, views_npz, leaf_npz=None, own_axis=False):
 def second_layer_test(out_json):
     """Contract section 6: are the stacked second layers visible and photo-consistent on views never used in training?"""
     from PIL import Image
-    from tomato3d.organs import vote2d as V2
+    from tomato3d.organs import vote2d as V2  # not shipped: pilot-only scoring helper
     po = json.load(open(LO.DEFAULTS["poses"])); con = json.load(open(ROOT / "build/p1_recon_r3-1_20261022_01/contract.json")); held = con["heldout_fresh"]
     sf, rows = plant(R31B); xyz = sf["xyz"][rows].astype(float); rgb = sf["rgb"][rows].astype(float); sc = sf["scale"][rows].astype(float)
     nrm = sf["normal"][rows].astype(float); nrm /= np.maximum(np.linalg.norm(nrm, axis=1, keepdims=True), 1e-12)

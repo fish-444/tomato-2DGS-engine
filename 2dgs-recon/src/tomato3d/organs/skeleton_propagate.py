@@ -4,7 +4,7 @@
 The main route (R8_pc) runs only where its frozen inputs exist (R3-1b); for the other individuals it is reported as not runnable (missing axis_kind and stage1), never approximated.
 Labels are always re-derived from the skeleton; nothing is edited by hand. Previous result files are kept (timestamped).
 
-usage: python -m tomato3d.organs.skeleton_propagate --step convert|distance|check --id n_04
+usage: python -m tomato3d.organs.skeleton_propagate --step convert|distance|check --id <plant_id>
 """
 
 from __future__ import annotations
@@ -115,7 +115,7 @@ def step_check(pid):
 
 # ---------------------------------------------------------------- skeleton -> plant_tree_v1 (section 4)
 def step_tree(pid):
-    from tomato3d.organs import skeleton_tree as ST
+    from tomato3d.organs import skeleton_tree as ST  # not shipped: run-time dependency, see report
     d = SIO.skeleton_dir(ROOT, pid, capture_date(pid)); sk = SIO.load(d / "skeleton_v1.json"); lab = np.load(d / "labels_skeleton_distance.npz", allow_pickle=True)
     uids = [str(u) for u in lab["leaf_uids"]]; areas, src = None, None; f = LIGHT_NINE / pid / "per_surfel_light.npz"
     if f.exists():
@@ -134,8 +134,8 @@ def step_tree(pid):
 def step_r31b(pid="R3-1b"):
     """Skeleton from the 10 human rachis traces -> back to frozen trace arrays -> compare with r8pc_bundle.npz. Only light inputs are read (trace JSONs, matrix_T.csv, the bundle)."""
     from tomato3d.organs import compound_cluster as CC
-    from tomato3d.organs import local_diffusion as LD
-    from tomato3d.organs import trace_reconcile as TR
+    from tomato3d.organs import local_diffusion as LD  # not shipped: run-time dependency, see report
+    from tomato3d.organs import trace_reconcile as TR  # not shipped: run-time dependency, see report
     traces = CC.load_traces(TR.TRACES); tmap = LD.trace_map_vp()
     for t in traces:
         t["leaf"] = tmap[t["key"]]["leaf"]                                              # the frozen "vp" numbering of the bundle

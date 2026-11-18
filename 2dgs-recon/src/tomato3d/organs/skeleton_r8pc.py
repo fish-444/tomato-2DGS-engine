@@ -3,7 +3,7 @@ Contract: build/p1_skeleton_layer_20261101_01/CONTRACT.md, Amendment A2. Frozen 
 
 Per individual run folder  build/p1_skeleton_layer_20261101_01/r8pc/<plant>/<stamp>/ mirrors the frozen layout: kaggle_data/r8pc_bundle.npz, R8_pc/labels.npz, R8_pc_rachis/labels_rachis.npz.
 
-usage: python -m tomato3d.organs.skeleton_r8pc --step axis|bundle|push|poll|download|rachis|gate|score --id n_04|R3-1b
+usage: python -m tomato3d.organs.skeleton_r8pc --step axis|bundle|push|poll|download|rachis|gate|score --id <plant_id>|R3-1b
 """
 
 from __future__ import annotations
@@ -25,6 +25,7 @@ from tomato3d.organs import skeleton_io as SIO
 from tomato3d.organs import skeleton_propagate as SP
 
 ROOT = SP.ROOT
+CODE = Path(__file__).resolve().parent
 B = ROOT / "build/p1_skeleton_layer_20261101_01"; RUNS = B / "r8pc"
 FROZEN = ROOT / "build/p1_pc_absorb_20261027_01"
 ADAPT = dict(rachis_mm=3.0, blade_mm=8.0, blade_margin_mm=5.0)
@@ -39,7 +40,7 @@ def sha(p):
 
 
 def hashes():
-    return {k: sha(ROOT / v) for k, v in dict(pc_absorb="tomato3d/organs/pc_absorb.py", pc_rachis="tomato3d/organs/pc_rachis.py", compound_cluster="tomato3d/organs/compound_cluster.py", this="tomato3d/organs/skeleton_r8pc.py",
+    return {k: sha(ROOT / v) for k, v in dict(pc_absorb=CODE / "pc_absorb.py", pc_rachis=CODE / "pc_rachis.py", compound_cluster=CODE / "compound_cluster.py", this=CODE / "skeleton_r8pc.py",
                                                 frozen_bundle="build/p1_pc_absorb_20261027_01/kaggle_data/r8pc_bundle.npz", frozen_r8pc_labels="build/p1_pc_absorb_20261027_01/R8_pc/labels.npz").items()}
 
 
@@ -166,7 +167,7 @@ def step_push(pid, stamp=None):
     d = run_dir(pid, stamp); meta = json.load(open(d / "bundle_meta.json", encoding="utf-8")); ds, ks = slugs(pid, meta["stamp"])
     (d / "kaggle_data" / "dataset-metadata.json").write_text(json.dumps(dict(title=ds, id=f"dolgfish/{ds}", licenses=[dict(name="CC0-1.0")])))
     rc, o = kg("datasets", "create", "-p", str(d / "kaggle_data"), "--dir-mode", "zip"); print("dataset", rc, o.strip()[-120:])
-    k = d / "kaggle_kernel"; k.mkdir(exist_ok=True); shutil.copy(ROOT / "tomato3d/organs/pc_absorb.py", k / "pc_absorb.py")
+    k = d / "kaggle_kernel"; k.mkdir(exist_ok=True); shutil.copy(CODE / "pc_absorb.py", k / "pc_absorb.py")
     (k / "kernel-metadata.json").write_text(json.dumps(dict(id=f"dolgfish/{ks}", title=ks, code_file="pc_absorb.py", language="python", kernel_type="script", is_private=True, enable_gpu=False, enable_internet=False,
                                                           dataset_sources=[f"dolgfish/{ds}"], competition_sources=[], kernel_sources=[])))
     time.sleep(20); rc, o = kg("kernels", "push", "-p", str(k)); print("kernel", rc, o.strip()[-120:]); json.dump(dict(dataset=ds, kernel=ks, pushed=time.strftime("%Y-%m-%d %H:%M:%S"), pc_absorb_sha=sha(k / "pc_absorb.py")), open(d / "kaggle.json", "w"), indent=1)

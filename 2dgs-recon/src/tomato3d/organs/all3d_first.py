@@ -7,7 +7,7 @@ Steps (each idempotent, marked in <cell>/state.json; a finished step is never re
   prep         every posed photo: undistorted 3024 jpg, plant mask copy, px/mm, crop box (Step 1.3), packed visibility
   geometry     blade proxy (S1), local sheets, t_sheet, sheet graph patches, 4a over-segmentation (Steps 2-3)
 
-usage: python -m tomato3d.organs.all3d_first --id n_04 --step geometry
+usage: python -m tomato3d.organs.all3d_first --id <plant_id> --step geometry
 """
 
 from __future__ import annotations
@@ -30,8 +30,8 @@ from tomato3d.organs import sheet_retry as SR
 ROOT = LO.ROOT
 OUT = ROOT / "build/p1_all_3dfirst_20261027_01"
 LABELS = dict(status="R3-1b-style_unaccepted", gate="gate_failed_viewing_only", scale=LO.SCALE_TAG)
-ORDER = ["n_04", "t2_02", "n_01", "t2_05", "n_06", "n_05", "t2_04", "n_02", "n_03", "e_05", "e_01", "e_04", "e_07", "e_06", "e_03", "e_02"]       # e_* = 2026-10-28 batch (user 2026-10-31: all 16 individuals in the same grouping page)
-RIM_NOTE = {"n_02": "heights_unusable_rim_fit"}
+ORDER = []                                       # plant ids in processing order; fill in for your own individuals (default of all3d_ext --ids)
+RIM_NOTE = {}                                    # plant id -> note written as `tag` in inputs.json / geometry.json / merge summary
 POSE_QC_RMS_PX_3024 = 3.0                      # S6: D7 limit 1.5 px at 1512
 PROXY = dict(radius_mm=4.0, min_neighbours=8, l2_over_l1=0.25)       # S1
 CROP = dict(frame_share=0.10, margin=0.10, long_px=1500)             # Step 1.3
@@ -44,7 +44,7 @@ def cell(iid):
 
 
 def _sf(step):
-    return "state_rf.json" if step == "rf" else "state.json"          # the Roboflow lane has its own state file (its own writer)
+    return "state.json"
 
 
 def state(iid, step="inputs"):
@@ -72,9 +72,9 @@ def step_size_prior():
     f = OUT / "size_prior.json"
     if f.exists():
         return json.load(open(f, encoding="utf-8"))
-    from tomato3d.organs import auto_proposers as AP
-    from tomato3d.organs import extra_candidates as EC
-    from tomato3d.organs import userlabel as UL
+    from tomato3d.organs import auto_proposers as AP  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import extra_candidates as EC  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
     pl = UL.load_plant(); H2id = np.load(UL.VOTE2D / "stage_a_h2id.npz")["H2id"]; views = pl["views"]
     vc = json.load(open(UL.OUT / "views_chosen.json", encoding="utf-8")); train = vc["chosen"]
     recs = json.load(open(UL.OUT / "labels" / "leaf_labels.json", encoding="utf-8"))
@@ -104,8 +104,8 @@ def step_inputs(iid):
     held = vc.get("held_out"); rim = ROOT / "build/p1_plant_model_20261026_01/rim" / f"{iid}.json"
     man = dict(individual=iid, labels=LABELS, tag=RIM_NOTE.get(iid), surfels=dict(path=str(ply), sha256_16=sha(ply), mtime=time.strftime("%Y-%m-%d %H:%M", time.localtime(os.path.getmtime(ply)))),
                poses=dict(path=str(AC.POSES[iid]), mtime=time.strftime("%Y-%m-%d %H:%M", time.localtime(os.path.getmtime(AC.POSES[iid])))), accepted=len(acc), pose_qc_kept=len(keep), pose_dropped_views=drop,
-               recon_heldout=sp["heldout"], label_heldout_excluded_from_votes=held, rim=(str(rim) if rim.exists() else None), code=dict(sheet_retry=sha(ROOT / "tomato3d/organs/sheet_retry.py"),
-               oversegment=sha(ROOT / "tomato3d/organs/oversegment.py"), second=sha(ROOT / "tomato3d/organs/oversegment_second.py"), this=sha(Path(__file__))), views=keep)
+               recon_heldout=sp["heldout"], label_heldout_excluded_from_votes=held, rim=(str(rim) if rim.exists() else None), code=dict(sheet_retry=sha(Path(__file__).with_name("sheet_retry.py")),
+               oversegment=sha(Path(__file__).with_name("oversegment.py")), second=sha(Path(__file__).with_name("oversegment_second.py")), this=sha(Path(__file__))), views=keep)
     json.dump(man, open(cell(iid) / "inputs.json", "w", encoding="utf-8"), indent=1); mark(iid, "inputs", dict(kept=len(keep), dropped=len(drop))); return man
 
 
@@ -114,7 +114,7 @@ def step_prep(iid):
     import cv2
     import pillow_heif
     from PIL import Image
-    from tomato3d.organs import seed2d as S2
+    from tomato3d.organs import seed2d as S2  # not shipped: run-time dependency, see report
     from tomato3d.recon import charuco_a3 as ca
     pillow_heif.register_heif_opener(); man = json.load(open(cell(iid) / "inputs.json", encoding="utf-8")); views = man["views"]; pl = AC.load_individual(iid); po = pl["po"]
     d = cell(iid); (d / "photos").mkdir(exist_ok=True); (d / "masks").mkdir(exist_ok=True); Kn, dist = np.array(po["K_undist"]), np.array(po["dist"]); idx = AC.heic_index(); json.dump(po, open(d / "poses.json", "w", encoding="utf-8"))
@@ -207,53 +207,7 @@ def step_geometry(iid):
     json.dump(summ, open(cell(iid) / "geometry.json", "w", encoding="utf-8"), indent=1, default=float); mark(iid, "geometry", dict(patches=int(len(sizes)), t_sheet=round(t_sheet, 3))); log(iid, "geometry done"); return summ
 
 
-# ---------------------------------------------------------------- Roboflow lane (R): boxes only, key in memory, cached per photo
-def step_rf(iid):
-    from PIL import Image
-    import cv2
-    from tomato3d.leafseg import rfdet
-    from tomato3d.organs import auto_proposers as AP
-    key = AP._rf_key(); d = cell(iid); di = json.load(open(d / "detect_input.json", encoding="utf-8")); missing = []; done_n = 0
-    if not key:
-        mark(iid, "rf", dict(note="no Roboflow key in memory: layer not used", photos=0)); return
-    for v in di["views"]:
-        stem = Path(v).stem; info = di["photos"].get(v, {})
-        if "error" in info or not (d / "photos" / v).exists():
-            continue
-        cache = d / "rf_detections" / f"{stem}.json"; tcache = d / "rf_detections_tiled"
-        for attempt in range(3):
-            try:
-                rgb = np.asarray(Image.open(d / "photos" / v).convert("RGB")); c = info.get("crop") or dict(x0=0, y0=0, x1=rgb.shape[1], y1=rgb.shape[0], scale=1.0)
-                img = rgb[c["y0"]:c["y1"], c["x0"]:c["x1"]]; img = cv2.resize(img, (int(img.shape[1] * c["scale"]), int(img.shape[0] * c["scale"])), interpolation=cv2.INTER_CUBIC) if c["scale"] > 1 else img
-                pred = rfdet.fetch(d / "photos" / v, img, cache, key)
-                if len(pred.get("predictions", [])) >= AP.RF_CAP:
-                    rfdet.tiled_dets(d / "photos" / v, img, tcache, stem, key)
-                done_n += 1; break
-            except Exception as e:
-                msg = AP._scrub(f"{type(e).__name__}: {e}", key)
-                if attempt == 2:
-                    missing.append(dict(view=v, error=msg)); log(iid, f"rf {stem}: {msg}")
-                else:
-                    time.sleep(20)
-    mark(iid, "rf", dict(photos=done_n, missing=missing)); log(iid, f"rf done {done_n} photos, {len(missing)} missing")
-
-
-def write_rf_inputs(iid):
-    """Amendment A3: the detector input image of every prepared photo (crop + upsample as in step_rf, JPEG q95) for the local Roboflow lane; written inside the `pre` kernel."""
-    from PIL import Image
-    import cv2
-    d = cell(iid); di = json.load(open(d / "detect_input.json", encoding="utf-8")); out = d / "rf_inputs"; out.mkdir(exist_ok=True); n = 0
-    for v in di["views"]:
-        info = di["photos"].get(v, {}); f = out / f"{Path(v).stem}.jpg"
-        if "error" in info or not (d / "photos" / v).exists() or f.exists():
-            continue
-        rgb = np.asarray(Image.open(d / "photos" / v).convert("RGB")); c = info.get("crop") or dict(x0=0, y0=0, x1=rgb.shape[1], y1=rgb.shape[0], scale=1.0)
-        img = rgb[c["y0"]:c["y1"], c["x0"]:c["x1"]]; img = cv2.resize(img, (int(img.shape[1] * c["scale"]), int(img.shape[0] * c["scale"])), interpolation=cv2.INTER_CUBIC) if c["scale"] > 1 else img
-        Image.fromarray(img).save(f, quality=95); n += 1
-    return n
-
-
-STEPS = dict(inputs=step_inputs, prep=step_prep, geometry=step_geometry, rf=step_rf)
+STEPS = dict(inputs=step_inputs, prep=step_prep, geometry=step_geometry)
 
 
 HEAVY = {"size_prior", "inputs", "prep", "geometry"}                  # Amendment A3: these run inside a Kaggle kernel only (local worker count 0)
@@ -270,7 +224,7 @@ def main(argv=None):
     OUT.mkdir(parents=True, exist_ok=True)
     if a.step == "size_prior":
         print(json.dumps(step_size_prior(), indent=1)); return
-    lock = cell(a.id) / ("RUNNING_rf.lock" if a.step == "rf" else "RUNNING.lock"); lock.write_text(f"pid {os.getpid()} step {a.step} {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    lock = cell(a.id) / "RUNNING.lock"; lock.write_text(f"pid {os.getpid()} step {a.step} {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
     try:
         if a.step in state(a.id, a.step):
             log(a.id, f"{a.step}: already done, skipped"); return

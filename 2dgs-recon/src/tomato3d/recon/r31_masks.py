@@ -116,8 +116,8 @@ def main(argv=None):
     md, bd, sd = out / f"masks_{a.stage}", out / f"bands_{a.stage}", out / f"soft_{a.stage}"
     for d in (md, bd, sd):
         d.mkdir(exist_ok=True)
-    from tomato3d.leafseg import run as r2
-    from tomato3d.topview.measure2d import load_sam
+    from tomato3d.leafseg import run as r2  # not shipped: run-time dependency, see report
+    from tomato3d.topview.measure2d import load_sam  # not shipped: run-time dependency, see report
     sam = load_sam(r2.SAMCFG); rng = np.random.default_rng(0)
     base_dir = v2 / "masks" if a.stage == "a" else out / "masks_a"
     sp = out / f"masks_{a.stage}_summary.json"; summ = json.load(open(sp)) if sp.exists() else {}

@@ -1,5 +1,7 @@
 # VTC_WITHHELD — 공개판에서 뺀 VTC 파생 파일
 
+> 2026-11-18: `2dgs-recon/` 은 새 판으로 바뀌었습니다. 아래 목록의 `2dgs-recon/...` 경로는 2026-11-08 판의 것이며 지금 폴더에는 없습니다. 새 판에는 VTC 파생 파일도, 그것을 import 하는 코드도 없습니다.
+
 VTC (Virtual Tomato Crop; K. Smolenova / WUR, J. Evers FSPM_BASIC 에서 고침; 논문 https://doi.org/10.1093/insilicoplants/diaf022) 원본에는 LICENSE 파일과 저작권 문구가 없습니다. 재배포 조건을 알 수 없으므로 아래 파일은 이 공개 저장소에 넣지 않았습니다 (2026-11-08 결정). 원저자 허락을 받으면 다시 넣을 수 있습니다.
 
 - 모델 `.rgg`·`.gsz`: VTC 모델을 고친 사본 (동결 v2·v2.1·v2.2 slaA/slaR, GUI 캐노피 모델).

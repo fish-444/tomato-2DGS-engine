@@ -11,7 +11,7 @@ from __future__ import annotations
 from pathlib import Path
 
 TAG = dict(input="R3_unaccepted", purpose="dev")
-ROOT = Path(__file__).resolve().parents[2]
+from tomato3d.paths import ROOT
 RUN = ROOT / "build" / "p1_organ_split_20261022_01"
 SYNTH = ROOT / "build" / "p1_synth_microtom_20261022_01"
 TOPO_RUN = ROOT / "build" / "p1_organ_topology_20261024_01"   # 2026-10-24 topology contract (CONTRACT_ORGAN_TOPOLOGY.md)

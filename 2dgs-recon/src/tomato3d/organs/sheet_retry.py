@@ -23,12 +23,7 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
 from scipy.spatial import cKDTree
 
-from tomato3d.organs import auto_proposers as AP
 from tomato3d.organs import light_organs as LO
-from tomato3d.organs import stacked_sheets as SS
-from tomato3d.organs import userlabel as UL
-from tomato3d.organs import vote2d as V2
-from tomato3d.organs import vp_recluster as RC
 
 ROOT = LO.ROOT
 OUT = ROOT / "build/p1_stacked_sheets_retry_20261026_01"
@@ -122,6 +117,9 @@ def patches(xyz, S, E, off_lim_mm, small_n):
 # ---------------------------------------------------------------- views, labels, projections
 def projections(pl, b, views_vid):
     """Per labelling view: pixel (1536 grid) of every blade surfel and camera-space depth."""
+    from tomato3d.organs import auto_proposers as AP  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vote2d as V2  # not shipped: pilot-only scoring helper
     out = {}
     for vid in views_vid:
         view = AP.view_file(vid); pv = V2.project_view(pl["xyz"][:1], pl["sc"][:1], pl["po"], view, V2.VISP["res"])
@@ -133,11 +131,13 @@ def projections(pl, b, views_vid):
 
 
 def user_maps(chosen, nmap):
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
     raw, _ = UL.label_maps(UL.OUT, chosen); m = UL.remap(raw, nmap); return {v: np.where(m[v] > 0, m[v], 0).astype(np.int16) for v in chosen}
 
 
 def leaflet_counts(pl, b, chosen, nmap, prj, VISb):
     """Front-visible blade surfels under each user leaflet mask (map v3 number > 0) of the labelling photos."""
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
     recs = UL.load_labels(UL.OUT); counts = []
     for vid in chosen:
         det = {m["id"]: m for m in json.load(open(UL.OUT / "detect" / f"{vid}.json", encoding="utf-8"))["masks"]}; act = {}
@@ -202,6 +202,9 @@ def front_check(xyz_b, S, patch_lab, prj, umaps, VISb):
 
 
 def overlay(vid, p, patch_lab, umaps, VISb, path):
+    from tomato3d.organs import auto_proposers as AP  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vote2d as V2  # not shipped: pilot-only scoring helper
     img = Image.open(LO.DEFAULTS["poses"].parent / "undist_3024" / AP.view_file(vid)).convert("RGB").resize((UL.H2, UL.H2), Image.BILINEAR)
     a = (np.asarray(img).astype(float) * 0.35); b_ = a.copy(); vis = VISb[:, p["k"]] & p["inside"] & (patch_lab > 0)
     for L in np.unique(patch_lab[vis]):
@@ -213,6 +216,11 @@ def overlay(vid, p, patch_lab, umaps, VISb, path):
 
 # ---------------------------------------------------------------- main
 def main(argv=None):
+    from tomato3d.organs import auto_proposers as AP  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import stacked_sheets as SS  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vote2d as V2  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vp_recluster as RC  # not shipped: pilot-only scoring helper
     ap = argparse.ArgumentParser(); ap.add_argument("--out", type=Path, default=OUT); a = ap.parse_args(argv); out = a.out; t0 = time.time()
     for d in ("sheets", "patches", "front_check", "scores", "viz"): (out / d).mkdir(parents=True, exist_ok=True)
     pl = UL.load_plant(); b = np.nonzero(pl["blade"])[0]; xyz = pl["xyz"][b]; views = pl["views"]; H2id = np.load(UL.VOTE2D / "stage_a_h2id.npz")["H2id"]

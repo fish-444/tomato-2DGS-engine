@@ -14,9 +14,8 @@ import numpy as np
 from tomato3d.fuse3d import surfels_io as sio
 from tomato3d.organs import chain_r6 as C6
 from tomato3d.organs import light_organs as LO
-from tomato3d.organs import local_diffusion as LD
 
-OUT = LO.ROOT / "build/p1_pc_absorb_20261027_01"; R7DIR = LD.OUT / "vp_leaf4"
+OUT = LO.ROOT / "build/p1_pc_absorb_20261027_01"; R7DIR = LO.ROOT / "build/p1_local_diffusion_20261027_01" / "vp_leaf4"
 
 
 def sha(p):
@@ -27,6 +26,7 @@ def sha(p):
 
 
 def main():
+    from tomato3d.organs import local_diffusion as LD  # not shipped: pilot-only R3-1b chain
     OUT.mkdir(parents=True, exist_ok=True); (OUT / "kaggle_data").mkdir(exist_ok=True)
     B = LD.load("vp"); pl, b, S = B["pl"], B["b"], B["S"]; n = len(pl["xyz"])
     sf = sio.read_surfels_full(LO.DEFAULTS["surfels"]); rows = pl["rows"]

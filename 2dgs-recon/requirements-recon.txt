@@ -1,0 +1,13 @@
+# Stages 1-6 (photos -> poses -> masks -> initial points -> 2DGS training -> groups). Needs a CUDA GPU for stage 4 (training) and for SAM.
+# The versions below are the ones used in the Kaggle / Colab runs recorded in this repository (onezip/VERSIONS.txt); torch comes from the notebook image.
+-r requirements.txt
+pillow-heif==1.8.1
+pycolmap==4.2.1
+gsplat==1.5.3
+hydra-core==1.3.8
+iopath==0.1.10
+scikit-image
+skan
+psutil
+# sam2 is installed without its dependency resolution (as run_recon.py does):  pip install --no-deps --no-build-isolation sam2==1.1.0
+# ultralytics (AGPL-3.0) is imported only by organs/all3d_cands_job.py (candidate masks); install it only if you run that step, see THIRD_PARTY.md

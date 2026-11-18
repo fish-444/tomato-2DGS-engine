@@ -1,0 +1,96 @@
+microtom_recon_onezip v0.2 — VERSIONS (v0.1 lines kept; run_recon.py and the notebooks changed, see below)
+
+# copied modules: path in zip | source path in the project | sha256 of the source | sha256 in the zip (differs only where EDITS.csv lists a line)
+microtom_recon/tomato3d/__init__.py | tomato3d/__init__.py | 0c8c5224281550d332a796a94edf031ef95c35f2e32a04c70266f2ad357f1c74 | 0c8c5224281550d332a796a94edf031ef95c35f2e32a04c70266f2ad357f1c74
+microtom_recon/tomato3d/recon/__init__.py | tomato3d/recon/__init__.py | f6a01431f9c3ab29967ca8ed02d92153549050a91aec6f0b1dae18fe42a267f1 | f6a01431f9c3ab29967ca8ed02d92153549050a91aec6f0b1dae18fe42a267f1
+microtom_recon/tomato3d/fuse3d/__init__.py | tomato3d/fuse3d/__init__.py | dfe5ce514ad1494d5e0bc0c40eb15f25cce7ef74aaba565f542def569ef5aef3 | dfe5ce514ad1494d5e0bc0c40eb15f25cce7ef74aaba565f542def569ef5aef3
+microtom_recon/tomato3d/fuse3d/surfels_io.py | tomato3d/fuse3d/surfels_io.py | 93f8ea21f0904ab239e1dace7ce59129c123298ab10e5122b206a86e8bca214b | 2282e602abe5ba30bd77a942b60d87bc3146516636316ded6c4847fbad887908  EDITED
+microtom_recon/tomato3d/recon/charuco_photos.py | tomato3d/recon/charuco_photos.py | a9f0a1378c76617630b87dd92d3595efe798767fa7fd5857b4fa8c50f3f327f8 | c710754f222dd3d3f64fbee894650c3e1d2ff9d426b4f196184da858ca4e9af5  EDITED
+microtom_recon/tomato3d/recon/charuco_a3.py | tomato3d/recon/charuco_a3.py | 46d1e7506b04565662583ebfc1632eb171edd041bb12ea571464d079a06dd3d5 | 46d1e7506b04565662583ebfc1632eb171edd041bb12ea571464d079a06dd3d5
+microtom_recon/tomato3d/recon/charuco_masks.py | tomato3d/recon/charuco_masks.py | 90c8f5541bab2c8aa58da74d971d6fb5757b4aaf19d66f75010b1d744e28fa7d | 90c8f5541bab2c8aa58da74d971d6fb5757b4aaf19d66f75010b1d744e28fa7d
+microtom_recon/tomato3d/recon/charuco_sparse.py | tomato3d/recon/charuco_sparse.py | b0aa787c8bea5f21d70402b26886aec39f1bea7e315c31c8a743a9a9b91c0836 | b0aa787c8bea5f21d70402b26886aec39f1bea7e315c31c8a743a9a9b91c0836
+microtom_recon/tomato3d/recon/charuco_prep.py | tomato3d/recon/charuco_prep.py | 7cffe428658fc3b0e11b213f6a37af495061e692effb9fbd562fe10f5dc99a00 | 06437650ed4b16c206d6295fcc29d97d2fa98d968ac5058302cdfeb9f11ccb9c  EDITED
+microtom_recon/tomato3d/recon/wholeplant_contract.py | tomato3d/recon/wholeplant_contract.py | cb29ec8061d9a747ba72eb87b3f645148f7d974b4c89ba77fc85a387bd6924e2 | cb29ec8061d9a747ba72eb87b3f645148f7d974b4c89ba77fc85a387bd6924e2
+microtom_recon/tomato3d/recon/wholeplant_masks.py | tomato3d/recon/wholeplant_masks.py | 0ed1ff70acee3666842c7a4a4b078873d8c1ac78d84ed297c798881284e0e512 | 0ed1ff70acee3666842c7a4a4b078873d8c1ac78d84ed297c798881284e0e512
+microtom_recon/tomato3d/recon/wholeplant_sparse.py | tomato3d/recon/wholeplant_sparse.py | 81c0071ec2d23f0013fcd741295ed921beb50ff2cea72b8370f0273b6448f857 | 81c0071ec2d23f0013fcd741295ed921beb50ff2cea72b8370f0273b6448f857
+microtom_recon/tomato3d/recon/wholeplant_accept.py | tomato3d/recon/wholeplant_accept.py | 00003b19266244bb59dd24fca7ec4247eb5fc48d2c2d4853d10d1d3b0aec2951 | 00003b19266244bb59dd24fca7ec4247eb5fc48d2c2d4853d10d1d3b0aec2951
+microtom_recon/tomato3d/recon/r31_contract.py | tomato3d/recon/r31_contract.py | 08353d0ca8cfc01ad7ce74f7a0935fb6b52f2746a559eb646810bf24ea70c076 | 08353d0ca8cfc01ad7ce74f7a0935fb6b52f2746a559eb646810bf24ea70c076
+microtom_recon/tomato3d/recon/r31_masks.py | tomato3d/recon/r31_masks.py | b044b577c8cac4551ec9e8e4ce16a98cec04e2a4c5d9316d900d1210a45d3f0b | b044b577c8cac4551ec9e8e4ce16a98cec04e2a4c5d9316d900d1210a45d3f0b
+microtom_recon/tomato3d/recon/r31_score.py | tomato3d/recon/r31_score.py | 621adc02dd1c427e7440dd564ebc9503bd34c41b9461c21d1c281f6982d3c125 | 621adc02dd1c427e7440dd564ebc9503bd34c41b9461c21d1c281f6982d3c125
+microtom_recon/tomato3d/recon/kernel_2dgs_r31.py | tomato3d/recon/kernel_2dgs_r31.py | 7eac18fa8e56ba21e42a90c58aab4f65731d1d15321c8115f6e7467d3c3a55d8 | 3c3cf6fe65915a08b5b996e4390a3ca9d59adcbb66c624ffa5d4db47e81c92d3  EDITED
+
+# driver logic adapted into run_recon.py (not shipped): source path | sha256
+tomato3d/recon/kernel_all_masks.py | 42ebb4734bfedf4933f5ebb43fe433e6fe14ed945ae6b91080af2a8afd27bc1a
+tomato3d/recon/kernel_all_points.py | 3d1c985bacd33c511158bce35d6a673a8fc864b6ccf00aefc1a6be8b47cab122
+tomato3d/recon/kernel_all_train.py | e6e99d8cb226de0a1f215ab8825e2667c775fc3f763ff0a1bf96f92144eba610
+tomato3d/recon/r31_outputs.py | eebedb7f68d4ad6d2f873a5efb7481b558b1750b931da2ee5afb4334f7e66eb9
+tomato3d/recon/kernel_all_outputs.py | 9679bfec21516b1f808d0b6db7abf17f9c78ead657d56c0cb64efc9a0445e0c5
+
+# new files: path in zip | sha256
+run_recon.py | 40b3b38566e15c4b5b51459f86f78ed08ea7503582a9e84677a7fe6e64b2f889
+README_KO.md | 41f35fce95d75fd1ceb1a6612eb31366c1f3c98e0f930d9a7808c90017203ac4
+STAGE_SOURCES.md | 42ae9eab69145c7346dfbbb15b269e6db11922d46eadbae1a6500cff22df44a4
+RUN_KAGGLE.ipynb | 09c3c8fd72b299eae8aec8a2ec3a765206bcabe1afc39b282807a44435b5362f
+RUN_COLAB.ipynb | f9f2d381a69b3093f4edb78031dc6242942ae9e145f787dd86e6661925452f82
+EDITS.csv | 65f73623e340ab92d21a8da0fba47ee5fc4f7e94f1a8b88723a6c6a6bc92a5a1
+
+# board print file (copied, not regenerated): path in zip | sha256
+board/charuco_a3_10x7_38mm.pdf | b89d890f97fafc53c473d4ca083eead33add58b714bbd9747d045f2251c9f42c
+
+# package versions (installed when missing; an already-installed version is used as it is and recorded in recon_meta.json)
+"pillow_heif": "pillow-heif==1.8.1"
+"pycolmap": "pycolmap==4.2.1"
+"sam2": "sam2==1.1.0"
+"hydra": "hydra-core==1.3.8"
+"iopath": "iopath==0.1.10"
+"gsplat": "gsplat==1.5.3 (installed by the trainer)"
+sam2.1_hiera_tiny.pt | downloaded at run time | sha256 7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69
+torch, torchvision, numpy, opencv (with aruco), scipy, scikit-image, pillow | taken from the notebook image (Kaggle / Colab), not pinned
+trainer settings | 1512 px, 7000 iterations, 150000 initial points, seed 0, gsplat 1.5.3 (R3-1b configuration; values inside kernel_2dgs_r31.py are unchanged)
+
+# v0.2 — stage 7 (T-Prox): path in zip | source path in the project | sha256 of the source | sha256 in the zip
+microtom_recon/tomato3d/organs/__init__.py | tomato3d/organs/__init__.py | 1479086967685b62b3bc94d834f5290ed7ccc2e181c922ec521ee51e9f1e0daa | 1479086967685b62b3bc94d834f5290ed7ccc2e181c922ec521ee51e9f1e0daa
+microtom_recon/tomato3d/organs/pc_absorb.py | tomato3d/organs/pc_absorb.py | 372c06655d939376e88a1d0c19c7750f446b3beddc7502aa05c4290d3c3ff460 | 372c06655d939376e88a1d0c19c7750f446b3beddc7502aa05c4290d3c3ff460
+microtom_recon/tomato3d/organs/pc_rachis.py | tomato3d/organs/pc_rachis.py | b9e76f0b96a0a912b2bfb8ac9eab4e01a73812d0e79457e605d726d5a2cb43f3 | 23d2226df010e1c197610275c57c3f6ffb9b6901e0f6161f57c5032d5f51c6e1  EDITED
+microtom_recon/tomato3d/organs/skeleton_io.py | tomato3d/organs/skeleton_io.py | d213c09ef79dd45eca4f485e3fd24e07e9d96289bab23c3e2c08627a047519f4 | d213c09ef79dd45eca4f485e3fd24e07e9d96289bab23c3e2c08627a047519f4
+frozen kernel copy build/p1_pc_absorb_20261027_01/kaggle_kernel/pc_absorb.py | 372c06655d939376e88a1d0c19c7750f446b3beddc7502aa05c4290d3c3ff460 (identical to the shipped pc_absorb.py)
+
+# v0.2 — functions copied verbatim into tprox_stage.py (text compared at build time): source | function | identical
+tomato3d/organs/skeleton_r8pc.py (7cdc354c9cc45ef31968ba91c940caf8202cabcd33f761787c6dd6ea60ee2ecc) | seeds | True
+tomato3d/organs/skeleton_r8pc.py (7cdc354c9cc45ef31968ba91c940caf8202cabcd33f761787c6dd6ea60ee2ecc) | traces_arrays | True
+
+# v0.2 — logic adapted into tprox_stage.py (not shipped): source path | sha256
+tomato3d/organs/skeleton_r8pc.py | 7cdc354c9cc45ef31968ba91c940caf8202cabcd33f761787c6dd6ea60ee2ecc
+tomato3d/organs/skeleton_tprox.py | 88ae0499b4c8572330ebab71aff5bd97a124470e28e73cb696fae73ec9f99c0d
+
+# v0.2 — new or regenerated files: path in zip | sha256
+run_recon.py | 72da79854c2f4dd106030d6ccefb66e0dbaa62f9da0e55423d021a731a003300
+tprox_stage.py | 2d58c6fffdf29f77eca6a05866c5f9d6b76833684da4db3a00c62d8039e6c09f
+README_KO.md | cb64da58f1e6ca5978d6b15fa2e00c7261c393e328314b1d32f2c86514db4d5b
+STAGE_SOURCES.md | 664de77381b2a13b33661b167990a8901cfaa26b8254d5bdf5ead5d21ffb9784
+RUN_KAGGLE.ipynb | 03361018ddaed8599265392a73ca7cd7c70c19a619a7381b46d6e055bf96412d
+RUN_COLAB.ipynb | 0eecd65fd16c2745401e15c9ec0d5e65bbe3aaff699078c4c16b0b1ef31ad047
+EDITS.csv | 1649e4fa81b03b88c4cb8c123838e6d1cb258169a06e0d27b593a4f5a8b7a86a
+
+# v0.2 — stage 7 needs numpy and scipy only (from the notebook image); no model weights; frozen parameters: set A, gamma 1.0, p1 >= 0.6, margin >= 0.25, 5 rounds, edge 3 mm,
+# rachis seed 3 mm, blade seed 8 mm with 5 mm margin, SEED_MIN 50, reach 22.72 mm
+
+# v0.2.1 — skeleton-reading fix (diagnosis 2026-11-16); changed files: path in zip | sha256 in v0.2 | sha256 in v0.2.1
+tprox_stage.py | 2d58c6fffdf29f77eca6a05866c5f9d6b76833684da4db3a00c62d8039e6c09f | 52f2746ea14e0ca82a8498c373a27a49c0cb7f10e99ef6e9a485d6f2afdd7f6d
+run_recon.py | 72da79854c2f4dd106030d6ccefb66e0dbaa62f9da0e55423d021a731a003300 | d3b20cf00a81577ed4f22c8faf0512bedc37ac2242a583c366a8f03c479bd2ae
+README_KO.md | cb64da58f1e6ca5978d6b15fa2e00c7261c393e328314b1d32f2c86514db4d5b | cc7b25062f809f596406d91d42ca268841e466ccc837a79654a914c20f4597b3
+RUN_KAGGLE.ipynb | 03361018ddaed8599265392a73ca7cd7c70c19a619a7381b46d6e055bf96412d | dac3a207f1e0be019942db6acb0826c7054b79257d638d9d5fab88ff070b5e30
+RUN_COLAB.ipynb | 0eecd65fd16c2745401e15c9ec0d5e65bbe3aaff699078c4c16b0b1ef31ad047 | baae02d2d25dd0b1546fe5ea5e88f2789d979cce05d9935cc38688631d001dc6
+EDITS.csv | 1649e4fa81b03b88c4cb8c123838e6d1cb258169a06e0d27b593a4f5a8b7a86a | 12c5b2a68fbdc17ff1262e066e85ad5cfba192b04f0f16a86a4867d158af23de
+# unchanged in v0.2.1: every file under microtom_recon/ (pc_absorb.py still identical to the frozen kernel copy), board/, STAGE_SOURCES.md
+
+# v0.2.2 — mask option auto+stem (R3-1b mask steps); changed or new files: path in zip | sha256 in v0.2.1 | sha256 in v0.2.2
+stem_masks.py | new | 92adc89adcdef06b10e528aba27928011de8e89dfc59ab6a8072d56b36ea2280
+run_recon.py | d3b20cf00a81577ed4f22c8faf0512bedc37ac2242a583c366a8f03c479bd2ae | 26b7560ee68f73fce36ea8a7d795c22cb852ec6bf515c6f530075553e6e8c338
+README_KO.md | cc7b25062f809f596406d91d42ca268841e466ccc837a79654a914c20f4597b3 | fb87fa20c6d924aba53a1d2a4e24207511a5c5e7aee402ffe6955d729c1a2ab8
+RUN_KAGGLE.ipynb | dac3a207f1e0be019942db6acb0826c7054b79257d638d9d5fab88ff070b5e30 | bac30b21251fc9594625dc0ee5665ba827e92c6594a0ca898322dc4bbe1d8b06
+RUN_COLAB.ipynb | baae02d2d25dd0b1546fe5ea5e88f2789d979cce05d9935cc38688631d001dc6 | 6dce928d49e6f107f532bcb921d7d131d569779a06080cfddfb374875a402f9b
+EDITS.csv | 12c5b2a68fbdc17ff1262e066e85ad5cfba192b04f0f16a86a4867d158af23de | 7e810e8febf35839ecebf4290264a80a20642ecfbe71b1a3d73cc967413cf3d8
+# auto+stem uses, unchanged: microtom_recon/tomato3d/recon/r31_masks.py (pot_polygon, soil_split, lift_mask, sam_from_region, matte), wholeplant_masks.py (seeds, negatives, thin_parts),
+# r31_contract.py (M5 alpha_min); the per-view driver in stem_masks.py is r31_masks.main adapted (paths, pot values from arguments, SAM predictor built as in run_recon.py)
+# weights NOT in the zip: sam2.1_hiera_tiny_leaflet_v5_4plants.pt | 156,003,537 bytes | sha256 161b9c6caaf3a8a31df43e5f1aecc672f02409d2ff4b161515d7cd25bd02e73d (read from --weights)

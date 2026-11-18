@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 서현우, 김민웅, 이주원, 최재임 (Kyung Hee University, Department of Smart Farm Science)
+Copyright (c) 2026 서현우, 김민웅, 이주원, 최재임 (경희대학교 스마트팜과학과)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,10 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-Scope: the MIT licence covers source code (*.py, *.js, *.html, *.sh, *.ps1, *.bat
-and our own *.rgg/*.gsz not listed below). Figures (*.png, *.svg, *.pdf) and
-tables (*.csv, *.json result files) are licensed CC BY 4.0, see LICENSE-CC-BY-4.0.md.
-
-NOT INCLUDED in this public repository (withheld, see ../VTC_WITHHELD.md): src/tools/vtc_growth_fork.py (embeds the original VTC NRH
-function byte-for-byte) and src/tools/vtc_development.py (drives that fork); see THIRD_PARTY.md.
+Scope: this licence covers the source code (src/, scripts/, onezip/). The figures, tables and
+documents (figures/, results/, docs/, README.md, DATA.md) are under CC BY 4.0, see LICENSE-CC-BY-4.0.md.
+The example data under example/ (reconstruction, labels, skeleton) are released under CC BY 4.0 as well.
+Third-party components keep their own licences, see THIRD_PARTY.md.

@@ -1,0 +1,98 @@
+{
+ "plant": "R3-1b (pilot plant)",
+ "labels": [
+  "R3-1b_unaccepted",
+  "conditional_on_unvalidated_scale",
+  "tprox_unverified_until_heldout"
+ ],
+ "reconstruction": {
+  "surfels_all_in_file": 53645,
+  "surfels_opaque_in_bundle": 46719,
+  "surfels_sha256": "7131b69ade89131b5475853160b8444df44a84d8b3fe0871308acd7080f7714f"
+ },
+ "frozen_bundle": {
+  "sha256": "3ab384b446def4d1e8eb5019989ad0b8d04f17d02161a59be7468c0a6f40dfd5",
+  "leaves": 8,
+  "stage1_labelled": 15315,
+  "seeds": {
+   "rachis_seeds": 6869,
+   "blade_groups": 92,
+   "blade_seeds": 10553
+  },
+  "weight_set": "A"
+ },
+ "frozen_code": {
+  "pc_absorb_sha256": "372c06655d939376e88a1d0c19c7750f446b3beddc7502aa05c4290d3c3ff460"
+ },
+ "expected_run_07": {
+  "note": "scripts/07_tprox.py must reproduce these arrays exactly (labels, source, p1, p2, top1, top2)",
+  "R8_pc_labels_sha256": "9319c303e598a883fad7a4cf9a6f01839a7db2c927698decae7f7364c16008b6",
+  "R8_pc_rachis_labels_sha256": "b455a73a8b097b5b9e13e14c3a5f643c51cfd7da2eac5d855bc111c7481b8e8b"
+ },
+ "expected_score_08": {
+  "tprox_report_half": {
+   "n": 6132,
+   "correct": 4601,
+   "agreement": 0.7503,
+   "wilson95": [
+    0.7393,
+    0.761
+   ],
+   "none_share": 0.0095
+  },
+  "tprox_all_leaves": {
+   "n": 15650,
+   "correct": 11862,
+   "agreement": 0.758,
+   "wilson95": [
+    0.7512,
+    0.7646
+   ],
+   "none_share": 0.0039
+  },
+  "tprox_per_leaf": {
+   "1": 0.9722,
+   "2": 0.9653,
+   "3": 0.8569,
+   "4": 0.732,
+   "5": 0.772,
+   "6": 0.017,
+   "7": 0.5783,
+   "8": 0.9972
+  },
+  "distance_baseline_report_half": {
+   "n": 6132,
+   "correct": 3719,
+   "agreement": 0.6065,
+   "wilson95": [
+    0.5942,
+    0.6186
+   ],
+   "none_share": 0.2524
+  },
+  "distance_all_leaves": {
+   "n": 15650,
+   "correct": 10892,
+   "agreement": 0.696,
+   "wilson95": [
+    0.6887,
+    0.7031
+   ],
+   "none_share": 0.1218
+  },
+  "recorded_values": {
+   "tprox_report_half": 0.75,
+   "tprox_wilson95": [
+    0.739,
+    0.761
+   ],
+   "distance_baseline_report_half": 0.607
+  }
+ },
+ "human_labels": {
+  "instances": 15650,
+  "source": "4 labelling photos of R3-1b projected onto blade surfels",
+  "sha256": "010afc35ca8d45f228cc12732284e51b1efdd637df76be0236965677c5b61183"
+ },
+ "note": "report_only; one plant; set A (geometry only); not an accuracy for any other plant"
+}

@@ -1,0 +1,108 @@
+{
+ "report_half": {
+  "n": 6132,
+  "correct": 4601,
+  "agreement": 0.7503,
+  "wilson95": [
+   0.7393,
+   0.761
+  ],
+  "none_share": 0.0095
+ },
+ "all_leaves": {
+  "n": 15650,
+  "correct": 11862,
+  "agreement": 0.758,
+  "wilson95": [
+   0.7512,
+   0.7646
+  ],
+  "none_share": 0.0039
+ },
+ "per_leaf": {
+  "1": {
+   "n": 2517,
+   "correct": 2447,
+   "agreement": 0.9722,
+   "wilson95": [
+    0.965,
+    0.9779
+   ],
+   "none_share": 0.0
+  },
+  "2": {
+   "n": 777,
+   "correct": 750,
+   "agreement": 0.9653,
+   "wilson95": [
+    0.9499,
+    0.976
+   ],
+   "none_share": 0.0
+  },
+  "3": {
+   "n": 4745,
+   "correct": 4066,
+   "agreement": 0.8569,
+   "wilson95": [
+    0.8466,
+    0.8666
+   ],
+   "none_share": 0.0
+  },
+  "4": {
+   "n": 735,
+   "correct": 538,
+   "agreement": 0.732,
+   "wilson95": [
+    0.6988,
+    0.7627
+   ],
+   "none_share": 0.0054
+  },
+  "5": {
+   "n": 3311,
+   "correct": 2556,
+   "agreement": 0.772,
+   "wilson95": [
+    0.7574,
+    0.7859
+   ],
+   "none_share": 0.0112
+  },
+  "6": {
+   "n": 1532,
+   "correct": 26,
+   "agreement": 0.017,
+   "wilson95": [
+    0.0116,
+    0.0248
+   ],
+   "none_share": 0.0007
+  },
+  "7": {
+   "n": 1309,
+   "correct": 757,
+   "agreement": 0.5783,
+   "wilson95": [
+    0.5514,
+    0.6048
+   ],
+   "none_share": 0.013
+  },
+  "8": {
+   "n": 724,
+   "correct": 722,
+   "agreement": 0.9972,
+   "wilson95": [
+    0.99,
+    0.9992
+   ],
+   "none_share": 0.0028
+  }
+ },
+ "instances": 15650,
+ "dropped_share": 0.0,
+ "route": "T-Prox",
+ "labels_note": "report_only; pilot plant R3-1b only; conditional_on_unvalidated_scale; tprox_unverified_until_heldout"
+}

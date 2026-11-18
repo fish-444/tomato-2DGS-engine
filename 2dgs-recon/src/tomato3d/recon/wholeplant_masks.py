@@ -118,8 +118,8 @@ def main(argv=None):
     held = set(json.load(open(out / "contract.json"))["heldout_new"])
     raw_dir = out / "_raw"; raw_dir.mkdir(exist_ok=True)
     hull = json.load(open(r01 / "masks_summary.json"))["hull"]; ctr = (np.array(hull["lo"]) + np.array(hull["hi"])) / 2
-    from tomato3d.leafseg import run as r2
-    from tomato3d.topview.measure2d import load_sam
+    from tomato3d.leafseg import run as r2  # not shipped: run-time dependency, see report
+    from tomato3d.topview.measure2d import load_sam  # not shipped: run-time dependency, see report
     sam = load_sam(r2.SAMCFG)
     sp = out / "masks_summary.json"; summ = json.load(open(sp)) if sp.exists() else {}
     summ.setdefault("_params", dict(res=RES, hull_dilate_px=HULL_DILATE_PX, ridge_sigmas=RIDGE_SIGMAS, ridge_pct=RIDGE_PCT,

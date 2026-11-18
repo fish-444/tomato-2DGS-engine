@@ -1,14 +1,22 @@
 __pycache__/
 *.pyc
-numba_cache/
-.ipynb_checkpoints/
-out*/
-kout*/
-gui_runs/
-*.npz
-*.npy
-*.ply
-*.log
-*.lock
+.pytest_cache/
+.venv/
+venv/
 .env
+*.env
 kaggle.json
+# run folders created by the steps (not part of the repository)
+build/
+data/
+results/r3-1b_tprox/
+onezip/dist/
+# model weights and photos are never committed, see DATA.md
+*.pt
+*.pth
+*.heic
+*.HEIC
+*.zip
+# the repository root ignores *.npz and *.ply; the example data of this folder is part of the release
+!*.npz
+!*.ply

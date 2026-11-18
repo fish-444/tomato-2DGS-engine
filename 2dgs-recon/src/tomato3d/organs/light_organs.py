@@ -32,7 +32,7 @@ from tomato3d.organs import pipeline as PL
 from tomato3d.plant_tree.schema import new_tree, validate
 from tomato3d.recon import charuco_a3 as ca
 
-ROOT = Path(__file__).resolve().parents[2]
+from tomato3d.paths import ROOT
 DEFAULTS = dict(surfels=ROOT / "build/p1_recon_r3-1_contam_20261022_01/outputs/R3-1b_surfels_full.ply",
                 masks=ROOT / "build/p1_recon_r3-1_20261022_01/masks_b", h2=ROOT / "build/p1_recon_charuco_20261021_01/leaflets/labels",
                 poses=ROOT / "build/p1_charuco_a3_20261021_01/poses.json", views=ROOT / "build/p1_recon_r3-1_20261022_01/contract.json",

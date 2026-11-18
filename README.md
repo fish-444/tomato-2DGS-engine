@@ -6,11 +6,12 @@ Micro-Tom 토마토를 회전대 사진으로 3D 복원(2DGS)하고, 그 위에�
 
 | 폴더 | 내용 | 설명 |
 |---|---|---|
-| [`2dgs-recon/`](2dgs-recon/README.md) | ChArUco 자세 → SAM 2.1 마스크 → 2DGS surfel 복원 (Kaggle, gsplat 1.5.3) → 복엽 라벨링 (T-Prox 등) → 형질 → MTG 템플릿 | 다른 두 폴더의 입력 |
+| [`2dgs-recon/`](2dgs-recon/README.md) | 사진 → ChArUco 자세 → 마스크 → 2DGS surfel 복원 (Kaggle/Colab 한 번 실행 패키지 `onezip/`) → T-Prox 복엽 라벨. 예시 개체 R3-1b 와 기대값 포함, 7단계·채점은 CPU 로 바로 실행 | 2026-11-18 판. 다른 두 폴더의 입력 |
 | [`static-light/`](static-light/README.md) | 복원 개체 위 그림자 광선 추적: 잎 투과 τ, LAI·층별 투과, tray32 장면, 원판 대 삼각형, GroIMP 대조 | 상대 광, 시나리오 비교 |
 | [`dynamic-fspm/`](dynamic-fspm/README.md) | GroIMP 2.2.1 성장·광 모델 (VTC 를 고침) 의 보정·검증기·이데오타입·tray32 동적 장면·GUI 캐노피 도구 | **VTC 파생 모델 파일은 없음** (아래) |
 
 ## 쓰는 법
+- **`2dgs-recon/` 은 2026-11-18 에 바로 쓸 수 있는 판으로 바뀌었습니다**: 자체 구조(`src/`, `scripts/01–08`, `onezip/`, `example/r3-1b/`)를 가지며 아래 `src/` 규칙은 다른 두 폴더에만 해당합니다. 시작은 [`2dgs-recon/README.md`](2dgs-recon/README.md). Kaggle/Colab 용 패키지는 [Releases](https://github.com/fish-444/tomato-2DGS-engine/releases) 에 있습니다.
 - 각 폴더의 `src/` 가 원 프로젝트의 최상위 폴더와 **같은 상대 경로**입니다 (`src/build/<작업 폴더>/`, `src/tools/`, `src/tomato3d/`). 스크립트는 그 `src/` 에서 실행합니다. 예: `cd static-light/src && python -X utf8 build/static_tray32_v3_20261105_01/make_figures_v3.py`.
 - 폴더마다 `requirements.txt`, `DATA.md` (저장소에 넣지 않은 원자료·대용량 산출물 목록), `configs/paths.yaml` (경로 자리표시자 `<PROJECT_ROOT>` 등의 뜻), `docs/SUPERSEDED.md` 가 있습니다.
 - 작업 폴더마다 `CONTRACT*.md` 에 정확한 명령·입력 해시·판정 기준이 있습니다.
@@ -30,8 +31,8 @@ Micro-Tom 토마토를 회전대 사진으로 3D 복원(2DGS)하고, 그 위에�
 
 ---
 **English.** Micro-Tom tomato phenotyping in three folders:
-- `2dgs-recon/`: turntable photos → ChArUco poses → SAM 2.1 masks → 2DGS surfel reconstruction → compound-leaf labelling → traits → MTG template.
+- `2dgs-recon/` (release of 2026-11-18, ready to use): photos → ChArUco poses → masks → 2DGS surfel reconstruction (one-run Kaggle/Colab package `onezip/`, also attached to the GitHub release) → T-Prox compound-leaf labels; worked example R3-1b with expected values; stage 7 and the scoring run on a CPU.
 - `static-light/`: a shadow-ray light model on the reconstructed plants (relative light, scenario comparisons).
 - `dynamic-fspm/`: calibration, validator, ideotype and tray32 analyses for a GroIMP 2.2.1 growth model derived from VTC.
 
-Each folder's `src/` mirrors the original project layout, so run scripts from that `src/`. Results are mostly scenario or calibration results, not validation; only one pilot plant has human labels. VTC has no licence file, so the 33 VTC-derived files are withheld; the list, hashes and the 111 scripts that need them are in `VTC_WITHHELD.md`. Code is MIT; figures and tables are CC BY 4.0. Raw photos and photo-derived figures are not included.
+`static-light/` and `dynamic-fspm/` keep `src/` as a mirror of the original project layout (run scripts from that `src/`); `2dgs-recon/` has its own layout, see its README. Results are mostly scenario or calibration results, not validation; only one pilot plant has human labels. VTC has no licence file, so the 33 VTC-derived files are withheld; the list, hashes and the 111 scripts that need them are in `VTC_WITHHELD.md`. Code is MIT; figures and tables are CC BY 4.0. Raw photos and photo-derived figures are not included.

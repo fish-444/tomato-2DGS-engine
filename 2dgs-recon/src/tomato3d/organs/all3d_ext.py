@@ -1,12 +1,12 @@
 """External-compute driver for the all-individuals 3D-first run (contract build/p1_all_3dfirst_20261027_01/CONTRACT.md, Amendment A3).
 
-Local work = copy, hash, upload, download, state / status writes and the Roboflow API calls (key in memory, <= 3 streams). Every heavy step runs in a Kaggle kernel
-(tomato3d/recon/kernel_3dfirst_ext.py): `size_prior` (CPU, once), `pre-<id>` (CPU: inputs, prep, geometry), `cands-<id>` (GPU: H2 + SAM-auto), `candsrf-<id>` (GPU: Roboflow drawing, pass 2).
+Local work = copy, hash, upload, download, state / status writes. Every heavy step runs in a Kaggle kernel
+(tomato3d/recon/kernel_3dfirst_ext.py): `size_prior` (CPU, once), `pre-<id>` (CPU: inputs, prep, geometry), `cands-<id>` (GPU: H2 + SAM-auto).
 At most 2 CPU and 1 GPU kernels at once; the first refusal / quota error stops all launching (no retry loop); a failed kernel is retried once, then the individual is `failed_external`.
 GPU kernels start only after `gpu_quota.json` (remaining weekly hours, read from the account page) exists and the estimate fits. Never falls back to local compute.
 State: <build>/ext_state.json (this process is its only writer), status: <build>/STATUS.md + status.log. Stop with a file STOP_EXT in the build folder.
 
-usage: python -m tomato3d.organs.all3d_ext [--ids n_04 ...] [--unblock]
+usage: python -m tomato3d.organs.all3d_ext [--ids <plant_id> ...] [--unblock]
 """
 
 from __future__ import annotations
@@ -20,10 +20,7 @@ import shutil
 import subprocess
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-
-import psutil
 
 from tomato3d.organs import all3d_first as A
 from tomato3d.organs import all_compound as AC
@@ -31,15 +28,15 @@ from tomato3d.organs import all_compound as AC
 USER = "dolgfish"
 SP = Path(os.environ.get("TEMP", "C:/Temp")) / "all3d_ext"
 ENV = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8")
-MAX_CPU, MAX_GPU, RF_STREAMS, POLL_S = 2, 1, 3, 90
+MAX_CPU, MAX_GPU, POLL_S = 2, 1, 90
 REFUSAL = re.compile(r"quota|maximum .*session|limit|exceeded your|concurrent|too many|not allowed", re.I)
 NETWORK = re.compile(r"NameResolution|getaddrinfo|ConnectionError|ConnectTimeout|ReadTimeout|timed out|Max retries exceeded|retries exceeded|Temporary failure|SSLError|RemoteDisconnected|Maximum batch CPU session count|Maximum .*concurrent", re.I)      # a full CPU-session slot (other sessions share the account) is transient: queue, retry next round, no block
 EST_GPU_S_PER_VIEW = 25.0                      # first estimate only; replaced by the measured seconds of the first finished cands kernel
 DL = dict(size_prior=r".*(size_prior\.json|run_info\.json|FAILED\.txt)$",
-          pre=r".*(inputs\.json|state\.json|detect_input\.json|geometry\.json|geometry\.npz|worker\.log|run_info\.json|FAILED\.txt|\.rfin\.jpg)$",
-          cands=r".*(_cands\.json|summary\.json|run_info\.json|FAILED\.txt)$", candsrf=r".*(_rf\.json|summary\.json|run_info\.json|FAILED\.txt)$",
+          pre=r".*(inputs\.json|state\.json|detect_input\.json|geometry\.json|geometry\.npz|worker\.log|run_info\.json|FAILED\.txt)$",
+          cands=r".*(_cands\.json|summary\.json|run_info\.json|FAILED\.txt)$",
           merge=r".*(groups\.npz|flags\.csv|summary\.json|merge_log\.json|run_info\.json|FAILED\.txt)$")
-GPU_STAGES = {"cands", "candsrf"}
+GPU_STAGES = {"cands"}
 LOCK = threading.Lock()
 
 
@@ -64,6 +61,7 @@ def now():
 
 
 def free_gb():
+    import psutil  # third-party; imported where used so that the module imports without it
     return psutil.virtual_memory().available / 2 ** 30
 
 
@@ -84,7 +82,7 @@ def tree_hash(paths):
     for root in paths:
         for f in sorted(Path(root).rglob("*")) if Path(root).is_dir() else [Path(root)]:
             if f.is_file() and "__pycache__" not in f.parts and f.suffix != ".pyc" and f.name != "all3d_ext.py":     # the local driver itself is not kernel code
-                h.update(f.relative_to(A.ROOT).as_posix().encode()); h.update(sha_file(f).encode())
+                h.update(f.relative_to(Path(root).parent).as_posix().encode()); h.update(sha_file(f).encode())
     return h.hexdigest()[:16]
 
 
@@ -94,7 +92,7 @@ def rel(p):
 
 class State:
     def __init__(self):
-        self.f = A.OUT / "ext_state.json"; self.d = json.load(open(self.f, encoding="utf-8")) if self.f.exists() else dict(jobs={}, datasets={}, blocked=None, rf={})
+        self.f = A.OUT / "ext_state.json"; self.d = json.load(open(self.f, encoding="utf-8")) if self.f.exists() else dict(jobs={}, datasets={}, blocked=None)
 
     def save(self):
         with LOCK:
@@ -136,7 +134,7 @@ def stage_mirror(slug, files):
 
 def code_dataset(st):
     chash = sha_file(A.OUT / "CONTRACT.md"); slug = f"p1-all-code-{chash}"; d = SP / slug
-    srcs = [A.ROOT / x for x in ("tomato3d", "tools", "tests", "config")]; th = tree_hash(srcs)
+    srcs = [Path(__file__).resolve().parents[1]] + [A.ROOT / x for x in ("tools", "tests", "config")]; th = tree_hash(srcs)
     if st.d["datasets"].get(slug, {}).get("hash") != th:
         shutil.rmtree(d, ignore_errors=True); d.mkdir(parents=True, exist_ok=True)
         for s in srcs:
@@ -149,8 +147,8 @@ def code_dataset(st):
 def r31b_files():
     from tomato3d.organs import compound_cluster as CC
     from tomato3d.organs import light_organs as LO
-    from tomato3d.organs import userlabel as UL
-    from tomato3d.organs import vote2d as V2
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vote2d as V2  # not shipped: pilot-only scoring helper
     fs = [LO.DEFAULTS["surfels"], CC.TRACK_A / "surfel_labels.npz", LO.DEFAULTS["poses"], LO.DEFAULTS["views"], V2.OUT / "stage_a_h2id.npz", UL.OUT / "views_chosen.json", UL.OUT / "labels" / "leaf_labels.json"]
     fs += [UL.OUT / "detect" / f"{v}.json" for v in json.load(open(UL.OUT / "views_chosen.json", encoding="utf-8"))["chosen"]]
     return {rel(f): f for f in fs}
@@ -158,13 +156,7 @@ def r31b_files():
 
 def individual_files(iid):
     pz = json.load(open(AC.POSES[iid], encoding="utf-8")); acc = pz["accepted"]; fs = {}; miss = []
-    if iid in AC.E_IDS:                                                       # the 2026-10-28 batch lives in the Downloads folders; index only those
-        idx = {}
-        for r in sorted(AC.E_PHOTO_ROOT.glob("Photos-1-001*")):
-            for f in r.glob("*.HEIC"):
-                idx.setdefault(f.name, []).append(f)
-    else:
-        idx = AC.heic_index()
+    idx = AC.heic_index()
     for f in (AC.ALL / "outputs" / iid / f"R3-1b-style_{iid}_surfels_full.ply", AC.POSES[iid], AC.ALL / "k3a" / iid / "split.json", AC.OUT / iid / "views_chosen.json",
               A.ROOT / "build/p1_plant_model_20261026_01/rim" / f"{iid}.json"):
         if Path(f).exists():
@@ -182,17 +174,6 @@ def individual_files(iid):
     return fs, miss, len(acc)
 
 
-def rf_dataset(st, iid):
-    c = A.cell(iid); files = {rel(f): f for sub in ("rf_detections", "rf_detections_tiled") if (c / sub).exists() for f in (c / sub).glob("*.json")}
-    if not files:
-        return None
-    slug = f"tomato-3dfirst-rf-{sid(iid)}"; d, h = stage_mirror(slug, files)
-    key = __import__("tomato3d.organs.auto_proposers", fromlist=["x"])._rf_key()
-    if key and any(key in (d / "root" / r_).read_text(encoding="utf-8", errors="ignore") for r_ in files):
-        slog(f"{iid}: key-like string in the Roboflow cache, not uploaded"); return None
-    return slug if push_dataset(st, slug, d, h) else None
-
-
 # ---------------------------------------------------------------- kernels
 def kernel_slug(stage, iid):
     return f"tomato-3dfirst-{stage.replace('_', '')}" + (f"-{sid(iid)}" if iid else "")
@@ -200,7 +181,7 @@ def kernel_slug(stage, iid):
 
 def push_kernel(st, key, stage, iid, datasets, sources):
     slug = kernel_slug(stage, iid); d = SP / "kernels" / slug; shutil.rmtree(d, ignore_errors=True); d.mkdir(parents=True)
-    src = (A.ROOT / "tomato3d/recon/kernel_3dfirst_ext.py").read_text(encoding="utf-8"); layers = "rf" if stage == "candsrf" else "h2,sa"
+    src = (Path(__file__).resolve().parents[1] / "recon/kernel_3dfirst_ext.py").read_text(encoding="utf-8"); layers = "h2,sa"
     stage_name = "cands" if stage in GPU_STAGES else stage
     for k_, v_ in (("STAGE", stage_name), ("IID", iid or ""), ("LAYERS", layers)):
         src = re.sub(rf'^{k_} = ".*"$', f'{k_} = "{v_}"', src, flags=re.M)
@@ -237,7 +218,7 @@ def poll(st, key):
 
 def collect(st, key, final):
     j = st.d["jobs"][key]; stage, iid = j["stage"], j["iid"]; dest = (A.cell(iid) if iid else A.OUT) / "ext" / f"{stage}_v{j.get('version')}"; dest.mkdir(parents=True, exist_ok=True)
-    tmp = SP / "dl" / f"{j['slug']}_v{j.get('version')}"; tmp.mkdir(parents=True, exist_ok=True)   # download outside OneDrive (direct downloads into the synced folder stalled), then copy
+    tmp = SP / "dl" / f"{j['slug']}_v{j.get('version')}"; tmp.mkdir(parents=True, exist_ok=True)   # download outside the synced project folder (direct downloads into it stalled), then copy
     for _ in range(4):
         kg("kernels", "output", f"{USER}/{j['slug']}", "-p", str(tmp), "-q", "-o", "--file-pattern", DL[stage], timeout=900)
         if list(tmp.rglob("run_info.json")) or list(tmp.rglob("FAILED.txt")):
@@ -265,34 +246,6 @@ def collect(st, key, final):
         why = (next(iter(dest.rglob("FAILED.txt")), None)); j["error"] = (why.read_text(encoding="utf-8")[:300] if why else f"kernel status {final}")
         j["status"] = "retry" if j["tries"] < 2 else "failed_external"
     st.save(); status_line(st, iid, stage, j, "finished")
-
-
-# ---------------------------------------------------------------- Roboflow lane (local API calls, key in memory only)
-def rf_lane(st, iid):
-    from PIL import Image
-    import numpy as np
-    from tomato3d.leafseg import rfdet
-    from tomato3d.organs import auto_proposers as AP
-    key = AP._rf_key(); c = A.cell(iid); ims = sorted((c / "rf_inputs").glob("*.rfin.jpg")); miss = []
-    if not key:
-        st.d["rf"][iid] = dict(status="no_key", at=now()); st.save(); return
-
-    def one(f):
-        stem = f.name[:-len(".rfin.jpg")]
-        for attempt in range(3):
-            try:
-                img = np.asarray(Image.open(f).convert("RGB")); pred = rfdet.fetch(f, img, c / "rf_detections" / f"{stem}.json", key)
-                if len(pred.get("predictions", [])) >= AP.RF_CAP:
-                    rfdet.tiled_dets(f, img, c / "rf_detections_tiled", stem, key)
-                return None
-            except Exception as e:
-                if attempt == 2:
-                    return dict(view=stem, error=AP._scrub(f"{type(e).__name__}: {e}", key))
-                time.sleep(20)
-    (c / "rf_detections").mkdir(exist_ok=True); (c / "rf_detections_tiled").mkdir(exist_ok=True)
-    with ThreadPoolExecutor(RF_STREAMS) as ex:
-        miss = [r for r in ex.map(one, ims) if r]
-    st.d["rf"][iid] = dict(status="done", photos=len(ims) - len(miss), missing=miss, at=now()); st.save(); slog(f"{iid} rf: {len(ims) - len(miss)} photos, {len(miss)} missing")
 
 
 # ---------------------------------------------------------------- status
@@ -340,12 +293,12 @@ def write_status(st, top=None):
           "| individual | stage | kernel | version | status | tries | seconds | note |", "|---|---|---|---|---|---|---|---|"]
     for k, j in st.d["jobs"].items():
         L.append(f"| {j['iid'] or '_global'} | {j['stage']} | {j['slug']} | {j.get('version')} | {j.get('status')} | {j.get('tries')} | {j.get('seconds') or ''} | {(j.get('error') or '')[:120]} |")
-    L += ["", "Roboflow lane (local API, key in memory): " + ", ".join(f"{i} {r['status']} {r.get('photos', '')}" for i, r in st.d["rf"].items())]
     (A.OUT / "STATUS.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
 
 # ---------------------------------------------------------------- main loop
 def main(argv=None):
+    import psutil  # third-party; imported where used so that the module imports without it
     ap = argparse.ArgumentParser(); ap.add_argument("--ids", nargs="*", default=A.ORDER); ap.add_argument("--unblock", action="store_true"); ap.add_argument("--no-gpu", action="store_true"); ap.add_argument("--merge-ids", nargs="*", default=None); a = ap.parse_args(argv); a.merge_ids = a.merge_ids or a.ids
     SP.mkdir(parents=True, exist_ok=True); st = State(); lock = A.OUT / "RUNNING_ext.lock"
     if lock.exists():
@@ -355,7 +308,7 @@ def main(argv=None):
     lock.write_text(f"pid {os.getpid()} {now()}\n")
     if a.unblock:
         st.d["blocked"] = None; st.save()
-    slog(f"driver start pid {os.getpid()} ids {a.ids}"); rf_threads = {}
+    slog(f"driver start pid {os.getpid()} ids {a.ids}")
     try:
         code = code_dataset(st)
         if not code:
@@ -380,13 +333,9 @@ def main(argv=None):
                 c = A.cell(iid)
                 if done("size_prior") and not done(f"pre:{iid}"):
                     want.append((f"pre:{iid}", "pre", iid))
-                if done(f"pre:{iid}") and iid not in st.d["rf"] and iid not in rf_threads:
-                    rf_threads[iid] = threading.Thread(target=rf_lane, args=(st, iid), daemon=True); rf_threads[iid].start(); slog(f"{iid} rf lane started")
                 if done(f"pre:{iid}") and not done(f"cands:{iid}") and not a.no_gpu:
                     want.append((f"cands:{iid}", "cands", iid))
-                if done(f"cands:{iid}") and st.d["rf"].get(iid, {}).get("status") == "done" and not done(f"candsrf:{iid}") and not a.no_gpu:
-                    want.append((f"candsrf:{iid}", "candsrf", iid))
-                if done(f"cands:{iid}") and (done(f"candsrf:{iid}") or J.get(f"candsrf:{iid}", {}).get("status") == "failed_external") and not done(f"merge:{iid}") and iid in a.merge_ids:
+                if done(f"cands:{iid}") and not done(f"merge:{iid}") and iid in a.merge_ids:
                     want.append((f"merge:{iid}", "merge", iid))
             for key, stage, iid in want:
                 j = J.get(key, {})
@@ -415,9 +364,7 @@ def main(argv=None):
                 elif stage == "cands":
                     ok = True; ds, src = [code, "tomato-recon-code", "tomato-mask-input"], [kernel_slug("pre", iid), kernel_slug("size_prior", None)]
                 elif stage == "merge":
-                    ok = True; ds = [code, f"tomato-3dfirst-in-{sid(iid)}"]; src = [kernel_slug("pre", iid), kernel_slug("cands", iid), kernel_slug("size_prior", None)] + ([kernel_slug("candsrf", iid)] if done(f"candsrf:{iid}") else [])
-                else:
-                    rs = rf_dataset(st, iid); ok = bool(rs); ds, src = [code, "tomato-recon-code", "tomato-mask-input", rs or ""], [kernel_slug("pre", iid), kernel_slug("size_prior", None)]
+                    ok = True; ds = [code, f"tomato-3dfirst-in-{sid(iid)}"]; src = [kernel_slug("pre", iid), kernel_slug("cands", iid), kernel_slug("size_prior", None)]
                 if not ok:
                     continue
                 if push_kernel(st, key, stage, iid, ds, src):
@@ -426,7 +373,7 @@ def main(argv=None):
                     else:
                         n_cpu += 1
             st.save(); write_status(st)
-            alive = [k for k, j in J.items() if j.get("status") == "running"] or [t for t in rf_threads.values() if t.is_alive()]
+            alive = [k for k, j in J.items() if j.get("status") == "running"]
             if not alive and (st.d.get("blocked") or not want):
                 slog("nothing running and nothing to launch" + (" (blocked)" if st.d.get("blocked") else "") + "; driver ends"); break
             if not alive and want and all(J.get(k, {}).get("status") == "failed_external" or (s in GPU_STAGES and quota_left(st) is None) for k, s, _ in want):

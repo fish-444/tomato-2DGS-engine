@@ -21,8 +21,6 @@ from scipy.spatial import cKDTree
 
 from tomato3d.organs import light_organs as LO
 from tomato3d.organs import sheet_retry as SR
-from tomato3d.organs import userlabel as UL
-from tomato3d.organs import vp_recluster as RC
 
 ROOT = LO.ROOT
 OUT = SR.OUT
@@ -31,6 +29,8 @@ A = dict(normal_dev_deg=35.0, reattach_mm=3.0, kmeans_seed=0, gate_4a=0.90)
 
 
 def load_base():
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vp_recluster as RC  # not shipped: pilot-only scoring helper
     pl = UL.load_plant(); b = np.nonzero(pl["blade"])[0]; xyz = pl["xyz"][b]
     zs = np.load(OUT / "sheets" / "sheets.npz"); zp = np.load(OUT / "patches" / "patches.npz"); assert np.array_equal(zs["rows"], pl["rows"][b]) and np.array_equal(zp["rows"], pl["rows"][b])
     S = dict(normal=zs["normal"].astype(float), n_sheets=zs["n_sheets"], index=zs["index"], gap=zs["gap"], peaks=zs["peaks"])
@@ -101,10 +101,11 @@ B4 = dict(min_px=30, inside=0.70, overlap_max=0.01, adj_mm=4.0, min_views=3, mer
 
 def view_masks(vid, chosen):
     """Candidate masks of one photo (bool, 1536 grid): UNION for the labelling photos, stored H2(M1) proposals otherwise. User masks never."""
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
     from tomato3d.leafseg import pixels as px
     if vid in chosen:
         return [UL.unrle(m["rle"]) for m in json.load(open(UL.OUT / "detect" / f"{vid}.json", encoding="utf-8"))["masks"]], "UNION"
-    from tomato3d.organs import seed2d as S2
+    from tomato3d.organs import seed2d as S2  # not shipped: run-time dependency, see report
     j = json.load(open(S2.PROPOSALS / f"20261021_{vid}_iOS.json", encoding="utf-8")); return [px.rle_decode(i["visible_segmentation"]) for i in j["instances"]], "H2(M1)"
 
 
@@ -116,7 +117,8 @@ def adjacency(xyz, S, patch):
 
 def votes(B, patch, pairs, vis_views):
     """Per view and adjacent patch pair: +1 same / -1 different / 0, weight = smaller visible pixel count."""
-    from tomato3d.organs import vote2d as V2
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vote2d as V2  # not shipped: pilot-only scoring helper
     pl, b = B["pl"], B["b"]; ppair = np.array(pairs, int); V = {}; used = {}
     for vid, (vis, src) in vis_views.items():
         view = f"20261021_{vid}_iOS.jpg"; pv = V2.project_view(pl["xyz"][:1], pl["sc"][:1], pl["po"], view, V2.VISP["res"])
@@ -168,6 +170,7 @@ def merge(pairs, V, npatch):
 
 def leaflet_maps(chosen):
     """Per labelling photo: id map of the user's leaflet masks (any leaf number), for leaflet-level purity only."""
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
     recs = UL.load_labels(UL.OUT); out = {}
     for vid in chosen:
         det = {m["id"]: m for m in json.load(open(UL.OUT / "detect" / f"{vid}.json", encoding="utf-8"))["masks"]}; act = {}
@@ -204,7 +207,9 @@ def leaflet_metrics(group_s, B, lmaps, sel=None):
 
 
 def step_4bcd(out: Path):
-    from tomato3d.organs import stacked_sheets as SS
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vp_recluster as RC  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import stacked_sheets as SS  # not shipped: pilot-only scoring helper
     t0 = time.time(); B = load_base(); z4 = np.load(out / "oversegment" / "patches_4a.npz"); patch = z4["patch"]; npatch = int(patch.max()) + 1; pl = B["pl"]; b = B["b"]
     W = np.load(SR.FIRST / "contributions.npz")["W"]; views_train = pl["views"]; con = json.load(open(ROOT / "build/p1_recon_r3-1_20261022_01/contract.json"))
     _, _, nrm_, op = SS.load(); vis_views = {}

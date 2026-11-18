@@ -1,0 +1,37 @@
+{
+ "source": "artifact db export, user-corrected; proposals = A2 masks",
+ "views": {
+  "20261021_060343438_iOS.jpg": {
+   "human_px": 106628,
+   "band_px": 0,
+   "proposal_px": 91194,
+   "added_px": 18143,
+   "removed_px": 2709,
+   "iou_auto_vs_human": 0.8093
+  },
+  "20261021_060430586_iOS.jpg": {
+   "human_px": 91321,
+   "band_px": 507,
+   "proposal_px": 77527,
+   "added_px": 16879,
+   "removed_px": 3085,
+   "iou_auto_vs_human": 0.7885
+  },
+  "20261021_060528683_iOS.jpg": {
+   "human_px": 66127,
+   "band_px": 1,
+   "proposal_px": 66265,
+   "added_px": 476,
+   "removed_px": 614,
+   "iou_auto_vs_human": 0.9837
+  },
+  "20261021_060603671_iOS.jpg": {
+   "human_px": 89231,
+   "band_px": 0,
+   "proposal_px": 86467,
+   "added_px": 3652,
+   "removed_px": 888,
+   "iou_auto_vs_human": 0.9496
+  }
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "labels": [
+  "user_skeleton_seeds",
+  "conditional_on_unvalidated_scale",
+  "after_checkpoint_v1",
+  "R3-1b-style_unaccepted",
+  "no_reference",
+  "frozen_code_reuse",
+  "main_route_r8pc"
+ ],
+ "plant_id": "R3-1b",
+ "stamp": "20261101T133038",
+ "mode": "prox",
+ "adapter": {
+  "rachis_mm": 3.0,
+  "blade_mm": 8.0,
+  "blade_margin_mm": 5.0
+ },
+ "seeds": {
+  "rachis_seeds": 6869,
+  "blade_groups": 92,
+  "blade_seeds": 10553
+ },
+ "stage1_labelled": 15315,
+ "leaves": 8,
+ "leaf_map": {
+  "1": "R3-1b-L02",
+  "2": "R3-1b-L06",
+  "3": "R3-1b-L01",
+  "4": "R3-1b-L04",
+  "5": "R3-1b-L08+R3-1b-L09+R3-1b-L10",
+  "6": "R3-1b-L07",
+  "7": "R3-1b-L03+R3-1b-L05",
+  "8": "R3-1b-L11"
+ },
+ "sources": {
+  "frozen_bundle": "ec7cfbce98c8c642",
+  "groups": "second_attempt/patches_filled.npz"
+ },
+ "hashes": {
+  "pc_absorb": "372c06655d939376",
+  "pc_rachis": "b9e76f0b96a0a912",
+  "compound_cluster": "785eb9913ded51cf",
+  "this": "ecd465d2da8d9e45",
+  "frozen_bundle": "ec7cfbce98c8c642",
+  "frozen_r8pc_labels": "e1ff792be1c4efdf"
+ },
+ "skeleton_sha256": "5bb725c085b4bcec7130f34392a858eea119bdd95940a414e1577a73d5daa5ed"
+}

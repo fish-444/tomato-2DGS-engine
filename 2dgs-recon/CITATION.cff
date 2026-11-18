@@ -1,12 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this folder of tomato-2DGS-engine, please cite it as below."
-title: "Micro-Tom 2DGS reconstruction and organ labelling"
-version: "0.1.0"
-date-released: "2026-11-08"
+message: "If you use this software or the R3-1b example, please cite it as below."
+title: "microtom-2dgs-recon: 2DGS reconstruction of a potted tomato plant on a ChArUco board and T-Prox compound-leaf labels"
+type: software
 authors:
   - family-names: "서"
     given-names: "현우"
     affiliation: "Kyung Hee University, Department of Smart Farm Science"
-
+repository-code: "https://github.com/fish-444/tomato-2DGS-engine"
 license: MIT
-keywords: [Micro-Tom, tomato, 3D reconstruction, functional-structural plant model, light interception]
+date-released: 2026-11-18
+keywords:
+  - tomato
+  - 3D Gaussian splatting
+  - 2DGS
+  - ChArUco
+  - plant phenotyping
+  - compound leaf

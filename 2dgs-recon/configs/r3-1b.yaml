@@ -1,0 +1,10 @@
+# The values the pilot plant R3-1b (label: R3-1b_unaccepted) was run with. DOCUMENTATION: the modules read their own constants, this file is not parsed.
+# Sources: src/tomato3d/recon/{charuco_a3,r31_contract,kernel_2dgs_r31}.py, src/tomato3d/organs/{pc_absorb,pc_rachis,skeleton_r8pc,sheet_retry,all3d_merge}.py, example/r3-1b/scores/contract_R3-1.json.
+board: {squares: [10, 7], square_m: 0.038, marker_m: 0.028, dictionary: DICT_5X5_100, sheet: A3}
+capture: {camera_px: 6048, photos_used: 61, heldout_views: 4, heldout_seed: 20261023}
+pose_qc: {max_view_rms_px_at_6048: 8.0, min_corners: 12, min_pose_points: 8, min_spread: 0.10, min_inlier_fraction: 0.8}
+masks: {resolution: 1512, soft_matte_band_px: 2, steps: [M1, M2, M3, M4, M5], pot_top_m: 0.066, pot_side_m: 0.062, m5_alpha_min: 0.8}
+train: {resolution: 1512, iterations: 7000, initial_points: 150000, seed: 0, exposure_compensation: true, loss: {ssim: 0.2, alpha: 0.1, normal: 0.05, dist: 100.0, normal_from: 2000, dist_from: 1500}, gsplat: 1.5.3}
+surfels: {opacity_min: 0.5, count: 46719, t_sheet_mm: 1.529}
+tprox: {weight_set: A, weights: geometry_only, gamma: 1.0, accept_p1: 0.6, accept_margin: 0.25, rounds: 5, edge_mm: 3.0, rachis_seed_mm: 3.0, blade_seed_mm: 8.0, blade_seed_margin_mm: 5.0, seed_min: 50, reach_mm: 22.72}
+status: [R3-1b_unaccepted, conditional_on_unvalidated_scale, tprox_unverified_until_heldout]

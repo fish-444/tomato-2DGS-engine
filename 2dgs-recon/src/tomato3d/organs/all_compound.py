@@ -24,12 +24,11 @@ from tomato3d.recon import charuco_a3 as ca
 ROOT = LO.ROOT
 ALL = ROOT / "build/p1_recon_all_20261025_01"
 OUT = ROOT / "build/p1_all_compound_20261026_01"
-IDS = ["n_04", "t2_02", "n_01", "t2_05", "t2_04", "n_06", "n_05", "n_02", "n_03"]
+IDS = []                                         # plant ids of the readiness table; fill in for your own individuals
 R31B_BAND_EXCL = 0.901
 CUT = dict(auto_min=R31B_BAND_EXCL - 0.05, a_points=300, b_points=100)
 LABELS = dict(status="R3-1b_unaccepted", pipeline="R3-1b-style", scale="conditional_on_unvalidated_scale")
-QUEUE_STATE = {"n_06": "COMPLETE", "n_05": "TIMEOUT (kernel past 45 min; output present)", "n_02": "COMPLETE", "t2_05": "ERROR on first push (cause unlogged); re-run COMPLETE",
-               "n_03": "COMPLETE", "t2_04": "COMPLETE", "t2_02": "COMPLETE (first try hung 5 h, cancelled)", "n_04": "COMPLETE", "n_01": "COMPLETE"}
+QUEUE_STATE = {}                                 # plant id -> reconstruction queue state shown in the readiness table
 GRAPH_K, GRAPH_MM = 10, 3.0
 
 
@@ -62,7 +61,7 @@ def readiness():
         its, loss = last_loss(ALL / i / "kernel_out" / "run_log.txt")
         ho = res["heldout_new"]; per = ho["per_view"]; med_nb = float(np.median([v["iou_no_band"] for v in per.values()]))
         pv = pts[i]["per_view"]
-        mask = "C2 (SAM 2 from user masks) where seeded, else C3" if i == "t2_02" else "C3 U-Net"
+        mask = "C3 U-Net"
         rows.append(dict(individual=i, recon_status=QUEUE_STATE[i], iterations=its, last_loss=loss, init_points=res["init_points"], plant_surfels=int(len(xyz)), plant_surfels_opacity=int(keep.sum()),
                          views_accepted=meta["views_accepted"], train_views=meta["train_views"], azimuth_coverage_deg=t[4], azimuth_gap_deg=t[5], low_ring_views=t[6], triage_class=t[8],
                          mask_source=mask, heldout=" ".join(meta["heldout"]), auto_iou_no_band_heldout=round(ho["iou_no_band"], 3), auto_iou_no_band_median_views=round(med_nb, 3),
@@ -85,13 +84,8 @@ def classify(r) -> str:
 
 
 # ---------------------------------------------------------------- Amendment 1: views for labelling
-LABEL_IDS = ["n_04", "t2_02", "n_01", "t2_05", "n_06", "n_05", "n_02"]
-POSES = {i: ALL / "stage2_new" / i / "poses.json" for i in ("n_01", "n_02", "n_03", "n_04", "n_05")}
-POSES["n_06"] = ALL / "stage2_new_n06" / "n_06" / "poses.json"
-POSES.update({i: ROOT / "build/p1_recon_tomato2_20261023_01/stage2_d7" / i / "poses.json" for i in ("t2_01", "t2_02", "t2_03", "t2_04", "t2_05")})
-E_IDS = ["e_01", "e_02", "e_03", "e_04", "e_05", "e_06", "e_07"]                  # 2026-10-28 batch (build/p1_recon_d1028_20261028_01), same layout as the nine
-POSES.update({i: ALL / "stage2_new" / i / "poses.json" for i in E_IDS})
-E_PHOTO_ROOT = Path("<DOWNLOADS>")                                  # HEIC of the e_* batch; IMG numbers collide with the older individuals, so they are indexed per batch
+LABEL_IDS = []                                   # plant ids offered for labelling (default of --ids); fill in for your own individuals
+POSES = {}                                       # plant id -> poses.json of its reconstruction; fill in for your own individuals
 VIEWS_RULE = dict(n_train=4, azimuth_min_deg=60.0, heldout_azimuth_min_deg=45.0, top_horiz_mm=50.0, vis_res=1512, vis_tol_m=0.0015, radius_sigma=1.5, max_r_px=14)
 RINGS = ((75.0, "top"), (58.0, "upper"), (45.0, "middle"), (-90.0, "low"))
 
@@ -122,7 +116,7 @@ def az_diff(a, b):
 
 
 def visibility(pl, views):
-    from tomato3d.organs import seed2d as S2
+    from tomato3d.organs import seed2d as S2  # not shipped: run-time dependency, see report
     V = S2.votes_per_view(pl["xyz"], pl["po"], views, VIEWS_RULE["vis_res"], VIEWS_RULE["vis_tol_m"], sc=pl["sc"], mode="splat", label_maps={v: np.zeros((S2.H2_GRID, S2.H2_GRID), np.int32) for v in views})
     return V >= 0
 
@@ -179,7 +173,7 @@ def step_photos(ids):
     for iid in ids:
         views, rep = view_list(iid); pl = load_individual(iid); d = OUT / iid; (d / "undist_3024").mkdir(parents=True, exist_ok=True); (d / "masks").mkdir(exist_ok=True)
         po = pl["po"]; Kn, dist = np.array(po["K_undist"]), np.array(po["dist"]); json.dump(po, open(d / "poses.json", "w", encoding="utf-8"))
-        vis = visibility(pl, views); from tomato3d.organs import seed2d as S2
+        vis = visibility(pl, views); from tomato3d.organs import seed2d as S2  # not shipped: run-time dependency, see report
         K = ca.scaled_K(Kn, po["undistorted_res"], S2.H2_GRID); ppm = {}
         for k, v in enumerate(views):
             cands = idx.get(v[:-4] + ".HEIC", []); assert len(cands) >= 1, (iid, v)
@@ -191,34 +185,13 @@ def step_photos(ids):
         json.dump(dict(views=views, train=rep["train"], held_out=rep["held_out"], ppm=ppm, labels=LABELS), open(d / "detect_input.json", "w", encoding="utf-8"), indent=1); print(iid, "photos", len(views), flush=True)
 
 
-def step_roboflow(ids):
-    """Roboflow v4 boxes by API for the label views only (key in memory, never written); responses cached for the Kaggle SAM drawing."""
-    from PIL import Image
-    from tomato3d.leafseg import rfdet
-    from tomato3d.organs import auto_proposers as AP
-    key = AP._rf_key(); assert key, "no Roboflow key"
-    for iid in ids:
-        views, _ = view_list(iid); d = OUT / iid; log = {}
-        for v in views:
-            rgb = np.asarray(Image.open(d / "undist_3024" / v).convert("RGB")); stem = Path(v).stem
-            try:
-                pred = rfdet.fetch(d / "undist_3024" / v, rgb, d / "rf_detections" / f"{stem}.json", key); n = len(pred.get("predictions", [])); tiled = None
-                if n >= AP.RF_CAP:
-                    _, tiled = rfdet.tiled_dets(d / "undist_3024" / v, rgb, d / "rf_detections_tiled", stem, key)
-                log[v] = dict(predictions=n, tiled=tiled)
-            except Exception as e:
-                log[v] = dict(error=AP._scrub(f"{type(e).__name__}: {e}", key))
-            print(iid, v, log[v], flush=True)
-        json.dump(log, open(d / "roboflow_log.json", "w", encoding="utf-8"), indent=1, default=float)
-
-
 PLANT_INSIDE_MIN = 0.80          # Amendment 1 item 3: candidates with < 80 % of their area inside the plant mask are dropped, the rest clipped
 
 
 def step_union(ids, cand_root: Path):
     """UNION of the raw candidates of one view: plant-mask restriction -> dedup (userlabel.union_masks) -> detect/<vid>.json for the labelling page."""
     from PIL import Image
-    from tomato3d.organs import userlabel as UL
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
     for iid in ids:
         views, rep = view_list(iid); d = OUT / iid; (d / "detect").mkdir(exist_ok=True); summ = {}
         for v in views:
@@ -249,8 +222,6 @@ def main(argv=None):
         step_union(a.ids, Path(a.cands))
     if a.step == "photos":
         step_photos(a.ids)
-    if a.step == "roboflow":
-        step_roboflow(a.ids)
     if a.step == "views":
         for i in a.ids:
             r = choose_label_views(i); print(i, r["train"], r["held_out"], [s.get("ring") for s in r["steps"]], r["seen_ge1_share"], r["seen_ge2_share"], r["heldout_visible_share"], r["held_out_rule_met"], flush=True)

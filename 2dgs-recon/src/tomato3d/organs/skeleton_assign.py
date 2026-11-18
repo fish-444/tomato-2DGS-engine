@@ -3,7 +3,7 @@
 Branches = the user's clicks in order, one line ("다음 잎") = one compound leaf's skeleton (legacy clicks without a line: cut at |dz| > 10 mm). 3D-first groups are assigned whole by the median distance
 of their surfels to each branch (best <= 25 mm and margin >= 3 mm, else contested); ungrouped surfels one by one with the same rule. Light: distances only.
 
-usage: python -m tomato3d.organs.skeleton_assign --id n_04
+usage: python -m tomato3d.organs.skeleton_assign --id <plant_id>
 """
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ from pathlib import Path
 import numpy as np
 from scipy.spatial import cKDTree
 
-ROOT = Path(__file__).resolve().parents[2]
+from tomato3d.paths import ROOT
 OUT = ROOT / "build/p1_all_3dfirst_20261027_01"
 STORE_BASE = OUT / "user_base_click.jsonl"
 R = dict(dz_mm=10.0, step_mm=1.0, max_mm=25.0, margin_mm=3.0)

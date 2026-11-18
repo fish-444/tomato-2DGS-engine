@@ -13,28 +13,23 @@ from collections import Counter
 
 import numpy as np
 
-from tomato3d.organs import auto_proposers as AP
-from tomato3d.organs import bridge_cleanup as BC
-from tomato3d.organs import contested_resolve as CR
 from tomato3d.organs import light_organs as LO
-from tomato3d.organs import local_diffusion as LD
-from tomato3d.organs import photo_then_geometry as PG
 from tomato3d.organs import sheet_retry as SR
-from tomato3d.organs import trace_reconcile as TR
-from tomato3d.organs import userlabel as UL
 
-OUT = LD.OUT / "r6_chain"; STATUS = "R3-1b_unaccepted"
+OUT = LO.ROOT / "build/p1_local_diffusion_20261027_01" / "r6_chain"; STATUS = "R3-1b_unaccepted"
 U_MM = 22.72; U_SENS = (15.48, 22.72, 40.2); SPLIT = dict(share=0.5, margin=0.15)
 TAGS = ("other", "base", "diffused", "photo_split", "geo_photo", "geo_only", "moved_detached", "unset_detached", "bridge_fill", "contested", "out_of_reach")
 
 
 def diffuse(B, G, leaves, C, cand, U):
+    from tomato3d.organs import local_diffusion as LD  # not shipped: pilot-only R3-1b chain
     reach = {L: U for L in leaves}; lab_new, src = LD.assign(leaves, C, cand, reach, LD.D["margin_mm"])      # U != 12 mm default -> used as is
     return lab_new, src
 
 
 def photo_split(C, leaves, src, U, idx_c, V):
     """Per contested surfel: contest set = leaves within reach and within the margin of the best; the photo-vote leader wins if share >= 0.5 and >= 0.15 ahead."""
+    from tomato3d.organs import local_diffusion as LD  # not shipped: pilot-only R3-1b chain
     out = {}
     for k, s_ in enumerate(idx_c):
         c = C[:, s_]; cb = c.min(); cs = [L for L, x in zip(leaves, c) if np.isfinite(x) and x <= U and x - cb < LD.D["margin_mm"]]; nv = V[k].sum()
@@ -45,6 +40,8 @@ def photo_split(C, leaves, src, U, idx_c, V):
 
 
 def run_chain(B, G, Gp, leaves, C, cand, U, vis_views, vpmaps, verbose=True):
+    from tomato3d.organs import bridge_cleanup as BC  # not shipped: pilot-only R3-1b chain
+    from tomato3d.organs import photo_then_geometry as PG  # not shipped: pilot-only R3-1b chain
     b = B["b"]; xyz, S = B["xyz"], B["S"]; base_b = B["base"][b]; t0 = time.time(); steps = {}
     lab_new, src = diffuse(B, G, leaves, C, cand, U); lab = np.where(base_b > 0, base_b, lab_new).astype(int); tag = np.where(base_b > 0, 1, np.where(src == 2, 2, np.where(src == 3, 9, np.where(src == 4, 10, 0)))).astype(np.int8)
     steps["1_diffusion"] = lab.copy()
@@ -66,6 +63,11 @@ def run_chain(B, G, Gp, leaves, C, cand, U, vis_views, vpmaps, verbose=True):
 
 
 def main():
+    from tomato3d.organs import auto_proposers as AP  # not shipped: pilot-only R3-1b chain
+    from tomato3d.organs import contested_resolve as CR  # not shipped: pilot-only R3-1b chain
+    from tomato3d.organs import local_diffusion as LD  # not shipped: pilot-only R3-1b chain
+    from tomato3d.organs import trace_reconcile as TR  # not shipped: pilot-only R3-1b chain
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only R3-1b chain
     OUT.mkdir(parents=True, exist_ok=True); t0 = time.time(); B = LD.load("vp"); pl, b, xyz, S = B["pl"], B["b"], B["xyz"], B["S"]; base_b = B["base"][b]
     G, Gp, _ = LD.sheet_graph(xyz, S); seeds, reach0, info = LD.seeds_and_reach(B, Gp); leaves, C = LD.costs(G, seeds)
     from scipy.spatial import cKDTree

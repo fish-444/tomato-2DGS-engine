@@ -21,8 +21,6 @@ from scipy.spatial import cKDTree
 from tomato3d.organs import light_organs as LO
 from tomato3d.organs import oversegment as OS
 from tomato3d.organs import sheet_retry as SR
-from tomato3d.organs import userlabel as UL
-from tomato3d.organs import vp_recluster as RC
 
 OUT2 = OS.OUT / "oversegment" / "second_attempt"
 LABELS = dict(OS.LABELS, attempt="tuned_on_R3-1b", grouping="oversegment_3d_first_consensus_fill")
@@ -33,7 +31,7 @@ REPRO = dict(edges=880, edges_with_votes=557, same_votes=3272, different_votes=5
 
 def vote_views(B):
     """The same 64 views as A1 step 4b (training views minus the held-out photo, plus the fresh reconstruction held-out views)."""
-    from tomato3d.organs import stacked_sheets as SS
+    from tomato3d.organs import stacked_sheets as SS  # not shipped: pilot-only scoring helper
     pl, b = B["pl"], B["b"]; W = np.load(SR.FIRST / "contributions.npz")["W"]; views = pl["views"]; con = json.load(open(OS.ROOT / "build/p1_recon_r3-1_20261022_01/contract.json"))
     _, _, _, op = SS.load(); vv = {}
     for v in views:
@@ -96,6 +94,8 @@ def fill(lab, xyz, S):
 
 
 def heldout(B, group_s, glab):
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import vp_recluster as RC  # not shipped: pilot-only scoring helper
     pl, b = B["pl"], B["b"]; lab = np.array([glab.get(int(g), 0) if g >= 0 else 0 for g in group_s], np.int16); full = np.zeros(len(pl["xyz"]), np.int16); full[b] = lab
     H2id = np.load(UL.VOTE2D / "stage_a_h2id.npz")["H2id"]; hv = f"20261021_{B['held']}_iOS.jpg"; col = H2id[:, pl["views"].index(hv)]
     raw, _ = UL.label_maps(UL.OUT, [B["held"]]); hm = UL.remap(raw, B["nmap"])[B["held"]]; hm = np.where(hm > 0, hm, 0).astype(np.int16)
@@ -120,7 +120,9 @@ def over_merged(group_s, B, lmaps):
 
 
 def overmerge_image(vid, p, g, group_s, lmaps, VISb, path):
-    img = Image.open(LO.DEFAULTS["poses"].parent / "undist_3024" / SR.AP.view_file(vid)).convert("RGB").resize((UL.H2, UL.H2), Image.BILINEAR)
+    from tomato3d.organs import userlabel as UL  # not shipped: pilot-only scoring helper
+    from tomato3d.organs import auto_proposers as AP  # not shipped: pilot-only scoring helper
+    img = Image.open(LO.DEFAULTS["poses"].parent / "undist_3024" / AP.view_file(vid)).convert("RGB").resize((UL.H2, UL.H2), Image.BILINEAR)
     base = np.asarray(img).astype(float) * 0.35; a = base.copy(); b_ = base.copy(); lid = lmaps[vid]; rng = np.random.default_rng(0); pal = rng.integers(60, 255, (int(lid.max()) + 2, 3))
     vis = VISb[:, p["k"]] & p["inside"]; m = vis & (group_s == g); under = lid[p["wi"][m], p["ui"][m]]
     a[p["wi"][m], p["ui"][m]] = np.where(under[:, None] > 0, pal[under], 255)

@@ -1,76 +1,81 @@
-# microtom-2dgs-recon — Micro-Tom 2DGS 복원과 기관 라벨링
+# microtom-2dgs-recon
 
+화분에 심은 토마토 한 개체를 A3 ChArUco 보드 위에서 돌려 찍은 사진으로 **2DGS 서펠 복원**을 만들고, 그 서펠에 **T-Prox 복엽 라벨**(어느 서펠이 어느 복엽인가)을 붙이는 코드와, 그 방법이 확인된 유일한 예시(R3-1b)입니다.
+(English summary at the end.)
 
-> **공개판 안내 (tomato-2DGS-engine):** VTC 파생 파일(모델 `.rgg`·`.gsz`, `src/tools/vtc_growth_fork.py`, `src/tools/vtc_development.py`, 모델 비교 `.diff`)은 원저자 허락 전이라 이 저장소에 넣지 않았습니다. 목록·sha256·그 때문에 돌지 않는 스크립트는 상위 [`VTC_WITHHELD.md`](../VTC_WITHHELD.md).
-> *Public edition: VTC-derived files are withheld; see [`../VTC_WITHHELD.md`](../VTC_WITHHELD.md) for the list, hashes and the scripts that need them.*
+## 먼저 읽으세요: 상태
 
-## 무엇인가
-턴테이블 사진으로 Micro-Tom 개체를 2D Gaussian splatting(2DGS) surfel 로 복원합니다. 이어서 복엽(잎)을 나누고 골격·형질·MTG(식물 구조 표)를 만듭니다.
-이 저장소가 만든 surfel·MTG 는 `microtom-static-light` (정적 광)과 `microtom-dynamic-fspm` (동적 FSPM)의 입력입니다.
-
-```
-사진 → ChArUco 자세 → SAM 2.1 마스크 → 2DGS 학습(Kaggle T4) → 실루엣 점검(held-out IoU)
-     → 복엽 라벨(3D-first 묶음, 골격 클릭 도구, T-Prox, R8_pc, V-P) → 형질 → MTG (_04) → 정적 / 동적 저장소
-```
-
-## 폴더
-- `src/` = 원 프로젝트와 **같은 상대 경로**로 복사 (`src/tomato3d/`, `src/tools/`, `src/build/<작업 폴더>/`). 스크립트 안의 상대 경로가 그대로 맞도록 옮기지 않았습니다. 결과 표(CSV)와 그림(PNG)은 각 작업 폴더 안에 있습니다.
-- `configs/paths.yaml`: 개인 절대 경로 대신 넣은 자리표시자(`<PROJECT_ROOT>` 등)의 뜻.
-- `docs/SUPERSEDED.md`: 대체·철회·초안 파일 목록 (현행 아님).
-- `DATA.md`: 올리지 않은 원자료·대용량 산출물. `THIRD_PARTY.md`: 외부 패키지·라이선스.
-
-## 주요 스크립트 (정확한 실행 명령과 입력 해시는 같은 폴더의 `CONTRACT*.md` 에 있음)
-| 단계 | 진입점 |
-|---|---|
-| ChArUco 자세 | `src/tomato3d/calib/`, `src/tomato3d/recon/charuco_*.py`, `src/build/p1_recon_charuco_20261021_01/` |
-| 마스크 (SAM 2.1, 설정만) | `src/tomato3d/recon/kernel_all_masks.py`, `src/tomato3d/recon/r31_*.py`, `src/tomato3d/leafseg/` |
-| 2DGS 학습 (Kaggle T4, gsplat 1.5.3) | 파일럿: `src/build/p1_recon_r3-1_20261022_01/kaggle_stage/kernel/run.py` · 여러 개체: `src/tomato3d/recon/kernel_all_train.py`, `src/build/p1_recon_all_20261025_01/train_queue.py` |
-| 실루엣 면적 보정·held-out IoU | `src/build/p1_recon_r3-1_20261022_01/scores_*.json`, `src/build/p1_recon_all_20261025_01/triage_all.json` |
-| 복엽 라벨 도구 (포트 8835) | `src/tomato3d/organs/all3d_page.py`, `skeleton_store.py`, `skeleton_io.py` (형식 정의) |
-| T-Prox / R8_pc / V-P | `src/tomato3d/organs/skeleton_tprox.py`, `pc_rachis.py`, `skeleton_r8pc.py`, `src/build/p1_vp_*` |
-| 형질 | `src/tools/plant_traits.py`, `src/build/traits_recon_20261101_01/` |
-| MTG (_04) | `src/build/mtg_build_v2_clicks_curv_20261105_01/build_04.py` → `src/build/mtg_build_v2_clicks_20261105_04/` |
-
-설치: `pip install -r requirements.txt` (이 PC 기준 버전). 2DGS·SAM 커널은 Kaggle 에서 자체 설치합니다. 대부분의 스크립트는 `DATA.md` 의 입력(사진·surfel)이 있어야 돌아갑니다.
-
-## 동결(frozen) 파일과 sha256
-| 파일 | sha256 |
-|---|---|
-| `src/build/traits_recon_20261101_01/MTG_TEMPLATE_v1.csv` | `ee4b43da797159ef2f5d1a6bf7fa727d95cdf6f94a67ca28dadd5e21d61a228e` |
-| `src/build/traits_recon_20261101_01/MTG_TEMPLATE_v2_4.csv` | `6901657ea95d7e32acce44cbf2eddaf7149d099f816b7624f27ac5f458ca7f72` |
-| `src/build/traits_recon_20261101_01/MTG_LEAF_CURVATURE_v1.csv` | `8cdf7ff764e65440a1854aa8500ee9b1caa69b96313376cb9b74c413f7370119` |
-| `src/build/traits_recon_20261101_01/MTG_LEAFLET_SPAN_v1.csv` | `826b0844f0c5067f0398ef52680aba287eeb178adbbdc5213ef506abfefcbf9a` |
-| `src/build/traits_recon_20261101_01/MTG_LEAFLET_ARRANGEMENT_v1.csv` | `faa67d5e926003814d7a6105b31b002aebf6b8e3d93e6245c8d11b2a8cd1daba` |
-
-현재 정적 MTG 세트 = `src/build/mtg_build_v2_clicks_20261105_04/` (11개체 중 8개체 점검 통과; 파일럿 개체·`n_03`·`e_01` 은 `PLANT_FLAGS.json` 에 표시하고 사용자 판단으로 채택).
-
-## 상태 라벨 (결과를 읽을 때)
 | 라벨 | 뜻 |
 |---|---|
-| `not_validation` | 시나리오·모델 결과이며 측정으로 검증되지 않음 |
-| `relative_light` | 빛은 상대값 |
-| `conditional_on_unvalidated_scale` | 복원 스케일(mm)이 독립 측정으로 검증되지 않은 조건부 값 |
-| `skeleton_labels_ungraded` | 골격·복엽 라벨에 held-out 채점이 없음 (사람 라벨이 있는 개체는 파일럿 개체 하나뿐) |
-| `assumed_lamp_model` | 램프 배광은 가정 모델 |
+| `R3-1b_unaccepted` | 예시 복원은 합격 기준을 통과하지 못한 채 쓰는 복원입니다. |
+| `conditional_on_unvalidated_scale` | 길이(mm)는 인쇄한 보드에서 온 값이고 독립 실측으로 검증하지 않았습니다. |
+| `tprox_unverified_until_heldout` | T-Prox 라벨의 정확도는 사람 라벨이 있는 **한 개체**에서만 쟀습니다. 다른 개체의 출력은 "배정 비율"일 뿐 정확도가 아닙니다. |
 
-표본 수: 복원 개체 다수(파일 이름 `n_0x`, `t2_0x`, `e_0x`), **사람 라벨이 있는 개체는 파일럿 개체 1개**. 다른 개체의 배정 비율은 정확도가 아니라 배정 몫입니다.
+- **R3-1b (파일럿 개체)**: 2026-10-21 에 찍은 화분 토마토 한 개체의 복원 이름입니다. 이 저장소의 예시는 이 개체 하나뿐이고, 사람 라벨(잎 번호 클릭)이 있는 개체도 이것 하나뿐입니다.
+- 위 수치(0.750 등)는 모두 이 한 개체의 값입니다. 다른 개체에 대한 정확도를 주장하지 않습니다.
+- 사람이 8835 포트 페이지에서 찍은 클릭으로 만든 스켈레톤과 그룹이 필요합니다. 줄기·엽축·잎자루를 찾는 **학습된 검출기는 없습니다**.
+- 0.750 실행은 가중치 묶음 **A (기하만)** 입니다. 묶음 B (0.7 / 0.3 색 포함)는 발표 그림에만 나오며 이 저장소의 실행이 아닙니다.
 
-## 내부 이름
-| 이름 | 뜻 |
-|---|---|
-| `R3-1b` | 파일럿 개체의 파일 이름 |
-| 2DGS | 2D Gaussian splatting (면 원판 surfel 로 복원) |
-| T-Prox | 골격 선에 가까운 surfel 을 씨앗으로 하는 복엽 배정 |
-| R8_pc | 점군 random walker 흡수로 복엽 라벨을 넓히는 방법 |
-| V-P | 사진 우선 복엽 군집 정리 (pilot) |
-| `_04` | MTG 구축 4번째 실행 = 현행 정적 MTG 세트 |
-| `dolgfish` | Kaggle 계정 이름 (커널·데이터셋 id 에 남겨 둠) |
+## 저장소만으로 되는 것 (CPU, 데이터 내려받기 없음)
 
-## 알아둘 것
-- 개인 절대 경로는 사본에서만 자리표시자로 바꿨습니다 (`configs/paths.yaml`). 다른 코드는 바꾸지 않았습니다.
-- 한글 파일 이름이 있으면 `git config core.quotepath false` 를 권장합니다.
-- 줄끝은 원본 그대로 저장합니다 (`.gitattributes` 의 `* -text`).
-- 라이선스: 코드 MIT (`LICENSE`), 그림·표 CC BY 4.0 (`LICENSE-CC-BY-4.0.md`). `src/tools/vtc_growth_fork.py`, `vtc_development.py` 는 VTC 조각을 담고 있어 이 공개 저장소에서 뺐습니다 (`../VTC_WITHHELD.md`).
+```
+pip install -r requirements.txt
+python scripts/08_score_pilot.py                    # 11-01 실행의 T-Prox 라벨을 사람 라벨로 채점 -> 0.7503 [0.739, 0.761]  (수 초)
+python scripts/08_score_pilot.py --distance         # 거리 기준선 -> 0.6065
+python scripts/07_tprox.py --rebuild-seeds          # 스켈레톤+그룹+축 분류에서 씨앗을 다시 만들어 묶음과 같은지 확인한 뒤 고정 계산을 돌림
+python scripts/08_score_pilot.py --labels results/r3-1b_tprox/R8_pc_rachis/labels_rachis.npz
+```
 
----
-**English summary.** Turntable photos of Micro-Tom plants → ChArUco poses → SAM 2.1 masks → 2DGS surfel reconstruction (Kaggle, gsplat 1.5.3) → held-out silhouette checks → compound-leaf labelling (3D-first groups, skeleton click tool, T-Prox, R8_pc random walker, V-P) → traits → MTG (`_04`). Outputs feed `microtom-static-light` and `microtom-dynamic-fspm`. `src/` mirrors the original project layout so relative paths in scripts still work; each work folder's `CONTRACT*.md` holds the exact commands and input hashes. Only one plant (the pilot, file name `R3-1b`) has human labels; other plants' label shares are not accuracies. Raw photos, masks, human labels, click logs and surfel files are not included (see `DATA.md`). Code MIT, figures/tables CC BY 4.0, VTC fragments excluded.
+- `07_tprox.py` 는 고정된 `pc_absorb.py`(묶음 A)와 `pc_rachis.py` 를 돌립니다. Kaggle CPU 커널에서 **212초, 가장 큰 하위 프로세스(`pc_absorb.py`)의 최대 메모리 약 0.7 GB** 였습니다(전체 메모리는 재지 않았습니다).
+- **검사한 것**: 정리한 코드로 `07_tprox.py` 를 Kaggle CPU 에서 돌려, 11-01 실행의 모든 배열(라벨, 출처, p1, p2, top1, top2 등 23개)이 **완전히 같음**을 확인했습니다(2026-11-18). 씨앗 재생성(`--rebuild-seeds`)과 두 채점 값은 이 PC 에서도 확인했습니다. 기대값은 `example/r3-1b/EXPECTED.json`.
+- `scripts/08` 의 사람 라벨은 15,650건이며, R3-1b 서펠 위의 값입니다. 다른 복원의 서펠에는 `--radius-mm`(기본 2.0) 이내 가장 가까운 서펠로 옮겨 채점합니다(이 옮기는 단계는 검증되지 않았습니다).
+
+## 데이터나 GPU 가 필요한 것 (1–6단계)
+
+| 단계 | 스크립트 | 필요한 것 |
+|---|---|---|
+| 1 자세 | `scripts/01_poses.py` | 사진 (`DATA.md`) |
+| 2 마스크 | `scripts/02_masks.py` | 사진 + SAM 가중치. R3-1b 의 마스크 단계(M1–M5)는 `onezip/stem_masks.py` 로 옮겨 두었습니다 |
+| 3 초기 점 | `scripts/03_sparse.py` | pycolmap (보드 자세를 고정한 삼각측량, SfM 자세 추정 없음) |
+| 4 학습 | `scripts/04_train.py` | CUDA GPU (Kaggle T4 에서 약 33분/회) |
+| 5 실루엣 점수 | `scripts/05_silhouette_score.py` | 보류 사진 |
+| 6 그룹 | `scripts/06_groups.py` | Kaggle 에서 실행하는 것이 보통입니다(`docs/GROUPS_AND_TPROX_KO.md`) |
+
+전체를 한 번에 돌리는 길은 **`onezip/`** 입니다: `python onezip/build_zip.py` 로 Kaggle / Colab 용 zip 을 만들고, 사진 폴더와 함께 올려 `RUN_KAGGLE.ipynb` 를 실행합니다(`onezip/README_KO.md`).
+저장소의 `src/` 만으로는 안 돌아가는 곳(`docs` 에도 적음): SAM 로더(`leafseg.run`, `topview.measure2d`), 사진 가시성 계산(`seed2d`), 사람 라벨 채점에 쓰던 `userlabel`·`vote2d` 는 이 저장소에 넣지 않았습니다. one-zip 은 자기 SAM 로더를 갖고 있어 한 번에 돌아갑니다.
+
+## 알려진 실패와 현재 상태 (2026-11-18 기준 보고서 그대로)
+
+같은 개체, 같은 스켈레톤, 같은 고정 T-Prox 인데 사람 라벨 일치가 PC 실행에서는 **0.750**, one-zip 자동 마스크 복원에서는 **0.525** 였습니다. 원인 분해(`docs/ONEZIP_DIAGNOSIS_KO.md`):
+- 차이의 대부분(−0.19)은 **복원**에서 옵니다. one-zip 복원에서는 위아래로 겹친 잎 4·5 의 구분이 약해져 잎 5 의 잎몸 씨앗이 0개가 되었고, 그 자리를 잎 4 가 차지합니다.
+- 채점 이전, 사진 해상도 어댑터, 축 분류 출처는 원인이 아닙니다. 그룹 병합이 −0.036, 선을 잎으로 읽는 방식이 −0.006 입니다(후자는 고침).
+- 줄기: R3-1b 의 마스크 단계를 옮긴 `--mask auto+stem` 은 마스크와 서펠 수를 R3-1b 쪽으로 끌어올렸지만(서펠 39,045 → 45,444) **줄기 밑 서펠은 R3-1b 의 45개 중 6개**에 그쳤습니다. R3-1b 에 있던 단안 깊이 초기 점이 원인인지는 가르지 않았습니다.
+- `auto+stem` 복원에 7단계를 돌린 값(2026-11-18, 같은 스켈레톤·같은 고정 계산): 배정 비율 0.947, 사람 라벨 일치 보고 절반 **0.567**(`auto` 복원은 0.525–0.531, PC 실행은 0.750). 잎 5 는 0.330(0.25 → 0.33), 잎 6 은 0.011. 줄기가 조금 복원돼도 겹친 잎 4·5 의 문제는 거의 그대로입니다. 그림 `figures/fig_stem_region.png`. 이 한 개체에서 1회 돌린 값입니다.
+
+## 구조
+```
+src/tomato3d/{recon,organs,...}/   라이브러리 (고정 코드 pc_absorb.py 는 원본과 바이트 동일)
+scripts/01_poses … 08_score_pilot  단계별 진입점 (--help)
+onezip/                            Kaggle/Colab 용 한 번에 돌리는 패키지와 빌더, pc_side/ = PC 쪽 그룹 만들기
+example/r3-1b/                     예시 자료 + EXPECTED.json + MANIFEST.csv
+configs/                           paths.yaml, r3-1b.yaml (파일럿 실행이 쓴 값의 기록; 코드가 읽지는 않음)
+results/ figures/ docs/            표, 그림, 설명 (CC BY 4.0)
+DATA.md  THIRD_PARTY.md  CITATION.cff  LICENSE  LICENSE-CC-BY-4.0.md
+```
+코드를 정리하면서 **계산은 바꾸지 않았습니다**(식, 문턱값, 가중치, 씨앗, 기본값, 출력 형식). 다른 개체용 코드, 형질·MTG·광 모델, 대체된 변형, Roboflow 층은 뺐고, 그 목록은 정리한 쪽의 기록에만 있고 저장소에는 넣지 않았습니다(파일 이름에 다른 개체 이름이 들어 있어서).
+저장소에는 Kaggle 사용자 이름(`dolgfish`)이 소유자의 결정으로 남아 있습니다(`configs/paths.yaml`, 커널 메타데이터를 만드는 스크립트).
+
+## 라이선스, 제3자
+- 코드 MIT (`LICENSE`), 그림·표·문서·예시 자료 CC BY 4.0 (`LICENSE-CC-BY-4.0.md`).
+- gsplat 1.5.3, SAM 2 / `sam2==1.1.0`, pycolmap, OpenCV, **Ultralytics (AGPL-3.0, 후보 마스크 단계에서만 import)** 등은 가져오지 않고 참조합니다: `THIRD_PARTY.md`. VTC 파생 파일은 넣지 않았습니다.
+- 인용: 저장소 최상위의 `CITATION.cff`.
+
+## English summary
+Code and one worked example (the pilot plant "R3-1b") for reconstructing a potted tomato plant from photos taken on an A3 ChArUco board (2DGS surfels, camera poses from the board only, no SfM pose estimation)
+and for assigning each surfel to a compound leaf (T-Prox: groups from sheets/patches, human skeleton lines as seeds, frozen random-walker absorption with weight set A = geometry only).
+Everything is checked on **one plant only**; labels `R3-1b_unaccepted`, `conditional_on_unvalidated_scale`, `tprox_unverified_until_heldout` apply and no accuracy is claimed for other plants.
+Run `python scripts/08_score_pilot.py` (agreement with the pilot's human leaf labels, report half 0.7503, 95 % CI 0.739-0.761; distance baseline 0.6065) and
+`python scripts/07_tprox.py --rebuild-seeds` (frozen stage 7; reproduces all 23 arrays of the 2026-11-01 run, verified on a Kaggle CPU kernel in 212 s).
+Photos and model weights are not in the repository (`DATA.md`). A person must draw the skeleton lines and make the groups; there is no trained stem, rachis or petiole detector.
+Known failure: with the automatic masks of `onezip/` the same plant scores 0.525 instead of 0.750, mostly because the reconstruction separates two vertically stacked leaves less well (`docs/ONEZIP_DIAGNOSIS_KO.md`).
+Code is MIT, figures/tables/docs/example data CC BY 4.0; third-party components are referenced, not copied (`THIRD_PARTY.md`, note Ultralytics AGPL-3.0).

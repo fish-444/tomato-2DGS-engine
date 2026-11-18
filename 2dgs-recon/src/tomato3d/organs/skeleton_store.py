@@ -44,7 +44,7 @@ def rebuild(root, base_store, plant_id, capture_date, reconstruction_id, surfels
         stale = [e for e in edits if e.get("at", "") < cut and any(e.get(k) for k in keys)]; edits = [e for e in edits if e not in stale]
     skipped = SIO.apply_edits(sk, edits) + [dict(record=e, reason="made_under_the_20mm_split_numbering") for e in stale]; flags = SIO.validate(sk, surfels_xyz, pot_xy=pot_xy); sk["minutes"] = minutes(sk, base_store, plant_id)
     if sk.get("axes"):                                                         # Amendment A6: the axis fit is derived data, recomputed on every rebuild
-        from tomato3d.organs import skeleton_axis as SA
+        from tomato3d.organs import skeleton_axis as SA  # not shipped: run-time dependency, see report
         sk["axis_summary"] = SA.fit_all(sk, surfels_xyz, root=SA.root_for(plant_id)); flags += SIO.validate_axes(sk)
     main = next((a for a in sk.get("axes", []) if a["type"] == "main" and a["status"] == "active" and a.get("fit")), None)          # dz10 Part A: display-only review aids
     SIO.review_aids(sk, (np.asarray(main["fit"]["curve_mm"]) / 1000.0) if main else None, SIO.plant_axis_xy(surfels_xyz, pot_xy)); sk["skelver"] = SIO.skeleton_version(sk)

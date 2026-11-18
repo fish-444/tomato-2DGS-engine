@@ -1,0 +1,94 @@
+{
+ "params": {
+  "n_default": 4,
+  "n_max": 6,
+  "extra_gain_min": 0.1,
+  "azimuth_min_deg": 60.0,
+  "heldout_azimuth_min_deg": 45.0,
+  "top_view_horiz_mm": 50.0
+ },
+ "chosen": [
+  "060313903",
+  "060544649",
+  "060450923",
+  "060427460"
+ ],
+ "held_out": "060551789",
+ "steps": [
+  {
+   "view": "060313903",
+   "gain": 16813,
+   "gain_share": 0.5088,
+   "taken": true,
+   "azimuth": 274.1,
+   "top": false,
+   "horiz_mm": 131.6
+  },
+  {
+   "view": "060544649",
+   "gain": 5023,
+   "gain_share": 0.152,
+   "taken": true,
+   "azimuth": 88.2,
+   "top": false,
+   "horiz_mm": 271.2
+  },
+  {
+   "view": "060450923",
+   "gain": 2534,
+   "gain_share": 0.0767,
+   "taken": true,
+   "azimuth": 196.4,
+   "top": false,
+   "horiz_mm": 203.9
+  },
+  {
+   "view": "060427460",
+   "gain": 1749,
+   "gain_share": 0.0529,
+   "taken": true,
+   "azimuth": 15.9,
+   "top": false,
+   "horiz_mm": 222.7
+  },
+  {
+   "view": "060248144",
+   "gain": 358,
+   "gain_share": 0.0108,
+   "taken": false,
+   "reason": "gain below 10 %"
+  }
+ ],
+ "blade_surfels": 33042,
+ "seen_ge1": 26119,
+ "seen_ge2": 16173,
+ "seen_ge1_share": 0.7905,
+ "seen_ge2_share": 0.4895,
+ "azimuths": {
+  "060313903": {
+   "azimuth": 274.1,
+   "horiz_mm": 131.6,
+   "top": false
+  },
+  "060544649": {
+   "azimuth": 88.2,
+   "horiz_mm": 271.2,
+   "top": false
+  },
+  "060450923": {
+   "azimuth": 196.4,
+   "horiz_mm": 203.9,
+   "top": false
+  },
+  "060427460": {
+   "azimuth": 15.9,
+   "horiz_mm": 222.7,
+   "top": false
+  },
+  "060551789": {
+   "azimuth": 145.6,
+   "horiz_mm": 268.8,
+   "top": false
+  }
+ }
+}

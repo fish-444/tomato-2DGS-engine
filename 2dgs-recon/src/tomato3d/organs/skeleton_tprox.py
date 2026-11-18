@@ -25,8 +25,8 @@ R8.RUNS = OUT / "runs"
 SET = "A"
 SEED_MIN = 50
 LABELS = ["route_tprox", "tprox_unverified_until_heldout", "conditional_on_unvalidated_scale", "user_skeleton_seeds", "frozen_code_reuse"]
-ORDER = ["n_04", "t2_02", "e_01", "e_04", "e_05", "n_01", "n_02", "n_03", "n_05", "n_06", "t2_05"]
-NOT_RUN = {"e_02": "no 3D-first groups", "e_03": "no 3D-first groups", "e_06": "no 3D-first groups", "e_07": "no skeleton", "t2_04": "no skeleton"}
+ORDER = []                                       # plant ids in run order; fill in for your own individuals
+NOT_RUN = {}                                     # plant id -> reason it was not run
 
 
 def skel_dir(pid):
@@ -117,12 +117,12 @@ def heldout(pid, sk, rows, lab, ld, uids):
     pos = {int(r): i for i, r in enumerate(rows)}; out = {}
     for name, L in (("tprox", lab), ("distance", ld)):
         out[name] = SIO.heldout_agreement(sk["heldout"], lambda s, L=L: (uids[L[pos[int(s)]] - 1] if int(s) in pos and L[pos[int(s)]] > 0 else None))
-    t, dd = out["tprox"], out["distance"]; better = "tprox" if (t["rate"] or 0) >= (dd["rate"] or 0) else "distance"      # heldout_agreement() names the share "rate" (was "agreement": KeyError 2026-11-02 n_01)
+    t, dd = out["tprox"], out["distance"]; better = "tprox" if (t["rate"] or 0) >= (dd["rate"] or 0) else "distance"      # heldout_agreement() names the share "rate" (was "agreement": KeyError 2026-11-02)
     out["operating_route"] = better; out["grade"] = out[better]["grade"]; out["grade_from"] = better; return out
 
 
 def tree(pid, sk, rows, lab, uids):
-    from tomato3d.organs import skeleton_tree as ST
+    from tomato3d.organs import skeleton_tree as ST  # not shipped: run-time dependency, see report
     f = SP.LIGHT_NINE / pid / "per_surfel_light.npz"; areas = src = None
     if f.exists():
         L = np.load(f, allow_pickle=True)

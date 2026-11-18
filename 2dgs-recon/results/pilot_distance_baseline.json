@@ -1,0 +1,108 @@
+{
+ "report_half": {
+  "n": 6132,
+  "correct": 3719,
+  "agreement": 0.6065,
+  "wilson95": [
+   0.5942,
+   0.6186
+  ],
+  "none_share": 0.2524
+ },
+ "all_leaves": {
+  "n": 15650,
+  "correct": 10892,
+  "agreement": 0.696,
+  "wilson95": [
+   0.6887,
+   0.7031
+  ],
+  "none_share": 0.1218
+ },
+ "per_leaf": {
+  "1": {
+   "n": 2517,
+   "correct": 2413,
+   "agreement": 0.9587,
+   "wilson95": [
+    0.9502,
+    0.9658
+   ],
+   "none_share": 0.0401
+  },
+  "2": {
+   "n": 777,
+   "correct": 604,
+   "agreement": 0.7773,
+   "wilson95": [
+    0.7468,
+    0.8052
+   ],
+   "none_share": 0.1673
+  },
+  "3": {
+   "n": 4745,
+   "correct": 4043,
+   "agreement": 0.8521,
+   "wilson95": [
+    0.8417,
+    0.8619
+   ],
+   "none_share": 0.0356
+  },
+  "4": {
+   "n": 735,
+   "correct": 576,
+   "agreement": 0.7837,
+   "wilson95": [
+    0.7525,
+    0.8119
+   ],
+   "none_share": 0.117
+  },
+  "5": {
+   "n": 3311,
+   "correct": 1801,
+   "agreement": 0.5439,
+   "wilson95": [
+    0.5269,
+    0.5608
+   ],
+   "none_share": 0.3123
+  },
+  "6": {
+   "n": 1532,
+   "correct": 26,
+   "agreement": 0.017,
+   "wilson95": [
+    0.0116,
+    0.0248
+   ],
+   "none_share": 0.0359
+  },
+  "7": {
+   "n": 1309,
+   "correct": 738,
+   "agreement": 0.5638,
+   "wilson95": [
+    0.5368,
+    0.5904
+   ],
+   "none_share": 0.2277
+  },
+  "8": {
+   "n": 724,
+   "correct": 691,
+   "agreement": 0.9544,
+   "wilson95": [
+    0.9367,
+    0.9674
+   ],
+   "none_share": 0.0456
+  }
+ },
+ "instances": 15650,
+ "dropped_share": 0.0,
+ "route": "distance baseline",
+ "labels_note": "report_only; pilot plant R3-1b only; conditional_on_unvalidated_scale; tprox_unverified_until_heldout"
+}

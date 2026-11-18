@@ -29,11 +29,11 @@ from urllib.parse import parse_qs, urlparse
 
 import numpy as np
 
-ROOT = Path(__file__).resolve().parents[2]
+from tomato3d.paths import ROOT
 OUT = ROOT / "build/p1_all_3dfirst_20261027_01"
 STORE = OUT / "user_3d_group_click.jsonl"
 STORE_BASE = OUT / "user_base_click.jsonl"                        # base clicks (one per compound leaf), append-only, provenance `user_base_click`
-ORDER = ["n_04", "t2_02", "n_01", "t2_05", "n_06", "n_05", "t2_04", "n_02", "n_03", "e_05", "e_01", "e_04", "e_07", "e_06", "e_03", "e_02"]
+ORDER = []                                       # plant ids served by the page; fill in for your own individuals
 FLAG_COL = [(1, "unassigned", (130, 130, 130)), (2, "contested", (255, 255, 255)), (16, "sam_conflict", (255, 140, 0)), (4, "multi_sheet_patch", (220, 40, 40)),
             (32, "oversize", (230, 50, 200)), (8, "low_vote", (0, 200, 220)), (64, "low_visibility_region", (60, 70, 170))]
 PAL = {k: "#%02x%02x%02x" % tuple(int(255 * x) for x in colorsys.hsv_to_rgb((k * 0.137) % 1.0, 0.75, 0.95)) for k in range(1, 13)}
